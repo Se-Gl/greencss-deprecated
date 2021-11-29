@@ -1,0 +1,14 @@
+.slide-top {
+  position: relative;
+  animation: animatefromtop 1s;
+}
+@keyframes animatefromtop {
+  0% {
+    top: -30px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
