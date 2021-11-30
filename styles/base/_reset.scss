@@ -1,4 +1,4 @@
-@use '../abstracts//variables' as v;
+@use '../abstracts/color' as c;
 
 /* Box sizing rules */
 *,
@@ -81,10 +81,10 @@ select {
 }
 
 ::selection {
-  color: v.$black;
+  color: c.$black;
   background: rgba(207, 204, 249, 0.5);
 }
 ::-moz-selection {
-  color: v.$black;
+  color: c.$black;
   background: rgba(207, 204, 249, 0.5);
 }
