@@ -2,6 +2,7 @@
 .hero {
   background: #081120;
   min-height: 100vh;
+  overflow-x: hidden;
   .center {
     position: relative;
     z-index: 2;
@@ -24,10 +25,8 @@
       -webkit-text-fill-color: transparent;
 
       @media screen and (max-width: 610px) {
-        .center h1 {
-          font-size: 30px;
-          line-height: normal;
-        }
+        font-size: 30px;
+        line-height: normal;
       }
     }
   }
