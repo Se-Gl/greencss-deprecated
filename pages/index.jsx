@@ -10,7 +10,7 @@ export default function Home() {
         <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
       </Head>
       <nav>
-        <Image src='/omencss.svg' alt='OmenCSS Logo' width={100} height={20} />
+        <Image src='/omencss.svg' alt='OmenCSS Logo' width={100} height={20} id='logo' />
       </nav>
       <main>
         <div className='center'>
