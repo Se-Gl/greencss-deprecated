@@ -1,7 +1,8 @@
-# OmenCSS - the next lightweight CSS library.
+# OmenCSS - the next lightweight CSS library
 
-[![ESLint Code Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml)
 [![Prettier and ESLint Code Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml)
+[![Cypress Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml)
+![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
 
 ## Getting Started
 
@@ -15,7 +16,10 @@ npm i
 Run the development server:
 
 ```bash
-# start the localhost server
+# start the localhost server and cypress
+npm run e2e
+
+# backup
 npm run dev
 ```
 
@@ -29,6 +33,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 npm run cypress:open
 # run all cypress tests in the console
 npm run cypress:run
+# manually get code coverage
+npx nyc report --reporter=text-summary
+npx update-badge
 ```
 
 ### esLint commands

@@ -2,16 +2,18 @@
   "name": "frontend-omen",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
+    "e2e": "start-test dev 3000 cypress:open",
+    "check-coverage-limits": "check-total --min 100",
     "prettier": "prettier ./**/*.{js,jsx,ts,tsx,css,scss,md,json} --config ./.prettierrc.json --write",
     "success-message": "echo \n\n\n🚀  Everything is awesome. 🚀\n\n🖥️  Auto checking completed, ready to deploy.🖥️\n\n☁️  Run: git push ☁️",
-    "pre-commit": "npm run cypress:run && npm run prettier && npm run lint --fix && git add -A . && npm run success-message"
+    "pre-commit": "npm run cypress:run && npx update-badge && npm run prettier && npm run lint --fix && git add -A . && npm run success-message"
   },
   "dependencies": {
     "next": "12.0.4",
@@ -20,13 +22,22 @@
     "sass": "^1.43.5"
   },
   "devDependencies": {
+    "@cypress/code-coverage": "^3.9.11",
+    "babel-plugin-istanbul": "^6.1.1",
+    "check-code-coverage": "^1.10.0",
     "cypress": "^9.1.0",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.0",
     "lint-staged": "^12.1.2",
-    "prettier": "2.5.0"
+    "prettier": "2.5.0",
+    "start-server-and-test": "^1.14.0"
+  },
+  "nyc": {
+    "exclude": [
+      "pages/api/__coverage__.js"
+    ]
   },
   "lint-staged": {
     "*.{js,jsx,css,scss,md}": "npm run pre-commit"

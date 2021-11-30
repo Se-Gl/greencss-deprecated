@@ -4,10 +4,7 @@ describe('Home Screen Unit test', () => {
   })
   it('renders the logo', () => {
     cy.get('.hero nav').contains('img')
-    cy.get('#logo') // sets <a> as the subject
-      .should('have.attr', 'alt') // changes subject to href attribute
-      .should('not.be.empty') // now test the href
-      .and('contain', 'OmenCSS Logo')
+    cy.get('#logo').should('have.attr', 'alt').should('not.be.empty').and('contain', 'OmenCSS Logo')
   })
   it('renders the header', () => {
     cy.get('.center h1').contains('Writing CSS reimagined', { matchCase: false })
