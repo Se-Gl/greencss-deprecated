@@ -4,6 +4,8 @@
 [![Cypress Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml)
 ![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
 
+[![omenCSS logo](./public/omencss.svg)](https://www.omen.design)
+
 ## Getting Started
 
 Install the dependencies
