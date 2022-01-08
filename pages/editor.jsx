@@ -23,7 +23,6 @@ function MarkDownPage() {
   const TextFile = () => {
     const element = document.createElement('a')
     const file = new Blob([editor], { type: 'text/csv' })
-    console.log(file)
     element.href = URL.createObjectURL(file)
     element.download = 'myFile.md'
     document.body.appendChild(element) // Required for this to work in FireFox
