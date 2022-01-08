@@ -57,6 +57,11 @@ npm run prettier
 - OmenCSS checks if the build process is completed successfully before pushing to the repo.
 - OmenCSS tests the code with cypress before pushing to the repo.
 
+### Markdown Editor
+
+Create new markdown posts and save it. All features, configuration and documentation are fetched from markdown files. A suitable editor can be found at:
+`http://localhost:3000/editor`
+
 ### SCSS Structure - 7:1
 
 Keeping the architecture consistent and meaningful is even more of a challenge.
