@@ -3,8 +3,12 @@ import '@uiw/react-markdown-preview/markdown.css'
 import dynamic from 'next/dynamic'
 import { useState, useEffect } from 'react'
 import rehypeSanitize from 'rehype-sanitize'
+import Loader from '../components/Loader'
 
-const MDEditor = dynamic(() => import('@uiw/react-md-editor').then((mod) => mod.default), { ssr: false })
+const MDEditor = dynamic(() => import('@uiw/react-md-editor').then((mod) => mod.default), {
+  ssr: false,
+  loading: () => <Loader />
+})
 
 function MarkDownPage() {
   const getEditor = () => {
@@ -30,7 +34,7 @@ function MarkDownPage() {
   }
 
   return (
-    <>
+    <div id='markdowneditor'>
       <MDEditor
         value={editor}
         onChange={setEditor}
@@ -38,8 +42,10 @@ function MarkDownPage() {
           rehypePlugins: [[rehypeSanitize]]
         }}
       />
-      <button onClick={TextFile}>save</button>
-    </>
+      <button onClick={TextFile} id='saveMD'>
+        save
+      </button>
+    </div>
   )
 }
 
