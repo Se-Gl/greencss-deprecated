@@ -1,101 +1,86 @@
 @use '../abstracts/variables' as *;
-.hero {
-  background: #081120;
-  min-height: 100vh;
-  overflow-x: hidden;
-  .center {
-    position: relative;
-    z-index: 2;
-    min-height: 100vh;
-    text-align: center;
-    line-height: 100vh;
-    h1 {
-      display: inline-block;
-      line-height: 1.5;
-      vertical-align: middle;
-      max-width: 580px;
-      font-style: normal;
-      font-weight: 900;
-      font-size: 87px;
-      line-height: 105px;
-      margin: 0;
-      background: -webkit-linear-gradient(90deg, rgba(207, 204, 249, 1) 0%, rgba(97, 0, 255, 1) 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
 
-      @media screen and (max-width: 610px) {
-        font-size: 30px;
-        line-height: normal;
-      }
-    }
+.hero-title {
+  background: -webkit-linear-gradient(90deg, rgba(207, 204, 249, 1) 0%, rgba(97, 0, 255, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media screen and (max-width: 610px) {
+    font-size: 30px !important;
+    line-height: normal;
   }
+}
 
-  .bubbles {
+.bubbles {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  .bubble {
+    opacity: 0;
     position: absolute;
-    width: 100%;
-    min-height: 100vh;
-    z-index: 1;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    .bubble {
-      opacity: 0;
-      position: absolute;
-      bottom: -100px;
-      width: 40px;
-      height: 40px;
-      background: linear-gradient(
-        75.96deg,
-        rgba(255, 200, 58, 0.5) 13.64%,
-        rgba(255, 0, 138, 0.5) 46.53%,
-        rgba(97, 0, 255, 0.5) 78.88%
-      );
-      filter: blur(120px);
-      border-radius: 50%;
-      animation: rise 10s infinite ease-in;
-      &:nth-child(1) {
-        width: 400px;
-        height: 400px;
-        left: 0%;
-        animation-duration: 30s;
-        bottom: -400px;
-      }
-      &:nth-child(2) {
-        width: 200px;
-        height: 200px;
-        left: 20%;
-        animation-duration: 30s;
-        animation-delay: 10s;
-        bottom: -200px;
-        transform: rotate(270deg);
-      }
-      &:nth-child(3) {
-        width: 500px;
-        height: 500px;
-        left: 35%;
-        animation-duration: 30s;
-        animation-delay: 20s;
-        bottom: -500px;
-        transform: rotate(180deg);
-      }
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #e98f1f, #d03377, #580aff);
+    filter: blur(120px);
+    border-radius: 50%;
+    animation: rise 10s infinite ease-in;
+    &:nth-child(1) {
+      width: 400px;
+      height: 400px;
+      left: 0%;
+      animation-duration: 30s;
+      bottom: -400px;
+    }
+    &:nth-child(2) {
+      width: 200px;
+      height: 200px;
+      left: 20%;
+      animation-duration: 30s;
+      animation-delay: 10s;
+      bottom: -200px;
+      transform: rotate(270deg);
+    }
+    &:nth-child(3) {
+      width: 500px;
+      height: 500px;
+      left: 35%;
+      animation-duration: 30s;
+      animation-delay: 20s;
+      bottom: -500px;
+      transform: rotate(180deg);
     }
   }
 }
 
 @keyframes rise {
   0% {
-    opacity: 1;
-    left: 100%;
-    bottom: 20%;
+    opacity: 0;
+    transform: scale(0);
+    left: 75%;
+    bottom: 0;
+  }
+  10% {
+    opacity: 0.5;
+    transform: scale(0.5);
   }
   50% {
     transform: translate(100px);
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.25);
+    transform: translateY(-50vh);
   }
   100% {
     opacity: 0.5;
+    transform: scale(0.5);
     bottom: 100vh;
-    transform: translateX(100vw);
   }
 }
 @media screen and (max-width: 610px) {
