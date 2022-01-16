@@ -12,13 +12,20 @@
     "e2e": "start-test dev 3000 cypress:open",
     "check-coverage-limits": "check-total --min 100",
     "prettier": "prettier ./**/*.{js,jsx,ts,tsx,css,scss,md,json} --config ./.prettierrc.json --write",
+    "purgecss": "purgecss --css .next/static/css/*.css --content public/index.html .next/**/*.js --output .next/static/css",
     "success-message": "echo \n\n\n🚀  Everything is awesome. 🚀\n\n🖥️  Auto checking completed, ready to deploy.🖥️\n\n☁️  Run: git push ☁️",
-    "pre-commit": "npm run cypress:run && npx update-badge && npm run prettier && npm run lint --fix && git add -A . && npm run success-message"
+    "pre-commit": "npm run cypress:run && npx update-badge && npm run prettier && npm run lint --fix && npm run purgecss && git add -A . && npm run success-message"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3",
     "@uiw/react-md-editor": "^3.9.3",
+    "autoprefixer": "^10.4.2",
     "next": "^12.0.8",
     "next-remove-imports": "^1.0.6",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^7.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "rehype-sanitize": "^5.0.1"
