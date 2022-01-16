@@ -17,7 +17,7 @@ export default function Home() {
       <main className='bg-dark min-h-100vh overflow-x-hidden'>
         <div className='relative min-h-100vh text-center z-2 flex justify-center items-center'>
           {/* TODO margin: 0, font size sm, md, lg */}
-          <h1 className='inline-block leading-125 vertical-middle max-w-58rem font-900 text-87 hero-title'>
+          <h1 className='slide-top inline-block leading-125 vertical-middle max-w-58rem font-900 text-87 hero-title'>
             Writing CSS reimagined
           </h1>
         </div>
