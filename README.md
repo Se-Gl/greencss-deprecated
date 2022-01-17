@@ -15,6 +15,12 @@ Install the dependencies
 npm i
 ```
 
+Add an `.env` file.
+
+```env
+NODE_ENV=development
+```
+
 Run the development server:
 
 ```bash
