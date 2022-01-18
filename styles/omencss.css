@@ -30739,7 +30739,7 @@ html {
     margin-block: 30rem;
   }
 }
-@media (min-width: 481px) and (max-width: 767px), (orientation: landscape) {
+@media (min-width: 481px) and (max-width: 768px) {
   .md\:text-1 {
     font-size: 1px;
   }
@@ -51315,7 +51315,7 @@ html {
     margin-block: 30rem;
   }
 }
-@media (min-width: 768px) and (max-width: 1080px) {
+@media (min-width: 769px) and (max-width: 1080px) {
   .lg\:text-1 {
     font-size: 1px;
   }
