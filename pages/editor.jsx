@@ -1,5 +1,4 @@
-import '@uiw/react-md-editor/markdown-editor.css'
-import '@uiw/react-markdown-preview/markdown.css'
+import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { useState, useEffect } from 'react'
 import rehypeSanitize from 'rehype-sanitize'
@@ -34,18 +33,24 @@ function MarkDownPage() {
   }
 
   return (
-    <div id='markdowneditor'>
-      <MDEditor
-        value={editor}
-        onChange={setEditor}
-        previewOptions={{
-          rehypePlugins: [[rehypeSanitize]]
-        }}
-      />
-      <button onClick={TextFile} id='saveMD'>
-        save
-      </button>
-    </div>
+    <>
+      <Head>
+        <link href='/css/markdown.css' rel='stylesheet' />
+      </Head>
+
+      <div id='markdowneditor'>
+        <MDEditor
+          value={editor}
+          onChange={setEditor}
+          previewOptions={{
+            rehypePlugins: [[rehypeSanitize]]
+          }}
+        />
+        <button onClick={TextFile} id='saveMD'>
+          save
+        </button>
+      </div>
+    </>
   )
 }
 
