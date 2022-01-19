@@ -13,4 +13,8 @@ describe('Home Screen Unit test', () => {
   it('press button and download file', () => {
     cy.get('#saveMD').should('exist').click()
   })
+  it('includes layout component', () => {
+    cy.get('nav').should('exist')
+    cy.get('main .container').should('exist')
+  })
 })

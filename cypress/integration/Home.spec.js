@@ -12,4 +12,8 @@ describe('Home Screen Unit test', () => {
   it('shows animated bubbles', () => {
     cy.get('.bubbles .bubble').should('be.visible')
   })
+  it('includes layout component', () => {
+    cy.get('nav').should('exist')
+    cy.get('main .container').should('not.exist')
+  })
 })

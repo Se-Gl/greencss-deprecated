@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import { useState, useEffect } from 'react'
 import rehypeSanitize from 'rehype-sanitize'
 import Loader from '../components/Loader'
+import Layout from '../components/Layout'
 
 const MDEditor = dynamic(() => import('@uiw/react-md-editor').then((mod) => mod.default), {
   ssr: false,
@@ -33,12 +34,15 @@ function MarkDownPage() {
   }
 
   return (
-    <>
+    <Layout
+      title='Markdown editor'
+      keywords='markdown, editor, css library, omen css'
+      description="Create your Markdown documentation, with omen css's markdown editor.">
       <Head>
         <link href='/css/markdown.css' rel='stylesheet' />
       </Head>
 
-      <div id='markdowneditor'>
+      <div id='markdowneditor' className='mt-100px'>
         <MDEditor
           value={editor}
           onChange={setEditor}
@@ -50,7 +54,7 @@ function MarkDownPage() {
           save
         </button>
       </div>
-    </>
+    </Layout>
   )
 }
 
