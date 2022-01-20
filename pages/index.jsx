@@ -13,11 +13,11 @@ export default function HomePage() {
                 Writing CSS reimagined
               </h1>
               <p className='initial-hidden slide-top duration-1000ms delay-200ms animation-forwards text-purple text-16px mt-50px'>
-                omenCSS provides a stunning user interface design that is accessible to everyone. omenCSS focuses on
-                delivering the best user experience to you and your customers. Develop high-quality web applications
-                using the latest dynamic technology stack.
+                omenCSS provides a stunning user interface design that is accessible to everyone. Focus on delivering
+                the best user experience to you and your customers. Develop high-quality web applications using the
+                latest dynamically animated CSS stack.
               </p>
-              <div className='flex'>
+              <div className='flex sm:justify-center md:justify-center'>
                 <Button className='mt-50px'>Get in Touch</Button>
                 <p className='text-purple text-16px mt-50px ml-50px pt-10px' style={{ cursor: 'pointer' }}>
                   check the docs
