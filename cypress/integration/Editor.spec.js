@@ -10,8 +10,8 @@ describe('Home Screen Unit test', () => {
     cy.get('.w-md-editor-text-input').type('# test title')
     cy.get('#user-content-test-title').should('exist')
   })
-  it('press button and download file', () => {
-    cy.get('#saveMD').should('exist').click()
+  it('download button exists', () => {
+    cy.get('#saveMD').should('exist')
   })
   it('includes layout component', () => {
     cy.get('nav').should('exist')

@@ -1,6 +1,8 @@
 .slide-top {
   position: relative;
-  animation: animatefromtop 1s;
+  animation-name: animatefromtop;
+  transform-origin: center;
+  -webkit-transform-origin: center;
 }
 @keyframes animatefromtop {
   0% {
@@ -11,4 +13,8 @@
     top: 0;
     opacity: 1;
   }
+}
+
+.initial-hidden {
+  opacity: 0;
 }
