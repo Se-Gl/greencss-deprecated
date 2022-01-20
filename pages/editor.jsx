@@ -35,6 +35,7 @@ function MarkDownPage() {
 
   return (
     <Layout
+      className='flex container'
       title='Markdown editor'
       keywords='markdown, editor, css library, omen css'
       description="Create your Markdown documentation, with omen css's markdown editor.">
@@ -42,7 +43,7 @@ function MarkDownPage() {
         <link href='/css/markdown.css' rel='stylesheet' />
       </Head>
 
-      <div id='markdowneditor' className='mt-20rem'>
+      <div id='markdowneditor' className='mt-20rem min-w-100per'>
         <MDEditor
           value={editor}
           onChange={setEditor}

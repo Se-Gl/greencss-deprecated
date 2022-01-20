@@ -5,7 +5,9 @@ import Logo from './Logo'
 export default function Header() {
   return (
     <header className='container'>
-      <nav className='fixed flex items-center h-15rem flex justify-between z-100 w-100per max-w-100rem'>
+      <nav
+        className='fixed flex items-center h-15rem flex justify-between z-100 w-100per'
+        style={{ maxWidth: '110rem' }}>
         <Link href='/'>
           <a>
             <Logo width='121' height='17' />
