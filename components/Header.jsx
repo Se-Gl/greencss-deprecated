@@ -4,8 +4,8 @@ import Logo from './Logo'
 
 export default function Header() {
   return (
-    <header>
-      <nav className='container fixed top-0 flex items-center min-w-100vw h-15rem flex justify-between z-100'>
+    <header className='container'>
+      <nav className=' fixed top-0 flex items-center h-15rem flex justify-between z-100 w-100per max-w-100rem'>
         <div className='ml-10px sm:ml-0px'>
           <Link href='/'>
             <a>
