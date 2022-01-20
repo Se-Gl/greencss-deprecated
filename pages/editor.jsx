@@ -42,7 +42,7 @@ function MarkDownPage() {
         <link href='/css/markdown.css' rel='stylesheet' />
       </Head>
 
-      <div id='markdowneditor' className='mt-100px'>
+      <div id='markdowneditor' className='mt-20rem'>
         <MDEditor
           value={editor}
           onChange={setEditor}

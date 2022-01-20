@@ -3,8 +3,7 @@ describe('Home Screen Unit test', () => {
     cy.visit('http://localhost:3000')
   })
   it('renders the logo', () => {
-    cy.get('nav div').contains('img')
-    cy.get('#logo').should('have.attr', 'alt').should('not.be.empty').and('contain', 'OmenCSS Logo')
+    cy.get('#omenCSS_logo').should('be.visible').should('exist')
   })
   it('renders the header', () => {
     cy.get('main div h1').contains('Writing CSS reimagined', { matchCase: false })

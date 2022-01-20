@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
+import Header from './Header'
 
 export default function Layout({ title, keywords, description, author, children, className = 'container' }) {
   return (
@@ -12,16 +11,8 @@ export default function Layout({ title, keywords, description, author, children,
         <meta name='author' content={author} />
         <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
       </Head>
-      <nav className='fixed h-40px flex items-center w-100vw bg-light shadow-darkpurple-3'>
-        <div className='ml-10px'>
-          <Link href='/'>
-            <a>
-              <Image src='/omencss.svg' alt='OmenCSS Logo' width={100} height={20} id='logo' />
-            </a>
-          </Link>
-        </div>
-      </nav>
-      <main className='pt-40px'>
+      <Header />
+      <main>
         <div className={className}>{children}</div>
       </main>
     </>
