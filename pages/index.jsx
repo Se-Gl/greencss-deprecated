@@ -1,15 +1,17 @@
 import Image from 'next/image'
-import Button from '../components/Button'
-import Layout from '../components/Layout'
+import Button from '../components/reusable/Button'
+import Layout from '../components/reusable/Layout'
 
 export default function HomePage() {
   return (
     <Layout className='bg-light min-h-100vh overflow-x-hidden'>
-      <div className='relative text-center z-2 flex justify-center items-center'>
-        <div className='flex flex-wrap overflow-hidden mt-20rem h-80vh'>
-          <div className='flex sm:max-w-100vw md:max-w-100vw lg:max-w-100vw max-w-45rem w-100per text-left sm:text-center sm:px-10px md:text-center md:px-20px lg:px-50px'>
+      <div
+        className='relative sm:text-center md:text-center z-2 flex justify-center items-center m-auto sm:px-10px md:px-25px lg:px-50px'
+        style={{ maxWidth: '110rem' }}>
+        <div className='flex sm:block md:block overflow-hidden mt-20rem h-80vh'>
+          <div className='w-50per sm:w-100per md:w-100per m-auto'>
             <div className='m-auto'>
-              <h1 className='slide-top duration-1000ms animation-forwards font-800 leading-120per sm:text-30px text-75px hero-title'>
+              <h1 className='slide-top duration-1000ms animation-forwards font-800 leading-120per sm:text-30px lg:text-60px text-75px hero-title'>
                 Writing CSS reimagined
               </h1>
               <p className='initial-hidden slide-top duration-1000ms delay-200ms animation-forwards text-purple text-16px mt-50px'>

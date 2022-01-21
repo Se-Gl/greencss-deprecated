@@ -2,8 +2,8 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { useState, useEffect } from 'react'
 import rehypeSanitize from 'rehype-sanitize'
-import Loader from '../components/Loader'
-import Layout from '../components/Layout'
+import Loader from '../components/logo/Loader'
+import Layout from '../components/reusable/Layout'
 
 const MDEditor = dynamic(() => import('@uiw/react-md-editor').then((mod) => mod.default), {
   ssr: false,
@@ -35,7 +35,7 @@ function MarkDownPage() {
 
   return (
     <Layout
-      className='flex container'
+      className='flex container sm:px-10px md:px-25px lg:px-50px bg-light min-h-100vh'
       title='Markdown editor'
       keywords='markdown, editor, css library, omen css'
       description="Create your Markdown documentation, with omen css's markdown editor.">

@@ -1,7 +1,14 @@
 import Head from 'next/head'
 import Header from './Header'
 
-export default function Layout({ title, keywords, description, author, children, className = 'container' }) {
+export default function Layout({
+  title,
+  keywords,
+  description,
+  author,
+  children,
+  className = 'container sm:px-10px md:px-25px lg:px-50px'
+}) {
   return (
     <>
       <Head>
