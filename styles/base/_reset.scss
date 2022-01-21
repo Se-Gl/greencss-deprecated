@@ -43,6 +43,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: c.$light;
 }
 
 /* A elements that don't have a class get default styles */
@@ -82,10 +83,10 @@ select {
 }
 
 ::selection {
-  color: c.$black;
+  color: c.$dark;
   background: rgba(207, 204, 249, 0.5);
 }
 ::-moz-selection {
-  color: c.$black;
+  color: c.$dark;
   background: rgba(207, 204, 249, 0.5);
 }

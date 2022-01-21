@@ -36,7 +36,7 @@ function MarkDownPage() {
 
   return (
     <Layout
-      className='flex container sm:px-10px md:px-25px lg:px-50px bg-light min-h-100vh'
+      className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'
       title='Markdown editor'
       keywords='markdown, editor, css library, omen css'
       description="Create your Markdown documentation, with omen css's markdown editor.">

@@ -5,7 +5,7 @@ import Layout from '../components/reusable/Layout'
 
 export default function HomePage() {
   return (
-    <Layout className='bg-light min-h-100vh overflow-x-hidden'>
+    <Layout className='min-h-100vh overflow-x-hidden'>
       <div
         className='relative sm:text-center md:text-center z-2 flex justify-center items-center m-auto sm:px-10px md:px-25px lg:px-50px'
         style={{ maxWidth: '110rem' }}>
