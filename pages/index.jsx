@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Bubbles from '../components/reusable/Bubbles'
 import Button from '../components/reusable/Button'
 import Layout from '../components/reusable/Layout'
 
@@ -33,11 +34,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className='bubbles'>
-        <div className='bubble' />
-        <div className='bubble' />
-        <div className='bubble' />
-      </div>
+      <Bubbles />
     </Layout>
   )
 }

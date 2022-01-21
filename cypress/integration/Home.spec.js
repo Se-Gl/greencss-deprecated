@@ -9,7 +9,7 @@ describe('Home Screen Unit test', () => {
     cy.get('main div h1').contains('Writing CSS reimagined', { matchCase: false })
   })
   it('shows animated bubbles', () => {
-    cy.get('.bubbles .bubble').should('be.visible')
+    cy.get('.bubbles').should('exist')
   })
   it('includes layout component', () => {
     cy.get('nav').should('exist')
