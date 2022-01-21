@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import rehypeSanitize from 'rehype-sanitize'
 import Loader from '../components/logo/Loader'
 import Layout from '../components/reusable/Layout'
+import Button from '../components/reusable/Button'
 
 const MDEditor = dynamic(() => import('@uiw/react-md-editor').then((mod) => mod.default), {
   ssr: false,
@@ -51,9 +52,11 @@ function MarkDownPage() {
             rehypePlugins: [[rehypeSanitize]]
           }}
         />
-        <button onClick={TextFile} id='saveMD'>
-          save
-        </button>
+        <div className='flex'>
+          <Button onClick={TextFile} id='saveMD' className='mt-50px mx-auto'>
+            save
+          </Button>
+        </div>
       </div>
     </Layout>
   )
