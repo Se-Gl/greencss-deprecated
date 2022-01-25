@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Button({ link = '#', className, type = 'buttton', onClick, id = 'button', children }) {
+export default function Button({ link = '', className, type = 'buttton', onClick, id = 'button', children }) {
   return (
     <Link href={link} passHref>
       <button
