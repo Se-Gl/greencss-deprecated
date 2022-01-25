@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Button from './Button'
+import { LinkButton } from './Button'
 import Logo from '../logo/Logo'
 
 export default function Header() {
@@ -18,7 +18,7 @@ export default function Header() {
           <li className='sm:mx-10px mx-25px'>Docs</li>
           <li>Blog</li>
         </ul>
-        <Button>Contact</Button>
+        <LinkButton>Contact</LinkButton>
       </nav>
     </header>
   )

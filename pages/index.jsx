@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Bubbles from '../components/reusable/Bubbles'
-import Button from '../components/reusable/Button'
+import { LinkButton } from '../components/reusable/Button'
 import Layout from '../components/reusable/Layout'
 
 export default function HomePage() {
@@ -21,7 +21,7 @@ export default function HomePage() {
                 latest dynamically animated CSS stack.
               </p>
               <div className='flex sm:justify-center md:justify-center'>
-                <Button className='mt-50px'>Get in Touch</Button>
+                <LinkButton className='mt-50px'>Get in Touch</LinkButton>
                 <p className='text-purple text-16px mt-50px ml-50px pt-10px' style={{ cursor: 'pointer' }}>
                   check the docs
                 </p>

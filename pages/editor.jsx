@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import rehypeSanitize from 'rehype-sanitize'
 import Loader from '../components/logo/Loader'
 import Layout from '../components/reusable/Layout'
-import Button from '../components/reusable/Button'
+import { Button } from '../components/reusable/Button'
 
 const MDEditor = dynamic(() => import('@uiw/react-md-editor').then((mod) => mod.default), {
   ssr: false,

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { animations, time } from '../../data/animations'
-import Button from '../reusable/Button'
+import { Button } from '../reusable/Button'
 
 export default function DropDown() {
   const [itemsList] = useState([animations])
