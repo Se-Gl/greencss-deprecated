@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { animations, time } from '../../data/animations'
+import Button from '../reusable/Button'
 // import Button from '../reusable/Button'
 
 export default function DropDown() {
@@ -13,11 +14,24 @@ export default function DropDown() {
 
   let csscode = `${selectedItemIndex} ${selectedTimeIndex}`
 
+  const [showAgain, setShowAgain] = useState(false)
+
+  const triggerFade = () => {
+    setShowAgain((prevState) => {
+      return !prevState
+    })
+  }
+
   return (
     <>
       <div
         id={`animation-${selectedItemIndex}`}
-        className={`absolute top-0 right-0 w-50px min-h-54px bg-orange z-3 ${csscode}`}
+        className={
+          showAgain
+            ? `absolute top-0 right-0 w-50px min-h-54px bg-orange z-3 ${csscode}`
+            : 'absolute top-0 right-0 w-50px min-h-54px bg-orange z-3'
+        }
+        onAnimationEnd={triggerFade}
       />
       <div className='max-w-40rem relative text-dark text-16px' style={{ cursor: 'pointer' }}>
         <div
@@ -46,7 +60,7 @@ export default function DropDown() {
       </div>
       <div className='max-w-40rem relative text-dark text-16px' style={{ cursor: 'pointer' }}>
         <div
-          id='custom-dropdown'
+          id='custom-time-dropdown'
           className='bg-blue-5 p-15px min-h-50px mb-10px'
           onClick={(e) => {
             setIsDropDownTimeVisible(!isDropDownTimeVisible)
@@ -70,6 +84,9 @@ export default function DropDown() {
         )}
       </div>
       <code>{csscode}</code>
+      <Button id='animate-button' onClick={triggerFade} className='ml-50px'>
+        Animate
+      </Button>
     </>
   )
 }
