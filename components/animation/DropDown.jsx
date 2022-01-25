@@ -27,15 +27,15 @@ export default function DropDown() {
         id={`animation-${selectedItemIndex}`}
         className={
           showAgain
-            ? `absolute top-0 right-0 w-50px min-h-54px bg-orange z-3 ${csscode}`
-            : 'absolute top-0 right-0 w-50px min-h-54px bg-orange z-3'
+            ? `mx-auto my-50px w-50px min-h-54px bg-orange z-3 ${csscode}`
+            : 'mx-auto my-50px w-50px min-h-54px bg-orange z-3'
         }
         onAnimationEnd={triggerFade}
       />
-      <div className='max-w-40rem relative text-dark text-16px' style={{ cursor: 'pointer' }}>
+      <div className='mx-auto max-w-40rem relative text-dark text-16px' style={{ cursor: 'pointer' }}>
         <div
           id='custom-dropdown'
-          className='bg-purple-5 p-15px min-h-50px mb-10px'
+          className='bg-purple-5 p-15px min-h-50px mb-10px hover:bg-purple-4'
           onClick={(e) => {
             setIsDropDownVisible(!isDropDownVisible)
           }}>
@@ -57,10 +57,10 @@ export default function DropDown() {
           </div>
         )}
       </div>
-      <div className='max-w-40rem relative text-dark text-16px' style={{ cursor: 'pointer' }}>
+      <div className='mx-auto max-w-40rem relative text-dark text-16px' style={{ cursor: 'pointer' }}>
         <div
           id='custom-time-dropdown'
-          className='bg-blue-5 p-15px min-h-50px mb-10px'
+          className='bg-blue-5 p-15px min-h-50px mb-10px hover:bg-blue-4'
           onClick={(e) => {
             setIsDropDownTimeVisible(!isDropDownTimeVisible)
           }}>
@@ -82,10 +82,15 @@ export default function DropDown() {
           </div>
         )}
       </div>
-      <code>{csscode}</code>
-      <Button id='animate-button' onClick={triggerFade} className='ml-50px'>
-        Animate
-      </Button>
+
+      <div className='text-center'>
+        <Button id='animate-button' onClick={triggerFade} className='mx-auto'>
+          Animate
+        </Button>
+      </div>
+      <div className='text-center mt-50px'>
+        <code>{csscode}</code>
+      </div>
     </>
   )
 }

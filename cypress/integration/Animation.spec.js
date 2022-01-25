@@ -25,11 +25,11 @@ describe('Home Screen Unit test', () => {
     cy.get('#animate-button').click()
     cy.get('#animation-poke-top').should(
       'have.class',
-      'absolute top-0 right-0 w-50px min-h-54px bg-orange z-3 poke-top duration-500ms'
+      'mx-auto my-50px w-50px min-h-54px bg-orange z-3 poke-top duration-500ms'
     )
     cy.wait(2000)
     cy.get('#animation-poke-top')
-      .should('have.class', 'absolute top-0 right-0 w-50px min-h-54px bg-orange z-3')
+      .should('have.class', 'mx-auto my-50px w-50px min-h-54px bg-orange z-3')
       .and('not.have.class', 'poke-top duration-500ms')
   })
 })
