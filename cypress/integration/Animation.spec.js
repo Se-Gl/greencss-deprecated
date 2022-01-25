@@ -27,7 +27,7 @@ describe('Home Screen Unit test', () => {
       'have.class',
       'mx-auto my-50px w-50px min-h-54px bg-orange z-3 poke-top duration-500ms'
     )
-    cy.wait(2000)
+    cy.wait(5000)
     cy.get('#animation-poke-top')
       .should('have.class', 'mx-auto my-50px w-50px min-h-54px bg-orange z-3')
       .and('not.have.class', 'poke-top duration-500ms')

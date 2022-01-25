@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import '@uiw/react-md-editor/markdown-editor.css'
+import '@uiw/react-markdown-preview/markdown.css'
 import dynamic from 'next/dynamic'
 import { useState, useEffect } from 'react'
 import rehypeSanitize from 'rehype-sanitize'
@@ -40,10 +41,6 @@ function MarkDownPage() {
       title='Markdown editor'
       keywords='markdown, editor, css library, omen css'
       description="Create your Markdown documentation, with omen css's markdown editor.">
-      <Head>
-        <link href='/css/markdown.css' rel='stylesheet' />
-      </Head>
-
       <div id='markdowneditor' className='mt-20rem min-w-100per'>
         <MDEditor
           value={editor}
