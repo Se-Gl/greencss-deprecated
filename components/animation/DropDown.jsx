@@ -1,14 +1,13 @@
 import { useState } from 'react'
 import { animations, time } from '../../data/animations'
 import Button from '../reusable/Button'
-// import Button from '../reusable/Button'
 
 export default function DropDown() {
-  const [itemsList, setItemsList] = useState([animations])
+  const [itemsList] = useState([animations])
   const [isDropDownVisible, setIsDropDownVisible] = useState(false)
   const [selectedItemIndex, setSelectedItemIndex] = useState('jump')
 
-  const [timeList, setTimeList] = useState([time])
+  const [timeList] = useState([time])
   const [isDropDownTimeVisible, setIsDropDownTimeVisible] = useState(false)
   const [selectedTimeIndex, setSelectedTimeIndex] = useState('duration-1000ms')
 
@@ -69,15 +68,15 @@ export default function DropDown() {
         </div>
         {isDropDownTimeVisible && (
           <div className='bg-blue-5 absolute top-100 max-w-40rem max-h-40rem overflow-scroll overflow-x-hidden z-1'>
-            {timeList[0].map((time) => (
+            {timeList[0].map((tme) => (
               <li
-                key={time.value}
+                key={tme.value}
                 className='hover:bg-blue-4 p-15px min-w-40rem'
                 onClick={(e) => {
-                  setSelectedTimeIndex(time.value)
+                  setSelectedTimeIndex(tme.value)
                   setIsDropDownTimeVisible(!isDropDownTimeVisible)
                 }}>
-                {time.label}
+                {tme.label}
               </li>
             ))}
           </div>
