@@ -9,8 +9,8 @@ describe('Home Screen Unit test', () => {
     cy.get('#custom-dropdown').click()
   })
   it('clicks the first animation', () => {
-    cy.get('#animation-null').should('exist').should('be.visible')
-    cy.get('#custom-dropdown').click().get('.absolute > :nth-child(1)').click()
     cy.get('#animation-jump').should('exist').should('be.visible')
+    cy.get('#custom-dropdown').click().get('.absolute > :nth-child(2)').click()
+    cy.get('#animation-flash').should('exist').should('be.visible')
   })
 })
