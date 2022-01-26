@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Copy({ width = '20', height = '20', fill = '#0D0D0D', className }) {
   return (
     <svg

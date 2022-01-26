@@ -5,8 +5,11 @@ describe('Animation Screen Unit test', () => {
   it('renders the custom input select', () => {
     cy.get('#custom-dropdown').should('be.visible').should('exist')
   })
-  it('show all animations', () => {
+  it('show all animations and display chevron icon correctly', () => {
+    cy.get('#chevron-down').should('be.visible').should('exist')
     cy.get('#custom-dropdown').click()
+    // cy.get('#custom-dropdown div li').should('have.length', 27)
+    cy.get('#chevron-up').should('be.visible').should('exist')
   })
   it('clicks the second animation', () => {
     cy.get('#animation-jump').should('exist').should('be.visible')
