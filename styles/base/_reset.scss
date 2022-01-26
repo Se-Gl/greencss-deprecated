@@ -1,5 +1,10 @@
 @use '../abstracts/color' as c;
 
+html {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif !important;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -23,7 +28,7 @@ dl,
 dd {
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
-    Droid Sans, Helvetica Neue, sans-serif;
+    Droid Sans, Helvetica Neue, sans-serif !important;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
