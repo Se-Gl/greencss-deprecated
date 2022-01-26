@@ -54,6 +54,7 @@ export default function DropDown() {
                   setSelectedItemIndex(item.value)
                   setIsDropDownVisible(!isDropDownVisible)
                 }}>
+                {item.id}.<span className='mx-5px' />
                 {item.label}
               </li>
             ))}
@@ -64,7 +65,7 @@ export default function DropDown() {
         <div
           id='custom-time-dropdown'
           style={{ borderRadius: '10px' }}
-          className='bg-white pl-50px sm:pl-25px my-auto flex items-center min-h-50px mb-10px'
+          className='bg-white pl-50px sm:pl-25px my-auto flex items-center min-h-50px mb-10px py-10px'
           onClick={(e) => {
             setIsDropDownTimeVisible(!isDropDownTimeVisible)
           }}>

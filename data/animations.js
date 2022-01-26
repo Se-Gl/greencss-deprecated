@@ -12,7 +12,20 @@ export const animations = [
   { id: 11, label: 'Reveal From Top', value: 'reveal-down' },
   { id: 12, label: 'Reveal From Left', value: 'reveal-left' },
   { id: 13, label: 'Reveal From Right', value: 'reveal-right' },
-  { id: 14, label: 'Reveal From Bottom', value: 'reveal-up' }
+  { id: 14, label: 'Reveal From Bottom', value: 'reveal-up' },
+  { id: 15, label: 'Spin In From Top', value: 'spin-in-top' },
+  { id: 16, label: 'Spin In From Right', value: 'spin-in-right' },
+  { id: 17, label: 'Spin In From Bottom', value: 'spin-in-bottom' },
+  { id: 18, label: 'Spin In From Left', value: 'spin-in-left' },
+  { id: 19, label: 'Spin out from Top', value: 'spin-out-top' },
+  { id: 20, label: 'Spin out from Right', value: 'spin-out-right' },
+  { id: 21, label: 'Spin out from Bottom', value: 'spin-out-bottom' },
+  { id: 22, label: 'Spin out from Left', value: 'spin-out-left' },
+  { id: 23, label: 'Snap In From Center', value: 'snap-in' },
+  { id: 24, label: 'Snap In From Top', value: 'snap-in-top' },
+  { id: 25, label: 'Snap In From Right', value: 'snap-in-right' },
+  { id: 26, label: 'Snap In From Bottom', value: 'snap-in-bottom' },
+  { id: 27, label: 'Snap In From Left', value: 'snap-in-left' }
 ]
 
 export const time = [
