@@ -1,22 +1,16 @@
 import { useState } from 'react'
-import { animations, time } from '../../data/animations'
-import ChevronDown from '../icon/ChevronDown'
-import ChevronUp from '../icon/ChevronUp'
+import Select from 'react-select'
+import { animations, fillmode, time } from '../../data/animations'
 import Copy from '../icon/Copy'
 import { Button } from '../reusable/Button'
 
 export default function DropDown() {
-  const [itemsList] = useState([animations])
-  const [isDropDownVisible, setIsDropDownVisible] = useState(false)
-  const [selectedItemIndex, setSelectedItemIndex] = useState('jump')
-
-  const [timeList] = useState([time])
-  const [isDropDownTimeVisible, setIsDropDownTimeVisible] = useState(false)
-  const [selectedTimeIndex, setSelectedTimeIndex] = useState('duration-1000ms')
-
-  let csscode = `${selectedItemIndex} ${selectedTimeIndex}`
-
+  const [selectedItem, setSelectedItem] = useState(animations[0])
+  const [selectedTime, setSelectedTime] = useState(time[9])
+  const [selectedFillMode, setSelectedFillMode] = useState(fillmode[0])
   const [showAgain, setShowAgain] = useState(false)
+
+  let csscode = `${selectedItem.value} ${selectedTime.value} ${selectedFillMode.value}`
 
   const triggerFade = () => {
     setShowAgain((prevState) => {
@@ -24,10 +18,19 @@ export default function DropDown() {
     })
   }
 
+  const onchangeSelect = (item) => {
+    setSelectedItem(item)
+  }
+  const onTimechangeSelect = (item) => {
+    setSelectedTime(item)
+  }
+  const onFillModechangeSelect = (item) => {
+    setSelectedFillMode(item)
+  }
   return (
     <>
       <div
-        id={`animation-${selectedItemIndex}`}
+        id={`animation-${selectedItem}`}
         style={{ borderRadius: '10px' }}
         className={
           showAgain
@@ -37,76 +40,34 @@ export default function DropDown() {
         onAnimationEnd={triggerFade}
       />
       <div className='mx-auto max-w-40rem relative text-dark text-16px' style={{ cursor: 'pointer' }}>
-        <div
-          id='custom-dropdown'
-          style={{ borderRadius: '10px' }}
-          className='bg-white pl-50px sm:pl-25px my-auto flex items-center min-h-50px mb-10px'
-          onClick={(e) => {
-            setIsDropDownVisible(!isDropDownVisible)
-          }}>
-          {animations === false ? '' : `css animation class: ${selectedItemIndex}`}
-          {!isDropDownVisible ? (
-            <ChevronDown className='absolute right-0 mr-20px' fill='#03000a' />
-          ) : (
-            <ChevronUp className='absolute right-0 mr-20px' fill='#03000a' />
-          )}
-        </div>
-        {isDropDownVisible && (
-          <div className='absolute top-100 max-w-40rem max-h-40rem overflow-scroll overflow-x-hidden z-2'>
-            {itemsList[0].map((item, index) => (
-              <li
-                key={item.id}
-                className='bg-white hover:bg-light p-15px min-w-40rem'
-                onClick={(e) => {
-                  setSelectedItemIndex(item.value)
-                  setIsDropDownVisible(!isDropDownVisible)
-                }}>
-                {typeof item.id !== 'number' && <hr />}
-                {typeof item.id == 'number' && (
-                  <>
-                    {item.id}.<span className='mx-5px' />
-                    {item.label}
-                  </>
-                )}
-              </li>
-            ))}
-          </div>
-        )}
+        <Select
+          placeholder='select an animation'
+          value={selectedItem}
+          onChange={onchangeSelect}
+          options={animations}
+          getOptionValue={(option) => option.value}
+          getOptionLabel={(option) => option.label}
+        />
       </div>
-      <div className='mx-auto max-w-40rem relative text-dark text-16px' style={{ cursor: 'pointer' }}>
-        <div
-          id='custom-time-dropdown'
-          style={{ borderRadius: '10px' }}
-          className='bg-white pl-50px sm:pl-25px my-auto flex items-center min-h-50px mb-10px py-10px'
-          onClick={(e) => {
-            setIsDropDownTimeVisible(!isDropDownTimeVisible)
-          }}>
-          {time === false ? '' : `css animation duration class: ${selectedTimeIndex}`}
-          {!isDropDownTimeVisible ? (
-            <ChevronDown className='absolute right-0 mr-20px' fill='#03000a' />
-          ) : (
-            <ChevronUp className='absolute right-0 mr-20px' fill='#03000a' />
-          )}
-        </div>
-        {isDropDownTimeVisible && (
-          <div
-            style={{ backgroundColor: 'white' }}
-            className='absolute top-100 max-w-40rem max-h-40rem overflow-scroll overflow-x-hidden z-1'>
-            {timeList[0].map((tme) => (
-              <li
-                key={tme.value}
-                className='bg-white hover:bg-light p-15px min-w-40rem'
-                onClick={(e) => {
-                  setSelectedTimeIndex(tme.value)
-                  setIsDropDownTimeVisible(!isDropDownTimeVisible)
-                }}>
-                {tme.label}
-              </li>
-            ))}
-          </div>
-        )}
+      <div className='mx-auto my-20px max-w-40rem relative text-dark text-16px' style={{ cursor: 'pointer' }}>
+        <Select
+          id={selectedTime.value}
+          value={selectedTime}
+          onChange={onTimechangeSelect}
+          options={time}
+          getOptionValue={(option) => option.value}
+          getOptionLabel={(option) => option.label}
+        />
       </div>
-
+      <div className='mx-auto my-20px max-w-40rem relative text-dark text-16px' style={{ cursor: 'pointer' }}>
+        <Select
+          value={selectedFillMode}
+          onChange={onFillModechangeSelect}
+          options={fillmode}
+          getOptionValue={(option) => option.value}
+          getOptionLabel={(option) => option.label}
+        />
+      </div>
       <div className='text-center'>
         <Button id='animate-button' onClick={triggerFade} className='mx-auto'>
           Animate

@@ -151,3 +151,10 @@ export const time = [
   { label: '9.9s', value: 'duration-9900ms' },
   { label: '10s', value: 'duration-10000ms' }
 ]
+
+export const fillmode = [
+  { label: 'Forwards', value: 'animation-forwards' },
+  { label: 'Infinite', value: 'animation-infinite' },
+  { label: 'Backwards', value: 'animation-backwards' },
+  { label: 'Both', value: 'animation-both ' }
+]
