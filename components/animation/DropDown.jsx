@@ -53,16 +53,21 @@ export default function DropDown() {
         </div>
         {isDropDownVisible && (
           <div className='absolute top-100 max-w-40rem max-h-40rem overflow-scroll overflow-x-hidden z-2'>
-            {itemsList[0].map((item) => (
+            {itemsList[0].map((item, index) => (
               <li
-                key={item.value}
+                key={item.id}
                 className='bg-white hover:bg-light p-15px min-w-40rem'
                 onClick={(e) => {
                   setSelectedItemIndex(item.value)
                   setIsDropDownVisible(!isDropDownVisible)
                 }}>
-                {item.id}.<span className='mx-5px' />
-                {item.label}
+                {typeof item.id !== 'number' && <hr />}
+                {typeof item.id == 'number' && (
+                  <>
+                    {item.id}.<span className='mx-5px' />
+                    {item.label}
+                  </>
+                )}
               </li>
             ))}
           </div>
