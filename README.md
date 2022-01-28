@@ -13,12 +13,10 @@ Install the dependencies
 ```bash
 # install all dependencies
 npm i
-```
 
-Add an `.env` file.
-
-```env
-NODE_ENV=development
+# ⚠️ If error, install husky and cypress manually
+npm i husky
+npm i cypress
 ```
 
 Run the development server:
@@ -122,10 +120,13 @@ sass/
 
 ### Basic Frontend Libraries
 
-|                                            | Stars                                                                                      | Bundle size                                                                                                               | Maintained | Dev- Mode |
-| ------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ---------- | --------- |
-| [next](https://www.npmjs.com/package/next) | ![GitHub stars](https://img.shields.io/github/stars/vercel/next.js.svg?label=%F0%9F%8C%9F) | N/A                                                                                                                       | ✅         | ➖        |
-| [sass](https://www.npmjs.com/package/sass) | ![GitHub stars](https://img.shields.io/github/stars/sass/dart-sass.svg?label=%F0%9F%8C%9F) | [![Bundle size](https://badgen.net/bundlephobia/minzip/sass/?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=sass) | ✅         | ➖        |
+|                                                                          | Stars                                                                                                 | Bundle size                                                                                                                                               | Maintained | Dev- Mode |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------- |
+| [next](https://www.npmjs.com/package/next)                               | ![GitHub stars](https://img.shields.io/github/stars/vercel/next.js.svg?label=%F0%9F%8C%9F)            | N/A                                                                                                                                                       | ✅         | ➖        |
+| [sass](https://www.npmjs.com/package/sass)                               | ![GitHub stars](https://img.shields.io/github/stars/sass/dart-sass.svg?label=%F0%9F%8C%9F)            | [![Bundle size](https://badgen.net/bundlephobia/minzip/sass/?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=sass)                                 | ✅         | ➖        |
+| [react-select](https://www.npmjs.com/package/react-select)               | ![GitHub stars](https://img.shields.io/github/stars/JedWatson/react-select.svg?label=%F0%9F%8C%9F)    | [![Bundle size](https://badgen.net/bundlephobia/minzip/react-select/?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=react-select)                 | ✅         | ➖        |
+| [react-md-editor](https://www.npmjs.com/package/@uiw/react-md-editor)    | ![GitHub stars](https://img.shields.io/github/stars/uiwjs/react-md-editor.svg?label=%F0%9F%8C%9F)     | [![Bundle size](https://badgen.net/bundlephobia/minzip/@uiw/react-md-editor/?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=@uiw/react-md-editor) | ✅         | ➖        |
+| [next-remove-imports](https://www.npmjs.com/package/next-remove-imports) | ![GitHub stars](https://img.shields.io/github/stars/uiwjs/next-remove-imports.svg?label=%F0%9F%8C%9F) | [![Bundle size](https://badgen.net/bundlephobia/minzip/next-remove-imports/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/next-remove-imports)    | ✅         | ➖        |
 
 ### Testing Libraries
 
