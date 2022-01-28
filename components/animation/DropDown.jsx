@@ -6,7 +6,7 @@ import { Button } from '../reusable/Button'
 
 export default function DropDown() {
   const [selectedItem, setSelectedItem] = useState(animations[0])
-  const [selectedTime, setSelectedTime] = useState(time[9])
+  const [selectedTime, setSelectedTime] = useState(time[0])
   const [selectedFillMode, setSelectedFillMode] = useState(fillmode[0])
   const [showAgain, setShowAgain] = useState(false)
 

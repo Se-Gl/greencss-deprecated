@@ -46,10 +46,31 @@ export const animations = [
   { id: 38, label: 'Flip Out To The Top', value: 'flip-out-top' },
   { id: 39, label: 'Flip Out To The Right', value: 'flip-out-right' },
   { id: 40, label: 'Flip Out To The Bottom', value: 'flip-out-bottom' },
-  { id: 41, label: 'Flip Out To The Left', value: 'flip-out-left' }
+  { id: 41, label: 'Flip Out To The Left', value: 'flip-out-left' },
+  { id: 'Fade', value: 'fade-in' },
+  { id: 42, label: 'Fade In', value: 'fade-in' },
+  { id: 43, label: 'Fade In From Top', value: 'fade-in-top' },
+  { id: 44, label: 'Fade In From Right', value: 'fade-in-right' },
+  { id: 45, label: 'Fade In From Bottom', value: 'fade-in-bottom' },
+  { id: 46, label: 'Fade In From Left', value: 'fade-in-left' },
+  { id: 47, label: 'Fade Out', value: 'fade-out' },
+  { id: 48, label: 'Fade Out To The Top', value: 'fade-out-top' },
+  { id: 49, label: 'Fade Out To The Right', value: 'fade-out-right' },
+  { id: 50, label: 'Fade Out To The Bottom', value: 'fade-out-bottom' },
+  { id: 51, label: 'Fade Out To The Left', value: 'fade-out-left' },
+  { id: 'Bounce', value: 'bounce-in-top' },
+  { id: 53, label: 'Bounce In From Top', value: 'bounce-in-top' },
+  { id: 54, label: 'Bounce In From Right', value: 'bounce-in-right' },
+  { id: 55, label: 'Bounce In From Bottom', value: 'bounce-in-bottom' },
+  { id: 56, label: 'Bounce In From Left', value: 'bounce-in-left' },
+  { id: 57, label: 'Bounce Out To The Top', value: 'bounce-out-top' },
+  { id: 58, label: 'Bounce Out To The Right', value: 'bounce-out-right' },
+  { id: 59, label: 'Bounce Out To The Bottom', value: 'bounce-out-bottom' },
+  { id: 60, label: 'Bounce Out To The Left', value: 'bounce-out-left' }
 ]
 
 export const time = [
+  { label: 'Default 750ms', value: 'animate' },
   { label: '0.1s', value: 'duration-100ms' },
   { label: '0.2s', value: 'duration-200ms' },
   { label: '0.3s', value: 'duration-300ms' },
