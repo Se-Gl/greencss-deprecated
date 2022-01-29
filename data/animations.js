@@ -66,7 +66,23 @@ export const animations = [
   { id: 57, label: 'Bounce Out To The Top', value: 'bounce-out-top' },
   { id: 58, label: 'Bounce Out To The Right', value: 'bounce-out-right' },
   { id: 59, label: 'Bounce Out To The Bottom', value: 'bounce-out-bottom' },
-  { id: 60, label: 'Bounce Out To The Left', value: 'bounce-out-left' }
+  { id: 60, label: 'Bounce Out To The Left', value: 'bounce-out-left' },
+  { id: 'Twist', value: 'twist' },
+  { id: 61, label: 'Twist', value: 'twist' },
+  { id: 62, label: 'Twist In By Scaling And Fading', value: 'twist-in' },
+  { id: 63, label: 'Twist Out By Scaling And Fading', value: 'twist-out' },
+  { id: 'Pop', value: 'pop-in-left' },
+  { id: 64, label: 'Pop In From Top', value: 'pop-in-top' },
+  { id: 65, label: 'Pop In From Right', value: 'pop-in-right' },
+  { id: 66, label: 'Pop In From Bottom', value: 'pop-in-bottom' },
+  { id: 67, label: 'Pop In From Left', value: 'pop-in-left' },
+  { id: 68, label: 'Pop Out To The Top', value: 'pop-out-top' },
+  { id: 69, label: 'Pop Out To The Right', value: 'pop-out-right' },
+  { id: 70, label: 'Pop Out To The Bottom', value: 'pop-out-bottom' },
+  { id: 71, label: 'Pop Out To The Left', value: 'pop-out-left' },
+  { id: 'Form', value: 'form-in' },
+  { id: 72, label: 'Form In From Center', value: 'form-in' },
+  { id: 73, label: 'Form Out To The Center', value: 'form-out' }
 ]
 
 export const time = [
