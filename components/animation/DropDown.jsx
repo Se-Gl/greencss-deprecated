@@ -30,7 +30,7 @@ export default function DropDown() {
   return (
     <>
       <div
-        id={`animation-${selectedItem}`}
+        id={`animation-${selectedItem.value}`}
         style={{ borderRadius: '10px' }}
         className={
           showAgain
