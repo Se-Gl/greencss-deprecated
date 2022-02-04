@@ -1,4 +1,4 @@
-describe('Home Screen Unit test', () => {
+describe('Editor Screen Unit test', () => {
   before(() => {
     cy.visit('http://localhost:3000/editor')
   })

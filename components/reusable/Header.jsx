@@ -6,19 +6,19 @@ export default function Header() {
   return (
     <header className='container'>
       <nav
-        className='bg-light shadow-purple-5 z-100 fixed flex items-center h-15rem flex justify-between z-100 w-100per sm:px-10px md:px-25px lg:px-50px'
+        className='z-100 relative flex items-center h-15rem justify-between w-100per sm:px-10px md:px-25px lg:px-50px'
         style={{ maxWidth: '110rem' }}>
         <Link href='/'>
           <a>
-            <Logo width='121' height='17' />
+            <Logo />
           </a>
         </Link>
-        <ul className='flex text-16px sm:text-12px sm:mx-10px text-purple'>
+        <ul className='flex text-16px sm:text-12px sm:mx-10px text-dark'>
           <li>Home</li>
           <li className='sm:mx-10px mx-25px'>Docs</li>
           <li>Blog</li>
         </ul>
-        <LinkButton>Contact</LinkButton>
+        <LinkButton>Search</LinkButton>
       </nav>
     </header>
   )
