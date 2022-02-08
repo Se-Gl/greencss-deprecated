@@ -1,40 +1,53 @@
 import Image from 'next/image'
+import Blobs from '../components/icon/Blobs'
+import HeroImage from '../components/icon/HeroImage'
 import Bubbles from '../components/reusable/Bubbles'
 import { LinkButton } from '../components/reusable/Button'
 import Layout from '../components/reusable/Layout'
 
 export default function HomePage() {
   return (
-    <Layout className='min-h-100vh overflow-x-hidden'>
-      <div
-        className='relative sm:text-center md:text-center z-2 flex justify-center items-center m-auto sm:px-10px md:px-25px lg:px-50px'
-        style={{ maxWidth: '110rem' }}>
-        <div className='flex sm:block md:block overflow-hidden mt-20rem h-80vh'>
-          <div className='w-50per sm:w-100per md:w-100per m-auto'>
-            <div className='m-auto'>
-              <h1 className='slide-top duration-1000ms animation-forwards font-800 leading-120per sm:text-30px lg:text-60px text-75px hero-title'>
-                Writing CSS reimagined
-              </h1>
-              <p className='initial-hidden slide-top duration-1000ms delay-200ms animation-forwards text-purple text-16px mt-50px'>
-                omenCSS provides a stunning user interface design that is accessible to everyone. Focus on delivering
-                the best user experience to you and your customers. Develop high-quality web applications using the
-                latest dynamically animated CSS stack.
-              </p>
-              <div className='flex sm:justify-center md:justify-center'>
-                <LinkButton className='mt-50px'>Get in Touch</LinkButton>
-                <p className='text-purple text-16px mt-50px ml-50px pt-10px' style={{ cursor: 'pointer' }}>
-                  check the docs
-                </p>
+    <div className='overflow-x-hidden'>
+      <Layout className='min-h-100vh relative z-2'>
+        <div className='relative sm:display-none md:display-none'>
+          <div className='absolute' style={{ right: '-25%', top: '-17px' }}>
+            <Blobs style={{ marginTop: '-500px' }} />
+          </div>
+        </div>
+        <div className='m-auto grid gap-30px grid-col-2 sm:grid-col-1 md:grid-col-1' style={{ maxWidth: '110rem' }}>
+          <div className='col-span-1 min-h-75vh'>
+            <div className='flex h-75vh'>
+              <div className='m-auto reveal-down animate animation-forwards animation-delay-500ms'>
+                <h1 className='font-800 text-50px leading-120per' style={{ maxWidth: '400px' }}>
+                  A classy way to write CSS design
+                </h1>
+
+                <LinkButton className='mt-50px'>Check more</LinkButton>
               </div>
             </div>
           </div>
+          <div className='col-span-1 min-h-75vh sm:col-span-full sm:row-start-1 sm:col-end-1 md:col-span-full md:row-start-1 md:col-end-1'>
+            <div className='m-auto'>
+              <div className='flex h-75vh'>
+                <div className='m-auto fade-in animation-duration-1200ms animation-forwards opacity-0'>
+                  <Image
+                    src='/images/iphone-12-min.png'
+                    alt='OmenCSS Iphone 12 Pro Max'
+                    width={212.71}
+                    height={459.87}
+                    id='iphone-12-pro-max'
+                  />
 
-          <div className='m-auto'>
-            <Image src='/images/editor.png' alt='OmenCSS Logo' width={500} height={400} id='logo' />
+                  <div className='relative z-2 ml-20px sm:ml-25px' style={{ marginTop: '-300px' }}>
+                    <HeroImage />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <Bubbles />
-    </Layout>
+        <Bubbles />
+      </Layout>
+    </div>
   )
 }

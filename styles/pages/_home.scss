@@ -1,22 +1,10 @@
 @use '../abstracts/variables' as *;
 
-.hero-title {
-  background: -webkit-linear-gradient(90deg, rgba(207, 204, 249, 1) 0%, rgba(97, 0, 255, 1) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-
-  @media screen and (max-width: 610px) {
-    line-height: normal;
-  }
-}
-
 .bubbles {
   position: fixed;
   width: 100%;
   min-height: 100vh;
-  z-index: 1;
+  z-index: -1;
   overflow: hidden;
   top: 0;
   left: 0;
@@ -62,7 +50,7 @@
   0% {
     opacity: 0;
     transform: scale(0);
-    left: 75%;
+    left: 25%;
     bottom: 0;
   }
   10% {

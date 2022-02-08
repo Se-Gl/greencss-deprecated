@@ -14,7 +14,7 @@ export function LinkButton({ href = '/', className, type = 'buttton', onClick, i
   }
   return (
     <Link href={href} passHref>
-      <div className='flex sm:min-w-90px sm:min-h-30px min-w-15rem min-h-50px'>
+      <div className='flex sm:min-w-90px sm:min-h-30px min-w-15rem min-h-50px responsive z-99'>
         <button
           onClick={onClick}
           id={id}

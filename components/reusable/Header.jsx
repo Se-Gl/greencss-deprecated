@@ -15,7 +15,7 @@ export default function Header() {
         </Link>
         <ul className='flex text-16px sm:text-12px sm:mx-10px text-dark'>
           <li>Home</li>
-          <li className='sm:mx-10px mx-25px'>Docs</li>
+          <li className='sm:mx-10px mx-25px'>Brand</li>
           <li>Blog</li>
         </ul>
         <LinkButton>Search</LinkButton>
