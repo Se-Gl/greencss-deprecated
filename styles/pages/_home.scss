@@ -1,5 +1,19 @@
 @use '../abstracts/variables' as *;
 
+.scale-finger {
+  animation: scaleFinger 5s 1.5s ease-in-out infinite alternate-reverse;
+  -webkit-animation: scaleFinger 5s 1.5s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes scaleFinger {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .bubbles {
   position: fixed;
   width: 100%;
