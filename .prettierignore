@@ -7,3 +7,5 @@ coverage
 
 # Ignore all HTML files:
 *.html
+
+styles/omencss.css
