@@ -13,6 +13,6 @@ describe('Home Screen Unit test', () => {
   })
   it('includes layout component', () => {
     cy.get('nav').should('exist')
-    cy.get('main .container').should('not.exist')
+    cy.get('main .container').should('exist')
   })
 })
