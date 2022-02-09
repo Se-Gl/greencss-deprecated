@@ -1,4 +1,5 @@
 {
+  "trashAssetsBeforeRuns": true,
   "baseUrl": "http://localhost:3000",
   "env": {
     "codeCoverage": {
