@@ -4,7 +4,7 @@ import { LinkButton } from '../../reusable/Button'
 export default function ServiceCard() {
   return (
     <>
-      <div className='min-h-38rem max-w-38rem w-100per rounded-20px bg-cover bg-no-repeat bg-center' id='service-card'>
+      <div className='min-h-38rem max-w-38rem w-100per bg-cover bg-no-repeat bg-center' id='service-card'>
         <div className='flex min-h-38rem w-100per text-dark sm:w-75vw md:w-75vw'>
           <div className='relative m-auto px-30px'>
             <Pen className='mb-30px' />

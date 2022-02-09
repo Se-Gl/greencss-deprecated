@@ -24,7 +24,7 @@ export default function Service() {
         <div
           ref={ref}
           id='doc-1'
-          className={`col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white ${
+          className={`col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px ${
             isVisible ? 'clip-inset-in-top animate animation-forwards' : 'opacity-0per'
           }`}>
           <ServiceCard />
@@ -33,7 +33,7 @@ export default function Service() {
         <div
           ref={refTwo}
           id='doc-2'
-          className={`col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white ${
+          className={`col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px ${
             isVisibleTwo ? 'clip-inset-in-top animate animation-forwards animation-delay-400ms' : 'opacity-0per'
           }`}>
           <ServiceCard />
@@ -41,7 +41,7 @@ export default function Service() {
         <div
           ref={refThree}
           id='doc-3'
-          className={`col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white ${
+          className={`col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px ${
             isVisibleThree ? 'clip-inset-in-top animate animation-forwards animation-delay-600ms' : 'opacity-0per'
           }`}>
           <ServiceCard />
