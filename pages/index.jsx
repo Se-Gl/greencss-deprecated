@@ -1,4 +1,5 @@
 import Hero from '../components/LandingPage/Hero'
+import News from '../components/LandingPage/News'
 import Presentation from '../components/LandingPage/Presentation'
 import Support from '../components/LandingPage/Support'
 import Bubbles from '../components/reusable/Bubbles'
@@ -12,6 +13,7 @@ export default function HomePage() {
         <Hero />
         <Presentation />
         <Support />
+        <News />
         <Bubbles />
       </Layout>
     </div>

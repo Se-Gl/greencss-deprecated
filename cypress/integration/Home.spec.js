@@ -44,4 +44,11 @@ describe('Home Screen Unit test', () => {
     cy.get('#logo-3').should('exist').should('be.visible')
     cy.get('#logo-4').should('exist').should('be.visible')
   })
+  it('render dummy blog post card', () => {
+    cy.get('#recent-news').should('exist').scrollIntoView({ duration: 2000 })
+    cy.get('#bg-image')
+      .should('exist')
+      .should('have.attr', 'style')
+      .and('include', 'https://source.unsplash.com/random')
+  })
 })
