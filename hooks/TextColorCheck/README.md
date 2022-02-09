@@ -1,7 +1,8 @@
 # Text Color Check
 
 Detect which textcolor should be applied, based on a color. This can be, for example, the mean colour value of a blog post image.
-(Stackoverflow)][https://stackoverflow.com/questions/3942878/how-to-decide-font-color-in-white-or-black-depending-on-background-color]
+[Stackoverflow](https://stackoverflow.com/questions/3942878/how-to-decide-font-color-in-white-or-black-depending-on-background-color)
+[Get average image colour](https://github.com/fast-average-color/fast-average-color/blob/HEAD/docs/examples.md#from-unloaded-image)
 
 ## Example
 
