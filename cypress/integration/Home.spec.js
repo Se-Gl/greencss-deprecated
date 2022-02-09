@@ -2,6 +2,11 @@ describe('Home Screen Unit test', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
   })
+  it('hover hero image', () => {
+    cy.get('#heroimage').should('be.visible').should('exist').trigger('mousemove', 50, 50)
+    cy.get('#heroimage-hand').should('have.attr', 'style')
+    // .should('contain', 'transform: translateX(600px) translateY(50px)')
+  })
   it('renders the logo', () => {
     cy.get('#omenCSS_logo').should('be.visible').should('exist')
   })
@@ -14,5 +19,19 @@ describe('Home Screen Unit test', () => {
   it('includes layout component', () => {
     cy.get('nav').should('exist')
     cy.get('main .container').should('exist')
+  })
+  it('renders the linkedbutton', () => {
+    cy.get('#linkedbutton').should('be.visible').should('exist')
+    cy.get('#linkedbutton').trigger('mouseover')
+  })
+  it('reveals presentation section with animation', () => {
+    cy.get('#presentation').should('exist')
+    cy.get('#production').should('exist')
+    cy.get('#animated').should('exist')
+    cy.get('#responsive').should('exist')
+    cy.get('#presentation').scrollIntoView({ duration: 2000 })
+    cy.get('#production').should('exist').should('be.visible')
+    cy.get('#animated').should('exist').should('be.visible')
+    cy.get('#production').should('exist').should('be.visible')
   })
 })

@@ -20,7 +20,8 @@ function HeroImage({ width = '403', height = '478', className }) {
       height={height}
       fill='none'
       viewBox='0 0 403 478'
-      className={className}>
+      className={className}
+      id='heroimage'>
       <rect
         className='moving-img'
         data-speed='-1'
@@ -38,6 +39,7 @@ function HeroImage({ width = '403', height = '478', className }) {
         d='M18.818 116.17a10 10 0 00-9.486 6.837l-8.32 24.96c-2.159 6.475 2.661 13.162 9.487 13.162h152.089c6.825 0 11.645-6.687 9.487-13.162l-8.32-24.96a10 10 0 00-9.487-6.837H18.818zm58.733 26.975h17.984l1.499 8.992H76.053l1.498-8.992z'
         clipRule='evenodd'></path>
       <path
+        id='heroimage-hand'
         className='moving-img'
         data-speed='1'
         fill='#6100FF'

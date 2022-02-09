@@ -18,10 +18,11 @@ export default function Presentation() {
   })
 
   return (
-    <div className='my-20rem sm:my-0px md:my-0px'>
+    <div className='my-20rem sm:my-0px md:my-0px' id='presentation'>
       <div className='m-auto grid grid-col-3 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1 lg:grid-col-2'>
         <div
           ref={ref}
+          id='animated'
           className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
             isVisible ? 'clip-inset-in-top animate animation-forwards' : 'opacity-0per'
           }`}>
@@ -40,6 +41,7 @@ export default function Presentation() {
         </div>
         <div
           ref={refTwo}
+          id='responsive'
           className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
             isVisibleTwo ? 'clip-inset-in-top animate animation-forwards animation-delay-200ms' : 'opacity-0per'
           }`}>
@@ -58,6 +60,7 @@ export default function Presentation() {
         </div>
         <div
           ref={refThree}
+          id='production'
           className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
             isVisibleThree ? 'clip-inset-in-top animate animation-forwards animation-delay-400ms' : 'opacity-0per'
           }`}>
