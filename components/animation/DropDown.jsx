@@ -39,7 +39,10 @@ export default function DropDown() {
         }
         onAnimationEnd={triggerFade}
       />
-      <div className='mx-auto max-w-40rem relative text-dark text-16px' style={{ cursor: 'pointer' }}>
+      <div
+        className='mx-auto max-w-40rem relative text-dark text-16px'
+        style={{ cursor: 'pointer' }}
+        id='enter-animation'>
         <Select
           placeholder='select an animation'
           value={selectedItem}
@@ -49,7 +52,10 @@ export default function DropDown() {
           getOptionLabel={(option) => option.label}
         />
       </div>
-      <div className='mx-auto my-20px max-w-40rem relative text-dark text-16px' style={{ cursor: 'pointer' }}>
+      <div
+        className='mx-auto my-20px max-w-40rem relative text-dark text-16px'
+        style={{ cursor: 'pointer' }}
+        id='enter-timeduration'>
         <Select
           id={selectedTime.value}
           value={selectedTime}
@@ -59,7 +65,10 @@ export default function DropDown() {
           getOptionLabel={(option) => option.label}
         />
       </div>
-      <div className='mx-auto my-20px max-w-40rem relative text-dark text-16px' style={{ cursor: 'pointer' }}>
+      <div
+        className='mx-auto my-20px max-w-40rem relative text-dark text-16px'
+        style={{ cursor: 'pointer' }}
+        id='enter-animationtype'>
         <Select
           value={selectedFillMode}
           onChange={onFillModechangeSelect}
