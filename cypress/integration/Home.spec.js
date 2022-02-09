@@ -51,4 +51,14 @@ describe('Home Screen Unit test', () => {
       .should('have.attr', 'style')
       .and('include', 'https://source.unsplash.com/random')
   })
+  it('render the testimonial section', () => {
+    cy.get('#testimonial').should('exist').scrollIntoView({ duration: 2000 }).should('be.visible')
+    cy.get('#creator-memoji-1')
+      .should('exist')
+      .should('be.visible')
+      .should('have.attr', 'alt')
+      .then((alttext) => {
+        expect(alttext).contains('Severin Glaser - Memoji 1', { matchCase: false })
+      })
+  })
 })

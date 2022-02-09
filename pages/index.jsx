@@ -2,6 +2,7 @@ import Hero from '../components/LandingPage/Hero'
 import News from '../components/LandingPage/News'
 import Presentation from '../components/LandingPage/Presentation'
 import Support from '../components/LandingPage/Support'
+import Testimonial from '../components/LandingPage/Testimonial'
 import Bubbles from '../components/reusable/Bubbles'
 
 import Layout from '../components/reusable/Layout'
@@ -14,6 +15,7 @@ export default function HomePage() {
         <Presentation />
         <Support />
         <News />
+        <Testimonial />
         <Bubbles />
       </Layout>
     </div>
