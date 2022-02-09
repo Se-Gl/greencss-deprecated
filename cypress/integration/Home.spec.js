@@ -5,7 +5,6 @@ describe('Home Screen Unit test', () => {
   it('hover hero image', () => {
     cy.get('#heroimage').should('be.visible').should('exist').trigger('mousemove', 50, 50)
     cy.get('#heroimage-hand').should('have.attr', 'style')
-    // .should('contain', 'transform: translateX(600px) translateY(50px)')
   })
   it('renders the logo', () => {
     cy.get('#omenCSS_logo').should('be.visible').should('exist')
@@ -33,5 +32,16 @@ describe('Home Screen Unit test', () => {
     cy.get('#production').should('exist').should('be.visible')
     cy.get('#animated').should('exist').should('be.visible')
     cy.get('#production').should('exist').should('be.visible')
+  })
+  it('reveals supporters section with animation', () => {
+    cy.get('#logo-1').should('exist').should('not.be.visible')
+    cy.get('#logo-2').should('exist').should('not.be.visible')
+    cy.get('#logo-3').should('exist').should('not.be.visible')
+    cy.get('#logo-4').should('exist').should('not.be.visible')
+    cy.get('#supporters').scrollIntoView({ duration: 2000 })
+    cy.get('#logo-1').should('exist').should('be.visible')
+    cy.get('#logo-2').should('exist').should('be.visible')
+    cy.get('#logo-3').should('exist').should('be.visible')
+    cy.get('#logo-4').should('exist').should('be.visible')
   })
 })
