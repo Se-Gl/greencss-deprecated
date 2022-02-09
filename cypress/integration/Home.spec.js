@@ -61,4 +61,9 @@ describe('Home Screen Unit test', () => {
         expect(alttext).contains('Severin Glaser - Memoji 1', { matchCase: false })
       })
   })
+  it('render dummy doc section and cards', () => {
+    cy.get('#service-section').should('exist').scrollIntoView({ duration: 2000 })
+    cy.get('#doc-1').contains('User Interface Design', { matchCase: false })
+    cy.get('#doc-1 div div div svg').should('exist')
+  })
 })
