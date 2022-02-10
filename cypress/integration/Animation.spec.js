@@ -14,6 +14,9 @@ describe('Animation Screen Unit test', () => {
     cy.get('#back-button').click()
     cy.url().should('be.equal', 'http://localhost:3000/docs/animation')
   })
+  it('renders the handcrafted svg', () => {
+    cy.get('#handcrafted-svg').should('be.visible').should('exist')
+  })
 })
 
 describe('Animation Screen Unit test', () => {
