@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import BlogLayout from '../../components/blog/BlogLayout'
 import Layout from '../../components/reusable/Layout'
 import BlogCard from '../../components/blog/BlogCard'
+import { sortByDate } from '../../utils/SortByDate'
 
 export default function BlogIndex({ posts }) {
   return (
@@ -16,7 +17,9 @@ export default function BlogIndex({ posts }) {
           </p>
         </div>
         <BlogLayout>
-          <BlogCard />
+          {posts.map((post, index) => (
+            <BlogCard key={index} post={post} />
+          ))}
         </BlogLayout>
       </div>
     </Layout>
@@ -41,7 +44,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts
+      posts: posts.sort(sortByDate).slice(0, 6)
     }
   }
 }
