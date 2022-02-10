@@ -1,6 +1,24 @@
 describe('Animation Screen Unit test', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/animation')
+    cy.visit('http://localhost:3000/docs/animation')
+  })
+  it('renders the animation index page', () => {
+    cy.get('#animation-main')
+      .should('be.visible')
+      .should('exist')
+      .contains('Handmade, crafted animations', { matchCase: false })
+  })
+  it('click buttons and redirect forwards and back', () => {
+    cy.get('#visit-animation-examples-1').click()
+    cy.url().should('be.equal', 'http://localhost:3000/docs/animation/example')
+    cy.get('#back-button').click()
+    cy.url().should('be.equal', 'http://localhost:3000/docs/animation')
+  })
+})
+
+describe('Animation Screen Unit test', () => {
+  beforeEach(() => {
+    cy.visit('http://localhost:3000/docs/animation/example')
   })
   it('renders the first react select input', () => {
     cy.get('#animate').should('be.visible').should('exist')
