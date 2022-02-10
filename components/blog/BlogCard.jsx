@@ -4,14 +4,14 @@ import tinycolor from 'tinycolor2'
 import { LinkButton } from '../reusable/Button'
 
 export default function BlogCard({ post }) {
-  let IMAGE_URL = 'https://source.unsplash.com/random'
+  let IMAGE_URL = post.frontmatter.cover_image
   const { data, loading } = usePalette(IMAGE_URL)
   const vibrantColor = data.vibrant
   const color = tinycolor(`${vibrantColor}`)
   const isDark = color.isDark()
 
   return (
-    <>
+    <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px' id={`${post.frontmatter.title}`}>
       {loading ? (
         <Loader />
       ) : (
@@ -29,13 +29,15 @@ export default function BlogCard({ post }) {
               `}>
               <h1 className='text-50px font-bold leading-100per'>{post.frontmatter.title}</h1>
               <p className='text-25px font-normal mt-25px'>{post.frontmatter.excerpt}</p>
-              <LinkButton className={`absolute bottom-0 mt-50px ${isDark && 'text-dark'} ${!isDark && 'text-light'}`}>
-                Check more
+              <LinkButton
+                className={`absolute bottom-0 mt-50px ${isDark && 'text-dark'} ${!isDark && 'text-light'}`}
+                href={`/blog/${post.slug}`}>
+                Read more
               </LinkButton>
             </div>
           </div>
         </div>
       )}
-    </>
+    </div>
   )
 }
