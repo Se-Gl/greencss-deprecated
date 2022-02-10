@@ -2,7 +2,7 @@
 title: 'Hello World!'
 date: 'Feb 10. 2022'
 excerpt: 'A simple Hello World sub header.'
-cover_image: 'https://source.unsplash.com/random'
+cover_image: 'https://res.cloudinary.com/omencss/image/upload/v1644523509/blog/plant_iex1jv.jpg'
 category: 'Animation'
 author: 'Severin Glaser'
 author_image: ''

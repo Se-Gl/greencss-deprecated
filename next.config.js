@@ -7,7 +7,7 @@ module.exports = {
     includePaths: [path.join(__dirname, 'styles')]
   },
   experimental: {
-    urlImports: ['https://source.unsplash.com/random']
+    urlImports: ['https://source.unsplash.com/random', 'https://res.cloudinary.com']
   }
 }
 
