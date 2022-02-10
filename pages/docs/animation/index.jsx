@@ -7,12 +7,14 @@ export default function AnimationIndexPage() {
     <div className='overflow-x-hidden'>
       <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'>
         <div className='mt-10rem min-w-100per relative' id='animation-main'>
-          <LinkButton
-            className='mb-25px absolute top-0 right-0'
-            href='/docs/animation/example'
-            id='visit-animation-examples-1'>
-            Examples
-          </LinkButton>
+          <div className='flex'>
+            <div className='mr-auto hidden'></div>
+            <div className='ml-auto'>
+              <LinkButton href='/docs/animation/example' id='visit-animation-examples-1'>
+                Examples
+              </LinkButton>
+            </div>
+          </div>
           <div className='m-auto max-w-50rem'>
             <h1 className='font-bold text-50px leading-120per mb-25px'>Handmade, crafted animations</h1>
             <HandCrafted />
