@@ -13,12 +13,12 @@ export default function Header() {
             <Logo />
           </a>
         </Link>
-        <ul className='flex text-16px sm:text-12px sm:mx-10px text-dark pl-100px'>
+        <ul className='flex text-16px sm:text-12px sm:mx-10px text-dark ml-100px sm:ml-0px'>
           <li>Home</li>
           <li className='sm:mx-10px mx-25px'>Brand</li>
           <li>Blog</li>
         </ul>
-        <LinkButton className='pl-100px'>Search</LinkButton>
+        <LinkButton className='ml-100px'>Search</LinkButton>
       </nav>
     </header>
   )
