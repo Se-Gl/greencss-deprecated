@@ -18,7 +18,7 @@ export default function BlogIndex({ posts }) {
         </div>
         <BlogLayout>
           {posts.map((post, index) => (
-            <BlogCard key={index} post={post} />
+            <BlogCard key={index} post={post} index={index} />
           ))}
         </BlogLayout>
       </div>
