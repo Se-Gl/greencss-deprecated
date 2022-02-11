@@ -24,7 +24,7 @@ export function LinkButton({ href = '/', className, type = 'button', onClick, id
           type={type}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}>
-          <a>{children}</a>
+          {children}
           {!hover && <ChevronRight className='my-auto ml-5px' />}
           {hover && <ChevronRightHover className='my-auto ml-5px' />}
         </button>

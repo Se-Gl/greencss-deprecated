@@ -1,8 +1,17 @@
+import dynamic from 'next/dynamic'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { VsStyle } from '../../data/SynatxStyle'
 import Layout from '../../components/reusable/Layout'
 import { BackButton } from '../../components/reusable/Button'
+import Loader from '../../components/logo/Loader'
+
+const ReactMarkdown = dynamic(() => import('react-markdown').then((mod) => mod.default), {
+  ssr: false,
+  loading: () => <Loader />
+})
 
 export default function BlogPostPage({
   frontmatter: { title, excerpt, category, date, cover_image, author },
@@ -16,11 +25,34 @@ export default function BlogPostPage({
       keywords={`${category}, omenCSS, css, omen css`}
       author={author}
       className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'>
-      <div className='mb-10rem min-w-100per'>
+      <div className='mb-10rem min-w-100per' id={`blog-${slug}`}>
         <BackButton>Back</BackButton>
-        <div className='m-auto max-w-50rem mb-10rem'>
+        <div className='m-auto max-w-75rem mb-10rem'>
           <h1 className='font-bold text-50px mb-50px leading-120per'>{title}</h1>
-          <p className='text-25px font-normal mt-25px'>{excerpt}</p>
+          <h3>{excerpt}</h3>
+          {/*  eslint-disable  */}
+          <ReactMarkdown
+            children={content}
+            components={{
+              code({ node, inline, className, children, ...props }) {
+                const match = /language-(\w+)/.exec(className || '')
+                return !inline && match ? (
+                  <SyntaxHighlighter
+                    children={String(children).replace(/\n$/, '')}
+                    style={VsStyle}
+                    language={match[1]}
+                    PreTag='div'
+                    {...props}
+                  />
+                ) : (
+                  <code className={className} {...props}>
+                    {children}
+                  </code>
+                )
+              }
+            }}
+          />
+          {/* eslint-enable */}
         </div>
       </div>
     </Layout>
