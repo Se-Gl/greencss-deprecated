@@ -12,7 +12,7 @@ export default function Support() {
   })
 
   return (
-    <div className='my-20rem sm:my-100px md:my-100px text-center' id='supporters'>
+    <section className='my-20rem sm:my-100px md:my-100px text-center' id='supporters'>
       <h1 className='font-bold text-50px mb-50px'>Supported by</h1>
       <div className='m-auto grid grid-col-4 gap-30px sm:gap-0px sm:grid-col-2 md:grid-col-2'>
         <div
@@ -48,6 +48,6 @@ export default function Support() {
           <h1 className='text-50px font-bold'>Logo 4</h1>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

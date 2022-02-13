@@ -5,7 +5,7 @@ import { LinkButton } from '../reusable/Button'
 
 export default function Hero() {
   return (
-    <>
+    <section id='hero'>
       <div className='relative sm:display-none'>
         <div className='absolute' style={{ right: '-66%', top: '-17px' }}>
           <Blobs style={{ marginTop: '-500px' }} />
@@ -43,6 +43,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   )
 }

@@ -18,7 +18,7 @@ export default function Presentation() {
   })
 
   return (
-    <div className='my-20rem sm:my-0px md:my-0px' id='presentation'>
+    <section className='my-20rem sm:my-0px md:my-0px' id='presentation'>
       <div className='m-auto grid grid-col-3 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1 lg:grid-col-2'>
         <div
           ref={ref}
@@ -77,6 +77,6 @@ export default function Presentation() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
