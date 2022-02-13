@@ -6,6 +6,7 @@ import Layout from '../../../components/reusable/Layout'
 import BlogCard from '../../../components/blog/BlogCard'
 import { sortByDate } from '../../../utils/SortByDate'
 import { POSTS_PER_PAGE } from '../../../config'
+import Pagination from '../../../components/reusable/Pagination'
 
 export default function BlogIndex({ posts, numPages, currentPage }) {
   return (
@@ -22,6 +23,7 @@ export default function BlogIndex({ posts, numPages, currentPage }) {
             <BlogCard key={index} post={post} index={index} />
           ))}
         </BlogLayout>
+        <Pagination currentPage={currentPage} numPages={numPages} />
       </div>
     </Layout>
   )
