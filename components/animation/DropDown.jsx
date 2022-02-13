@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import Select from 'react-select'
-import { animations, fillmode, time } from '../../data/animations'
-import Copy from '../icon/Copy'
-import { Button } from '../reusable/Button'
+import { animations, fillmode, time } from '@/data/animations'
+import Copy from '@/components/icon/Copy'
+import { Button } from '@/components/reusable/Button'
 
 export default function DropDown() {
   const [selectedItem, setSelectedItem] = useState(animations[0])

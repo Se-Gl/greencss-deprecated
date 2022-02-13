@@ -1,10 +1,10 @@
 import Link from 'next/link'
-import { usePalette } from 'react-palette'
-import Loader from '../logo/Loader'
 import tinycolor from 'tinycolor2'
-import { LinkButton } from '../reusable/Button'
+import { usePalette } from 'react-palette'
+import Loader from '@/components/logo/Loader'
+import { LinkButton } from '@/components/reusable/Button'
 
-import useInView from '../../hooks/InView/scrollView'
+import useInView from '@/hooks/InView/scrollView'
 
 export default function BlogCard({ post, index }) {
   let IMAGE_URL = post.frontmatter.cover_image

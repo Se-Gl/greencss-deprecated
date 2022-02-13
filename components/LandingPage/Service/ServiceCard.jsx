@@ -1,5 +1,5 @@
-import Pen from '../../icon/LandingPage/Service/Pen'
-import { LinkButton } from '../../reusable/Button'
+import Pen from '@/components/icon/LandingPage/Service/Pen'
+import { LinkButton } from '@/components/reusable/Button'
 
 export default function ServiceCard() {
   return (

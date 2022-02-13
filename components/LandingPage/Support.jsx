@@ -1,5 +1,5 @@
 import React from 'react'
-import useInView from '../../hooks/InView/scrollView'
+import useInView from '@/hooks/InView/scrollView'
 
 export default function Support() {
   const [ref, isVisible] = useInView({

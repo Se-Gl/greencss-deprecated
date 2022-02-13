@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 
-const BlogLayout = dynamic(() => import('../../blog/BlogLayout'))
-const BlogCard = dynamic(() => import('../../blog/BlogCard'))
+const BlogLayout = dynamic(() => import('@/components/blog/BlogLayout'))
+const BlogCard = dynamic(() => import('@/components/blog/BlogCard'))
 
 export default function News({ posts }) {
   return (

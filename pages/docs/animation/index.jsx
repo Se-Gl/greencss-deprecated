@@ -1,6 +1,6 @@
-import HandCrafted from '../../../components/icon/Animation/Handcrafted'
-import { LinkButton } from '../../../components/reusable/Button'
-import Layout from '../../../components/reusable/Layout'
+import HandCrafted from '@/components/icon/Animation/Handcrafted'
+import { LinkButton } from '@/components/reusable/Button'
+import Layout from '@/components/reusable/Layout'
 
 export default function AnimationIndexPage() {
   return (

@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import Blobs from '../icon/LandingPage/Blobs'
-import HeroImage from '../icon/LandingPage/HeroImage'
-import { LinkButton } from '../reusable/Button'
+import Blobs from '@/components/icon/LandingPage/Blobs'
+import HeroImage from '@/components/icon/LandingPage/HeroImage'
+import { LinkButton } from '@/components/reusable/Button'
 
 export default function Hero() {
   return (

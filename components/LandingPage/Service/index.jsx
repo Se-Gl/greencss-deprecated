@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import useInView from '../../../hooks/InView/scrollView'
+import useInView from '@/hooks/InView/scrollView'
 
 const ServiceCard = dynamic(() => import('./ServiceCard'))
 

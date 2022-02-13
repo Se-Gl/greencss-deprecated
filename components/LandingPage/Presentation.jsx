@@ -1,5 +1,5 @@
 import React from 'react'
-import useInView from '../../hooks/InView/scrollView'
+import useInView from '@/hooks/InView/scrollView'
 import CLine from './CLine'
 import SLine from './SLine'
 

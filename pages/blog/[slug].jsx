@@ -4,10 +4,10 @@ import path from 'path'
 import matter from 'gray-matter'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 // import { js, jsx, javascript, css, sass, scss, html } from 'react-syntax-highlighter/dist/cjs/languages/prism'
-import { VsStyle } from '../../data/SynatxStyle'
-import Layout from '../../components/reusable/Layout'
-import { BackButton } from '../../components/reusable/Button'
-import Loader from '../../components/logo/Loader'
+import { VsStyle } from '@/data/SynatxStyle'
+import Layout from '@/components/reusable/Layout'
+import { BackButton } from '@/components/reusable/Button'
+import Loader from '@/components/logo/Loader'
 
 const ReactMarkdown = dynamic(() => import('react-markdown').then((mod) => mod.default), {
   ssr: false,

@@ -1,6 +1,6 @@
-import DropDown from '../../../components/animation/DropDown'
-import { BackButton } from '../../../components/reusable/Button'
-import Layout from '../../../components/reusable/Layout'
+import DropDown from '@/components/animation/DropDown'
+import { BackButton } from '@/components/reusable/Button'
+import Layout from '@/components/reusable/Layout'
 
 export default function AnimationPage() {
   return (

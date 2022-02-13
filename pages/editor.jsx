@@ -2,9 +2,9 @@ import '@uiw/react-md-editor/markdown-editor.css'
 import dynamic from 'next/dynamic'
 import { useState, useEffect } from 'react'
 import rehypeSanitize from 'rehype-sanitize'
-import Loader from '../components/logo/Loader'
-import Layout from '../components/reusable/Layout'
-import { Button } from '../components/reusable/Button'
+import Loader from '@/components/logo/Loader'
+import Layout from '@/components/reusable/Layout'
+import { Button } from '@/components/reusable/Button'
 
 const MDEditor = dynamic(() => import('@uiw/react-md-editor').then((mod) => mod.default), {
   ssr: false,

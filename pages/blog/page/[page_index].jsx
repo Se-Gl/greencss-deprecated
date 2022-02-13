@@ -1,12 +1,12 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import BlogLayout from '../../../components/blog/BlogLayout'
-import Layout from '../../../components/reusable/Layout'
-import BlogCard from '../../../components/blog/BlogCard'
-import { sortByDate } from '../../../utils/SortByDate'
-import { POSTS_PER_PAGE } from '../../../config'
-import Pagination from '../../../components/reusable/Pagination'
+import BlogLayout from '@/components/blog/BlogLayout'
+import Layout from '@/components/reusable/Layout'
+import BlogCard from '@/components/blog/BlogCard'
+import { sortByDate } from '@/utils/SortByDate'
+import { POSTS_PER_PAGE } from '@/config/index'
+import Pagination from '@/components/reusable/Pagination'
 
 export default function BlogIndex({ posts, numPages, currentPage }) {
   return (
