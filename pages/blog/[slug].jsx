@@ -2,7 +2,8 @@ import dynamic from 'next/dynamic'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
+// import { js, jsx, javascript, css, sass, scss, html } from 'react-syntax-highlighter/dist/cjs/languages/prism'
 import { VsStyle } from '../../data/SynatxStyle'
 import Layout from '../../components/reusable/Layout'
 import { BackButton } from '../../components/reusable/Button'
@@ -12,6 +13,13 @@ const ReactMarkdown = dynamic(() => import('react-markdown').then((mod) => mod.d
   ssr: false,
   loading: () => <Loader />
 })
+
+// SyntaxHighlighter.registerLanguage('jsx', jsx)
+// SyntaxHighlighter.registerLanguage('js', jsx)
+// SyntaxHighlighter.registerLanguage('javascript', javascript)
+// SyntaxHighlighter.registerLanguage('sass', sass)
+// SyntaxHighlighter.registerLanguage('scss', scss)
+// SyntaxHighlighter.registerLanguage('css', css)
 
 export default function BlogPostPage({
   frontmatter: { title, excerpt, category, date, cover_image, author },
@@ -37,13 +45,15 @@ export default function BlogPostPage({
               code({ node, inline, className, children, ...props }) {
                 const match = /language-(\w+)/.exec(className || '')
                 return !inline && match ? (
-                  <SyntaxHighlighter
-                    children={String(children).replace(/\n$/, '')}
-                    style={VsStyle}
-                    language={match[1]}
-                    PreTag='div'
-                    {...props}
-                  />
+                  <>
+                    <SyntaxHighlighter
+                      children={String(children).replace(/\n$/, '')}
+                      style={VsStyle}
+                      language={match[1]}
+                      PreTag='div'
+                      {...props}
+                    />
+                  </>
                 ) : (
                   <code className={className} {...props}>
                     {children}

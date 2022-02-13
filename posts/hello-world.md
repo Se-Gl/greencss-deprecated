@@ -27,9 +27,16 @@ consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
 Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
 procul fugitque corpora iugales!
 
-```shell
-var ethics_font_drive = cycleSystemProgram + deprecatedTransferIp.ide(3) / rgb + nybbleBaseband;
-permalinkCertificateMacintosh(ergonomicsIsdnDns); boot = bridgeDaemonActive;
+```css
+.bubbles {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
 ```
 
 ## O contra diu
