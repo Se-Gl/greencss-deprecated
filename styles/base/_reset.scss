@@ -3,7 +3,7 @@
 html {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
     Droid Sans, Helvetica Neue, sans-serif !important;
-  color: #03000a;
+  color: c.$black;
 }
 // default font
 h1 {
@@ -27,7 +27,7 @@ h3 {
 p,
 a,
 ol {
-  color: #03000a;
+  color: c.$black;
   margin-block: 25px;
   font-size: 25px;
   font-weight: normal;
@@ -36,19 +36,19 @@ ol {
 }
 
 pre {
-  background-color: #f0eef5;
+  background-color: c.$white;
   overflow: auto;
   border-radius: 1rem;
   font-size: 15px;
-  font-family: Consolas, monospace;
+  font-family: 'Courier New', Courier, monospace;
   margin-block: 50px;
 }
 
 ::selection {
-  color: c.$dark;
-  background: rgba(207, 204, 249, 0.5);
+  color: c.$light;
+  background: c.$purple;
 }
 ::-moz-selection {
-  color: c.$dark;
-  background: rgba(207, 204, 249, 0.5);
+  color: c.$light;
+  background: c.$purple;
 }
