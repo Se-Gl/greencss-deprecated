@@ -1,4 +1,4 @@
-describe('Animation Screen Unit test', () => {
+describe('Brand Screen Unit test', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000/brand')
   })
@@ -14,5 +14,25 @@ describe('Animation Screen Unit test', () => {
   })
   it('renders the handcrafted svg', () => {
     cy.get('#brandbook-svg').should('be.visible').should('exist')
+  })
+})
+
+describe('Brand - Logo Screen Unit test', () => {
+  beforeEach(() => {
+    cy.visit('http://localhost:3000/brand/logo')
+    cy.exec('rm -f cypress/downloads/*', { log: true, failOnNonZeroExit: false })
+  })
+  it('renders the animation index page', () => {
+    cy.get('#brand-logo-page').should('be.visible').should('exist').contains('Logo', { matchCase: false })
+  })
+  it('renders the dark BrandSection Component', () => {
+    cy.get('#dark-section').should('be.visible').should('exist')
+  })
+  it('renders the light BrandSection Component', () => {
+    cy.get('#light-section').should('be.visible').should('exist')
+  })
+  it('download dark logo', () => {
+    cy.get('#download-dark-logo').should('exist').click().wait(2000)
+    cy.readFile('cypress/downloads/omencss_logo_dark.svg').should('exist')
   })
 })

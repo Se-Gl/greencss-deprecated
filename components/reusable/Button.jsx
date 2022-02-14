@@ -101,3 +101,31 @@ export function BackButton({ className, type = 'button', id = 'back-button', chi
     </div>
   )
 }
+
+export function DownloadButton({ href = '/', className, type = 'button', id = 'downloadbutton', children }) {
+  const [hover, setHover] = useState(false)
+
+  function handleMouseOver() {
+    setHover(true)
+  }
+  function handleMouseOut() {
+    setHover(false)
+  }
+  return (
+    <a href={href} download style={{ textDecoration: 'none' }}>
+      <div className='flex sm:min-w-90px sm:min-h-30px min-w-15rem min-h-50px responsive z-99'>
+        <button
+          id={id}
+          className={`${className} flex my-auto text-center text-16px font-bold bg-transparent`}
+          style={{ border: 'none', cursor: 'pointer' }}
+          type={type}
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}>
+          {children}
+          {!hover && <ChevronRight className='my-auto ml-5px' />}
+          {hover && <ChevronRightHover className='my-auto ml-5px' />}
+        </button>
+      </div>
+    </a>
+  )
+}
