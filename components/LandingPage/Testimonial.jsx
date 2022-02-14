@@ -14,7 +14,7 @@ export default function Testimonial() {
           <p className='text-25px font-normal text-light'>omenCSS</p>
         </div>
 
-        <div className='absolute left-0' style={{ top: '-10%' }}>
+        <div className='absolute left-0per' style={{ top: '-10%' }}>
           <Image
             src='/images/landingpage/top-left-min.png'
             alt='Severin Glaser - Memoji 1'
@@ -23,7 +23,7 @@ export default function Testimonial() {
             id='creator-memoji-1'
           />
         </div>
-        <div className='absolute right-0' style={{ top: '-10%' }}>
+        <div className='absolute right-0per' style={{ top: '-10%' }}>
           <Image
             src='/images/landingpage/top-right-min.png'
             alt='Severin Glaser - Memoji 2'
@@ -32,7 +32,7 @@ export default function Testimonial() {
             id='creator-memoji-2'
           />
         </div>
-        <div className='absolute right-0 sm:hidden' style={{ bottom: '-1%' }}>
+        <div className='absolute right-0per sm:hidden' style={{ bottom: '-1%' }}>
           <Image
             src='/images/landingpage/bottom-right-min.png'
             alt='Severin Glaser - Memoji 3'
@@ -41,7 +41,7 @@ export default function Testimonial() {
             id='creator-memoji-3'
           />
         </div>
-        <div className='absolute left-0 mt-50px sm:hidden' style={{ bottom: '-1.3%' }}>
+        <div className='absolute left-0per mt-50px sm:hidden' style={{ bottom: '-1.3%' }}>
           <Image
             src='/images/landingpage/bottom-left-min.png'
             alt='Severin Glaser - Memoji 4'
