@@ -83,7 +83,7 @@ export default function DropDown() {
         </Button>
       </div>
       <div className='text-center mt-50px'>
-        <pre className='relative'>
+        <pre className='relative overflow-y-hidden'>
           <code className='monospace text-16px bg-dark text-light block overflow-x-auto p-15px text-left font-bolder flex items-center min-h-50px'>
             {csscode}
           </code>
