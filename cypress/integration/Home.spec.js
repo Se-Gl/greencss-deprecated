@@ -2,12 +2,8 @@ describe('Home Screen Unit test', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
   })
-  it('hover hero image', () => {
-    cy.get('#heroimage').should('be.visible').should('exist').trigger('mousemove', 50, 50)
-    cy.get('#heroimage-hand').should('have.attr', 'style')
-  })
-  it('renders the logo', () => {
-    cy.get('#omenCSS_logo').should('be.visible').should('exist')
+  it('hero image exists', () => {
+    cy.get('#heroimage').should('be.visible').should('exist').should('have.attr', 'style')
   })
   it('renders the header', () => {
     cy.get('main div h1').contains('A classy way to write CSS design', { matchCase: false })
