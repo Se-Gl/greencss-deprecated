@@ -2,8 +2,11 @@ describe('Home Screen Unit test', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
   })
-  it('hero image exists', () => {
-    cy.get('#heroimage').should('be.visible').should('exist')
+  it('hero image slider exists', () => {
+    cy.get('#iMac').trigger('mouseover').should('exist').click()
+    cy.get('#MacBook').trigger('mouseover').should('exist').should('be.visible')
+    cy.get('#iPad-Pro').should('exist')
+    cy.get('#iMac').should('exist')
   })
   it('renders the header', () => {
     cy.get('main div h1').contains('A classy way to write CSS design', { matchCase: false })

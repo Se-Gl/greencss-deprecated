@@ -2,6 +2,15 @@ import Image from 'next/image'
 import Blobs from '@/components/icon/LandingPage/Blobs'
 import { LinkButton } from '@/components/reusable/Button'
 import HeroHand from '../icon/LandingPage/HeroHand'
+import Carousel from '../carousel/Carousel'
+import { CarouselItem } from '../carousel/Carousel'
+
+const sliderItems = [
+  { url: 'iMac-min.png', width: '800', height: '631', alt: 'OmenCSS iMac', id: 'iMac' },
+  { url: 'MacBook-min.png', width: '800', height: '448', alt: 'OmenCSS MacBook', id: 'MacBook' },
+  { url: 'iPad-Pro-min.png', width: '433', height: '600', alt: 'OmenCSS iPad Pro', id: 'iPad-Pro' },
+  { url: 'iPhone-X-min.png', width: '298', height: '600', alt: 'OmenCSS iMac', id: 'iMac' }
+]
 
 export default function Hero() {
   return (
@@ -26,23 +35,28 @@ export default function Hero() {
           </div>
         </div>
         <div className='col-span-1 min-h-75vh sm:col-span-full sm:row-start-1 sm:col-end-1 md:col-span-full md:row-start-1 md:col-end-1'>
-          <div className='m-auto'>
-            <div className='flex h-75vh'>
-              <div className='m-auto fade-in animation-duration-1200ms animation-forwards opacity-0'>
-                <Image
-                  className='relative z-1'
-                  src='/images/iphone-13.png'
-                  alt='OmenCSS Iphone 13 Pro Max'
-                  width={212.71}
-                  height={459.87}
-                  id='iphone-13-pro-max'
-                />
-
-                <div className='relative z-2 ml-20px sm:ml-25px' style={{ marginTop: '-300px' }}>
-                  <HeroHand width='600' height='398' />
-                </div>
-              </div>
+          <div className='flex h-75vh'>
+            <div className='m-auto fade-in animate animation-forwards animation-delay-500ms'>
+              <Carousel>
+                {sliderItems.map((item) => {
+                  return (
+                    <CarouselItem key={item.url}>
+                      <Image
+                        className='relative z-1'
+                        src={`/images/landingpage/${item.url}`}
+                        alt={`${item.alt}`}
+                        width={item.width}
+                        height={item.height}
+                        id={`${item.id}`}
+                      />{' '}
+                    </CarouselItem>
+                  )
+                })}
+              </Carousel>
             </div>
+          </div>
+          <div className='relative z-2 ml-20px sm:ml-25px' style={{ marginTop: '-300px', pointerEvents: 'none' }}>
+            <HeroHand width='600' height='398' />
           </div>
         </div>
       </div>

@@ -6,8 +6,8 @@ function HeroHand({ width = '300', height = '199' }) {
       this.querySelectorAll('.moving-img').forEach((layer) => {
         const speed = layer.getAttribute('data-speed')
 
-        const x = ((window.innerWidth - e.pageX) / window.innerWidth) * speed * 20
-        const y = ((window.innerHeight - e.pageY) / window.innerHeight) * speed * 20
+        const x = ((window.innerWidth - e.pageX) / window.innerWidth) * speed * 50
+        const y = ((window.innerHeight - e.pageY) / window.innerHeight) * speed * 50
 
         layer.style.transform = 'translateX(' + x + 'px) translateY(' + y + 'px)'
       })
