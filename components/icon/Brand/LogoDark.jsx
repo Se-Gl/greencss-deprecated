@@ -1,9 +1,9 @@
-function LogoDark() {
+function LogoDark({ width = '401', height = '400' }) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='401'
-      height='400'
+      width={width}
+      height={height}
       fill='none'
       viewBox='0 0 401 400'
       id='omenCSS-logo-dark'>

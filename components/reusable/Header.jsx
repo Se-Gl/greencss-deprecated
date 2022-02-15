@@ -1,11 +1,21 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useState } from 'react'
 import { LinkButton } from './Button'
-import Logo from '../logo/Logo'
 import LogoLight from '../icon/Brand/LogoLight'
+import LogoDark from '../icon/Brand/LogoDark'
+
+const menu = [
+  { title: 'Home', path: '/' },
+  { title: 'Brand', path: '/brand' },
+  { title: 'Blog', path: '/blog' }
+]
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const router = useRouter()
+  const isHome = router.pathname === '/' ? 'text-white' : 'text-black'
+
   return (
     <header className='container'>
       <nav
@@ -13,35 +23,34 @@ export default function Header() {
         style={{ maxWidth: '110rem' }}>
         <Link href='/'>
           <a>
-            <LogoLight width='50px' height='50px' />
+            {router.pathname === '/' ? (
+              <LogoLight width='50px' height='50px' />
+            ) : (
+              <LogoDark width='50px' height='50px' />
+            )}
           </a>
         </Link>
-        <ul className='flex text-16px text-white'>
+        <ul className='flex text-16px'>
           <li>
-            <Link href='/'>
-              <a className='text-purple text-15px font-600' style={{ textDecoration: 'none' }}>
-                Home
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href='/brand'>
-              <a className='text-purple text-15px mx-25px font-600' style={{ textDecoration: 'none' }}>
-                Brand
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href='/blog'>
-              <a className='text-purple text-15px font-600' style={{ textDecoration: 'none' }}>
-                Blog
-              </a>
-            </Link>
+            {menu.map((item, index) => {
+              return (
+                <Link key={index} href={item.path}>
+                  <a
+                    className={`mr-15px text-15px font-500 ${
+                      router.pathname === item.path ? 'text-purple font-800' : isHome
+                    }`}
+                    style={{ textDecoration: 'none' }}>
+                    {item.title}
+                  </a>
+                </Link>
+              )
+            })}
           </li>
         </ul>
-        <LinkButton className='text-purple'>Search</LinkButton>
+        <LinkButton className={`${isHome}`}>Search</LinkButton>
       </nav>
 
+      {/* Mobile Menu */}
       <nav className='z-100 min-h-10vh display-none sm:block'>
         <div
           className={`fixed top-0per right-0per z-99 m-30px hamburger ${isOpen ? 'is-active' : ''}`}
@@ -61,33 +70,20 @@ export default function Header() {
               }`}>
               <Link href='/'>
                 <a onClick={() => setIsOpen(false)}>
-                  <Logo />
+                  <LogoDark width='50px' height='50px' />
                 </a>
               </Link>
               <ul className='text-16px text-black flex justify-center items-center min-h-100per flex-col text-left'>
                 <li>
-                  <Link href='/'>
-                    <a style={{ textDecoration: 'none' }}>
-                      <h3>Home</h3>
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/brand'>
-                    <a style={{ textDecoration: 'none' }}>
-                      <h3>Brand</h3>
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/blog'>
-                    <a style={{ textDecoration: 'none' }}>
-                      <h3>Blog</h3>
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <LinkButton>Search</LinkButton>
+                  {menu.map((item, index) => {
+                    return (
+                      <Link key={index} href={item.path}>
+                        <a style={{ textDecoration: 'none', cursor: 'pointer' }}>
+                          <h3>{item.title}</h3>
+                        </a>
+                      </Link>
+                    )
+                  })}
                 </li>
               </ul>
             </div>

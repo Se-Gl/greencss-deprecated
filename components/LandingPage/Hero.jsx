@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import Blobs from '@/components/icon/LandingPage/Blobs'
-import HeroImage from '@/components/icon/LandingPage/HeroImage'
 import { LinkButton } from '@/components/reusable/Button'
 
 export default function Hero() {
@@ -20,7 +18,6 @@ export default function Hero() {
               <h1 className='font-800 text-50px leading-120per' style={{ maxWidth: '400px' }}>
                 A classy way to write CSS design
               </h1>
-
               <LinkButton className='mt-50px text-white'>Check more</LinkButton>
             </div>
           </div>
