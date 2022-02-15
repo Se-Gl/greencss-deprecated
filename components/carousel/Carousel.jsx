@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useSwipeable } from 'react-swipeable'
 
 export const CarouselItem = ({ children, width, className }) => {
   return (
@@ -36,8 +37,14 @@ const Carousel = ({ children }) => {
     }
   })
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => updateIndex(activeIndex + 1),
+    onSwipedRight: () => updateIndex(activeIndex - 1)
+  })
+
   return (
     <div
+      {...handlers}
       className='overflow-hidden'
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
