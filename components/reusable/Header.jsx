@@ -69,7 +69,7 @@ export default function Header() {
                   : 'display-none'
               }`}>
               <Link href='/'>
-                <a onClick={() => setIsOpen(false)}>
+                <a onClick={() => setIsOpen(false)} className='fade-in animate animation-forwards'>
                   <LogoDark width='50px' height='50px' />
                 </a>
               </Link>
@@ -79,7 +79,12 @@ export default function Header() {
                     return (
                       <Link key={index} href={item.path}>
                         <a style={{ textDecoration: 'none', cursor: 'pointer' }}>
-                          <h3>{item.title}</h3>
+                          <h3
+                            className={`p-20px clip-inset-in-top animate animation-forwards animation-delay-${
+                              (index + 1) * 2
+                            }00ms`}>
+                            {item.title}
+                          </h3>
                         </a>
                       </Link>
                     )
@@ -93,3 +98,7 @@ export default function Header() {
     </header>
   )
 }
+
+// let animationStagger = isVisible
+// ? `clip-inset-in-top animate animation-forwards animation-delay-${index + 2}00ms`
+// : 'opacity-0per'
