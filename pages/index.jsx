@@ -13,10 +13,7 @@ export default function HomePage({ posts }) {
     <div className='overflow-x-hidden'>
       <div className='relative'>
         <div className='absolute right-0per top-0per'>
-          <div
-            id='heroimage'
-            className='bg-cover bg-no-repeat bg-center w-100vw h-100vh sm:h-80vh z-99'
-            style={{ backgroundImage: `url(images/hero-bg.svg)` }}></div>
+          <div id='heroimage' className='bg-cover bg-no-repeat bg-center w-100vw h-100vh sm:h-80vh z-99 bg-dark'></div>
         </div>
       </div>
       <Layout className='container min-h-100vh relative z-2'>

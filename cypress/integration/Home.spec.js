@@ -3,7 +3,7 @@ describe('Home Screen Unit test', () => {
     cy.visit('http://localhost:3000')
   })
   it('hero image exists', () => {
-    cy.get('#heroimage').should('be.visible').should('exist').should('have.attr', 'style')
+    cy.get('#heroimage').should('be.visible').should('exist')
   })
   it('renders the header', () => {
     cy.get('main div h1').contains('A classy way to write CSS design', { matchCase: false })
