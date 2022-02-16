@@ -24,7 +24,7 @@ export default function Presentation() {
           ref={ref}
           id='animated'
           className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
-            isVisible ? 'clip-inset-in-top animate animation-forwards' : 'opacity-0per'
+            isVisible ? 'fade-in animate animation-forwards' : 'opacity-0per'
           }`}>
           <div className='flex'>
             <div className='mt-35px' style={{ minHeight: '228px', minWidth: '10px' }}>
@@ -43,7 +43,7 @@ export default function Presentation() {
           ref={refTwo}
           id='responsive'
           className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
-            isVisibleTwo ? 'clip-inset-in-top animate animation-forwards animation-delay-200ms' : 'opacity-0per'
+            isVisibleTwo ? 'fade-in animate animation-forwards animation-delay-200ms' : 'opacity-0per'
           }`}>
           <div className='flex'>
             <div className='mt-35px' style={{ minHeight: '228px', minWidth: '11px' }}>
@@ -62,7 +62,7 @@ export default function Presentation() {
           ref={refThree}
           id='production'
           className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
-            isVisibleThree ? 'clip-inset-in-top animate animation-forwards animation-delay-400ms' : 'opacity-0per'
+            isVisibleThree ? 'fade-in animate animation-forwards animation-delay-400ms' : 'opacity-0per'
           }`}>
           <div className='flex'>
             <div className='mt-35px' style={{ minHeight: '228px', minWidth: '11px' }}>

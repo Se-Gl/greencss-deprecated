@@ -19,7 +19,7 @@ export default function BlogCard({ post, index }) {
   })
 
   let animationStagger = isVisible
-    ? `clip-inset-in-top animate animation-forwards animation-delay-${index + 2}00ms`
+    ? `clip-inset-in-left animate animation-forwards animation-delay-${(index + 1) * 2}00ms`
     : 'opacity-0per'
 
   return (

@@ -14,7 +14,7 @@ const menu = [
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const router = useRouter()
-  const isHome = router.pathname === '/' ? 'text-white' : 'text-black'
+  const isHome = router.pathname === '/' ? 'text-white sm:text-black md:text-black' : 'text-black'
 
   return (
     <header className='container'>

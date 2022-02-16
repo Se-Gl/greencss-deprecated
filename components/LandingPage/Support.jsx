@@ -19,7 +19,7 @@ export default function Support() {
           ref={ref}
           id='logo-1'
           className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
-            isVisible ? 'clip-inset-in-top animate animation-forwards' : 'opacity-0per'
+            isVisible ? 'fade-in animate animation-forwards' : 'opacity-0per'
           }`}>
           <h1 className='text-50px font-bold'>Logo 1</h1>
         </div>
@@ -27,7 +27,7 @@ export default function Support() {
           ref={ref}
           id='logo-2'
           className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
-            isVisible ? 'clip-inset-in-top animate animation-forwards animation-delay-200ms' : 'opacity-0per'
+            isVisible ? 'fade-in animate animation-forwards animation-delay-200ms' : 'opacity-0per'
           }`}>
           <h1 className='text-50px font-bold'>Logo 2</h1>
         </div>
@@ -35,7 +35,7 @@ export default function Support() {
           ref={refTwo}
           id='logo-3'
           className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
-            isVisibleTwo ? 'clip-inset-in-top animate animation-forwards animation-delay-400ms' : 'opacity-0per'
+            isVisibleTwo ? 'fade-in animate animation-forwards animation-delay-400ms' : 'opacity-0per'
           }`}>
           <h1 className='text-50px font-bold'>Logo 3</h1>
         </div>
@@ -43,7 +43,7 @@ export default function Support() {
           ref={refTwo}
           id='logo-4'
           className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
-            isVisibleTwo ? 'clip-inset-in-top animate animation-forwards animation-delay-600ms' : 'opacity-0per'
+            isVisibleTwo ? 'fade-in animate animation-forwards animation-delay-600ms' : 'opacity-0per'
           }`}>
           <h1 className='text-50px font-bold'>Logo 4</h1>
         </div>

@@ -33,7 +33,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className='col-span-1 min-h-75vh sm:col-span-full sm:row-start-1 sm:col-end-1 md:col-span-full md:row-start-1 md:col-end-1 overflow-hidden'>
+        <div className='sm:display-none md:display-none col-span-1 min-h-75vh sm:col-span-full sm:row-start-1 sm:col-end-1 md:col-span-full md:row-start-1 md:col-end-1 overflow-hidden'>
           <div className='relative'>
             <div className='' style={{ marginLeft: '-20rem' }}>
               <Carousel>
