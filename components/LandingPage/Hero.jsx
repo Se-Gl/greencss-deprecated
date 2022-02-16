@@ -4,6 +4,7 @@ import { LinkButton } from '@/components/reusable/Button'
 import HeroHand from '../icon/LandingPage/HeroHand'
 import Carousel from '../carousel/Carousel'
 import { CarouselItem } from '../carousel/Carousel'
+import Phone from './3D/Phone'
 
 const sliderItems = [
   { url: 'iMac-min.png', width: '800', height: '631', alt: 'OmenCSS iMac', id: 'iMac' },
@@ -34,29 +35,14 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className='col-span-1 min-h-75vh sm:col-span-full sm:row-start-1 sm:col-end-1 md:col-span-full md:row-start-1 md:col-end-1'>
-          <div className='flex h-75vh'>
-            <div className='m-auto fade-in animate animation-forwards animation-delay-500ms'>
-              <Carousel>
-                {sliderItems.map((item) => {
-                  return (
-                    <CarouselItem key={item.url}>
-                      <Image
-                        className='relative z-1'
-                        src={`/images/landingpage/${item.url}`}
-                        alt={`${item.alt}`}
-                        width={item.width}
-                        height={item.height}
-                        id={`${item.id}`}
-                      />{' '}
-                    </CarouselItem>
-                  )
-                })}
-              </Carousel>
+        <div className='col-span-1 min-h-75vh sm:col-span-full sm:row-start-1 sm:col-end-1 md:col-span-full md:row-start-1 md:col-end-1 overflow-hidden'>
+          <div className='relative'>
+            <div className='absolute' style={{ marginLeft: '-20rem' }}>
+              <Phone />
             </div>
-          </div>
-          <div className='relative z-2 ml-20px sm:ml-25px' style={{ marginTop: '-300px', pointerEvents: 'none' }}>
-            <HeroHand width='600' height='398' />
+            <div className='absolute' style={{ pointerEvents: 'none', marginTop: '40rem', marginLeft: '10rem' }}>
+              <HeroHand width='600' height='398' />
+            </div>
           </div>
         </div>
       </div>

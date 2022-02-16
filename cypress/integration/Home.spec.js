@@ -2,18 +2,21 @@ describe('Home Screen Unit test', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
   })
-  it('hero image slider exists', () => {
-    cy.get('#iMac').trigger('mouseover').should('exist').click()
-    cy.get('#MacBook').trigger('mouseover').should('exist').should('be.visible')
-    cy.get('#iPad-Pro').should('exist')
-    cy.get('#iMac').should('exist')
-  })
-  it('hero image slider exists on mobile and is slideable', () => {
-    cy.viewport(320, 480)
-    cy.get('#iMac').trigger('mouseover').should('exist').click()
-    cy.get('#MacBook').trigger('mouseover').should('exist').should('be.visible')
-    cy.get('#iPad-Pro').should('exist')
-    cy.get('#iMac').should('exist')
+  // it('hero image slider exists', () => {
+  //   cy.get('#iMac').trigger('mouseover').should('exist').click()
+  //   cy.get('#MacBook').trigger('mouseover').should('exist').should('be.visible')
+  //   cy.get('#iPad-Pro').should('exist')
+  //   cy.get('#iMac').should('exist')
+  // })
+  // it('hero image slider exists on mobile and is slideable', () => {
+  //   cy.viewport(320, 480)
+  //   cy.get('#iMac').trigger('mouseover').should('exist').click()
+  //   cy.get('#MacBook').trigger('mouseover').should('exist').should('be.visible')
+  //   cy.get('#iPad-Pro').should('exist')
+  //   cy.get('#iMac').should('exist')
+  // })
+  it('renders the 3D phone', () => {
+    cy.get('.scene canvas').trigger('mousemove', { clientX: 200, clientY: 300 }).should('exist').should('be.visible')
   })
   it('renders the header', () => {
     cy.get('main div h1').contains('A classy way to write CSS design', { matchCase: false })
