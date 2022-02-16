@@ -8,7 +8,7 @@ function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
 
-const Phone = ({ source = '/3D/phone.glb' }) => {
+const Phone = ({ source = '/3D/phone.glb', initialScale = 0.75 }) => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
@@ -47,7 +47,7 @@ const Phone = ({ source = '/3D/phone.glb' }) => {
       setRenderer(renderer)
 
       //   initial phone scale
-      const scale = 0.75
+      const scale = initialScale
       const camera = new THREE.OrthographicCamera(-scale, scale, scale, -scale, 0.01, 500)
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)

@@ -2,7 +2,7 @@
 
 [![Prettier and ESLint Code Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml)
 [![Cypress Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml)
-![check-code-coverage](https://img.shields.io/badge/code--coverage-84.56%25-green)
+![check-code-coverage](https://img.shields.io/badge/code--coverage-90.76%25-brightgreen)
 
 [![omenCSS logo](./public/omencss.svg)](https://www.omen.design)
 
@@ -133,6 +133,7 @@ sass/
 | [react-markdown](https://www.npmjs.com/package/react-markdown)                     | ![GitHub stars](https://img.shields.io/github/stars/remarkjs/react-markdown.svg?label=%F0%9F%8C%9F)        | [![Bundle size](https://badgen.net/bundlephobia/minzip/react-markdown/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/react-markdown)                     | ✅         | ➖        |
 | [react-syntax-highlighter](https://www.npmjs.com/package/react-syntax-highlighter) | ![GitHub stars](https://img.shields.io/github/stars/remarkjs/react-markdown.svg?label=%F0%9F%8C%9F)        | [![Bundle size](https://badgen.net/bundlephobia/minzip/react-syntax-highlighter/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/react-syntax-highlighter) | ✅         | ➖        |
 | [react-swipeable](https://www.npmjs.com/package/react-swipeable)                   | ![GitHub stars](https://img.shields.io/github/stars/FormidableLabs/react-swipeable.svg?label=%F0%9F%8C%9F) | [![Bundle size](https://badgen.net/bundlephobia/minzip/react-swipeable/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/react-swipeable)                   | ✅         | ➖        |
+| [three](https://www.npmjs.com/package/three)                                       | ![GitHub stars](https://img.shields.io/github/stars/mrdoob/three.js.svg?label=%F0%9F%8C%9F)                | [![Bundle size](https://badgen.net/bundlephobia/minzip/three/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/three)                                       | ✅         | ➖        |
 
 ### Testing Libraries
 
@@ -151,3 +152,17 @@ sass/
 | [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier) | ![GitHub stars](https://img.shields.io/github/stars/prettier/eslint-config-prettier.svg?label=%F0%9F%8C%9F) | [![Bundle size](https://badgen.net/bundlephobia/minzip/eslint-config-prettier?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=eslint-config-prettier) | ✅         | ✅        |
 | [husky](https://www.npmjs.com/package/husky)                                   | ![GitHub stars](https://img.shields.io/github/stars/typicode/husky.svg?label=%F0%9F%8C%9F)                  | [![Bundle size](https://badgen.net/bundlephobia/minzip/husky?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=husky)                                   | ✅         | ✅        |
 | [lint-staged](https://www.npmjs.com/package/lint-staged)                       | ![GitHub stars](https://img.shields.io/github/stars/okonet/lint-staged.svg?label=%F0%9F%8C%9F)              | [![Bundle size](https://badgen.net/bundlephobia/minzip/lint-staged?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=lint-staged)                       | ✅         | ✅        |
+
+### Sources
+
+| 3D Objects |                                                                                                        |
+| ---------- | ------------------------------------------------------------------------------------------------------ |
+| title      | Apple iPhone 13 Pro Max                                                                                |
+| source     | [sketchfab](https://sketchfab.com/3d-models/apple-iphone-13-pro-max-4328dea00e47497dbeac73c556121bc9)  |
+| author     | [DatSketch](https://sketchfab.com/DatSketch)                                                           |
+| license    | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                               |
+| ---------- | ------------------------------------                                                                   |
+| title      | Macbook Pro 13 inch 2020                                                                               |
+| source     | [sketchfab](https://sketchfab.com/3d-models/macbook-pro-13-inch-2020-efab224280fd4c3993c808107f7c0b38) |
+| author     | [timblewee](https://sketchfab.com/timblewee)                                                           |
+| license    | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                               |

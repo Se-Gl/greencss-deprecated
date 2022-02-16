@@ -7,10 +7,8 @@ import { CarouselItem } from '../carousel/Carousel'
 import Phone from './3D/Phone'
 
 const sliderItems = [
-  { url: 'iMac-min.png', width: '800', height: '631', alt: 'OmenCSS iMac', id: 'iMac' },
-  { url: 'MacBook-min.png', width: '800', height: '448', alt: 'OmenCSS MacBook', id: 'MacBook' },
-  { url: 'iPad-Pro-min.png', width: '433', height: '600', alt: 'OmenCSS iPad Pro', id: 'iPad-Pro' },
-  { url: 'iPhone-X-min.png', width: '298', height: '600', alt: 'OmenCSS iMac', id: 'iMac' }
+  { url: '/3D/phone.glb', initialScale: 0.75 },
+  { url: '/3D/macbook.glb', initialScale: 0.45 }
 ]
 
 export default function Hero() {
@@ -37,10 +35,18 @@ export default function Hero() {
         </div>
         <div className='col-span-1 min-h-75vh sm:col-span-full sm:row-start-1 sm:col-end-1 md:col-span-full md:row-start-1 md:col-end-1 overflow-hidden'>
           <div className='relative'>
-            <div className='absolute' style={{ marginLeft: '-20rem' }}>
-              <Phone />
+            <div className='' style={{ marginLeft: '-20rem' }}>
+              <Carousel>
+                {sliderItems.map((item) => {
+                  return (
+                    <CarouselItem key={item.url}>
+                      <Phone source={`${item.url}`} initialScale={item.initialScale} />
+                    </CarouselItem>
+                  )
+                })}
+              </Carousel>
             </div>
-            <div className='absolute' style={{ pointerEvents: 'none', marginTop: '40rem', marginLeft: '10rem' }}>
+            <div className='absolute' style={{ pointerEvents: 'none', marginTop: '-45rem', marginLeft: '10rem' }}>
               <HeroHand width='600' height='398' />
             </div>
           </div>
