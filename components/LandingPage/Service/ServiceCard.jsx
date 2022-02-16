@@ -8,7 +8,7 @@ export default function ServiceCard() {
         <div className='flex min-h-38rem w-100per text-dark sm:w-75vw md:w-75vw'>
           <div className='relative m-auto px-30px'>
             <Pen className='mb-30px' />
-            <h1 className='text-25px font-bold leading-100per'>User Interface Design</h1>
+            <h2 className='text-25px font-bold leading-100per'>User Interface Design</h2>
             <p className='text-20px font-normal mt-20px'>
               omenCSS provides a stunning user interface design that is accessible to everyone.
             </p>

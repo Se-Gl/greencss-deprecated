@@ -31,7 +31,7 @@ export default function Presentation() {
               <CLine />
             </div>
             <div className='ml-10px'>
-              <h1 className='text-50px font-bold'>Animated</h1>
+              <h2 className='text-50px font-bold'>Animated</h2>
               <p className='text-25px font-normal leading-125per mt-20px'>
                 Pure CSS animations work with vanilla HTML or with any web framework - from JavaScript over Python and
                 even PHP.
@@ -50,7 +50,7 @@ export default function Presentation() {
               <SLine />
             </div>
             <div className='ml-10px'>
-              <h1 className='text-50px font-bold'>Responsive</h1>
+              <h2 className='text-50px font-bold'>Responsive</h2>
               <p className='text-25px font-normal leading-125per mt-20px'>
                 Design your website for all users, whether desktop, laptop, tablet or smartphone. Modify layouts
                 comfortably and intuitively.
@@ -69,7 +69,7 @@ export default function Presentation() {
               <SLine />
             </div>
             <div className='ml-10px'>
-              <h1 className='text-50px font-bold'>Production</h1>
+              <h2 className='text-50px font-bold'>Production</h2>
               <p className='text-25px font-normal leading-125per mt-20px'>
                 Unused CSS classes will automatically be excluded. Reduce loading times, increase best practices.
               </p>

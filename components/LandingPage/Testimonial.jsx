@@ -5,7 +5,7 @@ export default function Testimonial() {
     <section className='my-20rem sm:my-100px md:my-100px' id='testimonial'>
       <div className='relative flex min-h-75vh w-100per text-center text-light bg-dark rounded-20px'>
         <div className='m-auto max-w-50rem'>
-          <h1 className='font-bold text-50px mb-50px leading-120per'>Hear What The Creator Says</h1>
+          <h2 className='font-bold text-50px mb-50px leading-120per'>Hear What The Creator Says</h2>
           <p className='text-25px font-normal mt-25px text-light'>
             “A dynamic, animated CSS library. Beginner-friendly, for every framework or plain HTML, intuitive and you
             can easily make it lightweight.”

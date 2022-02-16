@@ -13,7 +13,7 @@ export default function Support() {
 
   return (
     <section className='my-20rem sm:my-100px md:my-100px text-center' id='supporters'>
-      <h1 className='font-bold text-50px mb-50px'>Supported by</h1>
+      <h2 className='font-bold text-50px mb-50px'>Supported by</h2>
       <div className='m-auto grid grid-col-4 gap-30px sm:gap-0px sm:grid-col-2 md:grid-col-2'>
         <div
           ref={ref}
@@ -21,7 +21,7 @@ export default function Support() {
           className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
             isVisible ? 'fade-in animate animation-forwards' : 'opacity-0per'
           }`}>
-          <h1 className='text-50px font-bold'>Logo 1</h1>
+          <h2 className='text-50px font-bold'>Logo 1</h2>
         </div>
         <div
           ref={ref}
@@ -29,7 +29,7 @@ export default function Support() {
           className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
             isVisible ? 'fade-in animate animation-forwards animation-delay-200ms' : 'opacity-0per'
           }`}>
-          <h1 className='text-50px font-bold'>Logo 2</h1>
+          <h2 className='text-50px font-bold'>Logo 2</h2>
         </div>
         <div
           ref={refTwo}
@@ -37,7 +37,7 @@ export default function Support() {
           className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
             isVisibleTwo ? 'fade-in animate animation-forwards animation-delay-400ms' : 'opacity-0per'
           }`}>
-          <h1 className='text-50px font-bold'>Logo 3</h1>
+          <h2 className='text-50px font-bold'>Logo 3</h2>
         </div>
         <div
           ref={refTwo}
@@ -45,7 +45,7 @@ export default function Support() {
           className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
             isVisibleTwo ? 'fade-in animate animation-forwards animation-delay-600ms' : 'opacity-0per'
           }`}>
-          <h1 className='text-50px font-bold'>Logo 4</h1>
+          <h2 className='text-50px font-bold'>Logo 4</h2>
         </div>
       </div>
     </section>
