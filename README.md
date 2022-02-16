@@ -161,8 +161,10 @@ sass/
 | source     | [sketchfab](https://sketchfab.com/3d-models/apple-iphone-13-pro-max-4328dea00e47497dbeac73c556121bc9)  |
 | author     | [DatSketch](https://sketchfab.com/DatSketch)                                                           |
 | license    | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                               |
+| changes    | Changes were made to the background image.                                                             |
 | ---------- | ------------------------------------                                                                   |
 | title      | Macbook Pro 13 inch 2020                                                                               |
 | source     | [sketchfab](https://sketchfab.com/3d-models/macbook-pro-13-inch-2020-efab224280fd4c3993c808107f7c0b38) |
 | author     | [timblewee](https://sketchfab.com/timblewee)                                                           |
 | license    | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                               |
+| changes    | Changes were made to the background image.                                                             |
