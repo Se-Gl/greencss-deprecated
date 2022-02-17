@@ -19,7 +19,7 @@ describe('Animation Screen Unit test', () => {
   })
 })
 
-describe('Animation Screen Unit test', () => {
+describe('Animation Example Screen Unit test', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000/docs/animation/example')
   })

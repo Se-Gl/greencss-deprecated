@@ -58,8 +58,11 @@ const Phone = ({ source = '/3D/phone.glb', initialScale = 0.75 }) => {
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
+      controls.enablePan = false
       controls.enableZoom = false
-      //   controls.target = target
+      controls.enableDamping = true
+      controls.maxPolarAngle = Math.PI / 1.5
+      controls.minPolarAngle = Math.PI / 2.5
       setControls(controls)
 
       loadGLTFModel(scene, `${source}`, {

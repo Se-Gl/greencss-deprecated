@@ -17,7 +17,7 @@ describe('Editor Screen Unit test', () => {
   })
 })
 
-describe('Testing the loader', () => {
+describe('Testing Editor the loader', () => {
   it('Check if loader appears', () => {
     cy.visit('http://localhost:3000/editor')
     cy.intercept('http://localhost:3000/editor', () => {
