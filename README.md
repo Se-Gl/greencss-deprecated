@@ -134,6 +134,8 @@ sass/
 | [react-syntax-highlighter](https://www.npmjs.com/package/react-syntax-highlighter) | ![GitHub stars](https://img.shields.io/github/stars/remarkjs/react-markdown.svg?label=%F0%9F%8C%9F)        | [![Bundle size](https://badgen.net/bundlephobia/minzip/react-syntax-highlighter/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/react-syntax-highlighter) | ✅         | ➖        |
 | [react-swipeable](https://www.npmjs.com/package/react-swipeable)                   | ![GitHub stars](https://img.shields.io/github/stars/FormidableLabs/react-swipeable.svg?label=%F0%9F%8C%9F) | [![Bundle size](https://badgen.net/bundlephobia/minzip/react-swipeable/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/react-swipeable)                   | ✅         | ➖        |
 | [three](https://www.npmjs.com/package/three)                                       | ![GitHub stars](https://img.shields.io/github/stars/mrdoob/three.js.svg?label=%F0%9F%8C%9F)                | [![Bundle size](https://badgen.net/bundlephobia/minzip/three/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/three)                                       | ✅         | ➖        |
+| [@react-three/drei](https://www.npmjs.com/package/@react-three/drei)               | ![GitHub stars](https://img.shields.io/github/stars/pmndrs/drei.svg?label=%F0%9F%8C%9F)                    | [![Bundle size](https://badgen.net/bundlephobia/minzip/@react-three/drei/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/@react-three/drei)               | ✅         | ➖        |
+| [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber)             | ![GitHub stars](https://img.shields.io/github/stars/pmndrs/react-three-fiber.svg?label=%F0%9F%8C%9F)       | [![Bundle size](https://badgen.net/bundlephobia/minzip/@react-three/fiber/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/@react-three/fiber)             | ✅         | ➖        |
 
 ### Testing Libraries
 
@@ -155,16 +157,11 @@ sass/
 
 ### Sources
 
-| 3D Objects |                                                                                                        |
-| ---------- | ------------------------------------------------------------------------------------------------------ |
-| title      | Apple iPhone 13 Pro Max                                                                                |
-| source     | [sketchfab](https://sketchfab.com/3d-models/apple-iphone-13-pro-max-4328dea00e47497dbeac73c556121bc9)  |
-| author     | [DatSketch](https://sketchfab.com/DatSketch)                                                           |
-| license    | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                               |
-| changes    | Changes were made to the background image.                                                             |
-| ---------- | ------------------------------------                                                                   |
-| title      | Macbook Pro 13 inch 2020                                                                               |
-| source     | [sketchfab](https://sketchfab.com/3d-models/macbook-pro-13-inch-2020-efab224280fd4c3993c808107f7c0b38) |
-| author     | [timblewee](https://sketchfab.com/timblewee)                                                           |
-| license    | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                               |
-| changes    | Changes were made to the background image.                                                             |
+| 3D Objects |                                                                                                       |
+| ---------- | ----------------------------------------------------------------------------------------------------- |
+| title      | Apple iPhone 13 Pro Max                                                                               |
+| source     | [sketchfab](https://sketchfab.com/3d-models/apple-iphone-13-pro-max-4328dea00e47497dbeac73c556121bc9) |
+| author     | [DatSketch](https://sketchfab.com/DatSketch)                                                          |
+| license    | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                              |
+| changes    | Changes were made to the background image.                                                            |
+| ---------- | ------------------------------------                                                                  |

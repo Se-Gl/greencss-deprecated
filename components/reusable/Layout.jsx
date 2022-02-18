@@ -59,7 +59,8 @@ export default function Layout({
         documentation: https://dev.twitter.com/cards/getting-started
         Be sure validate your Twitter card markup on the documentation site. */}
         <meta name='twitter:card' content='summary' />
-        <meta name='twitter:site' content='@omencss' />
+        <meta name='twitter:site' content='@omenCSS' />
+        <meta name='twitter:creator' content='@omenCSS' />
       </Head>
       <Header />
       <main>
