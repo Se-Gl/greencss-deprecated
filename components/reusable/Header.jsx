@@ -17,7 +17,7 @@ export default function Header() {
   const isHome = router.pathname === '/' ? 'text-white sm:text-black md:text-black' : 'text-black'
 
   return (
-    <header className='container'>
+    <div className='container'>
       <nav
         className='sm:display-none z-100 relative flex items-center h-15rem justify-between w-100per sm:px-10px md:px-25px lg:px-50px'
         style={{ maxWidth: '110rem' }}>
@@ -95,10 +95,6 @@ export default function Header() {
           </div>
         )}
       </nav>
-    </header>
+    </div>
   )
 }
-
-// let animationStagger = isVisible
-// ? `clip-inset-in-top animate animation-forwards animation-delay-${index + 2}00ms`
-// : 'opacity-0per'

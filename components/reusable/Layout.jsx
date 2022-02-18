@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import Header from './Header'
+import dynamic from 'next/dynamic'
+
+const Header = dynamic(() => import('./Header'))
 
 export default function Layout({
   title,

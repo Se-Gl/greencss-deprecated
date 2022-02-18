@@ -3,7 +3,7 @@ describe('Nav Screen Unit test', () => {
     cy.visit('http://localhost:3000/')
   })
   it('renders and clicks the first nav item', () => {
-    cy.get('header nav ul li a')
+    cy.get('div nav ul li a')
       .eq(0)
       .should('be.visible')
       .should('exist')
@@ -13,7 +13,7 @@ describe('Nav Screen Unit test', () => {
     cy.url().should('be.equal', 'http://localhost:3000/')
   })
   it('renders and clicks the second nav item, check colours', () => {
-    cy.get('header nav ul li a')
+    cy.get('div nav ul li a')
       .eq(1)
       .should('be.visible')
       .should('exist')
@@ -22,9 +22,9 @@ describe('Nav Screen Unit test', () => {
       .click()
       .wait(2000)
     cy.url().should('be.equal', 'http://localhost:3000/brand')
-    cy.get('header nav ul li a').eq(0).should('have.class', 'text-black')
-    cy.get('header nav ul li a').eq(1).should('have.class', 'text-purple')
-    cy.get('header nav ul li a').eq(2).should('have.class', 'text-black')
+    cy.get('div nav ul li a').eq(0).should('have.class', 'text-black')
+    cy.get('div nav ul li a').eq(1).should('have.class', 'text-purple')
+    cy.get('div nav ul li a').eq(2).should('have.class', 'text-black')
   })
 })
 
