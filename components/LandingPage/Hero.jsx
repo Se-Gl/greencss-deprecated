@@ -1,6 +1,19 @@
+import dynamic from 'next/dynamic'
 import Blobs from '@/components/icon/LandingPage/Blobs'
 import { LinkButton } from '@/components/reusable/Button'
-import Phone from './3D/Phone'
+import Loader from '../logo/Loader'
+
+const ThreeDObject = dynamic(() => import('./3D/Index'), {
+  loading: () => (
+    <>
+      <div className='flex h-75vh'>
+        <div className='m-auto'>
+          <Loader />
+        </div>
+      </div>
+    </>
+  )
+})
 
 export default function Hero() {
   return (
@@ -25,10 +38,8 @@ export default function Hero() {
           </div>
         </div>
         <div className='sm:display-none md:display-none col-span-1 min-h-75vh sm:col-span-full sm:row-start-1 sm:col-end-1 md:col-span-full md:row-start-1 md:col-end-1 overflow-hidden'>
-          <div className='relative'>
-            <div style={{ marginLeft: '-20rem' }}>
-              <Phone />
-            </div>
+          <div className='min-h-75rem'>
+            <ThreeDObject />
           </div>
         </div>
       </div>

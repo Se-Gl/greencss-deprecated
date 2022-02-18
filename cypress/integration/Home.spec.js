@@ -3,7 +3,7 @@ describe('Home Screen Unit test', () => {
     cy.visit('http://localhost:3000')
   })
   it('renders the 3D phone', () => {
-    cy.get('.scene canvas').click({ multiple: true }).should('exist').should('be.visible')
+    cy.get('.threed-canvas div canvas').should('exist').should('be.visible')
   })
   it('renders the header', () => {
     cy.get('main div h1').contains('A classy way to write CSS design', { matchCase: false })
