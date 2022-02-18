@@ -14,7 +14,7 @@ export default function Model({ ...props }) {
   const { nodes, materials } = useGLTF('/3D/phone.gltf')
   return (
     <group ref={group} {...props} dispose={null}>
-      <group position={[0, 0, -0.01]} rotation={[-Math.PI / 2, 0, 3.14]}>
+      <group position={[0, 0, -0.01]} rotation={[-Math.PI / 1.95, 0, 3.14]}>
         <group rotation={[Math.PI / 2, 0, 0]} scale={1}>
           {/* TODO: conditional  <group scale={4}> for 4k */}
           <group scale={5}>

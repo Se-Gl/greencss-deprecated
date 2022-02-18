@@ -2,7 +2,7 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import { Suspense } from 'react'
 import Phone from './Phone3D'
-import Camera from './Camera'
+import Tilt3D from './Tilt3D'
 
 export default function ThreeDObject() {
   return (
@@ -19,10 +19,10 @@ export default function ThreeDObject() {
         />
 
         <ambientLight intensity={0.75} />
-        <directionalLight position={[-2, 1, -2]} color={0xbe0aff} />
-        <directionalLight position={[1, 1, 1]} color={0xffffff} />
+        <directionalLight position={[-2, -0.25, -2]} color={0xbe0aff} />
+        <directionalLight position={[1, 0.9, 1.5]} color={0xffffff} />
         <Suspense fallback={null}>
-          <Camera object={<Phone />} />
+          <Tilt3D object={<Phone />} />
         </Suspense>
       </Canvas>
     </div>

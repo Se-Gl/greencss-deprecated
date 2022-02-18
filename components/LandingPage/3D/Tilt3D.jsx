@@ -1,8 +1,7 @@
 import { useFrame } from '@react-three/fiber'
 import { useRef } from 'react'
-import Phone from './Phone3D'
 
-export default function Camera({ object }) {
+export default function Tilt3D({ object }) {
   //   if (typeof window !== 'undefined') {
   const sizes = {
     width: window.innerWidth,
@@ -31,9 +30,9 @@ export default function Camera({ object }) {
   })
   useFrame(() => {
     if (camera.current && mesh.position.current) {
-      camera.current.position.x = cursor.x * 0.07
-      camera.current.position.z = Math.cos(cursor.x * Math.PI * 0.1) * 0.1
-      camera.current.position.y = cursor.y * 0.05
+      camera.current.position.x = cursor.x * 0.05
+      camera.current.position.z = Math.cos(cursor.x * Math.PI * 0.25) * 0.1
+      camera.current.position.y = cursor.y * -0.05
 
       camera.current.lookAt(mesh.position.current.position)
     }
