@@ -11,12 +11,12 @@ describe('Home Screen Unit test', () => {
       .contains('Search documentation', { matchCase: false })
     cy.get('#close-modal').click().get('#modal-root').should('not.be.visible')
   })
-  it('closes modal with esc key', () => {
+  it('open modal with F3 and close it with esc key', () => {
     cy.get('#linkedbutton')
-      .click()
+      .trigger('keydown', { key: 'F3', code: 'F3', which: 114 })
       .get('#close-modal')
       .should('be.visible')
-      .trigger('keydown', { keyCode: 27 })
+      .type('{esc}', { force: true })
       .get('#modal-root')
       .should('not.be.visible')
   })

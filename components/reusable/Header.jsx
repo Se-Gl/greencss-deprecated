@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { LinkButton } from './Button'
 import LogoLight from '../icon/Brand/LogoLight'
 import LogoDark from '../icon/Brand/LogoDark'
@@ -17,6 +17,20 @@ export default function Header() {
   const [showModal, setShowModal] = useState(false)
   const router = useRouter()
   const isHome = router.pathname === '/' ? 'text-white sm:text-black md:text-black' : 'text-black'
+
+  //   F3 key to open the modal
+  useEffect(() => {
+    const listener = (event) => {
+      if (event.key === 'F3' || event.code === 'NumpadEnter') {
+        event.preventDefault()
+        setShowModal(true)
+      }
+    }
+    document.addEventListener('keydown', listener)
+    return () => {
+      document.removeEventListener('keydown', listener)
+    }
+  }, [])
 
   return (
     <div className='container'>
@@ -50,7 +64,7 @@ export default function Header() {
           </li>
         </ul>
         <LinkButton className={`${isHome}`} onClick={() => setShowModal(true)}>
-          Search
+          Search | F3
         </LinkButton>
         <Modal onClose={() => setShowModal(false)} show={showModal}>
           Hello from the modal!
