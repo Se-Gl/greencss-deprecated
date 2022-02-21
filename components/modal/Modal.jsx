@@ -28,7 +28,8 @@ const Modal = ({ show, onClose, children, title = 'Search documentation' }) => {
     <div
       className='fade-in animation-duration-300ms animation-forwards absolute top-0per left-0per w-100per h-100per flex justify-center items-center '
       style={{ backgroundColor: 'rgba(16,16,16,0.5)' }}>
-      <div className='bg-white max-w-50rem w-50rem min-h-50rem rounded-10px'>
+      <div className='relative z-1 w-100vw h-100vh' onClick={handleCloseClick} id='backdrop-close' />
+      <div className='absolute z-2 bg-white max-w-50rem w-50rem min-h-50rem rounded-10px'>
         <div className='flex justify-end'>
           <a
             href='#'
