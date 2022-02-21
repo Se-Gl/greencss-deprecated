@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { LinkButton } from './Button'
 import LogoLight from '../icon/Brand/LogoLight'
 import LogoDark from '../icon/Brand/LogoDark'
+import Modal from '../modal/Modal'
 
 const menu = [
   { title: 'Home', path: '/' },
@@ -13,6 +14,7 @@ const menu = [
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const [showModal, setShowModal] = useState(false)
   const router = useRouter()
   const isHome = router.pathname === '/' ? 'text-white sm:text-black md:text-black' : 'text-black'
 
@@ -47,7 +49,12 @@ export default function Header() {
             })}
           </li>
         </ul>
-        <LinkButton className={`${isHome}`}>Search</LinkButton>
+        <LinkButton className={`${isHome}`} onClick={() => setShowModal(true)}>
+          Search
+        </LinkButton>
+        <Modal onClose={() => setShowModal(false)} show={showModal}>
+          Hello from the modal!
+        </Modal>
       </nav>
 
       {/* Mobile Menu */}

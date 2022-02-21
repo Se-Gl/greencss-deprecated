@@ -2,6 +2,16 @@ describe('Home Screen Unit test', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
   })
+
+  it('opens and closes modal', () => {
+    cy.get('#linkedbutton')
+      .click()
+      .get('#modal-root')
+      .should('exist')
+      .contains('Search documentation', { matchCase: false })
+    cy.get('#close-modal').click().get('#modal-root').should('not.be.visible')
+  })
+
   it('renders the 3D phone', () => {
     cy.get('.threed-canvas div canvas').should('exist').should('be.visible')
   })
