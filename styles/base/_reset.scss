@@ -52,3 +52,11 @@ pre {
   color: c.$light;
   background: c.$purple;
 }
+
+// remove outline
+a:focus,
+button:focus,
+input:focus,
+:focus {
+  outline: none;
+}

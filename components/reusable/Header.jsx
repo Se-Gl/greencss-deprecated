@@ -67,7 +67,15 @@ export default function Header() {
           Search | F3
         </LinkButton>
         <Modal onClose={() => setShowModal(false)} show={showModal}>
-          Hello from the modal!
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione voluptate neque ipsum inventore
+            necessitatibus amet. Suscipit deserunt commodi dolor odio laudantium cupiditate. Ut, ab. Repellendus commodi
+            nobis fugit ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione voluptate neque ipsum
+            inventore necessitatibus amet. Suscipit deserunt commodi dolor odio laudantium cupiditate. Ut, ab.
+            Repellendus commodi nobis fugit ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione
+            voluptate neque ipsum inventore necessitatibus amet. Suscipit deserunt commodi dolor odio laudantium
+            cupiditate. Ut, ab. Repellendus commodi nobis fugit ab!
+          </p>
         </Modal>
       </nav>
 

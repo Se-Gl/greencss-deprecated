@@ -4,11 +4,8 @@ describe('Home Screen Unit test', () => {
   })
 
   it('opens and closes modal', () => {
-    cy.get('#linkedbutton')
-      .click()
-      .get('#modal-root')
-      .should('exist')
-      .contains('Search documentation', { matchCase: false })
+    cy.get('#linkedbutton').click().get('#modal-root').should('exist')
+    cy.get('input').invoke('attr', 'placeholder').should('contain', 'Search documentation')
     cy.get('#close-modal').click().get('#modal-root').should('not.be.visible')
   })
   it('open modal with F3 and close it with esc key', () => {
