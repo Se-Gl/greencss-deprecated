@@ -11,7 +11,15 @@ describe('Home Screen Unit test', () => {
       .contains('Search documentation', { matchCase: false })
     cy.get('#close-modal').click().get('#modal-root').should('not.be.visible')
   })
-
+  it('closes modal with esc key', () => {
+    cy.get('#linkedbutton')
+      .click()
+      .get('#close-modal')
+      .should('be.visible')
+      .trigger('keydown', { keyCode: 27 })
+      .get('#modal-root')
+      .should('not.be.visible')
+  })
   it('renders the 3D phone', () => {
     cy.get('.threed-canvas div canvas').should('exist').should('be.visible')
   })

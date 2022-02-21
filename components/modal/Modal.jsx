@@ -8,6 +8,17 @@ const Modal = ({ show, onClose, children, title = 'Search documentation' }) => {
     setIsBrowser(true)
   }, [])
 
+  //   ESC key to close the modal
+  useEffect(() => {
+    const close = (e) => {
+      if (e.keyCode === 27) {
+        onClose()
+      }
+    }
+    window.addEventListener('keydown', close)
+    return () => window.removeEventListener('keydown', close)
+  }, [])
+
   const handleCloseClick = (e) => {
     e.preventDefault()
     onClose()
