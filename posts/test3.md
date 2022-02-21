@@ -5,6 +5,7 @@ excerpt: 'A simple Hello World sub header.'
 cover_image: 'https://res.cloudinary.com/omencss/image/upload/v1644523508/blog/motion_qn0fvq.jpg'
 category: 'Animation'
 author: 'Severin Glaser'
+isBlog: true
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
