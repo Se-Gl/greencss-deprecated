@@ -1,5 +1,4 @@
 import dynamic from 'next/dynamic'
-import Blobs from '@/components/icon/LandingPage/Blobs'
 import { LinkButton } from '@/components/reusable/Button'
 import Loader from '../logo/Loader'
 
@@ -18,11 +17,6 @@ const ThreeDObject = dynamic(() => import('./3D/Index'), {
 export default function Hero() {
   return (
     <section id='hero'>
-      <div className='relative sm:display-none'>
-        <div className='absolute' style={{ right: '-66%', top: '-17px' }}>
-          <Blobs style={{ marginTop: '-500px' }} />
-        </div>
-      </div>
       <div className='m-auto grid gap-30px grid-col-2 sm:grid-col-1 md:grid-col-1' style={{ maxWidth: '110rem' }}>
         <div className='col-span-1 min-h-75vh'>
           <div className='flex h-75vh'>
