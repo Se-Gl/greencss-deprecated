@@ -1,12 +1,16 @@
-export default function BrandBadExample({ imgUrl, imgAlt, imgId, description }) {
+export default function BrandBadExample({ childOne, childTwo }) {
   return (
-    <div className='flex flex-col min-h-25rem w-100per rounded-10px bg-cover bg-no-repeat bg-center border-1px border-solid border-dark'>
-      <div className='min-h-25rem min-h-50per'>
-        <div className='flex justify-center'>
-          <img src={`${imgUrl}`} alt={`${imgAlt}`} id={`${imgId}`} />
+    <>
+      <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
+        <div className='h-auto w-100per flex'>
+          <div className='m-auto'>{childOne}</div>
         </div>
-        <p>{description}</p>
       </div>
-    </div>
+      <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
+        <div className='h-auto m-auto sm:m-0px md:m-0px'>
+          <p className='sm:my-10px'>{childTwo}</p>
+        </div>
+      </div>
+    </>
   )
 }

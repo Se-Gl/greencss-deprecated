@@ -1,3 +1,4 @@
+import BrandBadExample from '@/components/brand/BrandBadExample'
 import BrandSection from '@/components/brand/BrandSection'
 import Summary from '@/components/brand/Summary'
 import LogoDark from '@/components/icon/Brand/LogoDark'
@@ -148,79 +149,54 @@ export default function typography() {
             description='Design needs consistency. Consistency needs design.'></BrandSection>
           <BrandSection isLight={true}>
             <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
-              <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
-                <div className='text-35px font-800 h-auto flex'>
-                  <div className='m-auto'>
+              <BrandBadExample
+                childOne={
+                  <div className='text-35px font-800 h-auto flex flex-wrap'>
                     <span className='text-yellow'>yellow </span>
-                    <span className='text-red'>red </span>
-                    <span className='text-blue'>blue </span>
-                    <span className='text-purple'>purple </span>
-                    <span className='text-green'>green</span>
+                    <span className='text-red ml-10px'>red </span>
+                    <span className='text-blue ml-10px'>blue </span>
+                    <span className='text-purple ml-10px'>purple </span>
+                    <span className='text-green ml-10px'>green</span>
                   </div>
-                </div>
-              </div>
-              <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
-                <div className='h-auto m-auto sm:m-0px md:m-0px'>
-                  <p className='sm:my-10px'>Avoid, if possible, the use of colored typography (black or white only).</p>
-                </div>
-              </div>
-              <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
-                <div className='text-35px font-800 h-auto flex'>
-                  <div className='m-auto'>
+                }
+                childTwo='Avoid, if possible, the use of colored typography (black or white only).'
+              />
+              <BrandBadExample
+                childOne={
+                  <div className='text-35px font-800 h-auto flex'>
                     <span>NO CAPS.</span>
                   </div>
-                </div>
-              </div>
-              <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
-                <div className='h-auto m-auto sm:m-0px md:m-0px'>
-                  <p className='sm:my-10px'>Avoid, if possible, the use of capitalized typography.</p>
-                </div>
-              </div>
-              <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
-                <div className='text-35px font-800 h-auto flex'>
-                  <div className='m-auto'>
+                }
+                childTwo='Avoid, if possible, the use of capitalized typography.'
+              />
+              <BrandBadExample
+                childOne={
+                  <div className='text-35px font-800 h-auto flex'>
                     <span style={{ letterSpacing: '-5px' }}>Letter</span>
                     <span className='tracking-2'>spacing</span>
                   </div>
-                </div>
-              </div>
-              <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
-                <div className='h-auto m-auto sm:m-0px md:m-0px'>
-                  <p className='sm:my-10px'>
-                    Avoid, the adjustment of kerning, line height, letter spacing and tracking.
-                  </p>
-                </div>
-              </div>
-              <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
-                <div className='text-35px font-800 h-auto flex'>
-                  <div className='m-auto'>
+                }
+                childTwo='Avoid, the adjustment of kerning, line height, letter spacing and tracking.'
+              />
+              <BrandBadExample
+                childOne={
+                  <>
                     <h2 className='font-900'>heading</h2>
                     <h2 className='font-500'>heading</h2>
-                  </div>
-                </div>
-              </div>
-              <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
-                <div className='h-auto m-auto sm:m-0px md:m-0px'>
-                  <p className='sm:my-10px'>Do not make any custom hierarchy by only using font weight.</p>
-                </div>
-              </div>
-
-              <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
-                <div className='text-35px font-800 h-auto flex'>
-                  <div className='m-auto'>
+                  </>
+                }
+                childTwo='Do not make any custom hierarchy by only using font weight.'
+              />
+              <BrandBadExample
+                childOne={
+                  <>
                     <h2>heading</h2>
                     <p className='ml-30px my-0px'>Paragraph text one</p>
                     <p className='ml-25px my-neg-10px'>Paragraph text two</p>
-                  </div>
-                </div>
-              </div>
-              <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
-                <div className='h-auto m-auto sm:m-0px md:m-0px'>
-                  <p className='sm:my-10px'>
-                    Do not separate text sections or customize your own margins and paddings.
-                  </p>
-                </div>
-              </div>
+                  </>
+                }
+                childTwo='Do not separate text sections or customize your own margins and paddings.'
+              />
             </div>
           </BrandSection>
 
