@@ -2,14 +2,6 @@ describe('Home Screen Unit test', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
   })
-
-  it('search for a specific term', () => {
-    cy.get('#linkedbutton').click().get('#modal-root').should('exist')
-    cy.get('#search').type('mar')
-    cy.get('#search-results').contains('2 Results', { matchCase: false })
-    cy.get('#search-results div').first().click().url().should('be.equal', 'http://localhost:3000/blog/hello-world')
-  })
-
   it('opens and closes modal', () => {
     cy.get('#linkedbutton').click().get('#modal-root').should('exist')
     cy.get('input').invoke('attr', 'placeholder').should('contain', 'Search documentation')
@@ -24,13 +16,12 @@ describe('Home Screen Unit test', () => {
       .get('#modal-root')
       .should('not.be.visible')
   })
-  it('search for a specific term', () => {
-    cy.get('#linkedbutton').click().get('#modal-root').should('exist')
-    cy.get('#search').type('mar')
-    cy.get('#search-results').contains('2 Results', { matchCase: false })
-    cy.get('#search-results div').first().click()
-    cy.url().should('be.equal', 'http://localhost:3000/blog/hello-world')
-  })
+  // it('search for a specific term', () => {
+  //   cy.get('#linkedbutton').click().get('#modal-root').should('exist')
+  //   cy.get('#search').type('mar')
+  //   cy.get('#search-results').contains('2 Results', { matchCase: false })
+  //   cy.get('#search-results div').first().click().url().should('be.equal', 'http://localhost:3000/blog/hello-world')
+  // })
   it('renders the 3D phone', () => {
     cy.get('.threed-canvas div canvas').should('exist').should('be.visible')
   })
