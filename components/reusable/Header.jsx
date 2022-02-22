@@ -63,7 +63,7 @@ export default function Header() {
             })}
           </li>
         </ul>
-        <LinkButton className={`${isHome} text-20px`} onClick={() => setShowModal(true)}>
+        <LinkButton className={`${isHome} text-20px`} onClick={() => setShowModal(true)} href=''>
           Search | F3
         </LinkButton>
         <Modal onClose={() => setShowModal(false)} show={showModal}></Modal>

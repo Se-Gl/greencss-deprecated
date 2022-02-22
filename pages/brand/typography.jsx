@@ -95,10 +95,6 @@ export default function typography() {
               <h2>font size 50px, black (900)</h2>
             </div>
             <div className='mb-100px'>
-              <p className='border-bottom-1px border-black border-solid'>H1</p>
-              <h2>font size 50px, black (900)</h2>
-            </div>
-            <div className='mb-100px'>
               <p className='border-bottom-1px border-black border-solid'>H2</p>
               <h2>font size 50px, black (900)</h2>
             </div>
