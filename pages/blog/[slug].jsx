@@ -36,7 +36,7 @@ export default function BlogPostPage({
       <div className='mb-10rem min-w-100per' id={`blog-${slug}`}>
         <BackButton>Back</BackButton>
         <div className='m-auto max-w-75rem mb-10rem'>
-          <h1 className='font-bold text-50px mb-50px leading-120per'>{title}</h1>
+          <h1 className='font-bold text-50px mb-50px'>{title}</h1>
           <h3>{excerpt}</h3>
           {/*  eslint-disable  */}
           <ReactMarkdown

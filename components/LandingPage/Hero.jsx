@@ -27,9 +27,7 @@ export default function Hero() {
         <div className='col-span-1 min-h-75vh'>
           <div className='flex h-75vh'>
             <div className='m-auto reveal-down animate animation-forwards animation-delay-500ms'>
-              <h1
-                className='font-800 text-50px leading-120per text-white sm:text-black md:text-black'
-                style={{ maxWidth: '400px' }}>
+              <h1 className='font-800 text-63px text-white sm:text-black md:text-black' style={{ maxWidth: '400px' }}>
                 A classy way to write CSS design
               </h1>
 

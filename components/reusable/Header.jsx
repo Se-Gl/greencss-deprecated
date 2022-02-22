@@ -52,7 +52,7 @@ export default function Header() {
               return (
                 <Link key={index} href={item.path}>
                   <a
-                    className={`mr-15px text-15px font-500 ${
+                    className={`mr-15px text-20px font-500 ${
                       router.pathname === item.path ? 'text-purple font-800' : isHome
                     }`}
                     style={{ textDecoration: 'none' }}>
@@ -63,7 +63,7 @@ export default function Header() {
             })}
           </li>
         </ul>
-        <LinkButton className={`${isHome}`} onClick={() => setShowModal(true)}>
+        <LinkButton className={`${isHome} text-20px`} onClick={() => setShowModal(true)}>
           Search | F3
         </LinkButton>
         <Modal onClose={() => setShowModal(false)} show={showModal}></Modal>

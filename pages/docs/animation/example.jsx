@@ -8,7 +8,7 @@ export default function AnimationPage() {
       <div className='mb-10rem min-w-100per relative'>
         <BackButton>Back</BackButton>
         <div className='m-auto max-w-60rem'>
-          <h1 className='font-bold text-50px mb-50px leading-120per'>omenCSS Animations - example</h1>
+          <h1 className='font-bold text-50px mb-50px'>omenCSS Animations - example</h1>
           <p className='text-25px font-normal mt-25px'>Explore the range of animations</p>
         </div>
         <DropDown />

@@ -16,7 +16,7 @@ export default function AnimationIndexPage() {
             </div>
           </div>
           <div className='m-auto max-w-50rem'>
-            <h1 className='font-bold text-50px leading-120per mb-25px'>Handmade, crafted animations</h1>
+            <h1 className='font-bold text-50px mb-25px'>Handmade, crafted animations</h1>
             <HandCrafted />
             <p className='text-25px font-normal'>
               The collaboration of design and code plays an important role, especially in web development. Nowadays, a

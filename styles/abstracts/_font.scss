@@ -1,135 +1,45 @@
-// Inter
+// Omen Motion
 @font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: url('/fonts/Inter/Inter-Thin.woff2?v=3.19') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 100;
-  font-display: swap;
-  src: url('/fonts/Inter/Inter-ThinItalic.woff2?v=3.19') format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url('/fonts/Inter/Inter-ExtraLight.woff2?v=3.19') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 200;
-  font-display: swap;
-  src: url('/fonts/Inter/Inter-ExtraLightItalic.woff2?v=3.19') format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter';
+  font-family: 'Omen Motion';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('/fonts/Inter/Inter-Light.woff2?v=3.19') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 300;
-  font-display: swap;
-  src: url('/fonts/Inter/Inter-LightItalic.woff2?v=3.19') format('woff2');
+  src: url('/fonts/Omen Motion/woff2/Omen Motion - Light.woff2') format('woff2'),
+    url('/fonts/Omen Motion/woff/Omen Motion - Light.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: 'Omen Motion';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/Inter/Inter-Regular.woff2?v=3.19') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/Inter/Inter-Italic.woff2?v=3.19') format('woff2');
+  src: url('/fonts/Omen Motion/woff2/Omen Motion - Regular.woff2') format('woff2'),
+    url('/fonts/Omen Motion/woff/Omen Motion - Regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: 'Omen Motion';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/Inter/Inter-Medium.woff2?v=3.19') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url('/fonts/Inter/Inter-MediumItalic.woff2?v=3.19') format('woff2');
+  src: url('/fonts/Omen Motion/woff2/Omen Motion -  Medium.woff2') format('woff2'),
+    url('/fonts/Omen Motion/woff/Omen Motion -  Medium.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('/fonts/Inter/Inter-SemiBold.woff2?v=3.19') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 600;
-  font-display: swap;
-  src: url('/fonts/Inter/Inter-SemiBoldItalic.woff2?v=3.19') format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter';
+  font-family: 'Omen Motion';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/Inter/Inter-Bold.woff2?v=3.19') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/fonts/Inter/Inter-BoldItalic.woff2?v=3.19') format('woff2');
+  src: url('/fonts/Omen Motion/woff2/Omen Motion -  Bold.woff2') format('woff2'),
+    url('/fonts/Omen Motion/woff/Omen Motion -  Bold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url('/fonts/Inter/Inter-ExtraBold.woff2?v=3.19') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 800;
-  font-display: swap;
-  src: url('/fonts/Inter/Inter-ExtraBoldItalic.woff2?v=3.19') format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter';
+  font-family: 'Omen Motion';
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url('/fonts/Inter/Inter-Black.woff2?v=3.19') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 900;
-  font-display: swap;
-  src: url('/fonts/Inter/Inter-BlackItalic.woff2?v=3.19') format('woff2');
+  src: url('/fonts/Omen Motion/woff2/Omen Motion -  Black.woff2') format('woff2'),
+    url('/fonts/Omen Motion/woff/Omen Motion -  Black.woff') format('woff');
 }

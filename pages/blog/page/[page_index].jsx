@@ -12,7 +12,7 @@ export default function BlogIndex({ posts, numPages, currentPage }) {
     <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'>
       <div className='min-w-100per relative'>
         <div className='m-auto max-w-50rem mb-10rem'>
-          <h1 className='font-bold text-50px mb-50px leading-120per'>A Blog - the right way to tell a story</h1>
+          <h1 className='font-bold text-50px mb-50px'>A Blog - the right way to tell a story</h1>
           <p className='text-25px font-normal mt-25px'>
             Explore the blog posts, to learn more about the latest tips and tricks.
           </p>
