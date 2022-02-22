@@ -46,7 +46,7 @@ export default function Search({ handleCloseClick }) {
           href='#'
           onClick={handleCloseClick}
           style={{ textDecoration: 'none' }}
-          className='text-10px bg-light p-10px rounded-5px mx-10px'
+          className='text-10px bg-light p-10px rounded-5px mx-10px hover:bg-black hover:text-white transition-all transition-duration-500ms'
           id='close-modal'>
           ESC
         </a>
