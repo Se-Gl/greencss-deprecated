@@ -19,7 +19,7 @@ export default function Service() {
 
   return (
     <section className='my-20rem sm:my-100px md:my-100px' id='service-section'>
-      <h2 className='font-bold text-50px mb-50px'>From The Docs</h2>
+      <h2>From The Docs</h2>
       <div className='m-auto grid grid-col-3 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
         <div
           ref={ref}

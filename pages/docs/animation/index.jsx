@@ -16,17 +16,15 @@ export default function AnimationIndexPage() {
             </div>
           </div>
           <div className='m-auto max-w-50rem'>
-            <h1 className='font-bold text-50px mb-25px'>Handmade, crafted animations</h1>
+            <h1>Handmade, crafted animations</h1>
             <HandCrafted />
-            <p className='text-25px font-normal'>
+            <p>
               The collaboration of design and code plays an important role, especially in web development. Nowadays, a
               beautiful website is more or less easy to create. However, bringing a web application alive is more
               difficult. The keyword for this process is &quot;animation&quot;. Animation originates from the latin verb
               &quot;animare&quot; and means as much as spirit, life, breath or simply to bring to life.
             </p>
-            <p className='text-25px font-normal'>
-              To see the full selection, including animation examples, proceed by clicking on the button below.
-            </p>
+            <p>To see the full selection, including animation examples, proceed by clicking on the button below.</p>
             <LinkButton className='my-50px' href='/docs/animation/example' id='visit-examples-2'>
               Examples
             </LinkButton>

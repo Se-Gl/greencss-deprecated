@@ -9,7 +9,7 @@ export default function BrandHome() {
         <div className='m-auto max-w-60rem mb-10rem'>
           <h1>A Brand Book - the right way to get to know a story</h1>
           <BrandBook />
-          <p className='text-25px font-normal mt-25px'>
+          <p>
             Explore the blog posts, to learn more about the latest tips and tricks. All brand features featured in the
             omenCSS Brand Book or this website are copyrighted. The omenCSS library is licensed under the MIT License.
             If you choose to use logos, designs and/or other brand assets, you acknowledge that you sufficiently
