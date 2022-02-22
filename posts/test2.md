@@ -5,7 +5,7 @@ excerpt: 'A simple Hello World sub header.'
 cover_image: 'https://res.cloudinary.com/omencss/image/upload/v1644523508/blog/airplane_lpankf.jpg'
 category: 'Animation'
 author: 'Severin Glaser'
-isBlog: true
+isBlog: false
 keywords: ''
 classNames: ''
 plainText: "Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat

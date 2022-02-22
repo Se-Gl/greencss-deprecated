@@ -66,17 +66,7 @@ export default function Header() {
         <LinkButton className={`${isHome}`} onClick={() => setShowModal(true)}>
           Search | F3
         </LinkButton>
-        <Modal onClose={() => setShowModal(false)} show={showModal}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione voluptate neque ipsum inventore
-            necessitatibus amet. Suscipit deserunt commodi dolor odio laudantium cupiditate. Ut, ab. Repellendus commodi
-            nobis fugit ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione voluptate neque ipsum
-            inventore necessitatibus amet. Suscipit deserunt commodi dolor odio laudantium cupiditate. Ut, ab.
-            Repellendus commodi nobis fugit ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ratione
-            voluptate neque ipsum inventore necessitatibus amet. Suscipit deserunt commodi dolor odio laudantium
-            cupiditate. Ut, ab. Repellendus commodi nobis fugit ab!
-          </p>
-        </Modal>
+        <Modal onClose={() => setShowModal(false)} show={showModal}></Modal>
       </nav>
 
       {/* Mobile Menu */}

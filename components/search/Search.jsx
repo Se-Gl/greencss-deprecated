@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import SearchIcon from '../icon/Search/SearchIcon'
+import Results from './Results'
 
 export default function Search({ handleCloseClick }) {
   const [searchTerm, setSearchTerm] = useState('')
@@ -50,7 +51,7 @@ export default function Search({ handleCloseClick }) {
           ESC
         </a>
       </div>
-      <p>{searchTerm}</p>
+      <Results results={searchResults} searchTerm={searchTerm} />
     </>
   )
 }
