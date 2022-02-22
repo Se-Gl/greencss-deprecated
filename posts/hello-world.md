@@ -6,6 +6,14 @@ cover_image: 'https://res.cloudinary.com/omencss/image/upload/v1644523509/blog/p
 category: 'Animation'
 author: 'Severin Glaser'
 isBlog: true
+keywords: ['animation', 'test']
+classNames: 'fade-in fade-out'
+plainText: "Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
+haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
+manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
+verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
+pavida ne omnes etiam, atque. Sonuit omina sed sine haerebat illic fit a mora
+in."
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat

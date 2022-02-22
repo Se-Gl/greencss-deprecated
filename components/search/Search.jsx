@@ -1,27 +1,56 @@
+import { useState, useEffect } from 'react'
 import SearchIcon from '../icon/Search/SearchIcon'
 
 export default function Search({ handleCloseClick }) {
+  const [searchTerm, setSearchTerm] = useState('')
+  const [searchResults, setSearchResults] = useState([])
+
+  useEffect(() => {
+    const getResults = async () => {
+      if (searchTerm === '') {
+        setSearchResults([])
+      } else {
+        const res = await fetch(`/api/search?q=${searchTerm}`)
+        const { results } = await res.json()
+        // console.log(results)
+        setSearchResults(results)
+      }
+    }
+    getResults()
+  }, [searchTerm])
+
+  //   console.log(searchTerm)
+
   return (
-    <div className='flex bg-white max-w-50rem rounded-5px'>
-      <div type='submit' className='flex items-center bg-transparent justify-center text-black mx-25px'>
-        <SearchIcon width='30px' height='30px' />
+    <>
+      <div className='flex bg-white max-w-50rem rounded-5px shadow-black'>
+        <form className='flex max-w-40rem'>
+          <div type='submit' className='flex items-center bg-transparent justify-center text-black mx-25px'>
+            <SearchIcon width='30px' height='30px' />
+          </div>
+          <div className='w-50rem my-auto'>
+            <input
+              autoFocus
+              type='search'
+              name='search'
+              id='search'
+              className='bg-transparent w-100per text-black border-none text-15px'
+              placeholder='Search documentation'
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </div>
+        </form>
+        <a
+          href='#'
+          onClick={handleCloseClick}
+          style={{ textDecoration: 'none' }}
+          className='text-10px bg-light p-10px rounded-5px mx-10px'
+          id='close-modal'>
+          ESC
+        </a>
       </div>
-      <div className='w-50rem my-auto'>
-        <input
-          autoFocus
-          type='search'
-          className='bg-transparent w-100per text-black border-none text-15px'
-          placeholder='Search documentation'
-        />
-      </div>
-      <a
-        href='#'
-        onClick={handleCloseClick}
-        style={{ textDecoration: 'none' }}
-        className='text-10px bg-light p-10px rounded-5px mx-10px'
-        id='close-modal'>
-        ESC
-      </a>
-    </div>
+      <p>{searchTerm}</p>
+    </>
   )
 }
