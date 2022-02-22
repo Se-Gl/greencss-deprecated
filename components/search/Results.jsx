@@ -13,9 +13,11 @@ export default function Results({ results, searchTerm }) {
           <div
             className='flex justify-between items-center my-50px pb-25px border-bottom-1px border-black border-solid'
             key={index}>
-            <Link href={`${result.frontmatter.isBlog === true ? `/blog/${result.slug}` : `/docs/${result.slug}`}  `}>
+            <Link
+              href={`${result.frontmatter.isBlog === true ? `/blog/${result.slug}` : `/docs/${result.slug}`}`}
+              passHref>
               <div className='flex' style={{ cursor: 'pointer' }}>
-                {result.frontmatter.isBlog === true ? <Document /> : <Blog />}
+                {result.frontmatter.isBlog === false ? <Document /> : <Blog />}
                 <div className='ml-15px'>
                   <h3
                     className='mt-0px my-0px text-15px font-bold bg-white rounded-5px p-10px'
