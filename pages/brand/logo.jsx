@@ -65,7 +65,7 @@ export default function logo() {
           </BrandSection>
           <BrandSection
             title='Scalability'
-            description='The logo is designed to be scaled on small screens, tablets, screen readers, desktop computers and printing. Initially, the logo shall be a square with 100 x 100 pixels and a border radius of 25 pixels. A logo double the size (200px x 200px) has a border radius twice as large (50px). The proportions must be maintained. However, the smallest width should not be smaller than 25 pixels.'
+            description='The logo is designed to be scaled on small screens, tablets, screen readers, desktop computers and printing. Initially, the logo shall be a square with 100 x 100 pixels and a border radius of 25 pixels. A logo double the size (200px x 200px) has a border radius twice as large (50px) - the border radius is therefore a quarter of the width or length. . The proportions must be maintained. However, the smallest width should not be smaller than 25 pixels.'
           />
           <BrandSection isLight={true}>
             <img
