@@ -159,8 +159,8 @@ export default function typography() {
                   </div>
                 </div>
               </div>
-              <div className='flex min-h-30rem'>
-                <div className='h-auto m-auto'>
+              <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
+                <div className='h-auto m-auto sm:m-0px md:m-0px'>
                   <p className='sm:my-10px'>Avoid, if possible, the use of colored typography (black or white only).</p>
                 </div>
               </div>
@@ -171,8 +171,8 @@ export default function typography() {
                   </div>
                 </div>
               </div>
-              <div className='flex min-h-30rem'>
-                <div className='h-auto m-auto'>
+              <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
+                <div className='h-auto m-auto sm:m-0px md:m-0px'>
                   <p className='sm:my-10px'>Avoid, if possible, the use of capitalized typography.</p>
                 </div>
               </div>
@@ -184,8 +184,8 @@ export default function typography() {
                   </div>
                 </div>
               </div>
-              <div className='flex min-h-30rem'>
-                <div className='h-auto m-auto'>
+              <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
+                <div className='h-auto m-auto sm:m-0px md:m-0px'>
                   <p className='sm:my-10px'>
                     Avoid, the adjustment of kerning, line height, letter spacing and tracking.
                   </p>
@@ -199,8 +199,8 @@ export default function typography() {
                   </div>
                 </div>
               </div>
-              <div className='flex min-h-30rem'>
-                <div className='h-auto m-auto'>
+              <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
+                <div className='h-auto m-auto sm:m-0px md:m-0px'>
                   <p className='sm:my-10px'>Do not make any custom hierarchy by only using font weight.</p>
                 </div>
               </div>
@@ -214,8 +214,8 @@ export default function typography() {
                   </div>
                 </div>
               </div>
-              <div className='flex min-h-30rem'>
-                <div className='h-auto m-auto'>
+              <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
+                <div className='h-auto m-auto sm:m-0px md:m-0px'>
                   <p className='sm:my-10px'>
                     Do not separate text sections or customize your own margins and paddings.
                   </p>

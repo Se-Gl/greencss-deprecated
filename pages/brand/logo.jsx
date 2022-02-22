@@ -105,36 +105,83 @@ export default function logo() {
           </BrandSection>
           <BrandSection isLight={true}>
             <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
-              <BrandBadExample
-                description='Do not use the Logo without Vector Font glyph. Do not type use the logo in any other fonts.'
-                imgUrl='https://res.cloudinary.com/omencss/image/upload/v1644871627/brand/logo-donot-1_tqejd2.png'
-                imgAlt='omencss, bad logo example 1'
-                imgId='logo-bad-1'
-              />
-              <BrandBadExample
-                description='Do not stretch the logo in any way.'
-                imgUrl='https://res.cloudinary.com/omencss/image/upload/v1644872653/brand/Group_14_lwzfzg.png'
-                imgAlt='omencss, bad logo example 2'
-                imgId='logo-bad-2'
-              />
-              <BrandBadExample
-                description='Do not add additional icons or marks.'
-                imgUrl='https://res.cloudinary.com/omencss/image/upload/v1644872697/brand/Group_15_psflzx.png'
-                imgAlt='omencss, bad logo example 3'
-                imgId='logo-bad-3'
-              />
-              <BrandBadExample
-                description='Only use the brand&#39;s primary colours in order to provide the highest contrast ratio.'
-                imgUrl='https://res.cloudinary.com/omencss/image/upload/v1644872730/brand/Group_16_lwhowx.png'
-                imgAlt='omencss, bad logo example 3'
-                imgId='logo-bad-3'
-              />
+              <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
+                <div className='h-auto w-100per flex'>
+                  <div className='m-auto'>
+                    <img
+                      src='https://res.cloudinary.com/omencss/image/upload/v1644871627/brand/logo-donot-1_tqejd2.png'
+                      alt='omencss logo without vector font'
+                      id='omencss-logo-bad-example'
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
+                <div className='h-auto m-auto sm:m-0px md:m-0px'>
+                  <p className='sm:my-10px'>
+                    Do not use the Logo without Vector Font glyph. Do not type use the logo in any other fonts.
+                  </p>
+                </div>
+              </div>
+
+              <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
+                <div className='h-auto w-100per flex'>
+                  <div className='m-auto'>
+                    <img
+                      src='https://res.cloudinary.com/omencss/image/upload/v1644872653/brand/Group_14_lwzfzg.png'
+                      alt='omencss, bad logo example 3'
+                      id='logo-bad-2'
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
+                <div className='h-auto m-auto sm:m-0px md:m-0px'>
+                  <p className='sm:my-10px'>Do not stretch the logo in any way.</p>
+                </div>
+              </div>
+
+              <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
+                <div className='h-auto w-100per flex'>
+                  <div className='m-auto'>
+                    <img
+                      src='https://res.cloudinary.com/omencss/image/upload/v1644872697/brand/Group_15_psflzx.png'
+                      alt='omencss, bad logo example 3'
+                      id='logo-bad-3'
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
+                <div className='h-auto m-auto sm:m-0px md:m-0px'>
+                  <p className='sm:my-10px'>Do not add additional icons or marks.</p>
+                </div>
+              </div>
+
+              <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
+                <div className='h-auto w-100per flex'>
+                  <div className='m-auto'>
+                    <img
+                      src='https://res.cloudinary.com/omencss/image/upload/v1644872730/brand/Group_16_lwhowx.png'
+                      alt='omencss, bad logo example 4'
+                      id='logo-bad-4'
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className='flex min-h-30rem sm:min-h-auto md:min-h-auto'>
+                <div className='h-auto m-auto sm:m-0px md:m-0px'>
+                  <p className='sm:my-10px'>
+                    Only use the brand&#39;s primary colours in order to provide the highest contrast ratio.
+                  </p>
+                </div>
+              </div>
             </div>
           </BrandSection>
           <BrandSection
             title='Legal'
             description='omenCSS library is licensed under MIT. Nevertheless,
-            Do not use omenCSS as a verb (e.g., “Let’s omencss the web site.”). Instead, consider using omenCSS as an adjective and an experience. All brand features featured in the omenCSS Brand Book or this website are copyrighted. If you choose to use logos, designs and/or other brand assets, you acknowledge that you sufficiently attribute the specific content. Our font "omen motion" is available under SIL and can be downloaded on this website free of charge. The Vector font, on the other hand, requires a commercial licence (not from omenCSS).'
+            Do not use omenCSS as a verb (e.g., “Let’s omencss the web site.”). Instead, consider using omenCSS as an adjective and an experience. All brand features featured in the omenCSS Brand Book or this website are copyrighted. If you choose to use logos, designs and/or other brand assets, you acknowledge that you sufficiently attribute the specific content. "Omen Motion" - the font - has a SIL license and can be downloaded for free in the typography section. The Vector font, on the other hand, requires a commercial licence and can not be downloaded on this site.'
           />
           <Summary
             titleOne='01'
