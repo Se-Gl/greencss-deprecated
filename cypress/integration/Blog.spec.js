@@ -10,7 +10,7 @@ describe('Blog Screen Unit test', () => {
   })
   it('click buttons and redirect to slug page', () => {
     cy.get('#button-hello-world').click().wait(2000)
-    cy.url().should('be.equal', 'http://localhost:3000/docs/hello-world')
+    cy.url().should('be.equal', 'http://localhost:3000/blog/hello-world')
   })
   it('renders slug page header on the hello world page', () => {
     cy.get('#blog-hello-world').should('be.visible').should('exist').contains('Hello World!', { matchCase: false })

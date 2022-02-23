@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Blog from '../icon/Search/Blog'
+// import Blog from '../icon/Search/Blog'
 import Document from '../icon/Search/Document'
 
 export default function Results({ results, searchTerm }) {
@@ -15,7 +15,8 @@ export default function Results({ results, searchTerm }) {
             key={index}>
             <Link href={`/docs/${result.slug}`} passHref>
               <div className='flex' style={{ cursor: 'pointer' }}>
-                {result.frontmatter.isBlog === false ? <Document /> : <Blog />}
+                {/* {result.frontmatter.isBlog === false ? <Document /> : <Blog />} */}
+                <Document />
                 <div className='ml-15px'>
                   <h3
                     className='mt-0px my-0px text-15px font-bold bg-white rounded-5px p-10px'

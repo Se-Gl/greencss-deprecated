@@ -30,7 +30,7 @@ export default function HomePage({ posts }) {
 export async function getStaticProps() {
   return {
     props: {
-      posts: getPosts().slice(0, 3)
+      posts: getPosts('posts-blog').slice(0, 3)
     }
   }
 }

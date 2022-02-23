@@ -71,7 +71,7 @@ export default function BlogPostPage({
 
 // get slug
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join('posts'))
+  const files = fs.readdirSync(path.join('posts-doc'))
   const paths = files.map((filename) => ({
     params: {
       slug: filename.replace('.md', '')
@@ -86,7 +86,7 @@ export async function getStaticPaths() {
 
 // get blog post
 export async function getStaticProps({ params: { slug } }) {
-  const markdownMeta = fs.readFileSync(path.join('posts', slug + '.md'), 'utf-8')
+  const markdownMeta = fs.readFileSync(path.join('posts-doc', slug + '.md'), 'utf-8')
 
   const { data: frontmatter, content } = matter(markdownMeta)
   return {
