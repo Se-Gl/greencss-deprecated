@@ -37,7 +37,7 @@ export default function BlogCard({ post, index }) {
                 style={{ backgroundImage: `url(${post.frontmatter.cover_image})`, backgroundColor: `${vibrantColor}` }}
                 id={`bg-image-${post.slug}`}>
                 <div className='flex h-50rem min-h-50per'>
-                  <Link href={`/blog/${post.slug}`} passHref>
+                  <Link href={`/docs/${post.slug}`} passHref>
                     <div
                       style={{ cursor: 'pointer' }}
                       className={`relative m-auto max-w-75per w-75per min-h-80per ${!isDark && 'bg-light text-dark'} ${
@@ -49,7 +49,7 @@ export default function BlogCard({ post, index }) {
                       <LinkButton
                         id={`button-${post.slug}`}
                         className={`absolute bottom-0 mt-50px ${!isDark && 'text-dark'} ${isDark && 'text-light'}`}
-                        href={`/blog/${post.slug}`}>
+                        href={`/docs/${post.slug}`}>
                         Read more
                       </LinkButton>
                     </div>

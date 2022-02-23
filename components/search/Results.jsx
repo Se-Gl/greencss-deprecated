@@ -13,9 +13,7 @@ export default function Results({ results, searchTerm }) {
           <div
             className='flex justify-between items-center my-50px pb-25px border-bottom-1px border-black border-solid'
             key={index}>
-            <Link
-              href={`${result.frontmatter.isBlog === true ? `/blog/${result.slug}` : `/docs/${result.slug}`}`}
-              passHref>
+            <Link href={`/docs/${result.slug}`} passHref>
               <div className='flex' style={{ cursor: 'pointer' }}>
                 {result.frontmatter.isBlog === false ? <Document /> : <Blog />}
                 <div className='ml-15px'>
