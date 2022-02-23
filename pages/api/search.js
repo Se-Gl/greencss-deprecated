@@ -8,6 +8,8 @@ export default (req, res) => {
   if (process.env.NODE_ENV === 'production') {
     posts = require('../../cache/data').posts
   } else {
+    // search is only possible for doc pages in development! blogs will not be displayed
+    // TODO add blogs
     const files = fs.readdirSync(path.join('posts-doc'))
 
     posts = files.map((filename) => {

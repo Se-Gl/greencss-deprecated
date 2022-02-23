@@ -1,4 +1,5 @@
 ---
+isBlog: true
 title: 'Hello World!'
 date: 'Feb 10. 2022'
 excerpt: 'A simple Hello World sub header.'

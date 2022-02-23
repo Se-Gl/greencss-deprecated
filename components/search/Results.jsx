@@ -1,9 +1,11 @@
 import Link from 'next/link'
-// import Blog from '../icon/Search/Blog'
+import Blog from '../icon/Search/Blog'
 import Document from '../icon/Search/Document'
 
 export default function Results({ results, searchTerm }) {
   if (results.length === 0) return <></>
+
+  // const checkIsBlog = result.frontmatter.isBlog === false
 
   return (
     <>
@@ -13,10 +15,9 @@ export default function Results({ results, searchTerm }) {
           <div
             className='flex justify-between items-center my-50px pb-25px border-bottom-1px border-black border-solid'
             key={index}>
-            <Link href={`/docs/${result.slug}`} passHref>
+            <Link href={`/${result.frontmatter.isBlog === false ? 'docs' : 'blog'}/${result.slug}`} passHref>
               <div className='flex' style={{ cursor: 'pointer' }}>
-                {/* {result.frontmatter.isBlog === false ? <Document /> : <Blog />} */}
-                <Document />
+                {result.frontmatter.isBlog === false ? <Document /> : <Blog />}
                 <div className='ml-15px'>
                   <h3
                     className='mt-0px my-0px text-15px font-bold bg-white rounded-5px p-10px'
