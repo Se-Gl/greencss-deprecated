@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section id='hero'>
       <div className='m-auto grid gap-30px grid-col-2 sm:grid-col-1 md:grid-col-1' style={{ maxWidth: '110rem' }}>
-        <div className='col-span-1 min-h-75vh'>
+        <div className='col-span-1 min-h-75vh sm:min-h-100vh'>
           <div className='flex h-75vh'>
             <div className='m-auto reveal-down animate animation-forwards animation-delay-500ms'>
               <h1 className='font-800 text-63px text-white sm:text-black md:text-black' style={{ maxWidth: '400px' }}>

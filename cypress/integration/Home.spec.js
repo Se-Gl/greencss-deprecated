@@ -28,9 +28,7 @@ describe('Home Screen Unit test', () => {
   it('renders the header', () => {
     cy.get('main div h1').contains('A classy way to write CSS design', { matchCase: false })
   })
-  it('shows animated bubbles', () => {
-    cy.get('.bubbles').should('exist')
-  })
+
   it('includes layout component', () => {
     cy.get('nav').should('exist')
     cy.get('main .container').should('exist')

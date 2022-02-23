@@ -4,7 +4,6 @@ import Presentation from '@/components/LandingPage/Presentation'
 import Service from '@/components/LandingPage/Service'
 import Support from '@/components/LandingPage/Support'
 import Testimonial from '@/components/LandingPage/Testimonial'
-import Bubbles from '@/components/reusable/Bubbles'
 import Layout from '@/components/reusable/Layout'
 import { getPosts } from '@/lib/posts'
 
@@ -23,7 +22,6 @@ export default function HomePage({ posts }) {
         <News posts={posts} />
         <Testimonial />
         <Service />
-        <Bubbles />
       </Layout>
     </div>
   )
