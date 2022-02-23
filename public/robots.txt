@@ -1,3 +1,4 @@
 User-agent: *
 Sitemap: https://www.omen.design/sitemap.xml
-Sitemap: https://www.omen.design/dynamic-sitemap.xml
+Sitemap: https://www.omen.design/dynamic-blog-sitemap.xml
+Sitemap: https://www.omen.design/dynamic-doc-sitemap.xml
