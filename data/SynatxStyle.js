@@ -2,7 +2,7 @@
 // Converted automatically using ./tools/themeFromVsCode
 export const VsStyle = {
   'code[class*="language-"]': {
-    color: '#c5c8c6',
+    color: '#7bb6f9',
     textShadow: '0 1px rgba(0, 0, 0, 0.3)',
     fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
     direction: 'ltr',
@@ -20,7 +20,7 @@ export const VsStyle = {
     hyphens: 'none'
   },
   'pre[class*="language-"]': {
-    color: '#c5c8c6',
+    color: '#7bb6f9',
     textShadow: '0 1px rgba(0, 0, 0, 0.3)',
     fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
     direction: 'ltr',
@@ -40,110 +40,110 @@ export const VsStyle = {
     margin: '.5em 0',
     overflow: 'auto',
     borderRadius: '0.3em',
-    background: '#1e1e1e'
+    background: '#03000a'
   },
   ':not(pre) > code[class*="language-"]': {
-    background: '#1e1e1e',
+    background: '#03000a',
     padding: '.1em',
     borderRadius: '.3em'
   },
   comment: {
-    color: '#6a9955'
+    color: '#3f7d1a'
   },
   prolog: {
-    color: '#6a9955'
+    color: '#3f7d1a'
   },
   doctype: {
-    color: '#6a9955'
+    color: '#3f7d1a'
   },
   cdata: {
-    color: '#6a9955'
+    color: '#3f7d1a'
   },
   punctuation: {
-    color: '#569cd6'
+    color: '#147df5'
   },
   '.namespace': {
     Opacity: '.7'
   },
   property: {
-    color: '#ce9178'
+    color: '#e98f1f'
   },
   keyword: {
-    color: '#569cd6'
+    color: '#0870c7'
   },
   tag: {
-    color: '#569cd6'
+    color: '#0870c7'
   },
   'class-name': {
-    color: '#FFFFB6',
+    color: '#deff0a',
     textDecoration: 'underline'
   },
   boolean: {
-    color: '#99CC99'
+    color: '#a1ff0a'
   },
   constant: {
-    color: '#99CC99'
+    color: '#a1ff0a'
   },
   symbol: {
-    color: '#f92672'
+    color: '#d03377'
   },
   deleted: {
-    color: '#ce9178'
+    color: '#e98f1f'
   },
   number: {
-    color: '#FF73FD'
+    color: '#be0aff'
   },
   selector: {
-    color: '#A8FF60'
+    color: '#a1ff0a'
   },
   'attr-name': {
     color: '@'
   },
   string: {
-    color: '#ce9178'
+    color: '#f08a87'
   },
   char: {
-    color: '#A8FF60'
+    color: '#caff75'
   },
   builtin: {
-    color: '#569cd6'
+    color: '#7bb6f9'
   },
   inserted: {
-    color: '#A8FF60'
+    color: '#caff75'
   },
   variable: {
-    color: '#C6C5FE'
+    color: '#da75ff'
   },
   operator: {
-    color: '##ce9178'
+    color: '##f3c081'
   },
   entity: {
-    color: '#FFFFB6',
+    color: '#fff2b3',
     cursor: 'help'
   },
   url: {
-    color: '#96CBFE'
+    color: '#7bb6f9'
   },
   '.language-css .token.string': {
-    color: '#99CC99'
+    color: '#81da4c'
   },
   '.style .token.string': {
-    color: '#99CC99'
+    color: '#81da4c'
   },
   atrule: {
-    color: '#F9EE98'
+    color: '#ffe56b'
   },
   'attr-value': {
-    color: '#F9EE98'
+    color: '#ffe56b'
   },
   function: {
-    color: '#569cd6'
+    color: '#7bb6f9'
   },
   regex: {
-    color: '#E9C062'
+    color: '#f3c081'
   },
   important: {
-    color: '#fd971f',
+    color: '#e98f1f',
     fontWeight: 'bold'
   },
   bold: {
