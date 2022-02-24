@@ -1,20 +1,16 @@
 import React from 'react'
-import { NEXT_URL, API_URL, NODE_ENV } from '@/config/index'
+import { blogSlugs } from '@/cache/cachedBlogSlug'
+import { NEXT_URL, NODE_ENV } from '@/config/index'
 
 const baseUrl = {
   development: `${NEXT_URL}`,
   production: `${NEXT_URL}`
 }[NODE_ENV]
 
-const baseApiUrl = {
-  development: `${API_URL}/sitemapblog`,
-  production: `${API_URL}/sitemapblog`
-}[NODE_ENV]
-
 const createSitemap = (getSlug) => `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${getSlug
-    .map(({ slug }) => {
+    .map((slug) => {
       return `
       <url>
         <loc>${`${baseUrl}/blog/${slug}`}</loc>
@@ -28,11 +24,9 @@ const createSitemap = (getSlug) => `<?xml version="1.0" encoding="UTF-8"?>
     `
 class Sitemap extends React.Component {
   static async getInitialProps({ res }) {
-    const request = await fetch(baseApiUrl)
-    const allPosts = await request.json()
-
     res.setHeader('Content-Type', 'text/xml')
-    const getSlug = allPosts.map((post) => post.slug)
+    const getSlug = blogSlugs.map((post) => post.slug)
+    // console.log(getSlug)
     res.write(createSitemap(getSlug))
     res.end()
   }
