@@ -26,15 +26,23 @@ h3 {
   line-height: 100%;
   margin-bottom: 25px;
 }
-p,
+
 a,
 ol {
   color: c.$black;
-  margin-block: 25px;
+  margin-top: 25px;
+  margin-bottom: 50px;
   font-size: 25px;
   font-weight: normal;
   margin-bottom: 25px;
   list-style-type: circle;
+}
+
+p {
+  color: c.$black;
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 50px;
 }
 
 pre {
