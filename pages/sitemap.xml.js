@@ -39,6 +39,10 @@ export const getServerSideProps = ({ res }) => {
   res.setHeader('Content-Type', 'text/xml')
   res.write(sitemap)
   res.end()
+
+  return {
+    props: {}
+  }
 }
 
 export default Sitemap
