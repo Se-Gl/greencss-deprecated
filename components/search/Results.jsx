@@ -20,16 +20,17 @@ export default function Results({ results, searchTerm }) {
             key={index}>
             <Link href={`/${result.frontmatter.isBlog === false ? 'docs' : 'blog'}/${result.slug}`} passHref>
               <div className='flex' style={{ cursor: 'pointer' }}>
-                {result.frontmatter.isBlog === false ? <Document /> : <Blog />}
+                {result.frontmatter.isBlog === false ? <Document className='mt-7px' /> : <Blog className='mt-7px' />}
                 <div className='ml-15px'>
-                  <h3
-                    className='mt-0px my-0px text-15px font-bold bg-white rounded-5px p-10px'
-                    style={{ display: 'inline' }}>
-                    {result.frontmatter.category}
-                  </h3>
-                  <p className='ml-25px sm:ml-0px mt-0px my-0px text-15px pt-15px'>
+                  <div className='flex items-center'>
+                    <h3 className='text-15px font-600 bg-white rounded-5px p-10px mb-0px hover:bg-black hover:text-white transition-all transition-duration-500ms'>
+                      {result.frontmatter.category}
+                    </h3>
+                  </div>
+                  <h3 className='text-20px my-10px'>{result.frontmatter.title.slice(0, 25)}... </h3>
+                  <p className='text-15px my-0px'>
                     {result.frontmatter.excerpt.slice(0, 25)}...{' '}
-                    <span className='font-bold'>{searchTerm.slice(0, 10)}</span>
+                    <span className='font-600'>{searchTerm.slice(0, 10)}...</span>
                   </p>
                 </div>
               </div>
