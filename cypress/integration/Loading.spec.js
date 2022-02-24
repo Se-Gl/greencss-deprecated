@@ -9,8 +9,6 @@ describe('Loading Component Unit test', () => {
       .get('#button-hello-world')
       .click()
       .get('#progress-loader')
-      .wait(1000)
-      .should('be.visible')
       .should('exist')
   })
 })

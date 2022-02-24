@@ -1,10 +1,12 @@
+import { NEXT_URL, NODE_ENV } from '@/config/index'
+
 const Sitemap = () => {}
 
 export const getServerSideProps = ({ res }) => {
   const baseUrl = {
-    development: `${process.env.NEXT_PUBLIC_URL}`,
-    production: `${process.env.NEXT_PUBLIC_URL}`
-  }[process.env.NODE_ENV]
+    development: `${NEXT_URL}`,
+    production: `${NEXT_URL}`
+  }[NODE_ENV]
 
   const staticSlug = [
     'brand',
