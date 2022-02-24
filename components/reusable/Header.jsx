@@ -100,7 +100,7 @@ export default function Header() {
                         <a style={{ textDecoration: 'none', cursor: 'pointer' }}>
                           <h3
                             className={`p-20px clip-inset-in-top animate animation-forwards animation-delay-${
-                              (index + 1) * 2
+                              (index + 1) * 1
                             }00ms`}>
                             {item.title}
                           </h3>
