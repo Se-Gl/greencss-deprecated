@@ -78,5 +78,5 @@ Layout.defaultProps = {
     'omenCSS is an intuitive dynamic animated CSS library for HTML5 and frameworks like VueJS, NextJs, React, or Angular. Over 100.000 CSS classes cover all your needs. Yet, completely lightweight, as unused classes are purged before production.',
   author: 'Severin Glaser',
   url: '',
-  image: '/images/icons/logo_dark_high.png'
+  image: `${NEXT_URL}/images/omencss-default.png`
 }
