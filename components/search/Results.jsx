@@ -4,16 +4,19 @@ import Document from '../icon/Search/Document'
 
 export default function Results({ results, searchTerm }) {
   if (results.length === 0) return <></>
-
-  // const checkIsBlog = result.frontmatter.isBlog === false
-
   return (
     <>
       <div className='p-25px' id='search-results'>
-        <h2 className='text-35px'>{results.length} Results</h2>
+        {results.length <= 1 ? (
+          <h2 className='text-35px'>{results.length} Result</h2>
+        ) : (
+          <h2 className='text-35px'>{results.length} Results</h2>
+        )}
         {results.map((result, index) => (
           <div
-            className='flex justify-between items-center my-50px pb-25px border-bottom-1px border-black border-solid'
+            className={`flex justify-between items-center my-50px pb-25px border-bottom-1px border-black border-solid clip-inset-in-left animate animation-forwards animation-delay-${
+              (index + 1) * 1
+            }00ms`}
             key={index}>
             <Link href={`/${result.frontmatter.isBlog === false ? 'docs' : 'blog'}/${result.slug}`} passHref>
               <div className='flex' style={{ cursor: 'pointer' }}>
