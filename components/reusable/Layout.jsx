@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+import { NEXT_URL } from '@/config/index'
 
 const Header = dynamic(() => import('./Header'))
 
@@ -36,7 +37,7 @@ export default function Layout({
         documentation: https://developers.facebook.com/docs/sharing/opengraph */}
         <meta name='og:title' content={title} />
         <meta name='og:type' content='site' />
-        <meta name='og:url' content={`${process.env.NEXT_PUBLIC_URL}/${url}`} />
+        <meta name='og:url' content={`${NEXT_URL}/${url}`} />
         <meta name='og:image' content={image} />
         <meta name='og:site_name' content={title} />
         <meta name='og:description' content={description} />
