@@ -1,8 +1,15 @@
 import React from 'react'
-import { NEXT_URL, API_URL } from '@/config/index'
+import { NEXT_URL, API_URL, NODE_ENV } from '@/config/index'
 
-const NEXTURL = `${NEXT_URL}`
-const APIURL = `${API_URL}/sitemapdoc`
+const baseUrl = {
+  development: `${NEXT_URL}`,
+  production: `${NEXT_URL}`
+}[NODE_ENV]
+
+const baseApiUrl = {
+  development: `${API_URL}/sitemapdoc`,
+  production: `${API_URL}/sitemapdoc`
+}[NODE_ENV]
 
 const createSitemap = (getSlug) => `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -10,7 +17,7 @@ const createSitemap = (getSlug) => `<?xml version="1.0" encoding="UTF-8"?>
     .map(({ slug }) => {
       return `
       <url>
-        <loc>${`${NEXTURL}/docs/${slug}`}</loc>
+        <loc>${`${baseUrl}/docs/${slug}`}</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -22,7 +29,7 @@ const createSitemap = (getSlug) => `<?xml version="1.0" encoding="UTF-8"?>
 
 class Sitemap extends React.Component {
   static async getInitialProps({ res }) {
-    const request = await fetch(APIURL)
+    const request = await fetch(baseApiUrl)
     const allPosts = await request.json()
 
     res.setHeader('Content-Type', 'text/xml')
