@@ -39,15 +39,7 @@ describe('Home Screen Unit test', () => {
   })
   it('render dummy blog post card', () => {
     cy.get('#recent-news').should('exist').scrollIntoView().wait(1000)
-    cy.get('#hello-world').should('exist')
-    cy.get('#bg-image-hello-world')
-      .should('exist')
-      .should('have.attr', 'style')
-      .and(
-        'include',
-        'https://res.cloudinary.com/omencss/image/upload/v1644523509/blog/plant_iex1jv.jpg',
-        'rgb(164, 172, 41)'
-      )
+    cy.get('#blog-card').should('exist').should('exist').should('have.attr', 'style')
   })
   it('render the testimonial section', () => {
     cy.get('#testimonial').should('exist').scrollIntoView().wait(500).should('be.visible')

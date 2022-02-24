@@ -1,1 +1,1 @@
-export const blogSlugs = [{"slug":"hello-world"},{"slug":"test3"},{"slug":"test4"}]
+export const blogSlugs = [{"slug":"test3"},{"slug":"test4"},{"slug":"what-is-omencss"}]

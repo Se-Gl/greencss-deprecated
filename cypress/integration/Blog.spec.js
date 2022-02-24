@@ -8,11 +8,11 @@ describe('Blog Screen Unit test', () => {
       .should('exist')
       .contains('A Blog - the right way to tell a story', { matchCase: false })
   })
-  it('click buttons and redirect to slug page', () => {
-    cy.get('#button-hello-world').click().wait(2000)
-    cy.url().should('be.equal', 'http://localhost:3000/blog/hello-world')
+  it('click first button and redirect to slug page', () => {
+    cy.get('#blog-card').eq(0).click()
+    cy.url().should('not.be.equal', 'http://localhost:3000/blog/')
   })
-  it('renders slug page header on the hello world page', () => {
-    cy.get('#blog-hello-world').should('be.visible').should('exist').contains('Hello World!', { matchCase: false })
+  it('renders first slug page header on the hello world page', () => {
+    cy.get('#blog-card').eq(0).should('be.visible').should('exist')
   })
 })
