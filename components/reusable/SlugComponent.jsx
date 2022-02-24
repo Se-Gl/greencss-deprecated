@@ -33,9 +33,9 @@ export default function SlugComponent({
       <div className='mb-10rem min-w-100per' id={`blog-${slug}`}>
         <BackButton>Back</BackButton>
         <div className='m-auto max-w-75rem mb-10rem'>
-          <h1>{title}</h1>
+          <h1 className='text-80px sm:text-50px'>{title}</h1>
           {isBlog === false ? null : <img src={cover_image} alt={excerpt} className='w-100per rounded-10px mb-50px' />}
-          <h3>{excerpt}</h3>
+          <h2>{excerpt}</h2>
           {/*  eslint-disable  */}
           <ReactMarkdown
             children={content}
