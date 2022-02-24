@@ -4,7 +4,12 @@ import Layout from '@/components/reusable/Layout'
 
 export default function BrandHome() {
   return (
-    <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'>
+    <Layout
+      className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
+      title='omenCSS Brand Book | Styleguide | Corporate Identity'
+      description='A Brand Book - the right way to get to know a story by exploring a style guide.'
+      url='brand'
+      keywords='Styleguide, Brand Book, omenCSS, Design, Corporate Identity, omen css'>
       <div className='min-w-100per relative' id='brand-intro'>
         <div className='m-auto max-w-60rem mb-10rem'>
           <h1>A Brand Book - the right way to get to know a story</h1>

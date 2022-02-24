@@ -7,7 +7,12 @@ import Layout from '@/components/reusable/Layout'
 
 export default function typography() {
   return (
-    <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'>
+    <Layout
+      className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
+      title='Typography Brand Book | Styleguide | Corporate Identity'
+      description='The brand system features four core elements - logo, typography, colours and composition.'
+      url='brand/typography'
+      keywords='Typography, Styleguide, Brand Book, omenCSS, Design, Corporate Identity, omen css'>
       <div className='min-w-100per relative' id='brand-typography-page'>
         <BackButton className='mb-50px'>Back</BackButton>
         <div className='mb-10rem'>

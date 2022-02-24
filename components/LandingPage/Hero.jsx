@@ -25,7 +25,9 @@ export default function Hero() {
                 A classy way to write CSS design
               </h1>
 
-              <LinkButton className='mt-50px text-white sm:text-black md:text-black'>Check more</LinkButton>
+              <LinkButton className='mt-50px text-white sm:text-black md:text-black' href='docs'>
+                Check more
+              </LinkButton>
             </div>
           </div>
         </div>

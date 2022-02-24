@@ -5,7 +5,12 @@ import Layout from '@/components/reusable/Layout'
 export default function AnimationIndexPage() {
   return (
     <div className='overflow-x-hidden'>
-      <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'>
+      <Layout
+        className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'
+        title='Handmade, crafted animations by omenCSS'
+        description='The collaboration of design and code plays an important role, especially in web development. Check the full selection, including animation examples.'
+        url='docs/animation'
+        keywords='Animation, handmade css animation, reusable animation, omen css'>
         <div className='mt-10rem min-w-100per relative' id='animation-main'>
           <div className='flex'>
             <div className='mr-auto hidden'></div>
