@@ -45,7 +45,10 @@ export default function Progress() {
   }, [])
 
   return (
-    <div className='fixed top-0per left-0per z-99 h-5px w-100per' id='progress-loader'>
+    <div
+      className='fixed top-0per left-0per z-99 h-5px w-100per'
+      id='progress-loader'
+      style={{ display: progress > 0 && progress < 100 ? 'block' : 'none' }}>
       <div
         className='bg-purple absolute top-0per right-0per bottom-0per left-0per w-0px transition-all transition-duration-500ms transition-opacity'
         style={{
