@@ -18,7 +18,11 @@ export default function Results({ results, searchTerm }) {
               (index + 1) * 1
             }00ms`}
             key={index}>
-            <Link href={`/${result.frontmatter.isBlog === false ? 'docs' : 'blog'}/${result.slug}`} passHref>
+            <Link
+              href={{
+                pathname: `/${result.frontmatter.isBlog === true ? 'blog/[slug]' : 'docs/[slug]'}`,
+                query: { slug: `${result.slug}` }
+              }}>
               <div className='flex' style={{ cursor: 'pointer' }}>
                 {result.frontmatter.isBlog === false ? <Document className='mt-7px' /> : <Blog className='mt-7px' />}
                 <div className='ml-15px'>
