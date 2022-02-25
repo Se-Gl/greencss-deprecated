@@ -3,7 +3,7 @@ isBlog: true
 title: 'Hello World 4!'
 date: 'Feb 8. 2022'
 excerpt: 'A simple Hello World sub header.'
-cover_image: 'https://res.cloudinary.com/omencss/image/upload/v1644523508/blog/laptop_j6bpaa.jpg'
+cover_image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Animation'
 author: 'Severin Glaser'
 keywords: ''

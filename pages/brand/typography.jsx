@@ -79,7 +79,7 @@ export default function typography() {
             description='A hierarchical system for arranging the typography according to relative importance is essential. It is crucial to always proceed in powers of 5 or 10. '></BrandSection>
           <BrandSection isLight={true}>
             <img
-              src='https://res.cloudinary.com/omencss/image/upload/v1645550243/brand/cards-min_ftcy4t.png'
+              src='/images/brand/typography/cards-min_ftcy4t.webp'
               alt='omen css hierarchy and margins'
               id='omencss-hierarchy'
             />
@@ -121,11 +121,7 @@ export default function typography() {
             title='Call 2 action'
             description='There is one way to create a call to action for omenCSS. Use a heavy typeface for buttons.'></BrandSection>
           <BrandSection isLight={true}>
-            <img
-              src='https://res.cloudinary.com/omencss/image/upload/v1645551504/brand/cards-c2a_gorbiy.png'
-              alt='omen css call to action'
-              id='omencss-c2a'
-            />
+            <img src='/images/brand/typography/cards-c2a_gorbiy.webp' alt='omen css call to action' id='omencss-c2a' />
             <p className='my-100px'>
               Icons should be treated within the typeface. The same rules apply for aligning typography with iconography
               as for hierarchical relations, except that margins are not used here in powers of 5 or 10. Irrespective of
@@ -139,7 +135,7 @@ export default function typography() {
             description='Typography should be either dark on light visuals or light on dark images. If matched with the logo, typography and logo should use the same colour. Margin is in the power of 5 or 10, thereby the o-layout can be used.'></BrandSection>
           <BrandSection isLight={true}>
             <img
-              src='https://res.cloudinary.com/omencss/image/upload/v1645553935/brand/images-typography_lknchj.png'
+              src='/images/brand/typography/images-typography_lknchj.webp'
               alt='omen css Images vs. Typography'
               id='omencss-img-typo'
             />

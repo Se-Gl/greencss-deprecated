@@ -3,7 +3,7 @@ isBlog: false
 title: 'Hello World 5!'
 date: 'Feb 9. 2022'
 excerpt: 'A simple Hello World sub header.'
-cover_image: 'https://res.cloudinary.com/omencss/image/upload/v1644523508/blog/airplane_lpankf.jpg'
+cover_image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Animation'
 author: 'Severin Glaser'
 keywords: ''

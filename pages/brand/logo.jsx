@@ -41,7 +41,7 @@ export default function logo() {
           />
           <BrandSection isLight={true}>
             <img
-              src='https://res.cloudinary.com/omencss/image/upload/v1644868812/brand/logo_structure_qffx8z.png'
+              src='/images/brand/logo/logo_structure_qffx8z.webp'
               alt='omen css logo structure'
               id='omencss-logo-structure'
             />
@@ -52,7 +52,7 @@ export default function logo() {
           />
           <BrandSection isLight={true}>
             <img
-              src='https://res.cloudinary.com/omencss/image/upload/v1644870088/brand/logo_structure_advanced_kuxnpy.png'
+              src='/images/brand/logo/logo_structure_advanced_kuxnpy.webp'
               alt='advanced omen css logo structure'
               id='advanced-omencss-logo-structure'
             />
@@ -63,7 +63,7 @@ export default function logo() {
           />
           <BrandSection isLight={true}>
             <img
-              src='https://res.cloudinary.com/omencss/image/upload/v1644870279/brand/logos_buy40r.png'
+              src='/images/brand/logo/logos_buy40r.webp'
               alt='omencss logo dark, logo light and logo purple'
               id='different-omencss-logos'
             />
@@ -74,7 +74,7 @@ export default function logo() {
           />
           <BrandSection isLight={true}>
             <img
-              src='https://res.cloudinary.com/omencss/image/upload/v1644870563/brand/scalable-logos_dejyjk.png'
+              src='/images/brand/logo/scalable-logos_dejyjk.webp'
               alt='omencss logo scalable logos'
               id='scalable-omencss-logos'
             />
@@ -85,7 +85,7 @@ export default function logo() {
           />
           <BrandSection isLight={true}>
             <img
-              src='https://res.cloudinary.com/omencss/image/upload/v1644870667/brand/positioning_njclia.png'
+              src='/images/brand/logo/positioning_njclia.webp'
               alt='omencss logo positions'
               id='omencss-logo-position'
             />
@@ -95,25 +95,17 @@ export default function logo() {
             description='Symbols are designed individually based on specifications. Here it is allowed to deviate from the Guideline, they are visually dimensioned to best fit each shape.'
           />
           <BrandSection isLight={true}>
-            <img
-              src='https://res.cloudinary.com/omencss/image/upload/v1644870782/brand/logo-icons_ffzqbh.png'
-              alt='omencss logo icons'
-              id='omencss-logo-icons'
-            />
+            <img src='/images/brand/logo/logo-icons_ffzqbh.webp' alt='omencss logo icons' id='omencss-logo-icons' />
           </BrandSection>
           <BrandSection title='Logo typeface' description='"Vector Font"'>
-            <img
-              src='https://res.cloudinary.com/omencss/image/upload/v1644870929/brand/quick-fox_rrrwsl.png'
-              alt='omencss vector font'
-              id='omencss-logo-typeface'
-            />
+            <img src='/images/brand/logo/quick-fox_rrrwsl.webp' alt='omencss vector font' id='omencss-logo-typeface' />
           </BrandSection>
           <BrandSection isLight={true}>
             <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
               <BrandBadExample
                 childOne={
                   <img
-                    src='https://res.cloudinary.com/omencss/image/upload/v1644871627/brand/logo-donot-1_tqejd2.png'
+                    src='/images/brand/logo/logo-donot-1_tqejd2.webp'
                     alt='omencss logo without vector font'
                     id='omencss-logo-bad-example'
                   />
@@ -124,7 +116,7 @@ export default function logo() {
               <BrandBadExample
                 childOne={
                   <img
-                    src='https://res.cloudinary.com/omencss/image/upload/v1644872697/brand/Group_15_psflzx.png'
+                    src='/images/brand/logo/Group_14_lwzfzg.webp'
                     alt='omencss, bad logo example 3'
                     id='logo-bad-3'
                   />
@@ -134,7 +126,7 @@ export default function logo() {
               <BrandBadExample
                 childOne={
                   <img
-                    src='https://res.cloudinary.com/omencss/image/upload/v1644872697/brand/Group_15_psflzx.png'
+                    src='/images/brand/logo/Group_15_psflzx.webp'
                     alt='omencss, bad logo example 3'
                     id='logo-bad-3'
                   />
@@ -145,7 +137,7 @@ export default function logo() {
               <BrandBadExample
                 childOne={
                   <img
-                    src='https://res.cloudinary.com/omencss/image/upload/v1644872730/brand/Group_16_lwhowx.png'
+                    src='/images/brand/logo/Group_16_lwhowx.webp'
                     alt='omencss, bad logo example 4'
                     id='logo-bad-4'
                   />
