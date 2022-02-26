@@ -12,10 +12,9 @@ describe('Category slug Unit test', () => {
 
 describe('Category Index Unit test', () => {
   before(() => {
-    cy.visit('http://localhost:3000/docs/category')
+    cy.visit('http://localhost:3000/docs')
   })
   it('renders the static index page', () => {
-    cy.visit('http://localhost:3000/docs/category')
     cy.get('#docs-index').should('be.visible').should('exist')
   })
 })
