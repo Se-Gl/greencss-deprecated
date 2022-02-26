@@ -10,7 +10,7 @@ export default function CategoryPage({ categories }) {
     <Layout>
       <div className='min-w-100per relative' id='docs-index'>
         <div className='m-auto max-w-60rem mb-10rem'>
-          <h1>Docs - the right way to get to knot the system</h1>
+          <h1>Docs - the right way to get to know the system</h1>
           {/* <TODO add svg /> */}
           <p>Search by categories. Get to know omenCSS and start writing design.</p>
           <h2 className='mt-50px'>The types</h2>
