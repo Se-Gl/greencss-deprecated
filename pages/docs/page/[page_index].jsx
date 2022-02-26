@@ -10,13 +10,13 @@ export default function CategoryPage({ categories }) {
     <Layout>
       <div className='min-w-100per relative' id='docs-index'>
         <div className='m-auto max-w-60rem mb-10rem'>
-          <h1>Docs - the right way to get to the system</h1>
+          <h1>Docs - the right way to get to knot the system</h1>
           {/* <TODO add svg /> */}
           <p>Search by categories. Get to know omenCSS and start writing design.</p>
           <h2 className='mt-50px'>The types</h2>
           <p className='mt-25px'>
             omenCSS features 21 core elements. These in turn are filtered into over 250 subcategories. You are looking
-            for a specific paragraph? Use the search function, just press F3.
+            for a specific css class element? Use the search function instead, just press F3.
           </p>
           <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
             {categories.sort().map((category, index) => (
