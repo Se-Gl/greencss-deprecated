@@ -6,7 +6,7 @@ import { getPosts } from '@/lib/posts'
 import BlogCard from '@/components/blog/BlogCard'
 import BlogLayout from '@/components/blog/BlogLayout'
 
-export default function CategoryBlogPage({ posts, categoryName }) {
+export default function CategorySlugPage({ posts, categoryName }) {
   return (
     <Layout>
       <div className='min-w-100per relative' id={`category-${categoryName}`}>

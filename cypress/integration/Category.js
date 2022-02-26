@@ -1,4 +1,4 @@
-describe('Blog Screen Unit test', () => {
+describe('Category slug Unit test', () => {
   before(() => {
     cy.visit('http://localhost:3000/docs/category/animation')
   })
@@ -7,5 +7,15 @@ describe('Blog Screen Unit test', () => {
   })
   it('renders the header', () => {
     cy.get('h1').should('be.visible').should('exist').contains('Browse by category: animation', { matchCase: false })
+  })
+})
+
+describe('Category Index Unit test', () => {
+  before(() => {
+    cy.visit('http://localhost:3000/docs/category')
+  })
+  it('renders the static index page', () => {
+    cy.visit('http://localhost:3000/docs/category')
+    cy.get('#docs-index').should('be.visible').should('exist')
   })
 })
