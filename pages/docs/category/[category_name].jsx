@@ -5,20 +5,24 @@ import Layout from '@/components/reusable/Layout'
 import { getPosts } from '@/lib/posts'
 import BlogCard from '@/components/blog/BlogCard'
 import BlogLayout from '@/components/blog/BlogLayout'
+import { BackButton } from '@/components/reusable/Button'
 
 export default function CategorySlugPage({ posts, categoryName }) {
   return (
-    <Layout>
-      <div className='min-w-100per relative' id={`category-${categoryName}`}>
-        <div className='m-auto max-w-50rem mb-10rem'>
-          <h1>Browse by category: {categoryName}</h1>
-          <p>Get an overview in the category &apos;{categoryName}&apos; and browse through all the documentation.</p>
+    <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'>
+      <div className='min-w-100per relative'>
+        <BackButton>Back</BackButton>
+        <div className='min-w-100per relative' id={`category-${categoryName}`}>
+          <div className='m-auto max-w-50rem mb-10rem'>
+            <h1>Browse by category: {categoryName}</h1>
+            <p>Get an overview in the category &apos;{categoryName}&apos; and browse through all the documentation.</p>
+          </div>
+          <BlogLayout>
+            {posts.map((post, index) => (
+              <BlogCard key={index} post={post} index={index} />
+            ))}
+          </BlogLayout>
         </div>
-        <BlogLayout>
-          {posts.map((post, index) => (
-            <BlogCard key={index} post={post} index={index} />
-          ))}
-        </BlogLayout>
       </div>
     </Layout>
   )

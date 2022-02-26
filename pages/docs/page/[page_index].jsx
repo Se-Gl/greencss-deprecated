@@ -15,7 +15,8 @@ export default function CategoryPage({ categories }) {
           <p>Search by categories. Get to know omenCSS and start writing design.</p>
           <h2 className='mt-50px'>The types</h2>
           <p className='mt-25px'>
-            omenCSS features 21 core elements. These in turn are filtered into over 250 subcategories.
+            omenCSS features 21 core elements. These in turn are filtered into over 250 subcategories. You are looking
+            for a specific paragraph? Use the search function, just press F3.
           </p>
           <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
             {categories.sort().map((category, index) => (
