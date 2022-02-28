@@ -17,4 +17,10 @@ describe('Category Index Unit test', () => {
   it('renders the static index page', () => {
     cy.get('#docs-index').should('be.visible').should('exist')
   })
+
+  it('renders the sidebar, hide it on medium and small screens', () => {
+    cy.get('#sidebar').should('be.visible').should('exist')
+    cy.viewport(320, 768)
+    cy.get('#sidebar').should('not.be.visible')
+  })
 })

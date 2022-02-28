@@ -4,24 +4,40 @@ import matter from 'gray-matter'
 import Layout from '@/components/reusable/Layout'
 import { getPosts } from '@/lib/posts'
 import BrandCard from '@/components/brand/BrandCard'
+import Link from 'next/link'
 
 export default function CategoryPage({ categories }) {
   return (
     <Layout>
-      <div className='min-w-100per relative' id='docs-index'>
-        <div className='m-auto max-w-60rem mb-10rem'>
-          <h1>Docs - the right way to get to know the system</h1>
-          {/* <TODO add svg /> */}
-          <p>Search by categories. Get to know omenCSS and start writing design.</p>
-          <h2 className='mt-50px'>The types</h2>
-          <p className='mt-25px'>
-            omenCSS features 21 core elements. These in turn are filtered into over 250 subcategories. You are looking
-            for a specific css class element? Use the search function instead, just press F3.
-          </p>
-          <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
+      <div className='grid grid-col-6 gap-30px'>
+        <div className='grid-col-1 col-span-1 min-h-100vh sm:display-none md:display-none' id='sidebar'>
+          <ul>
             {categories.sort().map((category, index) => (
-              <BrandCard title={category} link={`/docs/category/${category.toLowerCase()}`} key={index} />
+              <li key={index}>
+                <Link href={`/docs/category/${category.toLowerCase()}`} passRef>
+                  <a className='font-bold mb-0px' style={{ textDecoration: 'none' }}>
+                    {category}
+                  </a>
+                </Link>
+              </li>
             ))}
+          </ul>
+        </div>
+        <div className='min-w-100per relative col-span-5 sm:col-span-6 md:col-span-6' id='docs-index'>
+          <div className='m-auto max-w-60rem mb-10rem'>
+            <h1>Docs - the right way to get to know the system</h1>
+            {/* <TODO add svg /> */}
+            <p>Search by categories. Get to know omenCSS and start writing design.</p>
+            <h2 className='mt-50px'>The types</h2>
+            <p className='mt-25px'>
+              omenCSS features 21 core elements. These in turn are filtered into over 250 subcategories. You are looking
+              for a specific css class element? Use the search function instead, just press F3.
+            </p>
+            <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
+              {categories.sort().map((category, index) => (
+                <BrandCard title={category} link={`/docs/category/${category.toLowerCase()}`} key={index} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
