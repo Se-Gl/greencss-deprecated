@@ -29,7 +29,7 @@ export default function CategoryPage({ categories, posts }) {
               omenCSS features 21 core elements. These in turn are filtered into over 250 subcategories. You are looking
               for a specific css class element? Use the search function instead, just press F3.
             </p>
-            <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
+            <div className='m-auto grid grid-col-2 gap-30px sm:gap-15px sm:grid-col-1 md:grid-col-1'>
               {categories.sort().map((category, index) => (
                 <BrandCard title={category} link={`/docs/category/${category.toLowerCase()}`} key={index} />
               ))}
