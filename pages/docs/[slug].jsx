@@ -2,11 +2,14 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import SlugComponent from '@/components/reusable/SlugComponent'
+import { getPosts } from '@/lib/posts'
 
 export default function BlogPostPage({
   frontmatter: { title, excerpt, category, date, cover_image, author, isBlog, keywords },
   content,
-  slug
+  slug,
+  posts,
+  categories
 }) {
   return (
     <SlugComponent
@@ -20,6 +23,8 @@ export default function BlogPostPage({
       content={content}
       slug={slug}
       isBlog={isBlog}
+      posts={posts}
+      categories={categories}
     />
   )
 }
@@ -41,11 +46,16 @@ export async function getStaticPaths() {
 
 // get blog post
 export async function getStaticProps({ params: { slug } }) {
+  const posts = getPosts()
+  const categories = posts.map((post) => post.frontmatter.category)
+  const uniqueCategories = [...new Set(categories)]
   const markdownMeta = fs.readFileSync(path.join('posts-doc', slug + '.md'), 'utf-8')
 
   const { data: frontmatter, content } = matter(markdownMeta)
   return {
     props: {
+      posts,
+      categories: uniqueCategories,
       frontmatter,
       content,
       slug
