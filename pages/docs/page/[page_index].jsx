@@ -5,6 +5,7 @@ import Layout from '@/components/reusable/Layout'
 import { getPosts } from '@/lib/posts'
 import BrandCard from '@/components/brand/BrandCard'
 import SideBar from '@/components/category/SideBar'
+import Smartphone from '@/components/icon/Docs/Smartphone'
 
 export default function CategoryPage({ categories, posts }) {
   return (
@@ -22,7 +23,7 @@ export default function CategoryPage({ categories, posts }) {
         <div className='min-w-100per relative col-span-5 sm:col-span-6 md:col-span-6' id='docs-index'>
           <div className='m-auto max-w-60rem mb-10rem'>
             <h1>Docs - the right way to get to know the system</h1>
-            {/* <TODO add svg /> */}
+            <Smartphone />
             <p>Search by categories. Get to know omenCSS and start writing design.</p>
             <h2 className='mt-50px'>The types</h2>
             <p className='mt-25px'>
