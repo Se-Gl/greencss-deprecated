@@ -1,10 +1,9 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useState, useEffect } from 'react'
-import { LinkButton } from './Button'
+import { useState } from 'react'
 import LogoLight from '../icon/Brand/LogoLight'
 import LogoDark from '../icon/Brand/LogoDark'
-import Modal from '../modal/Modal'
+import ReusableModal from '../modal/ReusableModal'
 
 const menu = [
   { title: 'Home', path: '/' },
@@ -14,23 +13,9 @@ const menu = [
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
-  const [showModal, setShowModal] = useState(false)
+
   const router = useRouter()
   const isHome = router.pathname === '/' ? 'text-white sm:text-black md:text-black' : 'text-black'
-
-  //   F3 key to open the modal
-  useEffect(() => {
-    const listener = (event) => {
-      if (event.key === 'F3' || event.code === 'NumpadEnter') {
-        event.preventDefault()
-        setShowModal(true)
-      }
-    }
-    document.addEventListener('keydown', listener)
-    return () => {
-      document.removeEventListener('keydown', listener)
-    }
-  }, [])
 
   return (
     <div className='container'>
@@ -63,10 +48,7 @@ export default function Header() {
             })}
           </li>
         </ul>
-        <LinkButton className={`${isHome} text-20px`} onClick={() => setShowModal(true)} href=''>
-          Search | F3
-        </LinkButton>
-        <Modal onClose={() => setShowModal(false)} show={showModal}></Modal>
+        <ReusableModal LinkClass={isHome} />
       </nav>
 
       {/* Mobile Menu */}

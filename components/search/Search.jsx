@@ -24,7 +24,7 @@ export default function Search({ handleCloseClick }) {
 
   return (
     <>
-      <div className='flex bg-white max-w-50rem rounded-5px shadow-black'>
+      <div className='flex bg-white max-w-50rem rounded-5px shadow-black py-25px'>
         <form className='flex max-w-40rem'>
           <div type='submit' className='flex items-center bg-transparent justify-center text-black mx-25px'>
             <SearchIcon width='30px' height='30px' />
@@ -46,7 +46,7 @@ export default function Search({ handleCloseClick }) {
           href='#'
           onClick={handleCloseClick}
           style={{ textDecoration: 'none' }}
-          className='text-10px bg-light p-10px rounded-5px mx-10px hover:bg-black hover:text-white transition-all transition-duration-500ms'
+          className='text-10px bg-light p-10px rounded-5px mx-10px hover:bg-black hover:text-white transition-all transition-duration-500ms my-auto'
           id='close-modal'>
           ESC
         </a>
