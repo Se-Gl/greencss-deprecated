@@ -4,25 +4,15 @@ import matter from 'gray-matter'
 import Layout from '@/components/reusable/Layout'
 import { getPosts } from '@/lib/posts'
 import BrandCard from '@/components/brand/BrandCard'
-import Link from 'next/link'
-import ReusableModal from '@/components/modal/ReusableModal'
+import SideBar from '@/components/category/SideBar'
 
 export default function CategoryPage({ categories }) {
   return (
     <Layout>
       <div className='grid grid-col-6 gap-30px'>
         <div className='grid-col-1 col-span-1 min-h-100vh sm:display-none md:display-none' id='sidebar'>
-          <ReusableModal isSidebar={true} />
           <ul>
-            {categories.sort().map((category, index) => (
-              <li key={index}>
-                <Link href={`/docs/category/${category.toLowerCase()}`} passRef>
-                  <a className='font-bold mb-0px' style={{ textDecoration: 'none' }}>
-                    {category}
-                  </a>
-                </Link>
-              </li>
-            ))}
+            <SideBar categories={categories} />
           </ul>
         </div>
         <div className='min-w-100per relative col-span-5 sm:col-span-6 md:col-span-6' id='docs-index'>
