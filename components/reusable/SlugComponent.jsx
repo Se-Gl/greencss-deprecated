@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { VsStyle } from '@/data/SynatxStyle'
 import Layout from '@/components/reusable/Layout'
@@ -40,6 +41,13 @@ export default function SlugComponent({
           <ReactMarkdown
             children={content}
             components={{
+              a: ({ node, ...props }) => {
+                return (
+                  <Link href={props.href}>
+                    <a target='_blank'>{props.children[0]}</a>
+                  </Link>
+                )
+              },
               code({ node, inline, className, children, ...props }) {
                 const match = /language-(\w+)/.exec(className || '')
                 return !inline && match ? (
