@@ -16,7 +16,7 @@ export default function CategoryPage({ categories, posts }) {
       <div className='grid grid-col-6 gap-30px'>
         <div className='grid-col-1 col-span-1 min-h-100vh sm:display-none md:display-none' id='sidebar'>
           <ul>
-            <SideBar categories={categories} subcategories={posts} hasSubcategory={true} />
+            <SideBar categories={categories} posts={posts} hasSubcategory={true} />
           </ul>
         </div>
         <div className='min-w-100per relative col-span-5 sm:col-span-6 md:col-span-6' id='docs-index'>
