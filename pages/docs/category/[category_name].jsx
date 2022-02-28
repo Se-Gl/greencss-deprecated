@@ -10,7 +10,12 @@ import SideBar from '@/components/category/SideBar'
 
 export default function CategorySlugPage({ posts, categoryName, categories }) {
   return (
-    <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'>
+    <Layout
+      className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
+      title={`Documentation - ${categoryName}`}
+      description={`omenCSS documentation - get an overview about the category ${categoryName}, its css classes and how to apply them.`}
+      url='docs'
+      keywords='docs, documentation, information, search, css'>
       <div className='grid grid-col-6 gap-30px'>
         <div className='grid-col-1 col-span-1 min-h-100vh sm:display-none md:display-none' id='sidebar'>
           <ul>

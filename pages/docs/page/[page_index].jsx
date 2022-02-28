@@ -8,7 +8,11 @@ import SideBar from '@/components/category/SideBar'
 
 export default function CategoryPage({ categories, posts }) {
   return (
-    <Layout>
+    <Layout
+      title='omenCSS documentation - an overview'
+      description='Docs - the right way to get to know the omenCSS by browsing the documentation. Search by categories. Get to know omenCSS and start writing design.'
+      url='docs'
+      keywords='docs, documentation, information, search, css'>
       <div className='grid grid-col-6 gap-30px'>
         <div className='grid-col-1 col-span-1 min-h-100vh sm:display-none md:display-none' id='sidebar'>
           <ul>
