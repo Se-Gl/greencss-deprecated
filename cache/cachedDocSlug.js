@@ -1,1 +1,1 @@
-export const docSlugs = [{"slug":"test2"},{"slug":"test5"}]
+export const docSlugs = [{"slug":"test2"},{"slug":"test5"},{"slug":"test6"}]
