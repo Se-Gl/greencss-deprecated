@@ -3,6 +3,8 @@ import BrandSection from '@/components/brand/BrandSection'
 import { BackButton } from '@/components/reusable/Button'
 import ColourExample from '@/components/brand/ColourExample'
 import { primaryColors, secondaryColors, spotColors } from '@/data/colors'
+import BrandBadExample from '@/components/brand/BrandBadExample'
+import Summary from '@/components/brand/Summary'
 
 export default function colours() {
   return (
@@ -76,6 +78,122 @@ export default function colours() {
               })}
             </div>
           </BrandSection>
+          <BrandSection title='Dont’s' />
+          <BrandSection isLight={true}>
+            <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
+              <BrandBadExample
+                childOne={
+                  <img
+                    src='/images/brand/colors/do-not.webp'
+                    alt='omen css do not with colors'
+                    id='omencss-do-not-1'
+                    className='w-100per'
+                  />
+                }
+                classOne='py-10px'
+                childTwo='Avoid improper usage of the primary colours (especially purple - as a background colour).'
+              />
+              <BrandBadExample
+                childOne={
+                  <img
+                    src='/images/brand/colors/do-not-2.webp'
+                    alt='omen css do not with colors'
+                    id='omencss-do-not-2'
+                    className='min-w-100per'
+                  />
+                }
+                classOne='py-10px'
+                childTwo='Do not create effects or new colour variations.'
+              />
+              <BrandBadExample
+                childOne={
+                  <img
+                    src='/images/brand/colors/do-not-3.webp'
+                    alt='omen css do not with colors'
+                    id='omencss-do-not-3'
+                    className='min-w-100per'
+                  />
+                }
+                classOne='py-10px'
+                childTwo='Do not use too many secondary colours in a component. Never use a secondary or spot colour as a background colour.'
+              />
+              <BrandBadExample
+                childOne={
+                  <img
+                    src='/images/brand/colors/do-not-4.webp'
+                    alt='omen css do not with colors'
+                    id='omencss-do-not-4'
+                    className='w-100per'
+                  />
+                }
+                classOne='py-10px'
+                childTwo='Do not use not enough contrast between text and background.'
+              />
+              <BrandBadExample
+                childOne={
+                  <img
+                    src='/images/brand/colors/do-not-5.webp'
+                    alt='omen css do not with colors'
+                    id='omencss-do-not-5'
+                    className='w-100per'
+                  />
+                }
+                classOne='py-10px'
+                childTwo='Avoid coloured headings or texts.'
+              />
+            </div>
+          </BrandSection>
+          <BrandSection title='Ways to apply colour' />
+          <BrandSection isLight={true}>
+            <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
+              <BrandBadExample
+                childOne={
+                  <img
+                    src='/images/brand/colors/ok.webp'
+                    alt='omen css design with colors'
+                    id='omencss-do-1'
+                    className='w-100per'
+                  />
+                }
+                classOne='py-10px'
+                childTwo='Color in photography.'
+              />
+              <BrandBadExample
+                childOne={
+                  <img
+                    src='/images/brand/colors/ok-2.webp'
+                    alt='omen css design with colors'
+                    id='omencss-do-2'
+                    className='w-100per'
+                  />
+                }
+                classOne='py-10px'
+                childTwo='Color in illustrations / vector files.'
+              />
+              <BrandBadExample
+                childOne={
+                  <img
+                    src='/images/brand/colors/ok-3.webp'
+                    alt='omen css design with colors'
+                    id='omencss-do-3'
+                    className='w-100per'
+                  />
+                }
+                classOne='py-10px'
+                childTwo='Grey text or the primary purple in a header to highlight certain words or subjects.'
+              />
+            </div>
+          </BrandSection>
+          <Summary
+            titleOne='01'
+            descriptionOne='Focus on the power of dark, light, black, white and purple'
+            titleTwo='02'
+            descriptionTwo='A little purple or grey in headers packs a lot of punch'
+            titleThree='03'
+            descriptionThree='Use colours in vector files, illustrations or images.'
+            titleFour='04'
+            descriptionFour='Use colours sparingly and carefully.'
+          />
         </div>
       </div>
     </Layout>
