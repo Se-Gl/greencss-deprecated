@@ -26,7 +26,7 @@ export default function BrandHome() {
           <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
             <BrandCard title='Logo' link='/brand/logo' />
             <BrandCard title='Typography' link='/brand/typography' />
-            <BrandCard title='Colours' link='' />
+            <BrandCard title='Colours' link='/brand/colours' />
             <BrandCard title='Composition' link='' />
           </div>
         </div>

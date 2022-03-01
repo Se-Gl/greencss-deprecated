@@ -1,9 +1,15 @@
-export default function BrandSection({ title, description, children, isLight = false }) {
+export default function BrandSection({
+  title,
+  description,
+  children,
+  isLight = false,
+  className = 'm-auto max-w-60rem py-50px'
+}) {
   return (
     <div className={`${isLight ? 'bg-light' : 'bg-dark'}`} id={`${!isLight ? 'dark-section' : 'light-section'}`}>
-      <div className={`m-auto max-w-60rem py-50px ${isLight ? 'text-black' : 'text-white'}`}>
-        <h2>{title}</h2>
-        <p className={`mt-25px ${isLight ? 'text-black' : 'text-white'}`}>{description}</p>
+      <div className={`${className} ${isLight ? 'text-black' : 'text-white'}`}>
+        {title != null && <h2>{title}</h2>}
+        {description != null && <p className={`mt-25px ${isLight ? 'text-black' : 'text-white'}`}>{description}</p>}
         {children}
       </div>
     </div>
