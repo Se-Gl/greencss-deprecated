@@ -2,29 +2,7 @@ import Layout from '@/components/reusable/Layout'
 import BrandSection from '@/components/brand/BrandSection'
 import { BackButton } from '@/components/reusable/Button'
 import ColourExample from '@/components/brand/ColourExample'
-
-const primaryColors = [
-  { bgColor: 'bg-light', colorName: 'Light', colorHex: '#f0eef5' },
-  { bgColor: 'bg-dark', colorName: 'Dark', colorHex: '#03000a' },
-  { bgColor: 'bg-white', colorName: 'White', colorHex: '#fdfdfd' },
-  { bgColor: 'bg-black', colorName: 'Black', colorHex: '#101010' },
-  { bgColor: 'bg-purple', colorName: 'Purple', colorHex: '#be0aff' }
-]
-
-const secondaryColors = [
-  { bgColor: 'bg-red', colorName: 'Red', colorHex: '#ce1f1a' },
-  { bgColor: 'bg-darkorange', colorName: 'Darkorange', colorHex: '#d54913' },
-  { bgColor: 'bg-lightorange', colorName: 'Lightorange', colorHex: '#ffd300' },
-  { bgColor: 'bg-yellow', colorName: 'Yellow', colorHex: '#deff0a' },
-  { bgColor: 'bg-yellowgreen', colorName: 'Yellowgreen', colorHex: '#a1ff0a' },
-  { bgColor: 'bg-lightgreen', colorName: 'Lightgreen', colorHex: '#0aff99' },
-  { bgColor: 'bg-green', colorName: 'Green', colorHex: '#3f7d1a' },
-  { bgColor: 'bg-lightblue', colorName: 'Lightblue', colorHex: '#0aefff' },
-  { bgColor: 'bg-blue', colorName: 'Blue', colorHex: '#147df5' },
-  { bgColor: 'bg-darkblue', colorName: 'Darkblue', colorHex: '#0870c7' },
-  { bgColor: 'bg-magenta', colorName: 'Magenta', colorHex: '#d03377' },
-  { bgColor: 'bg-darkpurple', colorName: 'Darkpurple', colorHex: '#580aff' }
-]
+import { primaryColors, secondaryColors, spotColors } from '@/data/colors'
 
 export default function colours() {
   return (
@@ -84,6 +62,20 @@ export default function colours() {
             title='Spot Colours'
             description='Spot colours are intended for images or illustrations that require tone-on-tone pairings, product designs that demand variations in hue and opacity, or buttons with active, focus or hover states. Spot colours are lightened secondary colours.'
           />
+          <BrandSection isLight={true} className='max-w-90rem py-100px m-auto'>
+            <div className='grid grid-col-5 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-2 w-100per overflow-x-hidden'>
+              {spotColors.map((item, index) => {
+                return (
+                  <ColourExample
+                    key={index}
+                    bgColor={item.bgColor}
+                    colorName={item.colorName}
+                    colorHex={item.colorHex}
+                  />
+                )
+              })}
+            </div>
+          </BrandSection>
         </div>
       </div>
     </Layout>
