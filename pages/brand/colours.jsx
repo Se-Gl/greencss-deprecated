@@ -45,7 +45,7 @@ export default function colours() {
             isLight={true}
             title='Primary brand colors'
             description='The primary brand colors are dark, light, black, white and purple. Dark and Light should primarily be used for borders, illustrations or background colours - black and white for texts. Whereby a greyish colour can also be used to emphasise text passages or headlines.'>
-            <div className='grid grid-col-3 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-2 w-100per overflow-x-hidden'>
+            <div className='grid grid-col-3 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-2 w-100per overflow-x-hidden pt-100px'>
               {primaryColors.map((item, index) => {
                 return (
                   <ColourExample
@@ -62,7 +62,7 @@ export default function colours() {
             title='Secondary colors'
             description='The secondary colours contain a high spectrum of diversity. They should be used wisely in illustrations, images and publications to maintain their significance and impact.'
           />
-          <BrandSection isLight={true} className='max-w-90rem py-50px m-auto'>
+          <BrandSection isLight={true} className='max-w-90rem py-100px m-auto'>
             <div className='grid grid-col-3 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-2 w-100per overflow-x-hidden'>
               {secondaryColors.map((item, index) => {
                 return (
@@ -74,14 +74,6 @@ export default function colours() {
                   />
                 )
               })}
-              {/* <ColourExample bgColor='bg-red' colorName='Red' colorHex='#ce1f1a' />
-              <ColourExample bgColor='bg-darkorange' colorName='Darkorange' colorHex='#d54913' />
-              <ColourExample bgColor='bg-lightorange' colorName='Lightorange' colorHex='#ffd300' />
-              <ColourExample bgColor='bg-yellow' colorName='Yellow' colorHex='#deff0a' />
-              <ColourExample bgColor='bg-yellowgreen' colorName='Yellowgreen' colorHex='#a1ff0a' />
-              <ColourExample bgColor='bg-lightgreen' colorName='Lightgreen' colorHex='#0aff99' />
-              <ColourExample bgColor='bg-green' colorName='Green' colorHex='#3f7d1a' />
-              <ColourExample bgColor='bg-green' colorName='Green' colorHex='#3f7d1a' /> */}
             </div>
           </BrandSection>
         </div>

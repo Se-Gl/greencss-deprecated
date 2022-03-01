@@ -55,7 +55,7 @@ export default function typography() {
             title='Relationships'
             description='It is important to maintain consistent type mappings. It provides uniqueness, consistency, and a strong hierarchy. A bold and black typeface should be paired with normal font weight (400). To keep the hierarchy, light or regular may also be used if necessary.'></BrandSection>
           <BrandSection isLight={true}>
-            <div className='mt-100px m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
+            <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
               <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
                 <div className='m-auto break-words max-w-25rem overflow-hidden py-50px'>
                   <h3 className='text-black font-700'>Omen Motion Bold</h3>
@@ -97,23 +97,23 @@ export default function typography() {
             </div>
             <div className='mb-100px'>
               <p className='border-bottom-1px border-black border-solid'>H1</p>
-              <h2>font size 50px, black (900)</h2>
+              <h2 className='mb-0px'>font size 50px, black (900)</h2>
             </div>
             <div className='mb-100px'>
               <p className='border-bottom-1px border-black border-solid'>H2</p>
-              <h2>font size 50px, black (900)</h2>
+              <h2 className='mb-0px'>font size 50px, black (900)</h2>
             </div>
             <div className='mb-100px'>
               <p className='border-bottom-1px border-black border-solid'>H3</p>
-              <h3>font size 35px, bold (700)</h3>
+              <h3 className='mb-0px'>font size 35px, bold (700)</h3>
             </div>
             <div className='mb-100px'>
               <p className='border-bottom-1px border-black border-solid'>P</p>
-              <p>font size 25px, normal (400)</p>
+              <p className='mb-0px'>font size 25px, normal (400)</p>
             </div>
-            <div className='mb-100px'>
+            <div className='mb-0px'>
               <p className='border-bottom-1px border-black border-solid'>XS</p>
-              <p className='text-15px'>font size 20px, normal (400)</p>
+              <p className='text-15px mb-0px'>font size 20px, normal (400)</p>
             </div>
           </BrandSection>
 
@@ -122,7 +122,7 @@ export default function typography() {
             description='There is one way to create a call to action for omenCSS. Use a heavy typeface for buttons.'></BrandSection>
           <BrandSection isLight={true}>
             <img src='/images/brand/typography/cards-c2a_gorbiy.webp' alt='omen css call to action' id='omencss-c2a' />
-            <p className='my-100px'>
+            <p className='mt-100px mb-0px'>
               Icons should be treated within the typeface. The same rules apply for aligning typography with iconography
               as for hierarchical relations, except that margins are not used here in powers of 5 or 10. Irrespective of
               whether the medium is digital or physical, the typography should work in both portrait and landscape
