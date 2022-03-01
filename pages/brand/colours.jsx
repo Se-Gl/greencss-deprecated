@@ -76,6 +76,14 @@ export default function colours() {
               })}
             </div>
           </BrandSection>
+          <BrandSection
+            title='Utilisation'
+            description='Light plays a very important role in all brand communication and should balance dark and purple. Secondary colours are only used in sensitive cases where caution is needed or where their use enhances the composition.'
+          />
+          <BrandSection
+            title='Spot Colours'
+            description='Spot colours are intended for images or illustrations that require tone-on-tone pairings, product designs that demand variations in hue and opacity, or buttons with active, focus or hover states. Spot colours are lightened secondary colours.'
+          />
         </div>
       </div>
     </Layout>
