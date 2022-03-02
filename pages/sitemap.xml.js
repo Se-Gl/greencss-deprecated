@@ -13,6 +13,7 @@ export const getServerSideProps = ({ res }) => {
     'brand/logo',
     'brand/typography',
     'brand/colours',
+    'brand/composition',
     'blog',
     'docs',
     'docs/animation',

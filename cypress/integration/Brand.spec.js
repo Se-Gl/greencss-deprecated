@@ -71,3 +71,21 @@ describe('Brand - Color Screen Unit test', () => {
     cy.get('#light-section').should('be.visible').should('exist')
   })
 })
+
+describe('Composition - Color Screen Unit test', () => {
+  beforeEach(() => {
+    cy.visit('http://localhost:3000/brand/composition')
+  })
+  it('renders the brand colours index', () => {
+    cy.get('#composition-colour-page')
+      .should('be.visible')
+      .should('exist')
+      .contains('Composition', { matchCase: false })
+  })
+  it('renders the dark BrandSection Component', () => {
+    cy.get('#dark-section').should('be.visible').should('exist')
+  })
+  it('renders the light BrandSection Component', () => {
+    cy.get('#light-section').should('be.visible').should('exist')
+  })
+})

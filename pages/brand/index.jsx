@@ -27,7 +27,7 @@ export default function BrandHome() {
             <BrandCard title='Logo' link='/brand/logo' />
             <BrandCard title='Typography' link='/brand/typography' />
             <BrandCard title='Colours' link='/brand/colours' />
-            <BrandCard title='Composition' link='' />
+            <BrandCard title='Composition' link='/brand/composition' />
           </div>
         </div>
       </div>
