@@ -25,9 +25,9 @@ describe('Category Index Unit test', () => {
     cy.viewport(320, 768)
     cy.get('#sidebar').should('not.be.visible')
   })
-  it('sidebar title is purple if the page matches the path', () => {
+  it('sidebar has a purple left border if the page matches the path', () => {
     cy.visit('http://localhost:3000/docs/category/animation')
-    cy.get('#sidebar ul li a')
+    cy.get('#sidebar ul div li a')
       .eq(0)
       .contains('Animation', { matchCase: false })
       .should('have.class', 'border-left-1px border-solid border-purple')
