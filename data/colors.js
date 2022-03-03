@@ -86,5 +86,10 @@ export const spotColors = [
   { bgColor: 'bg-darkpurple-2', colorName: 'darkpurple-2', colorHex: '#8951ff' },
   { bgColor: 'bg-darkpurple-3', colorName: 'darkpurple-3', colorHex: '#a175ff' },
   { bgColor: 'bg-darkpurple-4', colorName: 'darkpurple-4', colorHex: '#b999ff' },
-  { bgColor: 'bg-darkpurple-5', colorName: 'darkpurple-5', colorHex: '#d2bdff' }
+  { bgColor: 'bg-darkpurple-5', colorName: 'darkpurple-5', colorHex: '#d2bdff' },
+  { bgColor: 'bg-black-1', colorName: 'black-1', colorHex: '#222222' },
+  { bgColor: 'bg-black-2', colorName: 'black-2', colorHex: '#343434' },
+  { bgColor: 'bg-black-3', colorName: 'black-3', colorHex: '#464646' },
+  { bgColor: 'bg-black-4', colorName: 'black-4', colorHex: '#575757' },
+  { bgColor: 'bg-black-5', colorName: 'black-5', colorHex: '#696969' }
 ]
