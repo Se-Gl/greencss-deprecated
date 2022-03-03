@@ -8,12 +8,12 @@ describe('Brand Screen Unit test', () => {
       .should('exist')
       .contains('A Brand Book - the right way to get to know a story', { matchCase: false })
   })
+  it('renders the illustration', () => {
+    cy.get('#brand-hero-illustration').should('be.visible').should('exist')
+  })
   it('click buttons and redirect forwards', () => {
     cy.get('#brand-redirect-Logo').click()
     cy.url().should('be.equal', 'http://localhost:3000/brand/logo')
-  })
-  it('renders the handcrafted svg', () => {
-    cy.get('#brandbook-svg').should('be.visible').should('exist')
   })
 })
 

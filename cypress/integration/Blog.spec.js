@@ -6,7 +6,10 @@ describe('Blog Screen Unit test', () => {
     cy.get('h1')
       .should('be.visible')
       .should('exist')
-      .contains('A Blog - the right way to tell a story', { matchCase: false })
+      .contains('A Blog - the right way to write a story', { matchCase: false })
+  })
+  it('renders the illustration', () => {
+    cy.get('#blog-hero-illustration').should('be.visible').should('exist')
   })
   it('click first button and redirect to slug page', () => {
     cy.get('#blog-card').eq(0).click()

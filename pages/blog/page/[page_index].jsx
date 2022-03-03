@@ -6,6 +6,8 @@ import BlogCard from '@/components/blog/BlogCard'
 import { POSTS_PER_PAGE } from '@/config/index'
 import Pagination from '@/components/reusable/Pagination'
 import { getPosts } from '@/lib/posts'
+import BlogHero from '@/components/icon/Blog/BlogHero'
+import SubSectionHero from '@/components/reusable/SubSectionHero'
 
 export default function BlogIndex({ posts, numPages, currentPage }) {
   return (
@@ -16,10 +18,11 @@ export default function BlogIndex({ posts, numPages, currentPage }) {
       url='blog'
       keywords='Blog, write, news, updates, css, omenCSS'>
       <div className='min-w-100per relative'>
-        <div className='m-auto max-w-50rem mb-10rem'>
-          <h1>A Blog - the right way to tell a story</h1>
-          <p>Explore the blog posts, to learn more about the latest tips and tricks.</p>
-        </div>
+        <SubSectionHero
+          header='A Blog - the right way to write a story'
+          subheader='Explore the blog posts, to learn more about the latest tips and tricks.'
+          illustration={<BlogHero width='100%' height='100%' />}
+        />
         <BlogLayout>
           {posts.map((post, index) => (
             <BlogCard key={index} post={post} index={index} />
