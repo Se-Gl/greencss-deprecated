@@ -6,9 +6,9 @@ import LogoDark from '../icon/Brand/LogoDark'
 import ReusableModal from '../modal/ReusableModal'
 
 const menu = [
-  { title: 'Home', path: '/' },
+  { title: 'Blog', path: '/blog' },
   { title: 'Brand', path: '/brand' },
-  { title: 'Blog', path: '/blog' }
+  { title: 'Docs', path: '/docs' }
 ]
 
 export default function Header() {
@@ -33,12 +33,12 @@ export default function Header() {
         </Link>
         <ul className='flex text-16px'>
           <li>
-            {menu.map((item, index) => {
+            {menu.sort().map((item, index) => {
               return (
                 <Link key={index} href={item.path}>
                   <a
                     className={`mr-15px text-20px font-500 ${
-                      router.pathname === item.path ? 'text-purple font-800' : isHome
+                      router.asPath.includes(item.path) ? 'text-purple font-800' : isHome
                     }`}
                     style={{ textDecoration: 'none' }}>
                     {item.title}
@@ -76,7 +76,7 @@ export default function Header() {
               </Link>
               <ul className='text-16px text-black flex justify-center items-center min-h-100per flex-col text-left'>
                 <li>
-                  {menu.map((item, index) => {
+                  {menu.sort().map((item, index) => {
                     return (
                       <Link key={index} href={item.path}>
                         <a style={{ textDecoration: 'none', cursor: 'pointer' }}>
