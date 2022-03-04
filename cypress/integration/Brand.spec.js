@@ -2,7 +2,7 @@ describe('Brand Screen Unit test', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000/brand')
   })
-  it('renders the animation index page', () => {
+  it('renders the index page', () => {
     cy.get('#brand-intro')
       .should('be.visible')
       .should('exist')
@@ -22,7 +22,7 @@ describe('Brand - Logo Screen Unit test', () => {
     cy.visit('http://localhost:3000/brand/logo')
     cy.exec('rm -f cypress/downloads/*', { log: true, failOnNonZeroExit: false })
   })
-  it('renders the animation index page', () => {
+  it('renders the index page', () => {
     cy.get('#brand-logo-page').should('be.visible').should('exist').contains('Logo', { matchCase: false })
   })
   it('renders the dark BrandSection Component', () => {
