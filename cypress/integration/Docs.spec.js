@@ -23,4 +23,7 @@ describe('Individual Docs Screen Unit test', () => {
   it('renders the header', () => {
     cy.get('h1').should('be.visible').should('exist').contains('Browse by category: animation', { matchCase: false })
   })
+  it('renders the illustration', () => {
+    cy.get('#subdocs-hero-illustration').should('be.visible').should('exist')
+  })
 })

@@ -2,7 +2,7 @@
 
 [![Prettier and ESLint Code Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml)
 [![Cypress Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml)
-![check-code-coverage](https://img.shields.io/badge/code--coverage-86.15%25-green)
+![check-code-coverage](https://img.shields.io/badge/code--coverage-86.44%25-green)
 
 [![omenCSS logo](./public/omencss.svg)](https://www.omen.design)
 
@@ -166,11 +166,11 @@ sass/
 | changes    | Changes were made to the background image.                                                            |
 | ---------- | ------------------------------------                                                                  |
 
-| Illustrations |                                                                   |
-| ------------- | ----------------------------------------------------------------- |
-| title         | design-thinking 1 / Coding 1                                      |
-| source        | [Figma](https://www.figma.com/community/file/1071151296679851124) |
-| author        | [Streamline](https://www.figma.com/@05466272_9382_4)              |
-| license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)          |
-| changes       | Changes were made to the fill- colours.                           |
-| ----------    | ------------------------------------                              |
+| Illustrations |                                                                        |
+| ------------- | ---------------------------------------------------------------------- |
+| title         | design-thinking 1 / Coding 1 / bring-solutions-to-problems / Searching |
+| source        | [Figma](https://www.figma.com/community/file/1071151296679851124)      |
+| author        | [Streamline](https://www.figma.com/@05466272_9382_4)                   |
+| license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)               |
+| changes       | Changes were made to the fill- colours, added blob.                    |
+| ----------    | ------------------------------------                                   |

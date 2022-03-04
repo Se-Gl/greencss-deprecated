@@ -7,6 +7,8 @@ import BlogCard from '@/components/blog/BlogCard'
 import BlogLayout from '@/components/blog/BlogLayout'
 import { BackButton } from '@/components/reusable/Button'
 import SideBar from '@/components/category/SideBar'
+import SubSectionHero from '@/components/reusable/SubSectionHero'
+import SlugDocsHero from '@/components/icon/Docs/SlugDocsHero'
 
 export default function CategorySlugPage({ posts, categoryName, categories }) {
   return (
@@ -25,12 +27,11 @@ export default function CategorySlugPage({ posts, categoryName, categories }) {
         <div className='min-w-100per relative col-span-5 sm:col-span-6 md:col-span-6'>
           <BackButton>Back</BackButton>
           <div className='min-w-100per relative' id={`category-${categoryName}`}>
-            <div className='m-auto max-w-50rem mb-10rem'>
-              <h1>Browse by category: {categoryName}</h1>
-              <p>
-                Get an overview in the category &apos;{categoryName}&apos; and browse through all the documentation.
-              </p>
-            </div>
+            <SubSectionHero
+              header={`Browse by category: ${categoryName}`}
+              subheader={`Get an overview in the category &apos;${categoryName}&apos; and browse through all the documentation.`}
+              illustration={<SlugDocsHero width='100%' height='100%' />}
+            />
             <BlogLayout>
               {posts.map((post, index) => (
                 <BlogCard key={index} post={post} index={index} />
