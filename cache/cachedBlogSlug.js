@@ -1,1 +1,1 @@
-export const blogSlugs = [{"slug":"omencss-animations"},{"slug":"what-is-omencss"}]
+export const blogSlugs = [{"slug":"how-to-delete-unused-css-classes"},{"slug":"omencss-animations"},{"slug":"what-is-omencss"}]

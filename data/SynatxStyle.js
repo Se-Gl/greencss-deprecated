@@ -134,7 +134,7 @@ export const VsStyle = {
     color: '#ffe56b'
   },
   'attr-value': {
-    color: '#ffe56b'
+    color: '#51ffb7'
   },
   function: {
     color: '#7bb6f9'
