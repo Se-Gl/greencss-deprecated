@@ -9,7 +9,8 @@
       "@/lib/*": ["lib/*"],
       "@/hooks/*": ["hooks/*"],
       "@/styles/*": ["styles/*"],
-      "@/cache/*": ["cache/*"]
+      "@/cache/*": ["cache/*"],
+      "@/css/*": ["css/*"]
     }
   }
 }
