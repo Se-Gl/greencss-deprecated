@@ -38,7 +38,7 @@ export default function Search({ handleCloseClick }) {
               className='bg-transparent w-100per text-black border-none text-15px'
               placeholder='Search documentation'
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={(e) => setSearchTerm(e.target.value.toLowerCase())}
             />
           </div>
         </form>
