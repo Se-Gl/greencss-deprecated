@@ -30,7 +30,7 @@ export default function colours() {
                 return (
                   <ColourExample
                     key={index}
-                    bgColor={item.bgColor}
+                    className={item.className}
                     colorName={item.colorName}
                     colorHex={item.colorHex}
                   />
@@ -48,7 +48,7 @@ export default function colours() {
                 return (
                   <ColourExample
                     key={index}
-                    bgColor={item.bgColor}
+                    className={item.className}
                     colorName={item.colorName}
                     colorHex={item.colorHex}
                   />
@@ -70,7 +70,7 @@ export default function colours() {
                 return (
                   <ColourExample
                     key={index}
-                    bgColor={item.bgColor}
+                    className={item.className}
                     colorName={item.colorName}
                     colorHex={item.colorHex}
                   />
