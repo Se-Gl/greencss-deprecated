@@ -40,8 +40,6 @@ describe('Animation Example Screen Unit test', () => {
       .click()
       .get('#animation-jump')
       .should('have.class', 'jump animate animation-forwards')
-      .wait(1000)
-      .should('not.have.class', 'jump animate animation-forwards')
   })
   it('change animation (animation name, duration and type)', () => {
     cy.get('#enter-animation').type('flash {enter}')
