@@ -43,11 +43,19 @@ export default function BlogCard({ post, index }) {
                       isDark && 'bg-dark text-light'
                     }
               `}>
-                    <h2 className='text-50px font-bold leading-100per'>{post.frontmatter.title}</h2>
-                    <h3 className='text-25px font-normal mt-25px'>{post.frontmatter.excerpt}</h3>
+                    <h2 className='text-50px font-bold leading-100per'>
+                      {post.frontmatter.title.length >= 20
+                        ? `${post.frontmatter.title.slice(0, 20)} ...`
+                        : post.frontmatter.title}
+                    </h2>
+                    <h3 className='text-25px font-normal mt-25px'>
+                      {post.frontmatter.excerpt.length >= 90
+                        ? `${post.frontmatter.excerpt.slice(0, 90)} ...`
+                        : post.frontmatter.excerpt}
+                    </h3>
                     <LinkButton
                       id={`button-${post.slug}`}
-                      className={`absolute bottom-0 mt-50px ${!isDark && 'text-dark'} ${isDark && 'text-light'}`}
+                      className={`absolute bottom-0per my-15px ${!isDark && 'text-dark'} ${isDark && 'text-light'}`}
                       href={`/blog/${post.slug}`}>
                       Read more
                     </LinkButton>
