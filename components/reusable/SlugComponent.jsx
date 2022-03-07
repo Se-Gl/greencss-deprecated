@@ -57,7 +57,7 @@ export default function SlugComponent({
                 a: ({ node, ...props }) => {
                   return (
                     <Link href={props.href}>
-                      <a target='_blank'>{props.children[0]}</a>
+                      <a>{props.children[0]}</a>
                     </Link>
                   )
                 },
