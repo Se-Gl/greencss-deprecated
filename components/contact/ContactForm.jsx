@@ -48,7 +48,7 @@ export default function ContactForm() {
     let isValidForm = handleValidation()
 
     if (isValidForm) {
-      setButtonText('Sending')
+      setButtonText('disabled')
       const res = await fetch('/api/sendgrid', {
         body: JSON.stringify({
           email: email,
@@ -147,11 +147,13 @@ export default function ContactForm() {
               setMessage(e.target.value)
             }}></textarea>
 
-          <div className='flex flex-row items-center justify-start'>
-            <Button type='submit' className='mt-50px mb-25px' id='submit-button'>
-              {buttonText}
-            </Button>
-          </div>
+          {buttonText == 'Send' && (
+            <div className='flex flex-row items-center justify-start'>
+              <Button type='submit' className='mt-50px mb-25px' id='submit-button'>
+                {buttonText}
+              </Button>
+            </div>
+          )}
         </div>
       </form>
     </div>
