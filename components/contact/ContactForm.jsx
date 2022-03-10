@@ -23,10 +23,19 @@ export default function ContactForm() {
     let tempErrors = {}
     let isValid = true
 
-    if (fullname.length <= 0 || email.length <= 0 || subject.length <= 0 || message.length <= 0) {
-      tempErrors['fullname'] = true
+    if (fullname.length <= 0 || subject.length <= 0 || message.length <= 0) {
+      tempErrors['fullname' || 'subject' || 'message'] = true
       isValid = false
       toast('warning', '☝️ An error has occurred. Please check your input.')
+    }
+    if (
+      !email.match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      )
+    ) {
+      tempErrors['email'] = true
+      isValid = false
+      toast('warning', '☝️ Please provide a valid email address.')
     }
 
     setErrors({ ...tempErrors })
