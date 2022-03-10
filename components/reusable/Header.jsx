@@ -8,7 +8,8 @@ import ReusableModal from '../modal/ReusableModal'
 const menu = [
   { title: 'Blog', path: '/blog' },
   { title: 'Brand', path: '/brand' },
-  { title: 'Docs', path: '/docs' }
+  { title: 'Docs', path: '/docs' },
+  { title: 'Contact', path: '/contact' }
 ]
 
 export default function Header() {
@@ -37,7 +38,7 @@ export default function Header() {
               return (
                 <Link key={index} href={item.path}>
                   <a
-                    className={`mr-15px text-20px font-500 ${
+                    className={`mr-15px text-15px font-800 ${
                       router.asPath.includes(item.path) ? 'text-purple font-800' : isHome
                     }`}
                     style={{ textDecoration: 'none' }}>

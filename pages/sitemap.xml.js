@@ -15,6 +15,7 @@ export const getServerSideProps = ({ res }) => {
     'brand/colours',
     'brand/composition',
     'blog',
+    'contact',
     'docs',
     'docs/animation',
     'docs/animation/example'
