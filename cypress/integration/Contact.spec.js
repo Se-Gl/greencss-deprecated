@@ -18,7 +18,8 @@ describe('Category Index Unit test', () => {
     cy.get('#fullname').type('John Doe {enter}')
     cy.get('#email').type('john.doe@email.com {enter}')
     cy.get('#subject').type('Test Title {enter}')
-    cy.get('#message').type('lorem ipsum test message... {enter}')
+
     cy.get('#submit-button').click()
+    cy.get('form').contains('Message body cannot be empty.', { matchCase: false })
   })
 })

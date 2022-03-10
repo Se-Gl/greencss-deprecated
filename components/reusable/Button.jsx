@@ -52,8 +52,8 @@ export function LinkButtonLeft({ href = '/', className, type = 'button', onClick
           type={type}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}>
-          {!hover && <ChevronRight className='my-auto mr-20px rotate-180' />}
-          {hover && <ChevronRightHover className='my-auto mr-11px rotate-180' />}
+          {!hover && <ChevronRight className='my-auto ml-5px' />}
+          {hover && <ChevronRightHover className='my-auto ml-5px' />}
           {children}
         </button>
       </div>
@@ -62,15 +62,28 @@ export function LinkButtonLeft({ href = '/', className, type = 'button', onClick
 }
 
 export function Button({ className, type = 'button', onClick, id = 'button', children }) {
+  const [hover, setHover] = useState(false)
+  function handleMouseOver() {
+    setHover(true)
+  }
+  function handleMouseOut() {
+    setHover(false)
+  }
   return (
-    <button
-      onClick={onClick}
-      id={id}
-      className={`${className} bg-purple sm:min-w-90px sm:min-h-30px min-w-15rem min-h-50px text-center text-light text-16px hover:bg-purple-2 focus:bg-purple-3 p-10px`}
-      style={{ border: 'none', cursor: 'pointer' }}
-      type={type}>
-      {children}
-    </button>
+    <div className='flex sm:min-w-90px sm:min-h-30px min-w-15rem min-h-50px responsive z-99'>
+      <button
+        onClick={onClick}
+        id={id}
+        className={`${className} flex my-auto text-center text-16px font-bold bg-transparent`}
+        style={{ border: 'none', cursor: 'pointer' }}
+        type={type}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}>
+        {children}
+        {!hover && <ChevronRight className='my-auto ml-5px' />}
+        {hover && <ChevronRightHover className='my-auto ml-5px' />}
+      </button>
+    </div>
   )
 }
 
