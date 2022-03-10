@@ -1,0 +1,56 @@
+.triangle {
+  width: 0px;
+  height: 0px;
+  -webkit-transform: rotate(360deg);
+  border-style: solid;
+  border-width: 0 10px 20px 10px;
+  position: absolute;
+  top: -2.8%;
+  left: 50%;
+  transform: translate(0%, -50%);
+}
+.triangle-warn {
+  border-color: transparent transparent #f6ffbd transparent;
+}
+.triangle-error {
+  border-color: transparent transparent #f4a9a7 transparent;
+}
+.triangle-success {
+  border-color: transparent transparent #bfdcfc transparent;
+}
+
+.fade-toast {
+  -webkit-animation: fadeinout 10s linear forwards;
+  animation: fadeinout 10s linear forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

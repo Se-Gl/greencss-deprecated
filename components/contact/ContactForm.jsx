@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import { Button } from '../reusable/Button'
+import { useToast } from '../../components/toast/hooks/useToast'
 
 export default function ContactForm() {
   const [fullname, setFullname] = useState('')
   const [email, setEmail] = useState('')
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
+
+  const toast = useToast()
 
   //   Form validation
   const [errors, setErrors] = useState({})
@@ -20,29 +23,15 @@ export default function ContactForm() {
     let tempErrors = {}
     let isValid = true
 
-    if (fullname.length <= 0) {
+    if (fullname.length <= 0 || email.length <= 0 || subject.length <= 0 || message.length <= 0) {
       tempErrors['fullname'] = true
       isValid = false
-    }
-    if (email.length <= 0) {
-      tempErrors['email'] = true
-      isValid = false
-    }
-    if (subject.length <= 0) {
-      tempErrors['subject'] = true
-      isValid = false
-    }
-    if (message.length <= 0) {
-      tempErrors['message'] = true
-      isValid = false
+      toast('warning', '☝️ An error has occurred. Please check your input.')
     }
 
     setErrors({ ...tempErrors })
-    // console.log('errors', errors)
     return isValid
   }
-
-  //   const [form, setForm] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -66,11 +55,10 @@ export default function ContactForm() {
 
       const { error } = await res.json()
       if (error) {
-        // console.log(error)
         setShowSuccessMessage(false)
         setShowFailureMessage(true)
+        toast('error', '⚡ Oops! Something went wrong, please try again later.')
         setButtonText('Send')
-
         // Reset form fields
         setFullname('')
         setEmail('')
@@ -79,6 +67,7 @@ export default function ContactForm() {
         return
       }
       setShowSuccessMessage(true)
+      toast('success', '🙏 Thankyou! Your Message has been delivered.')
       setShowFailureMessage(false)
       setButtonText('Send')
       // Reset form fields
@@ -108,7 +97,7 @@ export default function ContactForm() {
               setFullname(e.target.value)
             }}
           />
-          {errors?.fullname && <p className='text-red-2 text-10px mb-0px'>Fullname cannot be empty.</p>}
+
           <label htmlFor='email' className='text-black-5 mt-25px mb-5px text-15px'>
             E-mail<span className='text-red-2'>*</span>
           </label>
@@ -122,7 +111,7 @@ export default function ContactForm() {
               setEmail(e.target.value)
             }}
           />
-          {errors?.email && <p className='text-red-2 text-10px mb-0px'>Email cannot be empty.</p>}
+
           <label htmlFor='subject' className='text-black-5 mt-25px mb-5px text-15px'>
             Subject<span className='text-red-2'>*</span>
           </label>
@@ -136,7 +125,7 @@ export default function ContactForm() {
               setSubject(e.target.value)
             }}
           />
-          {errors?.subject && <p className='text-red-2 text-10px mb-0px'>Subject cannot be empty.</p>}
+
           <label htmlFor='message' className='text-black-5 mt-25px mb-5px text-15px'>
             Message<span className='text-red-2'>*</span>
           </label>
@@ -148,18 +137,12 @@ export default function ContactForm() {
             onChange={(e) => {
               setMessage(e.target.value)
             }}></textarea>
-          {errors?.message && <p className='text-red-2 text-10px mb-0px'>Message body cannot be empty.</p>}
+
           <div className='flex flex-row items-center justify-start'>
             <Button type='submit' className='mt-50px mb-25px' id='submit-button'>
               {buttonText}
             </Button>
           </div>
-        </div>
-        <div className='text-left'>
-          {showSuccessMessage && (
-            <p className='text-green-5 text-15px my-25px'>Thankyou! Your Message has been delivered.</p>
-          )}
-          {showFailureMessage && <p className='text-red-2'>Oops! Something went wrong, please try again.</p>}
         </div>
       </form>
     </div>

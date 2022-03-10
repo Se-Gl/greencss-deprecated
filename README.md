@@ -2,7 +2,7 @@
 
 [![Prettier and ESLint Code Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml)
 [![Cypress Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml)
-![check-code-coverage](https://img.shields.io/badge/code--coverage-81.56%25-green)
+![check-code-coverage](https://img.shields.io/badge/code--coverage-83.25%25-green)
 
 [![omenCSS logo](./public/omencss.svg)](https://www.omen.design)
 
@@ -178,3 +178,5 @@ sass/
 | license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                            |
 | changes       | Changes were made to the fill- colours, added blob.                                 |
 | ----------    | ------------------------------------                                                |
+
+- [Toast](https://www.youtube.com/watch?v=OXP-a9pyNRk)

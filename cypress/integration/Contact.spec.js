@@ -20,6 +20,13 @@ describe('Category Index Unit test', () => {
     cy.get('#subject').type('Test Title {enter}')
 
     cy.get('#submit-button').click()
-    cy.get('form').contains('Message body cannot be empty.', { matchCase: false })
+    cy.get('#toast-information')
+      .should('be.visible')
+      .should('exist')
+      .contains('☝️ An error has occurred. Please check your input.', { matchCase: false })
+    for (let n = 0; n < 4; n++) {
+      cy.get('#close-toast').click()
+    }
+    cy.get('#toast-information').should('not.exist')
   })
 })

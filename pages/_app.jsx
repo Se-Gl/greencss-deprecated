@@ -7,12 +7,17 @@ if (process.env.NODE_ENV == 'production') {
 require('@/styles/globals.scss')
 
 import Progress from '@/components/progress/Progress'
+import { ToastProvider } from '@/components/toast/context/ToastContext'
+import ToastContainer from '@/components/toast/ToastContainer'
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Progress />
-      <Component {...pageProps} />
+      <ToastProvider>
+        <Component {...pageProps} />
+        <ToastContainer />
+      </ToastProvider>
     </>
   )
 }
