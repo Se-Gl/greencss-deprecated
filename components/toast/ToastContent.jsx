@@ -1,8 +1,13 @@
 import React from 'react'
 
 export default function ToastContent({ fillColor, notification, onClick, backgroundColor, textColor, triangleColor }) {
+  const cookie = () => {
+    localStorage.setItem('cookie', JSON.stringify('accepted'))
+    onClick()
+  }
+
   return (
-    <div className='fade-toast relative' id='toast-information'>
+    <div className={`${triangleColor != 'cookie' && 'fade-toast relative'}`} id='toast-information'>
       <div className={`triangle triangle-${triangleColor}`} />
       <div className={`relative max-w-50rem max-h-28rem mb-25px ${backgroundColor}`}>
         <div className='ml-10px p-20px'>
@@ -10,7 +15,7 @@ export default function ToastContent({ fillColor, notification, onClick, backgro
         </div>
         <svg
           id='close-toast'
-          onClick={onClick}
+          onClick={triangleColor != 'cookie' ? onClick : cookie}
           width='15'
           height='15'
           viewBox='0 0 14 14'

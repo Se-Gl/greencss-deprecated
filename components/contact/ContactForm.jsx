@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button } from '../reusable/Button'
-import { useToast } from '../../components/toast/hooks/useToast'
+import { useToast } from '@/components/toast/hooks/useToast'
 
 export default function ContactForm() {
   const [fullname, setFullname] = useState('')

@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Hero from '@/components/LandingPage/Hero'
 import News from '@/components/LandingPage/News'
 import Presentation from '@/components/LandingPage/Presentation'
@@ -6,8 +7,27 @@ import Support from '@/components/LandingPage/Support'
 import Testimonial from '@/components/LandingPage/Testimonial'
 import Layout from '@/components/reusable/Layout'
 import { getPosts } from '@/lib/posts'
+import { useToast } from '@/components/toast/hooks/useToast'
 
 export default function HomePage({ posts }) {
+  const toast = useToast()
+  const getCookie = () => {
+    if (typeof window !== 'undefined') {
+      const localCookie = localStorage.getItem('cookie')
+      if (localCookie) return JSON.parse(localCookie)
+    }
+    return ''
+  }
+
+  useEffect(() => {
+    getCookie() != 'accepted' &&
+      toast(
+        'cookie',
+        '🍪 By continuing to use this site you consent to the use of cookies in accordance with our cookie policy.',
+        999999
+      )
+  }, [])
+
   return (
     <div className='overflow-x-hidden'>
       <div className='relative'>

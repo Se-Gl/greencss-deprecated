@@ -18,6 +18,7 @@ describe('Nav Screen Unit test', () => {
 describe('Mobile Nav Screen Unit test', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000/')
+    cy.get('#close-toast').click()
     cy.viewport(320, 480)
     cy.get('#hamburger-sm').should('be.visible').should('exist').click()
   })
@@ -31,5 +32,10 @@ describe('Mobile Nav Screen Unit test', () => {
   it('renders and clicks the second nav item, check colours', () => {
     cy.get('h3').eq(1).should('be.visible').should('exist').contains('Brand', { matchCase: false }).click()
     cy.url().should('be.equal', 'http://localhost:3000/brand')
+  })
+  it('clears localstorage', () => {
+    cy.clearLocalStorage().should((ls) => {
+      expect(ls.getItem('cookie')).to.be.null
+    })
   })
 })
