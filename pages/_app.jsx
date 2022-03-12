@@ -9,10 +9,10 @@ import { usePostHog } from 'next-use-posthog'
 import Progress from '@/components/progress/Progress'
 import { ToastProvider } from '@/components/toast/context/ToastContext'
 import ToastContainer from '@/components/toast/ToastContainer'
-import { POSTHOG_KEY } from '@/config/index'
 
 function MyApp({ Component, pageProps }) {
-  usePostHog(POSTHOG_KEY, {
+  // analytics:
+  usePostHog(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
     api_host: 'https://app.posthog.com',
     loaded: (posthog) => {
       if (process.env.NODE_ENV === 'development') posthog.opt_out_capturing()

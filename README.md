@@ -2,7 +2,7 @@
 
 [![Prettier and ESLint Code Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml)
 [![Cypress Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml)
-![check-code-coverage](https://img.shields.io/badge/code--coverage-82.1%25-green)
+![check-code-coverage](https://img.shields.io/badge/code--coverage-82.31%25-green)
 
 [![omenCSS logo](./public/omencss.svg)](https://www.omen.design)
 
@@ -139,6 +139,8 @@ sass/
 | [purgecss](https://www.npmjs.com/package/purgecss)                                 | ![GitHub stars](https://img.shields.io/github/stars/FullHuman/purgecss.svg?label=%F0%9F%8C%9F)               | [![Bundle size](https://badgen.net/bundlephobia/minzip/purgecss?label=%F0%9F%92%BE)](https://bundlephobia.com/package/purgecss)                                  | ✅         | ✅        |
 | [postcss-flexbugs-fixes](https://www.npmjs.com/package/postcss-flexbugs-fixes)     | ![GitHub stars](https://img.shields.io/github/stars/luisrudge/postcss-flexbugs-fixes.svg?label=%F0%9F%8C%9F) | [![Bundle size](https://badgen.net/bundlephobia/minzip/postcss-flexbugs-fixes?label=%F0%9F%92%BE)](https://bundlephobia.com/package/postcss-flexbugs-fixes)      | ✅         | ✅        |
 | [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env)             | ![GitHub stars](https://img.shields.io/github/stars/csstools/postcss-plugins.svg?label=%F0%9F%8C%9F)         | [![Bundle size](https://badgen.net/bundlephobia/minzip/postcss-preset-env?label=%F0%9F%92%BE)](https://bundlephobia.com/package/postcss-preset-env)              | ✅         | ✅        |
+| [@sendgrid/mail](https://www.npmjs.com/package/@sendgrid/mail)                     | ![GitHub stars](https://img.shields.io/github/stars/sendgrid/sendgrid-nodejs.svg?label=%F0%9F%8C%9F)         | [![Bundle size](https://badgen.net/bundlephobia/minzip/@sendgrid/mail?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=@sendgrid/mail)                     | ✅         | ✅        |
+| [next-use-posthog](https://www.npmjs.com/package/next-use-posthog)                 | ![GitHub stars](https://img.shields.io/github/stars/Ismaaa/next-use-posthog.svg?label=%F0%9F%8C%9F)          | [![Bundle size](https://badgen.net/bundlephobia/minzip/next-use-posthog?label=%F0%9F%92%BE)](https://bundlephobia.com/package/next-use-posthog)                  | ✅         | ✅        |
 
 ### Testing Libraries
 
@@ -157,7 +159,6 @@ sass/
 | [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier) | ![GitHub stars](https://img.shields.io/github/stars/prettier/eslint-config-prettier.svg?label=%F0%9F%8C%9F) | [![Bundle size](https://badgen.net/bundlephobia/minzip/eslint-config-prettier?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=eslint-config-prettier) | ✅         | ✅        |
 | [husky](https://www.npmjs.com/package/husky)                                   | ![GitHub stars](https://img.shields.io/github/stars/typicode/husky.svg?label=%F0%9F%8C%9F)                  | [![Bundle size](https://badgen.net/bundlephobia/minzip/husky?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=husky)                                   | ✅         | ✅        |
 | [lint-staged](https://www.npmjs.com/package/lint-staged)                       | ![GitHub stars](https://img.shields.io/github/stars/okonet/lint-staged.svg?label=%F0%9F%8C%9F)              | [![Bundle size](https://badgen.net/bundlephobia/minzip/lint-staged?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=lint-staged)                       | ✅         | ✅        |
-| [@sendgrid/mail](https://www.npmjs.com/package/@sendgrid/mail)                 | ![GitHub stars](https://img.shields.io/github/stars/sendgrid/sendgrid-nodejs.svg?label=%F0%9F%8C%9F)        | [![Bundle size](https://badgen.net/bundlephobia/minzip/@sendgrid/mail?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=@sendgrid/mail)                 | ✅         | ✅        |
 
 ### Sources
 
