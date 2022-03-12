@@ -1,12 +1,9 @@
 import dynamic from 'next/dynamic'
-import Link from 'next/link'
-import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { VsStyle } from '@/data/SynatxStyle'
 import Layout from '@/components/reusable/Layout'
 import { BackButton } from '@/components/reusable/Button'
 import Loader from '@/components/logo/Loader'
 import SideBar from '../category/SideBar'
-import { HeadingRenderer } from '@/utils/HeadingRenderer'
+import { HeadingRenderer, LinkRenderer, CodeRenderer } from '@/utils/ElementRenderer'
 
 const ReactMarkdown = dynamic(() => import('react-markdown').then((mod) => mod.default), {
   ssr: false,
@@ -26,17 +23,6 @@ export default function SlugComponent({
   posts,
   categories
 }) {
-  // function flattenHeader(text, child) {
-  //   return typeof child === 'string'
-  //     ? text + child
-  //     : React.Children.toArray(child.props.children).reduce(flattenHeader, text)
-  // }
-  // function HeadingRenderer(props) {
-  //   let children = React.Children.toArray(props.children)
-  //   let text = children.reduce(flattenHeader, '')
-  //   let slugify = text.toLowerCase().replace(/\W/g, '-')
-  //   return React.createElement('h' + props.level, { id: slugify }, props.children)
-  // }
   return (
     <Layout
       title={title}
@@ -66,33 +52,10 @@ export default function SlugComponent({
             <ReactMarkdown
               children={content}
               components={{
-                a: ({ node, ...props }) => {
-                  return (
-                    <Link href={props.href}>
-                      <a>{props.children[0]}</a>
-                    </Link>
-                  )
-                },
+                a: LinkRenderer,
                 h2: HeadingRenderer,
                 h3: HeadingRenderer,
-                code({ node, inline, className, children, ...props }) {
-                  const match = /language-(\w+)/.exec(className || '')
-                  return !inline && match ? (
-                    <>
-                      <SyntaxHighlighter
-                        children={String(children).replace(/\n$/, '')}
-                        style={VsStyle}
-                        language={match[1]}
-                        PreTag='div'
-                        {...props}
-                      />
-                    </>
-                  ) : (
-                    <code className={className} {...props}>
-                      {children}
-                    </code>
-                  )
-                }
+                code: CodeRenderer
               }}
             />
             {/* eslint-enable */}

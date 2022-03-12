@@ -53,6 +53,19 @@ npm run lint
 npm run prettier
 ```
 
+### env file
+
+Create a `.env.local` file. Sendgrid will be used for the contact features. Posthog is being used as an open source SEO-analytics alternative.
+
+```env
+SENDGRID_API_KEY=YOUR-SENDGRID-API-KEY
+SENDGRID_EMAIL=YOUR-SENDGRID-EMAIL
+NEXT_PUBLIC_POSTHOG_KEY=YOUR-POSTHOG-API-KEY
+```
+
+- [sendgrid](https://signup.sendgrid.com/)
+- [PostHog](https://posthog.com/signup)
+
 ### Github actions
 
 - In order to follow best practices, simple github actions have been implemented.

@@ -20,17 +20,25 @@ describe('Blog Screen Unit test', () => {
   })
 })
 
-describe('Check if an individual header ID exists', () => {
-  before(() => {
-    cy.visit('http://localhost:3000/blog/what-is-omencss')
+describe('Verify ElementRenderer', () => {
+  beforeEach(() => {
+    cy.visit('http://localhost:3000/blog/omencss-animations')
   })
   it('renders the header with its id', () => {
     cy.get('h2')
       .eq(1)
       .should('be.visible')
       .should('exist')
-      .contains('What exactly is omenCSS?', { matchCase: false })
+      .contains('Staggering animations', { matchCase: false })
       .invoke('attr', 'id')
-      .should('equal', 'what-exactly-is-omencss-')
+      .should('equal', 'staggering-animations')
+  })
+  it('clicks the first link in the blog and redirects', () => {
+    cy.get(':nth-child(13) > a').should('exist').click()
+    cy.url().should('be.equal', 'http://localhost:3000/docs/animation/example')
+  })
+  it('checks if code is being rendered', () => {
+    cy.get('pre').should('exist')
+    cy.get('code').should('exist').should('be.visible').invoke('attr', 'class').should('equal', 'language-js')
   })
 })
