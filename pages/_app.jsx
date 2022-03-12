@@ -1,5 +1,3 @@
-import { usePostHog } from 'next-use-posthog'
-// import '@/styles/globals.scss'
 if (process.env.NODE_ENV == 'production') {
   require('@/css/omen.css')
 } else {
@@ -7,12 +5,14 @@ if (process.env.NODE_ENV == 'production') {
 }
 require('@/styles/globals.scss')
 
+import { usePostHog } from 'next-use-posthog'
 import Progress from '@/components/progress/Progress'
 import { ToastProvider } from '@/components/toast/context/ToastContext'
 import ToastContainer from '@/components/toast/ToastContainer'
+import { POSTHOG_KEY } from '@/config/index'
 
 function MyApp({ Component, pageProps }) {
-  usePostHog(`${process.env.POSTHOG_KEY}`, {
+  usePostHog(POSTHOG_KEY, {
     api_host: 'https://app.posthog.com',
     loaded: (posthog) => {
       if (process.env.NODE_ENV === 'development') posthog.opt_out_capturing()
