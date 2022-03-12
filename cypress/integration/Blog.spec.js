@@ -19,3 +19,18 @@ describe('Blog Screen Unit test', () => {
     cy.get('#blog-card').eq(0).should('be.visible').should('exist')
   })
 })
+
+describe('Check if an individual header ID exists', () => {
+  before(() => {
+    cy.visit('http://localhost:3000/blog/what-is-omencss')
+  })
+  it('renders the header with its id', () => {
+    cy.get('h2')
+      .eq(1)
+      .should('be.visible')
+      .should('exist')
+      .contains('What exactly is omenCSS?', { matchCase: false })
+      .invoke('attr', 'id')
+      .should('equal', 'what-exactly-is-omencss-')
+  })
+})
