@@ -1,7 +1,7 @@
 import React from 'react'
-import Link from 'next/link'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { VsStyle } from '@/data/SynatxStyle'
+import { HashLink } from './HashLink'
 
 function flattenHeader(text, child) {
   return typeof child === 'string'
@@ -17,11 +17,7 @@ export function HeadingRenderer(props) {
 }
 
 export function LinkRenderer({ node, ...props }) {
-  return (
-    <Link href={props.href}>
-      <a>{props.children[0]}</a>
-    </Link>
-  )
+  return <HashLink href={props.href}>{props.children[0]}</HashLink>
 }
 
 export function CodeRenderer({ node, inline, className, children, ...props }) {

@@ -21,8 +21,10 @@ export default function SlugComponent({
   isBlog,
   keywords,
   posts,
-  categories
+  categories,
+  toc
 }) {
+  // console.log(toc.map((table, index) => table.header.replace('"', '')))
   return (
     <Layout
       title={title}

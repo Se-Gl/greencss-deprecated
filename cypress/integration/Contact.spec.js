@@ -13,8 +13,8 @@ describe('Category Index Unit test', () => {
   })
   it('submit a request', () => {
     cy.get('#fullname').type('John Doe {enter}')
-    cy.get('#email').type('john.doe@email.com {enter}')
-    cy.get('#subject').type('Test Title {enter}')
+    cy.get('#email').type('john.doe@email.com {enter}', { force: true })
+    cy.get('#subject').type('Test Title {enter}', { force: true })
 
     cy.get('#submit-button').click()
     cy.get('#toast-information')

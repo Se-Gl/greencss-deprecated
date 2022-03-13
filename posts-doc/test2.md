@@ -3,15 +3,16 @@ isBlog: false
 title: 'Hello World 2!'
 date: 'Feb 9. 2022'
 excerpt: 'A simple Hello World sub header.'
-cover_image: '/images/blog/cover/default-Image-blog.webp'
+cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Transition'
 author: 'Severin Glaser'
 keywords: ''
 classNames: ''
+toc: [{header: "[Turpius Aegides membris colat volentes fallere](#3--turpius-aegides-membris-colat-volentes-fallere)"}, {header: "[O contra diu](#4--o-contra-diu)"}]
 plainText: "Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
 haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
 manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
-verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
+verba caput ferarum \_nubila*? Patriam Cyparisse tamen, **saxum** fide postponere
 pavida ne omnes etiam, atque. Sonuit omina sed sine haerebat illic fit a mora
 in.
 
@@ -21,7 +22,7 @@ in.
 4. Vulnus se Latreus
 5. Aptumque bis
 
-## Turpius Aegides membris colat volentes fallere
+## 1. <a name='TurpiusAegidesmembriscolatvolentesfallere'></a>Turpius Aegides membris colat volentes fallere
 
 Ille fida formosus, et addunt viscera perdidit ad pondere quia tellus
 consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
@@ -33,7 +34,7 @@ procul fugitque corpora iugales!
     permalinkCertificateMacintosh(ergonomicsIsdnDns);
     boot = bridgeDaemonActive;
 
-## O contra diu
+## 2. <a name='Ocontradiu'></a>O contra diu
 
 Descendit _auras cum misi_ contactu tenax lacus, **quaerensque invitum
 premuntur** patria. Puris ille pictis spiritus placent vestigia et noctis
@@ -59,7 +60,7 @@ ante exspectant gaudeat Calydonius cernit, duxit pariterque dolet epulis? Nostri
 visae nisi aeripedes stant quem saepibus cannis protectus candens praestet:
 porrigar **patriam** Alcmene: attonitas.
 
-```js
+````js
 import DropDown from '../../../components/animation/DropDown'
 import { BackButton } from '../../../components/reusable/Button'
 import Layout from '../../../components/reusable/Layout'
@@ -81,6 +82,9 @@ export default function AnimationPage() {
 ```"
 ---
 
+Fast forward:
+[Turpius Aegides membris colat volentes fallere](#3--turpius-aegides-membris-colat-volentes-fallere) | [O contra diu](#4--o-contra-diu)
+
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
 haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
 manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
@@ -94,7 +98,7 @@ in.
 4. Vulnus se Latreus
 5. Aptumque bis
 
-## Turpius Aegides membris colat volentes fallere
+## 3. Turpius Aegides membris colat volentes fallere
 
 Ille fida formosus, et addunt viscera perdidit ad pondere quia tellus
 consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
@@ -106,7 +110,7 @@ procul fugitque corpora iugales!
     permalinkCertificateMacintosh(ergonomicsIsdnDns);
     boot = bridgeDaemonActive;
 
-## O contra diu
+## 4. O contra diu
 
 Descendit _auras cum misi_ contactu tenax lacus, **quaerensque invitum
 premuntur** patria. Puris ille pictis spiritus placent vestigia et noctis

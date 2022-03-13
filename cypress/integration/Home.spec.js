@@ -28,14 +28,18 @@ describe('Home Screen Unit test', () => {
   })
   it('reveals supporters section with animation', () => {
     cy.get('#supporters').scrollIntoView()
-    cy.get(':nth-child(1) > .min-w-50rem > .min-h-25rem > .h-25rem').should('exist').should('be.visible').click()
+    cy.get(':nth-child(1) > .min-w-50rem > .min-h-25rem > .h-25rem')
+      .should('exist')
+      .should('be.visible')
+      .click({ force: true })
     cy.get(':nth-child(2) > .min-w-50rem > .min-h-25rem > .h-25rem')
       .should('exist')
       .should('be.visible')
       .trigger('touchmove', {
-        touches: [{ pageY: 0, pageX: 100 }]
+        touches: [{ pageY: 0, pageX: 100 }],
+        force: true
       })
-      .click()
+      .click({ force: true })
     cy.get(':nth-child(3) > .min-w-50rem > .min-h-25rem > .h-25rem').should('exist').should('be.visible')
   })
   it('render dummy blog post card', () => {
