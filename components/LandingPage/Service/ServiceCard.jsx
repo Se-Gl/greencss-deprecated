@@ -1,21 +1,32 @@
-import Pen from '@/components/icon/LandingPage/Service/Pen'
-import { LinkButton } from '@/components/reusable/Button'
+import BrandCard from '@/components/brand/BrandCard'
+import useInView from '@/hooks/InView/scrollView'
+
+const serviceCard = [
+  { title: 'Getting started', path: '#' },
+  { title: 'Documentary', path: '/docs' },
+  { title: 'Delete unused CSS', path: '/blog/how-to-delete-unused-css-classes' }
+]
 
 export default function ServiceCard() {
+  const [ref, isVisible] = useInView({
+    threshold: 0.15,
+    unobserveOnEnter: true
+  })
   return (
     <>
-      <div className='min-h-38rem max-w-38rem w-100per bg-light rounded-10px' id='service-card'>
-        <div className='flex min-h-38rem w-100per text-dark sm:w-75vw md:w-75vw'>
-          <div className='relative m-auto px-30px'>
-            <Pen className='mb-30px' />
-            <h2 className='text-25px font-bold leading-100per'>User Interface Design</h2>
-            <p className='text-20px font-normal mt-20px'>
-              omenCSS provides a stunning user interface design that is accessible to everyone.
-            </p>
-            <LinkButton className='absolute bottom-0'>Learn more</LinkButton>
+      {serviceCard.sort().map((card, index) => (
+        <div
+          key={index}
+          ref={ref}
+          id='service-card'
+          className={`sm:m-10px md:m-10px bg-white rounded-10px grid-row-col ${
+            isVisible ? `fade-in animate animation-forwards animation-delay-${(index + 1) * 1}00ms` : 'opacity-0per'
+          }`}>
+          <div className='col-span-1'>
+            <BrandCard title={`${card.title}`} link={`${card.path}`} />
           </div>
         </div>
-      </div>
+      ))}
     </>
   )
 }

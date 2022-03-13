@@ -53,7 +53,6 @@ describe('Home Screen Unit test', () => {
   })
   it('render dummy doc section and cards', () => {
     cy.get('#service-section').should('exist').scrollIntoView().wait(1000)
-    cy.get('#doc-1').contains('User Interface Design', { matchCase: false })
-    cy.get('#doc-1 div div div svg').should('exist').should('be.visible')
+    cy.get('#service-card').contains('Getting started', { matchCase: false })
   })
 })
