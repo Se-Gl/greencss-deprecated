@@ -23,7 +23,7 @@ export default function HomePage({ posts }) {
     getCookie() != 'accepted' &&
       toast(
         'cookie',
-        '🍪 By continuing to use this site you consent to the use of cookies in accordance with our cookie policy.',
+        '🍪 By clicking “OK” or the checkmark, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our UI/UX efforts.',
         999999
       )
   }, [])
