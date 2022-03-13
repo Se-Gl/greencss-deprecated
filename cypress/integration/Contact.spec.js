@@ -8,9 +8,6 @@ describe('Category Index Unit test', () => {
       .should('exist')
       .contains('Contact - the right way to get to know each other.', { matchCase: false })
   })
-  it('renders the illustration', () => {
-    cy.get('#contact-hero-illustration').should('be.visible').should('exist')
-  })
   it('renders the contact form', () => {
     cy.get('#contact-form').should('be.visible').should('exist').contains('Send a message', { matchCase: false })
   })
