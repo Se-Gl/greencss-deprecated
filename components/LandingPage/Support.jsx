@@ -1,53 +1,30 @@
-import React from 'react'
-import useInView from '@/hooks/InView/scrollView'
+import Carousel, { CarouselItem } from '../carousel/Carousel'
+import BrandCard from '../brand/BrandCard'
+
+const serviceCard = [
+  { title: 'Logo 1', path: '#' },
+  { title: 'Logo 2', path: '#' },
+  { title: 'Logo 3', path: '#' }
+]
 
 export default function Support() {
-  const [ref, isVisible] = useInView({
-    threshold: 0.25,
-    unobserveOnEnter: true
-  })
-  const [refTwo, isVisibleTwo] = useInView({
-    threshold: 0.25,
-    unobserveOnEnter: true
-  })
-
   return (
-    <section className='my-20rem sm:my-100px md:my-100px text-center' id='supporters'>
-      <h2>Supported by</h2>
-      <div className='m-auto grid grid-col-4 gap-30px sm:gap-0px sm:grid-col-2 md:grid-col-2'>
-        <div
-          ref={ref}
-          id='logo-1'
-          className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
-            isVisible ? 'fade-in animate animation-forwards' : 'opacity-0per'
-          }`}>
-          <h2>Logo 1</h2>
-        </div>
-        <div
-          ref={ref}
-          id='logo-2'
-          className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
-            isVisible ? 'fade-in animate animation-forwards animation-delay-200ms' : 'opacity-0per'
-          }`}>
-          <h2>Logo 2</h2>
-        </div>
-        <div
-          ref={refTwo}
-          id='logo-3'
-          className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
-            isVisibleTwo ? 'fade-in animate animation-forwards animation-delay-400ms' : 'opacity-0per'
-          }`}>
-          <h2>Logo 3</h2>
-        </div>
-        <div
-          ref={refTwo}
-          id='logo-4'
-          className={`col-span-1 grid-flow-row sm:mx-10px md:mx-10px ${
-            isVisibleTwo ? 'fade-in animate animation-forwards animation-delay-600ms' : 'opacity-0per'
-          }`}>
-          <h2>Logo 4</h2>
-        </div>
-      </div>
+    <section className='my-20rem sm:my-100px md:my-100px' id='supporters'>
+      <h2 className='max-w-50rem sm:m-10px md:m-10px'>There’s more behind omenCSS</h2>
+
+      <Carousel>
+        <Carousel>
+          {serviceCard.map((item) => {
+            return (
+              <CarouselItem key={item.title}>
+                <div className='min-w-50rem sm:max-w-35rem sm:min-w-30rem mx-auto'>
+                  <BrandCard title={`${item.title}`} link={`${item.path}`} />
+                </div>
+              </CarouselItem>
+            )
+          })}
+        </Carousel>
+      </Carousel>
     </section>
   )
 }

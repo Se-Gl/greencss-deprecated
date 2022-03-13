@@ -27,15 +27,16 @@ describe('Home Screen Unit test', () => {
     cy.get('#production').should('exist').should('be.visible')
   })
   it('reveals supporters section with animation', () => {
-    cy.get('#logo-1').should('exist').should('not.be.visible')
-    cy.get('#logo-2').should('exist').should('not.be.visible')
-    cy.get('#logo-3').should('exist').should('not.be.visible')
-    cy.get('#logo-4').should('exist').should('not.be.visible')
-    cy.get('#supporters').scrollIntoView().wait(1000)
-    cy.get('#logo-1').should('exist').should('be.visible')
-    cy.get('#logo-2').should('exist').should('be.visible')
-    cy.get('#logo-3').should('exist').should('be.visible')
-    cy.get('#logo-4').should('exist').should('be.visible')
+    cy.get('#supporters').scrollIntoView()
+    cy.get(':nth-child(1) > .min-w-50rem > .min-h-25rem > .h-25rem').should('exist').should('be.visible').click()
+    cy.get(':nth-child(2) > .min-w-50rem > .min-h-25rem > .h-25rem')
+      .should('exist')
+      .should('be.visible')
+      .trigger('touchmove', {
+        touches: [{ pageY: 0, pageX: 100 }]
+      })
+      .click()
+    cy.get(':nth-child(3) > .min-w-50rem > .min-h-25rem > .h-25rem').should('exist').should('be.visible')
   })
   it('render dummy blog post card', () => {
     cy.get('#recent-news').should('exist').scrollIntoView().wait(1000)
