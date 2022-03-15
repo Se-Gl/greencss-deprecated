@@ -4,6 +4,7 @@ import { BackButton } from '@/components/reusable/Button'
 import Loader from '@/components/logo/Loader'
 import SideBar from '../category/SideBar'
 import { HeadingRenderer, LinkRenderer, CodeRenderer } from '@/utils/ElementRenderer'
+import Toc from '../toc/Toc'
 
 const ReactMarkdown = dynamic(() => import('react-markdown').then((mod) => mod.default), {
   ssr: false,
@@ -43,8 +44,15 @@ export default function SlugComponent({
           </div>
         )}
         <div className='mb-10rem min-w-100per relative col-span-5 sm:col-span-6 md:col-span-6' id={`blog-${slug}`}>
-          <BackButton>Back</BackButton>
+          <div className='flex justify-between sm:mb-50px md:mb-50px'>
+            <BackButton>Back</BackButton>
+            <div className='float-right'>
+              <Toc markdownText={content} />
+            </div>
+          </div>
+
           <div className='m-auto max-w-75rem mb-10rem'>
+            {/* <Toc markdownText={content} /> */}
             <h1 className='text-80px sm:text-50px'>{title}</h1>
             {isBlog === false ? null : (
               <img src={cover_image} alt={excerpt} className='w-100per rounded-10px mb-50px' />

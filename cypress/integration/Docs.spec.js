@@ -27,3 +27,12 @@ describe('Individual Docs Screen Unit test', () => {
     cy.get('#subdocs-hero-illustration').should('be.visible').should('exist')
   })
 })
+
+describe('Render Table of Contents', () => {
+  before(() => {
+    cy.visit('http://localhost:3000/docs/test5')
+  })
+  it('check if toc exists', () => {
+    cy.get('#toc').should('be.visible').should('exist').contains('Table of contents', { matchCase: false })
+  })
+})

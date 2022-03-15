@@ -107,8 +107,35 @@ export function BackButton({ className, type = 'button', id = 'back-button', chi
         type={type}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}>
-        {!hover && <ChevronRight className='my-auto mr-20px rotate-180' />}
-        {hover && <ChevronRightHover className='my-auto mr-11px rotate-180' />}
+        {!hover && <ChevronRight className='my-auto mr-20px rotate-180deg' />}
+        {hover && <ChevronRightHover className='my-auto mr-11px rotate-180deg' />}
+        {children}
+      </button>
+    </div>
+  )
+}
+
+export function TocButton({ className, onClick, type = 'button', id = 'toc-button', children }) {
+  const [hover, setHover] = useState(false)
+
+  function handleMouseOver() {
+    setHover(true)
+  }
+  function handleMouseOut() {
+    setHover(false)
+  }
+  return (
+    <div className='flex sm:min-w-90px sm:min-h-30px min-w-15rem min-h-50px responsive z-99'>
+      <button
+        onClick={onClick}
+        id={id}
+        className='flex my-auto text-center text-16px font-bold bg-transparent'
+        style={{ border: 'none', cursor: 'pointer' }}
+        type={type}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}>
+        {!hover && <ChevronRight className={`my-auto right-18per absolute ${className}`} />}
+        {hover && <ChevronRightHover className={`my-auto right-18per absolute ${className}`} />}
         {children}
       </button>
     </div>
