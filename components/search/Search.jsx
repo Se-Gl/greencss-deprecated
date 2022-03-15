@@ -11,7 +11,7 @@ export default function Search({ handleCloseClick }) {
       if (searchTerm === '') {
         setSearchResults([])
       } else {
-        const res = await fetch(`/api/search?q=${searchTerm}`)
+        const res = await fetch(`/api/search?q=${searchTerm.toLowerCase()}`)
         const { results } = await res.json()
         // console.log(results)
         setSearchResults(results)
@@ -21,6 +21,7 @@ export default function Search({ handleCloseClick }) {
   }, [searchTerm])
 
   //   console.log(searchTerm)
+  // console.log(searchTerm.toLowerCase())
 
   return (
     <>
@@ -36,6 +37,7 @@ export default function Search({ handleCloseClick }) {
               name='search'
               id='search'
               className='bg-transparent w-100per text-black border-none text-15px'
+              // style={{ textTransform: 'lowercase' }}
               placeholder='Search documentation'
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
