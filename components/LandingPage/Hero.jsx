@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic'
 import { LinkButton } from '@/components/reusable/Button'
 import Loader from '../logo/Loader'
+import { useEffect, useState } from 'react'
 
 const ThreeDObject = dynamic(() => import('./3D/Index'), {
   loading: () => (
@@ -15,13 +16,21 @@ const ThreeDObject = dynamic(() => import('./3D/Index'), {
 })
 
 export default function Hero() {
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.onload = setLoading(false)
+    }
+  }, [])
   return (
-    <section id='hero'>
-      <div className='m-auto grid gap-30px grid-col-2 sm:grid-col-1 md:grid-col-1' style={{ maxWidth: '110rem' }}>
+    <section
+      id='hero'
+      className={`${loading === false ? 'fade-in animate animation-forwards opacity-100per' : 'opacity-1per'}`}>
+      <div className='m-auto grid gap-30px grid-col-2 sm:grid-col-1 md:grid-col-1'>
         <div className='col-span-1 min-h-75vh sm:min-h-100vh'>
           <div className='flex h-75vh'>
-            <div className='m-auto reveal-down animate animation-forwards animation-delay-500ms'>
-              <h1 className='font-800 text-63px text-white sm:text-black md:text-black' style={{ maxWidth: '400px' }}>
+            <div className='m-auto'>
+              <h1 className='font-800 text-63px text-white sm:text-black md:text-black max-w-40rem'>
                 A classy way to write CSS design
               </h1>
 
