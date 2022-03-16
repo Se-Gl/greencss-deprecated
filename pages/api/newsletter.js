@@ -1,4 +1,3 @@
-// TODO refactor - use fetch and not axios
 export default async function handler(req, res) {
   fetch('https://api.sendgrid.com/v3/marketing/contacts', {
     method: 'PUT',

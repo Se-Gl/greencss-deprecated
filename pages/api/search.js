@@ -1,28 +1,6 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-
 export default (req, res) => {
   let posts
-
-  if (process.env.NODE_ENV === 'production') {
-    posts = require('../../cache/data').posts
-  } else {
-    // search is only possible for doc pages in development! blogs will not be displayed
-    // TODO add blogs
-    const files = fs.readdirSync(path.join('posts-doc'))
-
-    posts = files.map((filename) => {
-      const slug = filename.replace('.md', '')
-      const markdownMeta = fs.readFileSync(path.join('posts-doc', filename), 'utf-8')
-      const { data: frontmatter } = matter(markdownMeta)
-
-      return {
-        slug,
-        frontmatter
-      }
-    })
-  }
+  posts = require('../../cache/data').posts
 
   const results = posts.filter(
     ({ frontmatter: { title, excerpt, category, classNames, plainText } }) =>
