@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import axios from 'axios'
 import { useToast } from '@/components/toast/hooks/useToast'
 import { Button } from '../reusable/Button'
 
@@ -10,20 +9,21 @@ export default function Newsletter() {
 
   const subscribe = () => {
     setLoading(true)
-    axios
-      .put('api/newsletter', {
-        mail
+    fetch('api/newsletter', {
+      method: 'PUT',
+      headers: { 'content-type': 'application/json', authorization: `Bearer ${process.env.SENDGRID_API_KEY}` },
+      body: JSON.stringify({
+        mail: mail
       })
-      .then((result) => {
-        if (result.status === 200) {
-          toast('success', `🙏 Thankyou! Your email has been succesfully added to the mailing list.`)
-          setLoading(false)
-        }
-      })
-      .catch((err) => {
+    }).then((result) => {
+      if (result.status === 200) {
+        toast('success', `🙏 Thankyou! Your email has been succesfully added to the mailing list.`)
+        setLoading(false)
+      } else {
         toast('error', `⚡ Oops! There was a problem with your subscription, please try again or contact us`)
         setLoading(false)
-      })
+      }
+    })
   }
   return (
     <section className='my-20rem sm:my-100px md:my-100px' id='newsletter'>

@@ -2,7 +2,7 @@
 
 [![Prettier and ESLint Code Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml)
 [![Cypress Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml)
-![check-code-coverage](https://img.shields.io/badge/code--coverage-77.64%25-yellow)
+![check-code-coverage](https://img.shields.io/badge/code--coverage-83.36%25-green)
 
 [![omenCSS logo](./public/omencss.svg)](https://www.omen.design)
 
@@ -155,7 +155,6 @@ sass/
 | [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env)             | ![GitHub stars](https://img.shields.io/github/stars/csstools/postcss-plugins.svg?label=%F0%9F%8C%9F)         | [![Bundle size](https://badgen.net/bundlephobia/minzip/postcss-preset-env?label=%F0%9F%92%BE)](https://bundlephobia.com/package/postcss-preset-env)              | ✅         | ✅        |
 | [@sendgrid/mail](https://www.npmjs.com/package/@sendgrid/mail)                     | ![GitHub stars](https://img.shields.io/github/stars/sendgrid/sendgrid-nodejs.svg?label=%F0%9F%8C%9F)         | [![Bundle size](https://badgen.net/bundlephobia/minzip/@sendgrid/mail?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=@sendgrid/mail)                     | ✅         | ✅        |
 | [next-use-posthog](https://www.npmjs.com/package/next-use-posthog)                 | ![GitHub stars](https://img.shields.io/github/stars/Ismaaa/next-use-posthog.svg?label=%F0%9F%8C%9F)          | [![Bundle size](https://badgen.net/bundlephobia/minzip/next-use-posthog?label=%F0%9F%92%BE)](https://bundlephobia.com/package/next-use-posthog)                  | ✅         | ✅        |
-| [axios](https://www.npmjs.com/package/axios)                                       | ![GitHub stars](https://img.shields.io/github/stars/axios/axios.svg?label=%F0%9F%8C%9F)                      | [![Bundle size](https://badgen.net/bundlephobia/minzip/axios?label=%F0%9F%92%BE)](https://bundlephobia.com/package/axios)                                        | ✅         | ✅        |
 
 ### Testing Libraries
 
