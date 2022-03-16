@@ -1,4 +1,4 @@
-describe('Home Screen Unit test', () => {
+describe('Search Screen Unit test', () => {
   beforeEach(() => {
     cy.intercept('GET', 'http://localhost:3000/api/search?q=')
     cy.fixture('example.json')
@@ -6,7 +6,7 @@ describe('Home Screen Unit test', () => {
   })
   it('opens and closes modal', () => {
     cy.get('#linkedbutton').click().get('#modal-root').should('exist')
-    cy.get('input').invoke('attr', 'placeholder').should('contain', 'Search documentation')
+    cy.get('#search').invoke('attr', 'placeholder').should('contain', 'Search documentation')
     cy.get('#close-modal').click().get('#modal-root').should('not.be.visible')
   })
   it('open modal with F3 and close it with esc key', () => {

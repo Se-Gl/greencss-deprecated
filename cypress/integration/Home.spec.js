@@ -22,7 +22,7 @@ describe('Home Screen Unit test', () => {
     cy.get('#production').should('exist')
     cy.get('#animated').should('exist')
     cy.get('#responsive').should('exist')
-    cy.get('#presentation').scrollIntoView().wait(1000).should('exist').should('be.visible')
+    cy.get('#presentation').scrollIntoView().should('exist').should('be.visible')
     cy.get('#animated').should('exist').should('be.visible')
     cy.get('#production').should('exist').should('be.visible')
   })
@@ -43,7 +43,7 @@ describe('Home Screen Unit test', () => {
     cy.get(':nth-child(3) > .min-w-50rem > .min-h-25rem > .h-25rem').should('exist').should('be.visible')
   })
   it('render dummy blog post card', () => {
-    cy.get('#recent-news').should('exist').scrollIntoView().wait(1000)
+    cy.get('#recent-news').should('exist').scrollIntoView()
     cy.get('#blog-card').should('exist').should('exist').should('have.attr', 'style')
   })
   it('render the testimonial section', () => {
@@ -57,7 +57,11 @@ describe('Home Screen Unit test', () => {
       })
   })
   it('render dummy doc section and cards', () => {
-    cy.get('#service-section').should('exist').scrollIntoView().wait(1000)
+    cy.get('#service-section').should('exist').scrollIntoView()
     cy.get('#service-card').contains('Getting started', { matchCase: false })
+  })
+  it('renders newsletter section aand creates a request', () => {
+    cy.get('#newsletter').should('exist').scrollIntoView().should('be.visible')
+    cy.get('#newsletter h2').contains('There’s more than being up-to-date', { matchCase: false })
   })
 })

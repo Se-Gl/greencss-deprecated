@@ -22,6 +22,7 @@
     "@react-three/fiber": "^7.0.26",
     "@sendgrid/mail": "^7.6.2",
     "@uiw/react-md-editor": "^3.9.5",
+    "axios": "^0.26.1",
     "gray-matter": "^4.0.3",
     "next": "^12.1.0",
     "next-remove-imports": "^1.0.6",

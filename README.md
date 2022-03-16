@@ -2,7 +2,7 @@
 
 [![Prettier and ESLint Code Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml)
 [![Cypress Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml)
-![check-code-coverage](https://img.shields.io/badge/code--coverage-84.09%25-green)
+![check-code-coverage](https://img.shields.io/badge/code--coverage-77.64%25-yellow)
 
 [![omenCSS logo](./public/omencss.svg)](https://www.omen.design)
 
@@ -59,6 +59,7 @@ Create a `.env.local` file. Sendgrid will be used for the contact features. Post
 
 ```env
 SENDGRID_API_KEY=YOUR-SENDGRID-API-KEY
+SENDGRID_MAILING_ID=YOUR-SENDGRID-CONTACT-LIST-ID
 SENDGRID_EMAIL=YOUR-SENDGRID-EMAIL
 NEXT_PUBLIC_POSTHOG_KEY=YOUR-POSTHOG-API-KEY
 ```
@@ -85,7 +86,7 @@ Keeping the architecture consistent and meaningful is even more of a challenge.
 
 A common and effective modular method for structuring Sass projects is the 7-1 pattern. This approach will be used in the development process of this project.
 
-A possible structure could look as follows _(as of December 2021)_
+A possible structure could look as follows _(as of March 2022)_
 
 ```txt
 sass/
@@ -154,6 +155,7 @@ sass/
 | [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env)             | ![GitHub stars](https://img.shields.io/github/stars/csstools/postcss-plugins.svg?label=%F0%9F%8C%9F)         | [![Bundle size](https://badgen.net/bundlephobia/minzip/postcss-preset-env?label=%F0%9F%92%BE)](https://bundlephobia.com/package/postcss-preset-env)              | ✅         | ✅        |
 | [@sendgrid/mail](https://www.npmjs.com/package/@sendgrid/mail)                     | ![GitHub stars](https://img.shields.io/github/stars/sendgrid/sendgrid-nodejs.svg?label=%F0%9F%8C%9F)         | [![Bundle size](https://badgen.net/bundlephobia/minzip/@sendgrid/mail?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=@sendgrid/mail)                     | ✅         | ✅        |
 | [next-use-posthog](https://www.npmjs.com/package/next-use-posthog)                 | ![GitHub stars](https://img.shields.io/github/stars/Ismaaa/next-use-posthog.svg?label=%F0%9F%8C%9F)          | [![Bundle size](https://badgen.net/bundlephobia/minzip/next-use-posthog?label=%F0%9F%92%BE)](https://bundlephobia.com/package/next-use-posthog)                  | ✅         | ✅        |
+| [axios](https://www.npmjs.com/package/axios)                                       | ![GitHub stars](https://img.shields.io/github/stars/axios/axios.svg?label=%F0%9F%8C%9F)                      | [![Bundle size](https://badgen.net/bundlephobia/minzip/axios?label=%F0%9F%92%BE)](https://bundlephobia.com/package/axios)                                        | ✅         | ✅        |
 
 ### Testing Libraries
 
@@ -195,3 +197,4 @@ sass/
 
 - [Toast](https://www.youtube.com/watch?v=OXP-a9pyNRk)
 - [ToC](https://github.com/K-Sato1995/react-toc)
+- [Newsletter](https://dev.to/michael_webdev/create-a-mailing-list-with-sendgrid-and-next-js-41f7)

@@ -8,6 +8,7 @@ import Testimonial from '@/components/LandingPage/Testimonial'
 import Layout from '@/components/reusable/Layout'
 import { getPosts } from '@/lib/posts'
 import { useToast } from '@/components/toast/hooks/useToast'
+import Newsletter from '@/components/LandingPage/Newsletter'
 
 export default function HomePage({ posts }) {
   const toast = useToast()
@@ -42,6 +43,7 @@ export default function HomePage({ posts }) {
         <News posts={posts} />
         <Testimonial />
         <Service />
+        <Newsletter />
       </Layout>
     </div>
   )
