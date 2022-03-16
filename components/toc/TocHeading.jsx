@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Link from 'next/link'
 import { replaceAll, createLink, createTitle } from './utils'
 
 // TODO refactor class into functional apporach
@@ -13,12 +14,13 @@ export default class TocHeading {
     const link = createLink(this.title)
     const listItem = (
       <li>
-        <a
-          href={`#${replaceAll(link, this.customMatchers)}`}
-          className='text-15px font-600'
-          style={{ textDecoration: 'none' }}>
-          {createTitle(this.title, this.titleLimit)}
-        </a>
+        <Link href={`#${replaceAll(link, this.customMatchers)}`} passRef>
+          <a
+            className='font-bold text-20px mb-0px border-left-1px border-solid border-purple pl-5px'
+            style={{ textDecoration: 'none' }}>
+            {createTitle(this.title, this.titleLimit)}
+          </a>
+        </Link>
       </li>
     )
 

@@ -2,9 +2,9 @@ import * as React from 'react'
 import { useState } from 'react'
 import { extractHeadingsFromMd, removeCodeBlockFromMd } from './utils'
 import { newHeading } from './TocHeading'
-import { TocButton } from '../reusable/Button'
+import ReusableModal from '../modal/ReusableModal'
 
-const Toc = ({ markdownText, titleLimit, highestHeadingLevel, lowestHeadingLevel, customMatchers }) => {
+const Toc = ({ markdownText, titleLimit, highestHeadingLevel, lowestHeadingLevel, customMatchers, isBlog }) => {
   const [reveal, setReveal] = useState(true)
 
   if (!markdownText) return null
@@ -21,17 +21,14 @@ const Toc = ({ markdownText, titleLimit, highestHeadingLevel, lowestHeadingLevel
 
   return (
     <div role='navigation' aria-label='table of contents' id='toc'>
-      <TocButton
-        onClick={() => setReveal(!reveal)}
-        className={`${reveal === false ? 'rotate-90deg' : 'rotate-neg-90deg'}`}>
-        Table of Contents
-      </TocButton>
+      {isBlog === true && <ReusableModal isSidebar={true} />}
+      <h3 className='font-800'>Table of Contents</h3>
       {reveal === true && (
-        <div className='fade-in animate animation-forwards absolute text-right w-15rem bg-light py-20px'>
+        <>
           {headingTags.map((heading, index) => (
             <ul key={index}>{heading}</ul>
           ))}
-        </div>
+        </>
       )}
     </div>
   )

@@ -33,8 +33,11 @@ export default function SlugComponent({
       keywords={`${category},${keywords} omenCSS, css, omen css`}
       author={author}
       className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'>
-      {/* TODO adjust isBlog ToC chevron */}
-      {isBlog === true && <Toc markdownText={content} />}
+      {isBlog === true && (
+        <div className='grid-col-1 col-span-1 min-h-100vh sm:display-none md:display-none' id='sidebar'>
+          <Toc markdownText={content} isBlog={true} />
+        </div>
+      )}
       <div className={`grid ${isBlog ? 'grid-col-1 m-auto' : 'grid-col-6 gap-30px'}`}>
         {!isBlog && (
           <div className='grid-col-1 col-span-1 min-h-100vh sm:display-none md:display-none' id='sidebar'>
@@ -46,7 +49,7 @@ export default function SlugComponent({
         <div className='mb-10rem min-w-100per relative col-span-5 sm:col-span-6 md:col-span-6' id={`blog-${slug}`}>
           <div className='flex justify-between sm:mb-50px md:mb-50px'>
             <BackButton>Back</BackButton>
-            {isBlog === false && <Toc markdownText={content} />}
+            {isBlog === false && <Toc markdownText={content} isBlog={false} />}
           </div>
 
           <div className='m-auto max-w-75rem mb-10rem'>
