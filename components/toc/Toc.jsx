@@ -9,7 +9,7 @@ const Toc = ({ markdownText, titleLimit, highestHeadingLevel, lowestHeadingLevel
 
   if (!markdownText) return null
   // Set default values
-  const limit = titleLimit ? titleLimit : 200
+  const limit = titleLimit ? titleLimit : 15
   const headingLevels = [highestHeadingLevel || 1, lowestHeadingLevel || 6]
 
   // Mutate headings

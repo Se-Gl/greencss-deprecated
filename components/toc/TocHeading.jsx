@@ -15,9 +15,9 @@ export default class TocHeading {
       <li>
         <a
           href={`#${replaceAll(link, this.customMatchers)}`}
-          className='text-15px mb-10px mt-0px'
+          className='text-15px font-600'
           style={{ textDecoration: 'none' }}>
-          {createTitle(this.title, this.titleLimit).slice(0, 15) + '...'}
+          {createTitle(this.title, this.titleLimit)}
         </a>
       </li>
     )

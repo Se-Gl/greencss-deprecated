@@ -1,15 +1,15 @@
 import dynamic from 'next/dynamic'
-import Layout from '@/components/reusable/Layout'
 import { BackButton } from '@/components/reusable/Button'
 import Loader from '@/components/logo/Loader'
-import SideBar from '../category/SideBar'
 import { HeadingRenderer, LinkRenderer, CodeRenderer } from '@/utils/ElementRenderer'
-import Toc from '../toc/Toc'
 
 const ReactMarkdown = dynamic(() => import('react-markdown').then((mod) => mod.default), {
   ssr: false,
   loading: () => <Loader />
 })
+const Toc = dynamic(() => import('../toc/Toc'))
+const Layout = dynamic(() => import('@/components/reusable/Layout'))
+const SideBar = dynamic(() => import('../category/SideBar'))
 
 export default function SlugComponent({
   title,
@@ -22,10 +22,8 @@ export default function SlugComponent({
   isBlog,
   keywords,
   posts,
-  categories,
-  toc
+  categories
 }) {
-  // console.log(toc.map((table, index) => table.header.replace('"', '')))
   return (
     <Layout
       title={title}
@@ -35,6 +33,8 @@ export default function SlugComponent({
       keywords={`${category},${keywords} omenCSS, css, omen css`}
       author={author}
       className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'>
+      {/* TODO adjust isBlog ToC chevron */}
+      {isBlog === true && <Toc markdownText={content} />}
       <div className={`grid ${isBlog ? 'grid-col-1 m-auto' : 'grid-col-6 gap-30px'}`}>
         {!isBlog && (
           <div className='grid-col-1 col-span-1 min-h-100vh sm:display-none md:display-none' id='sidebar'>
@@ -46,13 +46,10 @@ export default function SlugComponent({
         <div className='mb-10rem min-w-100per relative col-span-5 sm:col-span-6 md:col-span-6' id={`blog-${slug}`}>
           <div className='flex justify-between sm:mb-50px md:mb-50px'>
             <BackButton>Back</BackButton>
-            <div className='float-right'>
-              <Toc markdownText={content} />
-            </div>
+            {isBlog === false && <Toc markdownText={content} />}
           </div>
 
           <div className='m-auto max-w-75rem mb-10rem'>
-            {/* <Toc markdownText={content} /> */}
             <h1 className='text-80px sm:text-50px'>{title}</h1>
             {isBlog === false ? null : (
               <img src={cover_image} alt={excerpt} className='w-100per rounded-10px mb-50px' />

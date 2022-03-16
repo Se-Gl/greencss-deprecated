@@ -5,7 +5,7 @@ import SlugComponent from '@/components/reusable/SlugComponent'
 import { getPosts } from '@/lib/posts'
 
 export default function BlogPostPage({
-  frontmatter: { title, excerpt, category, date, cover_image, author, isBlog, keywords, toc },
+  frontmatter: { title, excerpt, category, date, cover_image, author, isBlog, keywords },
   content,
   slug,
   posts,
@@ -25,7 +25,6 @@ export default function BlogPostPage({
       isBlog={isBlog}
       posts={posts}
       categories={categories}
-      toc={toc}
     />
   )
 }
