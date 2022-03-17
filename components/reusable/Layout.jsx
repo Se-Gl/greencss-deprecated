@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { NEXT_URL } from '@/config/index'
+import Footer from './Footer'
 
 const Header = dynamic(() => import('./Header'))
 
@@ -67,6 +68,7 @@ export default function Layout({
       <main>
         <div className={className}>{children}</div>
       </main>
+      <Footer />
     </>
   )
 }
