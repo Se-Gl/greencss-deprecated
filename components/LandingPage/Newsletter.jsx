@@ -27,10 +27,14 @@ export default function Newsletter() {
   }
   return (
     <section className='my-20rem sm:my-100px md:my-100px' id='newsletter'>
-      <div className='relative flex min-h-75vh w-100per text-center text-light bg-dark rounded-20px'>
+      <div className='relative flex min-h-75vh w-100per text-light bg-dark rounded-20px'>
         <div className='m-auto max-w-50rem'>
           <h2 className='font-bold text-50px pb-50px mb-0px'>There’s more than being up-to-date</h2>
-          <div className='flex justify-center'>
+          <p className='text-black-5'>
+            Stay informed by getting help about the latest omenCSS updates. Find new CSS tutorials that will help you
+            grow as a developer and scale your business.
+          </p>
+          <div className='flex justify-center sm:block'>
             <input
               onChange={(e) => {
                 setMail(e.target.value)
@@ -39,8 +43,10 @@ export default function Newsletter() {
               type='email'
               id='email'
               placeholder='Your E-Mail'
-              className='border-none text-15px text-black-3 bg-light py-10px w-25rem'></input>
-            <Button onClick={subscribe} className={`text-white ml-20px ${loading && 'text-black-5'}`}>
+              className='border-none text-15px text-black bg-black-5 p-10px w-100per'></input>
+            <Button
+              onClick={subscribe}
+              className={`text-white ml-20px sm:ml-0px sm:mt-25px ${loading && 'text-black-5'}`}>
               Newsletter
             </Button>
           </div>
