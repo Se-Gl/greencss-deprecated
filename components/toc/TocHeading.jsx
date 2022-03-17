@@ -6,6 +6,7 @@ import { replaceAll, createLink, createTitle } from './utils'
 export default class TocHeading {
   constructor(title, level, titleLimit, customMatchers) {
     this.title = title
+    this.level = level
     this.titleLimit = titleLimit
     this.customMatchers = customMatchers ? customMatchers : {}
   }
@@ -13,18 +14,16 @@ export default class TocHeading {
   generateList() {
     const link = createLink(this.title)
     const listItem = (
-      <li>
+      <>
         <Link href={`#${replaceAll(link, this.customMatchers)}`} passRef>
-          <a
-            className='font-bold text-20px mb-0px border-left-1px border-solid border-purple pl-5px'
-            style={{ textDecoration: 'none' }}>
+          <span className='cursor-pointer' style={{ textDecoration: 'none' }}>
             {createTitle(this.title, this.titleLimit)}
-          </a>
+          </span>
         </Link>
-      </li>
+      </>
     )
 
-    return <>{listItem}</>
+    return <>{nestUl(this.level, listItem)}</>
   }
 }
 
@@ -38,6 +37,21 @@ const newHeading = (headingText, titleLimit, customMatchers) => {
   const matchers = customMatchers ? customMatchers : {}
 
   return new TocHeading(headingText, headingLevel, titleLimit, matchers)
+}
+
+const nestUl = (level, listItem) => {
+  switch (level) {
+    case 1:
+      return <h3 className='mb-10px'>{listItem}</h3>
+    case 2:
+      return <h4 className='mb-10px'>{listItem}</h4>
+    case 3:
+      return <h5 className='mb-10px ml-20px lg:ml-0px'>{listItem}</h5>
+    case 4:
+      return <h6 className='mb-10px ml-20px lg:ml-0px'>{listItem}</h6>
+    default:
+      return listItem
+  }
 }
 
 export { newHeading }

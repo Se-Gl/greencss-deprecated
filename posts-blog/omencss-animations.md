@@ -69,7 +69,7 @@ An animation represents a process which generates a moving frame for the viewer 
 
 Cascading Style Sheets (CSS) animations usually consist of @keyframes and have different properties such as animation-name, animation-duration, animation-delay, animation-iteration-count, animation-direction, animation-timing-function, animation-fill-mode or animation. If you use omenCSS, you don't need to code anything. omenCSS contains over 100 different css animations. All of them are handmade. A graphical overview of all animations can be found on the [examples page](/docs/animation/example).
 
-## Why you should use animations
+### Why you should use animations
 
 The collaboration of design and code plays an important role, especially in web development. Nowadays, a beautiful website is more or less easy to create. However, bringing a web application alive is more difficult. The keyword for this process is "animation". Animation originates from the latin verb "animare" and means as much as spirit, life, breath or simply to bring to life.
 
