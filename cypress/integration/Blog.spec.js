@@ -15,9 +15,6 @@ describe('Blog Screen Unit test', () => {
     cy.get('#blog-card').eq(0).click()
     cy.url().should('not.be.equal', 'http://localhost:3000/blog/')
   })
-  it('renders first slug page header on the hello world page', () => {
-    cy.get('#blog-card').eq(0).should('be.visible').should('exist')
-  })
 })
 
 describe('Verify ElementRenderer', () => {
