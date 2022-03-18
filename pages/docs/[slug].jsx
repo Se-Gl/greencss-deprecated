@@ -1,8 +1,12 @@
+import dynamic from 'next/dynamic'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import SlugComponent from '@/components/reusable/SlugComponent'
 import { getPosts } from '@/lib/posts'
+import Loader from '@/components/logo/Loader'
+
+const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), { loading: () => <Loader /> })
+const DevelopmentToClipboard = dynamic(() => import('@/utils/DevelopmentToClipboard'))
 
 export default function BlogPostPage({
   frontmatter: { title, excerpt, category, date, cover_image, author, isBlog, keywords },
@@ -12,20 +16,23 @@ export default function BlogPostPage({
   categories
 }) {
   return (
-    <SlugComponent
-      title={title}
-      excerpt={excerpt}
-      category={category}
-      keywords={keywords}
-      date={date}
-      cover_image={cover_image}
-      author={author}
-      content={content}
-      slug={slug}
-      isBlog={isBlog}
-      posts={posts}
-      categories={categories}
-    />
+    <>
+      <DevelopmentToClipboard content={content} />
+      <SlugComponent
+        title={title}
+        excerpt={excerpt}
+        category={category}
+        keywords={keywords}
+        date={date}
+        cover_image={cover_image}
+        author={author}
+        content={content}
+        slug={slug}
+        isBlog={isBlog}
+        posts={posts}
+        categories={categories}
+      />
+    </>
   )
 }
 

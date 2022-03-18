@@ -1,5 +1,4 @@
 import dynamic from 'next/dynamic'
-import remarkGfm from 'remark-gfm'
 import { BackButton } from '@/components/reusable/Button'
 import Loader from '@/components/logo/Loader'
 import { HeadingRenderer, LinkRenderer, CodeRenderer } from '@/utils/ElementRenderer'
@@ -8,7 +7,6 @@ const ReactMarkdown = dynamic(() => import('react-markdown').then((mod) => mod.d
   ssr: false,
   loading: () => <Loader />
 })
-// const remarkGfm = dynamic(() => import('remark-gfm'))
 const Toc = dynamic(() => import('../toc/Toc'))
 const Layout = dynamic(() => import('@/components/reusable/Layout'))
 const SideBar = dynamic(() => import('../category/SideBar'))
@@ -69,7 +67,6 @@ export default function SlugComponent({
                 h3: HeadingRenderer,
                 code: CodeRenderer
               }}
-              remarkPlugins={[remarkGfm]}
             />
             {/* eslint-enable */}
           </div>
