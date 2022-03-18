@@ -72,7 +72,7 @@ export const VsStyle = {
     color: '#0870c7'
   },
   tag: {
-    color: '#0870c7'
+    color: '#d03377'
   },
   'class-name': {
     color: '#deff0a',
