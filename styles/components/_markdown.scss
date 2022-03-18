@@ -1,3 +1,4 @@
+@use '../abstracts/color' as *;
 // blue-5
 ol {
   li {
@@ -16,4 +17,28 @@ img[src$='centerme'] {
   margin: 0 auto;
   max-height: 60rem;
   margin-block: 5rem;
+}
+table {
+  min-width: 100%;
+  margin-block: 5rem;
+  text-align: left;
+  display: block;
+  overflow-y: scroll;
+  max-height: 25rem;
+  tr {
+    border-block: 1px solid #edbdff;
+    background: $white;
+    width: 100%;
+    th {
+      font-weight: 900;
+    }
+  }
+
+  th,
+  td {
+    min-width: 67.5%;
+    padding: 10px 15px;
+    font-weight: 400;
+    font-size: 15px;
+  }
 }

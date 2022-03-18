@@ -82,6 +82,27 @@ export default function AnimationPage() {
 ```"
 ---
 
+| _omenCSS_   | css class                        |
+| ----------- | -------------------------------- |
+| text-blue   | .text-blue { color: #147df5; }   |
+| text-blue-1 | .text-blue-1 { color: #3690f6; } |
+| text-blue-2 | .text-blue-2 { color: #58a3f8; } |
+| text-blue   | .text-blue { color: #147df5; }   |
+| text-blue-1 | .text-blue-1 { color: #3690f6; } |
+| text-blue-2 | .text-blue-2 { color: #58a3f8; } |
+| text-blue   | .text-blue { color: #147df5; }   |
+| text-blue-1 | .text-blue-1 { color: #3690f6; } |
+| text-blue-2 | .text-blue-2 { color: #58a3f8; } |
+| text-blue   | .text-blue { color: #147df5; }   |
+| text-blue-1 | .text-blue-1 { color: #3690f6; } |
+| text-blue-2 | .text-blue-2 { color: #58a3f8; } |
+| text-blue   | .text-blue { color: #147df5; }   |
+| text-blue-1 | .text-blue-1 { color: #3690f6; } |
+| text-blue-2 | .text-blue-2 { color: #58a3f8; } |
+| text-blue   | .text-blue { color: #147df5; }   |
+| text-blue-1 | .text-blue-1 { color: #3690f6; } |
+| text-blue-2 | .text-blue-2 { color: #58a3f8; } |
+
 Fast forward:
 [Turpius Aegides membris colat volentes fallere](#3--turpius-aegides-membris-colat-volentes-fallere) | [O contra diu](#4--o-contra-diu)
 

@@ -155,6 +155,7 @@ sass/
 | [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env)             | ![GitHub stars](https://img.shields.io/github/stars/csstools/postcss-plugins.svg?label=%F0%9F%8C%9F)         | [![Bundle size](https://badgen.net/bundlephobia/minzip/postcss-preset-env?label=%F0%9F%92%BE)](https://bundlephobia.com/package/postcss-preset-env)              | ✅         | ✅        |
 | [@sendgrid/mail](https://www.npmjs.com/package/@sendgrid/mail)                     | ![GitHub stars](https://img.shields.io/github/stars/sendgrid/sendgrid-nodejs.svg?label=%F0%9F%8C%9F)         | [![Bundle size](https://badgen.net/bundlephobia/minzip/@sendgrid/mail?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=@sendgrid/mail)                     | ✅         | ✅        |
 | [next-use-posthog](https://www.npmjs.com/package/next-use-posthog)                 | ![GitHub stars](https://img.shields.io/github/stars/Ismaaa/next-use-posthog.svg?label=%F0%9F%8C%9F)          | [![Bundle size](https://badgen.net/bundlephobia/minzip/next-use-posthog?label=%F0%9F%92%BE)](https://bundlephobia.com/package/next-use-posthog)                  | ✅         | ✅        |
+| [remark-gfm](https://www.npmjs.com/package/remark-gfm)                             | ![GitHub stars](https://img.shields.io/github/stars/remarkjs/remark-gfm.svg?label=%F0%9F%8C%9F)              | [![Bundle size](https://badgen.net/bundlephobia/minzip/remark-gfm?label=%F0%9F%92%BE)](https://bundlephobia.com/package/remark-gfm)                              | ✅         | ✅        |
 
 ### Testing Libraries
 
