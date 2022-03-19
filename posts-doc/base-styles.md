@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Base styles & guideline'
 date: 'Mar 18. 2022'
-excerpt: 'An opinionated set of base styles, structure and guidelines for omenCSS projects.'
+excerpt: 'omenCSS foundations - an opinionated set of base styles, structure and guidelines for omenCSS projects.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Base Styles'
 author: 'Severin Glaser'
@@ -81,7 +81,7 @@ The properties can also have netagive values. Those are supplemented by the -neg
 <div class="sm:rotate-neg-180deg">Rotate in negative direction</div>
 ```
 
-## Default values are removed
+## Default browser values are removed
 
 1. omenCSS removes all of the default values like margins, paddings, text-decoration, headings, blockquotes, paragraphs, input states, lists, border etc.
 2. Visitors who do not want to experience animations or transitions, will not register motion.

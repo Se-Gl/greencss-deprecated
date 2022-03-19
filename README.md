@@ -2,7 +2,7 @@
 
 [![Prettier and ESLint Code Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml)
 [![Cypress Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml)
-![check-code-coverage](https://img.shields.io/badge/code--coverage-83.44%25-green)
+![check-code-coverage](https://img.shields.io/badge/code--coverage-83.55%25-green)
 
 [![omenCSS logo](./public/omencss.svg)](https://www.omen.design)
 
@@ -195,6 +195,9 @@ sass/
 | changes       | Changes were made to the fill- colours, added blob.                                 |
 | ----------    | ------------------------------------                                                |
 
+### Ideas & Inspiration
+
 - [Toast](https://www.youtube.com/watch?v=OXP-a9pyNRk)
 - [ToC](https://github.com/K-Sato1995/react-toc)
 - [Newsletter](https://dev.to/michael_webdev/create-a-mailing-list-with-sendgrid-and-next-js-41f7)
+- [Captcha](https://github.com/nabidam/react-captcha)

@@ -1,12 +1,19 @@
+import dynamic from 'next/dynamic'
 import { useState } from 'react'
 import { Button } from '../reusable/Button'
 import { useToast } from '@/components/toast/hooks/useToast'
+
+const CaptchaComponent = dynamic(() => import('../captcha/CaptchaComponent'), { ssr: false })
+// import CaptchaComponent from '../captcha/CaptchaComponent'
 
 export default function ContactForm() {
   const [fullname, setFullname] = useState('')
   const [email, setEmail] = useState('')
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
+  // captcha
+  const [verifyCaptcha, setverifyCaptcha] = useState('')
+  const [captcha, setCaptcha] = useState([])
 
   const toast = useToast()
 
@@ -27,6 +34,10 @@ export default function ContactForm() {
       tempErrors['fullname' || 'subject' || 'message'] = true
       isValid = false
       toast('warning', '☝️ An error has occurred. Please check your input.')
+    }
+    if (verifyCaptcha != captcha) {
+      isValid = false
+      toast('warning', '🤔 Are you human? Please verify your captcha')
     }
     if (
       !email.match(
@@ -73,10 +84,11 @@ export default function ContactForm() {
         setEmail('')
         setMessage('')
         setSubject('')
+        setverifyCaptcha('')
         return
       }
       setShowSuccessMessage(true)
-      toast('success', '🙏 Thankyou! Your Message has been delivered.')
+      toast('success', '🙏 Thank you! Your Message has been delivered.')
       setShowFailureMessage(false)
       setButtonText('Send')
       // Reset form fields
@@ -84,6 +96,7 @@ export default function ContactForm() {
       setEmail('')
       setMessage('')
       setSubject('')
+      setverifyCaptcha('')
     }
   }
 
@@ -145,6 +158,13 @@ export default function ContactForm() {
             onChange={(e) => {
               setMessage(e.target.value)
             }}></textarea>
+
+          <CaptchaComponent
+            verifyCaptcha={verifyCaptcha}
+            setverifyCaptcha={setverifyCaptcha}
+            captcha={captcha}
+            setCaptcha={setCaptcha}
+          />
 
           {buttonText == 'Send' && (
             <div className='flex flex-row items-center justify-start'>
