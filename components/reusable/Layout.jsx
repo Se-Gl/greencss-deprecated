@@ -2,6 +2,7 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { NEXT_URL } from '@/config/index'
 import Footer from './Footer'
+import Cookies from './Cookies'
 
 const Header = dynamic(() => import('./Header'))
 
@@ -69,6 +70,7 @@ export default function Layout({
         <div className={className}>{children}</div>
       </main>
       <Footer />
+      <Cookies />
     </>
   )
 }

@@ -41,18 +41,6 @@ export default function Toast({ type, message, id }) {
           }}
         />
       )}
-      {type == 'cookie' && (
-        <ToastContent
-          fillColor='#be0aff'
-          backgroundColor='bg-purple-5'
-          textColor='text-purple'
-          triangleColor='cookie'
-          notification={message}
-          onClick={() => {
-            dispatch({ type: 'DELETE_TOAST', id: id })
-          }}
-        />
-      )}
     </>
   )
 }

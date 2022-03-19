@@ -7,28 +7,9 @@ import Support from '@/components/LandingPage/Support'
 import Testimonial from '@/components/LandingPage/Testimonial'
 import Layout from '@/components/reusable/Layout'
 import { getPosts } from '@/lib/posts'
-import { useToast } from '@/components/toast/hooks/useToast'
 import Newsletter from '@/components/LandingPage/Newsletter'
 
 export default function HomePage({ posts }) {
-  const toast = useToast()
-  const getCookie = () => {
-    if (typeof window !== 'undefined') {
-      const localCookie = localStorage.getItem('cookie')
-      if (localCookie) return JSON.parse(localCookie)
-    }
-    return ''
-  }
-
-  useEffect(() => {
-    getCookie() != 'accepted' &&
-      toast(
-        'cookie',
-        '🍪 By clicking “OK” or the checkmark, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our UI/UX efforts.',
-        999999
-      )
-  }, [])
-
   return (
     <div className='overflow-x-hidden'>
       <div className='relative'>
