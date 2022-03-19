@@ -19,7 +19,6 @@ export default function DevelopmentToClipboard({ content }) {
     .replace(/\>/g, ' ')
     .replace(/\[/g, ' ')
     .replace(/\]/g, ' ')
-    .replace(/\:/g, ' ')
     .replace(/\(/g, ' ')
     .replace(/\)/g, ' ')
     .replace(/\$/g, ' ')

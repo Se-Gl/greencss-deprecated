@@ -22,16 +22,18 @@ const Toc = ({ markdownText, titleLimit, highestHeadingLevel, lowestHeadingLevel
   return (
     <div role='navigation' aria-label='table of contents' id='toc'>
       {isBlog === true && <ReusableModal isSidebar={true} />}
-      <h3 className='font-800 mb-50px'>Table of Contents</h3>
-      {reveal === true && (
-        <>
-          {headingTags.map((heading, index) => (
-            <ul key={index}>
-              <li>{heading}</li>
-            </ul>
-          ))}
-        </>
-      )}
+      <div className='bg-light px-5px py-10px mb-25px reveal-down animation-duration-200ms animation-forwards'>
+        <h4 className='font-800 mb-25px'>Table of Contents</h4>
+        {reveal === true && (
+          <>
+            {headingTags.map((heading, index) => (
+              <ul key={index}>
+                <li>{heading}</li>
+              </ul>
+            ))}
+          </>
+        )}
+      </div>
     </div>
   )
 }

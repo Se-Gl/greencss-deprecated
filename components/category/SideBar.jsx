@@ -2,12 +2,12 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import ReusableModal from '../modal/ReusableModal'
 
-export default function SideBar({ categories, posts, hasSubcategory = false }) {
+export default function SideBar({ categories, posts, hasSubcategory = false, showSearch = true }) {
   const router = useRouter()
 
   return (
     <>
-      <ReusableModal isSidebar={true} />
+      {showSearch === true && <ReusableModal isSidebar={true} />}
       {categories.sort().map((category, index) => (
         <div key={index}>
           <li>
@@ -17,7 +17,7 @@ export default function SideBar({ categories, posts, hasSubcategory = false }) {
                   router.asPath.includes(category.toLowerCase()) && 'border-left-1px border-solid border-purple pl-5px'
                 }`}
                 style={{ textDecoration: 'none' }}>
-                {category}
+                {category.replace('-', ' ')}
               </a>
             </Link>
           </li>

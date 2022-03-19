@@ -1,6 +1,6 @@
 ---
 isBlog: true
-title: 'What is omenCSS?'
+title: 'What is omenCSS? - an animated dynamic CSS library'
 date: 'Feb 24. 2022'
 excerpt: 'omenCSS - an elegant way to write CSS design. Always free, for anyone with any framework.'
 cover_image: '/images/blog/cover/default-Image-blog.webp'

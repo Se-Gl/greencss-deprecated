@@ -26,9 +26,9 @@ describe('Verify ElementRenderer', () => {
       .eq(1)
       .should('be.visible')
       .should('exist')
-      .contains('Staggering animations', { matchCase: false })
+      .contains('How to stagger CSS animations', { matchCase: false })
       .invoke('attr', 'id')
-      .should('equal', 'staggering-animations')
+      .should('equal', 'how-to-stagger-css-animations')
   })
   it('clicks the first link in the blog and redirects', () => {
     cy.get(':nth-child(13) > a').should('exist').click()

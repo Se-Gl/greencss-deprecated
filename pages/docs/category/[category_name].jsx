@@ -28,7 +28,7 @@ export default function CategorySlugPage({ posts, categoryName, categories }) {
           <BackButton>Back</BackButton>
           <div className='min-w-100per relative' id={`category-${categoryName}`}>
             <SubSectionHero
-              header={`Browse by category: ${categoryName}`}
+              header={`Browse by category: ${categoryName.replace('-', ' ')}`}
               subheader={`Get an overview in the category &apos;${categoryName}&apos; and browse through all the documentation.`}
               illustration={<SlugDocsHero width='100%' height='100%' />}
             />
