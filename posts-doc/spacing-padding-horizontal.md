@@ -22,13 +22,12 @@ Control the horizontal padding on the right, and left [padding-inline]. Use the 
 
 Additionally you can also use rem values. Reminder: 1rem = 10px. The rem padding class range is from negative -30 to positive 30 and uses the [rem] postfix. The steps are +/- 1rem. e.g. `px-0rem, px-1rem,... px-30rem`
 
-⚠️ padding-inline can be mainly be display in modern browsers with the latest updates. Instead you can also use [padding left and right](/docs/spacing-padding-side).
+⚠️ padding-inline can mainly be display in modern browsers with the latest updates. Instead you can also use [padding left and right](/docs/spacing-padding-side).
 
 ```html
 <div class="px-50px">px-50px</div>
-<div class="pr-50px">pr-50px</div>
-<div class="pb-50px">pb-50px</div>
-<div class="pl-50px">pl-50px</div>
+<!-- is equal to: -->
+<div class="pr-50px pl-50px">pr-50px pl-50px</div>
 ```
 
 ## Active, focus, and hover states

@@ -22,7 +22,7 @@ Control the vertical padding on the top, and bottom [padding-block]. Use the py-
 
 Additionally you can also use rem values. Reminder: 1rem = 10px. The rem padding class range is from negative -30 to positive 30 and uses the [rem] postfix. The steps are +/- 1rem. e.g. `py-0rem, py-1rem,... py-30rem`
 
-⚠️ padding-block can be mainly be display in modern browsers with the latest updates. Instead you can also use [padding top and bottom](/docs/spacing-padding-vertical).
+⚠️ padding-block can mainly be display in modern browsers with the latest updates. Instead you can also use [padding top and bottom](/docs/spacing-padding-vertical).
 
 ```html
 <div class="py-50px">px-50px</div>
@@ -40,6 +40,8 @@ omenCSS let you conditionally apply utility classes for different page states. T
 
 ```html
 <div class="py-50px hover:py-10px">py-50px</div>
+<!-- is equal to: -->
+<div class="pt-50px pb-50px">pt-50px pb-50px</div>
 ```
 
 ## Responsive Breakpoints

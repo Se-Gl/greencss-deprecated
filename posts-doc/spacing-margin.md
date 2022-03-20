@@ -26,6 +26,8 @@ Additionally you can also use rem values. Reminder: 1rem = 10px. The rem margin 
 
 ```html
 <div class="m-50px">m-50px</div>
+<!-- is equal to: -->
+<div class="pt-50px pr-50px pb-50px pl-50px">pt-50px pr-50px pb-50px pl-50px</div>
 ```
 
 ## Active, focus, and hover states
