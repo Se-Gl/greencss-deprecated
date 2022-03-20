@@ -42,9 +42,25 @@ omenCSS let you conditionally apply utility classes for different page states. T
 <div class="p-50px hover:p-20px">p-50px</div>
 ```
 
+## Responsive Breakpoints
+
+Use variant modifiers to target media queries like responsive breakpoints.
+| media query | Range | omenCSS example |
+| ----------- | -------------- | --------------- |
+| sm: | 0px - 480px | .sm:p-10px |
+| md: | 480px - 768px | .md:p-10px |
+| lg: | 768px - 1080px | .lg:p-10px |
+
+omenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:p-10px` to apply the p-10px utility at only small screen sizes at or below 480px. Or `active:md:p-10px` to apply the p-10px utility at only between small screen sizes (480px) and medium screen sizes (768px).
+
+1. The structure is as follows: `{active | focus | hover}:{media query}:p-{size}`
+
 ## Executive Summary
 
 You can use:
 | omenCSS states | spoken example |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------ |
-| active:p-, focus:p-, hover:p- | active padding, focus padding, hover padding |
+| active:p-{size} , focus:p-{size} , hover:p-{size} | active padding, focus padding, hover padding |
+| active:sm:p-{size} , focus:sm:p-{size} , hover:sm:p-{size} | active small screens padding, focus small screens padding, hover small screens padding, |
+| active:md:p-{size} , focus:md:p-{size} , hover:md:p-{size} | active medium screens padding, focus medium screens padding, hover medium screens padding, |
+| active:lg:p-{size} , focus:lg:p-{size} , hover:lg:p-{size} | active large screens padding, focus large screens padding, hover large screens padding, |

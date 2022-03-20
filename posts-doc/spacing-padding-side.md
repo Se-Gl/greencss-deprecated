@@ -48,6 +48,19 @@ omenCSS let you conditionally apply utility classes for different page states. T
 <div class="pl-50px hover:pl-20px">p-50px</div>
 ```
 
+## Responsive Breakpoints
+
+Use variant modifiers to target media queries like responsive breakpoints.
+| media query | Range | omenCSS example |
+| ----------- | -------------- | --------------- |
+| sm: | 0px - 480px | .sm:pt-10px |
+| md: | 480px - 768px | .md:pt-10px |
+| lg: | 768px - 1080px | .lg:pt-10px |
+
+omenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:pt-10px` to apply the pt-10px utility at only small screen sizes at or below 480px. Or `active:md:pt-10px` to apply the pt-10px utility at only between small screen sizes (480px) and medium screen sizes (768px).
+
+1. The structure is as follows: `{active | focus | hover}:{media query}:p{t\|r\|b\|l}-{size}`
+
 ## Executive Summary
 
 You can use:
