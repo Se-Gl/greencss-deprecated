@@ -25,17 +25,17 @@ export default function BlogCard({ post, index }) {
   return (
     <>
       <div ref={ref} id={`${post.slug}`} className={animationStagger}>
-        <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px'>
+        <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px mb-25px'>
           {loading ? (
             <Loader />
           ) : (
             <div
-              className={`min-h-50rem w-100per rounded-10px bg-cover bg-no-repeat bg-center ${
+              className={`min-h-40rem w-100per rounded-10px bg-cover bg-no-repeat bg-center ${
                 isDark && 'border-1px border-solid border-dark'
               }`}
               style={{ backgroundImage: `url(${post.frontmatter.cover_image})`, backgroundColor: `${vibrantColor}` }}
               id='blog-card'>
-              <div className='flex h-50rem min-h-50per'>
+              <div className='flex h-40rem min-h-50per'>
                 <Link href={`${post.frontmatter.isBlog ? `/blog/${post.slug}` : `/docs/${post.slug}`}`} passHref>
                   <div
                     style={{ cursor: 'pointer' }}
