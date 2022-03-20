@@ -13,6 +13,12 @@ const communityLinks = [
   { title: 'LinkedIn', path: 'https://www.linkedin.com/in/segl' }
 ]
 
+const privacyLinks = [
+  { title: 'Privacy — Terms', path: '/privacy/privacy-policy' },
+  { title: 'Cookies', path: '/privacy/cookies#cookie-policy' },
+  { title: 'Legal Notice', path: '/privacy/legal' }
+]
+
 export default function Footer() {
   const scrollToTop = () => {
     if (typeof window !== 'undefined') {
@@ -33,8 +39,21 @@ export default function Footer() {
                   <LogoLight width='50px' height='50px' />
                 </a>
               </Link>
-              <p className='text-white my-25px'>Privacy — Terms</p>
-              <p className='text-white'>© MIT 2022</p>
+              <div className='mt-25px'>
+                {privacyLinks.map((item, index) => {
+                  return (
+                    <div onClick={scrollToTop} key={index}>
+                      <Link href={item.path} passHref>
+                        <a className='text-white' style={{ textDecoration: 'none' }}>
+                          {item.title}
+                        </a>
+                      </Link>
+                      <br className='mb-25px' />
+                    </div>
+                  )
+                })}
+              </div>
+              <p className='text-white'>© MIT {new Date().getFullYear()}</p>
             </div>
 
             <div className='col-span-1 mt-20rem mx-auto sm:mx-50px' id='footer-getting-started'>
