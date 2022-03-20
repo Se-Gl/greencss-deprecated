@@ -6,7 +6,7 @@ export default function Policy() {
   return (
     <div className='mb-100px' id='privacy-policy'>
       <SubSectionHero
-        header='We use technology - Privacy Policy'
+        header='We use technology - in order to enhance user experience'
         subheader="We have nothing to hide. Privacy Policies are not only a useful legal document - it's a lifestyle. "
         illustration={<PolicyHero width='100%' height='100%' />}
       />
