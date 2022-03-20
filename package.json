@@ -15,7 +15,7 @@
     "cache": "node lib/cache.js && node lib/cacheBlogSitemap.js && node lib/cacheDocSitemap.js",
     "purgecss": "purgecss --config ./purgecss.config.js echo \n\n\n🏋️  Purge successful. 🏋️",
     "success-message": "echo \n\n\n🚀  Everything is awesome. 🚀\n\n🖥️  Auto checking completed, ready to deploy.🖥️\n\n☁️  Run: git push ☁️",
-    "pre-commit": "npm run cypress:run && npx update-badge && npm run prettier && npm run lint --fix && npm run cache && npm run purgecss && git add -A . && npm run success-message"
+    "pre-commit": "npm run prettier && npm run lint --fix && npm run cache && npm run purgecss && git add -A . && npm run success-message"
   },
   "dependencies": {
     "@react-three/drei": "^8.18.1",

@@ -25,6 +25,7 @@ export default function DevelopmentToClipboard({ content }) {
     .replace(/\\/g, ' ')
     .replace(/\//g, ' ')
     .replace(/\*/g, ' ')
+    .replace(/\--/g, ' ')
     .replace(/\s\s+/g, ' ')
   return (
     <>
