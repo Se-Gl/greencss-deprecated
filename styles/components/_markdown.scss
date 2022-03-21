@@ -31,6 +31,7 @@ table {
     width: 100%;
     th {
       font-weight: 900;
+      border-inline: 1px solid #edbdff;
     }
   }
 
@@ -38,6 +39,7 @@ table {
     tr {
       td {
         width: 33%;
+        border-inline: 1px solid #edbdff;
       }
     }
   }
