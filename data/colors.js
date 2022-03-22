@@ -3,6 +3,7 @@ export const primaryColors = [
   { className: 'bg-dark', colorName: 'Dark', colorHex: '#03000a' },
   { className: 'bg-white', colorName: 'White', colorHex: '#fdfdfd' },
   { className: 'bg-black', colorName: 'Black', colorHex: '#101010' },
+  { className: 'bg-gray', colorName: 'Gray', colorHex: '#101010ba' },
   { className: 'bg-purple', colorName: 'Purple', colorHex: '#be0aff' }
 ]
 
@@ -91,5 +92,10 @@ export const spotColors = [
   { className: 'bg-black-2', colorName: 'black-2', colorHex: '#343434' },
   { className: 'bg-black-3', colorName: 'black-3', colorHex: '#464646' },
   { className: 'bg-black-4', colorName: 'black-4', colorHex: '#575757' },
-  { className: 'bg-black-5', colorName: 'black-5', colorHex: '#696969' }
+  { className: 'bg-black-5', colorName: 'black-5', colorHex: '#696969' },
+  { className: 'bg-gray-1', colorName: 'gray-1', colorHex: '#222222ba' },
+  { className: 'bg-gray-2', colorName: 'gray-2', colorHex: '#343434ba' },
+  { className: 'bg-gray-3', colorName: 'gray-3', colorHex: '#464646ba' },
+  { className: 'bg-gray-4', colorName: 'gray-4', colorHex: '#575757ba' },
+  { className: 'bg-gray-5', colorName: 'gray-5', colorHex: '#696969ba' }
 ]
