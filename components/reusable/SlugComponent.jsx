@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import remarkGfm from 'remark-gfm'
 import { BackButton } from '@/components/reusable/Button'
 import Loader from '@/components/logo/Loader'
@@ -58,7 +59,9 @@ export default function SlugComponent({
           <div className='m-auto max-w-75rem mb-10rem'>
             <h1 className='text-80px sm:text-50px'>{title}</h1>
             {isBlog === false ? null : (
-              <img src={cover_image} alt={excerpt} className='w-100per rounded-10px mb-50px' />
+              <div className='relative h-50rem rounded-10px overflow-hidden mb-50px'>
+                <Image layout='fill' objectFit='cover' src={cover_image} alt={excerpt} />
+              </div>
             )}
             <h2>{excerpt}</h2>
             {/*  eslint-disable  */}
