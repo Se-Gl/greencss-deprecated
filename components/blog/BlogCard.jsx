@@ -19,12 +19,12 @@ export default function BlogCard({ post, index }) {
   })
 
   let animationStagger = isVisible
-    ? `clip-inset-in-left animate animation-forwards animation-delay-${(index + 1) * 2}00ms`
+    ? `opacity-100per fade-in animate animation-forwards animation-delay-${(index + 1) * 2}00ms`
     : 'opacity-0per'
 
   return (
     <>
-      <div ref={ref} id={`${post.slug}`} className={animationStagger}>
+      <div ref={ref} id={`${post.slug}`} className={animationStagger} style={{ opacity: 0 }}>
         <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px mb-25px'>
           {loading ? (
             <Loader />
