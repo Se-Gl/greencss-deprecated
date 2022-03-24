@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import SearchIcon from '../icon/Search/SearchIcon'
-import { LinkButton } from '../reusable/Button'
+import { Button } from '../reusable/Button'
 import Modal from './Modal'
 
 export default function ReusableModal({ LinkClass, isSidebar = false }) {
@@ -40,9 +40,9 @@ export default function ReusableModal({ LinkClass, isSidebar = false }) {
           </div>
         </>
       ) : (
-        <LinkButton className={`${LinkClass} text-20px`} onClick={() => setShowModal(true)} href='#'>
+        <Button className={`${LinkClass} text-15px font-800`} onClick={() => setShowModal(true)} id='modalbutton'>
           Search | F3
-        </LinkButton>
+        </Button>
       )}
       <Modal onClose={() => setShowModal(false)} show={showModal}></Modal>
     </>
