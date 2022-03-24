@@ -28,8 +28,6 @@
 @keyframes fadeinout {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 300px, 0) scale3d(0.25, 0.25, 0.25);
-    transform: translate3d(0, 300px, 0) scale3d(0.25, 0.25, 0.25);
   }
   5% {
     opacity: 1;
