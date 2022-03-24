@@ -35,9 +35,9 @@ export default function Presentation() {
               }`}
               id={`${card.title.toLowerCase()}`}>
               <div className='flex h-50rem min-h-50per'>
-                <div className='relative m-auto max-w-75per w-75per min-h-80per bg-dark text-white'>
+                <div className='relative m-auto max-w-75per w-75per min-h-80per bg-black text-white'>
                   <h2 className='text-45px'>{card.title}</h2>
-                  <p className='text-black-5'>{card.description}</p>
+                  <p className='text-black-10'>{card.description}</p>
                 </div>
               </div>
             </div>

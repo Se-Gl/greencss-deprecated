@@ -31,7 +31,7 @@ export default function Footer() {
   return (
     <section className='container overflow-hidden' id='footer'>
       <div className='mb-100px'>
-        <div className='w-100per bg-dark rounded-20px'>
+        <div className='w-100per bg-black rounded-20px'>
           <div className='min-h-75vh m-auto grid gap-30px grid-col-3 sm:grid-col-1 md:grid-col-2'>
             <div className='mt-20rem sm:mt-0px md:mt-0px sm:mb-20rem md:mb-20rem mx-auto col-span-1 sm:mx-50px sm:col-span-full sm:row-start-3 sm:col-end-1 md:col-span-full md:row-start-3 md:col-end-1'>
               <Link href='/' passHref>

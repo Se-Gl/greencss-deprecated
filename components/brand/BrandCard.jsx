@@ -9,7 +9,7 @@ export default function BrandCard({ title, link }) {
           <Link href={link} passHref>
             <div
               style={{ cursor: 'pointer' }}
-              className={`relative m-auto max-w-75per w-75per min-h-80per bg-light text-dark'}
+              className={`relative m-auto max-w-75per w-75per min-h-80per bg-black-10 text-black'}
   `}>
               <h3 className='text-left'>{title}</h3>
               <LinkButton className='absolute bottom-0per' href={link} id={`brand-redirect-${title}`}>

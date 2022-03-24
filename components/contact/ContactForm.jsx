@@ -112,7 +112,7 @@ export default function ContactForm() {
             maxLength='30'
             type='text'
             id='fullname'
-            className='border-none text-15px text-black-3 bg-light py-10px'
+            className='border-none text-15px text-black-3 bg-black-10 py-10px'
             value={fullname}
             onChange={(e) => {
               setFullname(e.target.value)
@@ -126,7 +126,7 @@ export default function ContactForm() {
             maxLength='30'
             type='email'
             id='email'
-            className='border-none text-15px text-black-3 bg-light py-10px'
+            className='border-none text-15px text-black-3 bg-black-10 py-10px'
             value={email}
             onChange={(e) => {
               setEmail(e.target.value)
@@ -140,7 +140,7 @@ export default function ContactForm() {
             maxLength='30'
             type='text'
             id='subject'
-            className='border-none text-15px text-black-3 bg-light py-10px'
+            className='border-none text-15px text-black-3 bg-black-10 py-10px'
             value={subject}
             onChange={(e) => {
               setSubject(e.target.value)
@@ -153,7 +153,7 @@ export default function ContactForm() {
           <textarea
             maxLength='500'
             id='message'
-            className='border-none text-15px text-black-3 bg-light py-10px'
+            className='border-none text-15px text-black-3 bg-black-10 py-10px'
             value={message}
             onChange={(e) => {
               setMessage(e.target.value)

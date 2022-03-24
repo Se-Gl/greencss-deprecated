@@ -3,7 +3,7 @@
 ol {
   li {
     code {
-      background-color: #bfdcfc;
+      background-color: #accefd;
       padding: 5px;
       border-radius: 5px;
       font-style: italic;
@@ -26,12 +26,12 @@ table {
   overflow-y: scroll;
   max-height: 25rem;
   tr {
-    border-block: 1px solid #edbdff;
+    border-block: 1px solid #8006f9;
     background: $white;
     width: 100%;
     th {
       font-weight: 900;
-      border-inline: 1px solid #edbdff;
+      border-inline: 1px solid #8006f9;
     }
   }
 
@@ -39,7 +39,7 @@ table {
     tr {
       td {
         width: 33%;
-        border-inline: 1px solid #edbdff;
+        border-inline: 1px solid #8006f9;
       }
     }
   }

@@ -7,7 +7,7 @@ export default function Toast({ type, message, id }) {
     <>
       {type == 'success' && (
         <ToastContent
-          fillColor='#147df5'
+          fillColor='#066ef9'
           backgroundColor='bg-blue-5'
           textColor='text-blue'
           triangleColor='success'
@@ -19,7 +19,7 @@ export default function Toast({ type, message, id }) {
       )}
       {type == 'error' && (
         <ToastContent
-          fillColor='#ce1f1a'
+          fillColor='#f90606'
           backgroundColor='bg-red-5'
           textColor='text-red'
           triangleColor='error'
@@ -31,7 +31,7 @@ export default function Toast({ type, message, id }) {
       )}
       {type == 'warning' && (
         <ToastContent
-          fillColor='#deff0a'
+          fillColor='#f9cf06'
           backgroundColor='bg-yellow-5'
           textColor='text-black'
           triangleColor='warn'

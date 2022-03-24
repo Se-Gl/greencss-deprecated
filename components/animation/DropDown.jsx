@@ -40,7 +40,7 @@ export default function DropDown() {
         onAnimationEnd={triggerFade}
       />
       <div
-        className='mx-auto max-w-40rem relative text-dark text-16px'
+        className='mx-auto max-w-40rem relative text-black text-16px'
         style={{ cursor: 'pointer' }}
         id='enter-animation'>
         <Select
@@ -53,7 +53,7 @@ export default function DropDown() {
         />
       </div>
       <div
-        className='mx-auto my-20px max-w-40rem relative text-dark text-16px'
+        className='mx-auto my-20px max-w-40rem relative text-black text-16px'
         style={{ cursor: 'pointer' }}
         id='enter-timeduration'>
         <Select
@@ -66,7 +66,7 @@ export default function DropDown() {
         />
       </div>
       <div
-        className='mx-auto my-20px max-w-40rem relative text-dark text-16px'
+        className='mx-auto my-20px max-w-40rem relative text-black text-16px'
         style={{ cursor: 'pointer' }}
         id='enter-animationtype'>
         <Select
@@ -84,7 +84,7 @@ export default function DropDown() {
       </div>
       <div className='text-center mt-50px'>
         <pre className='relative overflow-y-hidden'>
-          <code className='monospace text-16px bg-dark text-light block overflow-x-auto p-15px text-left font-bolder flex items-center min-h-50px'>
+          <code className='monospace text-16px bg-black text-white block overflow-x-auto p-15px text-left font-bolder flex items-center min-h-50px'>
             {csscode}
           </code>
           <div className='absolute top-0 right-0'>

@@ -67,7 +67,7 @@ export default function Header() {
             <div
               className={`${
                 isOpen
-                  ? 'p-30px fixed top-0per left-0per bg-light z-98 w-100per h-100per display-block clip-circle-in-topright animate animation-forwards'
+                  ? 'p-30px fixed top-0per left-0per bg-white z-98 w-100per h-100per display-block clip-circle-in-topright animate animation-forwards'
                   : 'display-none'
               }`}>
               <Link href='/'>

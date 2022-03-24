@@ -10,7 +10,7 @@ function Loader({ width = '50', height = '50' }) {
       viewBox='0 0 50 50'
       className='block m-auto ease'
       id='loader'>
-      <rect width='50' height='50' fill='#081120' rx='12.5'></rect>
+      <rect width='50' height='50' fill='#101010' rx='12.5'></rect>
       <path
         className='spin animation-duration-5000ms animation-infinite origin-center'
         transform='rotate(360)'

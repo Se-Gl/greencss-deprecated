@@ -3,15 +3,15 @@ import Image from 'next/image'
 export default function Testimonial() {
   return (
     <section className='my-20rem sm:my-100px md:my-100px' id='testimonial'>
-      <div className='relative flex min-h-75vh w-100per text-center text-light bg-dark rounded-20px'>
+      <div className='relative flex min-h-75vh w-100per text-center text-white bg-black rounded-20px'>
         <div className='m-auto max-w-50rem'>
           <h2 className='font-bold text-50px mb-50px'>Hear What The Creator Says</h2>
-          <p className='text-light'>
+          <p className='text-white'>
             “A dynamic, animated CSS library. Beginner-friendly, for every framework or plain HTML, intuitive and you
             can easily make it lightweight.”
           </p>
           <p className='text-purple-3 mt-50px'>Severin Glaser</p>
-          <p className='text-light'>omenCSS</p>
+          <p className='text-white'>omenCSS</p>
         </div>
 
         <div className='absolute left-0per' style={{ top: '-10%' }}>

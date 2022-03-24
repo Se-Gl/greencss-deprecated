@@ -91,7 +91,7 @@ export const VsStyle = {
     color: '#e98f1f'
   },
   number: {
-    color: '#be0aff'
+    color: '#8006f9'
   },
   selector: {
     color: '#a1ff0a'
@@ -112,7 +112,7 @@ export const VsStyle = {
     color: '#caff75'
   },
   variable: {
-    color: '#da75ff'
+    color: '#d4acfd'
   },
   operator: {
     color: '##f3c081'

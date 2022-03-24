@@ -9,7 +9,7 @@ export default function Summary({
   descriptionFour
 }) {
   return (
-    <div className='bg-dark'>
+    <div className='bg-black'>
       <div className='m-auto max-w-60rem py-50px text-white'>
         <h2>Summary</h2>
         <h3 className='mt-50px'>{titleOne}</h3>

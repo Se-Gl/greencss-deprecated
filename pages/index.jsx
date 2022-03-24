@@ -14,7 +14,7 @@ export default function HomePage({ posts }) {
     <div className='overflow-x-hidden'>
       <div className='relative'>
         <div className='absolute right-0per top-0per'>
-          <div id='heroimage' className='w-100vw h-100vh z-99 bg-dark sm:bg-light md:bg-light'></div>
+          <div id='heroimage' className='w-100vw h-100vh z-99 bg-black sm:bg-white md:bg-white'></div>
         </div>
       </div>
       <Layout className='container min-h-100vh relative z-2'>

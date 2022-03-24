@@ -27,10 +27,10 @@ export default function Newsletter() {
   }
   return (
     <section className='my-20rem sm:my-100px md:my-100px' id='newsletter'>
-      <div className='relative flex min-h-75vh w-100per text-light bg-dark rounded-20px'>
+      <div className='relative flex min-h-75vh w-100per text-white bg-black rounded-20px'>
         <div className='m-auto max-w-50rem'>
           <h2 className='font-bold text-50px pb-50px mb-0px'>There’s more than being up-to-date</h2>
-          <p className='text-black-5'>
+          <p className='text-black-10'>
             Stay informed by getting help about the latest omenCSS updates. Find new CSS tutorials that will help you
             grow as a developer and scale your business.
           </p>
@@ -43,10 +43,10 @@ export default function Newsletter() {
               type='email'
               id='email'
               placeholder='Your E-Mail'
-              className='border-none text-15px text-black bg-black-5 p-10px w-100per'></input>
+              className='border-none text-15px text-white bg-black-3 p-10px w-100per'></input>
             <Button
               onClick={subscribe}
-              className={`text-white ml-20px sm:ml-0px sm:mt-25px ${loading && 'text-black-5'}`}>
+              className={`text-white ml-20px sm:ml-0px sm:mt-25px ${loading && 'text-black-10'}`}>
               Newsletter
             </Button>
           </div>
