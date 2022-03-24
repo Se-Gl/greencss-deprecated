@@ -8,8 +8,13 @@ export default function ColourExample({ className, colorName, colorHex }) {
       <div className='h-auto sm:m-0px md:m-0px'>
         <div className='sm:my-10px'>
           <h3 className='mb-5px'>{colorName}</h3>
-          <p className='mb-0px text-15px'>HEX: {colorHex}</p>
-          <p className='mb-0px text-15px'>omenCSS Name: {className}</p>
+          <p className='mb-0px text-15px'>
+            <span className='font-800'>HEX: </span>
+            {colorHex}
+          </p>
+          <p className='mb-0px text-15px'>
+            <span className='font-800'>omenCSS Class: </span>[prefix-]<span className='lowercase'>{colorName}</span>
+          </p>
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ export default function colours() {
           <BrandSection
             isLight={true}
             title='Primary brand colors'
-            description='The primary brand colors are dark, light, black, white and purple. Dark and Light should primarily be used for borders, illustrations or background colours - black and white for texts. Whereby a greyish colour can also be used to emphasise text passages or headlines.'>
+            description='The primary brand colours are black, white and purple. As part of the corporate identity, it should be used in, texts, illustrations or as background colours. Descending black colors components can be used as gray shades. Whereby a greyish colour can also be used to emphasise text passages or headlines but must be applied with sufficient contrast difference.'>
             <div className='grid grid-col-3 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-2 w-100per overflow-x-hidden pt-100px'>
               {primaryColors.map((item, index) => {
                 return (
