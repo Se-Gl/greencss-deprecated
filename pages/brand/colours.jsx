@@ -186,7 +186,7 @@ export default function colours() {
           </BrandSection>
           <Summary
             titleOne='01'
-            descriptionOne='Focus on the power of dark, light, black, white and purple'
+            descriptionOne='Focus on the power of black, white and purple'
             titleTwo='02'
             descriptionTwo='A little purple or grey in headers packs a lot of punch'
             titleThree='03'
