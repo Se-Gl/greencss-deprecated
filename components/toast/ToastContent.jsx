@@ -5,7 +5,7 @@ export default function ToastContent({ fillColor, notification, onClick, backgro
   return (
     <div className='fade-toast relative' id='toast-information'>
       <div className={`triangle triangle-${triangleColor}`} />
-      <div className={`relative max-w-50rem max-h-28rem mb-25px ${backgroundColor}`}>
+      <div className={`relative max-w-50rem sm:min-w-35rem md:min-w-45rem max-h-28rem mb-25px ${backgroundColor}`}>
         <div className='ml-10px p-20px'>
           <p className={`text-15px font-600 mb-0px ${textColor}`}>{notification}</p>
         </div>
