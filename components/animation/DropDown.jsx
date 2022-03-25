@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import Select from 'react-select'
 import { animations, fillmode, time } from '@/data/animations'
-import Copy from '@/components/icon/Copy'
 import { Button } from '@/components/reusable/Button'
+import CopyIcon from '../icon/Animation/Copy'
 
 export default function DropDown() {
   const [selectedItem, setSelectedItem] = useState(animations[0])
@@ -82,13 +82,18 @@ export default function DropDown() {
           Animate
         </Button>
       </div>
-      <div className='text-center mt-50px'>
-        <pre className='relative overflow-y-hidden'>
-          <code className='monospace text-16px bg-black text-white block overflow-x-auto p-15px text-left font-bolder flex items-center min-h-50px'>
+      <div className='overflow-hidden'>
+        <pre className='flex relative'>
+          <code className='monospace text-16px bg-black text-white block overflow-x-auto p-15px text-left font-bolder flex items-center min-h-50px min-w-100per'>
             {csscode}
           </code>
-          <div className='absolute top-0 right-0'>
-            <Copy fill='#f0eef5' className='mt-15px mr-15px' />
+          <div
+            className='absolute top-50per right-0per pr-15px my-auto cursor-pointer'
+            style={{ transform: 'translate(0%, -50%)' }}>
+            <CopyIcon
+              className='fill-white hover:fill-black-10 transition-all transition-duration-500ms'
+              copy={csscode}
+            />
           </div>
         </pre>
       </div>
