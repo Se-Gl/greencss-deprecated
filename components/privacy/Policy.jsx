@@ -31,7 +31,7 @@ export default function Policy() {
         to the information that they shared and/or collect in omenCSS. This policy is not applicable to any information
         collected offline or via channels other than this website. Our Privacy Policy was created with the help of the{' '}
         <Link href='https://www.privacypolicygenerator.info'>
-          <a target='_blank' rel='nofollow'>
+          <a target='_blank' rel='nofollow noopener noreferrer'>
             Free Privacy Policy Generator
           </a>
         </Link>

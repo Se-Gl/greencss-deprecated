@@ -56,13 +56,13 @@ export default function Legal() {
       <p>
         Website imprint created by{' '}
         <Link href='https://www.impressum-generator.de/'>
-          <a target='_blank' rel='nofollow'>
+          <a target='_blank' rel='nofollow noopener noreferrer'>
             impressum-generator.de
           </a>
         </Link>{' '}
         from{' '}
         <Link href='https://www.kanzlei-hasselbach.de/'>
-          <a target='_blank' rel='nofollow'>
+          <a target='_blank' rel='nofollow noopener noreferrer'>
             Kanzlei Hasselbach
           </a>
         </Link>
