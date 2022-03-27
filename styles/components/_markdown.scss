@@ -25,6 +25,7 @@ table {
   display: block;
   overflow-y: scroll;
   max-height: 25rem;
+  scrollbar-width: thin;
   tr {
     border-block: 1px solid #8006f9;
     background: $white;
