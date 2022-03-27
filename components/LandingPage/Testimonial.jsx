@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Testimonial() {
   return (
@@ -10,7 +11,9 @@ export default function Testimonial() {
             “A dynamic, animated CSS library. Beginner-friendly, for every framework or plain HTML, intuitive and you
             can easily make it lightweight.”
           </p>
-          <p className='text-purple-3 mt-50px'>Severin Glaser</p>
+          <Link href='https://www.severinglaser.ch'>
+            <a className='text-purple-3 mt-50px no-decoration'>Severin Glaser</a>
+          </Link>
           <p className='text-white'>omenCSS</p>
         </div>
 
