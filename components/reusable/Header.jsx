@@ -55,12 +55,16 @@ export default function Header() {
       {/* Mobile Menu */}
       <nav className='z-100 min-h-10vh display-none sm:block'>
         <div
-          className={`fixed top-0per right-0per z-99 m-30px hamburger ${isOpen ? 'is-active' : ''}`}
+          className={`fixed top-0per right-0per z-99 m-30px hamburger w-50px h-50px rounded-50px bg-purple-10 ${
+            isOpen && 'is-active'
+          }`}
           id='hamburger-sm'
           onClick={() => setIsOpen(!isOpen)}>
-          <span className='line'></span>
-          <span className='line'></span>
-          <span className='line'></span>
+          <div className='mt-15px'>
+            <span className='line'></span>
+            <span className='line'></span>
+            <span className='line'></span>
+          </div>
         </div>
         {isOpen && (
           <div className='overflow-hidden'>
