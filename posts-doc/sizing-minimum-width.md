@@ -58,6 +58,8 @@ The `{min-w-auto}` utility can be useful if you need to remove an element’s as
 </div>
 ```
 
+💡 [Click] how to use the default [width](/docs/sizing-width) or [maximum width](/docs/sizing-maximum-width).
+
 ## Active, focus, and hover states
 
 | _omenCSS_           | CSS class example                         | Range                                  |

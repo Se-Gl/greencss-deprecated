@@ -58,6 +58,8 @@ The `{w-auto}` utility can be useful if you need to remove an element’s assign
 </div>
 ```
 
+💡 [Click] how to use the default [minimum width](/docs/sizing-minimum-width) or [maximum width](/docs/sizing-maximum-width).
+
 ## Active, focus, and hover states
 
 | _omenCSS_       | CSS class example                     | Range                          |
