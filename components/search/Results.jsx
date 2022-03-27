@@ -14,7 +14,7 @@ export default function Results({ results, searchTerm }) {
         )}
         {results.map((result, index) => (
           <div
-            className={`flex justify-between items-center my-50px pb-25px border-bottom-1px border-black border-solid clip-inset-in-left animate animation-forwards animation-delay-${
+            className={`flex justify-between items-center mb-25px border-bottom-1px border-black border-solid clip-inset-in-left animate animation-forwards animation-delay-${
               (index + 1) * 1
             }00ms`}
             key={index}>
@@ -27,15 +27,13 @@ export default function Results({ results, searchTerm }) {
                 {result.frontmatter.isBlog === false ? <Document className='mt-7px' /> : <Blog className='mt-7px' />}
                 <div className='ml-15px'>
                   <div className='flex items-center'>
-                    <h3 className='text-15px font-600 bg-white rounded-5px p-10px mb-0px hover:bg-black hover:text-white transition-all transition-duration-500ms'>
+                    <h3 className='text-15px font-600 text-white bg-black rounded-5px p-10px mb-0px hover:bg-white hover:text-black transition-all transition-duration-500ms'>
                       {result.frontmatter.category}
                     </h3>
                   </div>
-                  <h3 className='text-20px my-10px'>{result.frontmatter.title.slice(0, 25)}... </h3>
-                  <p className='text-15px my-0px'>
-                    {result.frontmatter.excerpt.slice(0, 25)}...{' '}
-                    <span className='font-600'>{searchTerm.slice(0, 10)}...</span>
-                  </p>
+                  <h3 className='text-20px my-10px'>
+                    {result.frontmatter.title}... <span className='text-15px'>{searchTerm.slice(0, 10)}</span>
+                  </h3>
                 </div>
               </div>
             </Link>
