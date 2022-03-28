@@ -42,13 +42,13 @@ const newHeading = (headingText, titleLimit, customMatchers) => {
 const nestUl = (level, listItem) => {
   switch (level) {
     case 1:
-      return <h3 className='mb-10px text-15px'>{listItem}</h3>
+      return <h3 className='mb-10px text-15px font-900'>{listItem}</h3>
     case 2:
-      return <h4 className='mb-10px text-15px'>{listItem}</h4>
+      return <h4 className='mb-10px text-15px font-900'>{listItem}</h4>
     case 3:
-      return <h5 className='mb-10px ml-20px lg:ml-0px text-15px'>{listItem}</h5>
+      return <h5 className='mb-10px text-15px font-500'>{listItem}</h5>
     case 4:
-      return <h6 className='mb-10px ml-20px lg:ml-0px text-15px'>{listItem}</h6>
+      return <h6 className='mb-10px text-15px font-500'>{listItem}</h6>
     default:
       return listItem
   }
