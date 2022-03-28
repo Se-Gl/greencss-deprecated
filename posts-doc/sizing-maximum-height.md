@@ -86,7 +86,7 @@ Use variant modifiers to target media queries like responsive breakpoints.
 
 omenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:max-h-10px` to apply the max-h-10px utility at only small screen sizes at or below 480px. Or `active:md:max-h-10px` to apply the max-h-10px utility at only between small screen sizes (480px) and medium screen sizes (768px).
 
-1. The structure is as follows: `{conditionally state}:{media query}:{classname}{size}` p.e. `active:md:m-10px`
+1. The structure is as follows: `{conditional state}:{media query}:{classname}{size}` p.e. `active:md:m-10px`
 
 ## Executive Summary
 
