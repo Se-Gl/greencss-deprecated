@@ -17,7 +17,10 @@ export default function DocsCategoryPage({ categories, posts }) {
       url='docs'
       keywords='docs, documentation, information, search, css'>
       <div className='grid grid-col-12 gap-30px'>
-        <div className='grid-col-3 col-span-3 min-h-100vh sm:display-none md:display-none' id='sidebar'>
+        <div
+          className='overflow-y-scroll sticky top-18per max-h-75vh col-span-3 sm:display-none md:display-none'
+          style={{ scrollbarWidth: 'thin', scrollbarColor: '#898989 #fdfdfd' }}
+          id='sidebar'>
           <ul>
             <SideBar categories={categories} posts={posts} hasSubcategory={true} />
           </ul>
