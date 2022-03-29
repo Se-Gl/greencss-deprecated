@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Maximum Height'
 date: 'Mar 27. 2022'
-excerpt: 'Utility classes for controlling an element`s height.'
+excerpt: 'Utility classes for controlling an element`s maximum height.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Sizing'
 author: 'Severin Glaser'

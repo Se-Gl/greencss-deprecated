@@ -16,7 +16,7 @@ export default function Policy() {
         additionally posthog - an open source project.
       </p>
       <p>
-        At omenCSS, accessible from www.omen.design, one of our main priorities is the privacy of our visitors. This
+        At omenCSS, accessible from www.omencss.com, one of our main priorities is the privacy of our visitors. This
         Privacy Policy document contains types of information that is collected and recorded by omenCSS and how we use
         it.
       </p>

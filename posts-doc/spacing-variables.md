@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Spacing Variables'
 date: 'Mar 27. 2022'
-excerpt: 'Utility classes for controlling custom sizing variables.'
+excerpt: 'Utility classes for controlling custom spacing variables.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Spacing'
 author: 'Severin Glaser'

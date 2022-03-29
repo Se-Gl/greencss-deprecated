@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Maximum Width'
 date: 'Mar 27. 2022'
-excerpt: 'Utility classes for controlling an element`s width.'
+excerpt: 'Utility classes for controlling an element`s maximum width.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Sizing'
 author: 'Severin Glaser'
