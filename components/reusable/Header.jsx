@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <div className='container'>
       <nav
-        className='sm:display-none z-100 relative flex items-center h-15rem justify-between w-100per sm:px-10px md:px-25px lg:px-50px'
+        className='sm:display-none z-100 fixed bg-white flex items-center h-15rem justify-between w-100per sm:px-10px md:px-25px lg:px-50px'
         style={{ maxWidth: '110rem' }}>
         <Link href='/'>
           <a>

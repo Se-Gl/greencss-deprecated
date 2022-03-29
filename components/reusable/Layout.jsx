@@ -67,7 +67,7 @@ export default function Layout({
       </Head>
       <Header />
       <main>
-        <div className={className}>{children}</div>
+        <div className={`pt-15rem ${className}`}>{children}</div>
       </main>
       <Footer />
       <Cookies />
