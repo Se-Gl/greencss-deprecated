@@ -2,13 +2,13 @@ import dynamic from 'next/dynamic'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import { getPosts } from '@/lib/posts'
+import { getAlphabeticalPosts } from '@/lib/posts'
 import Loader from '@/components/logo/Loader'
 
 const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), { loading: () => <Loader /> })
 const DevelopmentToClipboard = dynamic(() => import('@/utils/DevelopmentToClipboard'))
 
-export default function BlogPostPage({
+export default function DocsPostPage({
   frontmatter: { title, excerpt, category, date, cover_image, author, isBlog, keywords, plainText },
   content,
   slug,
@@ -54,7 +54,7 @@ export async function getStaticPaths() {
 
 // get blog post
 export async function getStaticProps({ params: { slug } }) {
-  const posts = getPosts()
+  const posts = getAlphabeticalPosts()
   const categories = posts.map((post) => post.frontmatter.category)
   const uniqueCategories = [...new Set(categories)]
   const markdownMeta = fs.readFileSync(path.join('posts-doc', slug + '.md'), 'utf-8')

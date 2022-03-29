@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Layout from '@/components/reusable/Layout'
-import { getPosts } from '@/lib/posts'
+import { getAlphabeticalPosts } from '@/lib/posts'
 import BlogCard from '@/components/blog/BlogCard'
 import BlogLayout from '@/components/blog/BlogLayout'
 import { BackButton } from '@/components/reusable/Button'
@@ -10,7 +10,7 @@ import SideBar from '@/components/category/SideBar'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
 import SlugDocsHero from '@/components/icon/Docs/SlugDocsHero'
 
-export default function CategorySlugPage({ posts, categoryName, categories }) {
+export default function DocsCategorySlugPage({ posts, categoryName, categories }) {
   return (
     <Layout
       className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
@@ -64,7 +64,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { category_name } }) {
-  const posts = getPosts()
+  const posts = getAlphabeticalPosts()
   const categories = posts.map((post) => post.frontmatter.category)
   const uniqueCategories = [...new Set(categories)]
   const categoryPosts = posts.filter((post) => post.frontmatter.category.toLowerCase() === category_name)

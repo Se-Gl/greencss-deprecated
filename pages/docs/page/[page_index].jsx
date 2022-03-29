@@ -2,13 +2,13 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Layout from '@/components/reusable/Layout'
-import { getPosts } from '@/lib/posts'
+import { getAlphabeticalPosts } from '@/lib/posts'
 import BrandCard from '@/components/brand/BrandCard'
 import SideBar from '@/components/category/SideBar'
 import DocsHero from '@/components/icon/Docs/DocsHero'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
 
-export default function CategoryPage({ categories, posts }) {
+export default function DocsCategoryPage({ categories, posts }) {
   return (
     <Layout
       title='omenCSS documentation - an overview'
@@ -65,7 +65,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const posts = getPosts()
+  const posts = getAlphabeticalPosts()
   const categories = posts.map((post) => post.frontmatter.category)
   const uniqueCategories = [...new Set(categories)]
 
