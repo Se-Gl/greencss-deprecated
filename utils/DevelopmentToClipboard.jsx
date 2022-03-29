@@ -32,6 +32,7 @@ export default function DevelopmentToClipboard({ content }) {
       {process.env.NODE_ENV == 'development' && (
         <button
           id='copy-to-clipboard'
+          className='fixed top-0per'
           onClick={() => {
             navigator.clipboard.writeText(minifyContent)
           }}>

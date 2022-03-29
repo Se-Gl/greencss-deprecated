@@ -38,7 +38,7 @@ export default function SlugComponent({
       className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'>
       <div className='grid grid-col-12 gap-30px'>
         <div
-          className='overflow-y-scroll sticky top-18per max-h-75vh col-span-3 sm:display-none md:display-none'
+          className='overflow-y-scroll sticky top-19per max-h-75vh col-span-3 sm:display-none md:display-none'
           style={{ scrollbarWidth: 'thin', scrollbarColor: '#898989 #fdfdfd' }}
           id='sidebar'>
           <ul>
