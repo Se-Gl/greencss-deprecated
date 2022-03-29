@@ -8,7 +8,7 @@ export default function composition() {
   return (
     <Layout
       className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
-      title='Composition Brand Book | Styleguide | Corporate Identity'
+      title='Composition Brand Book | Styleguide'
       description='The brand system features four core elements - composition'
       url='brand/composition'
       keywords='Composition, brand composition, image composition, Brand Book, omenCSS, Design, Corporate Identity'>

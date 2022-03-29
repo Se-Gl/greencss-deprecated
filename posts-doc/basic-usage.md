@@ -1,6 +1,6 @@
 ---
 isBlog: false
-title: 'Base styles & guideline - how to use omenCSS'
+title: 'Base styles - Foundations'
 date: 'Mar 18. 2022'
 excerpt: 'omenCSS foundations - an opinionated set of base styles, structure and guidelines for omenCSS projects.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
