@@ -24,7 +24,8 @@ export default function SlugComponent({
   isBlog,
   keywords,
   posts,
-  categories
+  categories,
+  plainText
 }) {
   return (
     <Layout
@@ -76,6 +77,10 @@ export default function SlugComponent({
               remarkPlugins={[remarkGfm]}
             />
             {/* eslint-enable */}
+          </div>
+          {/* TODO: SEO experiment */}
+          <div className='absolute bottom-5per z-neg-1 opacity-1per' id='seo-experiment'>
+            {plainText}
           </div>
         </div>
       </div>

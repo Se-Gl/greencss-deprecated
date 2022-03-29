@@ -9,7 +9,7 @@ const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'
 const DevelopmentToClipboard = dynamic(() => import('@/utils/DevelopmentToClipboard'))
 
 export default function BlogPostPage({
-  frontmatter: { title, excerpt, category, date, cover_image, author, isBlog, keywords },
+  frontmatter: { title, excerpt, category, date, cover_image, author, isBlog, keywords, plainText },
   content,
   slug,
   posts,
@@ -31,6 +31,7 @@ export default function BlogPostPage({
         isBlog={isBlog}
         posts={posts}
         categories={categories}
+        plainText={plainText}
       />
     </>
   )
