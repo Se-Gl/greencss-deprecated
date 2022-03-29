@@ -38,10 +38,9 @@ export default function Header() {
               return (
                 <Link key={index} href={item.path}>
                   <a
-                    className={`mr-15px text-15px font-800 ${
+                    className={`mr-15px text-15px font-800 no-decoration ${
                       router.asPath.includes(item.path) ? 'text-purple font-800' : isHome
-                    }`}
-                    style={{ textDecoration: 'none' }}>
+                    }`}>
                     {item.title}
                   </a>
                 </Link>

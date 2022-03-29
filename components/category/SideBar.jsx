@@ -13,10 +13,9 @@ export default function SideBar({ categories, posts, hasSubcategory = false, sho
           <li>
             <Link href={`/docs/category/${category.toLowerCase()}`} passRef>
               <a
-                className={`font-bold mb-0px ${
+                className={`font-bold mb-0px no-decoration ${
                   router.asPath.includes(category.toLowerCase()) && 'border-left-1px border-solid border-purple pl-5px'
-                }`}
-                style={{ textDecoration: 'none' }}>
+                }`}>
                 {category.replace('-', ' ')}
               </a>
             </Link>

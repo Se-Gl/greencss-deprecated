@@ -125,7 +125,7 @@ export function DownloadButton({ href = '/', className, type = 'button', id = 'd
     setHover(false)
   }
   return (
-    <a href={href} download style={{ textDecoration: 'none' }}>
+    <a href={href} download className='no-decoration'>
       <div className='flex sm:min-w-90px sm:min-h-30px min-w-15rem min-h-50px responsive z-99'>
         <button
           id={id}

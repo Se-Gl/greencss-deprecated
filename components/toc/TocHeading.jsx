@@ -16,9 +16,7 @@ export default class TocHeading {
     const listItem = (
       <>
         <Link href={`#${replaceAll(link, this.customMatchers)}`} passRef>
-          <span className='cursor-pointer' style={{ textDecoration: 'none' }}>
-            {createTitle(this.title, this.titleLimit)}
-          </span>
+          <span className='cursor-pointer no-decoration'>{createTitle(this.title, this.titleLimit)}</span>
         </Link>
       </>
     )

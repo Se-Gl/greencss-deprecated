@@ -44,9 +44,7 @@ export default function Footer() {
                   return (
                     <div onClick={scrollToTop} key={index}>
                       <Link href={item.path} passHref>
-                        <a className='text-white' style={{ textDecoration: 'none' }}>
-                          {item.title}
-                        </a>
+                        <a className='text-white no-decoration'>{item.title}</a>
                       </Link>
                       <br className='mb-25px' />
                     </div>
@@ -62,9 +60,7 @@ export default function Footer() {
                 return (
                   <div onClick={scrollToTop} key={index}>
                     <Link href={item.path} passHref>
-                      <a className='text-white cursor-pointer' style={{ textDecoration: 'none' }}>
-                        {item.title}
-                      </a>
+                      <a className='text-white cursor-pointer no-decoration'>{item.title}</a>
                     </Link>
                     <br className='mb-25px' />
                   </div>
@@ -78,11 +74,7 @@ export default function Footer() {
                 return (
                   <div onClick={scrollToTop} key={index}>
                     <Link href={item.path} passHref>
-                      <a
-                        className='text-white cursor-pointer'
-                        style={{ textDecoration: 'none' }}
-                        rel='nofollow'
-                        target='_blank'>
+                      <a className='text-white cursor-pointer no-decoration' rel='nofollow' target='_blank'>
                         {item.title}
                       </a>
                     </Link>
