@@ -18,18 +18,18 @@ export default function CategorySlugPage({ posts, categoryName, categories }) {
       description={`omenCSS documentation - get an overview about the category ${categoryName}, its css classes and how to apply them.`}
       url='docs'
       keywords='docs, documentation, information, search, css'>
-      <div className='grid grid-col-6 gap-30px'>
-        <div className='grid-col-1 col-span-1 min-h-100vh sm:display-none md:display-none' id='sidebar'>
+      <div className='grid grid-col-12 gap-30px'>
+        <div className='grid-col-3 col-span-3 min-h-100vh sm:display-none md:display-none' id='sidebar'>
           <ul>
             <SideBar categories={categories} posts={posts} hasSubcategory={true} />
           </ul>
         </div>
-        <div className='min-w-100per relative col-span-5 sm:col-span-6 md:col-span-6'>
+        <div className='min-w-100per relative col-span-9 sm:col-span-12 md:col-span-12'>
           <BackButton>Back</BackButton>
           <div className='min-w-100per relative' id={`category-${categoryName}`}>
             <SubSectionHero
               header={`Browse by category: ${categoryName.replace('-', ' ')}`}
-              subheader={`Get an overview in the category &apos;${categoryName}&apos; and browse through all the documentation.`}
+              subheader={`Get an overview in the category \"${categoryName}\" and browse through all the documentation.`}
               illustration={<SlugDocsHero width='100%' height='100%' />}
             />
             <BlogLayout>

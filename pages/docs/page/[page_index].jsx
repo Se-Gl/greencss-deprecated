@@ -15,22 +15,19 @@ export default function CategoryPage({ categories, posts }) {
       description='Docs - the right way to get to know the omenCSS by browsing the documentation. Search by categories. Get to know omenCSS and start writing design.'
       url='docs'
       keywords='docs, documentation, information, search, css'>
-      <div className='grid grid-col-6 gap-30px'>
-        <div className='grid-col-1 col-span-1 min-h-100vh sm:display-none md:display-none' id='sidebar'>
+      <div className='grid grid-col-12 gap-30px'>
+        <div className='grid-col-3 col-span-3 min-h-100vh sm:display-none md:display-none' id='sidebar'>
           <ul>
             <SideBar categories={categories} posts={posts} hasSubcategory={true} />
           </ul>
         </div>
-        <div className='min-w-100per relative col-span-5 sm:col-span-6 md:col-span-6' id='docs-index'>
+        <div className='min-w-100per relative col-span-9 sm:col-span-12 md:col-span-12' id='docs-index'>
           <SubSectionHero
             header='Docs - the right way to get to know the system'
             subheader='Search by categories. Get to know omenCSS and start writing design.'
             illustration={<DocsHero width='100%' height='100%' />}
           />
           <div className='m-auto max-w-60rem mb-10rem'>
-            {/* <h1>Docs - the right way to get to know the system</h1>
-            <Smartphone /> */}
-            {/* <p>Search by categories. Get to know omenCSS and start writing design.</p> */}
             <h2 className='mt-50px'>The types</h2>
             <p className='mt-25px'>
               omenCSS features 21 core elements. These in turn are filtered into over 250 subcategories. You are looking
