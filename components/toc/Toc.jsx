@@ -9,7 +9,7 @@ const Toc = ({ markdownText, titleLimit, highestHeadingLevel, lowestHeadingLevel
 
   if (!markdownText) return null
   // Set default values
-  const limit = titleLimit ? titleLimit : 18
+  const limit = titleLimit ? titleLimit : 25
   const headingLevels = [highestHeadingLevel || 1, lowestHeadingLevel || 6]
 
   // Mutate headings
@@ -22,7 +22,7 @@ const Toc = ({ markdownText, titleLimit, highestHeadingLevel, lowestHeadingLevel
   return (
     <div role='navigation' aria-label='table of contents' id='toc'>
       {isBlog === true && <ReusableModal isSidebar={true} />}
-      <div className='bg-purple-10 px-5px py-10px mb-25px reveal-down animation-duration-200ms animation-forwards'>
+      <div className='bg-purple-10 px-5px py-10px mb-25px reveal-down animation-duration-200ms animation-forwards whitespace-nowrap overflow-x-hidden'>
         <h4 className='font-800 mb-25px'>Table of Contents</h4>
         {reveal === true && (
           <>

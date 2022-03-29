@@ -9,7 +9,7 @@ export default function SideBar({ categories, posts, hasSubcategory = false, sho
     <>
       {showSearch === true && <ReusableModal isSidebar={true} />}
       {categories.sort().map((category, index) => (
-        <div key={index}>
+        <div key={index} className='whitespace-nowrap overflow-x-hidden'>
           <li>
             <Link href={`/docs/category/${category.toLowerCase()}`} passRef>
               <a
@@ -26,7 +26,7 @@ export default function SideBar({ categories, posts, hasSubcategory = false, sho
               category === subcategory.frontmatter.category ? (
                 <li key={subcategory.slug}>
                   <Link href={`/docs/${subcategory.slug}`} passRef>
-                    <a className={`font-normal mb-0px text-15px ml-15px`} style={{ textDecoration: 'none' }}>
+                    <a className={`font-normal mb-0px text-15px no-decoration`}>
                       {subcategory.frontmatter.title.slice(0, 20)}
                     </a>
                   </Link>
