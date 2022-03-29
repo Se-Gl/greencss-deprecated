@@ -16,12 +16,15 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const router = useRouter()
-  const isHome = router.pathname === '/' ? 'text-white sm:text-black md:text-black' : 'text-black'
+  let checkPath = router.pathname === '/'
+  const isHome = checkPath ? 'text-white sm:text-black md:text-black' : 'text-black'
+  const isHomeNav = checkPath ? 'text-white sm:text-black md:text-black bg-black' : 'text-black bg-white'
 
   return (
     <div className='container'>
       <nav
-        className='sm:display-none z-100 fixed bg-white flex items-center h-15rem justify-between w-100per sm:px-10px md:px-25px lg:px-50px'
+        aria-label='header navigation'
+        className={`sm:display-none z-100 fixed flex items-center h-15rem justify-between w-100per sm:px-10px md:px-25px lg:px-50px ${isHomeNav}`}
         style={{ maxWidth: '110rem' }}>
         <Link href='/'>
           <a>
