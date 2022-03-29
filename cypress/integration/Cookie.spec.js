@@ -3,7 +3,7 @@ describe('Renders Cookie', () => {
     cy.visit('http://localhost:3000')
     cy.get('#cookie-banner').should('exist').should('be.visible')
     cy.get('#close-toast')
-      .click()
+      .click({ force: true })
       .should(() => {
         expect(localStorage.getItem('cookie')).contains('accepted', { matchCase: false })
       })

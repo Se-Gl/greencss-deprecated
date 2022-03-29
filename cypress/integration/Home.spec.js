@@ -15,7 +15,7 @@ describe('Home Screen Unit test', () => {
   })
   it('renders the linkedbutton', () => {
     cy.get('#linkedbutton').should('be.visible').should('exist')
-    cy.get('#linkedbutton').trigger('mouseover')
+    cy.get('#linkedbutton').trigger('mouseover', { force: true })
   })
   it('reveals presentation section with animation', () => {
     cy.get('#presentation').should('exist')

@@ -12,12 +12,12 @@ describe('Category Index Unit test', () => {
     cy.get('#contact-form').should('be.visible').should('exist').contains('Send a message', { matchCase: false })
   })
   it('submit a request', () => {
-    cy.get('#fullname').type('John Doe {enter}')
+    cy.get('#fullname').type('John Doe {enter}', { force: true })
     cy.get('#email').type('john.doe@email.com {enter}', { force: true })
     cy.get('#subject').type('Test Title {enter}', { force: true })
     cy.get('#password').type('tba {enter}', { force: true })
 
-    cy.get('#submit-button').click()
+    cy.get('#submit-button').click({ force: true })
     cy.get('#toast-information')
       .should('be.visible')
       .should('exist')
@@ -31,7 +31,7 @@ describe('Category Index Unit test', () => {
       }
     )
     for (let n = 0; n < 5; n++) {
-      cy.get('#close-toast').click()
+      cy.get('#close-toast').click({ force: true })
     }
     // cy.get('#toast-information').should('not.exist')
   })

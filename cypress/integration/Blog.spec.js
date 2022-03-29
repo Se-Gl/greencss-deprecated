@@ -12,7 +12,7 @@ describe('Blog Screen Unit test', () => {
     cy.get('#blog-hero-illustration').should('be.visible').should('exist')
   })
   it('click first button and redirect to slug page', () => {
-    cy.get('#blog-card').eq(0).click()
+    cy.get('#blog-card').eq(0).click({ force: true })
     cy.url().should('not.be.equal', 'http://localhost:3000/blog/')
   })
 })
@@ -31,7 +31,7 @@ describe('Verify ElementRenderer', () => {
       .should('equal', 'how-to-stagger-css-animations')
   })
   it('clicks the first link in the blog and redirects', () => {
-    cy.get(':nth-child(13) > a').should('exist').click()
+    cy.get(':nth-child(13) > a').should('exist').click({ force: true })
     cy.url().should('be.equal', 'http://localhost:3000/docs/animation/example')
   })
   it('checks if code is being rendered', () => {

@@ -12,7 +12,7 @@ describe('Brand Screen Unit test', () => {
     cy.get('#brand-hero-illustration').should('be.visible').should('exist')
   })
   it('click buttons and redirect forwards', () => {
-    cy.get('#brand-redirect-Logo').click()
+    cy.get('#brand-redirect-Logo').click({ force: true })
     cy.url().should('be.equal', 'http://localhost:3000/brand/logo')
   })
 })
@@ -32,7 +32,7 @@ describe('Brand - Logo Screen Unit test', () => {
     cy.get('#light-section').should('be.visible').should('exist')
   })
   it('download dark logo', () => {
-    cy.get('#download-dark-logo').should('exist').click().wait(2000)
+    cy.get('#download-dark-logo').should('exist').click({ force: true }).wait(2000)
     cy.readFile('cypress/downloads/omencss_logo_dark.svg').should('exist')
   })
 })
@@ -52,7 +52,7 @@ describe('Brand - Typo Screen Unit test', () => {
     cy.get('#light-section').should('be.visible').should('exist')
   })
   it('download the font', () => {
-    cy.get('#download-omen-motion').should('exist').click().wait(2000)
+    cy.get('#download-omen-motion').should('exist').click({ force: true }).wait(2000)
     cy.readFile('cypress/downloads/Omen Motion.zip').should('exist')
   })
 })

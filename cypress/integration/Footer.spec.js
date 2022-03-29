@@ -12,7 +12,7 @@ describe('Footer Unit test', () => {
       .should('be.visible')
   })
   it('clicks link and redirect to page top', () => {
-    cy.get('#footer').find('svg').click()
+    cy.get('#footer').find('svg').click({ force: true })
     cy.url().should('be.equal', 'http://localhost:3000/')
     cy.window().its('scrollY').should('equal', 0)
   })
