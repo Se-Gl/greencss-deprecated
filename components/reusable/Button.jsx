@@ -15,7 +15,7 @@ export function LinkButton({ href = '/', className, type = 'button', onClick, id
   }
   return (
     <Link href={href} passHref>
-      <div className='flex sm:min-w-90px sm:min-h-30px min-w-15rem min-h-50px responsive z-99'>
+      <div className='flex sm:min-w-90px sm:min-h-30px min-w-12rem min-h-50px responsive z-99'>
         <button
           onClick={onClick}
           id={id}
@@ -43,7 +43,7 @@ export function LinkButtonLeft({ href = '/', className, type = 'button', onClick
   }
   return (
     <Link href={href} passHref>
-      <div className='flex sm:min-w-90px sm:min-h-30px min-w-15rem min-h-50px responsive z-99'>
+      <div className='flex sm:min-w-90px sm:min-h-30px min-w-12rem min-h-50px responsive z-99'>
         <button
           onClick={onClick}
           id={id}
@@ -70,7 +70,7 @@ export function Button({ className, type = 'button', onClick, id = 'button', chi
     setHover(false)
   }
   return (
-    <div className='flex sm:min-w-90px sm:min-h-30px min-w-15rem min-h-50px responsive z-99'>
+    <div className='flex sm:min-w-90px sm:min-h-30px min-w-12rem min-h-50px responsive z-99'>
       <button
         onClick={onClick}
         id={id}
@@ -98,7 +98,7 @@ export function BackButton({ className, type = 'button', id = 'back-button', chi
     setHover(false)
   }
   return (
-    <div className='flex sm:min-w-90px sm:min-h-30px min-w-15rem min-h-50px responsive z-99'>
+    <div className='flex sm:min-w-90px sm:min-h-30px min-w-12rem min-h-50px responsive z-99'>
       <button
         onClick={() => router.back()}
         id={id}
@@ -126,7 +126,7 @@ export function DownloadButton({ href = '/', className, type = 'button', id = 'd
   }
   return (
     <a href={href} download className='no-decoration'>
-      <div className='flex sm:min-w-90px sm:min-h-30px min-w-15rem min-h-50px responsive z-99'>
+      <div className='flex sm:min-w-90px sm:min-h-30px min-w-12rem min-h-50px responsive z-99'>
         <button
           id={id}
           className={`${className} flex my-auto text-center text-16px font-bold bg-transparent`}
