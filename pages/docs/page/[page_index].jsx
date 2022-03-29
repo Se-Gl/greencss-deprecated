@@ -2,11 +2,12 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Layout from '@/components/reusable/Layout'
-import { getAlphabeticalPosts } from '@/lib/posts'
+import { getPosts } from '@/lib/posts'
 import BrandCard from '@/components/brand/BrandCard'
 import SideBar from '@/components/category/SideBar'
 import DocsHero from '@/components/icon/Docs/DocsHero'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
+import { sortAlphabetically } from '@/utils/SortBy'
 
 export default function DocsCategoryPage({ categories, posts }) {
   return (
@@ -65,7 +66,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const posts = getAlphabeticalPosts()
+  const posts = getPosts(sortAlphabetically)
   const categories = posts.map((post) => post.frontmatter.category)
   const uniqueCategories = [...new Set(categories)]
 

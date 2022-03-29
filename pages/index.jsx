@@ -8,6 +8,7 @@ import Testimonial from '@/components/LandingPage/Testimonial'
 import Layout from '@/components/reusable/Layout'
 import { getPosts } from '@/lib/posts'
 import Newsletter from '@/components/LandingPage/Newsletter'
+import { sortByDate } from '@/utils/SortBy'
 
 export default function HomePage({ posts }) {
   return (
@@ -33,7 +34,7 @@ export default function HomePage({ posts }) {
 export async function getStaticProps() {
   return {
     props: {
-      posts: getPosts('posts-blog').slice(0, 3)
+      posts: getPosts(sortByDate, 'posts-blog').slice(0, 3)
     }
   }
 }

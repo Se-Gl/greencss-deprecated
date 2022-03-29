@@ -8,6 +8,7 @@ import Pagination from '@/components/reusable/Pagination'
 import { getPosts } from '@/lib/posts'
 import BlogHero from '@/components/icon/Blog/BlogHero'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
+import { sortByDate } from '@/utils/SortBy'
 
 export default function BlogIndex({ posts, numPages, currentPage }) {
   return (
@@ -54,7 +55,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const page = parseInt((params && params.page_index) || 1)
   const files = fs.readdirSync(path.join('posts-blog'))
-  const posts = getPosts('posts-blog')
+  const posts = getPosts(sortByDate, 'posts-blog')
 
   const numPages = Math.ceil(files.length / POSTS_PER_PAGE)
   const pageIndex = page - 1
