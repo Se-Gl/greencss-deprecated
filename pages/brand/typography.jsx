@@ -10,12 +10,13 @@ export default function typography() {
     <Layout
       className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
       title='Typography Brand Book | Styleguide | Corporate Identity'
-      description='The brand system features four core elements - logo, typography, colours and composition.'
+      description='The brand system features four core elements - typography'
       url='brand/typography'
       keywords='Typography, Styleguide, Brand Book, omenCSS, Design, Corporate Identity, omen css'>
       <div className='min-w-100per relative' id='brand-typography-page'>
         <BackButton className='mb-50px'>Back</BackButton>
         <div className='mb-10rem'>
+          <h1 className='text-80px sm:text-50px mb-100px'>omenCSS brand identity: the typography</h1>
           <BrandSection
             title='Typography'
             description='The typography is as unique, royalty-free, lightweight and easy to use as omenCSS itself. Inspired by the uniqueness, and diversity of Switzerland, it was designed to have maximum impact internationally, as well as virtually. Its name: Omen Motion.'

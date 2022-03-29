@@ -11,12 +11,13 @@ export default function colours() {
     <Layout
       className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
       title='Colours Brand Book | Styleguide | Corporate Identity'
-      description='The brand system features four core elements - logo, typography, colours and composition.'
+      description='The brand system features four core elements - colours'
       url='brand/colours'
       keywords='Colours, brand color, Styleguide, Brand Book, omenCSS, Design, Corporate Identity'>
       <div className='min-w-100per relative' id='brand-colour-page'>
         <BackButton className='mb-50px'>Back</BackButton>
         <div className='mb-10rem'>
+          <h1 className='text-80px sm:text-50px mb-100px'>omenCSS brand identity: the colour</h1>
           <BrandSection
             title='Colours'
             description='Colors determine charisma, emotion, feelings, and memories. In total, omenCSS offers a color palette of over 13 colors, whereby these are further broken down into 85 different lighter tones. The primary colours we use - dark, light and purple - build on our existing intensity and represent the elegance of omenCSS.'

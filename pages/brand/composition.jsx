@@ -9,12 +9,13 @@ export default function composition() {
     <Layout
       className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
       title='Composition Brand Book | Styleguide | Corporate Identity'
-      description='The brand system features four core elements - logo, typography, colours and composition.'
+      description='The brand system features four core elements - composition'
       url='brand/composition'
       keywords='Composition, brand composition, image composition, Brand Book, omenCSS, Design, Corporate Identity'>
       <div className='min-w-100per relative' id='composition-colour-page'>
         <BackButton className='mb-50px'>Back</BackButton>
         <div className='mb-10rem'>
+          <h1 className='text-80px sm:text-50px mb-100px'>omenCSS brand identity: the composition</h1>
           <BrandSection
             title='Composition'
             description='The composition system is elegant and neutral. Wherever it appears, it includes a subtle "O" inspired by the name. Defining the matrix based on the letter "O", the system remains flexible and is easy to apply in both print and virtual.'

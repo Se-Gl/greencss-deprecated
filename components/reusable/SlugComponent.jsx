@@ -28,7 +28,7 @@ export default function SlugComponent({
 }) {
   return (
     <Layout
-      title={`How to use ${title} css class`}
+      title={`${isBlog === true ? `${title}` : `How to use ${title} CSS class`}`}
       description={excerpt}
       image={cover_image}
       url={`${isBlog === true ? `blog/${slug}` : `docs/${slug}`}`}
