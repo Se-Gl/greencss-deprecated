@@ -9,6 +9,7 @@ import { usePostHog } from 'next-use-posthog'
 import Progress from '@/components/progress/Progress'
 import { ToastProvider } from '@/components/toast/context/ToastContext'
 import ToastContainer from '@/components/toast/ToastContainer'
+import Google from '@/components/analytics/Google'
 
 function MyApp({ Component, pageProps }) {
   // analytics:
@@ -21,6 +22,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      {process.env.NODE_ENV === 'production' && <Google />}
       <Progress />
       <ToastProvider>
         <Component {...pageProps} />

@@ -12,8 +12,8 @@ export default function Policy() {
       />
       <h1>Privacy Policy for omenCSS</h1>
       <p>
-        We do not use any Google tools. The website is hosted on Vercel, it uses the Vercel analytics tool and
-        additionally posthog - an open source project.
+        The website is hosted on Vercel, it uses the Vercel analytics tool, Google analytics and additionally posthog -
+        an open source project.
       </p>
       <p>
         At omenCSS, accessible from www.omencss.com, one of our main priorities is the privacy of our visitors. This

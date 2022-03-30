@@ -29,8 +29,9 @@ export default function Cookies() {
               🍪
             </span>
             <p className='mb-0px text-15px'>
-              By clicking the cookie or “OK”, you agree to the storing of cookies on your device to enhance site
-              navigation, analyze site usage, and assist in our UI/UX efforts.
+              By clicking the cookie or “OK”, you agree to the storing of cookies and to analyze data with posthog and
+              google analytics on your device to enhance site navigation, analyze site usage, and assist in our UI/UX
+              efforts.
             </p>
             <Button className='ml-25px sm:ml-0px sm:mt-25px' onClick={cookie} id='close-toast'>
               OK

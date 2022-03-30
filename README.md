@@ -4,7 +4,7 @@
 [![Cypress Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml)
 ![check-code-coverage](https://img.shields.io/badge/code--coverage-84.14%25-green)
 
-[![omenCSS logo](./public/omencss.svg)](https://www.omencss.com)
+[![omenCSS logo](./public/images/brand/omencss_logo_dark.svg)](https://www.omencss.com)
 
 ## Getting Started
 
@@ -62,6 +62,7 @@ SENDGRID_API_KEY=YOUR-SENDGRID-API-KEY
 SENDGRID_MAILING_ID=YOUR-SENDGRID-CONTACT-LIST-ID
 SENDGRID_EMAIL=YOUR-SENDGRID-EMAIL
 NEXT_PUBLIC_POSTHOG_KEY=YOUR-POSTHOG-API-KEY
+NEXT_PUBLIC_GOOGLE_ANALYTICS=YOUR-GOOGLE-ANALYTICS-KEY
 ```
 
 - [sendgrid](https://signup.sendgrid.com/)
@@ -201,3 +202,4 @@ sass/
 - [ToC](https://github.com/K-Sato1995/react-toc)
 - [Newsletter](https://dev.to/michael_webdev/create-a-mailing-list-with-sendgrid-and-next-js-41f7)
 - [Captcha](https://github.com/nabidam/react-captcha)
+- [Google Analytics](https://medium.com/@mikegajdos81/how-to-add-googleanalytics-4-to-nextjs-app-in-4-simple-steps-3c6f9de2f866)
