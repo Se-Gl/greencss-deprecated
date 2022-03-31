@@ -111,7 +111,7 @@ omenCSS media queries can also be combined with active, focus and hover states. 
 
 1. The structure for col-span is as follows: `{conditional state}:{media query}:col-span-{numbers}` p.e. `active:md:col-span-1`
 2. The structure for col-start is as follows: `{conditional state}:{media query}:col-start-{numbers}` p.e. `active:md:col-start-1`
-3. The structure for col-end is as follows: `{conditional state}:{media query}:col-end-{numbers}` p.e. `active:md:col-start-1`
+3. The structure for col-end is as follows: `{conditional state}:{media query}:col-end-{numbers}` p.e. `active:md:col-end-1`
 
 ```html
 <div class="grid cols-3 sm:col-span-1 gap-30px">
