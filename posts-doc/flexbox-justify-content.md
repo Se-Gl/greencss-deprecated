@@ -17,7 +17,7 @@ plainText: ' omencss css class example - justify-start justify-start justify-con
 | justify-end     | .justify-end { justify-content: flex-end; }          |
 | justify-center  | .justify-center { justify-content: flex-center; }    |
 | justify-between | .justify-between { justify-content: space-between; } |
-| justify-around  | .justify-start { justify-content: space-around; }    |
+| justify-around  | .justify-around { justify-content: space-around; }   |
 | justify-evenly  | .justify-evenly { justify-content: space-evenly; }   |
 
 ## How to work with justify

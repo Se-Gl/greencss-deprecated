@@ -23,7 +23,7 @@ export default function SideBar({ categories, posts, hasSubcategory = false, sho
           {hasSubcategory === true &&
             posts.sort().map((subcategory, index) =>
               category === subcategory.frontmatter.category ? (
-                <li key={subcategory.slug}>
+                <li key={subcategory.slug} className='py-5px'>
                   <Link href={`/docs/${subcategory.slug}`} passRef>
                     <a className={`font-normal mb-0px text-15px no-decoration`}>
                       {subcategory.frontmatter.title.slice(0, 20)}
