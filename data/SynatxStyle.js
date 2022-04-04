@@ -40,10 +40,10 @@ export const VsStyle = {
     margin: '.5em 0',
     overflow: 'auto',
     borderRadius: '0.3em',
-    background: '#03000a'
+    background: '#343434'
   },
   ':not(pre) > code[class*="language-"]': {
-    background: '#03000a',
+    background: '#343434',
     padding: '.1em',
     borderRadius: '.3em'
   },
@@ -60,7 +60,7 @@ export const VsStyle = {
     color: '#3f7d1a'
   },
   punctuation: {
-    color: '#147df5'
+    color: '#898989'
   },
   '.namespace': {
     Opacity: '.7'
@@ -72,7 +72,7 @@ export const VsStyle = {
     color: '#0870c7'
   },
   tag: {
-    color: '#d03377'
+    color: '#fc7c7c'
   },
   'class-name': {
     color: '#deff0a',
@@ -85,7 +85,7 @@ export const VsStyle = {
     color: '#a1ff0a'
   },
   symbol: {
-    color: '#d03377'
+    color: '#fc7c7c'
   },
   deleted: {
     color: '#e98f1f'
