@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Justify Content'
 date: 'Apr 04. 2022'
-excerpt: 'Utility classes for controlling an element`s justify content.'
+excerpt: 'Utility classes to control the alignment of grid and flex elements along the horizontal axis.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Flex & Grid'
 author: 'Severin Glaser'

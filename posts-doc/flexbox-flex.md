@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Flex'
 date: 'Mar 28. 2022'
-excerpt: 'Utility classes for controlling an element`s flex none.'
+excerpt: 'Utility classes for controlling an element`s flex properties.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Flex & Grid'
 author: 'Severin Glaser'
