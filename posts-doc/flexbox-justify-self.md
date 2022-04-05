@@ -104,7 +104,7 @@ In the example below, we use `justify-self-stretch` to only stretch a single ele
 omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:justify-self-center` to only apply the justify-self-center utility class on hover.
 
 ```html
-<div class="grid justify-self-start hover:justify-self-center">...</div>
+<div class="justify-self-start hover:justify-self-center">...</div>
 ```
 
 ## Responsive Breakpoints

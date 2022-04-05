@@ -22,7 +22,7 @@ plainText: ' omencss css class example - place-items-center place-items-center p
 
 Use the `place-items-{keyword}` utilities to set the position of flex and grid elements on the vertical axis.
 
-### Items-start
+### Place items start
 
 In the example below, we use `place-items-start` to position the elements at the beginning of the parents horizontal and vertical axis.
 
@@ -36,7 +36,7 @@ In the example below, we use `place-items-start` to position the elements at the
 </div>
 ```
 
-### Items-center
+### place items center
 
 In the example below, we use `place-items-center` to position the elements in the middle of the parents horizontal and vertical axis.
 
@@ -50,7 +50,7 @@ In the example below, we use `place-items-center` to position the elements in th
 </div>
 ```
 
-### Items-end
+### Place items end
 
 In the example below, we use `place-items-end` to position the elements at the end of the parents horizontal and vertical axis.
 
@@ -64,7 +64,7 @@ In the example below, we use `place-items-end` to position the elements at the e
 </div>
 ```
 
-### Items-stretch
+### Place items stretch
 
 In the example below, we use `place-items-stretch` to stretch the elements in order to cover the horizontal and vertical axis.
 
