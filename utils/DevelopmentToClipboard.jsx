@@ -6,7 +6,7 @@ export default function DevelopmentToClipboard({ content }) {
   })
     .replace(/\\n/g, ' ')
     .replace(/\\"/g, '')
-    .replace(/\`/g, '')
+    // .replace(/\`/g, '')
     .replace(/\|/g, ' ')
     .replace(/\\r/g, ' ')
     .replace(/\_/g, ' ')
@@ -27,6 +27,11 @@ export default function DevelopmentToClipboard({ content }) {
     .replace(/\*/g, ' ')
     .replace(/\--/g, ' ')
     .replace(/\s\s+/g, ' ')
+    // exclude code snippets from search results
+    .replace(new RegExp('(```html)([^]*?)(```)', 'gm'), '')
+    .replace(new RegExp('(```css)([^]*?)(```)', 'gm'), '')
+
+  // \r\n
   return (
     <>
       {process.env.NODE_ENV == 'development' && (
