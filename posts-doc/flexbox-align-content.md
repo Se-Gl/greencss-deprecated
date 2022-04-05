@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Align Content'
 date: 'Apr 05. 2022'
-excerpt: 'Utility classes to control the rows of grid and flex environements.'
+excerpt: 'Utility classes to control the item alignment along the vertical axis.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Flex & Grid'
 author: 'Severin Glaser'

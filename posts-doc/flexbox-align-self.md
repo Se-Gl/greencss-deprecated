@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Align Self'
 date: 'Apr 05. 2022'
-excerpt: 'Utility classes to control the rows of grid and flex environements.'
+excerpt: 'Utility classes to control the individual position for an element within grid and flex environements.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Flex & Grid'
 author: 'Severin Glaser'
