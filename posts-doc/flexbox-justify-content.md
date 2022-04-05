@@ -24,7 +24,7 @@ plainText: ' omencss css class example - justify-start justify-start justify-con
 
 Use the `justify-{keyword}` utilities to set where elements are positioned.
 
-### Justify-start
+### Justify start
 
 In the example below, we use `justify-start` to position the elements at the beginning of the main horizontal axis.
 
@@ -38,7 +38,7 @@ In the example below, we use `justify-start` to position the elements at the beg
 </div>
 ```
 
-### Justify-center
+### Justify center
 
 In the example below, we use `justify-center` to position the elements in the middle of the horizontal axis.
 
@@ -52,7 +52,7 @@ In the example below, we use `justify-center` to position the elements in the mi
 </div>
 ```
 
-### Justify-end
+### Justify end
 
 In the example below, we use `justify-end` to position the elements at the end of the horizontal axis.
 
@@ -66,7 +66,7 @@ In the example below, we use `justify-end` to position the elements at the end o
 </div>
 ```
 
-### Justify-between
+### Justify between
 
 In the example below, we use `justify-between` to position the elements along the horizontal axis with an even space between each element.
 
@@ -80,7 +80,7 @@ In the example below, we use `justify-between` to position the elements along th
 </div>
 ```
 
-### Justify-around
+### Justify around
 
 In the example below, we use `justify-around` to position the elements along the horizontal axis with an even space between each element and side.
 
@@ -94,7 +94,7 @@ In the example below, we use `justify-around` to position the elements along the
 </div>
 ```
 
-### Justify-evenly
+### Justify evenly
 
 In the example below, we use `justify-evenly` to position the elements along the horizontal axis with an equal space between each element and the corners.
 

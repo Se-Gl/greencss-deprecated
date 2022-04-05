@@ -25,7 +25,7 @@ plainText: ' omencss css class example - place-content-center place-content-cent
 
 Use the `place-content-{keyword}` utilities to set where rows are positioned.
 
-### Place-content-start
+### Place content start
 
 In the example below, we use `place-content-start` to position the elements at the beginning of the horizontal axis.
 
@@ -39,7 +39,7 @@ In the example below, we use `place-content-start` to position the elements at t
 </div>
 ```
 
-### Place-content-center
+### Place content center
 
 In the example below, we use `place-content-center` to position the elements in the middle of the vertical and horizontal axis.
 
@@ -53,7 +53,7 @@ In the example below, we use `place-content-center` to position the elements in 
 </div>
 ```
 
-### Place-content-end
+### Place content end
 
 In the example below, we use `place-content-end` to position the elements at the end of the horizontal axis.
 
@@ -67,7 +67,7 @@ In the example below, we use `place-content-end` to position the elements at the
 </div>
 ```
 
-### Place-content-between
+### Place content between
 
 In the example below, we use `place-content-between` to position the elements at the corners.
 
@@ -81,7 +81,7 @@ In the example below, we use `place-content-between` to position the elements at
 </div>
 ```
 
-### Place-content-around
+### Place content around
 
 In the example below, we use `place-content-around` to position the elements with the same distance to each other.
 
@@ -95,7 +95,7 @@ In the example below, we use `place-content-around` to position the elements wit
 </div>
 ```
 
-### Place-content-evenly
+### Place content evenly
 
 In the example below, we use `place-content-evenly` to position the elements with an even amount of space on the horizontal axis.
 
@@ -109,7 +109,7 @@ In the example below, we use `place-content-evenly` to position the elements wit
 </div>
 ```
 
-### Place-content-stretch
+### Place content stretch
 
 In the example below, we use `place-content-stretch` to stretch the items within their grid system and along the horizontal axis.
 

@@ -23,7 +23,7 @@ plainText: ' omencss css class example items-center items-center align-items: ce
 
 Use the `items-{keyword}` utilities to set the position of flex and grid elements on the vertical axis.
 
-### Items-start
+### Items start
 
 In the example below, we use `items-start` to position the elements at the beginning of the parents vertical axis.
 
@@ -37,7 +37,7 @@ In the example below, we use `items-start` to position the elements at the begin
 </div>
 ```
 
-### Items-center
+### Items center
 
 In the example below, we use `items-center` to position the elements along the middle of the parents vertical axis.
 
@@ -51,7 +51,7 @@ In the example below, we use `items-center` to position the elements along the m
 </div>
 ```
 
-### Items-end
+### Items end
 
 In the example below, we use `items-end` to position the elements at the end of the parents vertical axis.
 
@@ -65,7 +65,7 @@ In the example below, we use `items-end` to position the elements at the end of 
 </div>
 ```
 
-### Items-baseline
+### Items baseline
 
 In the example below, we use `items-baseline` to position the elements along the baseline of the vertical axis.
 
@@ -79,7 +79,7 @@ In the example below, we use `items-baseline` to position the elements along the
 </div>
 ```
 
-### Items-stretch
+### Items stretch
 
 In the example below, we use `items-stretch` to stretch the elements in order to cover the vertical axis.
 

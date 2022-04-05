@@ -24,7 +24,7 @@ plainText: ' omencss css class example - self-auto self-auto align-self: auto; s
 
 Use the `self-{keyword}` utilities to set the individual position of flex and grid elements on its unique vertical axis.
 
-### Self-auto
+### Self auto
 
 In the example below, we use `self-auto` to position the elements at the beginning of the vertical axis in relation to its parents.
 
@@ -38,7 +38,7 @@ In the example below, we use `self-auto` to position the elements at the beginni
 </div>
 ```
 
-### Self-start
+### Self start
 
 In the example below, we use `self-start` to position the elements at the beginning of the vertical axis in relation to its parents.
 
@@ -52,7 +52,7 @@ In the example below, we use `self-start` to position the elements at the beginn
 </div>
 ```
 
-### Self-center
+### Self center
 
 In the example below, we use `self-center` to position the elements along the middle of the vertical axis in relation to its parents.
 
@@ -66,7 +66,7 @@ In the example below, we use `self-center` to position the elements along the mi
 </div>
 ```
 
-### Self-end
+### Self end
 
 In the example below, we use `self-end` to position the elements at the end of the vertical axis in relation to its parents.
 
@@ -80,7 +80,7 @@ In the example below, we use `self-end` to position the elements at the end of t
 </div>
 ```
 
-### Self-baseline
+### Self baseline
 
 In the example below, we use `self-baseline` to position the elements along the baseline of the vertical axis in relation to its parents.
 
@@ -94,7 +94,7 @@ In the example below, we use `self-baseline` to position the elements along the 
 </div>
 ```
 
-### Self-stretch
+### Self stretch
 
 In the example below, we use `self-stretch` to stretch the elements in order to cover the vertical axis in relation to its parents.
 

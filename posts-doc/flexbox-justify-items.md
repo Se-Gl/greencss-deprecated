@@ -22,7 +22,7 @@ plainText: ' omencss css class example - justify-items-center justify-items-cent
 
 Use the `justify-items-{keyword}` utilities to set where elements are positioned. In contrast to [justify self](/docs/flexbox-justify-self), all elements are targeted in this case.
 
-### Justify-items-start
+### Justify items start
 
 In the example below, we use `justify-items-center` to position the elements at the beginning of the main horizontal axis and within their parents container.
 
@@ -36,7 +36,7 @@ In the example below, we use `justify-items-center` to position the elements at 
 </div>
 ```
 
-### Justify-items-end
+### Justify items end
 
 In the example below, we use `justify-items-end` to position the elements at the end of the main horizontal axis and within their parents container.
 
@@ -50,7 +50,7 @@ In the example below, we use `justify-items-end` to position the elements at the
 </div>
 ```
 
-### Justify-items-center
+### Justify items center
 
 In the example below, we use `justify-items-center` to position the elements at the center of the main horizontal axis and within their parents container.
 
@@ -64,7 +64,7 @@ In the example below, we use `justify-items-center` to position the elements at 
 </div>
 ```
 
-### Justify-items-stretch
+### Justify items stretch
 
 In the example below, we use `justify-items-stretch` to stretch the elements within their parents container.
 

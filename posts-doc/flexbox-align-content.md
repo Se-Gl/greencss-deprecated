@@ -38,7 +38,7 @@ In the example below, we use `content-start` to position the elements at the beg
 </div>
 ```
 
-### Content-center
+### Content center
 
 In the example below, we use `content-center` to position the elements in the middle of the vertical axis.
 
@@ -52,7 +52,7 @@ In the example below, we use `content-center` to position the elements in the mi
 </div>
 ```
 
-### Content-end
+### Content end
 
 In the example below, we use `content-end` to position the elements at the end of the vertical axis.
 
@@ -66,7 +66,7 @@ In the example below, we use `content-end` to position the elements at the end o
 </div>
 ```
 
-### Content-between
+### Content between
 
 In the example below, we use `content-between` to position the elements along the vertical axis with an even space between each element.
 
@@ -80,7 +80,7 @@ In the example below, we use `content-between` to position the elements along th
 </div>
 ```
 
-### Content-around
+### Content around
 
 In the example below, we use `content-around` to position the elements along the horizontal axis with an even space between each element and side.
 
@@ -94,7 +94,7 @@ In the example below, we use `content-around` to position the elements along the
 </div>
 ```
 
-### Content-evenly
+### Content evenly
 
 In the example below, we use `content-evenly` to position the elements along the vertical axis with an equal space between each element and the corners.
 

@@ -23,7 +23,7 @@ plainText: ' omencss css class example justify-self-auto justify-self-auto justi
 
 Use the `justify-self-{keyword}` utilities to set where elements are positioned. In contrast to [justify items](/docs/flexbox-justify-items), a unique element is targeted in this case.
 
-### Justify-self-auto
+### Justify self auto
 
 In the example below, we use `justify-self-auto` to position the elements based on the parents utility class. In this case `justify-self-stretch` will be applied.
 
@@ -37,7 +37,7 @@ In the example below, we use `justify-self-auto` to position the elements based 
 </div>
 ```
 
-### Justify-self-start
+### Justify self start
 
 In the example below, we use `justify-self-start` to position the elements at the beginning of its main horizontal axis.
 
@@ -51,7 +51,7 @@ In the example below, we use `justify-self-start` to position the elements at th
 </div>
 ```
 
-### Justify-self-center
+### Justify self center
 
 In the example below, we use `justify-self-center` to position the elements at the center of its main horizontal axis.
 
