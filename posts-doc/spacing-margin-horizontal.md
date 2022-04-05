@@ -68,3 +68,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:mx-, focus:sm:mx-, hover:sm:mx- | active small screens margin inline, focus small screens margin inline, hover small screens margin inline,    |
 | active:md:mx-, focus:md:mx-, hover:md:mx- | active medium screens margin inline, focus medium screens margin inline, hover medium screens margin inline, |
 | active:lg:mx-, focus:lg:mx-, hover:lg:mx- | active large screens margin inline, focus large screens margin inline, hover large screens margin inline,    |
+
+## Sources
+
+- [margin-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline)

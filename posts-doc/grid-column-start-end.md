@@ -129,3 +129,8 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:col-span-1, focus:sm:col-span-1, hover:sm:col-span-1 | active small screens grid column span, focus small screens grid column span, hover small screens grid column span    |
 | active:md:col-span-1, focus:md:col-span-1, hover:md:col-span-1 | active medium screens grid column span, focus medium screens grid column span, hover medium screens grid column span |
 | active:lg:col-span-1, focus:lg:col-span-1, hover:lg:col-span-1 | active large screens grid column span, focus large screens grid column span, hover large screens grid column span    |
+
+## Sources
+
+- [grid-column-start](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start)
+- [grid-column-end](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end)

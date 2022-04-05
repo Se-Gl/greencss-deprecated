@@ -76,3 +76,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:auto-rows-auto, focus:sm:auto-rows-auto, hover:sm:auto-rows-auto | active small screens grid auto rows, focus small screens grid auto rows, hover small screens grid auto rows    |
 | active:md:auto-rows-auto, focus:md:auto-rows-auto, hover:md:auto-rows-auto | active medium screens grid auto rows, focus medium screens grid auto rows, hover medium screens grid auto rows |
 | active:lg:auto-rows-auto, focus:lg:auto-rows-auto, hover:lg:auto-rows-auto | active large screens grid auto rows, focus large screens grid auto rows, hover large screens grid auto rows    |
+
+## Sources
+
+- [grid-auto-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows)

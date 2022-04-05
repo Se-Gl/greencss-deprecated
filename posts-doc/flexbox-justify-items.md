@@ -116,3 +116,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:justify-items-{keyword} , focus:sm:justify-items-{keyword} , hover:sm:justify-items-{keyword} | active small screens justify items center, focus small screens justify items center, hover small screens justify items center,    |
 | active:md:justify-items-{keyword} , focus:md:justify-items-{keyword} , hover:md:justify-items-{keyword} | active medium screens justify items center, focus medium screens justify items center, hover medium screens justify items center, |
 | active:lg:justify-items-{keyword} , focus:lg:justify-items-{keyword} , hover:lg:justify-items-{keyword} | active large screens justify items center, focus large screens justify items center, hover large screens justify items center,    |
+
+## Sources
+
+- [justify-items](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)

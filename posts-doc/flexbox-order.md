@@ -89,3 +89,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:order-first, focus:sm:order-first, hover:sm:order-first | active small screens order, focus small screens order, hover small screens order    |
 | active:md:order-first, focus:md:order-first, hover:md:order-first | active medium screens order, focus medium screens order, hover medium screens order |
 | active:lg:order-first, focus:lg:order-first, hover:lg:order-first | active large screens order, focus large screens order, hover large screens order    |
+
+## Sources
+
+- [ordering-flex-items](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items)

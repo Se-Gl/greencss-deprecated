@@ -80,3 +80,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:gap-{size}px , focus:sm:gap-{size}px , hover:sm:gap-{size}px | active small screens gap, focus small screens gap, hover small screens gap,    |
 | active:md:gap-{size}px , focus:md:gap-{size}px , hover:md:gap-{size}px | active medium screens gap, focus medium screens gap, hover medium screens gap, |
 | active:lg:gap-{size}px , focus:lg:gap-{size}px , hover:lg:gap-{size}px | active large screens gap, focus large screens gap, hover large screens gap,    |
+
+## Sources
+
+- [gap](https://developer.mozilla.org/en-US/docs/Web/CSS/gap)

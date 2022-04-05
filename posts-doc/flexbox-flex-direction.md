@@ -120,3 +120,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:flex-row , focus:sm:flex-row , hover:sm:flex-row | active small screens flex direction, focus small screens flex direction, hover small screens flex direction    |
 | active:md:flex-row , focus:md:flex-row , hover:md:flex-row | active medium screens flex direction, focus medium screens flex direction, hover medium screens flex direction |
 | active:lg:flex-row , focus:lg:flex-row , hover:lg:flex-row | active large screens flex direction, focus large screens flex direction, hover large screens flex direction    |
+
+## Sources
+
+- [flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)

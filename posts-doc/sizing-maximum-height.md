@@ -98,3 +98,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:max-h-{size} , focus:sm:max-h-{size} , hover:sm:max-h-{size} | active small screens maximum height, focus small screens maximum height, hover small screens maximum height,    |
 | active:md:max-h-{size} , focus:md:max-h-{size} , hover:md:max-h-{size} | active medium screens maximum height, focus medium screens maximum height, hover medium screens maximum height, |
 | active:lg:max-h-{size} , focus:lg:max-h-{size} , hover:lg:max-h-{size} | active large screens maximum height, focus large screens maximum height, hover large screens maximum height,    |
+
+## Sources
+
+- [max-height](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)

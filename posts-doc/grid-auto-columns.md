@@ -76,3 +76,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:auto-cols-auto, focus:sm:auto-cols-auto, hover:sm:auto-cols-auto | active small screens grid auto columns, focus small screens grid auto columns, hover small screens grid auto columns    |
 | active:md:auto-cols-auto, focus:md:auto-cols-auto, hover:md:auto-cols-auto | active medium screens grid auto columns, focus medium screens grid auto columns, hover medium screens grid auto columns |
 | active:lg:auto-cols-auto, focus:lg:auto-cols-auto, hover:lg:auto-cols-auto | active large screens grid auto columns, focus large screens grid auto columns, hover large screens grid auto columns    |
+
+## Sources
+
+- [grid-auto-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns)

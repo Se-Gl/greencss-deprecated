@@ -107,3 +107,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:grid-col-1, focus:sm:grid-col-1, hover:sm:grid-col-1 | active small screens grid template columns, focus small screens grid template columns, hover small screens grid template columns    |
 | active:md:grid-col-1, focus:md:grid-col-1, hover:md:grid-col-1 | active medium screens grid template columns, focus medium screens grid template columns, hover medium screens grid template columns |
 | active:lg:grid-col-1, focus:lg:grid-col-1, hover:lg:grid-col-1 | active large screens grid template columns, focus large screens grid template columns, hover large screens grid template columns    |
+
+## Sources
+
+- [grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns)

@@ -131,3 +131,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:justify-self-{keyword} , focus:sm:justify-self-{keyword} , hover:sm:justify-self-{keyword} | active small screens justify self center, focus small screens justify self center, hover small screens justify self center,    |
 | active:md:justify-self-{keyword} , focus:md:justify-self-{keyword} , hover:md:justify-self-{keyword} | active medium screens justify self center, focus medium screens justify self center, hover medium screens justify self center, |
 | active:lg:justify-self-{keyword} , focus:lg:justify-self-{keyword} , hover:lg:justify-self-{keyword} | active large screens justify self center, focus large screens justify self center, hover large screens justify self center,    |
+
+## Sources
+
+- [justify-self](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self)

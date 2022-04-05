@@ -79,3 +79,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:grid-flow-row, focus:sm:grid-flow-row, hover:sm:grid-flow-row | active small screens grid auto flow, focus small screens grid auto flow, hover small screens grid auto flow    |
 | active:md:grid-flow-row, focus:md:grid-flow-row, hover:md:grid-flow-row | active medium screens grid auto flow, focus medium screens grid auto flow, hover medium screens grid auto flow |
 | active:lg:grid-flow-row, focus:lg:grid-flow-row, hover:lg:grid-flow-row | active large screens grid auto flow, focus large screens grid auto flow, hover large screens grid auto flow    |
+
+## Sources
+
+- [grid-auto-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow)

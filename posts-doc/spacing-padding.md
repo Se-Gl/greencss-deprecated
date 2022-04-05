@@ -68,3 +68,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:p-{size} , focus:sm:p-{size} , hover:sm:p-{size} | active small screens padding, focus small screens padding, hover small screens padding,    |
 | active:md:p-{size} , focus:md:p-{size} , hover:md:p-{size} | active medium screens padding, focus medium screens padding, hover medium screens padding, |
 | active:lg:p-{size} , focus:lg:p-{size} , hover:lg:p-{size} | active large screens padding, focus large screens padding, hover large screens padding,    |
+
+## Sources
+
+- [padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)

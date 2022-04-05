@@ -129,3 +129,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:flex-wrap , focus:sm:flex-wrap , hover:sm:flex-wrap | active small screens flex wrap, focus small screens flex wrap, hover small screens flex wrap    |
 | active:md:flex-wrap , focus:md:flex-wrap , hover:md:flex-wrap | active medium screens flex wrap, focus medium screens flex wrap, hover medium screens flex wrap |
 | active:lg:flex-wrap , focus:lg:flex-wrap , hover:lg:flex-wrap | active large screens flex wrap, focus large screens flex wrap, hover large screens flex wrap    |
+
+## Sources
+
+- [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)

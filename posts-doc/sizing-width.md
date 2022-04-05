@@ -98,3 +98,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:w-{size} , focus:sm:w-{size} , hover:sm:w-{size} | active small screens width, focus small screens width, hover small screens width,    |
 | active:md:w-{size} , focus:md:w-{size} , hover:md:w-{size} | active medium screens width, focus medium screens width, hover medium screens width, |
 | active:lg:w-{size} , focus:lg:w-{size} , hover:lg:w-{size} | active large screens width, focus large screens width, hover large screens width,    |
+
+## Sources
+
+- [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width)

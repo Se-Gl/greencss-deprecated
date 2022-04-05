@@ -89,3 +89,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:grow, focus:sm:grow, hover:sm:grow | active small screens grow, focus small screens grow, hover small screens grow    |
 | active:md:grow, focus:md:grow, hover:md:grow | active medium screens grow, focus medium screens grow, hover medium screens grow |
 | active:lg:grow, focus:lg:grow, hover:lg:grow | active large screens grow, focus large screens grow, hover large screens grow    |
+
+## Sources
+
+- [flex-grow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow)

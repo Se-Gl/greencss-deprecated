@@ -131,3 +131,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:flex-none , focus:sm:flex-none , hover:sm:flex-none | active small screens flex none, focus small screens flex none, hover small screens flex none    |
 | active:md:flex-none , focus:md:flex-none , hover:md:flex-none | active medium screens flex none, focus medium screens flex none, hover medium screens flex none |
 | active:lg:flex-none , focus:lg:flex-none , hover:lg:flex-none | active large screens flex none, focus large screens flex none, hover large screens flex none    |
+
+## Sources
+
+- [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)

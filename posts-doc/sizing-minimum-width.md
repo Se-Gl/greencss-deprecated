@@ -98,3 +98,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:min-w-{size} , focus:sm:min-w-{size} , hover:sm:min-w-{size} | active small screens minimum width, focus small screens minimum width, hover small screens minimum width,    |
 | active:md:min-w-{size} , focus:md:min-w-{size} , hover:md:min-w-{size} | active medium screens minimum width, focus medium screens minimum width, hover medium screens minimum width, |
 | active:lg:min-w-{size} , focus:lg:min-w-{size} , hover:lg:min-w-{size} | active large screens minimum width, focus large screens minimum width, hover large screens minimum width,    |
+
+## Sources
+
+- [min-width](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)

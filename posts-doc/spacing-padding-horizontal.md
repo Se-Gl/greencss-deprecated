@@ -68,3 +68,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:px-, focus:sm:px-, hover:sm:px- | active small screens padding inline, focus small screens padding inline, hover small screens padding inline,    |
 | active:md:px-, focus:md:px-, hover:md:px- | active medium screens padding inline, focus medium screens padding inline, hover medium screens padding inline, |
 | active:lg:px-, focus:lg:px-, hover:lg:px- | active large screens padding inline, focus large screens padding inline, hover large screens padding inline,    |
+
+## Sources
+
+- [padding-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline)

@@ -89,3 +89,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:shrink, focus:sm:shrink, hover:sm:shrink | active small screens shrink, focus small screens shrink, hover small screens shrink    |
 | active:md:shrink, focus:md:shrink, hover:md:shrink | active medium screens shrink, focus medium screens shrink, hover medium screens shrink |
 | active:lg:shrink, focus:lg:shrink, hover:lg:shrink | active large screens shrink, focus large screens shrink, hover large screens shrink    |
+
+## Sources
+
+- [flex-shrink](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink)

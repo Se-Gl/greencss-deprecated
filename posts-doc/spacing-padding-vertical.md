@@ -70,3 +70,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:py-, focus:sm:py-, hover:sm:py- | active small screens padding block, focus small screens padding block, hover small screens padding block,    |
 | active:md:py-, focus:md:py-, hover:md:py- | active medium screens padding block, focus medium screens padding block, hover medium screens padding block, |
 | active:lg:py-, focus:lg:py-, hover:lg:py- | active large screens padding block, focus large screens padding block, hover large screens padding block,    |
+
+## Sources
+
+- [padding-block](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block)

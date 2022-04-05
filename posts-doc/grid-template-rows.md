@@ -109,3 +109,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:grid-rows-1, focus:sm:grid-rows-1, hover:sm:grid-rows-1 | active small screens grid template rows, focus small screens grid template rows, hover small screens grid template rows    |
 | active:md:grid-rows-1, focus:md:grid-rows-1, hover:md:grid-rows-1 | active medium screens grid template rows, focus medium screens grid template rows, hover medium screens grid template rows |
 | active:lg:grid-rows-1, focus:lg:grid-rows-1, hover:lg:grid-rows-1 | active large screens grid template rows, focus large screens grid template rows, hover large screens grid template rows    |
+
+## Sources
+
+- [grid-template-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows)

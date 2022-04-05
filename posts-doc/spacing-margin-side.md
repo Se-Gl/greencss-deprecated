@@ -73,3 +73,10 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:mt-, active:mr-, active:mb-, active:ml- | active margin top, active margin right, active margin bottom, active margin left |
 | focus:mt-, focus:mr-, focus:mb-, focus:ml-     | focus margin top, focus margin right, focus margin bottom, focus margin left     |
 | hover:mt-, hover:mr-, hover:mb-, hover:ml-     | hover margin top, hover margin right, hover margin bottom, hover margin left     |
+
+## Sources
+
+- [margin-top](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top)
+- [margin-right](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right)
+- [margin-bottom](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom)
+- [margin-left](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left)

@@ -73,3 +73,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:basis-{size}per , focus:sm:basis-{size}per , hover:sm:basis-{size}per | active small screens basis, focus small screens basis, hover small screens basis,    |
 | active:md:basis-{size}per , focus:md:basis-{size}per , hover:md:basis-{size}per | active medium screens basis, focus medium screens basis, hover medium screens basis, |
 | active:lg:basis-{size}per , focus:lg:basis-{size}per , hover:lg:basis-{size}per | active large screens basis, focus large screens basis, hover large screens basis,    |
+
+## Sources
+
+- [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)

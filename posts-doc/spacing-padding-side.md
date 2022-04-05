@@ -73,3 +73,10 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:pt-, active:pr-, active:pb-, active:pl- | active padding top, active padding right, active padding bottom, active padding left |
 | focus:pt-, focus:pr-, focus:pb-, focus:pl-     | focus padding top, focus padding right, focus padding bottom, focus padding left     |
 | hover:pt-, hover:pr-, hover:pb-, hover:pl-     | hover padding top, hover padding right, hover padding bottom, hover padding left     |
+
+## Sources
+
+- [padding-top](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top)
+- [padding-right](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right)
+- [padding-bottom](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom)
+- [padding-left](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left)

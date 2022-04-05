@@ -146,3 +146,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:content-{keyword} , focus:sm:content-{keyword} , hover:sm:content-{keyword} | active small screens align content center, focus small screens align content center, hover small screens align content center,    |
 | active:md:content-{keyword} , focus:md:content-{keyword} , hover:md:content-{keyword} | active medium screens align content center, focus medium screens align content center, hover medium screens align content center, |
 | active:lg:content-{keyword} , focus:lg:content-{keyword} , hover:lg:content-{keyword} | active large screens align content center, focus large screens align content center, hover large screens align content center,    |
+
+## Sources
+
+- [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)

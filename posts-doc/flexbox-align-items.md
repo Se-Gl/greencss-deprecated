@@ -131,3 +131,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:items-{keyword} , focus:sm:items-{keyword} , hover:sm:items-{keyword} | active small screens align items center, focus small screens align items center, hover small screens align items center,    |
 | active:md:items-{keyword} , focus:md:items-{keyword} , hover:md:items-{keyword} | active medium screens align items center, focus medium screens align items center, hover medium screens align items center, |
 | active:lg:items-{keyword} , focus:lg:items-{keyword} , hover:lg:items-{keyword} | active large screens align items center, focus large screens align items center, hover large screens align items center,    |
+
+## Sources
+
+- [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)

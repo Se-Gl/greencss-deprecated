@@ -98,3 +98,7 @@ When you vocalize the class names, it helps you to learn and remember the classe
 | active:sm:min-h-{size} , focus:sm:min-h-{size} , hover:sm:min-h-{size} | active small screens minimum height, focus small screens minimum height, hover small screens minimum height,    |
 | active:md:min-h-{size} , focus:md:min-h-{size} , hover:md:min-h-{size} | active medium screens minimum height, focus medium screens minimum height, hover medium screens minimum height, |
 | active:lg:min-h-{size} , focus:lg:min-h-{size} , hover:lg:min-h-{size} | active large screens minimum height, focus large screens minimum height, hover large screens minimum height,    |
+
+## Sources
+
+- [min-height](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height)
