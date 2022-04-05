@@ -26,6 +26,8 @@ export default function DevelopmentToClipboard({ content }) {
     .replace(/\//g, ' ')
     .replace(/\*/g, ' ')
     .replace(/\--/g, ' ')
+    .replace(/\- /g, ' ')
+    .replace(/\  /g, ' ')
     .replace(/\s\s+/g, ' ')
     // exclude code snippets from search results
     .replace(new RegExp('(```html)([^]*?)(```)', 'gm'), '')
