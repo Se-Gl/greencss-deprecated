@@ -181,7 +181,7 @@ An img element is inserted inside the [Right Hero Section](#right-hero-part).
 
 1. Create a new function in your components folder and `import Image from 'next/image'`. The structure is the same as in the HTML example. Only the style tags change and instead of a background image or the image tag the image component of NextJS will be used.
 
-```jsx
+```html
 import Image from 'next/image'
 
 export default function HeroComponent() {
