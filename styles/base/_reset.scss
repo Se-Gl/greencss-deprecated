@@ -83,3 +83,8 @@ input:focus,
 :focus {
   outline: none;
 }
+
+button {
+  all: unset;
+  cursor: pointer;
+}

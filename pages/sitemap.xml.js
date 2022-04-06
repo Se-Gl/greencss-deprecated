@@ -21,7 +21,8 @@ export const getServerSideProps = ({ res }) => {
     'docs/animation/example',
     'privacy/cookies',
     'privacy/privacy-policy',
-    'privacy/legal'
+    'privacy/legal',
+    '/examples/hero'
   ]
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
