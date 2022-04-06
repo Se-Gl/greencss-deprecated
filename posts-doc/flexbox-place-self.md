@@ -104,7 +104,7 @@ In the example below, we use `place-self-stretch` to stretch the elements in ord
 omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:place-self-start` to only apply the place-self-start utility class on hover.
 
 ```html
-<div class="place-self-stretch hover:place-self-start">...</div>
+<div class="place-self-stretch hover:place-self-start">{children}</div>
 ```
 
 ## Responsive Breakpoints

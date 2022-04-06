@@ -45,7 +45,7 @@ With omenCSS you can conditionally apply utility classes in different states by 
 | hover:auto-rows-auto  | .hover\:auto-rows-auto:hover { grid-auto-rows: auto; }  |
 
 ```html
-<div class="grid grid-flow-row auto-rows-max hover:auto-rows-min ...">...</div>
+<div class="grid grid-flow-row auto-rows-max hover:auto-rows-min ...">{children}</div>
 ```
 
 ## Responsive Breakpoints
@@ -63,7 +63,7 @@ omenCSS media queries can also be combined with active, focus and hover states. 
 1. The structure for row-span is as follows: `{conditional state}:{media query}:auto-rows-{keyword}` p.e. `active:md:auto-rows-auto`
 
 ```html
-<div class="grid auto-rows-col sm:auto-rows-auto">...</div>
+<div class="grid auto-rows-col sm:auto-rows-auto">{children}</div>
 ```
 
 ## Executive Summary

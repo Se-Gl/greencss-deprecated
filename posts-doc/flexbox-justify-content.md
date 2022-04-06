@@ -119,7 +119,7 @@ In the example below, we use `justify-evenly` to position the elements along the
 omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:justify-start` to only apply the justify-start utility class on hover.
 
 ```html
-<div class="flex justify-between hover:justify-center">...</div>
+<div class="flex justify-between hover:justify-center">{children}</div>
 ```
 
 ## Responsive Breakpoints

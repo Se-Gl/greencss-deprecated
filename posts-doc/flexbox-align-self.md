@@ -119,7 +119,7 @@ In the example below, we use `self-stretch` to stretch the elements in order to 
 omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:self-start` to only apply the self-start utility class on hover.
 
 ```html
-<div class="self-stretch hover:self-start">...</div>
+<div class="self-stretch hover:self-start">{children}</div>
 ```
 
 ## Responsive Breakpoints

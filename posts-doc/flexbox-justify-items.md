@@ -89,7 +89,7 @@ In the example below, we use `justify-items-stretch` to stretch the elements wit
 omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:justify-items-center` to only apply the justify-items-center utility class on hover.
 
 ```html
-<div class="flex justify-items-stretch hover:justify-items-center">...</div>
+<div class="flex justify-items-stretch hover:justify-items-center">{children}</div>
 ```
 
 ## Responsive Breakpoints

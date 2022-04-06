@@ -56,7 +56,7 @@ In the example below, we use `aspect-video` to set an 16:9 ratio for your iframe
 omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:aspect-auto` to only apply the aspect-auto utility class on hover.
 
 ```html
-<div class="aspect-square hover:aspect-auto">...</div>
+<div class="aspect-square hover:aspect-auto">{children}</div>
 ```
 
 ## Responsive Breakpoints

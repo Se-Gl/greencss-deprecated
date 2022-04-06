@@ -134,7 +134,7 @@ In the example below, we use `place-content-stretch` to stretch the items within
 omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:place-content-center` to only apply the place-content-center utility class on hover.
 
 ```html
-<div class="flex place-content-end hover:place-content-center">...</div>
+<div class="flex place-content-end hover:place-content-center">{children}</div>
 ```
 
 ## Responsive Breakpoints

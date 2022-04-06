@@ -89,7 +89,7 @@ In the example below, we use `place-items-stretch` to stretch the elements in or
 omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:place-items-start` to only apply the place-items-start utility class on hover.
 
 ```html
-<div class="flex place-items-stretch hover:place-items-start">...</div>
+<div class="flex place-items-stretch hover:place-items-start">{children}</div>
 ```
 
 ## Responsive Breakpoints

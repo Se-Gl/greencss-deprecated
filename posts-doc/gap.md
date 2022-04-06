@@ -53,7 +53,7 @@ omenCSS let you conditionally apply utility classes for different page states. T
 ![omencss flex-gap hover](/images/docs/flex/flex-gap-hover.webp?style=centerme)
 
 ```html
-<div class="grid gap-20px hover:gap-50px">...</div>
+<div class="grid gap-20px hover:gap-50px">{children}</div>
 ```
 
 ## Responsive Breakpoints

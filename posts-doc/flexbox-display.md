@@ -44,7 +44,7 @@ Use the utility classes above to access your desired class.
 Use `display-none` to hide an element in the DOM.
 
 ```html
-<div class="display-none">...</div>
+<div class="display-none">{children}</div>
 ```
 
 ### Block
@@ -52,7 +52,7 @@ Use `display-none` to hide an element in the DOM.
 Use `block` make an element in the DOM visible.
 
 ```html
-<div class="block">...</div>
+<div class="block">{children}</div>
 ```
 
 ### Flex
@@ -60,7 +60,7 @@ Use `block` make an element in the DOM visible.
 Use `flex` to define a flex container.
 
 ```html
-<div class="flex">...</div>
+<div class="flex">{children}</div>
 ```
 
 ### Grid
@@ -68,7 +68,7 @@ Use `flex` to define a flex container.
 Use `grid` to define a grid container.
 
 ```html
-<div class="grid">...</div>
+<div class="grid">{children}</div>
 ```
 
 ## Active, focus, and hover states
@@ -82,7 +82,7 @@ Use `grid` to define a grid container.
 omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:display-none` to only apply the display-none utility on hover.
 
 ```html
-<div class="block hover:display-none">...</div>
+<div class="block hover:display-none">{children}</div>
 ```
 
 ## Responsive Breakpoints
