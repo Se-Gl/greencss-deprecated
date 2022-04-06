@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Place Self'
 date: 'Apr 06. 2022'
-excerpt: 'Utility classes to control the alignment of items in relation to its horizontal and vertical axis.'
+excerpt: 'Utility classes to control the alignment of items in relation to its horizontal and vertical axis - in regard to its parent container.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Flex & Grid'
 author: 'Severin Glaser'

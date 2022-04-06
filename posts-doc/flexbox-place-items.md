@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Place Items'
 date: 'Apr 06. 2022'
-excerpt: 'Utility classes to control the alignment of items in relation to its horizontal and vertical axis.'
+excerpt: 'Utility classes to control the alignment and justification of an element simultaneously.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Flex & Grid'
 author: 'Severin Glaser'
