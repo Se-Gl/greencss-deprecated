@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react'
-import { Button } from '../reusable/Button'
 import Modal from './Modal'
 import SearchBar from './SearchBar'
 
-export default function ReusableModal({ LinkClass, isSidebar = false }) {
+export default function ReusableModal({ isSidebar, isHero }) {
   const [showModal, setShowModal] = useState(false)
   //   F3 key to open the modal
   useEffect(() => {
@@ -20,14 +19,13 @@ export default function ReusableModal({ LinkClass, isSidebar = false }) {
   }, [])
   return (
     <>
-      {isSidebar === true ? (
+      {isHero === true && (
+        <SearchBar setShowModal={() => setShowModal(true)} className='bg-black-5 sm:bg-transparent md:bg-transparent' />
+      )}
+      {isSidebar === true && (
         <>
-          <SearchBar setShowModal={() => setShowModal(true)} />
+          <SearchBar setShowModal={() => setShowModal(true)} className='mb-25px' />
         </>
-      ) : (
-        <Button className={`${LinkClass} text-15px font-800`} onClick={() => setShowModal(true)} id='modalbutton'>
-          Search | F3
-        </Button>
       )}
       <Modal onClose={() => setShowModal(false)} show={showModal}></Modal>
     </>

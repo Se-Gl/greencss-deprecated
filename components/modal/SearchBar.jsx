@@ -1,20 +1,20 @@
 import SearchIcon from '../icon/Search/SearchIcon'
 
-export default function SearchBar({ setShowModal }) {
+export default function SearchBar({ setShowModal, className }) {
   return (
     <div
-      className='flex w-100per mb-25px border-1px border-solid border-dark rounded-5px'
+      className={`flex w-100per min-h-40px border-1px border-solid border-dark rounded-10px ${className}`}
       onClick={setShowModal}
       style={{ cursor: 'pointer' }}>
-      <SearchIcon width='20px' height='20px' className='pl-5px mt-3px' />
+      <SearchIcon width='25px' height='25px' className='my-auto mx-10px' />
       <input
         type='search'
         name='modal-search'
         id='modal-search'
-        className='ml-10px w-100per flex bg-transparent justify-center w-100per text-black border-none text-10px'
+        className='flex bg-transparent justify-center w-100per text-black border-none text-10px'
         placeholder='Rapid Search'
       />
-      <p className='text-10px font-bold mb-0px p-5px' id='close-modal'>
+      <p className='text-10px font-bold my-auto mx-10px' id='close-modal'>
         F3
       </p>
     </div>

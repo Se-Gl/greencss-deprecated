@@ -3,7 +3,6 @@ import { LinkButton } from '@/components/reusable/Button'
 import Loader from '../logo/Loader'
 import { useEffect, useState } from 'react'
 import ReusableModal from '../modal/ReusableModal'
-import HeroSearch from '../modal/HeroSearch'
 
 const ThreeDObject = dynamic(() => import('./3D/Index'), {
   loading: () => (
@@ -36,7 +35,7 @@ export default function Hero() {
                 A classy way to write CSS design
               </h1>
               <div className='flex'>
-                <HeroSearch />
+                <ReusableModal isHero={true} />
                 <LinkButton className='ml-20px text-white sm:text-black md:text-black' href='docs'>
                   Docs
                 </LinkButton>

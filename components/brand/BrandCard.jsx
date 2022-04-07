@@ -12,7 +12,7 @@ export default function BrandCard({ title, link }) {
               className={`relative m-auto max-w-75per w-75per min-h-80per bg-black-10 text-black'}
   `}>
               <div className='p-20px'>
-                <h3 className='text-left'>{title}</h3>
+                <h3 className='text-left text-30px'>{title}</h3>
                 <LinkButton className='absolute bottom-10per' href={link} id={`brand-redirect-${title}`}>
                   Read more
                 </LinkButton>

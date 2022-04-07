@@ -30,7 +30,7 @@ export default function Newsletter() {
       <div className='relative flex min-h-75vh w-100per text-white bg-black rounded-20px'>
         <div className='m-auto max-w-50rem'>
           <h2 className='font-bold text-50px pb-50px mb-0px'>There’s more than being up-to-date</h2>
-          <p className='text-black-10'>
+          <p className='text-white'>
             Stay informed by getting help about the latest omenCSS updates. Find new CSS tutorials that will help you
             grow as a developer and scale your business.
           </p>
