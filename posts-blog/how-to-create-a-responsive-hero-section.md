@@ -1,6 +1,6 @@
 ---
 isBlog: true
-title: 'Create a responsive hero section for your website - in 5 minutes'
+title: 'Create a responsive hero section for your website'
 date: 'Apr 06. 2022'
 excerpt: 'Design and code a simple, modern and responsive 2 grid hero section for your landing page.'
 cover_image: '/images/blog/cover/stones-hero.webp'

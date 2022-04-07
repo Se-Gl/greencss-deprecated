@@ -32,14 +32,14 @@ export default function Presentation() {
             key={index}
             ref={ref}
             style={{ opacity: 0 }}
-            className={`sm:mt-25px min-h-50rem w-100per rounded-10px bg-cover bg-no-repeat bg-center border-1px border-solid border-dark ${
+            className={`sm:mt-25px w-100per rounded-10px bg-cover bg-no-repeat bg-center border-1px border-solid border-dark ${
               isVisible && `fade-in animate animation-forwards animation-delay-${(index + 1) * 2}00ms`
             }`}
             id={`${card.title.toLowerCase()}`}>
-            <div className='flex h-50rem min-h-50per'>
-              <div className='relative m-auto max-w-75per w-75per min-h-80per bg-black text-white'>
-                <h2 className='text-45px'>{card.title}</h2>
-                <p className='text-black-10'>{card.description}</p>
+            <div className='relative m-50px bg-black text-white p-20px'>
+              <div className='m-auto'>
+                <h2 className='text-35px sm:text-30px'>{card.title}</h2>
+                <p className='text-white text-15px mb-0px'>{card.description}</p>
               </div>
             </div>
           </div>
