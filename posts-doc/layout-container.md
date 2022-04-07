@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Container & Row'
 date: 'Apr 06. 2022'
-excerpt: 'Utility classes to control the aspect ratio of html elements.'
+excerpt: 'Container and Row classes to control html elements.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Layout'
 author: 'Severin Glaser'
