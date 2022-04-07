@@ -55,7 +55,9 @@ export default function BlogCard({ post, index }) {
                     </h3>
                     <LinkButton
                       id={`button-${post.slug}`}
-                      className={`absolute bottom-0per my-15px ${!isDark && 'text-black'} ${isDark && 'text-white'}`}
+                      className={`absolute bottom-0per my-15px transition-all transition-duration-500ms ${
+                        isDark && 'text-white hover:text-black-10 active:hover:text-black-7'
+                      }`}
                       href={`/blog/${post.slug}`}>
                       Read more
                     </LinkButton>

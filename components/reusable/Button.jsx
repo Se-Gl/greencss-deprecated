@@ -19,7 +19,7 @@ export function LinkButton({ href = '/', className, type = 'button', onClick, id
         <button
           onClick={onClick}
           id={id}
-          className={`${className} flex my-auto text-center text-16px font-bold bg-transparent`}
+          className={`${className} flex my-auto text-center text-15px font-bold bg-transparent transition-duration-500ms hover:text-black-3 active:text-black-6 focus:text-black-6`}
           style={{ border: 'none', cursor: 'pointer' }}
           type={type}
           onMouseOver={handleMouseOver}
@@ -47,7 +47,7 @@ export function LinkButtonLeft({ href = '/', className, type = 'button', onClick
         <button
           onClick={onClick}
           id={id}
-          className={`${className} flex my-auto text-center text-16px font-bold bg-transparent`}
+          className={`${className} flex my-auto text-center text-15px font-bold bg-transparent transition-duration-500ms hover:text-black-3 active:text-black-6 focus:text-black-6`}
           style={{ border: 'none', cursor: 'pointer' }}
           type={type}
           onMouseOver={handleMouseOver}
@@ -74,7 +74,7 @@ export function Button({ className, type = 'button', onClick, id = 'button', chi
       <button
         onClick={onClick}
         id={id}
-        className={`${className} flex my-auto text-center text-16px font-bold bg-transparent`}
+        className={`${className} flex my-auto text-center text-15px font-bold bg-transparent transition-duration-500ms hover:text-black-3 active:text-black-6 focus:text-black-6`}
         style={{ border: 'none', cursor: 'pointer' }}
         type={type}
         onMouseOver={handleMouseOver}
@@ -102,7 +102,7 @@ export function BackButton({ className, type = 'button', id = 'back-button', chi
       <button
         onClick={() => router.back()}
         id={id}
-        className={`${className} flex my-auto text-center text-16px font-bold bg-transparent`}
+        className={`${className} flex my-auto text-center text-15px font-bold bg-transparent transition-duration-500ms hover:text-black-3 active:text-black-6 focus:text-black-6`}
         style={{ border: 'none', cursor: 'pointer' }}
         type={type}
         onMouseOver={handleMouseOver}
@@ -129,7 +129,7 @@ export function DownloadButton({ href = '/', className, type = 'button', id = 'd
       <div className='flex sm:min-w-90px sm:min-h-30px min-w-12rem min-h-50px responsive z-99'>
         <button
           id={id}
-          className={`${className} flex my-auto text-center text-16px font-bold bg-transparent`}
+          className={`${className} flex my-auto text-center text-15px font-bold bg-transparent transition-duration-500ms hover:text-black-3 active:text-black-6 focus:text-black-6`}
           style={{ border: 'none', cursor: 'pointer' }}
           type={type}
           onMouseOver={handleMouseOver}
