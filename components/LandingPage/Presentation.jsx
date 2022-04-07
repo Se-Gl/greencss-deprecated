@@ -15,12 +15,12 @@ export default function Presentation() {
     {
       title: 'Responsive',
       description:
-        'Design your website for all users, whether desktop, laptop, tablet or smartphone. Comfortably and intuitively - like bulma or tailwindcss.'
+        'Design your website for all users, whether desktop, laptop, tablet or smartphone. Comfortably and intuitively and easy to learn - like bulma or tailwindcss but for everyone.'
     },
     {
       title: 'Production',
       description:
-        'The best newcomer CSS library in 2022 - for everyone with any web-application framework - MIT licensed.'
+        'The best newcomer CSS library in 2022 - for everyone with any web-application framework - MIT licensed. Write development ready CSS design, which looks stunning in production.'
     }
   ]
 

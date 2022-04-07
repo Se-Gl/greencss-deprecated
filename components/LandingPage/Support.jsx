@@ -2,9 +2,9 @@ import Carousel, { CarouselItem } from '../carousel/Carousel'
 import BrandCard from '../brand/BrandCard'
 
 const serviceCard = [
-  { title: 'Logo 1', path: '#' },
-  { title: 'Logo 2', path: '#' },
-  { title: 'Logo 3', path: '#' }
+  { title: 'Supported by Logo 1', path: '#' },
+  { title: 'Supported by Logo 2', path: '#' },
+  { title: 'Supported by Logo 3', path: '#' }
 ]
 
 export default function Support() {
