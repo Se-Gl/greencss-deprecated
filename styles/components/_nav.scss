@@ -1,6 +1,6 @@
 @use '../abstracts/color' as *;
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .hamburger {
     &:hover {
       cursor: pointer;

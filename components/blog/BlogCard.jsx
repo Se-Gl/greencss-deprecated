@@ -39,9 +39,9 @@ export default function BlogCard({ post, index }) {
                 <Link href={`${post.frontmatter.isBlog ? `/blog/${post.slug}` : `/docs/${post.slug}`}`} passHref>
                   <div
                     style={{ cursor: 'pointer' }}
-                    className={`relative m-auto max-w-75per w-75per min-h-80per ${!isDark && 'bg-white text-black'} ${
-                      isDark && 'bg-black text-white'
-                    }
+                    className={`relative m-auto max-w-75per w-75per min-h-80per p-20px ${
+                      !isDark && 'bg-white text-black'
+                    } ${isDark && 'bg-black text-white'}
               `}>
                     <h2 className='text-50px font-bold leading-100per'>
                       {post.frontmatter.title.length >= 20

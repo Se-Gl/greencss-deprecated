@@ -2,6 +2,8 @@ import dynamic from 'next/dynamic'
 import { LinkButton } from '@/components/reusable/Button'
 import Loader from '../logo/Loader'
 import { useEffect, useState } from 'react'
+import ReusableModal from '../modal/ReusableModal'
+import HeroSearch from '../modal/HeroSearch'
 
 const ThreeDObject = dynamic(() => import('./3D/Index'), {
   loading: () => (
@@ -33,10 +35,12 @@ export default function Hero() {
               <h1 className='font-800 text-63px text-white sm:text-black md:text-black max-w-40rem'>
                 A classy way to write CSS design
               </h1>
-
-              <LinkButton className='mt-50px text-white sm:text-black md:text-black' href='docs'>
-                Check more
-              </LinkButton>
+              <div className='flex'>
+                <HeroSearch />
+                <LinkButton className='ml-20px text-white sm:text-black md:text-black' href='docs'>
+                  Docs
+                </LinkButton>
+              </div>
             </div>
           </div>
         </div>

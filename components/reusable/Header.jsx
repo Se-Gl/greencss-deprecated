@@ -24,7 +24,7 @@ export default function Header() {
     <div className='container'>
       <nav
         aria-label='header navigation'
-        className={`sm:display-none z-100 fixed flex items-center h-15rem justify-between w-100per sm:px-10px md:px-25px lg:px-50px ${isHomeNav}`}
+        className={`sm:display-none md:display-none z-100 fixed flex items-center h-15rem justify-between w-100per sm:px-10px md:px-25px lg:px-50px ${isHomeNav}`}
         style={{ maxWidth: '110rem' }}>
         <Link href='/'>
           <a>
@@ -55,7 +55,7 @@ export default function Header() {
       </nav>
 
       {/* Mobile Menu */}
-      <nav className='z-100 min-h-10vh display-none sm:block'>
+      <nav className='z-100 min-h-10vh display-none sm:block md:block'>
         <div
           className={`fixed top-0per right-0per z-99 m-30px hamburger w-50px h-50px rounded-50px bg-purple-10 ${
             isOpen && 'is-active'
