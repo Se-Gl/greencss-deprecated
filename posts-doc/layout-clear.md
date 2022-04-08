@@ -18,7 +18,7 @@ plainText: ' omencss css class example clear-right clear-right clear: right; cle
 | clear-none  | .clear-none { clear: none; }   |
 | clear-both  | .clear-both { clear: both; }   |
 
-## How to work with box box sizing
+## How to work with clear
 
 Use the `clear-{keyword}` in order to clear the content below the element on the desired side. This approach is useful for blog posts or news articles, if an element - such as an image or the first letter - should stand out.
 

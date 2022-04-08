@@ -17,7 +17,7 @@ plainText: ' omencss css class example float-right float-right float: right; flo
 | float-left  | .float-left { float: left; }   |
 | float-none  | .float-none { float: none; }   |
 
-## How to work with box box sizing
+## How to work with float
 
 Use the `float-{keyword}` in order to control the wrapped position of an HTML element.
 
