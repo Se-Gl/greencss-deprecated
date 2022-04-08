@@ -60,13 +60,13 @@ In summary, we map over the "menu" function. Special attention should be paid to
 
 The actual calculation takes place at this point `(index + 1) * 1`. As a result, each mapped element gets a different animation delay. "Home" has an animation-delay of 100ms, "Brand" has an animation-delay of 200ms and "Blog" has an animation-delay of 300ms. The different delays create a stagger effect.
 
-A graphical overview for all animations can be found on the [examples page](/docs/animation/example).
+A graphical overview for all animations can be found on the [examples page](/examples/animation).
 
 ## What exactly is a vanilla CSS animation?
 
 An animation represents a process which generates a moving frame for the viewer by creating and displaying individual sequences of pixels. Especially in web development, animations can make the difference between a good and a perfect website. However, it should be used with caution, because the boundary between perfect and too much may mean the complete opposite of what was originally intended.
 
-Cascading Style Sheets (CSS) animations usually consist of @keyframes and have different properties such as animation-name, animation-duration, animation-delay, animation-iteration-count, animation-direction, animation-timing-function, animation-fill-mode or animation. If you use omenCSS, you don't need to code anything. omenCSS contains over 100 different css animations. All of them are handmade. A graphical overview of all animations can be found on the [examples page](/docs/animation/example).
+Cascading Style Sheets (CSS) animations usually consist of @keyframes and have different properties such as animation-name, animation-duration, animation-delay, animation-iteration-count, animation-direction, animation-timing-function, animation-fill-mode or animation. If you use omenCSS, you don't need to code anything. omenCSS contains over 100 different css animations. All of them are handmade. A graphical overview of all animations can be found on the [examples page](/examples/animation).
 
 ### Why you should use animations
 

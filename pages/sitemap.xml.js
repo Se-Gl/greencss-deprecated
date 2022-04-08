@@ -17,12 +17,12 @@ export const getServerSideProps = ({ res }) => {
     'blog',
     'contact',
     'docs',
-    'docs/animation',
-    'docs/animation/example',
     'privacy/cookies',
     'privacy/privacy-policy',
     'privacy/legal',
-    '/examples/hero'
+    '/examples',
+    '/examples/hero',
+    '/examples/animation'
   ]
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

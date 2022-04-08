@@ -15,7 +15,7 @@ export default function AnimationIndexPage() {
           <div className='flex'>
             <div className='mr-auto hidden'></div>
             <div className='ml-auto'>
-              <LinkButton href='/docs/animation/example' id='visit-animation-examples-1'>
+              <LinkButton href='/examples/animation' id='visit-animation-examples-1'>
                 Examples
               </LinkButton>
             </div>
@@ -30,7 +30,7 @@ export default function AnimationIndexPage() {
               &quot;animare&quot; and means as much as spirit, life, breath or simply to bring to life.
             </p>
             <p>To see the full selection, including animation examples, proceed by clicking on the button below.</p>
-            <LinkButton className='my-50px' href='/docs/animation/example' id='visit-examples-2'>
+            <LinkButton className='my-50px' href='/examples/animation' id='visit-examples-2'>
               Examples
             </LinkButton>
           </div>

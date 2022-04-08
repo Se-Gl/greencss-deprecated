@@ -32,7 +32,7 @@ describe('Verify ElementRenderer', () => {
   })
   it('clicks the first link in the blog and redirects', () => {
     cy.get(':nth-child(13) > a').should('exist').click({ force: true })
-    cy.url().should('be.equal', 'http://localhost:3000/docs/animation/example')
+    cy.url().should('be.equal', 'http://localhost:3000/examples/animation')
   })
   it('checks if code is being rendered', () => {
     cy.get('pre').should('exist')

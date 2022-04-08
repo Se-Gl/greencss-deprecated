@@ -34,13 +34,12 @@ describe('Home Screen Unit test', () => {
       .click({ force: true })
     cy.get(':nth-child(2) > .min-w-50rem > .min-h-25rem > .h-25rem')
       .should('exist')
-      .should('be.visible')
       .trigger('touchmove', {
         touches: [{ pageY: 0, pageX: 100 }],
         force: true
       })
       .click({ force: true })
-    cy.get(':nth-child(3) > .min-w-50rem > .min-h-25rem > .h-25rem').should('exist').should('be.visible')
+    cy.get(':nth-child(3) > .min-w-50rem > .min-h-25rem > .h-25rem').should('exist')
   })
   it('render dummy blog post card', () => {
     cy.get('#recent-news').should('exist').scrollIntoView()
@@ -48,13 +47,6 @@ describe('Home Screen Unit test', () => {
   })
   it('render the testimonial section', () => {
     cy.get('#testimonial').should('exist').scrollIntoView().wait(500).should('be.visible')
-    cy.get('#creator-memoji-1')
-      .should('exist')
-      .should('be.visible')
-      .should('have.attr', 'alt')
-      .then((alttext) => {
-        expect(alttext).contains('Severin Glaser - Memoji 1', { matchCase: false })
-      })
   })
   it('render dummy doc section and cards', () => {
     cy.get('#service-section').should('exist').scrollIntoView()

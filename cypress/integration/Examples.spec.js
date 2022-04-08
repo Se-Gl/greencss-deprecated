@@ -1,18 +1,12 @@
-describe('Animation Screen Unit test', () => {
+describe('Example Index Screen Unit test', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/docs/animation')
+    cy.visit('http://localhost:3000/examples')
   })
   it('renders the animation index page', () => {
-    cy.get('#animation-main')
+    cy.get('#examples-index')
       .should('be.visible')
       .should('exist')
-      .contains('Handmade, crafted animations', { matchCase: false })
-  })
-  it('click buttons and redirect forwards and back', () => {
-    cy.get('#visit-animation-examples-1').click({ force: true })
-    cy.url().should('be.equal', 'http://localhost:3000/docs/animation/example')
-    cy.get('#back-button').click({ force: true })
-    cy.url().should('be.equal', 'http://localhost:3000/docs/animation')
+      .contains('Handmade, crafted examples', { matchCase: false })
   })
   it('renders the handcrafted svg', () => {
     cy.get('#handcrafted-svg').should('be.visible').should('exist')
@@ -21,7 +15,7 @@ describe('Animation Screen Unit test', () => {
 
 describe('Animation Example Screen Unit test', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/docs/animation/example')
+    cy.visit('http://localhost:3000/examples/animation')
   })
   it('renders the first react select input', () => {
     cy.get('#animate').should('be.visible').should('exist')
