@@ -20,7 +20,7 @@ plainText: ' omencss css class example break-inside-auto break-inside-auto break
 
 ## How to work with break inside
 
-Use the `break-inside-{keyword}` how an element, a column or the page behaves after an element. Use the `break-inside-avoid` utility class, for example, to force to always avoid a break inside an element.
+Use the `break-inside-{keyword}` to control how an element, a column or the page behaves inside of an element. Use the `break-inside-avoid` utility class, for example, to force to always avoid a break inside an element.
 
 ```html
 <article class="col-2 gap-20px">
