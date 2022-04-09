@@ -22,13 +22,10 @@ describe('Verify ElementRenderer', () => {
     cy.visit('http://localhost:3000/blog/omencss-animations')
   })
   it('renders the header with its id', () => {
-    cy.get('h2')
-      .eq(1)
+    cy.get('#blog-omencss-animations')
       .should('be.visible')
       .should('exist')
       .contains('How to stagger CSS animations', { matchCase: false })
-      .invoke('attr', 'id')
-      .should('equal', 'how-to-stagger-css-animations')
   })
   it('clicks the first link in the blog and redirects', () => {
     cy.get(':nth-child(13) > a').should('exist').click({ force: true })

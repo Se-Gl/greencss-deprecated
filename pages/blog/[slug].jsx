@@ -2,9 +2,9 @@ import dynamic from 'next/dynamic'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import Loader from '@/components/logo/Loader'
 
-const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), { loading: () => <Loader /> })
+const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), { ssr: false })
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 const DevelopmentToClipboard = dynamic(() => import('@/utils/DevelopmentToClipboard'))
 
 export default function BlogPostPage({
@@ -13,7 +13,14 @@ export default function BlogPostPage({
   slug
 }) {
   return (
-    <>
+    <Layout
+      title={title}
+      description={excerpt}
+      image={cover_image}
+      url={`blog/${slug}`}
+      keywords={`${category}, ${keywords} omenCSS, css, omen css`}
+      author={author}
+      className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'>
       <DevelopmentToClipboard content={content} />
       <SlugComponent
         title={title}
@@ -27,7 +34,7 @@ export default function BlogPostPage({
         slug={slug}
         isBlog={isBlog}
       />
-    </>
+    </Layout>
   )
 }
 

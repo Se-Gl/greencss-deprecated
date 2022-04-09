@@ -3,10 +3,10 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { getPosts } from '@/lib/posts'
-import Loader from '@/components/logo/Loader'
 import { sortAlphabetically } from '@/utils/SortBy'
 
-const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), { loading: () => <Loader /> })
+const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), { ssr: false })
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 const DevelopmentToClipboard = dynamic(() => import('@/utils/DevelopmentToClipboard'))
 
 export default function DocsPostPage({
@@ -17,7 +17,14 @@ export default function DocsPostPage({
   categories
 }) {
   return (
-    <>
+    <Layout
+      title={`How to use ${title} CSS class`}
+      description={excerpt}
+      image={cover_image}
+      url={`docs/${slug}`}
+      keywords={`${category}, ${keywords} omenCSS, css, omen css`}
+      author={author}
+      className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'>
       <DevelopmentToClipboard content={content} />
       <SlugComponent
         title={title}
@@ -34,7 +41,7 @@ export default function DocsPostPage({
         categories={categories}
         plainText={plainText}
       />
-    </>
+    </Layout>
   )
 }
 
