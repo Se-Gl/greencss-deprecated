@@ -7,7 +7,7 @@ import Tilt3D from './Tilt3D'
 export default function ThreeDObject() {
   return (
     <div className='threed-canvas mr-10rem' style={{ pointerEvents: 'none' }}>
-      <Canvas clasName='threed-canvas' gl={{ antialias: true }}>
+      <Canvas className='threed-canvas' gl={{ antialias: true }}>
         <OrbitControls
           // autoRotate={true}
           enablePan={true}
