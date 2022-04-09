@@ -38,8 +38,7 @@ export default function BlogCard({ post, index }) {
               <div className='flex h-40rem min-h-50per'>
                 <Link href={`${post.frontmatter.isBlog ? `/blog/${post.slug}` : `/docs/${post.slug}`}`} passHref>
                   <div
-                    style={{ cursor: 'pointer' }}
-                    className={`relative m-auto max-w-75per w-75per min-h-80per p-20px ${
+                    className={`cursor-pointer relative m-auto max-w-75per w-75per min-h-80per p-20px ${
                       !isDark && 'bg-white text-black'
                     } ${isDark && 'bg-black text-white'}
               `}>
