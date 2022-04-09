@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Object Fit'
 date: 'Apr 08. 2022'
-excerpt: 'Utility classes to determine the behavior and the scale of images.'
+excerpt: 'Utility classes to determine the layout object fit classes.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Layout'
 author: 'Severin Glaser'

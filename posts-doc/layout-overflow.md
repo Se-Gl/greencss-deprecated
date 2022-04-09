@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Overflow'
 date: 'Apr 09. 2022'
-excerpt: 'Utility classes to determine the behavior and the scale of images.'
+excerpt: 'Utility classes to determine the overflow classes.'
 hidden*image: '/images/blog/hidden/default-Image-blog.webp'
 category: 'Layout'
 author: 'Severin Glaser'

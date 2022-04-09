@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Overscroll Behavior'
 date: 'Apr 09. 2022'
-excerpt: 'Utility classes to determine the behavior and the scale of images.'
+excerpt: 'Utility classes to determine the overscroll behavior.'
 contain*image: '/images/blog/contain/default-Image-blog.webp'
 category: 'Layout'
 author: 'Severin Glaser'

@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Isolation'
 date: 'Apr 08. 2022'
-excerpt: 'Utility classes to control the isolationance of an element.'
+excerpt: 'Utility classes to control the isolation of an element.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Layout'
 author: 'Severin Glaser'

@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Position'
 date: 'Apr 09. 2022'
-excerpt: 'Utility classes to determine the behavior and the scale of images.'
+excerpt: 'Utility classes to determine the layout position.'
 fixed*image: '/images/blog/fixed/default-Image-blog.webp'
 category: 'Layout'
 author: 'Severin Glaser'

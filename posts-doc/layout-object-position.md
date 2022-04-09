@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Object Position'
 date: 'Apr 09. 2022'
-excerpt: 'Utility classes to determine the behavior and the scale of images.'
+excerpt: 'Utility classes to determine the layout object position.'
 right top*image: '/images/blog/right top/default-Image-blog.webp'
 category: 'Layout'
 author: 'Severin Glaser'
