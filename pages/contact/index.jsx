@@ -1,6 +1,8 @@
-import Layout from '@/components/reusable/Layout'
+import dynamic from 'next/dynamic'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
 import ContactForm from '@/components/contact/ContactForm'
+
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function ContactPage() {
   return (

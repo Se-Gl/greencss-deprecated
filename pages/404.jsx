@@ -1,10 +1,12 @@
+import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
 import Icon from '@/components/icon/404/Icon'
-import Layout from '@/components/reusable/Layout'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
 import { NEXT_URL } from '@/config/index'
 import ReusableModal from '@/components/modal/ReusableModal'
 import { LinkButton } from '@/components/reusable/Button'
+
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function ForOhFor() {
   const { asPath } = useRouter()

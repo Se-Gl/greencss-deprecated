@@ -1,7 +1,7 @@
+import dynamic from 'next/dynamic'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import Layout from '@/components/reusable/Layout'
 import { getPosts } from '@/lib/posts'
 import BlogCard from '@/components/blog/BlogCard'
 import BlogLayout from '@/components/blog/BlogLayout'
@@ -10,6 +10,8 @@ import SideBar from '@/components/category/SideBar'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
 import SlugDocsHero from '@/components/icon/Docs/SlugDocsHero'
 import { sortAlphabetically } from '@/utils/SortBy'
+
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function DocsCategorySlugPage({ posts, categoryName, categories }) {
   return (

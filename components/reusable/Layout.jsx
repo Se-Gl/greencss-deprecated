@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import { NEXT_URL } from '@/config/index'
-import Footer from './Footer'
-import Cookies from './Cookies'
 
 const Header = dynamic(() => import('./Header'))
+const Footer = dynamic(() => import('./Footer'))
+const Cookies = dynamic(() => import('./Cookies'))
 
 export default function Layout({
   title,

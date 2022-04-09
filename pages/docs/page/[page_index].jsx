@@ -1,13 +1,15 @@
+import dynamic from 'next/dynamic'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import Layout from '@/components/reusable/Layout'
 import { getPosts } from '@/lib/posts'
 import BrandCard from '@/components/brand/BrandCard'
 import SideBar from '@/components/category/SideBar'
 import DocsHero from '@/components/icon/Docs/DocsHero'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
 import { sortAlphabetically } from '@/utils/SortBy'
+
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function DocsCategoryPage({ categories, posts }) {
   return (

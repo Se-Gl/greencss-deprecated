@@ -1,7 +1,7 @@
+import dynamic from 'next/dynamic'
 import fs from 'fs'
 import path from 'path'
 import BlogLayout from '@/components/blog/BlogLayout'
-import Layout from '@/components/reusable/Layout'
 import BlogCard from '@/components/blog/BlogCard'
 import { POSTS_PER_PAGE } from '@/config/index'
 import Pagination from '@/components/reusable/Pagination'
@@ -9,6 +9,8 @@ import { getPosts } from '@/lib/posts'
 import BlogHero from '@/components/icon/Blog/BlogHero'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
 import { sortByDate } from '@/utils/SortBy'
+
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function BlogIndex({ posts, numPages, currentPage }) {
   return (

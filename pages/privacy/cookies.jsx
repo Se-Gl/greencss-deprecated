@@ -1,5 +1,7 @@
+import dynamic from 'next/dynamic'
 import Cookies from '@/components/privacy/Cookies'
-import Layout from '@/components/reusable/Layout'
+
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function cookies() {
   return (

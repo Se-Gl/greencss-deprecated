@@ -1,9 +1,11 @@
+import dynamic from 'next/dynamic'
 import BrandBadExample from '@/components/brand/BrandBadExample'
 import BrandSection from '@/components/brand/BrandSection'
 import Summary from '@/components/brand/Summary'
 import LogoDark from '@/components/icon/Brand/LogoDark'
 import { BackButton, DownloadButton } from '@/components/reusable/Button'
-import Layout from '@/components/reusable/Layout'
+
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function logo() {
   return (

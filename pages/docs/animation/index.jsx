@@ -1,6 +1,8 @@
+import dynamic from 'next/dynamic'
 import HandCrafted from '@/components/icon/Animation/Handcrafted'
 import { LinkButton } from '@/components/reusable/Button'
-import Layout from '@/components/reusable/Layout'
+
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function AnimationIndexPage() {
   return (

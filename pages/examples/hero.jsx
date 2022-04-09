@@ -1,6 +1,8 @@
+import dynamic from 'next/dynamic'
 import HeroComponent from '@/components/examples/HeroComponent'
 import { BackButton } from '@/components/reusable/Button'
-import Layout from '@/components/reusable/Layout'
+
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function Hero() {
   return (

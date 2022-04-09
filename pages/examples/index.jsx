@@ -1,7 +1,9 @@
+import dynamic from 'next/dynamic'
 import BrandCard from '@/components/brand/BrandCard'
 import HandCrafted from '@/components/icon/Animation/Handcrafted'
-import Layout from '@/components/reusable/Layout'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
+
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function ExamplesIndexPage() {
   const examples = [

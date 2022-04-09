@@ -1,14 +1,15 @@
-import { useEffect } from 'react'
+import dynamic from 'next/dynamic'
 import Hero from '@/components/LandingPage/Hero'
 import News from '@/components/LandingPage/News'
 import Presentation from '@/components/LandingPage/Presentation'
 import Service from '@/components/LandingPage/Service'
 import Support from '@/components/LandingPage/Support'
 import Testimonial from '@/components/LandingPage/Testimonial'
-import Layout from '@/components/reusable/Layout'
 import { getPosts } from '@/lib/posts'
 import Newsletter from '@/components/LandingPage/Newsletter'
 import { sortByDate } from '@/utils/SortBy'
+
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function HomePage({ posts }) {
   return (

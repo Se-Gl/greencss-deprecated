@@ -1,10 +1,12 @@
-import Layout from '@/components/reusable/Layout'
+import dynamic from 'next/dynamic'
 import BrandSection from '@/components/brand/BrandSection'
 import { BackButton } from '@/components/reusable/Button'
 import ColourExample from '@/components/brand/ColourExample'
 import { primaryColors, secondaryColors, spotColors } from '@/data/colors'
 import BrandBadExample from '@/components/brand/BrandBadExample'
 import Summary from '@/components/brand/Summary'
+
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function colours() {
   return (

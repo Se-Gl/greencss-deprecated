@@ -1,5 +1,7 @@
+import dynamic from 'next/dynamic'
 import Policy from '@/components/privacy/Policy'
-import Layout from '@/components/reusable/Layout'
+
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function privacyPolicy() {
   return (

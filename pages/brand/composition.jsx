@@ -1,8 +1,10 @@
+import dynamic from 'next/dynamic'
 import BrandBadExample from '@/components/brand/BrandBadExample'
 import BrandSection from '@/components/brand/BrandSection'
 import Summary from '@/components/brand/Summary'
 import { BackButton } from '@/components/reusable/Button'
-import Layout from '@/components/reusable/Layout'
+
+const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function composition() {
   return (
