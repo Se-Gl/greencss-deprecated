@@ -3,7 +3,7 @@ isBlog: false
 title: 'Visibility'
 date: 'Apr 09. 2022'
 excerpt: 'Utility classes to set the visibility of elements.'
-visible*image: '/images/blog/visible/default-Image-blog.webp'
+cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Layout'
 author: 'Severin Glaser'
 keywords: 'Visibility, layout, visible, hidden'

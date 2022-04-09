@@ -3,7 +3,7 @@ isBlog: false
 title: 'Overflow'
 date: 'Apr 09. 2022'
 excerpt: 'Utility classes to determine the overflow classes.'
-hidden*image: '/images/blog/hidden/default-Image-blog.webp'
+cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Layout'
 author: 'Severin Glaser'
 keywords: 'Overflow, layout, overflow-x, overflow-y'

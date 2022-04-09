@@ -3,7 +3,7 @@ isBlog: false
 title: 'Object Position'
 date: 'Apr 09. 2022'
 excerpt: 'Utility classes to determine the layout object position.'
-right top*image: '/images/blog/right top/default-Image-blog.webp'
+cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Layout'
 author: 'Severin Glaser'
 keywords: 'Object Position, layout, object-position top, right, bottom, left'

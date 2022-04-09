@@ -3,7 +3,7 @@ isBlog: false
 title: 'Position'
 date: 'Apr 09. 2022'
 excerpt: 'Utility classes to determine the layout position.'
-fixed*image: '/images/blog/fixed/default-Image-blog.webp'
+cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Layout'
 author: 'Severin Glaser'
 keywords: 'Position, layout, absolute, fixed, relative, static, sticky'

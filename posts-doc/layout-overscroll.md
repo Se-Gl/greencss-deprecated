@@ -3,7 +3,7 @@ isBlog: false
 title: 'Overscroll Behavior'
 date: 'Apr 09. 2022'
 excerpt: 'Utility classes to determine the overscroll behavior.'
-contain*image: '/images/blog/contain/default-Image-blog.webp'
+cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Layout'
 author: 'Severin Glaser'
 keywords: 'Overscroll Behavior, layout, overscroll-behavior-x, overscroll-behavior-y'
