@@ -35,7 +35,7 @@ export default function BlogCard({ post, index }) {
               }`}
               style={{ backgroundImage: `url(${post.frontmatter.cover_image})`, backgroundColor: `${vibrantColor}` }}
               id='blog-card'>
-              <div className='flex h-40rem min-h-50per'>
+              <div className='flex h-40rem min-h-45rem'>
                 <Link href={`${post.frontmatter.isBlog ? `/blog/${post.slug}` : `/docs/${post.slug}`}`} passHref>
                   <div
                     className={`cursor-pointer relative m-auto max-w-75per w-75per min-h-80per p-20px ${
