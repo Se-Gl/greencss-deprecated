@@ -19,7 +19,7 @@ plainText: ' omencss css class example visible visible visibility: visible; hidd
 
 ## How to work with visibility
 
-1. Use the `{keyword}` to control, determine and set the visibility.
+1. Use the `{keyword}` above to control, determine and set the visibility.
 
 ```html
 <!-- visible -->
