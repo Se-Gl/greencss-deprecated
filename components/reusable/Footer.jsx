@@ -2,7 +2,7 @@ import Link from 'next/link'
 import LogoLight from '../icon/Brand/LogoLight'
 
 const startedLinks = [
-  { title: 'Installation', path: '/blog/what-is-omencss#get-started-now' },
+  { title: 'Installation', path: '/docs/activate-getting-started' },
   { title: 'Optimizing', path: '/blog/how-to-delete-unused-css-classes' },
   { title: 'Fundamentals', path: '/docs' },
   { title: 'Blog', path: '/blog' }

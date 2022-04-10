@@ -32,6 +32,8 @@ export default function DevelopmentToClipboard({ content }) {
     // exclude code snippets from search results
     .replace(new RegExp('(```html)([^]*?)(```)', 'gm'), '')
     .replace(new RegExp('(```css)([^]*?)(```)', 'gm'), '')
+    .replace(new RegExp('(```js)([^]*?)(```)', 'gm'), '')
+    .replace(new RegExp('(```shell)([^]*?)(```)', 'gm'), '')
 
   // \r\n
   return (
