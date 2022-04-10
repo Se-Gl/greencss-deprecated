@@ -20,9 +20,9 @@ export const getServerSideProps = ({ res }) => {
     'privacy/cookies',
     'privacy/privacy-policy',
     'privacy/legal',
-    '/examples',
-    '/examples/hero',
-    '/examples/animation'
+    'examples',
+    'examples/hero',
+    'examples/animation'
   ]
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

@@ -27,9 +27,12 @@ describe('Verify ElementRenderer', () => {
       .should('exist')
       .contains('How to stagger CSS animations', { matchCase: false })
   })
-  it('clicks the first link in the blog and redirects', () => {
-    cy.get(':nth-child(13) > a').should('exist').click({ force: true })
-    cy.url().should('be.equal', 'http://localhost:3000/examples/animation')
+  it('clicks the first link in the toc and redirects', () => {
+    cy.get('#toc')
+      .should('exist')
+      .contains('How to stagger CSS animations ', { matchCase: false })
+      .click({ force: true })
+    cy.url().should('be.equal', 'http://localhost:3000/blog/omencss-animations#how-to-stagger-css-animations')
   })
   it('checks if code is being rendered', () => {
     cy.get('pre').should('exist')
