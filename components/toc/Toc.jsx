@@ -2,14 +2,13 @@ import * as React from 'react'
 import { useState } from 'react'
 import { extractHeadingsFromMd, removeCodeBlockFromMd } from './utils'
 import { newHeading } from './TocHeading'
-import ReusableModal from '../modal/ReusableModal'
 
 const Toc = ({ markdownText, titleLimit, highestHeadingLevel, lowestHeadingLevel, customMatchers, isBlog }) => {
   const [reveal, setReveal] = useState(true)
 
   if (!markdownText) return null
   // Set default values
-  const limit = titleLimit ? titleLimit : 25
+  const limit = titleLimit ? titleLimit : 100
   const headingLevels = [highestHeadingLevel || 1, lowestHeadingLevel || 6]
 
   // Mutate headings
@@ -21,8 +20,7 @@ const Toc = ({ markdownText, titleLimit, highestHeadingLevel, lowestHeadingLevel
 
   return (
     <div role='navigation' aria-label='table of contents' id='toc'>
-      {isBlog === true && <ReusableModal isSidebar={true} />}
-      <div className='bg-purple-10 px-5px py-10px mb-25px reveal-down animation-duration-200ms animation-forwards whitespace-nowrap overflow-x-hidden'>
+      <div className='bg-purple-10 my-auto p-25px my-50px rounded-10px'>
         <h4 className='font-800 mb-25px'>Table of Contents</h4>
         {reveal === true && (
           <>

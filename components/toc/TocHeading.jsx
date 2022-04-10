@@ -44,9 +44,17 @@ const nestUl = (level, listItem) => {
     case 2:
       return <h4 className='mb-10px text-15px font-900'>{listItem}</h4>
     case 3:
-      return <h5 className='mb-10px text-15px font-500'>{listItem}</h5>
+      return (
+        <h5 className='mb-10px text-15px font-500 pl-10px'>
+          <span className='text-purple'>&#62;</span> {listItem}
+        </h5>
+      )
     case 4:
-      return <h6 className='mb-10px text-15px font-500'>{listItem}</h6>
+      return (
+        <h6 className='mb-10px text-15px font-500 pl-20px'>
+          <span className='text-purple-5'>&#62;</span> {listItem}
+        </h6>
+      )
     default:
       return listItem
   }
