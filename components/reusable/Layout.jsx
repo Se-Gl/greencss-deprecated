@@ -14,7 +14,8 @@ export default function Layout({
   image,
   url,
   children,
-  className = 'container sm:px-10px md:px-25px lg:px-50px'
+  className = 'container sm:px-10px md:px-25px lg:px-50px',
+  hasCanonical = false
 }) {
   return (
     <>
@@ -56,6 +57,9 @@ export default function Layout({
         <meta name='viewport' content='width=device-width, minimum-scale=1, initial-scale=1.0' />
         <meta name='theme-color' content='#fdfdfd' />
         <link rel='shortcut icon' href='/favicon.ico' />
+
+        {/* Canonical */}
+        {hasCanonical === true && <link rel='canonical' href={`${NEXT_URL}/${url}`} />}
 
         {/* 
       Twitter Summary card

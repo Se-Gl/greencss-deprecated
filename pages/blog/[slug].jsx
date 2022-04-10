@@ -20,7 +20,8 @@ export default function BlogPostPage({
       url={`blog/${slug}`}
       keywords={`${category}, ${keywords} omenCSS, css, omen css`}
       author={author}
-      className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'>
+      className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'
+      hasCanonical={true}>
       <DevelopmentToClipboard content={content} />
       <SlugComponent
         title={title}
