@@ -40,7 +40,7 @@ export default function Layout({
         <meta name='og:title' content={title} />
         <meta name='og:type' content='site' />
         <meta name='og:url' content={`${NEXT_URL}/${url}`} />
-        <meta name='og:image' content={image} />
+        <meta name='og:image' content={`${NEXT_URL}/${image}`} />
         <meta name='og:site_name' content={title} />
         <meta name='og:description' content={description} />
 
