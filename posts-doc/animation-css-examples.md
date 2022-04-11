@@ -30,7 +30,7 @@ All animation classes start with the `animation-` keyword - except for the type 
 
 1. Check the [CSS animation](/examples/animation) site. You can choose from over 110 different handmade CSS animations.
 2. First choose your desired type of animation. For example a fade in animation. `fade-in`
-3. Afterwards, select the desired duration for your animation. For example 500ms `animation-duration-500ms` By the way, 750ms is the default class, and called `animate`.
+3. Afterwards, select the desired animation duration for your animation. For example 500ms `animation-duration-500ms` By the way, 750ms is the default class, and called `animate`.
 4. Choose the animation condition. If, for example, the animation should be played in a loop, select infinite `animation-infinite`.
 5. On the right side you can now copy the entire animation snippet directly and insert it into your document.
 6. In addition - and if required - you could also include an animation delay.

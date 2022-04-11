@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ChevronRight from '../icon/ChevronRight'
 import Blog from '../icon/Search/Blog'
 import Document from '../icon/Search/Document'
 
@@ -8,13 +9,13 @@ export default function Results({ results, searchTerm }) {
     <>
       <div className='p-25px' id='search-results'>
         {results.length <= 1 ? (
-          <h2 className='text-35px'>{results.length} Result</h2>
+          <h2 className='text-20px'>{results.length} Result</h2>
         ) : (
-          <h2 className='text-35px'>{results.length} Results</h2>
+          <h2 className='text-20px'>{results.length} Results</h2>
         )}
         {results.map((result, index) => (
           <div
-            className={`flex justify-between items-center mb-25px border-bottom-1px border-black border-solid clip-inset-in-left animate animation-forwards animation-delay-${
+            className={`bg-purple-10 hover:bg-purple-6 transition-all transition-duration-500ms p-10px rounded-10px flex justify-between items-center mb-10px border-bottom-1px border-black border-solid clip-inset-in-left animate animation-forwards animation-delay-${
               (index + 1) * 1
             }00ms`}
             key={index}>
@@ -23,18 +24,17 @@ export default function Results({ results, searchTerm }) {
                 pathname: `/${result.frontmatter.isBlog === true ? 'blog/[slug]' : 'docs/[slug]'}`,
                 query: { slug: `${result.slug}` }
               }}>
-              <div className='flex' style={{ cursor: 'pointer' }}>
-                {result.frontmatter.isBlog === false ? <Document className='mt-7px' /> : <Blog className='mt-7px' />}
+              <div className='flex w-100per cursor-pointer'>
+                {result.frontmatter.isBlog === false ? <Document className='my-auto' /> : <Blog className='my-auto' />}
                 <div className='ml-15px'>
                   <div className='flex items-center'>
-                    <h3 className='text-15px font-600 text-white bg-black rounded-5px p-10px mb-0px hover:bg-white hover:text-black transition-all transition-duration-500ms'>
+                    <h3 className='text-15px font-600 text-purple bg-purple-9 rounded-20px py-5px px-10px mb-0px'>
                       {result.frontmatter.category}
                     </h3>
                   </div>
-                  <h3 className='text-20px my-10px'>
-                    {result.frontmatter.title}... <span className='text-15px'>{searchTerm.slice(0, 10)}</span>
-                  </h3>
+                  <p className='text-15px mt-10px mb-0px'>{result.frontmatter.title}</p>
                 </div>
+                <ChevronRight className='ml-auto my-auto' />
               </div>
             </Link>
           </div>
