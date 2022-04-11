@@ -15,13 +15,13 @@ describe('Docs Screen Unit test', () => {
 
 describe('Individual Docs Screen Unit test', () => {
   before(() => {
-    cy.visit('http://localhost:3000/docs/category/base-styles')
+    cy.visit('http://localhost:3000/docs/category/activate')
   })
   it('renders the dynamic section', () => {
-    cy.get('#category-base-styles').should('be.visible').should('exist')
+    cy.get('#activate-basic-usage').should('be.visible').should('exist')
   })
   it('renders the header', () => {
-    cy.get('h1').should('be.visible').should('exist').contains('Browse by category: base styles', { matchCase: false })
+    cy.get('h1').should('be.visible').should('exist').contains('Browse by category: activate', { matchCase: false })
   })
   it('renders the illustration', () => {
     cy.get('#subdocs-hero-illustration').should('be.visible').should('exist')
@@ -30,7 +30,7 @@ describe('Individual Docs Screen Unit test', () => {
 
 describe('Render Table of Contents', () => {
   before(() => {
-    cy.visit('http://localhost:3000/docs/basic-usage')
+    cy.visit('http://localhost:3000/docs/activate-basic-usage')
   })
   it('check if toc exists', () => {
     cy.get('#toc').should('be.visible').should('exist').contains('Table of contents', { matchCase: false })
