@@ -36,7 +36,7 @@ All animation classes start with the `animation-` keyword - except for the type 
 6. In addition - and if required - you could also include an animation delay.
 
 ```html
-<div class="w-50px h-50px bg-purple rounded-10px fade-in animation-duration-500ms animation-infinite">first</div>
+<div class="fade-in animation-duration-500ms animation-infinite w-50px h-50px bg-purple rounded-10px">first</div>
 ```
 
 ## Active, focus, and hover states
@@ -51,7 +51,7 @@ omenCSS let you conditionally apply utility classes for different page states. T
 
 ```html
 <div
-  class="w-50px h-50px bg-purple rounded-10px hover:fade-out hover:animation-duration-500ms hover:animation-forwards">
+  class="hover:fade-out hover:animation-duration-500ms hover:animation-forwards w-50px h-50px bg-purple rounded-10px">
   {children}
 </div>
 ```
