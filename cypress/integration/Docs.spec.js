@@ -28,9 +28,17 @@ describe('Individual Docs Screen Unit test', () => {
   })
 })
 
-describe('Render Table of Contents', () => {
+describe('Render slug elements', () => {
   before(() => {
     cy.visit('http://localhost:3000/docs/activate-basic-usage')
+  })
+  it('copies to clipboard', () => {
+    cy.window((window) => {
+      if (navigator?.clipboard?.write) {
+        cy.get('#copy-to-clipboard').eq(0).click()
+        cy.window().its('navigator.clipboard').invoke('readText').should('not.be.empty')
+      }
+    })
   })
   it('check if toc exists', () => {
     cy.get('#toc').should('be.visible').should('exist').contains('Table of contents', { matchCase: false })
