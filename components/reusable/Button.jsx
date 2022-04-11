@@ -52,8 +52,9 @@ export function LinkButtonLeft({ href = '/', className, type = 'button', onClick
           type={type}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}>
-          {!hover && <ChevronRight className='my-auto ml-5px' />}
-          {hover && <ChevronRightHover className='my-auto ml-5px' />}
+          {!hover && <ChevronRight className='my-auto ml-0px' />}
+          {hover && <ChevronRightHover className='my-auto ml-0px' />}
+          <span style={hover ? { marginInline: '5.5px' } : { marginInline: '10px' }} />
           {children}
         </button>
       </div>

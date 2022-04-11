@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { replaceAll, createLink, createTitle } from './utils'
+import ChevronRight from '../icon/ChevronRight'
 
 // TODO refactor class into functional apporach
 export default class TocHeading {
@@ -45,14 +46,15 @@ const nestUl = (level, listItem) => {
       return <h4 className='mb-10px text-15px font-900'>{listItem}</h4>
     case 3:
       return (
-        <h5 className='mb-10px text-15px font-500 pl-10px'>
-          <span className='text-purple'>&#62;</span> {listItem}
+        <h5 className='mb-10px text-15px font-500 pl-10px flex'>
+          <ChevronRight className='h-10px mr-10px my-auto' />
+          {listItem}
         </h5>
       )
     case 4:
       return (
-        <h6 className='mb-10px text-15px font-500 pl-20px'>
-          <span className='text-purple-5'>&#62;</span> {listItem}
+        <h6 className='mb-10px text-15px font-500 pl-20px flex'>
+          <ChevronRight className='h-10px mr-10px my-auto' /> {listItem}
         </h6>
       )
     default:
