@@ -2,7 +2,7 @@
 isBlog: false
 title: 'Transition Property'
 date: 'Apr 11. 2022'
-excerpt: 'Create stunning css transitions. Utility classes to control the transition property transition.'
+excerpt: 'Create stunning css transitions. Utility classes to control the transition property.'
 cover*image: '/images/blog/cover/default-Image-blog.webp'
 category: 'Animation'
 author: 'Severin Glaser'
