@@ -50,7 +50,10 @@ All animation classes start with the `animation-` keyword - except for the type 
 omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:fade-out` to only apply the fade-out utility class on hover.
 
 ```html
-<div class="w-50px h-50px bg-purple rounded-10px hover:fade-out">{children}</div>
+<div
+  class="w-50px h-50px bg-purple rounded-10px hover:fade-out hover:animation-duration-500ms hover:animation-forwards">
+  {children}
+</div>
 ```
 
 ## Responsive Breakpoints
