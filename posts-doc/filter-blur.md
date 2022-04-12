@@ -54,7 +54,7 @@ Use variant modifiers to target media queries like responsive breakpoints.
 
 omenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:blur-5px` to apply the blur-5px utility at only small screen sizes at or below 480px. Or `active:md:blur-5px` to apply the blur-5px utility at only between small screen sizes (480px) and medium screen sizes (768px).
 
-1. The structure for auto classes is as follows: `{conditional state}:{media query}:blur-5px` p.e. `active:md:blur-5px`
+1. The structure for auto classes is as follows: `{conditional state}:{media query}:blur-{number}px` p.e. `active:md:blur-5px`
 
 ## Executive Summary
 
