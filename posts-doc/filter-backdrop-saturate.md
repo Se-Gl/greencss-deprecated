@@ -17,7 +17,7 @@ plainText: ' omencss css class example minimum value maximum value step backdrop
 
 ## How to work the backdrop saturate filter
 
-Use the `backdrop-saturate-{number}` utilities to set the amount of backdrop saturate for the element. `backdrop-saturate-1` equals to the css class `backdrop-filter: saturate(0.1)`, `backdrop-saturate-2` equals to the css class `backdrop-filter: saturate(0.2)` the maximum would be `backdrop-saturate-30`, it equals to the css class `backdrop-filter: saturate(5)`. In general: the omenCSS class steps are +1 ranging from 0-30.
+Use the `backdrop-saturate-{number}` utilities to set the amount of backdrop saturate for the element. `backdrop-saturate-1` equals to the css class `backdrop-filter: saturate(0.1)`, `backdrop-saturate-2` equals to the css class `backdrop-filter: saturate(0.2)` the maximum would be `backdrop-saturate-30`, it equals to the css class `backdrop-filter: saturate(3)`. In general: the omenCSS class steps are +1 ranging from 0-30.
 
 ```html
 <!-- no backdrop saturate -->
