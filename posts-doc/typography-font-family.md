@@ -8,7 +8,7 @@ category: 'Typography'
 author: 'Severin Glaser'
 keywords: 'Font Family, typography, sans, serif, monospace'
 classNames: ''
-plainText: " omencss css class example sans sans font-family: -apple-system blinkmacsystemfont roboto arial 'helvetica neue' 'segoe ui' oxygen ubuntu cantarell 'open sans' sans-serif; serif serif font-family: 'times new roman' times serif; monospace monospace font-family: 'courier new' courier monospace; cursive cursive font-family: 'brush script mt' cursive; fantasy fantasy font-family: copperplate papyrus fantasy; custom sizing variables control the font face on every html element by using the omencss classes shown above for example to give your website a unique font you can download omen motion brand typography use your custom or google fonts  active focus and hover states omencss css class example active: variable active :sans:active font-family: auto; focus: variable focus :sans:focus font-family: auto; hover: variable hover :sans:focus font-family: auto; omencss let you conditionally apply utility classes for different page states thereby different variant modifiers are being used for example use `hover:sans` to only apply the sans utility class on hover  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range omencss example sm: 0px 480px sm:sans md: 480px 768px md:sans lg: 768px 1080px lg:sans omencss media queries can also be combined with active focus and hover states for example use `sm:sans` to apply the `sans` utility at only small screen sizes at or below 480px or `active:md:sans` to apply the `sans` utility class only at medium screen sizes 480px 768px and on active state 1 the structure is as follows: ` conditional state : media query : classname ` p e `active:md:sans` sources font-family https: developer mozilla org en-us docs web css font-family "
+plainText: " omencss css class example sans sans font-family: -apple-system blinkmacsystemfont roboto arial 'helvetica neue' 'segoe ui' oxygen ubuntu cantarell 'open sans' sans-serif; serif serif font-family: 'times new roman' times serif; monospace monospace font-family: 'courier new' courier monospace; cursive cursive font-family: 'brush script mt' cursive; fantasy fantasy font-family: copperplate papyrus fantasy; custom sizing variables control the font face on every html element by using the omencss classes shown above for example to give your website a unique font you can download omen motion brand typography use your custom or google fonts  active focus and hover states omencss css class example active: variable active :sans:active font-family: ; focus: variable focus :sans:focus font-family: ; hover: variable hover :sans:focus font-family: ; omencss let you conditionally apply utility classes for different page states thereby different variant modifiers are being used for example use `hover:sans` to only apply the sans utility class on hover  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range omencss example sm: 0px 480px sm:sans md: 480px 768px md:sans lg: 768px 1080px lg:sans omencss media queries can also be combined with active focus and hover states for example use `sm:sans` to apply the `sans` utility at only small screen sizes at or below 480px or `active:md:sans` to apply the `sans` utility class only at medium screen sizes 480px 768px and on active state 1 the structure is as follows: ` conditional state : media query : classname ` p e `active:md:sans` sources font-family https: developer mozilla org en-us docs web css font-family "
 ---
 
 | _omenCSS_ | CSS class example                                                                                                                                          |
@@ -33,11 +33,11 @@ Control the font face on every HTML element by using the omenCSS classes shown a
 
 ## Active, focus, and hover states
 
-| _omenCSS_         | CSS class example                           |
-| ----------------- | ------------------------------------------- |
-| active:{variable} | .active\:sans:active { font-family: auto; } |
-| focus:{variable}  | .focus\:sans:focus { font-family: auto; }   |
-| hover:{variable}  | .hover\:sans:focus { font-family: auto; }   |
+| _omenCSS_         | CSS class example                          |
+| ----------------- | ------------------------------------------ |
+| active:{variable} | .active\:sans:active { font-family: ...; } |
+| focus:{variable}  | .focus\:sans:focus { font-family: ...; }   |
+| hover:{variable}  | .hover\:sans:focus { font-family: ...; }   |
 
 omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:sans` to only apply the sans utility class on hover.
 

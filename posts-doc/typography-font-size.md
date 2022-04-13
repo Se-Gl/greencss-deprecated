@@ -1,0 +1,62 @@
+---
+isBlog: false
+title: 'Font Size'
+date: 'Apr 13. 2022'
+excerpt: 'Utility classes for controlling the font size.'
+cover*image: '/images/blog/cover/default-Image-blog.webp'
+category: 'Typography'
+author: 'Severin Glaser'
+keywords: 'Font Size, typography, text-10px, serif, monospace'
+classNames: ''
+plainText: ' omencss css class example minimum value maximum value step text number px text-10px font-size: 1px; 0 100 +1px text number px text-300px font-size: 300px; 110 300 +10px rel-text number vw rel-text-10vw font-size: 1px; 0 100 +1vw custom sizing variables control the font size on every html element by using the omencss classes shown above `text-1px` equals to the css class `font-size: 1px` `text-2px` equals to the css class `font-size: 2px` the maximum would be `text-100px` it equals to the css class `font-size: 100px` in general: the omencss class steps are +1px ranging from 0-100 if you want to use even highter font sizes you can use font sizes which starts from `text-110px` up to `text-300px` those classes have a step of +10px you can also use responsive font sizes `rel-text number vw` ranging from 0vw to 100vw with a step of +1vw  active focus and hover states omencss css class example active: variable active :text-10px:active font-size: 10px; focus: variable focus :text-10px:focus font-size: 10px; hover: variable hover :text-10px:focus font-size: 10px; omencss let you conditionally apply utility classes for different page states thereby different variant modifiers are being used for example use `hover:text-10px` to only apply the text-10px utility class on hover  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range omencss example sm: 0px 480px sm:text-10px md: 480px 768px md:text-10px lg: 768px 1080px lg:text-10px omencss media queries can also be combined with active focus and hover states for example use `sm:text-10px` to apply the `text-10px` utility at only small screen sizes at or below 480px or `active:md:text-10px` to apply the `text-10px` utility class only at medium screen sizes 480px 768px and on active state 1 the structure is as follows: ` conditional state : media query : number px` p e `active:md:text-10px` 1 the structure for the relative font size is as follows: ` conditional state : media query : number vw` p e `active:md:text-10vw` sources font-size https: developer mozilla org en-us docs web css font-size '
+---
+
+| _omenCSS_           | CSS class example                  | minimum Value | maximum Value | Step  |
+| ------------------- | ---------------------------------- | ------------- | ------------- | ----- |
+| text-{number}px     | .text-10px { font-size: 1px; }     | 0             | 100           | +1px  |
+| text-{number}px     | . text-300px { font-size: 300px; } | 110           | 300           | +10px |
+| rel-text-{number}vw | .rel-text-10vw { font-size: 1px; } | 0             | 100           | +1vw  |
+
+## Custom Sizing variables
+
+Control the font size on every HTML element by using the omenCSS classes shown above. `text-1px` equals to the css class `font-size: 1px`, `text-2px` equals to the css class `font-size: 2px` the maximum would be `text-100px`, it equals to the css class `font-size: 100px`. In general: the omenCSS class steps are +1px ranging from 0-100. If you want to use even highter font sizes you can use font sizes which starts from `text-110px` up to `text-300px` - those classes have a step of +10px. You can also use responsive font sizes `rel-text-{number}vw` - ranging from 0vw to 100vw with a step of +1vw.
+
+```html
+<div class="text-10px">{children}</div>
+<div class="text-110px">{children}</div>
+<div class="text-120px">{children}</div>
+<div class="rel-text-10vw">{children}</div>
+```
+
+## Active, focus, and hover states
+
+| _omenCSS_         | CSS class example                              |
+| ----------------- | ---------------------------------------------- |
+| active:{variable} | .active\:text-10px:active { font-size: 10px; } |
+| focus:{variable}  | .focus\:text-10px:focus { font-size: 10px; }   |
+| hover:{variable}  | .hover\:text-10px:focus { font-size: 10px; }   |
+
+omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:text-10px` to only apply the text-10px utility class on hover.
+
+```html
+<div class="text-10px hover:text-20px">{children}</div>
+```
+
+## Responsive Breakpoints
+
+Use variant modifiers to target media queries like responsive breakpoints.
+
+| media query | Range          | omenCSS example |
+| ----------- | -------------- | --------------- |
+| sm:         | 0px - 480px    | .sm:text-10px   |
+| md:         | 480px - 768px  | .md:text-10px   |
+| lg:         | 768px - 1080px | .lg:text-10px   |
+
+omenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:text-10px` to apply the `text-10px` utility at only small screen sizes at or below 480px. Or `active:md:text-10px` to apply the `text-10px` utility class only at medium screen sizes (480px) - (768px) and on active state.
+
+1. The structure is as follows: `{conditional state}:{media query}:{number}px` p.e. `active:md:text-10px`
+1. The structure for the relative font size is as follows: `{conditional state}:{media query}:{number}vw` p.e. `active:md:text-10vw`
+
+## Sources
+
+- [font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
