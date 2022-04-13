@@ -1,7 +1,15 @@
 @use '../abstracts/color' as *;
-// purple-10
+
 ol {
+  list-style: none;
   li {
+    &::before {
+      content: '\2022';
+      color: $purple;
+      display: inline-block;
+      width: 2rem;
+      margin-left: -2rem;
+    }
     code {
       background-color: #f9f3ff;
       padding: 5px;
