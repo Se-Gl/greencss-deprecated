@@ -31,7 +31,7 @@ export default function SlugComponent({
     <div className={`grid grid-col-12 gap-30px ${isBlog === true && 'mx-auto'}`}>
       {isBlog === false && (
         <div
-          className='overflow-y-scroll sticky top-17per max-h-75vh col-span-3 sm:display-none md:display-none'
+          className='overflow-y-scroll sticky top-20per max-h-75vh col-span-3 sm:display-none md:display-none'
           style={{ scrollbarWidth: 'thin', scrollbarColor: '#898989 #fdfdfd' }}
           id='sidebar'>
           <ul>

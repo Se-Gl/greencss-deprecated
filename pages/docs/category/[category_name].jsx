@@ -23,7 +23,7 @@ export default function DocsCategorySlugPage({ posts, categoryName, categories }
       keywords='docs, documentation, information, search, css'>
       <div className='grid grid-col-12 gap-30px'>
         <div
-          className='overflow-y-scroll sticky top-18per max-h-75vh col-span-3 sm:display-none md:display-none'
+          className='overflow-y-scroll sticky top-20per max-h-75vh col-span-3 sm:display-none md:display-none'
           style={{ scrollbarWidth: 'thin', scrollbarColor: '#898989 #fdfdfd' }}
           id='sidebar'>
           <ul>
