@@ -13,7 +13,7 @@ plainText: ' omencss css class example m-auto w-auto margin: auto; mx-auto mx-au
 
 | _omenCSS_ | CSS class example                  |
 | --------- | ---------------------------------- |
-| m-auto    | .w-auto { margin: auto; }          |
+| m-auto    | .m-auto { margin: auto; }          |
 | mx-auto   | .mx-auto { margin-inline: auto; }  |
 | my-auto   | .my-auto { margin-block: auto; }   |
 | mt-auto   | .mt-auto { margin-top: auto; }     |
@@ -67,3 +67,8 @@ Use variant modifiers to target media queries like responsive breakpoints.
 omenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:m-auto` to apply the `m-auto` utility at only small screen sizes at or below 480px. Or `active:md:m-auto` to apply the `m-auto` utility class only at medium screen sizes (480px) - (768px) and on active state.
 
 1. The structure is as follows: `{conditional state}:{media query}:{classname}` p.e. `active:md:m-auto`
+
+## Sources
+
+- [padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
+- [margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
