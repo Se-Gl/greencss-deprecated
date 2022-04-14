@@ -3,13 +3,27 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { getPosts } from '@/lib/posts'
-import BrandCard from '@/components/brand/BrandCard'
 import SideBar from '@/components/category/SideBar'
-import DocsHero from '@/components/icon/Docs/DocsHero'
-import SubSectionHero from '@/components/reusable/SubSectionHero'
 import { sortAlphabetically } from '@/utils/SortBy'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
+const SyntaxComponent = dynamic(() => import('@/components/markdown/SyntaxComponent'))
+const BrandCard = dynamic(() => import('@/components/brand/BrandCard'))
+
+const syntax = [
+  {
+    header: 'Quick Start | NPM',
+    description:
+      'The simplest and fastest way to get up and running with omenCSS is to use NPM. This is the normal approach for all JavaScript frameworks like Angular, React or Vue. Here you can decide for yourself how to set up your code base for the production.',
+    markdown: 'npm i omencss'
+  },
+  {
+    header: 'Quick Start | CDN',
+    description: 'The most straightforward approach for non-JavaScript frameworks is to use CDN.',
+    markdown:
+      '<head>\n  <title>Your awesome Website - designed with omenCSS</title>\n  <link rel="stylesheet" href="link-to-omencss-cdn" />\n</head>'
+  }
+]
 
 export default function DocsCategoryPage({ categories, posts }) {
   return (
@@ -28,22 +42,25 @@ export default function DocsCategoryPage({ categories, posts }) {
           </ul>
         </div>
         <div className='min-w-100per relative col-span-9 sm:col-span-12 md:col-span-12' id='docs-index'>
-          <SubSectionHero
-            header='Docs - the right way to get to know the system'
-            subheader='Search by categories. Get to know omenCSS and start writing design.'
-            illustration={<DocsHero width='100%' height='100%' />}
-          />
-          <div className='m-auto max-w-60rem mb-10rem'>
-            <h2 className='mt-50px'>The types</h2>
-            <p className='mt-25px'>
-              omenCSS features 21 core elements. These in turn are filtered into over 250 subcategories. You are looking
-              for a specific css class element? Use the search function instead, just press F3.
-            </p>
-            <div className='m-auto grid grid-col-2 gap-30px sm:gap-15px sm:grid-col-1 md:grid-col-1'>
-              {categories.sort().map((category, index) => (
-                <BrandCard title={category} link={`/docs/category/${category.toLowerCase()}`} key={index} />
-              ))}
-            </div>
+          <div className='max-w-75rem mb-10rem'>
+            <p className='text-purple-5 font-600 text-15px mb-5px'>Documentation</p>
+            <h1 className='font-900 mb-15px'>Docs - the right way to get to know the system</h1>
+            <h2 className='text-20px font-normal mb-25px'>Get to know omenCSS and start writing design.</h2>
+          </div>
+          {syntax.map((syn, index) => (
+            <SyntaxComponent header={syn.header} description={syn.description} markdown={syn.markdown} key={index}>
+              {syn.markdown}
+            </SyntaxComponent>
+          ))}
+          <h2 className='mt-10rem'>The types</h2>
+          <p className='mt-25px'>
+            omenCSS features 21 core elements. These in turn are filtered into over 250 subcategories. You are looking
+            for a specific css class element? Use the search function instead, just press F3.
+          </p>
+          <div className='m-auto grid grid-col-2 gap-30px sm:gap-15px sm:grid-col-1 md:grid-col-1'>
+            {categories.sort().map((category, index) => (
+              <BrandCard title={category} link={`/docs/category/${category.toLowerCase()}`} key={index} />
+            ))}
           </div>
         </div>
       </div>

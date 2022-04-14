@@ -50,14 +50,17 @@ export default function SlugComponent({
         </div>
 
         <div className='m-auto max-w-75rem mb-10rem'>
-          <p className='text-purple-5 font-600 text-15px mb-5px'>{category}</p>
-          <h1 className='font-900 mb-15px'>{title}</h1>
-          <h2 className='text-20px font-normal mb-25px'>{excerpt}</h2>
+          <div className='mb-10rem'>
+            <p className='text-purple-5 font-600 text-15px mb-5px'>{category}</p>
+            <h1 className='font-900 mb-15px'>{title}</h1>
+            <h2 className='text-20px font-normal'>{excerpt}</h2>
+          </div>
           {isBlog === false ? null : (
             <div className='relative h-50rem rounded-10px overflow-hidden mb-50px'>
               <Image layout='fill' objectFit='cover' src={cover_image} alt={excerpt} />
             </div>
           )}
+
           <Toc markdownText={content} isBlog={true} />
           {/*  eslint-disable  */}
           <ReactMarkdown

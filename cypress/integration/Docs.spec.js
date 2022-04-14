@@ -8,8 +8,17 @@ describe('Docs Screen Unit test', () => {
       .should('exist')
       .contains('Docs - the right way to get to know the system', { matchCase: false })
   })
-  it('renders the illustration', () => {
-    cy.get('#docs-hero-illustration').should('be.visible').should('exist')
+  it('renders the syntax code block', () => {
+    cy.get('#code-block').contains('npm i omencss', { matchCase: false })
+    // cy.get('#copy-animation-to-clipboard').click({ force: true }).should('be.visible').should('exist')
+    it('copies to clipboard', () => {
+      cy.window((window) => {
+        if (navigator?.clipboard?.write) {
+          cy.get('#copy-animation-to-clipboard').click()
+          cy.window().its('navigator.clipboard').invoke('readText').should('not.be.empty')
+        }
+      })
+    })
   })
 })
 
