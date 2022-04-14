@@ -45,12 +45,12 @@ table {
   max-height: 25rem;
   scrollbar-width: thin;
   tr {
-    border-block: 1px solid #8006f9;
+    border-block: 1px solid $green;
     background: $white;
     width: 100%;
     th {
       font-weight: 900;
-      border-inline: 1px solid #8006f9;
+      border-inline: 1px solid $green;
     }
   }
 
@@ -58,7 +58,7 @@ table {
     tr {
       td {
         width: 33%;
-        border-inline: 1px solid #8006f9;
+        border-inline: 1px solid $green;
       }
     }
   }
