@@ -23,7 +23,7 @@ export default function logo() {
             title='Logo'
             description='We never get tired of emphasizing that a logo is much more than just an appealing image or symbol.
                 Recognizability and simplicity help ensure that the logo is as identifiable as possible at all sizes and
-                in all contexts.'
+                in all contexts. For the logo, an isosceles square will be used, where the border radius is a quarter of the width and height.'
           />
           <BrandSection isLight={true}>
             <div className='flex justify-center'>
@@ -95,7 +95,7 @@ export default function logo() {
           </BrandSection>
           <BrandSection
             title='Logo as Icon'
-            description='Symbols are designed individually based on specifications. Here it is allowed to deviate from the Guideline, they are visually dimensioned to best fit each shape.'
+            description='Symbols are designed individually based on specifications. Normally an isosceles square will be used, where the border radius is a quarter of the width and height. Only when using the logo as an icon, it is allowed to deviate from the Guideline. Determine visually to best fit each shape.'
           />
           <BrandSection isLight={true}>
             <img src='/images/brand/logo/logo-icons_ffzqbh.webp' alt='greenCSS logo icons' id='greenCSS-logo-icons' />
@@ -117,7 +117,7 @@ export default function logo() {
                     id='greenCSS-logo-bad-example'
                   />
                 }
-                childTwo='Do not use the Logo without Vector Font glyph. Do not type use the logo in any other fonts.'
+                childTwo='Do not use the Logo without the leaft vector or without the background plane.'
               />
 
               <BrandBadExample
@@ -164,7 +164,7 @@ export default function logo() {
             titleTwo='02'
             descriptionTwo='Maintaining identity'
             titleThree='03'
-            descriptionThree='Focus on the importance of dark, light and purple'
+            descriptionThree='Focus on the importance of dark, light and green'
           />
         </div>
       </div>
