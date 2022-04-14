@@ -9,7 +9,7 @@ describe('Docs Screen Unit test', () => {
       .contains('Docs - the right way to get to know the system', { matchCase: false })
   })
   it('renders the syntax code block', () => {
-    cy.get('#code-block').contains('npm i omencss', { matchCase: false })
+    cy.get('#code-block').contains('npm i greenCSS', { matchCase: false })
     // cy.get('#copy-animation-to-clipboard').click({ force: true }).should('be.visible').should('exist')
     it('copies to clipboard', () => {
       cy.window((window) => {

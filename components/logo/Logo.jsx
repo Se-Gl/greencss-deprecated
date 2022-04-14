@@ -8,7 +8,7 @@ function Logo({ width = '50', height = '50' }) {
       height={height}
       fill='none'
       viewBox='0 0 50 50'
-      id='omenCSS_logo'>
+      id='greenCSS_logo'>
       <rect width='50' height='50' fill='#101010' rx='12.5'></rect>
       <path
         fill='#F7F7F8'

@@ -29,7 +29,7 @@ export default function Layout({
         <meta name='publisher' content={author} />
 
         {/* Search Engine Optimization Meta Tags */}
-        <title>{title} | omenCSS</title>
+        <title>{title} | greenCSS</title>
         <meta name='description' content={description} />
         <meta name='keywords' content={keywords} />
         <meta name='robots' content='index,follow' />
@@ -50,7 +50,7 @@ export default function Layout({
         <link rel='apple-touch-icon' sizes='16x16' href='/images/icons/favicon-16x16.png' />
         <link rel='apple-touch-icon' sizes='32x32' href='/images/icons/favicon-32x32.png' />
         <link rel='apple-touch-icon' sizes='180x180' href='/images/icons/apple-touch-icon.png' />
-        <link rel='mask-icon' color='#fdfdfd' href='/images/brand/omencss_logo_dark.svg' />
+        <link rel='mask-icon' color='#fdfdfd' href='/images/brand/greenCSS_logo_dark.svg' />
         <link rel='icon' type='image/svg+xml' href='/images/icons/favicon.svg' />
 
         {/* Meta Tags for HTML pages on Mobile */}
@@ -66,8 +66,8 @@ export default function Layout({
         documentation: https://dev.twitter.com/cards/getting-started
         Be sure validate your Twitter card markup on the documentation site. */}
         <meta name='twitter:card' content='summary' />
-        <meta name='twitter:site' content='@omenCSS' />
-        <meta name='twitter:creator' content='@omenCSS' />
+        <meta name='twitter:site' content='@greenCSS' />
+        <meta name='twitter:creator' content='@greenCSS' />
       </Head>
       <Header />
       <main>
@@ -81,10 +81,10 @@ export default function Layout({
 
 Layout.defaultProps = {
   title: 'The classy way to write design.',
-  keywords: 'HTML, CSS, omenCSS, css library, css framework',
+  keywords: 'HTML, CSS, greenCSS, css library, css framework',
   description:
-    'omenCSS is an intuitive dynamic animated CSS library for HTML5 and frameworks like VueJS, NextJs, React, or Angular. Over 100.000 CSS classes cover all your needs. Yet, completely lightweight, as unused classes are purged before production.',
+    'greenCSS is an intuitive dynamic animated CSS library for HTML5 and frameworks like VueJS, NextJs, React, or Angular. Over 100.000 CSS classes cover all your needs. Yet, completely lightweight, as unused classes are purged before production.',
   author: 'Severin Glaser',
   url: '',
-  image: `${NEXT_URL}/images/omencss-default.png`
+  image: `${NEXT_URL}/images/greenCSS-default.png`
 }

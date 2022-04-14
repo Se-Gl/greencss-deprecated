@@ -8,10 +8,10 @@ category: 'Flexbox'
 author: 'Severin Glaser'
 keywords: 'Flex, flexbox, rrder'
 classNames: ''
-plainText: ' omencss css class example order-first order-first order: -9999; order-last order-last order: 9999; order-none order-none order: 0; order-1 order-1 order: 1; order-2 order-2 order: 2; order-3 order-3 order: 3; order-4 order-4 order: 4; order-5 order-5 order: 5; order-6 order-6 order: 6; order-7 order-7 order: 7; order-8 order-8 order: 8; order-9 order-9 order: 9; order-10 order-10 order: 10; order-11 order-11 order: 11; order-12 order-12 order: 12; how to work with order use the utility classes above to access your desired class order works with flex and grid use `order order-values ` to render flex and grid elements in a different way in the dom ! omencss order images docs flex order webp?style=centerme  active focus and hover states omencss css class example active:order-first active :order-first:active order: -9999; focus:order-first focus :order-first:focus order: -9999; hover:order-first hover :order-first:hover order: -9999; omencss let you conditionally apply utility classes for different page states thereby different variant modifiers are being used for example use `hover:order-first` to only apply the `order-first` utility on hover  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range omencss example sm: 0px 480px sm:order-first md: 480px 768px md:order-first lg: 768px 1080px lg:order-first omencss media queries can also be combined with active focus and hover states for example use `sm:order-first` to apply the order-first utility at only small screen sizes at or below 480px or `active:md:order-first` to apply the order-first utility at only between small screen sizes 480px and medium screen sizes 768px 1 the structure is as follows: ` conditional state : media query : order-values ` p e `active:md:order-first` executive summary when you vocalize the class names it helps you to learn and remember the classes as well as the structure you can say: omencss class names spoken example active:order-first focus:order-first hover:order-first active order focus order hover order active:sm:order-first focus:sm:order-first hover:sm:order-first active small screens order focus small screens order hover small screens order active:md:order-first focus:md:order-first hover:md:order-first active medium screens order focus medium screens order hover medium screens order active:lg:order-first focus:lg:order-first hover:lg:order-first active large screens order focus large screens order hover large screens order sources ordering-flex-items https: developer mozilla org en-us docs web css css flexible box layout ordering flex items '
+plainText: ' greenCSS css class example order-first order-first order: -9999; order-last order-last order: 9999; order-none order-none order: 0; order-1 order-1 order: 1; order-2 order-2 order: 2; order-3 order-3 order: 3; order-4 order-4 order: 4; order-5 order-5 order: 5; order-6 order-6 order: 6; order-7 order-7 order: 7; order-8 order-8 order: 8; order-9 order-9 order: 9; order-10 order-10 order: 10; order-11 order-11 order: 11; order-12 order-12 order: 12; how to work with order use the utility classes above to access your desired class order works with flex and grid use `order order-values ` to render flex and grid elements in a different way in the dom ! greenCSS order images docs flex order webp?style=centerme  active focus and hover states greenCSS css class example active:order-first active :order-first:active order: -9999; focus:order-first focus :order-first:focus order: -9999; hover:order-first hover :order-first:hover order: -9999; greenCSS let you conditionally apply utility classes for different page states thereby different variant modifiers are being used for example use `hover:order-first` to only apply the `order-first` utility on hover  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range greenCSS example sm: 0px 480px sm:order-first md: 480px 768px md:order-first lg: 768px 1080px lg:order-first greenCSS media queries can also be combined with active focus and hover states for example use `sm:order-first` to apply the order-first utility at only small screen sizes at or below 480px or `active:md:order-first` to apply the order-first utility at only between small screen sizes 480px and medium screen sizes 768px 1 the structure is as follows: ` conditional state : media query : order-values ` p e `active:md:order-first` executive summary when you vocalize the class names it helps you to learn and remember the classes as well as the structure you can say: greenCSS class names spoken example active:order-first focus:order-first hover:order-first active order focus order hover order active:sm:order-first focus:sm:order-first hover:sm:order-first active small screens order focus small screens order hover small screens order active:md:order-first focus:md:order-first hover:md:order-first active medium screens order focus medium screens order hover medium screens order active:lg:order-first focus:lg:order-first hover:lg:order-first active large screens order focus large screens order hover large screens order sources ordering-flex-items https: developer mozilla org en-us docs web css css flexible box layout ordering flex items '
 ---
 
-| _omenCSS_   | CSS class example              |
+| _greenCSS_   | CSS class example              |
 | ----------- | ------------------------------ |
 | order-first | .order-first { order: -9999; } |
 | order-last  | .order-last { order: 9999; }   |
@@ -37,7 +37,7 @@ Use the utility classes above to access your desired class.
 
 Use `order-{order-values}` to render flex and grid elements in a different way in the DOM.
 
-![omencss order](/images/docs/flex/order.webp?style=centerme)
+![greenCSS order](/images/docs/flex/order.webp?style=centerme)
 
 ```html
 <div class="flex">
@@ -49,13 +49,13 @@ Use `order-{order-values}` to render flex and grid elements in a different way i
 
 ## Active, focus, and hover states
 
-| _omenCSS_          | CSS class example                             |
+| _greenCSS_          | CSS class example                             |
 | ------------------ | --------------------------------------------- |
 | active:order-first | .active\:order-first:active { order: -9999; } |
 | focus:order-first  | .focus\:order-first:focus { order: -9999; }   |
 | hover:order-first  | .hover\:order-first:hover { order: -9999; }   |
 
-omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:order-first` to only apply the `order-first` utility on hover.
+greenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:order-first` to only apply the `order-first` utility on hover.
 
 ```html
 <div class="flex">
@@ -69,13 +69,13 @@ omenCSS let you conditionally apply utility classes for different page states. T
 
 Use variant modifiers to target media queries like responsive breakpoints.
 
-| media query | Range          | omenCSS example |
+| media query | Range          | greenCSS example |
 | ----------- | -------------- | --------------- |
 | sm:         | 0px - 480px    | .sm:order-first |
 | md:         | 480px - 768px  | .md:order-first |
 | lg:         | 768px - 1080px | .lg:order-first |
 
-omenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:order-first` to apply the order-first utility at only small screen sizes at or below 480px. Or `active:md:order-first` to apply the order-first utility at only between small screen sizes (480px) and medium screen sizes (768px).
+greenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:order-first` to apply the order-first utility at only small screen sizes at or below 480px. Or `active:md:order-first` to apply the order-first utility at only between small screen sizes (480px) and medium screen sizes (768px).
 
 1. The structure is as follows: `{conditional state}:{media query}:{order-values}` p.e. `active:md:order-first`
 
@@ -83,7 +83,7 @@ omenCSS media queries can also be combined with active, focus and hover states. 
 
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
-| omenCSS class names                                               | spoken example                                                                      |
+| greenCSS class names                                               | spoken example                                                                      |
 | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | active:order-first, focus:order-first, hover:order-first          | active order, focus order, hover order                                              |
 | active:sm:order-first, focus:sm:order-first, hover:sm:order-first | active small screens order, focus small screens order, hover small screens order    |

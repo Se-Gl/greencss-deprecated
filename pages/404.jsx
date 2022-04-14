@@ -13,7 +13,7 @@ export default function ForOhFor() {
 
   return (
     <Layout
-      title='omenCSS 404 - Something has gone terribly wrong'
+      title='greenCSS 404 - Something has gone terribly wrong'
       description='It seems that this page has been lost somewhere in the WWW. Maybe you should use the search function.'
       url={NEXT_URL + asPath}
       keywords='404, not found, error, sorry'>

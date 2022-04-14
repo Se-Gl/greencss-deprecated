@@ -9,7 +9,7 @@ export default function AnimationIndexPage() {
     <div className='overflow-x-hidden'>
       <Layout
         className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'
-        title='Handmade, crafted animations by omenCSS'
+        title='Handmade, crafted animations by greenCSS'
         description='The collaboration of design and code plays an important role, especially in web development. Check the full selection, including animation examples.'
         url='docs/animation'
         keywords='Animation, handmade css animation, reusable animation, omen css'>

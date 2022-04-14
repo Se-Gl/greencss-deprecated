@@ -19,10 +19,10 @@ describe('Blog Screen Unit test', () => {
 
 describe('Verify ElementRenderer', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/blog/omencss-animations')
+    cy.visit('http://localhost:3000/blog/greenCSS-animations')
   })
   it('renders the header with its id', () => {
-    cy.get('#blog-omencss-animations')
+    cy.get('#blog-greenCSS-animations')
       .should('be.visible')
       .should('exist')
       .contains('How to stagger CSS animations', { matchCase: false })
@@ -32,7 +32,7 @@ describe('Verify ElementRenderer', () => {
       .should('exist')
       .contains('How to stagger CSS animations ', { matchCase: false })
       .click({ force: true })
-    cy.url().should('be.equal', 'http://localhost:3000/blog/omencss-animations#how-to-stagger-css-animations')
+    cy.url().should('be.equal', 'http://localhost:3000/blog/greenCSS-animations#how-to-stagger-css-animations')
   })
   it('checks if code is being rendered', () => {
     cy.get('pre').should('exist')

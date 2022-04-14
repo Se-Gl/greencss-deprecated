@@ -10,14 +10,14 @@ export default function Policy() {
         subheader="We have nothing to hide. Privacy Policies are not only a useful legal document - it's a lifestyle. "
         illustration={<PolicyHero width='100%' height='100%' />}
       />
-      <h1>Privacy Policy for omenCSS</h1>
+      <h1>Privacy Policy for greenCSS</h1>
       <p>
         The website is hosted on Vercel, it uses the Vercel analytics tool, Google analytics and additionally posthog -
         an open source project.
       </p>
       <p>
-        At omenCSS, accessible from www.omencss.com, one of our main priorities is the privacy of our visitors. This
-        Privacy Policy document contains types of information that is collected and recorded by omenCSS and how we use
+        At greenCSS, accessible from www.greenCSS.com, one of our main priorities is the privacy of our visitors. This
+        Privacy Policy document contains types of information that is collected and recorded by greenCSS and how we use
         it.
       </p>
       <p>
@@ -28,7 +28,7 @@ export default function Policy() {
       </p>
       <p>
         This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards
-        to the information that they shared and/or collect in omenCSS. This policy is not applicable to any information
+        to the information that they shared and/or collect in greenCSS. This policy is not applicable to any information
         collected offline or via channels other than this website. Our Privacy Policy was created with the help of the{' '}
         <Link href='https://www.privacypolicygenerator.info'>
           <a target='_blank' rel='nofollow noopener noreferrer'>
@@ -70,7 +70,7 @@ export default function Policy() {
       </ol>
       <h2>Log Files</h2>
       <p>
-        omenCSS follows a standard procedure of using log files. These files log visitors when they visit websites. All
+        greenCSS follows a standard procedure of using log files. These files log visitors when they visit websites. All
         hosting companies do this and a part of hosting service&apos;s analytics. The information collected by log files
         include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp,
         referring/exit pages, and possibly the number of clicks. These are not linked to any information that is
@@ -79,7 +79,7 @@ export default function Policy() {
       </p>
       <h2>Cookies and Web Beacons</h2>
       <p>
-        omenCSS uses &apos;cookies&apos; in order to provide the best user experiance. These cookies are used to store
+        greenCSS uses &apos;cookies&apos; in order to provide the best user experiance. These cookies are used to store
         information including visitor&apos;s preferences, and the pages on the website that the visitor accessed or
         visited. The information is used to optimize the user&apos;s experience by customizing our web page content
         based on visitors&apos; browser type and/or other information.
@@ -92,18 +92,18 @@ export default function Policy() {
         .
       </p>
       <h2>Advertising Partners Privacy Policies</h2>
-      <p>You may consult this list to find the Privacy Policy for each of the advertising partners of omenCSS.</p>
+      <p>You may consult this list to find the Privacy Policy for each of the advertising partners of greenCSS.</p>
       <p>
         Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used
-        in their respective advertisements and links that appear on omenCSS, which are sent directly to user&apos;s
+        in their respective advertisements and links that appear on greenCSS, which are sent directly to user&apos;s
         browser. They automatically receive your IP address when this occurs. These technologies are used to measure the
         effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on
         websites that you visit.
       </p>
-      <p>Note that omenCSS has no access to or control over these cookies that are used by third-party advertisers.</p>
+      <p>Note that greenCSS has no access to or control over these cookies that are used by third-party advertisers.</p>
       <h2>Third Party Privacy Policies</h2>
       <p>
-        omenCSS&apos;s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to
+        greenCSS&apos;s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to
         consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may
         include their practices and instructions about how to opt-out of certain options.{' '}
       </p>
@@ -163,7 +163,7 @@ export default function Policy() {
         and guardians to observe, participate in, and/or monitor and guide their online activity.
       </p>
       <p>
-        omenCSS does not knowingly collect any Personal Identifiable Information from children under the age of 13. If
+        greenCSS does not knowingly collect any Personal Identifiable Information from children under the age of 13. If
         you think that your child provided this kind of information on our website, we strongly encourage you to contact
         us immediately and we will do our best efforts to promptly remove such information from our records.
       </p>

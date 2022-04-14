@@ -6,7 +6,7 @@ function LogoDark({ width = '401', height = '400' }) {
       height={height}
       fill='none'
       viewBox='0 0 401 400'
-      id='omenCSS-logo-dark'>
+      id='greenCSS-logo-dark'>
       <rect width='400.526' height='399.246' fill='#101010' rx='100'></rect>
       <path
         fill='#F7F7F8'

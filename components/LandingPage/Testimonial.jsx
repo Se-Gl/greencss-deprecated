@@ -13,7 +13,7 @@ export default function Testimonial() {
           <Link href='https://www.severinglaser.ch'>
             <a className='text-purple mt-50px no-decoration'>Severin Glaser</a>
           </Link>
-          <p className='text-white mb-0px'>omenCSS</p>
+          <p className='text-white mb-0px'>greenCSS</p>
         </div>
       </div>
     </section>

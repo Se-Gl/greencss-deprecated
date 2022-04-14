@@ -18,7 +18,7 @@ export default function BlogPostPage({
       description={excerpt}
       image={cover_image}
       url={`blog/${slug}`}
-      keywords={`${category}, ${keywords} omenCSS, css, omen css`}
+      keywords={`${category}, ${keywords} greenCSS, css, omen css`}
       author={author}
       className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'
       hasCanonical={true}>

@@ -10,7 +10,7 @@ const serviceCard = [
 export default function Support() {
   return (
     <section className='my-20rem sm:my-100px md:my-100px' id='supporters'>
-      <h2 className='max-w-50rem sm:m-10px md:m-10px'>There’s more behind omenCSS</h2>
+      <h2 className='max-w-50rem sm:m-10px md:m-10px'>There’s more behind greenCSS</h2>
 
       <Carousel>
         <Carousel>

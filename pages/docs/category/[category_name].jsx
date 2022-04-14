@@ -18,7 +18,7 @@ export default function DocsCategorySlugPage({ posts, categoryName, categories }
     <Layout
       className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
       title={`Documentation - ${categoryName}`}
-      description={`omenCSS documentation - get an overview about the category ${categoryName}, its css classes and how to apply them.`}
+      description={`greenCSS documentation - get an overview about the category ${categoryName}, its css classes and how to apply them.`}
       url='docs'
       keywords='docs, documentation, information, search, css'>
       <div className='grid grid-col-12 gap-30px'>

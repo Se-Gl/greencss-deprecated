@@ -8,10 +8,10 @@ category: 'Layout'
 author: 'Severin Glaser'
 keywords: 'Columns, Break After, layout'
 classNames: ''
-plainText: ' omencss css class example break-after-auto break-after-auto break-after: auto; break-after-always break-after-always break-after: always; break-after-avoid break-after-avoid break-after: avoid; break-after-all break-after-all break-after: all; break-after-avoid-page break-after-avoid-page break-after: avoid-page; break-after-page break-after-page break-after: page; break-after-left break-after-left break-after: left; break-after-right break-after-right break-after: right; break-after-column break-after-column break-after: column; how to work with break after use the `break-after keyword ` how an element a column or the page behaves after an element use the `break-after-always` utility class for example to force to always break after an element  the result would look like: ! omencss break after images docs layout break-after webp?style=centerme active focus and hover states omencss css class example active:break-after keyword active :break-after-auto:active columns: auto; focus:break-after keyword focus :break-after-auto:focus columns: auto; hover:break-after keyword hover :break-after-auto:hover columns: auto; omencss let you conditionally apply utility classes for different page states thereby different variant modifiers are being used for example use `hover:break-after-auto` to only apply the break-after-auto utility class on hover  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range omencss example sm: 0px 480px sm:break-after-auto md: 480px 768px md:break-after-auto lg: 768px 1080px lg:break-after-auto omencss media queries can also be combined with active focus and hover states for example use `sm:break-after-auto` to apply the break-after-auto utility at only small screen sizes at or below 480px or `active:md:break-after-auto` to apply the break-after-auto utility at only between small screen sizes 480px and medium screen sizes 768px 1 the structure is as follows: ` conditional state : media query :break-after keyword ` p e `active:md:break-after-auto` executive summary when you vocalize the class names it helps you to learn and remember the classes as well as the structure you can say: omencss class names spoken example active:break-after keyword focus:break-after keyword hover:break-after keyword active break after auto focus break after auto hover break after auto active:sm:break-after keyword focus:sm:break-after keyword hover:sm:break-after keyword active small screens break after auto focus small screens break after auto hover small screens break after auto active:md:break-after keyword focus:md:break-after keyword hover:md:break-after keyword active medium screens break after auto focus medium screens break after auto hover medium screens break after auto active:lg:break-after keyword focus:lg:break-after keyword hover:lg:break-after keyword active large screens break after auto focus large screens break after auto hover large screens break after auto sources break-after https: developer mozilla org en-us docs web css break-after '
+plainText: ' greenCSS css class example break-after-auto break-after-auto break-after: auto; break-after-always break-after-always break-after: always; break-after-avoid break-after-avoid break-after: avoid; break-after-all break-after-all break-after: all; break-after-avoid-page break-after-avoid-page break-after: avoid-page; break-after-page break-after-page break-after: page; break-after-left break-after-left break-after: left; break-after-right break-after-right break-after: right; break-after-column break-after-column break-after: column; how to work with break after use the `break-after keyword ` how an element a column or the page behaves after an element use the `break-after-always` utility class for example to force to always break after an element  the result would look like: ! greenCSS break after images docs layout break-after webp?style=centerme active focus and hover states greenCSS css class example active:break-after keyword active :break-after-auto:active columns: auto; focus:break-after keyword focus :break-after-auto:focus columns: auto; hover:break-after keyword hover :break-after-auto:hover columns: auto; greenCSS let you conditionally apply utility classes for different page states thereby different variant modifiers are being used for example use `hover:break-after-auto` to only apply the break-after-auto utility class on hover  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range greenCSS example sm: 0px 480px sm:break-after-auto md: 480px 768px md:break-after-auto lg: 768px 1080px lg:break-after-auto greenCSS media queries can also be combined with active focus and hover states for example use `sm:break-after-auto` to apply the break-after-auto utility at only small screen sizes at or below 480px or `active:md:break-after-auto` to apply the break-after-auto utility at only between small screen sizes 480px and medium screen sizes 768px 1 the structure is as follows: ` conditional state : media query :break-after keyword ` p e `active:md:break-after-auto` executive summary when you vocalize the class names it helps you to learn and remember the classes as well as the structure you can say: greenCSS class names spoken example active:break-after keyword focus:break-after keyword hover:break-after keyword active break after auto focus break after auto hover break after auto active:sm:break-after keyword focus:sm:break-after keyword hover:sm:break-after keyword active small screens break after auto focus small screens break after auto hover small screens break after auto active:md:break-after keyword focus:md:break-after keyword hover:md:break-after keyword active medium screens break after auto focus medium screens break after auto hover medium screens break after auto active:lg:break-after keyword focus:lg:break-after keyword hover:lg:break-after keyword active large screens break after auto focus large screens break after auto hover large screens break after auto sources break-after https: developer mozilla org en-us docs web css break-after '
 ---
 
-| _omenCSS_              | CSS class example                                    |
+| _greenCSS_              | CSS class example                                    |
 | ---------------------- | ---------------------------------------------------- |
 | break-after-auto       | .break-after-auto { break-after: auto; }             |
 | break-after-always     | .break-after-always { break-after: always; }         |
@@ -55,17 +55,17 @@ Use the `break-after-{keyword}` how an element, a column or the page behaves aft
 ```
 
 The result would look like:
-![omencss break after](/images/docs/layout/break-after.webp?style=centerme)
+![greenCSS break after](/images/docs/layout/break-after.webp?style=centerme)
 
 ## Active, focus, and hover states
 
-| _omenCSS_                    | CSS class example                                  |
+| _greenCSS_                    | CSS class example                                  |
 | ---------------------------- | -------------------------------------------------- |
 | active:break-after-{keyword} | .active\:break-after-auto:active {columns: auto; } |
 | focus:break-after-{keyword}  | .focus\:break-after-auto:focus { columns: auto; }  |
 | hover:break-after-{keyword}  | .hover\:break-after-auto:hover { columns: auto; }  |
 
-omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:break-after-auto` to only apply the break-after-auto utility class on hover.
+greenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:break-after-auto` to only apply the break-after-auto utility class on hover.
 
 ```html
 <div class="break-after-column hover:break-after-auto">{children}</div>
@@ -75,13 +75,13 @@ omenCSS let you conditionally apply utility classes for different page states. T
 
 Use variant modifiers to target media queries like responsive breakpoints.
 
-| media query | Range          | omenCSS example      |
+| media query | Range          | greenCSS example      |
 | ----------- | -------------- | -------------------- |
 | sm:         | 0px - 480px    | .sm:break-after-auto |
 | md:         | 480px - 768px  | .md:break-after-auto |
 | lg:         | 768px - 1080px | .lg:break-after-auto |
 
-omenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:break-after-auto` to apply the break-after-auto utility at only small screen sizes at or below 480px. Or `active:md:break-after-auto` to apply the break-after-auto utility at only between small screen sizes (480px) and medium screen sizes (768px).
+greenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:break-after-auto` to apply the break-after-auto utility at only small screen sizes at or below 480px. Or `active:md:break-after-auto` to apply the break-after-auto utility at only between small screen sizes (480px) and medium screen sizes (768px).
 
 1. The structure is as follows: `{conditional state}:{media query}:break-after-{keyword}` p.e. `active:md:break-after-auto`
 
@@ -89,7 +89,7 @@ omenCSS media queries can also be combined with active, focus and hover states. 
 
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
-| omenCSS class names                                                                               | spoken example                                                                                                        |
+| greenCSS class names                                                                               | spoken example                                                                                                        |
 | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | active:break-after-{keyword} , focus:break-after-{keyword} , hover:break-after-{keyword}          | active break after auto, focus break after auto, hover break after auto                                               |
 | active:sm:break-after-{keyword} , focus:sm:break-after-{keyword} , hover:sm:break-after-{keyword} | active small screens break after auto, focus small screens break after auto, hover small screens break after auto,    |

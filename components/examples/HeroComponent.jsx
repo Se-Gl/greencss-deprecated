@@ -41,7 +41,7 @@ export default function HeroComponent() {
                 layout='fill'
                 objectFit='cover'
                 src='/images/blog/blogcontent/Hero-Image.webp'
-                alt='omenCSS Hero Image sample'
+                alt='greenCSS Hero Image sample'
               />
             </div>
           </div>

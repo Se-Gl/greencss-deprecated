@@ -9,10 +9,10 @@ export default function BrandHome() {
   return (
     <Layout
       className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
-      title='omenCSS Brand Book | Styleguide | Corporate Identity'
+      title='greenCSS Brand Book | Styleguide | Corporate Identity'
       description='A Brand Book - the right way to get to know a story by exploring a style guide.'
       url='brand'
-      keywords='Styleguide, Brand Book, omenCSS, Design, Corporate Identity, omen css'>
+      keywords='Styleguide, Brand Book, greenCSS, Design, Corporate Identity, omen css'>
       <div className='min-w-100per relative' id='brand-intro'>
         <SubSectionHero
           header='A Brand Book - the right way to get to know a story'
@@ -25,7 +25,7 @@ export default function BrandHome() {
             The brand system features four core elements - logo, typography, colours and composition.
           </p>
           <p>
-            All brand features featured in the omenCSS Brand Book or this website are copyrighted. The omenCSS library
+            All brand features featured in the greenCSS Brand Book or this website are copyrighted. The greenCSS library
             is licensed under the MIT License. If you choose to use logos, designs and/or other brand assets, you
             acknowledge that you sufficiently attribute the specific content.
           </p>

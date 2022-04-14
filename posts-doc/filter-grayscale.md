@@ -8,16 +8,16 @@ category: 'Filter'
 author: 'Severin Glaser'
 keywords: 'Grayscale, filter, filters'
 classNames: ''
-plainText: ' omencss css class example minimum value maximum value step grayscale number per grayscale-1per filter:grayscale 1% 0 100 +1% how to work the grayscale filter use the `grayscale number per` utilities to set the amount of grayscale black and white filter for the element `grayscale-1per` equals to the css class `filter:grayscale 1% ` `grayscale-2per` equals to the css class `filter: grayscale 2% ` the maximum would be `grayscale-100per` it equals to the css class `filter: grayscale 100% ` in general: the omencss class steps are +1% ranging from 0-100  active focus and hover states omencss css class example active:grayscale number per active :grayscale-5per:active filter: grayscale 50% ; focus:grayscale number per focus :grayscale-5per:focus filter: grayscale 50% ; hover:grayscale number per hover :grayscale-5per:hover filter: grayscale 50% ; omencss let you conditionally apply utility classes for different page states thereby different variant modifiers are being used for example use `hover:grayscale-5per` to only apply the grayscale-5per utility class on hover  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range omencss example sm: 0px 480px sm:grayscale-5per md: 480px 768px md:grayscale-5per lg: 768px 1080px lg:grayscale-5per omencss media queries can also be combined with active focus and hover states for example use `sm:grayscale-5per` to apply the grayscale-5per utility at only small screen sizes at or below 480px or `active:md:grayscale-5per` to apply the grayscale-5per utility at only between small screen sizes 480px and medium screen sizes 768px 1 the structure for auto classes is as follows: ` conditional state : media query :grayscale number per` p e `active:md:grayscale-5per` executive summary when you vocalize the class names it helps you to learn and remember the classes as well as the structure you can say: omencss class names spoken example active:grayscale-5per focus:grayscale-5per hover:grayscale-5per active grayscale focus grayscale hover grayscale active:sm:grayscale-5per focus:sm:grayscale-5per hover:sm:grayscale-5per active small screens grayscale focus small screens grayscale hover small screens grayscale active:md:grayscale-5per focus:md:grayscale-5per hover:md:grayscale-5per active medium screens grayscale focus medium screens grayscale hover medium screens grayscale active:lg:grayscale-5per focus:lg:grayscale-5per hover:lg:grayscale-5per active large screens grayscale focus large screens grayscale hover large screens grayscale sources grayscale https: developer mozilla org en-us docs web css filter-function grayscale '
+plainText: ' greenCSS css class example minimum value maximum value step grayscale number per grayscale-1per filter:grayscale 1% 0 100 +1% how to work the grayscale filter use the `grayscale number per` utilities to set the amount of grayscale black and white filter for the element `grayscale-1per` equals to the css class `filter:grayscale 1% ` `grayscale-2per` equals to the css class `filter: grayscale 2% ` the maximum would be `grayscale-100per` it equals to the css class `filter: grayscale 100% ` in general: the greenCSS class steps are +1% ranging from 0-100  active focus and hover states greenCSS css class example active:grayscale number per active :grayscale-5per:active filter: grayscale 50% ; focus:grayscale number per focus :grayscale-5per:focus filter: grayscale 50% ; hover:grayscale number per hover :grayscale-5per:hover filter: grayscale 50% ; greenCSS let you conditionally apply utility classes for different page states thereby different variant modifiers are being used for example use `hover:grayscale-5per` to only apply the grayscale-5per utility class on hover  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range greenCSS example sm: 0px 480px sm:grayscale-5per md: 480px 768px md:grayscale-5per lg: 768px 1080px lg:grayscale-5per greenCSS media queries can also be combined with active focus and hover states for example use `sm:grayscale-5per` to apply the grayscale-5per utility at only small screen sizes at or below 480px or `active:md:grayscale-5per` to apply the grayscale-5per utility at only between small screen sizes 480px and medium screen sizes 768px 1 the structure for auto classes is as follows: ` conditional state : media query :grayscale number per` p e `active:md:grayscale-5per` executive summary when you vocalize the class names it helps you to learn and remember the classes as well as the structure you can say: greenCSS class names spoken example active:grayscale-5per focus:grayscale-5per hover:grayscale-5per active grayscale focus grayscale hover grayscale active:sm:grayscale-5per focus:sm:grayscale-5per hover:sm:grayscale-5per active small screens grayscale focus small screens grayscale hover small screens grayscale active:md:grayscale-5per focus:md:grayscale-5per hover:md:grayscale-5per active medium screens grayscale focus medium screens grayscale hover medium screens grayscale active:lg:grayscale-5per focus:lg:grayscale-5per hover:lg:grayscale-5per active large screens grayscale focus large screens grayscale hover large screens grayscale sources grayscale https: developer mozilla org en-us docs web css filter-function grayscale '
 ---
 
-| _omenCSS_             | CSS class example                       | minimum Value | maximum Value | Step |
+| _greenCSS_             | CSS class example                       | minimum Value | maximum Value | Step |
 | --------------------- | --------------------------------------- | ------------- | ------------- | ---- |
 | grayscale-{number}per | .grayscale-1per { filter:grayscale(1%)} | 0             | 100           | +1%  |
 
 ## How to work the grayscale filter
 
-Use the `grayscale-{number}per` utilities to set the amount of grayscale (black and white filter) for the element. `grayscale-1per` equals to the css class `filter:grayscale(1%)`, `grayscale-2per` equals to the css class `filter: grayscale(2%)` the maximum would be `grayscale-100per`, it equals to the css class `filter: grayscale(100%)`. In general: the omenCSS class steps are +1% ranging from 0-100.
+Use the `grayscale-{number}per` utilities to set the amount of grayscale (black and white filter) for the element. `grayscale-1per` equals to the css class `filter:grayscale(1%)`, `grayscale-2per` equals to the css class `filter: grayscale(2%)` the maximum would be `grayscale-100per`, it equals to the css class `filter: grayscale(100%)`. In general: the greenCSS class steps are +1% ranging from 0-100.
 
 ```html
 <!-- no grayscale -->
@@ -30,13 +30,13 @@ Use the `grayscale-{number}per` utilities to set the amount of grayscale (black 
 
 ## Active, focus, and hover states
 
-| _omenCSS_                    | CSS class example                                          |
+| _greenCSS_                    | CSS class example                                          |
 | ---------------------------- | ---------------------------------------------------------- |
 | active:grayscale-{number}per | .active\:grayscale-5per:active { filter: grayscale(50%); } |
 | focus:grayscale-{number}per  | .focus\:grayscale-5per:focus { filter: grayscale(50%); }   |
 | hover:grayscale-{number}per  | .hover\:grayscale-5per:hover { filter: grayscale(50%); }   |
 
-omenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:grayscale-5per` to only apply the grayscale-5per utility class on hover.
+greenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:grayscale-5per` to only apply the grayscale-5per utility class on hover.
 
 ```html
 <div class="hover:grayscale-5per ...">{children}</div>
@@ -46,13 +46,13 @@ omenCSS let you conditionally apply utility classes for different page states. T
 
 Use variant modifiers to target media queries like responsive breakpoints.
 
-| media query | Range          | omenCSS example    |
+| media query | Range          | greenCSS example    |
 | ----------- | -------------- | ------------------ |
 | sm:         | 0px - 480px    | .sm:grayscale-5per |
 | md:         | 480px - 768px  | .md:grayscale-5per |
 | lg:         | 768px - 1080px | .lg:grayscale-5per |
 
-omenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:grayscale-5per` to apply the grayscale-5per utility at only small screen sizes at or below 480px. Or `active:md:grayscale-5per` to apply the grayscale-5per utility at only between small screen sizes (480px) and medium screen sizes (768px).
+greenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:grayscale-5per` to apply the grayscale-5per utility at only small screen sizes at or below 480px. Or `active:md:grayscale-5per` to apply the grayscale-5per utility at only between small screen sizes (480px) and medium screen sizes (768px).
 
 1. The structure for auto classes is as follows: `{conditional state}:{media query}:grayscale-{number}per` p.e. `active:md:grayscale-5per`
 
@@ -60,7 +60,7 @@ omenCSS media queries can also be combined with active, focus and hover states. 
 
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
-| omenCSS class names                                                          | spoken example                                                                                   |
+| greenCSS class names                                                          | spoken example                                                                                   |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | active:grayscale-5per , focus:grayscale-5per , hover:grayscale-5per          | active grayscale, focus grayscale, hover grayscale                                               |
 | active:sm:grayscale-5per , focus:sm:grayscale-5per , hover:sm:grayscale-5per | active small screens grayscale, focus small screens grayscale, hover small screens grayscale,    |

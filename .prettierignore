@@ -8,6 +8,6 @@ coverage
 # Ignore all HTML files:
 *.html
 
-styles/omencss.css
+styles/greenCSS.css
 
 cache/data.js

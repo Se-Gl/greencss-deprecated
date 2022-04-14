@@ -7,8 +7,8 @@ const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: fals
 export default function ContactPage() {
   return (
     <Layout
-      title='omenCSS contact - get in touch'
-      description='Contact - the right way to get to know each other. Send a message or email. Get to know omenCSS and we get to know you.'
+      title='greenCSS contact - get in touch'
+      description='Contact - the right way to get to know each other. Send a message or email. Get to know greenCSS and we get to know you.'
       url='docs'
       keywords='contact, message, information, exchange'>
       <div id='contact-index'>

@@ -13,7 +13,7 @@ export default function ColourExample({ className, colorName, colorHex }) {
             {colorHex}
           </p>
           <p className='mb-0px text-15px'>
-            <span className='font-800'>omenCSS Class: </span>[prefix-]<span className='lowercase'>{colorName}</span>
+            <span className='font-800'>greenCSS Class: </span>[prefix-]<span className='lowercase'>{colorName}</span>
           </p>
         </div>
       </div>

@@ -21,7 +21,7 @@ export default function ExamplesIndexPage() {
     <>
       <Layout
         className='container min-h-100vh relative z-2'
-        title='Handmade, crafted examples by omenCSS'
+        title='Handmade, crafted examples by greenCSS'
         description='The collaboration of design and code plays an important role, especially in web development. Check the full selection, explore countless examples such as animations or tutorial examples.'
         url='examples'
         keywords='Examples, Animation, handmade css animation, tutorial examples, omen css'
@@ -29,7 +29,7 @@ export default function ExamplesIndexPage() {
         <div id='examples-index'>
           <SubSectionHero
             header='Handmade, crafted examples'
-            subheader='Nowadays, a beautiful website is easy to create - if you use omenCSS. However, bringing a web application alive is more difficult.'
+            subheader='Nowadays, a beautiful website is easy to create - if you use greenCSS. However, bringing a web application alive is more difficult.'
             illustration={<HandCrafted />}
           />
           <div className='pb-100px'>

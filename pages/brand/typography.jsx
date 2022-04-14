@@ -14,14 +14,14 @@ export default function typography() {
       title='Typography Brand Book | Styleguide | Corporate Identity'
       description='The brand system features four core elements - typography'
       url='brand/typography'
-      keywords='Typography, Styleguide, Brand Book, omenCSS, Design, Corporate Identity, omen css'>
+      keywords='Typography, Styleguide, Brand Book, greenCSS, Design, Corporate Identity, omen css'>
       <div className='min-w-100per relative' id='brand-typography-page'>
         <BackButton className='mb-50px'>Back</BackButton>
         <div className='mb-10rem'>
-          <h1 className='text-80px sm:text-50px mb-100px'>omenCSS brand identity: the typography</h1>
+          <h1 className='text-80px sm:text-50px mb-100px'>greenCSS brand identity: the typography</h1>
           <BrandSection
             title='Typography'
-            description='The typography is as unique, royalty-free, lightweight and easy to use as omenCSS itself. Inspired by the uniqueness, and diversity of Switzerland, it was designed to have maximum impact internationally, as well as virtually. Its name: Omen Motion.'
+            description='The typography is as unique, royalty-free, lightweight and easy to use as greenCSS itself. Inspired by the uniqueness, and diversity of Switzerland, it was designed to have maximum impact internationally, as well as virtually. Its name: Omen Motion.'
           />
           <BrandSection isLight={true}>
             <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
@@ -84,7 +84,7 @@ export default function typography() {
             <img
               src='/images/brand/typography/cards-min_ftcy4t.webp'
               alt='omen css hierarchy and margins'
-              id='omencss-hierarchy'
+              id='greenCSS-hierarchy'
             />
             <div className='w-100per my-100px border-1px border-solid border-dark rounded-20px'>
               <div className='p-50px'>
@@ -122,9 +122,9 @@ export default function typography() {
 
           <BrandSection
             title='Call 2 action'
-            description='There is one way to create a call to action for omenCSS. Use a heavy typeface for buttons.'></BrandSection>
+            description='There is one way to create a call to action for greenCSS. Use a heavy typeface for buttons.'></BrandSection>
           <BrandSection isLight={true}>
-            <img src='/images/brand/typography/cards-c2a_gorbiy.webp' alt='omen css call to action' id='omencss-c2a' />
+            <img src='/images/brand/typography/cards-c2a_gorbiy.webp' alt='omen css call to action' id='greenCSS-c2a' />
             <p className='mt-100px mb-0px'>
               Icons should be treated within the typeface. The same rules apply for aligning typography with iconography
               as for hierarchical relations, except that margins are not used here in powers of 5 or 10. Irrespective of
@@ -140,7 +140,7 @@ export default function typography() {
             <img
               src='/images/brand/typography/images-typography_lknchj.webp'
               alt='omen css Images vs. Typography'
-              id='omencss-img-typo'
+              id='greenCSS-img-typo'
             />
           </BrandSection>
 
@@ -202,7 +202,7 @@ export default function typography() {
 
           <Summary
             titleOne='01'
-            descriptionOne='The typeface is a recognizable, unique part of omenCSS.'
+            descriptionOne='The typeface is a recognizable, unique part of greenCSS.'
             titleTwo='02'
             descriptionTwo='Aim for contrast and hierarchy between types.'
             titleThree='03'

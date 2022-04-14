@@ -14,22 +14,22 @@ const syntax = [
   {
     header: 'Quick Start | NPM',
     description:
-      'The simplest and fastest way to get up and running with omenCSS is to use NPM. This is the normal approach for all JavaScript frameworks like Angular, React or Vue. Here you can decide for yourself how to set up your code base for the production.',
-    markdown: 'npm i omencss'
+      'The simplest and fastest way to get up and running with greenCSS is to use NPM. This is the normal approach for all JavaScript frameworks like Angular, React or Vue. Here you can decide for yourself how to set up your code base for the production.',
+    markdown: 'npm i greenCSS'
   },
   {
     header: 'Quick Start | CDN',
     description: 'The most straightforward approach for non-JavaScript frameworks is to use CDN.',
     markdown:
-      '<head>\n  <title>Your awesome Website - designed with omenCSS</title>\n  <link rel="stylesheet" href="link-to-omencss-cdn" />\n</head>'
+      '<head>\n  <title>Your awesome Website - designed with greenCSS</title>\n  <link rel="stylesheet" href="link-to-greenCSS-cdn" />\n</head>'
   }
 ]
 
 export default function DocsCategoryPage({ categories, posts }) {
   return (
     <Layout
-      title='omenCSS documentation - an overview'
-      description='Docs - the right way to get to know the omenCSS by browsing the documentation. Search by categories. Get to know omenCSS and start writing design.'
+      title='greenCSS documentation - an overview'
+      description='Docs - the right way to get to know the greenCSS by browsing the documentation. Search by categories. Get to know greenCSS and start writing design.'
       url='docs'
       keywords='docs, documentation, information, search, css'>
       <div className='grid grid-col-12 gap-30px'>
@@ -45,7 +45,7 @@ export default function DocsCategoryPage({ categories, posts }) {
           <div className='max-w-75rem mb-10rem'>
             <p className='text-purple-5 font-600 text-15px mb-5px'>Documentation</p>
             <h1 className='font-900 mb-15px'>Docs - the right way to get to know the system</h1>
-            <h2 className='text-20px font-normal mb-25px'>Get to know omenCSS and start writing design.</h2>
+            <h2 className='text-20px font-normal mb-25px'>Get to know greenCSS and start writing design.</h2>
           </div>
           {syntax.map((syn, index) => (
             <SyntaxComponent header={syn.header} description={syn.description} markdown={syn.markdown} key={index}>
@@ -54,7 +54,7 @@ export default function DocsCategoryPage({ categories, posts }) {
           ))}
           <h2 className='mt-10rem'>The types</h2>
           <p className='mt-25px'>
-            omenCSS features 21 core elements. These in turn are filtered into over 250 subcategories. You are looking
+            greenCSS features 21 core elements. These in turn are filtered into over 250 subcategories. You are looking
             for a specific css class element? Use the search function instead, just press F3.
           </p>
           <div className='m-auto grid grid-col-2 gap-30px sm:gap-15px sm:grid-col-1 md:grid-col-1'>

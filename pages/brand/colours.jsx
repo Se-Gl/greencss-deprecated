@@ -15,14 +15,14 @@ export default function colours() {
       title='Colours Brand Book | Styleguide | Corporate Identity'
       description='The brand system features four core elements - colours'
       url='brand/colours'
-      keywords='Colours, brand color, Styleguide, Brand Book, omenCSS, Design, Corporate Identity'>
+      keywords='Colours, brand color, Styleguide, Brand Book, greenCSS, Design, Corporate Identity'>
       <div className='min-w-100per relative' id='brand-colour-page'>
         <BackButton className='mb-50px'>Back</BackButton>
         <div className='mb-10rem'>
-          <h1 className='text-80px sm:text-50px mb-100px'>omenCSS brand identity: the colour</h1>
+          <h1 className='text-80px sm:text-50px mb-100px'>greenCSS brand identity: the colour</h1>
           <BrandSection
             title='Colours'
-            description='Colors determine charisma, emotion, feelings, and memories. In total, omenCSS offers a color palette of over 13 colors, whereby these are further broken down into 85 different lighter tones. The primary colours we use - dark, light and purple - build on our existing intensity and represent the elegance of omenCSS.'
+            description='Colors determine charisma, emotion, feelings, and memories. In total, greenCSS offers a color palette of over 13 colors, whereby these are further broken down into 85 different lighter tones. The primary colours we use - dark, light and purple - build on our existing intensity and represent the elegance of greenCSS.'
           />
           <BrandSection
             isLight={true}
@@ -89,7 +89,7 @@ export default function colours() {
                   <img
                     src='/images/brand/colors/do-not.webp'
                     alt='omen css do not with colors'
-                    id='omencss-do-not-1'
+                    id='greenCSS-do-not-1'
                     className='w-100per'
                   />
                 }
@@ -101,7 +101,7 @@ export default function colours() {
                   <img
                     src='/images/brand/colors/do-not-2.webp'
                     alt='omen css do not with colors'
-                    id='omencss-do-not-2'
+                    id='greenCSS-do-not-2'
                     className='min-w-100per'
                   />
                 }
@@ -113,7 +113,7 @@ export default function colours() {
                   <img
                     src='/images/brand/colors/do-not-3.webp'
                     alt='omen css do not with colors'
-                    id='omencss-do-not-3'
+                    id='greenCSS-do-not-3'
                     className='min-w-100per'
                   />
                 }
@@ -125,7 +125,7 @@ export default function colours() {
                   <img
                     src='/images/brand/colors/do-not-4.webp'
                     alt='omen css do not with colors'
-                    id='omencss-do-not-4'
+                    id='greenCSS-do-not-4'
                     className='w-100per'
                   />
                 }
@@ -137,7 +137,7 @@ export default function colours() {
                   <img
                     src='/images/brand/colors/do-not-5.webp'
                     alt='omen css do not with colors'
-                    id='omencss-do-not-5'
+                    id='greenCSS-do-not-5'
                     className='w-100per'
                   />
                 }
@@ -154,7 +154,7 @@ export default function colours() {
                   <img
                     src='/images/brand/colors/ok.webp'
                     alt='omen css design with colors'
-                    id='omencss-do-1'
+                    id='greenCSS-do-1'
                     className='w-100per'
                   />
                 }
@@ -166,7 +166,7 @@ export default function colours() {
                   <img
                     src='/images/brand/colors/ok-2.webp'
                     alt='omen css design with colors'
-                    id='omencss-do-2'
+                    id='greenCSS-do-2'
                     className='w-100per'
                   />
                 }
@@ -178,7 +178,7 @@ export default function colours() {
                   <img
                     src='/images/brand/colors/ok-3.webp'
                     alt='omen css design with colors'
-                    id='omencss-do-3'
+                    id='greenCSS-do-3'
                     className='w-100per'
                   />
                 }

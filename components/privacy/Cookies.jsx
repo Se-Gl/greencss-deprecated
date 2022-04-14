@@ -13,7 +13,7 @@ export default function Cookies() {
         <h2>Privacy explained in 6 simple steps</h2>
         <p>
           Here are the keys for deleting cookies from modern web browsers. Cookies are not sent to us in any way. In
-          general, omenCSS does not create custom user profiles and therefore does absolutely not use any trackers that
+          general, greenCSS does not create custom user profiles and therefore does absolutely not use any trackers that
           can be traced back to you.
         </p>
       </div>

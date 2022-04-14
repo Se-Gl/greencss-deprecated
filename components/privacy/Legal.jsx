@@ -18,7 +18,7 @@ export default function Legal() {
       <p className='mb-0px'>Represented by (student): Severin Glaser</p>
       <Link href='/contact'>Contact</Link>
       <p>
-        E-mail: <a href='mailto:info@omencss.dev'>info@omencss.dev</a>
+        E-mail: <a href='mailto:info@greenCSS.dev'>info@greenCSS.dev</a>
       </p>
 
       <h2>Disclaimer:</h2>

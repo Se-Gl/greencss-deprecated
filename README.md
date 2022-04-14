@@ -1,10 +1,10 @@
-# OmenCSS - the next lightweight CSS library
+# greenCSS - the next lightweight CSS library
 
-[![Prettier and ESLint Code Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/lint.yml)
-[![Cypress Base](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/omenCSS-frontend/actions/workflows/cypress.yml)
+[![Prettier and ESLint Code Base](https://github.com/Se-Gl/greenCSS-frontend/actions/workflows/lint.yml/badge.svg)](https://github.com/Se-Gl/greenCSS-frontend/actions/workflows/lint.yml)
+[![Cypress Base](https://github.com/Se-Gl/greenCSS-frontend/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/greenCSS-frontend/actions/workflows/cypress.yml)
 ![check-code-coverage](https://img.shields.io/badge/code--coverage-83.39%25-green)
 
-[![omenCSS logo](./public/images/brand/omencss_logo_dark.svg)](https://www.omencss.com)
+[![greenCSS logo](./public/images/brand/greenCSS_logo_dark.svg)](https://www.greenCSS.com)
 
 ## Getting Started
 
@@ -71,10 +71,10 @@ NEXT_PUBLIC_GOOGLE_ANALYTICS=YOUR-GOOGLE-ANALYTICS-KEY
 ### Github actions
 
 - In order to follow best practices, simple github actions have been implemented.
-- OmenCSS checks for EsLint errors (according to our .eslintrs.json rules) before pushing to the repo.
-- OmenCSS checks the code for prettier violations (according to our .prettierrc file) before pushing to the repo.
-- OmenCSS checks if the build process is completed successfully before pushing to the repo.
-- OmenCSS tests the code with cypress before pushing to the repo.
+- greenCSS checks for EsLint errors (according to our .eslintrs.json rules) before pushing to the repo.
+- greenCSS checks the code for prettier violations (according to our .prettierrc file) before pushing to the repo.
+- greenCSS checks if the build process is completed successfully before pushing to the repo.
+- greenCSS tests the code with cypress before pushing to the repo.
 
 ### Markdown Editor
 

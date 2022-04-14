@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.omencss.com/sitemap.xml
-Sitemap: https://www.omencss.com/dynamic-blog-sitemap.xml
-Sitemap: https://www.omencss.com/dynamic-docs-sitemap.xml
+Sitemap: https://www.greenCSS.com/sitemap.xml
+Sitemap: https://www.greenCSS.com/dynamic-blog-sitemap.xml
+Sitemap: https://www.greenCSS.com/dynamic-docs-sitemap.xml

@@ -13,30 +13,30 @@ export default function composition() {
       title='Composition Brand Book | Styleguide'
       description='The brand system features four core elements - composition'
       url='brand/composition'
-      keywords='Composition, brand composition, image composition, Brand Book, omenCSS, Design, Corporate Identity'>
+      keywords='Composition, brand composition, image composition, Brand Book, greenCSS, Design, Corporate Identity'>
       <div className='min-w-100per relative' id='composition-colour-page'>
         <BackButton className='mb-50px'>Back</BackButton>
         <div className='mb-10rem'>
-          <h1 className='text-80px sm:text-50px mb-100px'>omenCSS brand identity: the composition</h1>
+          <h1 className='text-80px sm:text-50px mb-100px'>greenCSS brand identity: the composition</h1>
           <BrandSection
             title='Composition'
             description='The composition system is elegant and neutral. Wherever it appears, it includes a subtle "O" inspired by the name. Defining the matrix based on the letter "O", the system remains flexible and is easy to apply in both print and virtual.'
           />
           <BrandSection
             title='Layouts & Grid'
-            description='The composition between layout and grid is inspired by the "O" from omenCSS. Consistent elements convey systematics and structure.'
+            description='The composition between layout and grid is inspired by the "O" from greenCSS. Consistent elements convey systematics and structure.'
           />
           <BrandSection isLight={true}>
             <img
               src='/images/brand/composition/layout-grid.webp'
               alt='omen css vertical o-grid and layout composition'
-              id='omencss-vertical-o-grid'
+              id='greenCSS-vertical-o-grid'
             />
 
             <img
               src='/images/brand/composition/words-images.webp'
               alt='omen css text in images'
-              id='omencss-words-in-images'
+              id='greenCSS-words-in-images'
               className='sm:mt-25px mt-50px'
             />
           </BrandSection>
@@ -50,8 +50,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/o-frame-checklist.webp'
-                    alt='omencss o-frame checklist'
-                    id='omencss-o-frame-1'
+                    alt='greenCSS o-frame checklist'
+                    id='greenCSS-o-frame-1'
                     className='w-100per'
                   />
                 }
@@ -62,8 +62,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/o-frame-checklist-2.webp'
-                    alt='omencss o-frame checklist'
-                    id='omencss-o-frame-1'
+                    alt='greenCSS o-frame checklist'
+                    id='greenCSS-o-frame-1'
                     className='w-100per'
                   />
                 }
@@ -74,8 +74,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/o-frame-checklist-3.webp'
-                    alt='omencss o-frame checklist'
-                    id='omencss-o-frame-1'
+                    alt='greenCSS o-frame checklist'
+                    id='greenCSS-o-frame-1'
                     className='w-100per'
                   />
                 }
@@ -86,8 +86,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/o-frame-checklist-3.webp'
-                    alt='omencss o-frame checklist'
-                    id='omencss-o-frame-1'
+                    alt='greenCSS o-frame checklist'
+                    id='greenCSS-o-frame-1'
                     className='w-100per'
                   />
                 }
@@ -99,7 +99,7 @@ export default function composition() {
                   <img
                     src='/images/brand/colors/do-not-5.webp'
                     alt='omen css do not with colors'
-                    id='omencss-do-not-5'
+                    id='greenCSS-do-not-5'
                     className='w-100per'
                   />
                 }
@@ -118,8 +118,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/image-composition-1.webp'
-                    alt='omencss image composition'
-                    id='omencss-image-composition'
+                    alt='greenCSS image composition'
+                    id='greenCSS-image-composition'
                     className='w-100per'
                   />
                 }
@@ -130,8 +130,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/image-composition-2.webp'
-                    alt='omencss image composition'
-                    id='omencss-image-composition-2'
+                    alt='greenCSS image composition'
+                    id='greenCSS-image-composition-2'
                     className='w-100per'
                   />
                 }
@@ -142,8 +142,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/image-composition-3.webp'
-                    alt='omencss image composition'
-                    id='omencss-image-composition-3'
+                    alt='greenCSS image composition'
+                    id='greenCSS-image-composition-3'
                     className='w-100per'
                   />
                 }
@@ -154,8 +154,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/image-composition-4.webp'
-                    alt='omencss image composition'
-                    id='omencss-image-composition-4'
+                    alt='greenCSS image composition'
+                    id='greenCSS-image-composition-4'
                     className='w-100per'
                   />
                 }
@@ -166,8 +166,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/image-composition-5.webp'
-                    alt='omencss image composition'
-                    id='omencss-image-composition-5'
+                    alt='greenCSS image composition'
+                    id='greenCSS-image-composition-5'
                     className='w-100per'
                   />
                 }
@@ -178,8 +178,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/image-composition-6.webp'
-                    alt='omencss image composition'
-                    id='omencss-image-composition-6'
+                    alt='greenCSS image composition'
+                    id='greenCSS-image-composition-6'
                     className='w-100per'
                   />
                 }
@@ -195,8 +195,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/image-composition-ok.webp'
-                    alt='omencss image composition'
-                    id='omencss-image-composition-ok'
+                    alt='greenCSS image composition'
+                    id='greenCSS-image-composition-ok'
                     className='w-100per'
                   />
                 }
@@ -207,8 +207,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/image-composition-ok-2.webp'
-                    alt='omencss image composition'
-                    id='omencss-image-composition-ok-2'
+                    alt='greenCSS image composition'
+                    id='greenCSS-image-composition-ok-2'
                     className='w-100per'
                   />
                 }
@@ -219,8 +219,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/image-composition-ok-3.webp'
-                    alt='omencss image composition'
-                    id='omencss-image-composition-ok-3'
+                    alt='greenCSS image composition'
+                    id='greenCSS-image-composition-ok-3'
                     className='w-100per'
                   />
                 }
@@ -231,8 +231,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/image-composition-ok-4.webp'
-                    alt='omencss image composition'
-                    id='omencss-image-composition-ok-4'
+                    alt='greenCSS image composition'
+                    id='greenCSS-image-composition-ok-4'
                     className='w-100per'
                   />
                 }
@@ -243,8 +243,8 @@ export default function composition() {
                 childOne={
                   <img
                     src='/images/brand/composition/image-composition-ok-5.webp'
-                    alt='omencss image composition'
-                    id='omencss-image-composition-ok-5'
+                    alt='greenCSS image composition'
+                    id='greenCSS-image-composition-ok-5'
                     className='w-100per'
                   />
                 }

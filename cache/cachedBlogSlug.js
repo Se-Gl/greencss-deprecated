@@ -1,1 +1,1 @@
-export const blogSlugs = [{"slug":"how-to-create-a-responsive-hero-section"},{"slug":"how-to-delete-unused-css-classes"},{"slug":"omencss-animations"},{"slug":"responsive-omencss-breakpoints"},{"slug":"what-is-omencss"}]
+export const blogSlugs = [{"slug":"how-to-create-a-responsive-hero-section"},{"slug":"how-to-delete-unused-css-classes"},{"slug":"greenCSS-animations"},{"slug":"responsive-greenCSS-breakpoints"},{"slug":"what-is-greenCSS"}]

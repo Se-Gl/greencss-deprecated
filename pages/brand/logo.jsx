@@ -14,11 +14,11 @@ export default function logo() {
       title='Logo Brand Book | Styleguide | Corporate Identity'
       description='The brand system features four core elements - logo'
       url='brand/logo'
-      keywords='Logo, Styleguide, Brand Book, omenCSS, Design, Corporate Identity, omen css'>
+      keywords='Logo, Styleguide, Brand Book, greenCSS, Design, Corporate Identity, omen css'>
       <div className='min-w-100per relative' id='brand-logo-page'>
         <BackButton className='mb-50px'>Back</BackButton>
         <div className='mb-10rem'>
-          <h1 className='text-80px sm:text-50px mb-100px'>omenCSS brand identity: the logo</h1>
+          <h1 className='text-80px sm:text-50px mb-100px'>greenCSS brand identity: the logo</h1>
           <BrandSection
             title='Logo'
             description='We never get tired of emphasizing that a logo is much more than just an appealing image or symbol.
@@ -29,10 +29,10 @@ export default function logo() {
             <div className='flex justify-center'>
               <div className='flex-col'>
                 <LogoDark />
-                <DownloadButton href='/images/brand/omencss_logo_dark.svg' className='mt-50px' id='download-dark-logo'>
+                <DownloadButton href='/images/brand/greenCSS_logo_dark.svg' className='mt-50px' id='download-dark-logo'>
                   Dark Logo Download
                 </DownloadButton>
-                <DownloadButton href='/images/brand/omencss_logo_light.svg' id='download-light-logo'>
+                <DownloadButton href='/images/brand/greenCSS_logo_light.svg' id='download-light-logo'>
                   Light Logo Download
                 </DownloadButton>
               </div>
@@ -46,7 +46,7 @@ export default function logo() {
             <img
               src='/images/brand/logo/logo_structure_qffx8z.webp'
               alt='omen css logo structure'
-              id='omencss-logo-structure'
+              id='greenCSS-logo-structure'
             />
           </BrandSection>
           <BrandSection
@@ -57,7 +57,7 @@ export default function logo() {
             <img
               src='/images/brand/logo/logo_structure_advanced_kuxnpy.webp'
               alt='advanced omen css logo structure'
-              id='advanced-omencss-logo-structure'
+              id='advanced-greenCSS-logo-structure'
             />
           </BrandSection>
           <BrandSection
@@ -67,8 +67,8 @@ export default function logo() {
           <BrandSection isLight={true}>
             <img
               src='/images/brand/logo/logos_buy40r.webp'
-              alt='omencss logo dark, logo light and logo purple'
-              id='different-omencss-logos'
+              alt='greenCSS logo dark, logo light and logo purple'
+              id='different-greenCSS-logos'
             />
           </BrandSection>
           <BrandSection
@@ -78,8 +78,8 @@ export default function logo() {
           <BrandSection isLight={true}>
             <img
               src='/images/brand/logo/scalable-logos_dejyjk.webp'
-              alt='omencss logo scalable logos'
-              id='scalable-omencss-logos'
+              alt='greenCSS logo scalable logos'
+              id='scalable-greenCSS-logos'
             />
           </BrandSection>
           <BrandSection
@@ -89,8 +89,8 @@ export default function logo() {
           <BrandSection isLight={true}>
             <img
               src='/images/brand/logo/positioning_njclia.webp'
-              alt='omencss logo positions'
-              id='omencss-logo-position'
+              alt='greenCSS logo positions'
+              id='greenCSS-logo-position'
             />
           </BrandSection>
           <BrandSection
@@ -98,10 +98,10 @@ export default function logo() {
             description='Symbols are designed individually based on specifications. Here it is allowed to deviate from the Guideline, they are visually dimensioned to best fit each shape.'
           />
           <BrandSection isLight={true}>
-            <img src='/images/brand/logo/logo-icons_ffzqbh.webp' alt='omencss logo icons' id='omencss-logo-icons' />
+            <img src='/images/brand/logo/logo-icons_ffzqbh.webp' alt='greenCSS logo icons' id='greenCSS-logo-icons' />
           </BrandSection>
           <BrandSection title='Logo typeface' description='"Vector Font"'>
-            <img src='/images/brand/logo/quick-fox_rrrwsl.webp' alt='omencss vector font' id='omencss-logo-typeface' />
+            <img src='/images/brand/logo/quick-fox_rrrwsl.webp' alt='greenCSS vector font' id='greenCSS-logo-typeface' />
           </BrandSection>
           <BrandSection isLight={true}>
             <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
@@ -109,8 +109,8 @@ export default function logo() {
                 childOne={
                   <img
                     src='/images/brand/logo/logo-donot-1_tqejd2.webp'
-                    alt='omencss logo without vector font'
-                    id='omencss-logo-bad-example'
+                    alt='greenCSS logo without vector font'
+                    id='greenCSS-logo-bad-example'
                   />
                 }
                 childTwo='Do not use the Logo without Vector Font glyph. Do not type use the logo in any other fonts.'
@@ -120,7 +120,7 @@ export default function logo() {
                 childOne={
                   <img
                     src='/images/brand/logo/Group_14_lwzfzg.webp'
-                    alt='omencss, bad logo example 3'
+                    alt='greenCSS, bad logo example 3'
                     id='logo-bad-3'
                   />
                 }
@@ -130,7 +130,7 @@ export default function logo() {
                 childOne={
                   <img
                     src='/images/brand/logo/Group_15_psflzx.webp'
-                    alt='omencss, bad logo example 3'
+                    alt='greenCSS, bad logo example 3'
                     id='logo-bad-3'
                   />
                 }
@@ -141,7 +141,7 @@ export default function logo() {
                 childOne={
                   <img
                     src='/images/brand/logo/Group_16_lwhowx.webp'
-                    alt='omencss, bad logo example 4'
+                    alt='greenCSS, bad logo example 4'
                     id='logo-bad-4'
                   />
                 }
@@ -151,8 +151,8 @@ export default function logo() {
           </BrandSection>
           <BrandSection
             title='Legal'
-            description='omenCSS library is licensed under MIT. Nevertheless,
-            Do not use omenCSS as a verb (e.g., “Let’s omencss the web site.”). Instead, consider using omenCSS as an adjective and an experience. All brand features featured in the omenCSS Brand Book or this website are copyrighted. If you choose to use logos, designs and/or other brand assets, you acknowledge that you sufficiently attribute the specific content. "Omen Motion" - the font - has a SIL license and can be downloaded for free in the typography section. The Vector font, on the other hand, requires a commercial licence and can not be downloaded on this site.'
+            description='greenCSS library is licensed under MIT. Nevertheless,
+            Do not use greenCSS as a verb (e.g., “Let’s greenCSS the web site.”). Instead, consider using greenCSS as an adjective and an experience. All brand features featured in the greenCSS Brand Book or this website are copyrighted. If you choose to use logos, designs and/or other brand assets, you acknowledge that you sufficiently attribute the specific content. "Omen Motion" - the font - has a SIL license and can be downloaded for free in the typography section. The Vector font, on the other hand, requires a commercial licence and can not be downloaded on this site.'
           />
           <Summary
             titleOne='01'
