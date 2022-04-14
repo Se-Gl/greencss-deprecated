@@ -1,5 +1,5 @@
 {
-  "name": "frontend-omen",
+  "name": "greencss-frontend",
   "private": true,
   "scripts": {
     "dev": "next",

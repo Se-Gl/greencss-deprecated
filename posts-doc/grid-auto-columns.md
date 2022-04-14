@@ -11,7 +11,7 @@ classNames: ''
 plainText: ' greenCSS css class example auto-cols-auto auto-cols-auto grid-auto-columns: auto; auto-cols-min auto-cols-min grid-auto-columns: min-content; auto-cols-max auto-cols-max grid-auto-columns: max-content; auto-cols-fr auto-cols-fr grid-auto-columns: minmax 0 1fr ; define the placement of elements in a grid row use the auto-cols keyword to control the size width & height of an element in grid columns control the size in the example below we use a grid system `grid` with a `grid-flow-col` direction which stretches to the maximum size of the object `auto-cols-max` the elements are therefore stretched to the max direction  active focus and hover states with greenCSS you can conditionally apply utility classes in different states by using variant modifiers like active focus or hover for example use `hover:auto-cols-auto` to apply the `auto-cols-auto` utility class on hover events greenCSS css class example active:auto-cols-auto active :auto-cols-auto:active grid-auto-columns: auto; focus:auto-cols-auto focus :auto-cols-auto:focus grid-auto-columns: auto; hover:auto-cols-auto hover :auto-cols-auto:hover grid-auto-columns: auto;  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range greenCSS example sm: 0px 480px sm:auto-cols-auto md: 480px 768px md:auto-cols-auto lg: 768px 1080px lg:auto-cols-auto greenCSS media queries can also be combined with active focus and hover states for example use `sm:auto-cols-auto` to apply the auto-cols-auto utility at only small screen sizes at or below 480px or `hover:md:auto-cols-auto` to apply the auto-cols-auto utility at only between small screen sizes 480px and medium screen sizes 768px on hover 1 the structure for row-span is as follows: ` conditional state : media query :auto-cols keyword ` p e `active:md:auto-cols-auto`  executive summary when you vocalize the class names it helps you to learn and remember the classes as well as the structure you can say: greenCSS class names spoken example active:auto-cols-auto focus:auto-cols-auto hover:auto-cols-auto active grid auto columns focus grid auto columns hover grid auto columns active:sm:auto-cols-auto focus:sm:auto-cols-auto hover:sm:auto-cols-auto active small screens grid auto columns focus small screens grid auto columns hover small screens grid auto columns active:md:auto-cols-auto focus:md:auto-cols-auto hover:md:auto-cols-auto active medium screens grid auto columns focus medium screens grid auto columns hover medium screens grid auto columns active:lg:auto-cols-auto focus:lg:auto-cols-auto hover:lg:auto-cols-auto active large screens grid auto columns focus large screens grid auto columns hover large screens grid auto columns sources grid-auto-columns https: developer mozilla org en-us docs web css grid-auto-columns '
 ---
 
-| _greenCSS_      | CSS class example                                    |
+| _greenCSS_     | CSS class example                                    |
 | -------------- | ---------------------------------------------------- |
 | auto-cols-auto | .auto-cols-auto { grid-auto-columns: auto; }         |
 | auto-cols-min  | .auto-cols-min { grid-auto-columns: min-content; }   |
@@ -38,7 +38,7 @@ In the example below, we use a grid system `grid` with a `grid-flow-col` directi
 
 With greenCSS you can conditionally apply utility classes in different states by using variant modifiers like active, focus or hover. For example, use `hover:auto-cols-auto` to apply the `auto-cols-auto` utility class on hover events.
 
-| _greenCSS_             | CSS class example                                          |
+| _greenCSS_            | CSS class example                                          |
 | --------------------- | ---------------------------------------------------------- |
 | active:auto-cols-auto | .active\:auto-cols-auto:active{ grid-auto-columns: auto; } |
 | focus:auto-cols-auto  | .focus\:auto-cols-auto:focus { grid-auto-columns: auto; }  |
@@ -52,7 +52,7 @@ With greenCSS you can conditionally apply utility classes in different states by
 
 Use variant modifiers to target media queries like responsive breakpoints.
 
-| media query | Range          | greenCSS example    |
+| media query | Range          | greenCSS example   |
 | ----------- | -------------- | ------------------ |
 | sm:         | 0px - 480px    | .sm:auto-cols-auto |
 | md:         | 480px - 768px  | .md:auto-cols-auto |
@@ -70,7 +70,7 @@ greenCSS media queries can also be combined with active, focus and hover states.
 
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
-| greenCSS class names                                                        | spoken example                                                                                                          |
+| greenCSS class names                                                       | spoken example                                                                                                          |
 | -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | active:auto-cols-auto, focus:auto-cols-auto, hover:auto-cols-auto          | active grid auto columns, focus grid auto columns, hover grid auto columns                                              |
 | active:sm:auto-cols-auto, focus:sm:auto-cols-auto, hover:sm:auto-cols-auto | active small screens grid auto columns, focus small screens grid auto columns, hover small screens grid auto columns    |

@@ -12,21 +12,21 @@ plainText: ' greenCSS css class example m-auto w-auto margin: auto; mx-auto mx-a
 ---
 
 | _greenCSS_ | CSS class example                  |
-| --------- | ---------------------------------- |
-| m-auto    | .m-auto { margin: auto; }          |
-| mx-auto   | .mx-auto { margin-inline: auto; }  |
-| my-auto   | .my-auto { margin-block: auto; }   |
-| mt-auto   | .mt-auto { margin-top: auto; }     |
-| mr-auto   | .mr-auto { margin-right: auto; }   |
-| mb-auto   | .mb-auto { margin-bottom: auto; }  |
-| ml-auto   | .ml-auto { margin-left: auto; }    |
-| p-auto    | .p-auto { padding: auto; }         |
-| px-auto   | .px-auto { padding-inline: auto; } |
-| py-auto   | .py-auto { padding-block: auto; }  |
-| pt-auto   | .pt-auto { padding-top: auto; }    |
-| pr-auto   | .pr-auto { padding-right: auto; }  |
-| pb-auto   | .pb-auto { padding-bottom: auto; } |
-| pl-auto   | .pl-auto { padding-left: auto; }   |
+| ---------- | ---------------------------------- |
+| m-auto     | .m-auto { margin: auto; }          |
+| mx-auto    | .mx-auto { margin-inline: auto; }  |
+| my-auto    | .my-auto { margin-block: auto; }   |
+| mt-auto    | .mt-auto { margin-top: auto; }     |
+| mr-auto    | .mr-auto { margin-right: auto; }   |
+| mb-auto    | .mb-auto { margin-bottom: auto; }  |
+| ml-auto    | .ml-auto { margin-left: auto; }    |
+| p-auto     | .p-auto { padding: auto; }         |
+| px-auto    | .px-auto { padding-inline: auto; } |
+| py-auto    | .py-auto { padding-block: auto; }  |
+| pt-auto    | .pt-auto { padding-top: auto; }    |
+| pr-auto    | .pr-auto { padding-right: auto; }  |
+| pb-auto    | .pb-auto { padding-bottom: auto; } |
+| pl-auto    | .pl-auto { padding-left: auto; }   |
 
 ## Custom Sizing variables
 
@@ -42,7 +42,7 @@ Control the margin auto, or padding auto classes on every HTML element by using 
 
 ## Active, focus, and hover states
 
-| _greenCSS_         | CSS class example                        |
+| _greenCSS_        | CSS class example                        |
 | ----------------- | ---------------------------------------- |
 | active:{variable} | .active\:m-auto:active { margin: auto; } |
 | focus:{variable}  | .focus\:m-auto:focus { margin: auto; }   |
@@ -59,10 +59,10 @@ greenCSS let you conditionally apply utility classes for different page states. 
 Use variant modifiers to target media queries like responsive breakpoints.
 
 | media query | Range          | greenCSS example |
-| ----------- | -------------- | --------------- |
-| sm:         | 0px - 480px    | .sm:m-auto      |
-| md:         | 480px - 768px  | .md:m-auto      |
-| lg:         | 768px - 1080px | .lg:m-auto      |
+| ----------- | -------------- | ---------------- |
+| sm:         | 0px - 480px    | .sm:m-auto       |
+| md:         | 480px - 768px  | .md:m-auto       |
+| lg:         | 768px - 1080px | .lg:m-auto       |
 
 greenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:m-auto` to apply the `m-auto` utility at only small screen sizes at or below 480px. Or `active:md:m-auto` to apply the `m-auto` utility class only at medium screen sizes (480px) - (768px) and on active state.
 

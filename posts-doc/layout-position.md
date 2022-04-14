@@ -12,12 +12,12 @@ plainText: ' greenCSS css class example absolute absolute position: absolute; fi
 ---
 
 | _greenCSS_ | CSS class example                 |
-| --------- | --------------------------------- |
-| absolute  | .absolute { position: absolute; } |
-| fixed     | .fixed { position: fixed; }       |
-| relative  | .relative { position: relative; } |
-| static    | .static { position: static; }     |
-| sticky    | .sticky { position: sticky; }     |
+| ---------- | --------------------------------- |
+| absolute   | .absolute { position: absolute; } |
+| fixed      | .fixed { position: fixed; }       |
+| relative   | .relative { position: relative; } |
+| static     | .static { position: static; }     |
+| sticky     | .sticky { position: sticky; }     |
 
 ## How to work with position
 
@@ -57,7 +57,7 @@ A `sticky` positioned element is an element whose computed position value is sti
 
 ## Active, focus, and hover states
 
-| _greenCSS_        | CSS class example                                |
+| _greenCSS_       | CSS class example                                |
 | ---------------- | ------------------------------------------------ |
 | active:{keyword} | .active\:absolute:active { position: absolute; } |
 | focus:{keyword}  | .focus\:absolute:focus { position: absolute; }   |
@@ -74,10 +74,10 @@ greenCSS let you conditionally apply utility classes for different page states. 
 Use variant modifiers to target media queries like responsive breakpoints.
 
 | media query | Range          | greenCSS example |
-| ----------- | -------------- | --------------- |
-| sm:         | 0px - 480px    | .sm:absolute    |
-| md:         | 480px - 768px  | .md:absolute    |
-| lg:         | 768px - 1080px | .lg:absolute    |
+| ----------- | -------------- | ---------------- |
+| sm:         | 0px - 480px    | .sm:absolute     |
+| md:         | 480px - 768px  | .md:absolute     |
+| lg:         | 768px - 1080px | .lg:absolute     |
 
 greenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:absolute` to apply the absolute utility at only small screen sizes at or below 480px. Or `active:md:absolute` to apply the absolute utility at only between small screen sizes (480px) and medium screen sizes (768px).
 
@@ -87,7 +87,7 @@ greenCSS media queries can also be combined with active, focus and hover states.
 
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
-| greenCSS class names                                           | spoken example                                                                                                           |
+| greenCSS class names                                          | spoken example                                                                                                           |
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | active:{keyword} , focus:{keyword} , hover:{keyword}          | active position absolute, focus position absolute, hover position absolute                                               |
 | active:sm:{keyword} , focus:sm:{keyword} , hover:sm:{keyword} | active small screens position absolute, focus small screens position absolute, hover small screens position absolute,    |

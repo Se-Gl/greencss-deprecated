@@ -12,9 +12,9 @@ plainText: ' greenCSS css class example grow grow flex-grow: 1; grow-none grow-n
 ---
 
 | _greenCSS_ | CSS class example            |
-| --------- | ---------------------------- |
-| grow      | .grow { flex-grow: 1; }      |
-| grow-none | .grow-none { flex-grow: 0; } |
+| ---------- | ---------------------------- |
+| grow       | .grow { flex-grow: 1; }      |
+| grow-none  | .grow-none { flex-grow: 0; } |
 
 ## How to work with flex grow
 
@@ -49,7 +49,7 @@ Use `grow-none` to prevent a flex item from growing. (The second element in the 
 
 ## Active, focus, and hover states
 
-| _greenCSS_   | CSS class example                      |
+| _greenCSS_  | CSS class example                      |
 | ----------- | -------------------------------------- |
 | active:grow | .active\:grow:active { flex-grow: 1; } |
 | focus:grow  | .focus\:grow:focus { flex-grow: 1; }   |
@@ -70,10 +70,10 @@ greenCSS let you conditionally apply utility classes for different page states. 
 Use variant modifiers to target media queries like responsive breakpoints.
 
 | media query | Range          | greenCSS example |
-| ----------- | -------------- | --------------- |
-| sm:         | 0px - 480px    | .sm:grow        |
-| md:         | 480px - 768px  | .md:grow        |
-| lg:         | 768px - 1080px | .lg:grow        |
+| ----------- | -------------- | ---------------- |
+| sm:         | 0px - 480px    | .sm:grow         |
+| md:         | 480px - 768px  | .md:grow         |
+| lg:         | 768px - 1080px | .lg:grow         |
 
 greenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:grow` to apply the grow utility at only small screen sizes at or below 480px. Or `active:md:grow` to apply the grow utility at only between small screen sizes (480px) and medium screen sizes (768px).
 
@@ -83,7 +83,7 @@ greenCSS media queries can also be combined with active, focus and hover states.
 
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
-| greenCSS class names                          | spoken example                                                                   |
+| greenCSS class names                         | spoken example                                                                   |
 | -------------------------------------------- | -------------------------------------------------------------------------------- |
 | active:grow, focus:grow, hover:grow          | active grow, focus grow, hover grow                                              |
 | active:sm:grow, focus:sm:grow, hover:sm:grow | active small screens grow, focus small screens grow, hover small screens grow    |

@@ -34,8 +34,8 @@ export default function DropDown() {
         style={{ borderRadius: '10px' }}
         className={
           showAgain
-            ? `mx-auto my-50px w-50px min-h-54px bg-purple z-3 ${csscode}`
-            : 'mx-auto my-50px w-50px min-h-54px bg-purple z-3'
+            ? `mx-auto my-50px w-50px min-h-54px bg-green z-3 ${csscode}`
+            : 'mx-auto my-50px w-50px min-h-54px bg-green z-3'
         }
         onAnimationEnd={triggerFade}
       />

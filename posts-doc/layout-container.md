@@ -12,9 +12,9 @@ plainText: ' greenCSS css class example container container width: 100%; max-wid
 ---
 
 | _greenCSS_ | CSS class example                                                                                  |
-| --------- | -------------------------------------------------------------------------------------------------- |
-| container | .container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0; box-sizing: border-box; } |
-| row       | .row { display: flex; flex-flow: row wrap; }                                                       |
+| ---------- | -------------------------------------------------------------------------------------------------- |
+| container  | .container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0; box-sizing: border-box; } |
+| row        | .row { display: flex; flex-flow: row wrap; }                                                       |
 
 ## How to use the container
 
@@ -88,6 +88,6 @@ There are no responsive classes available.
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
 | greenCSS class names | spoken example |
-| ------------------- | -------------- |
-| container           | container      |
-| row                 | row            |
+| -------------------- | -------------- |
+| container            | container      |
+| row                  | row            |

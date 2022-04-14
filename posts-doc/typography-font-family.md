@@ -12,12 +12,12 @@ plainText: " greenCSS css class example sans sans font-family: -apple-system bli
 ---
 
 | _greenCSS_ | CSS class example                                                                                                                                          |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| sans      | .sans { font-family: -apple-system, BlinkMacSystemFont, Roboto, Arial, 'Helvetica Neue', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif; } |
-| serif     | . serif { font-family: 'Times New Roman', Times, serif; }                                                                                                  |
-| monospace | .monospace { font-family: 'Courier New', Courier, monospace; }                                                                                             |
-| cursive   | .cursive { font-family: 'Brush Script MT', cursive; }                                                                                                      |
-| fantasy   | .fantasy { font-family: Copperplate, Papyrus, fantasy; }                                                                                                   |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| sans       | .sans { font-family: -apple-system, BlinkMacSystemFont, Roboto, Arial, 'Helvetica Neue', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif; } |
+| serif      | . serif { font-family: 'Times New Roman', Times, serif; }                                                                                                  |
+| monospace  | .monospace { font-family: 'Courier New', Courier, monospace; }                                                                                             |
+| cursive    | .cursive { font-family: 'Brush Script MT', cursive; }                                                                                                      |
+| fantasy    | .fantasy { font-family: Copperplate, Papyrus, fantasy; }                                                                                                   |
 
 ## Custom Sizing variables
 
@@ -33,7 +33,7 @@ Control the font face on every HTML element by using the greenCSS classes shown 
 
 ## Active, focus, and hover states
 
-| _greenCSS_         | CSS class example                          |
+| _greenCSS_        | CSS class example                          |
 | ----------------- | ------------------------------------------ |
 | active:{variable} | .active\:sans:active { font-family: ...; } |
 | focus:{variable}  | .focus\:sans:focus { font-family: ...; }   |
@@ -50,10 +50,10 @@ greenCSS let you conditionally apply utility classes for different page states. 
 Use variant modifiers to target media queries like responsive breakpoints.
 
 | media query | Range          | greenCSS example |
-| ----------- | -------------- | --------------- |
-| sm:         | 0px - 480px    | .sm:sans        |
-| md:         | 480px - 768px  | .md:sans        |
-| lg:         | 768px - 1080px | .lg:sans        |
+| ----------- | -------------- | ---------------- |
+| sm:         | 0px - 480px    | .sm:sans         |
+| md:         | 480px - 768px  | .md:sans         |
+| lg:         | 768px - 1080px | .lg:sans         |
 
 greenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:sans` to apply the `sans` utility at only small screen sizes at or below 480px. Or `active:md:sans` to apply the `sans` utility class only at medium screen sizes (480px) - (768px) and on active state.
 
@@ -63,7 +63,7 @@ greenCSS media queries can also be combined with active, focus and hover states.
 
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
-| greenCSS class names                            | spoken example                                                                                         |
+| greenCSS class names                           | spoken example                                                                                         |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | active:sans , focus:sans , hover:sans          | active font family, focus font family, hover font family                                               |
 | active:sm:sans , focus:sm:sans , hover:sm:sans | active small screens font family, focus small screens font family, hover small screens font family,    |

@@ -11,7 +11,7 @@ classNames: ''
 plainText: ' greenCSS css class example flex-wrap flex-wrap flex-wrap: row; flex-wrap-reverse flex-wrap-reverse flex-wrap: wrap-reverse; flex-nowrap flex-nowrap flex-wrap: nowrap; how to work with flex wrap use the utility classes above to access your desired class nowrap use `flex-nowrap` to prevent flex items from wrapping non-flexible elements will overflow a container if it falls out of the viewport ! greenCSS flex-nowrap images docs flex flex-nowrap webp?style=centerme  flex wrap use `flex-wrap` to allow flex items to wrap normally ! greenCSS flex-wrap images docs flex flex-wrap-normal webp?style=centerme  flex wrap reverse use `flex-wrap-reverse` to wrap elements in reverse ! greenCSS flex-wrap images docs flex flex-wrap-reverse webp?style=centerme  active focus and hover states greenCSS css class example active:flex-wrap active :flex-wrap:active flex-wrap: row; focus:flex-wrap focus :flex-wrap:focus flex-wrap: row; hover:flex-wrap hover :flex-wrap:hover flex-wrap: row; greenCSS let you conditionally apply utility classes for different page states thereby different variant modifiers are being used for example use `hover:flex-wrap` to only apply the flex-wrap utility on hover  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range greenCSS example sm: 0px 480px sm:flex-wrap md: 480px 768px md:flex-wrap lg: 768px 1080px lg:flex-wrap greenCSS media queries can also be combined with active focus and hover states for example use `sm:flex-wrap` to apply the flex-wrap utility at only small screen sizes at or below 480px or `active:md:flex-wrap` to apply the flex-wrap utility at only between small screen sizes 480px and medium screen sizes 768px 1 the structure is as follows: ` conditional state : media query : flex-wrap-class ` p e `active:md:flex-wrap` executive summary when you vocalize the class names it helps you to learn and remember the classes as well as the structure you can say: greenCSS class names spoken example active:flex-wrap focus:flex-wrap hover:flex-wrap active flex wrap focus flex wrap hover flex wrap active:sm:flex-wrap focus:sm:flex-wrap hover:sm:flex-wrap active small screens flex wrap focus small screens flex wrap hover small screens flex wrap active:md:flex-wrap focus:md:flex-wrap hover:md:flex-wrap active medium screens flex wrap focus medium screens flex wrap hover medium screens flex wrap active:lg:flex-wrap focus:lg:flex-wrap hover:lg:flex-wrap active large screens flex wrap focus large screens flex wrap hover large screens flex wrap sources flex-wrap https: developer mozilla org en-us docs web css flex-wrap '
 ---
 
-| _greenCSS_         | CSS class example                               |
+| _greenCSS_        | CSS class example                               |
 | ----------------- | ----------------------------------------------- |
 | flex-wrap         | .flex-wrap { flex-wrap: row; }                  |
 | flex-wrap-reverse | .flex-wrap-reverse { flex-wrap: wrap-reverse; } |
@@ -83,7 +83,7 @@ Use `flex-wrap-reverse` to wrap elements in reverse.
 
 ## Active, focus, and hover states
 
-| _greenCSS_        | CSS class example                             |
+| _greenCSS_       | CSS class example                             |
 | ---------------- | --------------------------------------------- |
 | active:flex-wrap | .active\:flex-wrap:active { flex-wrap: row; } |
 | focus:flex-wrap  | .focus\:flex-wrap:focus { flex-wrap: row; }   |
@@ -110,10 +110,10 @@ greenCSS let you conditionally apply utility classes for different page states. 
 Use variant modifiers to target media queries like responsive breakpoints.
 
 | media query | Range          | greenCSS example |
-| ----------- | -------------- | --------------- |
-| sm:         | 0px - 480px    | .sm:flex-wrap   |
-| md:         | 480px - 768px  | .md:flex-wrap   |
-| lg:         | 768px - 1080px | .lg:flex-wrap   |
+| ----------- | -------------- | ---------------- |
+| sm:         | 0px - 480px    | .sm:flex-wrap    |
+| md:         | 480px - 768px  | .md:flex-wrap    |
+| lg:         | 768px - 1080px | .lg:flex-wrap    |
 
 greenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:flex-wrap` to apply the flex-wrap utility at only small screen sizes at or below 480px. Or `active:md:flex-wrap` to apply the flex-wrap utility at only between small screen sizes (480px) and medium screen sizes (768px).
 
@@ -123,7 +123,7 @@ greenCSS media queries can also be combined with active, focus and hover states.
 
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
-| greenCSS class names                                           | spoken example                                                                                  |
+| greenCSS class names                                          | spoken example                                                                                  |
 | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | active:flex-wrap , focus:flex-wrap , hover:flex-wrap          | active flex wrap, focus flex wrap, hover flex wrap                                              |
 | active:sm:flex-wrap , focus:sm:flex-wrap , hover:sm:flex-wrap | active small screens flex wrap, focus small screens flex wrap, hover small screens flex wrap    |

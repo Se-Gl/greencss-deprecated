@@ -16,10 +16,10 @@ This article introduces greenCSS’s responsive breakpoints. The motto is not ju
 Use variant modifiers to target media queries like responsive breakpoints.
 
 | media query | Range          | greenCSS example |
-| ----------- | -------------- | --------------- |
-| sm:         | 0px - 480px    | .sm:m-10px      |
-| md:         | 480px - 768px  | .md:m-10px      |
-| lg:         | 768px - 1080px | .lg:m-10px      |
+| ----------- | -------------- | ---------------- |
+| sm:         | 0px - 480px    | .sm:m-10px       |
+| md:         | 480px - 768px  | .md:m-10px       |
+| lg:         | 768px - 1080px | .lg:m-10px       |
 
 greenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:m-10px` to apply the 10px margin utility at only small screen sizes at or below 480px. Or `active:md:m-10px` to apply the m-10px utility only between small screen sizes (480px) and medium screen sizes (768px). If you use `lg-m-10px` the margin of 10px will only be set between 768px and 1080px. If you want to use standard values for all screens, you can use the default class name: `m-10px`
 

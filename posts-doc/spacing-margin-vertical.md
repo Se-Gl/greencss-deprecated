@@ -11,7 +11,7 @@ classNames: ''
 plainText: ' greenCSS css class example minimum value maximum value step my size my-1px margin-block: 1px; my-0px my-100px 1px my-neg size my-neg-1px margin-block: -1px; my-neg-100px my-neg-1px 1px add vertical margin control the vertical margin on the top and bottom margin-block use the my size utility the vertical margin class range is from negative -100 to positive 100 uses pixel and the px postfix the steps are + 1px e g `my-0px my-1px my-100px` additionally you can also use rem values reminder: 1rem = 10px the rem margin class range is from negative -30 to positive 30 and uses the rem postfix the steps are + 1rem e g `my-0rem my-1rem my-30rem` 💡 margin-block can mainly be display in modern browsers with the latest updates instead you can also use margin top and bottom docs spacing-margin-side  active focus and hover states greenCSS css class example range active:my size active :my-1px:active margin-block: 1px; active:my-neg-100px to active:my-100px focus:my size focus :my-1px:focus margin-block: 1px; focus:my-neg-100px to focus:my-100px hover:my size hover :my-1px:focus margin-block: 1px; hover:my-neg-100px to hover:my-100px greenCSS let you conditionally apply utility classes for different page states thereby different variant modifiers are being used for example use `hover:my-10px` to only apply the my-10px utility on hover  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range greenCSS example sm: 0px 480px sm:my-10px md: 480px 768px md:my-10px lg: 768px 1080px lg:my-10px greenCSS media queries can also be combined with active focus and hover states for example use `sm:my-10px` to apply the my-10px utility at only small screen sizes at or below 480px or `active:md:my-10px` to apply the my-10px utility at only between small screen sizes 480px and medium screen sizes 768px 1 the structure is as follows: ` active focus hover : media query :my size ` executive summary when you vocalize the class names it helps you to learn and remember the classes as well as the structure you can say: greenCSS class names spoken example active:my focus:my hover:my active margin block focus margin block hover margin block active:sm:my focus:sm:my hover:sm:my active small screens margin block focus small screens margin block hover small screens margin block active:md:my focus:md:my hover:md:my active medium screens margin block focus medium screens margin block hover medium screens margin block active:lg:my focus:lg:my hover:lg:my active large screens margin block focus large screens margin block hover large screens margin block sources margin-block https: developer mozilla org en-us docs web css margin-block '
 ---
 
-| _greenCSS_     | CSS class example                   | minimum Value | maximum Value | Step |
+| _greenCSS_    | CSS class example                   | minimum Value | maximum Value | Step |
 | ------------- | ----------------------------------- | ------------- | ------------- | ---- |
 | my-{size}     | .my-1px { margin-block: 1px; }      | my-0px        | my-100px      | 1px  |
 | my-neg-{size} | .my-neg-1px { margin-block: -1px; } | my-neg-100px  | my-neg-1px    | 1px  |
@@ -32,7 +32,7 @@ Additionally you can also use rem values. Reminder: 1rem = 10px. The rem margin 
 
 ## Active, focus, and hover states
 
-| _greenCSS_        | CSS class example                             | Range                                  |
+| _greenCSS_       | CSS class example                             | Range                                  |
 | ---------------- | --------------------------------------------- | -------------------------------------- |
 | active:my-{size} | .active\:my-1px:active { margin-block: 1px; } | active:my-neg-100px to active:my-100px |
 | focus:my-{size}  | .focus\:my-1px:focus { margin-block: 1px; }   | focus:my-neg-100px to focus:my-100px   |
@@ -51,10 +51,10 @@ greenCSS let you conditionally apply utility classes for different page states. 
 Use variant modifiers to target media queries like responsive breakpoints.
 
 | media query | Range          | greenCSS example |
-| ----------- | -------------- | --------------- |
-| sm:         | 0px - 480px    | .sm:my-10px     |
-| md:         | 480px - 768px  | .md:my-10px     |
-| lg:         | 768px - 1080px | .lg:my-10px     |
+| ----------- | -------------- | ---------------- |
+| sm:         | 0px - 480px    | .sm:my-10px      |
+| md:         | 480px - 768px  | .md:my-10px      |
+| lg:         | 768px - 1080px | .lg:my-10px      |
 
 greenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:my-10px` to apply the my-10px utility at only small screen sizes at or below 480px. Or `active:md:my-10px` to apply the my-10px utility at only between small screen sizes (480px) and medium screen sizes (768px).
 
@@ -64,7 +64,7 @@ greenCSS media queries can also be combined with active, focus and hover states.
 
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
-| greenCSS class names                       | spoken example                                                                                            |
+| greenCSS class names                      | spoken example                                                                                            |
 | ----------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | active:my-, focus:my-, hover:my-          | active margin block, focus margin block, hover margin block,                                              |
 | active:sm:my-, focus:sm:my-, hover:sm:my- | active small screens margin block, focus small screens margin block, hover small screens margin block,    |

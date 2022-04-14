@@ -11,7 +11,7 @@ export default function Testimonial() {
             development ready and you can easily make it lightweight in production.”
           </p>
           <Link href='https://www.severinglaser.ch'>
-            <a className='text-purple mt-50px no-decoration'>Severin Glaser</a>
+            <a className='text-green mt-50px no-decoration'>Severin Glaser</a>
           </Link>
           <p className='text-white mb-0px'>greenCSS</p>
         </div>

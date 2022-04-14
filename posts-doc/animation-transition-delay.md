@@ -11,7 +11,7 @@ classNames: ''
 plainText: ' greenCSS css class example minimum value maximum value step transition-delay number ms transition-delay-500ms transition-delay: 500ms; 100 10000 +100ms how to work transition delay use the `transition-delay number ms` utilities to set the delay of a transition class  active focus and hover states greenCSS css class example active:transition-delay number ms active :transition-delay-500ms:active transition-delay: 500ms; focus:transition-delay number ms focus :transition-delay-500ms:focus transition-delay: 500ms; hover:transition-delay number ms hover :transition-delay-500ms:hover transition-delay: 500ms; greenCSS let you conditionally apply utility classes for different page states thereby different variant modifiers are being used for example use `hover:transition-delay-500ms` to only apply the transition-delay-500ms utility class on hover  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range greenCSS example sm: 0px 480px sm:transition-delay-500ms md: 480px 768px md:transition-delay-500ms lg: 768px 1080px lg:transition-delay-500ms greenCSS media queries can also be combined with active focus and hover states for example use `sm:transition-delay-500ms` to apply the transition-delay-500ms utility at only small screen sizes at or below 480px or `active:md:transition-delay-500ms` to apply the transition-delay-500ms utility at only between small screen sizes 480px and medium screen sizes 768px 1 the structure for auto classes is as follows: ` conditional state : media query :transition-delay-500ms` p e `active:md:transition-delay-500ms` executive summary when you vocalize the class names it helps you to learn and remember the classes as well as the structure you can say: greenCSS class names spoken example active:transition-delay-500ms focus:transition-delay-500ms hover:transition-delay-500ms active transition delay focus transition delay hover transition delay active:sm:transition-delay-500ms focus:sm:transition-delay-500ms hover:sm:transition-delay-500ms active small screens transition delay focus small screens transition delay hover small screens transition delay active:md:transition-delay-500ms focus:md:transition-delay-500ms hover:md:transition-delay-500ms active medium screens transition delay focus medium screens transition delay hover medium screens transition delay active:lg:transition-delay-500ms focus:lg:transition-delay-500ms hover:lg:transition-delay-500ms active large screens transition delay focus large screens transition delay hover large screens transition delay sources transition-delay https: developer mozilla org en-us docs web css transition-delay '
 ---
 
-| _greenCSS_                   | CSS class example                                    | minimum Value | maximum Value | Step   |
+| _greenCSS_                  | CSS class example                                    | minimum Value | maximum Value | Step   |
 | --------------------------- | ---------------------------------------------------- | ------------- | ------------- | ------ |
 | transition-delay-{number}ms | .transition-delay-500ms { transition-delay: 500ms; } | 100           | 10000         | +100ms |
 
@@ -28,7 +28,7 @@ Use the `transition-delay-{number}ms` utilities to set the delay of a transition
 
 ## Active, focus, and hover states
 
-| _greenCSS_                          | CSS class example                                                   |
+| _greenCSS_                         | CSS class example                                                   |
 | ---------------------------------- | ------------------------------------------------------------------- |
 | active:transition-delay-{number}ms | .active\:transition-delay-500ms:active { transition-delay: 500ms; } |
 | focus:transition-delay-{number}ms  | .focus\:transition-delay-500ms:focus { transition-delay: 500ms; }   |
@@ -44,7 +44,7 @@ greenCSS let you conditionally apply utility classes for different page states. 
 
 Use variant modifiers to target media queries like responsive breakpoints.
 
-| media query | Range          | greenCSS example            |
+| media query | Range          | greenCSS example           |
 | ----------- | -------------- | -------------------------- |
 | sm:         | 0px - 480px    | .sm:transition-delay-500ms |
 | md:         | 480px - 768px  | .md:transition-delay-500ms |
@@ -58,7 +58,7 @@ greenCSS media queries can also be combined with active, focus and hover states.
 
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
-| greenCSS class names                                                                                  | spoken example                                                                                                        |
+| greenCSS class names                                                                                 | spoken example                                                                                                        |
 | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | active:transition-delay-500ms , focus:transition-delay-500ms , hover:transition-delay-500ms          | active transition delay, focus transition delay, hover transition delay                                               |
 | active:sm:transition-delay-500ms , focus:sm:transition-delay-500ms , hover:sm:transition-delay-500ms | active small screens transition delay, focus small screens transition delay, hover small screens transition delay,    |

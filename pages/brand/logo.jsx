@@ -101,7 +101,11 @@ export default function logo() {
             <img src='/images/brand/logo/logo-icons_ffzqbh.webp' alt='greenCSS logo icons' id='greenCSS-logo-icons' />
           </BrandSection>
           <BrandSection title='Logo typeface' description='"Vector Font"'>
-            <img src='/images/brand/logo/quick-fox_rrrwsl.webp' alt='greenCSS vector font' id='greenCSS-logo-typeface' />
+            <img
+              src='/images/brand/logo/quick-fox_rrrwsl.webp'
+              alt='greenCSS vector font'
+              id='greenCSS-logo-typeface'
+            />
           </BrandSection>
           <BrandSection isLight={true}>
             <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>

@@ -12,11 +12,11 @@ plainText: ' greenCSS css class example minimum value maximum value step w size 
 ---
 
 | _greenCSS_ | CSS class example         | minimum Value | maximum Value | Step |
-| --------- | ------------------------- | ------------- | ------------- | ---- |
-| w-{size}  | .w-1px { width: 1px; }    | w-0px         | w-100px       | 1px  |
-| w-{size}  | .w-11rem { width: 1rem; } | w-11rem       | w-100rem      | 1rem |
-| w-{size}  | .w-1% { width: 1%; }      | w-0per        | w-100per      | 1%   |
-| w-{size}  | .w-1vw { width: 1vw; }    | w-0vw         | w-100vw       | 1vw  |
+| ---------- | ------------------------- | ------------- | ------------- | ---- |
+| w-{size}   | .w-1px { width: 1px; }    | w-0px         | w-100px       | 1px  |
+| w-{size}   | .w-11rem { width: 1rem; } | w-11rem       | w-100rem      | 1rem |
+| w-{size}   | .w-1% { width: 1%; }      | w-0per        | w-100per      | 1%   |
+| w-{size}   | .w-1vw { width: 1vw; }    | w-0vw         | w-100vw       | 1vw  |
 
 ## Fixed widths
 
@@ -62,7 +62,7 @@ The `{w-auto}` utility can be useful if you need to remove an element’s assign
 
 ## Active, focus, and hover states
 
-| _greenCSS_       | CSS class example                     | Range                          |
+| _greenCSS_      | CSS class example                     | Range                          |
 | --------------- | ------------------------------------- | ------------------------------ |
 | active:w-{size} | .active\:w-1px:active { width: 1px; } | active:w-0px to active:w-100px |
 | focus:w-{size}  | .focus\:w-1px:focus { width: 1px; }   | focus:w-0px to focus:w-100px   |
@@ -79,10 +79,10 @@ greenCSS let you conditionally apply utility classes for different page states. 
 Use variant modifiers to target media queries like responsive breakpoints.
 
 | media query | Range          | greenCSS example |
-| ----------- | -------------- | --------------- |
-| sm:         | 0px - 480px    | .sm:w-10px      |
-| md:         | 480px - 768px  | .md:w-10px      |
-| lg:         | 768px - 1080px | .lg:w-10px      |
+| ----------- | -------------- | ---------------- |
+| sm:         | 0px - 480px    | .sm:w-10px       |
+| md:         | 480px - 768px  | .md:w-10px       |
+| lg:         | 768px - 1080px | .lg:w-10px       |
 
 greenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:w-10px` to apply the w-10px utility at only small screen sizes at or below 480px. Or `active:md:w-10px` to apply the w-10px utility at only between small screen sizes (480px) and medium screen sizes (768px).
 
@@ -92,7 +92,7 @@ greenCSS media queries can also be combined with active, focus and hover states.
 
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
-| greenCSS class names                                        | spoken example                                                                       |
+| greenCSS class names                                       | spoken example                                                                       |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | active:w-{size} , focus:w-{size} , hover:w-{size}          | active width, focus width, hover width                                               |
 | active:sm:w-{size} , focus:sm:w-{size} , hover:sm:w-{size} | active small screens width, focus small screens width, hover small screens width,    |

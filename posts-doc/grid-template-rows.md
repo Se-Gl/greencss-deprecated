@@ -11,7 +11,7 @@ classNames: ''
 plainText: ' greenCSS css class example grid-rows-none grid-rows-none grid-template-rows: none ; grid-rows-1 grid-rows-1 grid-template-rows: repeat 1 minmax 0 1fr ; grid-rows-2 grid-rows-2 grid-template-rows: repeat 2 minmax 0 1fr ; grid-rows-3 grid-rows-3 grid-template-rows: repeat 3 minmax 0 1fr ; grid-rows-4 grid-rows-4 grid-template-rows: repeat 4 minmax 0 1fr ; grid-rows-5 grid-rows-5 grid-template-rows: repeat 5 minmax 0 1fr ; grid-rows-6 grid-rows-6 grid-template-rows: repeat 6 minmax 0 1fr ; grid-rows-7 grid-rows-7 grid-template-rows: repeat 7 minmax 0 1fr ; grid-rows-8 grid-rows-8 grid-template-rows: repeat 8 minmax 0 1fr ; grid-rows-9 grid-rows-9 grid-template-rows: repeat 9 minmax 0 1fr ; grid-rows-10 grid-rows-10 grid-template-rows: repeat 10 minmax 0 1fr ; grid-rows-11 grid-rows-11 grid-template-rows: repeat 11 minmax 0 1fr ; grid-rows-12 grid-rows-12 grid-template-rows: repeat 12 minmax 0 1fr ; define the amount of rows in a grid use the grid-rows number utilities to create grids easily the range extends from 1-12 in the example below we assume a maximum number of 4 grid rows vertical direction `grid-rows-4` below each other with a gap of 30 pixels `gap-30px` ! greenCSS grid template rows images docs Flexbox-rows webp?style=centerme  active focus and hover states greenCSS css class example active:grid-rows-1 active :grid-rows-1:active grid-template-rows: repeat 1 minmax 0 1fr ; focus:grid-rows-1 focus :grid-rows-1:focus grid-template-rows: repeat 1 minmax 0 1fr ; hover:grid-rows-1 hover :grid-rows-1:hover grid-template-rows: repeat 1 minmax 0 1fr ; greenCSS let you conditionally apply utility classes for different page states thereby different variant modifiers are being used for example use `hover:grid-rows-1` to only apply the `grid-rows-1` utility on hover in the example below we consider there is a maximum number of 3 rows next to each other which means that there are three child elements in the same column if you hover over the parent object the number of rows changes to one as a result all child elements will occupy one column  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range greenCSS example sm: 0px 480px sm:grid-rows-1 md: 480px 768px md:grid-rows-1 lg: 768px 1080px lg:grid-rows-1 greenCSS media queries can also be combined with active focus and hover states for example use `sm:grid-rows-1` to apply the grid-rows-1 utility at only small screen sizes at or below 480px or `hover:md:grid-rows-1` to apply the grid-rows-1 utility at only between small screen sizes 480px and medium screen sizes 768px on hover 1 the structure is as follows: ` conditional state : media query :grid-rows numbers ` p e `active:md:grid-rows-1` responsive example working with cross-screen displays has never been easier using two greenCSS classes your grid will be compatible with smartphones and desktop displays in no time 1 the structure is as follows: ` media query :grid-rows numbers ` p e `sm:grid-rows-1` 1 the default value has no media query and will be applied for all screens: `grid-rows numbers ` p e `grid-rows-1` ! greenCSS responsive macbook grid template rows images docs flex macbook-grid-rows webp?style=centerme ! greenCSS responsive iphone grid template rows images docs flex iphone-grid-rows webp?style=centerme in the example below we use `grid-rows-4 grid-flow-col sm:grid-rows-1 sm:grid-flow-row` for a default grid with 4 vertical rows which spreads in a column flow horizontally for small screens the class `sm:grid-rows-1 sm:grid-flow-row` is being used which creates a horizontal flow for the element which covers the entire screen by the way you do not have to use `sm:grid-rows-1` as the horizontal flow class `sm:grid-flow-row` takes over control for the elements this class is an unnecessary repetition and was only used to demonstrate the responsive example  executive summary when you vocalize the class names it helps you to learn and remember the classes as well as the structure you can say: greenCSS class names spoken example active:grid-rows-1 focus:grid-rows-1 hover:grid-rows-1 active grid template rows focus grid template rows hover grid template rows active:sm:grid-rows-1 focus:sm:grid-rows-1 hover:sm:grid-rows-1 active small screens grid template rows focus small screens grid template rows hover small screens grid template rows active:md:grid-rows-1 focus:md:grid-rows-1 hover:md:grid-rows-1 active medium screens grid template rows focus medium screens grid template rows hover medium screens grid template rows active:lg:grid-rows-1 focus:lg:grid-rows-1 hover:lg:grid-rows-1 active large screens grid template rows focus large screens grid template rows hover large screens grid template rows sources grid-template-rows https: developer mozilla org en-us docs web css grid-template-rows '
 ---
 
-| _greenCSS_      | CSS class example                                                 |
+| _greenCSS_     | CSS class example                                                 |
 | -------------- | ----------------------------------------------------------------- |
 | grid-rows-none | .grid-rows-none { grid-template-rows: none); }                    |
 | grid-rows-1    | .grid-rows-1 { grid-template-rows: repeat(1, minmax(0, 1fr)); }   |
@@ -46,7 +46,7 @@ Use the grid-rows-{number} utilities to create grids easily. The range extends f
 
 ## Active, focus, and hover states
 
-| _greenCSS_          | CSS class example                                                              |
+| _greenCSS_         | CSS class example                                                              |
 | ------------------ | ------------------------------------------------------------------------------ |
 | active:grid-rows-1 | .active\:grid-rows-1:active { grid-template-rows: repeat(1, minmax(0, 1fr)); } |
 | focus:grid-rows-1  | .focus\:grid-rows-1:focus { grid-template-rows: repeat(1, minmax(0, 1fr)); }   |
@@ -67,10 +67,10 @@ greenCSS let you conditionally apply utility classes for different page states. 
 Use variant modifiers to target media queries like responsive breakpoints.
 
 | media query | Range          | greenCSS example |
-| ----------- | -------------- | --------------- |
-| sm:         | 0px - 480px    | .sm:grid-rows-1 |
-| md:         | 480px - 768px  | .md:grid-rows-1 |
-| lg:         | 768px - 1080px | .lg:grid-rows-1 |
+| ----------- | -------------- | ---------------- |
+| sm:         | 0px - 480px    | .sm:grid-rows-1  |
+| md:         | 480px - 768px  | .md:grid-rows-1  |
+| lg:         | 768px - 1080px | .lg:grid-rows-1  |
 
 greenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:grid-rows-1` to apply the grid-rows-1 utility at only small screen sizes at or below 480px. Or `hover:md:grid-rows-1` to apply the grid-rows-1 utility at only between small screen sizes (480px) and medium screen sizes (768px) on hover.
 
@@ -103,7 +103,7 @@ In the example below we use `grid-rows-4 grid-flow-col sm:grid-rows-1 sm:grid-fl
 
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
-| greenCSS class names                                               | spoken example                                                                                                             |
+| greenCSS class names                                              | spoken example                                                                                                             |
 | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | active:grid-rows-1, focus:grid-rows-1, hover:grid-rows-1          | active grid template rows, focus grid template rows, hover grid template rows                                              |
 | active:sm:grid-rows-1, focus:sm:grid-rows-1, hover:sm:grid-rows-1 | active small screens grid template rows, focus small screens grid template rows, hover small screens grid template rows    |

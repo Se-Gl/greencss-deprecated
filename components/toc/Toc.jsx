@@ -20,7 +20,7 @@ const Toc = ({ markdownText, titleLimit, highestHeadingLevel, lowestHeadingLevel
 
   return (
     <div role='navigation' aria-label='table of contents' id='toc'>
-      <div className='bg-purple-10 my-auto p-25px my-50px rounded-10px'>
+      <div className='bg-green-10 my-auto p-25px my-50px rounded-10px'>
         <h4 className='font-800 mb-25px'>Table of Contents</h4>
         {reveal === true && (
           <>

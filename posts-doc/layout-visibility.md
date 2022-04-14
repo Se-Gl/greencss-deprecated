@@ -12,10 +12,10 @@ plainText: ' greenCSS css class example visible visible visibility: visible; hid
 ---
 
 | _greenCSS_ | CSS class example                   |
-| --------- | ----------------------------------- |
-| visible   | .visible { visibility: visible; }   |
-| hidden    | .hidden { visibility: hidden; }     |
-| collapse  | .collapse { visibility: collapse; } |
+| ---------- | ----------------------------------- |
+| visible    | .visible { visibility: visible; }   |
+| hidden     | .hidden { visibility: hidden; }     |
+| collapse   | .collapse { visibility: collapse; } |
 
 ## How to work with visibility
 
@@ -36,7 +36,7 @@ The keyword collapse has various effects on different elements: For `<table>` ro
 
 ## Active, focus, and hover states
 
-| _greenCSS_        | CSS class example                                |
+| _greenCSS_       | CSS class example                                |
 | ---------------- | ------------------------------------------------ |
 | active:{keyword} | .active\:visible:active { visibility: visible; } |
 | focus:{keyword}  | .focus\:visible:focus { visibility: visible; }   |
@@ -53,10 +53,10 @@ greenCSS let you conditionally apply utility classes for different page states. 
 Use variant modifiers to target media queries like responsive breakpoints.
 
 | media query | Range          | greenCSS example |
-| ----------- | -------------- | --------------- |
-| sm:         | 0px - 480px    | .sm:visible     |
-| md:         | 480px - 768px  | .md:visible     |
-| lg:         | 768px - 1080px | .lg:visible     |
+| ----------- | -------------- | ---------------- |
+| sm:         | 0px - 480px    | .sm:visible      |
+| md:         | 480px - 768px  | .md:visible      |
+| lg:         | 768px - 1080px | .lg:visible      |
 
 greenCSS media queries can also be combined with active, focus and hover states. For example, use `sm:visible` to apply the visible utility at only small screen sizes at or below 480px. Or `active:md:visible` to apply the visible utility at only between small screen sizes (480px) and medium screen sizes (768px).
 
@@ -66,7 +66,7 @@ greenCSS media queries can also be combined with active, focus and hover states.
 
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
-| greenCSS class names                                           | spoken example                                                                             |
+| greenCSS class names                                          | spoken example                                                                             |
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | active:{keyword} , focus:{keyword} , hover:{keyword}          | active visible, focus visible, hover visible                                               |
 | active:sm:{keyword} , focus:sm:{keyword} , hover:sm:{keyword} | active small screens visible, focus small screens visible, hover small screens visible,    |

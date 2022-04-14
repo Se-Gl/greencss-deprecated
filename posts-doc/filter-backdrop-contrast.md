@@ -11,7 +11,7 @@ classNames: ''
 plainText: ' greenCSS css class example minimum value maximum value step backdrop-contrast number backdrop-contrast-1 backdrop-filter: contrast 0 1 0 30 +1 how to work the backdrop contrast filter use the `backdrop-contrast number ` utilities to set the amount of backdrop contrast for the element `backdrop-contrast-1` equals to the css class `backdrop-filter: contrast 0 1 ` `backdrop-contrast-2` equals to the css class `backdrop-filter: contrast 0 2 ` the maximum would be `backdrop-contrast-30` it equals to the css class `backdrop-filter: contrast 3 ` in general: the greenCSS class steps are +1 ranging from 0-30  active focus and hover states greenCSS css class example active:backdrop-contrast number active :backdrop-contrast-3:active backdrop-filter: contrast 3 ; focus:backdrop-contrast number focus :backdrop-contrast-3:focus backdrop-filter: contrast 3 ; hover:backdrop-contrast number hover :backdrop-contrast-3:hover backdrop-filter: contrast 3 ; greenCSS let you conditionally apply utility classes for different page states thereby different variant modifiers are being used for example use `hover:backdrop-contrast-3` to only apply the backdrop-contrast-3 utility class on hover  responsive breakpoints use variant modifiers to target media queries like responsive breakpoints media query range greenCSS example sm: 0px 480px sm:backdrop-contrast-3 md: 480px 768px md:backdrop-contrast-3 lg: 768px 1080px lg:backdrop-contrast-3 greenCSS media queries can also be combined with active focus and hover states for example use `sm:backdrop-contrast-3` to apply the backdrop-contrast-3 utility at only small screen sizes at or below 480px or `active:md:backdrop-contrast-3` to apply the backdrop-contrast-3 utility at only between small screen sizes 480px and medium screen sizes 768px 1 the structure for auto classes is as follows: ` conditional state : media query :backdrop-contrast number ` p e `active:md:backdrop-contrast-3` executive summary when you vocalize the class names it helps you to learn and remember the classes as well as the structure you can say: greenCSS class names spoken example active:backdrop-contrast-3 focus:backdrop-contrast-3 hover:backdrop-contrast-3 active backdrop contrast focus backdrop contrast hover backdrop contrast active:sm:backdrop-contrast-3 focus:sm:backdrop-contrast-3 hover:sm:backdrop-contrast-3 active small screens backdrop contrast focus small screens backdrop contrast hover small screens backdrop contrast active:md:backdrop-contrast-3 focus:md:backdrop-contrast-3 hover:md:backdrop-contrast-3 active medium screens backdrop contrast focus medium screens backdrop contrast hover medium screens backdrop contrast active:lg:backdrop-contrast-3 focus:lg:backdrop-contrast-3 hover:lg:backdrop-contrast-3 active large screens backdrop contrast focus large screens backdrop contrast hover large screens backdrop contrast sources backdrop-filter https: developer mozilla org en-us docs web css backdrop-filter '
 ---
 
-| _greenCSS_                  | CSS class example                                      | minimum Value | maximum Value | Step |
+| _greenCSS_                 | CSS class example                                      | minimum Value | maximum Value | Step |
 | -------------------------- | ------------------------------------------------------ | ------------- | ------------- | ---- |
 | backdrop-contrast-{number} | .backdrop-contrast-1 { backdrop-filter: contrast(0.1)} | 0             | 30            | +1   |
 
@@ -30,7 +30,7 @@ Use the `backdrop-contrast-{number}` utilities to set the amount of backdrop con
 
 ## Active, focus, and hover states
 
-| _greenCSS_                         | CSS class example                                                     |
+| _greenCSS_                        | CSS class example                                                     |
 | --------------------------------- | --------------------------------------------------------------------- |
 | active:backdrop-contrast-{number} | .active\:backdrop-contrast-3:active { backdrop-filter: contrast(3); } |
 | focus:backdrop-contrast-{number}  | .focus\:backdrop-contrast-3:focus { backdrop-filter: contrast(3); }   |
@@ -46,7 +46,7 @@ greenCSS let you conditionally apply utility classes for different page states. 
 
 Use variant modifiers to target media queries like responsive breakpoints.
 
-| media query | Range          | greenCSS example         |
+| media query | Range          | greenCSS example        |
 | ----------- | -------------- | ----------------------- |
 | sm:         | 0px - 480px    | .sm:backdrop-contrast-3 |
 | md:         | 480px - 768px  | .md:backdrop-contrast-3 |
@@ -60,7 +60,7 @@ greenCSS media queries can also be combined with active, focus and hover states.
 
 When you vocalize the class names, it helps you to learn and remember the classes, as well as the structure. You can say:
 
-| greenCSS class names                                                                         | spoken example                                                                                                           |
+| greenCSS class names                                                                        | spoken example                                                                                                           |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | active:backdrop-contrast-3 , focus:backdrop-contrast-3 , hover:backdrop-contrast-3          | active backdrop contrast, focus backdrop contrast, hover backdrop contrast                                               |
 | active:sm:backdrop-contrast-3 , focus:sm:backdrop-contrast-3 , hover:sm:backdrop-contrast-3 | active small screens backdrop contrast, focus small screens backdrop contrast, hover small screens backdrop contrast,    |
