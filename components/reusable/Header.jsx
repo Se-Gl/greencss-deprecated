@@ -16,23 +16,16 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const router = useRouter()
-  let checkPath = router.pathname === '/'
-  const isHome = checkPath ? 'text-white sm:text-black md:text-black' : 'text-black'
-  const isHomeNav = checkPath ? 'text-white sm:text-black md:text-black bg-black' : 'text-black bg-white'
 
   return (
     <div className='container'>
       <nav
         aria-label='header navigation'
-        className={`sm:display-none md:display-none z-100 fixed flex items-center h-15rem justify-between w-100per sm:px-10px md:px-25px lg:px-50px ${isHomeNav}`}
+        className={`sm:display-none md:display-none z-100 fixed flex items-center h-15rem justify-between w-100per sm:px-10px md:px-25px lg:px-50px text-black bg-white`}
         style={{ maxWidth: '110rem' }}>
         <Link href='/'>
           <a>
-            {router.pathname === '/' ? (
-              <LogoLight width='50px' height='50px' />
-            ) : (
-              <LogoDark width='50px' height='50px' />
-            )}
+            <LogoDark width='50px' height='50px' />
           </a>
         </Link>
         <ul className='flex text-16px'>
@@ -42,7 +35,7 @@ export default function Header() {
                 <Link key={index} href={item.path}>
                   <a
                     className={`mr-15px text-15px font-800 no-decoration ${
-                      router.asPath.includes(item.path) ? 'text-green font-800' : isHome
+                      router.asPath.includes(item.path) ? 'text-green font-800' : 'text-black'
                     }`}>
                     {item.title}
                   </a>
@@ -51,7 +44,7 @@ export default function Header() {
             })}
           </li>
         </ul>
-        <ReusableModal LinkClass={isHome} />
+        <ReusableModal LinkClass={'isHome'} />
       </nav>
 
       {/* Mobile Menu */}

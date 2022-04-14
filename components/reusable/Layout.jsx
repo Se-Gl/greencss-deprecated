@@ -14,7 +14,7 @@ export default function Layout({
   image,
   url,
   children,
-  className = 'container sm:px-10px md:px-25px lg:px-50px',
+  className = 'container sm:px-10px md:px-25px lg:px-50px bg-white',
   hasCanonical = false
 }) {
   return (

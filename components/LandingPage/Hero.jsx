@@ -31,16 +31,14 @@ export default function Hero() {
         <div className='col-span-1 min-h-75vh sm:min-h-100vh'>
           <div className='flex h-75vh'>
             <div className='m-auto'>
-              <h1 className='font-800 text-63px text-white sm:text-black md:text-black max-w-40rem'>
-                A classy way to write CSS design
-              </h1>
-              <p className='text-white sm:text-black md:text-black max-w-40rem'>
-                Styling CSS reimagined - for for everyone. Start to code with <span className='text-green'>zero</span>{' '}
-                emission: for your creativity and your planet.
+              <h1 className='font-800 text-63px max-w-40rem'>A classy way to write CSS design</h1>
+              <p className='max-w-40rem'>
+                Styling CSS reimagined - for for everyone. Start to code with{' '}
+                <span className='text-green font-900'>zero</span> emission: for your creativity and your planet.
               </p>
               <div className='flex'>
                 <ReusableModal isHero={true} />
-                <LinkButton className='ml-20px text-white sm:text-black md:text-black' href='docs'>
+                <LinkButton className='ml-20px' href='docs'>
                   Docs
                 </LinkButton>
               </div>

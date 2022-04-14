@@ -7,8 +7,9 @@ export default function Testimonial() {
         <div className='m-auto max-w-50rem'>
           <h2 className='font-bold text-50px mb-50px'>Hear What The Creator Says</h2>
           <p className='text-white'>
-            “A dynamic, animated CSS library. Beginner-friendly, for every framework or plain HTML, intuitive,
-            development ready and you can easily make it lightweight in production.”
+            “It all started with omenCSS. In fact, this was my capstone project for my bachelor thesis in software
+            engineering. I wanted to create a free MIT licensed CSS library for any framework - no matter whether
+            JavaScript, PHP or Python. This was not enough for me and so the story of greenCSS began.”
           </p>
           <Link href='https://www.severinglaser.ch'>
             <a className='text-green mt-50px no-decoration'>Severin Glaser</a>

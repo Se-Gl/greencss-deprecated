@@ -19,7 +19,7 @@ export default function ThreeDObject() {
         />
 
         <ambientLight intensity={0.75} />
-        <directionalLight position={[-2, -0.25, -2]} color={0x8006f9} />
+        <directionalLight position={[-2, -0.25, -2]} color={0x80f906} />
         <directionalLight position={[1, 0.9, 1.5]} color={0xffffff} />
         <Suspense fallback={null}>
           <Tilt3D object={<Phone />} />
