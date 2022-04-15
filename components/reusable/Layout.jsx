@@ -46,17 +46,17 @@ export default function Layout({
         <meta name='og:description' content={description} />
 
         {/* Apple & Favicon Tags */}
-        <link rel='apple-touch-icon' href={`${NEXT_URL}/images/icons/apple-touch-icon.png`} />
-        <link rel='apple-touch-icon' sizes='16x16' href={`${NEXT_URL}/images/icons/favicon-16x16.png`} />
-        <link rel='apple-touch-icon' sizes='32x32' href={`${NEXT_URL}/images/icons/favicon-32x32.png`} />
-        <link rel='apple-touch-icon' sizes='180x180' href={`${NEXT_URL}/images/icons/apple-touch-icon.png`} />
-        <link rel='mask-icon' color='#fdfdfd' href={`${NEXT_URL}/images/brand/greencss_logo_dark.svg`} />
-        <link rel='icon' type='image/svg+xml' href={`${NEXT_URL}/images/icons/favicon.svg`} />
+        <link rel='apple-touch-icon' href='/images/icons/apple-touch-icon.png' />
+        <link rel='apple-touch-icon' sizes='16x16' href='/images/icons/favicon-16x16.png' />
+        <link rel='apple-touch-icon' sizes='32x32' href='/images/icons/favicon-32x32.png' />
+        <link rel='apple-touch-icon' sizes='180x180' href='/images/icons/apple-touch-icon.png' />
+        <link rel='mask-icon' color='#fdfdfd' href='/images/brand/greencss_logo_dark.svg' />
+        <link rel='icon' type='image/svg+xml' href='/images/icons/favicon.svg' />
 
         {/* Meta Tags for HTML pages on Mobile */}
         <meta name='viewport' content='width=device-width, minimum-scale=1, initial-scale=1.0' />
         <meta name='theme-color' content='#fdfdfd' />
-        <link rel='shortcut icon' href={`${NEXT_URL}/images/brand/logo_dark.svg`} />
+        <link rel='shortcut icon' type='image/svg' href='/images/brand/logo_dark.svg' />
 
         {/* Canonical */}
         {hasCanonical === true && <link rel='canonical' href={`${NEXT_URL}/${url}`} />}
