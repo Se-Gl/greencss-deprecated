@@ -19,10 +19,10 @@ describe('Blog Screen Unit test', () => {
 
 describe('Verify ElementRenderer', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/blog/greenCSS-animations')
+    cy.visit('http://localhost:3000/blog/greencss-animations')
   })
   it('renders the header with its id', () => {
-    cy.get('#blog-greenCSS-animations')
+    cy.get('#blog-greencss-animations')
       .should('be.visible')
       .should('exist')
       .contains('How to stagger CSS animations', { matchCase: false })
@@ -32,7 +32,7 @@ describe('Verify ElementRenderer', () => {
       .should('exist')
       .contains('How to stagger CSS animations ', { matchCase: false })
       .click({ force: true })
-    cy.url().should('be.equal', 'http://localhost:3000/blog/greenCSS-animations#how-to-stagger-css-animations')
+    cy.url().should('be.equal', 'http://localhost:3000/blog/greencss-animations#how-to-stagger-css-animations')
   })
   it('checks if code is being rendered', () => {
     cy.get('pre').should('exist')

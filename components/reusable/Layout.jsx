@@ -50,7 +50,7 @@ export default function Layout({
         <link rel='apple-touch-icon' sizes='16x16' href='/images/icons/favicon-16x16.png' />
         <link rel='apple-touch-icon' sizes='32x32' href='/images/icons/favicon-32x32.png' />
         <link rel='apple-touch-icon' sizes='180x180' href='/images/icons/apple-touch-icon.png' />
-        <link rel='mask-icon' color='#fdfdfd' href='/images/brand/greenCSS_logo_dark.svg' />
+        <link rel='mask-icon' color='#fdfdfd' href='/images/brand/greencss_logo_dark.svg' />
         <link rel='icon' type='image/svg+xml' href='/images/icons/favicon.svg' />
 
         {/* Meta Tags for HTML pages on Mobile */}

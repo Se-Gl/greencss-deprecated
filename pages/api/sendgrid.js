@@ -27,7 +27,7 @@ async function sendEmail(req, res) {
                 <p>${req.body.message}</p>
                 <br>
               </div>
-              <img src="https://www.greenCSS.com/images/brand/greenCSS_logo_dark.svg" style="height: 50px;width: 50px;border-radius: 12.5px;overflow: hidden;">
+              <img src="https://www.greenCSS.com/images/brand/greencss_logo_dark.svg" style="height: 50px;width: 50px;border-radius: 12.5px;overflow: hidden;">
               <p style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #101010;">Regards<br>Se Gl<br>greenCSS<br></p>
               <div style="display: flex;justify-content: center;align-items: center;">
                 <a href="https://www.greenCSS.com" style="text-decoration: none;margin: 8px;color: #101010;">Website</a>

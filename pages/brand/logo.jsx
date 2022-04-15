@@ -29,7 +29,7 @@ export default function logo() {
             <div className='flex justify-center'>
               <div className='flex-col'>
                 <LogoDark />
-                <DownloadButton href='/images/brand/greenCSS_logo_dark.svg' className='mt-50px' id='download-dark-logo'>
+                <DownloadButton href='/images/brand/greencss_logo_dark.svg' className='mt-50px' id='download-dark-logo'>
                   Dark Logo Download
                 </DownloadButton>
                 <DownloadButton href='/images/brand/greenCSS_logo_light.svg' id='download-light-logo'>

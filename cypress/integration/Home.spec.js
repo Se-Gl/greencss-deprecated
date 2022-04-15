@@ -19,12 +19,9 @@ describe('Home Screen Unit test', () => {
   })
   it('reveals presentation section with animation', () => {
     cy.get('#presentation').should('exist')
-    cy.get('#production').should('exist')
+    cy.get('#competitive').should('exist')
     cy.get('#animated').should('exist')
     cy.get('#responsive').should('exist')
-    cy.get('#presentation').scrollIntoView().should('exist').should('be.visible')
-    cy.get('#animated').should('exist').should('be.visible')
-    cy.get('#production').should('exist').should('be.visible')
   })
   it('reveals supporters section with animation', () => {
     cy.get('#supporters').scrollIntoView()

@@ -33,7 +33,7 @@ describe('Brand - Logo Screen Unit test', () => {
   })
   it('download dark logo', () => {
     cy.get('#download-dark-logo').should('exist').click({ force: true }).wait(2000)
-    cy.readFile('cypress/downloads/greenCSS_logo_dark.svg').should('exist')
+    cy.readFile('cypress/downloads/greencss_logo_dark.svg').should('exist')
   })
 })
 
