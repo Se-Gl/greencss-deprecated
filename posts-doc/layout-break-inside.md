@@ -38,7 +38,7 @@ Use the `break-inside-{keyword}` to control how an element, a column or the page
   </p>
 
   <figure class="break-inside-avoid">
-    <img src="https://www.greenCSS.com/images/brand/greencss_logo_dark.svg" />
+    <img src="https://www.greencss.co/images/brand/greencss_logo_dark.svg" />
     <figcaption>The greenCSS logo</figcaption>
   </figure>
 

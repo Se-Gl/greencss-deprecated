@@ -27,12 +27,12 @@ async function sendEmail(req, res) {
                 <p>${req.body.message}</p>
                 <br>
               </div>
-              <img src="https://www.greenCSS.com/images/brand/greencss_logo_dark.svg" style="height: 50px;width: 50px;border-radius: 12.5px;overflow: hidden;">
+              <img src="https://www.greencss.co/images/brand/greencss_logo_dark.svg" style="height: 50px;width: 50px;border-radius: 12.5px;overflow: hidden;">
               <p style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #101010;">Regards<br>Se Gl<br>greenCSS<br></p>
               <div style="display: flex;justify-content: center;align-items: center;">
-                <a href="https://www.greenCSS.com" style="text-decoration: none;margin: 8px;color: #101010;">Website</a>
-                <a href="https://www.greenCSS.com/blog/" style="text-decoration: none;margin: 8px;color: #101010;">Blog</a>
-                <a href="https://www.greenCSS.com/docs/" style="text-decoration: none;margin: 8px;color: #101010;">Documentation</a>
+                <a href="https://www.greencss.co" style="text-decoration: none;margin: 8px;color: #101010;">Website</a>
+                <a href="https://www.greencss.co/blog/" style="text-decoration: none;margin: 8px;color: #101010;">Blog</a>
+                <a href="https://www.greencss.co/docs/" style="text-decoration: none;margin: 8px;color: #101010;">Documentation</a>
                 <a href="https://github.com/Se-Gl/greenCSS" style="text-decoration: none;margin: 8px;color: #101010;">GitHub</a>
                 <a href="https://linkedin.com/in/segl/" style="text-decoration: none;margin: 8px;color: #101010;">LinkedIn</a>
                 <a href="https://twitter.com/greenCSS" style="text-decoration: none;margin: 8px;color: #101010;">Twitter</a>

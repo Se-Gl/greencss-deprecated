@@ -15,7 +15,7 @@ This is a tutorial to create landing page - to be more specific - a hero section
 
 ## Start Coding - HTML
 
-To get started you can [download the hero image here](https://greenCSS.com/images/blog/blogcontent/Hero-Image.webp). The entire project is wrapped in a `container` class. For the responsive appearance a grid system will used. The setup is straightforward.
+To get started you can [download the hero image here](https://greencss.co/images/blog/blogcontent/Hero-Image.webp). The entire project is wrapped in a `container` class. For the responsive appearance a grid system will used. The setup is straightforward.
 
 ## The Hero Section Project
 
@@ -101,7 +101,7 @@ Note: `background-position: '60% 40%'` is being used to focus the image. Adjuste
 <div
   class="rounded-20px w-100per h-100per"
   style="background-image:
-'url(https://greenCSS.com/images/blog/blogcontent/Hero-Image.webp)', background-repeat: 'no-repeat', background-size:
+'url(https://greencss.co/images/blog/blogcontent/Hero-Image.webp)', background-repeat: 'no-repeat', background-size:
 'cover', background-position: '60% 40%' " />
 <!-- background image example END -->
 ```
@@ -113,7 +113,7 @@ An img element is inserted inside the [Right Hero Section](#right-hero-part).
 ```html
 <!-- image tag example -->
 <img
-  src="https://greenCSS.com/images/blog/blogcontent/Hero-Image.webp"
+  src="https://greencss.co/images/blog/blogcontent/Hero-Image.webp"
   alt="greenCSS Hero Image sample"
   class="block w-100per h-100per object-contain rounded-10px" />
 <!-- image tag example END -->
@@ -160,12 +160,12 @@ An img element is inserted inside the [Right Hero Section](#right-hero-part).
           <div
             class="rounded-20px w-100per h-100per"
             style="background-image:
-'url(https://greenCSS.com/images/blog/blogcontent/Hero-Image.webp)', background-repeat: 'no-repeat', background-size:
+'url(https://greencss.co/images/blog/blogcontent/Hero-Image.webp)', background-repeat: 'no-repeat', background-size:
 'cover', background-position: '60% 40%' " />
           <!-- background image example END -->
           <!-- image tag example -->
           <img
-            src="https://greenCSS.com/images/blog/blogcontent/Hero-Image.webp"
+            src="https://greencss.co/images/blog/blogcontent/Hero-Image.webp"
             alt="greenCSS Hero Image sample"
             class="block w-100per h-100per object-contain rounded-10px" />
           <!-- image tag example END -->
@@ -224,7 +224,7 @@ export default function HeroComponent() {
               <Image
                 layout='fill'
                 objectFit='cover'
-                src='https://greenCSS.com/images/blog/blogcontent/Hero-Image.webp'
+                src='https://greencss.co/images/blog/blogcontent/Hero-Image.webp'
                 alt='greenCSS Hero Image sample'
               />
             </div>
