@@ -184,14 +184,14 @@ sass/
 | changes    | Changes were made to the background image.                                                            |
 | ---------- | ------------------------------------                                                                  |
 
-| Illustrations |                                                                                                                                         |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| title         | design-thinking 1 / Coding 1 / bring-solutions-to-problems / Searching / Newsletter / protect-privacy / Virtual-reality 1 / office-desk |
-| source        | [Figma](https://www.figma.com/community/file/1071151296679851124)                                                                       |
-| author        | [Streamline](https://www.figma.com/@05466272_9382_4)                                                                                    |
-| license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                |
-| changes       | Changes were made to the fill- colours, added blob.                                                                                     |
-| ----------    | ------------------------------------                                                                                                    |
+| Illustrations |                                                                                                                                                        |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| title         | design-thinking 1 / Coding 1 / bring-solutions-to-problems / Searching / Newsletter / protect-privacy / Virtual-reality 1 / office-desk / get-inspired |
+| source        | [Figma](https://www.figma.com/community/file/1071151296679851124)                                                                                      |
+| author        | [Streamline](https://www.figma.com/@05466272_9382_4)                                                                                                   |
+| license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                               |
+| changes       | Changes were made to the fill- colours, added blob.                                                                                                    |
+| ----------    | ------------------------------------                                                                                                                   |
 
 ### Ideas & Inspiration
 
