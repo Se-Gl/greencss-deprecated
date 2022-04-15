@@ -23,6 +23,9 @@ describe('Home Screen Unit test', () => {
     cy.get('#animated').should('exist')
     cy.get('#responsive').should('exist')
   })
+  it('reveals faq section', () => {
+    cy.get('#faq').should('exist').contains('There’s more to know about greenCSS', { matchCase: false })
+  })
   it('reveals supporters section with animation', () => {
     cy.get('#supporters').scrollIntoView()
     cy.get(':nth-child(1) > .min-w-50rem > .min-h-25rem > .h-25rem')

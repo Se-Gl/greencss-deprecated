@@ -8,6 +8,7 @@ import Testimonial from '@/components/LandingPage/Testimonial'
 import { getPosts } from '@/lib/posts'
 import Newsletter from '@/components/LandingPage/Newsletter'
 import { sortByDate } from '@/utils/SortBy'
+import Faq from '@/components/LandingPage/Faq/Faq'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
@@ -17,6 +18,7 @@ export default function HomePage({ posts }) {
       <Layout className='container min-h-100vh relative z-2 bg-white'>
         <Hero />
         <Presentation />
+        <Faq />
         <Support />
         <News posts={posts} />
         <Testimonial />
