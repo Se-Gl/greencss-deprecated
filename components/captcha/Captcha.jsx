@@ -51,7 +51,7 @@ const Captcha = forwardRef(
     }, [])
 
     return (
-      <div className='my-auto mr-25px'>
+      <div className='mt-auto mr-25px'>
         <canvas
           ref={canvas}
           className='cursor-pointer h-45px'
