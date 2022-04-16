@@ -21,7 +21,7 @@ export default function FaqQuestions({ question }) {
           <FaqIcon className={`ml-auto cursor-pointer ${active && 'rotate-45deg'}`} />
         </div>
         <div ref={contentRef} className='overflow-hidden transition-all transition-duration-600ms ease'>
-          <p className='text-black-8 line-height-105per relative z-99'>{question.description}</p>
+          <p className='text-15px text-black-5 line-height-133per relative z-99'>{question.description}</p>
         </div>
       </button>
     </div>

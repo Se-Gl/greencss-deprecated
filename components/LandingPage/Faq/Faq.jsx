@@ -66,19 +66,6 @@ export default function Faq() {
           {questions.map((question, index) => (
             <FaqQuestions question={question} key={index} />
           ))}
-          {/* 
-            <div className='border-bottom-width-3px border-solid border-blue-8' key={index}>
-              <button className={`bg-transparent ${active}`} onClick={toggleQuestion}>
-                <div className='flex my-25px'>
-                  <h3 className='text-25px font-900 mb-0px'>{question.title}</h3>
-                  <FaqIcon className={`ml-auto cursor-pointer ${active && 'rotate-45deg'}`} />
-                </div>
-                <div ref={contentRef} className='overflow-hidden transition-all transition-duration-600ms ease'>
-                  <p className='text-black-8 line-height-105per'>{question.description}</p>
-                </div>
-              </button>
-            </div>
-          ))} */}
         </div>
       </div>
     </section>
