@@ -25,7 +25,7 @@ export default function Cookies() {
       {cookieBanner && (
         <div className='fixed bottom-0per left-0per min-h-10vh w-100vw bg-green-5 z-99' id='cookie-banner'>
           <div className='flex sm:block sm:px-15px py-25px max-w-60rem m-auto'>
-            <span className='text-30px my-auto mr-25px sm:mr-0px' onClick={cookie}>
+            <span className='text-30px my-auto mr-25px sm:mr-0px cursor-pointer' onClick={cookie}>
               🍪
             </span>
             <p className='mb-0px text-15px'>
