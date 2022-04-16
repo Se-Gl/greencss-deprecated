@@ -14,7 +14,7 @@ plainText: ' this article introduces greenCSS greenCSS is a class-based css libr
 This article introduces greenCSS. greenCSS is a class-based CSS library. The primary focus is on responsive design, as the credo is "all screens first", which stands in contrast to the common "mobile first". Especially in the coming years, the demand for multiple design solutions and the coverage for a wide range of devices will considerably increase. While the most popular css libraries mainly specialize for JavaScript frameworks. The intention of greenCSS is to be accessible for EVERYBODY. This means, that greenCSS will always be free and the source code is publicly available (MIT license). Since the library is built with SCSS, greenCSS can be used on all frameworks like Django, Flask, React, Vue, Next, Nuxt, Laravel and even on vanilla HTML - just to name a few examples.
 
 1.  greenCSS is responsive - write HTML design for smartphone, tablet, screenreader, laptop, desktop or 4k screens
-2.  greenCSS is dynamic - no additional library for animations is necessary. All animations are already implemented. Examples can be viewed [here](https://www.greencss.co/examples/animation)
+2.  greenCSS is dynamic - no additional library for animations is necessary. All animations are already implemented. Examples can be viewed [here](https://www.greencss.dev/examples/animation)
 3.  greenCSS is MIT licensed. The source code can be viewed [here](https://github.com/Se-Gl/greenCSS).
 
 ## What exactly is greenCSS?

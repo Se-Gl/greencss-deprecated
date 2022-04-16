@@ -34,7 +34,7 @@ The default class is normally `object-position-center` as the viewport is set to
 ```html
 <img
   class="object-none object-position-center h-20rem w-100per rounded-10px"
-  src="https://greencss.co/images/blog/blogcontent/Hero-Image.webp" />
+  src="https://greencss.dev/images/blog/blogcontent/Hero-Image.webp" />
 ```
 
 ### Object Position-Keyword
@@ -44,7 +44,7 @@ Use the `object-position-{keyword}` utility class to set the angle of view. For 
 ```html
 <img
   class="object-none object-position-top-right h-20rem w-100per rounded-10px"
-  src="https://greencss.co/images/blog/blogcontent/Hero-Image.webp" />
+  src="https://greencss.dev/images/blog/blogcontent/Hero-Image.webp" />
 ```
 
 ## Active, focus, and hover states

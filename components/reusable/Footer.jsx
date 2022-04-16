@@ -9,7 +9,7 @@ const startedLinks = [
 ]
 const communityLinks = [
   { title: 'Github', path: 'https://github.com/Se-Gl/greenCSS' },
-  { title: 'Twitter', path: 'https://twitter.com/greenCSS' },
+  { title: 'Twitter', path: 'https://twitter.com/omenCSS' },
   { title: 'LinkedIn', path: 'https://www.linkedin.com/in/segl' }
 ]
 

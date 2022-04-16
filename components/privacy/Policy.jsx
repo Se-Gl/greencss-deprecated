@@ -16,7 +16,7 @@ export default function Policy() {
         an open source project.
       </p>
       <p>
-        At greenCSS, accessible from www.greencss.co, one of our main priorities is the privacy of our visitors. This
+        At greenCSS, accessible from www.greencss.dev, one of our main priorities is the privacy of our visitors. This
         Privacy Policy document contains types of information that is collected and recorded by greenCSS and how we use
         it.
       </p>

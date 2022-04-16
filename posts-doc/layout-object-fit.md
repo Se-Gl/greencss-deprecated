@@ -31,7 +31,7 @@ Use the `object-contain` utility class to maintain the scale of the image. Small
 <div class="overflow-hidden max-w-50rem mx-auto">
   <img
     class="object-contain h-25rem w-100per rounded-10px"
-    src="https://greencss.co/images/blog/blogcontent/Hero-Image.webp" />
+    src="https://greencss.dev/images/blog/blogcontent/Hero-Image.webp" />
 </div>
 ```
 
@@ -43,7 +43,7 @@ Use the `object-cover` utility class to cover and maintain the scale of the imag
 <div class="overflow-hidden max-w-50rem mx-auto">
   <img
     class="object-cover h-25rem w-100per rounded-10px"
-    src="https://greencss.co/images/blog/blogcontent/Hero-Image.webp" />
+    src="https://greencss.dev/images/blog/blogcontent/Hero-Image.webp" />
 </div>
 ```
 
@@ -55,7 +55,7 @@ Use the `object-fill` utility class to stretch the image.
 <div class="overflow-hidden max-w-50rem mx-auto">
   <img
     class="object-fill h-25rem w-100per rounded-10px"
-    src="https://greencss.co/images/blog/blogcontent/Hero-Image.webp" />
+    src="https://greencss.dev/images/blog/blogcontent/Hero-Image.webp" />
 </div>
 ```
 
@@ -67,7 +67,7 @@ Use the `object-scale-down` utility class to maintain the original image scale a
 <div class="overflow-hidden max-w-50rem mx-auto">
   <img
     class="object-scale-down h-25rem w-100per rounded-10px"
-    src="https://greencss.co/images/blog/blogcontent/Hero-Image.webp" />
+    src="https://greencss.dev/images/blog/blogcontent/Hero-Image.webp" />
 </div>
 ```
 

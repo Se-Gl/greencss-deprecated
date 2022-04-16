@@ -28,7 +28,7 @@ Use the `clear-right` utility class to clear a child on the right side of its pa
 
 ```html
 <div class="max-w-50rem h-auto">
-  <img class="float-right w-100px h-100px" src="https://greencss.co/images/blog/blogcontent/Hero-Image.webp" />
+  <img class="float-right w-100px h-100px" src="https://greencss.dev/images/blog/blogcontent/Hero-Image.webp" />
   <p class="clear-right ...">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facere veritatis nemo adipisci doloribus soluta id?
     Doloremque delectus, quas ipsa tempore laboriosam nostrum nisi molestiae voluptatibus numquam, tempora ipsum
@@ -58,8 +58,8 @@ Use the `clear-both` utility class to clear all children.
 
 ```html
 <div class="max-w-50rem">
-  <img class="float-left w-100px h-100px" src="https://greencss.co/images/blog/blogcontent/Hero-Image.webp" />
-  <img class="float-right w-100px h-100px" src="https://greencss.co/images/blog/blogcontent/Hero-Image.webp" />
+  <img class="float-left w-100px h-100px" src="https://greencss.dev/images/blog/blogcontent/Hero-Image.webp" />
+  <img class="float-right w-100px h-100px" src="https://greencss.dev/images/blog/blogcontent/Hero-Image.webp" />
   <p class="clear-both">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facere veritatis nemo adipisci doloribus soluta id?
     Doloremque delectus, quas ipsa tempore laboriosam nostrum nisi molestiae voluptatibus numquam, tempora ipsum
@@ -74,8 +74,8 @@ Use the `clear-none` utility class to disable the clearance of all elements.
 
 ```html
 <div class="max-w-50rem">
-  <img class="float-left w-100px h-100px" src="https://greencss.co/images/blog/blogcontent/Hero-Image.webp" />
-  <img class="float-right w-100px h-100px" src="https://greencss.co/images/blog/blogcontent/Hero-Image.webp" />
+  <img class="float-left w-100px h-100px" src="https://greencss.dev/images/blog/blogcontent/Hero-Image.webp" />
+  <img class="float-right w-100px h-100px" src="https://greencss.dev/images/blog/blogcontent/Hero-Image.webp" />
   <p class="clear-none">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facere veritatis nemo adipisci doloribus soluta id?
     Doloremque delectus, quas ipsa tempore laboriosam nostrum nisi molestiae voluptatibus numquam, tempora ipsum

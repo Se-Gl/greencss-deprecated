@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.greencss.co/sitemap.xml
-Sitemap: https://www.greencss.co/dynamic-blog-sitemap.xml
-Sitemap: https://www.greencss.co/dynamic-docs-sitemap.xml
+Sitemap: https://www.greencss.dev/sitemap.xml
+Sitemap: https://www.greencss.dev/dynamic-blog-sitemap.xml
+Sitemap: https://www.greencss.dev/dynamic-docs-sitemap.xml
