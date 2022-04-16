@@ -42,7 +42,7 @@ export default function Presentation() {
       ref={refTwo}>
       <div className='max-w-60rem mx-auto'>
         <h1>
-          Create and Design Milestones, <span className='text-green'>anywhere</span> with everything{' '}
+          Create and <span className='text-green'>Design</span> Milestones, anywhere with everything{' '}
         </h1>
       </div>
       <div

@@ -2,8 +2,7 @@ import dynamic from 'next/dynamic'
 import Hero from '@/components/LandingPage/Hero'
 import News from '@/components/LandingPage/News'
 import Presentation from '@/components/LandingPage/Presentation'
-import Service from '@/components/LandingPage/Service'
-import Support from '@/components/LandingPage/Support'
+
 import Testimonial from '@/components/LandingPage/Testimonial'
 import { getPosts } from '@/lib/posts'
 import Newsletter from '@/components/LandingPage/Newsletter'
@@ -18,12 +17,10 @@ export default function HomePage({ posts }) {
       <Layout className='container min-h-100vh relative z-2 bg-white'>
         <Hero />
         <Presentation />
-        <Faq />
-        <Support />
         <News posts={posts} />
         <Testimonial />
-        <Service />
         <Newsletter />
+        <Faq />
       </Layout>
     </div>
   )

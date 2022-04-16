@@ -1,11 +1,23 @@
 import Link from 'next/link'
+import useInView from '@/hooks/InView/scrollView'
 
 export default function Testimonial() {
+  const [ref, isVisible] = useInView({
+    threshold: 0.25,
+    unobserveOnEnter: true
+  })
   return (
-    <section className='my-20rem sm:my-100px md:my-100px' id='testimonial'>
+    <section
+      ref={ref}
+      className={`py-10rem sm:my-0px md:my-0px sm:m-10px md:m-10px ${
+        isVisible && 'bg-red-10 transition-all transition-duration-800ms'
+      }`}
+      id='testimonial'>
       <div className='relative flex min-h-75vh w-100per text-center text-white bg-black rounded-20px'>
         <div className='m-auto max-w-50rem'>
-          <h2 className='font-bold text-50px mb-50px'>Hear What The Creator Says</h2>
+          <h2 className='font-bold text-50px mb-50px'>
+            Hear what the <span className='text-green'>creator</span> says
+          </h2>
           <p className='text-white'>
             “It all started with omenCSS. In fact, this was my capstone project for my bachelor thesis in software
             engineering. I wanted to create a free MIT licensed CSS library for any framework - no matter whether

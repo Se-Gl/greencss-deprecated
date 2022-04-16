@@ -26,31 +26,12 @@ describe('Home Screen Unit test', () => {
   it('reveals faq section', () => {
     cy.get('#faq').should('exist').contains('There’s more to know about greenCSS', { matchCase: false })
   })
-  it('reveals supporters section with animation', () => {
-    cy.get('#supporters').scrollIntoView()
-    cy.get(':nth-child(1) > .min-w-50rem > .min-h-25rem > .h-25rem')
-      .should('exist')
-      .should('be.visible')
-      .click({ force: true })
-    cy.get(':nth-child(2) > .min-w-50rem > .min-h-25rem > .h-25rem')
-      .should('exist')
-      .trigger('touchmove', {
-        touches: [{ pageY: 0, pageX: 100 }],
-        force: true
-      })
-      .click({ force: true })
-    cy.get(':nth-child(3) > .min-w-50rem > .min-h-25rem > .h-25rem').should('exist')
-  })
   it('render dummy blog post card', () => {
     cy.get('#recent-news').should('exist').scrollIntoView()
     cy.get('#blog-card').should('exist').should('exist').should('have.attr', 'style')
   })
   it('render the testimonial section', () => {
     cy.get('#testimonial').should('exist').scrollIntoView().wait(500).should('be.visible')
-  })
-  it('render dummy doc section and cards', () => {
-    cy.get('#service-section').should('exist').scrollIntoView()
-    cy.get('#service-card').contains('Getting started', { matchCase: false })
   })
   it('renders newsletter section aand creates a request', () => {
     cy.get('#newsletter').should('exist').scrollIntoView().should('be.visible')

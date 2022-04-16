@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import useInView from '@/hooks/InView/scrollView'
 import { useToast } from '@/components/toast/hooks/useToast'
 import { Button } from '../reusable/Button'
 
@@ -6,6 +7,11 @@ export default function Newsletter() {
   const [mail, setMail] = useState('')
   const [loading, setLoading] = useState(false)
   const toast = useToast()
+
+  const [ref, isVisible] = useInView({
+    threshold: 0.25,
+    unobserveOnEnter: true
+  })
 
   const subscribe = () => {
     setLoading(true)
@@ -26,10 +32,17 @@ export default function Newsletter() {
     })
   }
   return (
-    <section className='my-20rem sm:my-100px md:my-100px' id='newsletter'>
+    <section
+      ref={ref}
+      className={`py-10rem sm:my-0px md:my-0px sm:m-10px md:m-10px ${
+        isVisible && 'bg-purple-10 transition-all transition-duration-800ms'
+      }`}
+      id='newsletter'>
       <div className='relative flex min-h-75vh w-100per text-white bg-black rounded-20px'>
         <div className='m-auto max-w-50rem'>
-          <h2 className='font-bold text-50px pb-50px mb-0px'>There’s more than being up-to-date</h2>
+          <h2 className='font-bold text-50px pb-50px mb-0px'>
+            There’s more than being <span className='text-green'>up-to-date</span>
+          </h2>
           <p className='text-white'>
             Stay informed by getting help about the latest greenCSS updates. Find new CSS tutorials that will help you
             grow as a developer and scale your business.
