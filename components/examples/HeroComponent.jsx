@@ -34,7 +34,7 @@ export default function HeroComponent() {
         {/* Left Hero section END*/}
         {/* Right Hero section*/}
         <div className='col-span-1 flex'>
-          <div className='w-100per sm:w-100per md:w-100per'>
+          <div className='w-100per'>
             <div className='relative h-75vh overflow-hidden'>
               {/* NextJS image */}
               <Image

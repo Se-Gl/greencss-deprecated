@@ -49,7 +49,7 @@ export default function Presentation() {
         className='grid gap-30px sm:gap-0px grid-col-3 sm:grid-col-1 md:grid-col-1 min-auto overflow-hidden'
         style={{ maxWidth: '110rem' }}>
         <div className='col-span-12 flex'>
-          <div className='w-100per sm:w-100per md:w-100per'>
+          <div className='w-100per'>
             <div className='relative h-75vh sm:h-50vh overflow-hidden mb-5rem'>
               <Image
                 quality={100}

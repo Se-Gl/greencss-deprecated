@@ -87,7 +87,7 @@ To get a responsive layout for the Hero section, a parent element must consist o
 ```html
 {/* Right Hero section*/}
 <div class="col-span-1 flex">
-  <div class="w-100per sm:w-100per md:w-100per">
+  <div class="w-100per">
     <div class="relative h-75vh overflow-hidden">{children}</div>
   </div>
 </div>
@@ -158,7 +158,7 @@ An img element is inserted inside the [Right Hero Section](#right-hero-part).
     </div>
     {/* Left Hero section END*/} {/* Right Hero section*/}
     <div class="col-span-1 flex">
-      <div class="w-100per sm:w-100per md:w-100per">
+      <div class="w-100per">
         <div class="relative h-75vh overflow-hidden">
           <!-- background image example -->
           <div
@@ -224,7 +224,7 @@ export default function HeroComponent() {
         {/* Left Hero section END*/}
         {/* Right Hero section*/}
         <div className='col-span-1 flex'>
-          <div className='w-100per sm:w-100per md:w-100per'>
+          <div className='w-100per'>
             <div className='relative h-75vh overflow-hidden'>
               {/* NextJS image */}
               <Image
