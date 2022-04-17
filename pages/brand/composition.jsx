@@ -85,7 +85,7 @@ export default function composition() {
               <BrandBadExample
                 childOne={
                   <img
-                    src='/images/brand/composition/o-frame-checklist-3.webp'
+                    src='/images/brand/composition/o-frame-checklist-4.webp'
                     alt='greenCSS o-frame checklist'
                     id='greenCSS-o-frame-1'
                     className='w-100per'
@@ -93,18 +93,6 @@ export default function composition() {
                 }
                 classOne='py-10px'
                 childTwo='If an O-layout is not possible - often on the web - the grid layout may be used instead. It uses a 12-column grid with a 40px margin and a 30px gutter.'
-              />
-              <BrandBadExample
-                childOne={
-                  <img
-                    src='/images/brand/colors/do-not-5.webp'
-                    alt='omen css do not with colors'
-                    id='greenCSS-do-not-5'
-                    className='w-100per'
-                  />
-                }
-                classOne='py-10px'
-                childTwo='Avoid coloured headings or texts.'
               />
             </div>
           </BrandSection>
