@@ -4,7 +4,7 @@ import Icon from '@/components/icon/404/Icon'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
 import { NEXT_URL } from '@/config/index'
 import ReusableModal from '@/components/modal/ReusableModal'
-import { LinkButton } from '@/components/reusable/Button'
+import { GreenButton } from '@/components/reusable/Button'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
@@ -27,9 +27,7 @@ export default function ForOhFor() {
         <div className='w-100per mb-50px'>
           <div className='flex'>
             <ReusableModal />
-            <LinkButton className='font-bold text-20px' href='/'>
-              Or Go back
-            </LinkButton>
+            <GreenButton href='/'>Or Go back</GreenButton>
           </div>
         </div>
       </div>

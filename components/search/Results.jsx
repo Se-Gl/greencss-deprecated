@@ -15,7 +15,7 @@ export default function Results({ results, searchTerm }) {
         )}
         {results.map((result, index) => (
           <div
-            className={`bg-green-10 hover:bg-green-6 transition-all transition-duration-500ms p-10px rounded-10px flex justify-between items-center mb-10px border-bottom-1px border-black border-solid clip-inset-in-left animate animation-forwards animation-delay-${
+            className={`bg-greencss-10 hover:bg-greencss-6 transition-all transition-duration-500ms p-10px rounded-10px flex justify-between items-center mb-10px border-bottom-1px border-black border-solid clip-inset-in-left animate animation-forwards animation-delay-${
               (index + 1) * 1
             }00ms`}
             key={index}>
@@ -28,7 +28,7 @@ export default function Results({ results, searchTerm }) {
                 {result.frontmatter.isBlog === false ? <Document className='my-auto' /> : <Blog className='my-auto' />}
                 <div className='ml-15px'>
                   <div className='flex items-center'>
-                    <h3 className='text-15px font-600 text-green bg-green-9 rounded-20px py-5px px-10px mb-0px'>
+                    <h3 className='text-15px font-600 text-greencss bg-greencss-9 rounded-20px py-5px px-10px mb-0px'>
                       {result.frontmatter.category}
                     </h3>
                   </div>

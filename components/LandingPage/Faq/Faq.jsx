@@ -54,7 +54,7 @@ export default function Faq() {
         <div className='col-span-1 flex sm:mb-0px md:mb-0px'>
           <div className='m-auto sm:m-unset max-w-50rem'>
             <h1 className='font-800 text-63px'>
-              There’s more to <span className='text-green'>know</span> about greenCSS
+              There’s more to <span className='text-greencss'>know</span> about greenCSS
             </h1>
             <FaqIllustration />
           </div>

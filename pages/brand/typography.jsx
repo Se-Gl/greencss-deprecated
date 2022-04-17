@@ -3,7 +3,7 @@ import BrandBadExample from '@/components/brand/BrandBadExample'
 import BrandSection from '@/components/brand/BrandSection'
 import Summary from '@/components/brand/Summary'
 import LogoDark from '@/components/icon/Brand/LogoDark'
-import { BackButton, DownloadButton } from '@/components/reusable/Button'
+import { BackButton, GreenButton } from '@/components/reusable/Button'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
@@ -50,9 +50,15 @@ export default function typography() {
                 </div>
               </div>
             </div>
-            <DownloadButton href='/fonts/Omen Motion/Omen Motion.zip' className='mt-50px' id='download-omen-motion'>
-              Omen Motion Download
-            </DownloadButton>
+            <div className='mt-25px flex justify-center'>
+              <GreenButton
+                isDownload={true}
+                isDefault={false}
+                href='/fonts/Omen Motion/Omen Motion.zip'
+                id='download-omen-motion'>
+                Omen Motion Download
+              </GreenButton>
+            </div>
           </BrandSection>
           <BrandSection
             title='Relationships'
@@ -155,8 +161,8 @@ export default function typography() {
                     <span className='text-yellow'>yellow </span>
                     <span className='text-red ml-10px'>red </span>
                     <span className='text-blue ml-10px'>blue </span>
-                    <span className='text-green ml-10px'>purple </span>
-                    <span className='text-green ml-10px'>green</span>
+                    <span className='text-greencss ml-10px'>purple </span>
+                    <span className='text-greencss ml-10px'>green</span>
                   </div>
                 }
                 childTwo='Avoid, if possible, the use of colored typography (black or white only).'

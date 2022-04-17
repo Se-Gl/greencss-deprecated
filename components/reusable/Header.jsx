@@ -35,7 +35,7 @@ export default function Header() {
                 <Link key={index} href={item.path}>
                   <a
                     className={`mr-15px text-15px font-800 no-decoration ${
-                      router.asPath.includes(item.path) ? 'text-green font-800' : 'text-black'
+                      router.asPath.includes(item.path) ? 'text-greencss font-800' : 'text-black'
                     }`}>
                     {item.title}
                   </a>
@@ -50,7 +50,7 @@ export default function Header() {
       {/* Mobile Menu */}
       <nav className='z-100 min-h-10vh display-none sm:block md:block'>
         <div
-          className={`fixed top-0per right-0per z-99 m-30px hamburger w-50px h-50px rounded-50px bg-green-10 ${
+          className={`fixed top-0per right-0per z-99 m-30px hamburger w-50px h-50px rounded-50px bg-greencss-10 ${
             isOpen && 'is-active'
           }`}
           id='hamburger-sm'

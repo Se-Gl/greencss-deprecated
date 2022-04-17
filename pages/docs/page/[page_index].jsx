@@ -43,7 +43,7 @@ export default function DocsCategoryPage({ categories, posts }) {
         </div>
         <div className='min-w-100per relative col-span-9 sm:col-span-12 md:col-span-12' id='docs-index'>
           <div className='max-w-75rem mb-10rem'>
-            <p className='text-green-5 font-600 text-15px mb-5px'>Documentation</p>
+            <p className='text-greenCSS-5 font-600 text-15px mb-5px'>Documentation</p>
             <h1 className='font-900 mb-15px'>Docs - the right way to get to know the system</h1>
             <h2 className='text-20px font-normal mb-25px'>Get to know greenCSS and start writing design.</h2>
           </div>

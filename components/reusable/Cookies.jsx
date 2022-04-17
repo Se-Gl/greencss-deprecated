@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Button } from './Button'
+import { GreenButton } from './Button'
 
 export default function Cookies() {
   const [cookieBanner, setCookieBanner] = useState(true)
@@ -23,19 +23,21 @@ export default function Cookies() {
   return (
     <>
       {cookieBanner && (
-        <div className='fixed bottom-0per left-0per min-h-10vh w-100vw bg-green-5 z-99' id='cookie-banner'>
+        <div className='fixed bottom-0per left-0per min-h-10vh w-100vw bg-greencss z-99' id='cookie-banner'>
           <div className='flex sm:block sm:px-15px py-25px max-w-60rem m-auto'>
-            <span className='text-30px my-auto mr-25px sm:mr-0px cursor-pointer' onClick={cookie}>
+            <span className='text-30px mr-25px sm:mr-0px cursor-pointer my-auto' onClick={cookie}>
               🍪
             </span>
-            <p className='mb-0px text-15px'>
-              By clicking the cookie or “OK”, you agree to the storing of cookies and to analyze data with posthog and
-              google analytics on your device to enhance site navigation, analyze site usage, and assist in our UI/UX
-              efforts.
+            <p className='mb-0px text-15px text-white'>
+              By clicking the cookie or “OK”, you agree to the storing of cookies and/or data in your local storage. You
+              agree, that we use google analytics to enhance site navigation and analyze site usage. It helps us to
+              improve our UI/UX experience for you.
             </p>
-            <Button className='ml-25px sm:ml-0px sm:mt-25px' onClick={cookie} id='close-toast'>
-              OK
-            </Button>
+            <div className='justify-center items-center my-auto'>
+              <GreenButton className='text-white' onClick={cookie} id='close-toast'>
+                OK
+              </GreenButton>
+            </div>
           </div>
         </div>
       )}

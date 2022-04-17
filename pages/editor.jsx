@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import { useState, useEffect } from 'react'
 import rehypeSanitize from 'rehype-sanitize'
 import Loader from '@/components/logo/Loader'
-import { Button } from '@/components/reusable/Button'
+import { GreenButton } from '@/components/reusable/Button'
 
 const MDEditor = dynamic(() => import('@uiw/react-md-editor').then((mod) => mod.default), {
   ssr: false,
@@ -36,11 +36,12 @@ function MarkDownPage() {
 
   return (
     <Layout
-      className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'
+      className='container sm:px-10px md:px-25px lg:px-50px bg-green-10 pt-5rem sm:pt-0rem md:pt-0rem'
       title='Markdown editor'
       keywords='markdown, editor, css library, omen css'
       description="Create your Markdown documentation, with omen css's markdown editor.">
-      <div id='markdowneditor' className='mt-20rem min-w-100per'>
+      <div id='markdowneditor' className='min-w-100per min-h-50vh bg-white'>
+        <h1 className='max-w-50vw'>Markdown editor for greenCSS devs</h1>
         <MDEditor
           value={editor}
           onChange={setEditor}
@@ -48,11 +49,11 @@ function MarkDownPage() {
             rehypePlugins: [[rehypeSanitize]]
           }}
         />
-        <div className='flex'>
-          <Button onClick={TextFile} id='saveMD' className='mt-50px mx-auto'>
-            save
-          </Button>
-        </div>
+      </div>
+      <div className='flex my-25px'>
+        <GreenButton onClick={TextFile} id='saveMD'>
+          save
+        </GreenButton>
       </div>
     </Layout>
   )

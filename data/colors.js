@@ -1,14 +1,14 @@
 export const primaryColors = [
   { className: 'bg-white', colorName: 'White', colorHex: '#fdfdfd' },
   { className: 'bg-black', colorName: 'Black', colorHex: '#101010' },
-  { className: 'bg-purple', colorName: 'Purple', colorHex: '#8006f9' }
+  { className: 'bg-greencss', colorName: 'GreenCSS', colorHex: '#3e7a02' },
+  { className: 'bg-green', colorName: 'Green', colorHex: '#80f906' }
 ]
 
 export const secondaryColors = [
   { className: 'bg-red', colorName: 'Red', colorHex: '#f90606' },
   { className: 'bg-orange', colorName: 'Orange', colorHex: '#f99106' },
   { className: 'bg-yellow', colorName: 'Yellow', colorHex: '#f9cf06' },
-  { className: 'bg-green', colorName: 'Green', colorHex: '#80f906' },
   { className: 'bg-blue', colorName: 'Blue', colorHex: '#066ef9' },
   { className: 'bg-turquoise', colorName: 'Turquoise', colorHex: '#06f9f9' },
   { className: 'bg-purple', colorName: 'Purple', colorHex: '#8006f9' },
@@ -46,6 +46,16 @@ export const spotColors = [
   { className: 'bg-yellow-8', colorName: 'yellow-8', colorHex: '#fef3c3' },
   { className: 'bg-yellow-9', colorName: 'yellow-9', colorHex: '#fef8db' },
   { className: 'bg-yellow-10', colorName: 'yellow-10', colorHex: '#fffdf3' },
+  { className: 'bg-greencss-1', colorName: 'greencss-1', colorHex: '#4a9202' },
+  { className: 'bg-greencss-2', colorName: 'greencss-2', colorHex: '#56aa03' },
+  { className: 'bg-greencss-3', colorName: 'greencss-3', colorHex: '#62c203' },
+  { className: 'bg-greencss-4', colorName: 'greencss-4', colorHex: '#6ed904' },
+  { className: 'bg-greencss-5', colorName: 'greencss-5', colorHex: '#7bf104' },
+  { className: 'bg-greencss-6', colorName: 'greencss-6', colorHex: '#87fb12' },
+  { className: 'bg-greencss-7', colorName: 'greencss-7', colorHex: '#93fc2a' },
+  { className: 'bg-greencss-8', colorName: 'greencss-8', colorHex: '#9ffc42' },
+  { className: 'bg-greencss-9', colorName: 'greencss-9', colorHex: '#abfc5a' },
+  { className: 'bg-greencss-10', colorName: 'greencss-10', colorHex: '#b7fd72' },
   { className: 'bg-green-1', colorName: 'green-1', colorHex: '#8cfa1e' },
   { className: 'bg-green-2', colorName: 'green-2', colorHex: '#98fa35' },
   { className: 'bg-green-3', colorName: 'green-3', colorHex: '#a4fb4d' },

@@ -3,7 +3,7 @@ import BrandBadExample from '@/components/brand/BrandBadExample'
 import BrandSection from '@/components/brand/BrandSection'
 import Summary from '@/components/brand/Summary'
 import LogoDark from '@/components/icon/Brand/LogoDark'
-import { BackButton, DownloadButton } from '@/components/reusable/Button'
+import { BackButton, GreenButton } from '@/components/reusable/Button'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
@@ -29,12 +29,22 @@ export default function logo() {
             <div className='flex justify-center'>
               <div className='flex-col'>
                 <LogoDark />
-                <DownloadButton href='/images/brand/greencss_logo_dark.svg' className='mt-50px' id='download-dark-logo'>
-                  Dark Logo Download
-                </DownloadButton>
-                <DownloadButton href='/images/brand/greenCSS_logo_light.svg' id='download-light-logo'>
+                <div className='my-25px'>
+                  <GreenButton
+                    isDownload={true}
+                    isDefault={false}
+                    href='/images/brand/greencss_logo_dark.svg'
+                    id='download-dark-logo'>
+                    Dark Logo Download
+                  </GreenButton>
+                </div>
+                <GreenButton
+                  isDownload={true}
+                  isDefault={false}
+                  href='/images/brand/greenCSS_logo_light.svg'
+                  id='download-light-logo'>
                   Light Logo Download
-                </DownloadButton>
+                </GreenButton>
               </div>
             </div>
           </BrandSection>
@@ -57,7 +67,7 @@ export default function logo() {
             <img
               src='/images/brand/logo/logo_structure_advanced_kuxnpy.webp'
               alt='advanced omen css logo structure'
-              id='advanced-greenCSS-logo-structure'
+              id='advanced-greencss-logo-structure'
             />
           </BrandSection>
           <BrandSection
@@ -68,7 +78,7 @@ export default function logo() {
             <img
               src='/images/brand/logo/logos_buy40r.webp'
               alt='greenCSS logo dark, logo light and logo purple'
-              id='different-greenCSS-logos'
+              id='different-greencss-logos'
             />
           </BrandSection>
           <BrandSection
@@ -79,7 +89,7 @@ export default function logo() {
             <img
               src='/images/brand/logo/scalable-logos_dejyjk.webp'
               alt='greenCSS logo scalable logos'
-              id='scalable-greenCSS-logos'
+              id='scalable-greencss-logos'
             />
           </BrandSection>
           <BrandSection
@@ -164,7 +174,7 @@ export default function logo() {
             titleTwo='02'
             descriptionTwo='Maintaining identity'
             titleThree='03'
-            descriptionThree='Focus on the importance of dark, light and green'
+            descriptionThree='Focus on the importance of black, white and green'
           />
         </div>
       </div>

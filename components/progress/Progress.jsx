@@ -50,7 +50,7 @@ export default function Progress() {
       id='progress-loader'
       style={{ display: progress > 0 && progress < 100 ? 'block' : 'none' }}>
       <div
-        className='bg-green absolute top-0per right-0per bottom-0per left-0per w-0px transition-all transition-duration-500ms'
+        className='bg-greencss absolute top-0per right-0per bottom-0per left-0per w-0px transition-all transition-duration-500ms'
         style={{
           width: `${progress}%`,
           opacity: progress > 0 && progress < 100 ? 1 : 0

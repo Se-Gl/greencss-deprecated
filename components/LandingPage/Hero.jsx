@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import { LinkButton } from '@/components/reusable/Button'
+import { GreenButton } from '@/components/reusable/Button'
 import Loader from '../logo/Loader'
 import { useEffect, useState } from 'react'
 import ReusableModal from '../modal/ReusableModal'
@@ -34,13 +34,13 @@ export default function Hero() {
               <h1 className='font-800 text-63px max-w-40rem'>A classy way to write CSS design</h1>
               <p className='max-w-40rem'>
                 Styling CSS reimagined - for for everyone. Start to code with{' '}
-                <span className='text-green font-900'>zero</span> emission: for your creativity and your planet.
+                <span className='text-greencss font-900'>zero emission</span>: for your creativity and your planet.
               </p>
-              <div className='flex'>
+              <div className='flex gap-10px'>
                 <ReusableModal isHero={true} />
-                <LinkButton className='ml-20px' href='docs'>
-                  Docs
-                </LinkButton>
+                <GreenButton hasLink={true} isDefault={false} href='/docs/activate-getting-started' id='linkedbutton'>
+                  Install
+                </GreenButton>
               </div>
             </div>
           </div>

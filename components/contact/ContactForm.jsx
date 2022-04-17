@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
 import { useState } from 'react'
-import { Button } from '../reusable/Button'
+import { GreenButton } from '../reusable/Button'
 import { useToast } from '@/components/toast/hooks/useToast'
 
 const CaptchaComponent = dynamic(() => import('../captcha/CaptchaComponent'), { ssr: false })
@@ -167,10 +167,10 @@ export default function ContactForm() {
           />
 
           {buttonText == 'Send' && (
-            <div className='flex flex-row items-center justify-start'>
-              <Button type='submit' className='mt-50px mb-25px' id='submit-button'>
+            <div className='flex flex-row items-center justify-start my-25px'>
+              <GreenButton type='submit' id='submit-button'>
                 {buttonText}
-              </Button>
+              </GreenButton>
             </div>
           )}
         </div>

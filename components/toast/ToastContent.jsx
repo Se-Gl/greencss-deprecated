@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from '../reusable/Button'
 
 export default function ToastContent({ fillColor, notification, onClick, backgroundColor, textColor, triangleColor }) {
   return (
@@ -24,11 +23,6 @@ export default function ToastContent({ fillColor, notification, onClick, backgro
             fill={fillColor}
           />
         </svg>
-        {triangleColor == 'cookie' && (
-          <Button onClick={onClick} className='ml-10px pl-20px pb-20px'>
-            OK
-          </Button>
-        )}
       </div>
     </div>
   )

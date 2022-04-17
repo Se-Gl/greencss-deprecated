@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
 import HandCrafted from '@/components/icon/Animation/Handcrafted'
-import { LinkButton } from '@/components/reusable/Button'
+import { GreenButton } from '@/components/reusable/Button'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
@@ -17,9 +17,9 @@ export default function AnimationIndexPage() {
           <div className='flex'>
             <div className='mr-auto hidden'></div>
             <div className='ml-auto'>
-              <LinkButton href='/examples/animation' id='visit-animation-examples-1'>
+              <GreenButton href='/examples/animation' id='visit-animation-examples-1'>
                 Examples
-              </LinkButton>
+              </GreenButton>
             </div>
           </div>
           <div className='m-auto max-w-50rem'>
@@ -32,9 +32,9 @@ export default function AnimationIndexPage() {
               &quot;animare&quot; and means as much as spirit, life, breath or simply to bring to life.
             </p>
             <p>To see the full selection, including animation examples, proceed by clicking on the button below.</p>
-            <LinkButton className='my-50px' href='/examples/animation' id='visit-examples-2'>
+            <GreenButton className='my-50px' href='/examples/animation' id='visit-examples-2'>
               Examples
-            </LinkButton>
+            </GreenButton>
           </div>
         </div>
       </Layout>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Select from 'react-select'
 import { animations, fillmode, time } from '@/data/animations'
-import { Button } from '@/components/reusable/Button'
+import { GreenButton } from '@/components/reusable/Button'
 import CopyIcon from '../icon/Animation/Copy'
 
 export default function DropDown() {
@@ -77,10 +77,10 @@ export default function DropDown() {
           getOptionLabel={(option) => option.label}
         />
       </div>
-      <div className='text-center'>
-        <Button id='animate-button' onClick={triggerFade} className='mx-auto'>
+      <div className='flex justify-content mx-auto'>
+        <GreenButton id='animate-button' onClick={triggerFade}>
           Animate
-        </Button>
+        </GreenButton>
       </div>
       <div className='overflow-hidden'>
         <pre className='flex relative'>

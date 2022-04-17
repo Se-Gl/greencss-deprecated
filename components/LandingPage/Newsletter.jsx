@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import useInView from '@/hooks/InView/scrollView'
 import { useToast } from '@/components/toast/hooks/useToast'
-import { Button } from '../reusable/Button'
+import { GreenButton } from '../reusable/Button'
 
 export default function Newsletter() {
   const [mail, setMail] = useState('')
@@ -41,7 +41,7 @@ export default function Newsletter() {
       <div className='relative flex min-h-75vh w-100per text-white bg-black rounded-20px'>
         <div className='m-auto max-w-50rem'>
           <h2 className='font-bold text-50px pb-50px mb-0px'>
-            There’s more than being <span className='text-green'>up-to-date</span>
+            There’s more than being <span className='text-greencss'>up-to-date</span>
           </h2>
           <p className='text-white'>
             Stay informed by getting help about the latest greenCSS updates. Find new CSS tutorials that will help you
@@ -59,12 +59,9 @@ export default function Newsletter() {
                 id='email'
                 placeholder='Your E-Mail'
                 className='border-none text-15px text-white bg-black-3 p-10px w-100per'></input>
-
-              <Button
-                onClick={subscribe}
-                className={`text-white ml-20px sm:ml-0px sm:mt-25px ${loading && 'text-black-10'}`}>
-                Newsletter
-              </Button>
+              <div className='ml-25px'>
+                <GreenButton onClick={subscribe}>Newsletter</GreenButton>
+              </div>
             </div>
           )}
         </div>

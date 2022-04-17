@@ -17,7 +17,7 @@ export default function News({ posts }) {
       }`}
       id='recent-news'>
       <h2 className='max-w-50rem sm:m-10px md:m-10px'>
-        There are constant <span className='text-green'>updates</span> in the blog
+        There are constant <span className='text-greencss'>updates</span> in the blog
       </h2>
       <BlogLayout>
         {posts.map((post, index) => (

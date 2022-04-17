@@ -19,15 +19,17 @@ export default function colours() {
       <div className='min-w-100per relative' id='brand-colour-page'>
         <BackButton className='mb-50px'>Back</BackButton>
         <div className='mb-10rem'>
-          <h1 className='text-80px sm:text-50px mb-100px'>greenCSS brand identity: the colour</h1>
+          <h1 className='text-80px sm:text-50px mb-100px'>
+            <span className='text-greencss'>greenCSS</span> brand identity: the colour
+          </h1>
           <BrandSection
             title='Colours'
-            description='Colors determine charisma, emotion, feelings, and memories. In total, greenCSS offers a color palette of over 13 colors, whereby these are further broken down into 85 different lighter tones. The primary colours we use - dark, light and purple - build on our existing intensity and represent the elegance of greenCSS.'
+            description='Colors determine charisma, emotion, feelings, and memories. In total, greenCSS offers a color palette of over 11 colors, whereby these are further broken down into 100 different lighter tones. The primary colours we use - black, white and green - build on our existing intensity and represent the elegance of greenCSS.'
           />
           <BrandSection
             isLight={true}
             title='Primary brand colors'
-            description='The primary brand colours are black, white and purple. As part of the corporate identity, it should be used in, texts, illustrations or as background colours. Descending black colors components can be used as gray shades. Whereby a greyish colour can also be used to emphasise text passages or headlines but must be applied with sufficient contrast difference.'>
+            description='The primary brand colours are black, white and green. As part of the corporate identity, it should be used in, texts, illustrations or as background colours. Descending black colors components can be used as gray shades. Whereby a greyish colour can also be used to emphasise text passages or headlines but must be applied with sufficient contrast difference. As green color variations, both creations of green can be used or combined, since the colour originates from the same shades.'>
             <div className='grid grid-col-3 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-2 w-100per overflow-x-hidden pt-100px'>
               {primaryColors.map((item, index) => {
                 return (
@@ -61,7 +63,7 @@ export default function colours() {
           </BrandSection>
           <BrandSection
             title='Utilisation'
-            description='Light plays a very important role in all brand communication and should balance dark and purple. Secondary colours are only used in sensitive cases where caution is needed or where their use enhances the composition.'
+            description='White plays a very important role in all brand communication and should balance black and green. Secondary colours are only used in sensitive cases where caution is needed or where their use enhances the composition.'
           />
           <BrandSection
             title='Spot Colours'
@@ -94,7 +96,7 @@ export default function colours() {
                   />
                 }
                 classOne='py-10px'
-                childTwo='Avoid improper usage of the primary colours (especially purple - as a background colour).'
+                childTwo='Avoid improper usage of the primary colours (especially green - as a background colour).'
               />
               <BrandBadExample
                 childOne={
@@ -183,15 +185,15 @@ export default function colours() {
                   />
                 }
                 classOne='py-10px'
-                childTwo='Grey text or the primary purple in a header to highlight certain words or subjects.'
+                childTwo='Grey text or the primary greencss/green in a header to highlight certain words or subjects.'
               />
             </div>
           </BrandSection>
           <Summary
             titleOne='01'
-            descriptionOne='Focus on the power of black, white and purple'
+            descriptionOne='Focus on the power of black, white and green'
             titleTwo='02'
-            descriptionTwo='A little purple or grey in headers packs a lot of punch'
+            descriptionTwo='A little green or grey in headers packs a lot of punch'
             titleThree='03'
             descriptionThree='Use colours in vector files, illustrations or images.'
             titleFour='04'
