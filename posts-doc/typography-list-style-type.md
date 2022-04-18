@@ -43,7 +43,10 @@ Control the list style on every HTML element by using the greenCSS classes shown
 greenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:list-style-disc` to only apply the list-style-disc utility class on hover.
 
 ```html
-<div class="list-style-circle hover:list-style-disc">{children}</div>
+<ul class="list-style-circle hover:list-style-disc">
+  <li>{children}</li>
+  ...
+</ul>
 ```
 
 ## Responsive Breakpoints
