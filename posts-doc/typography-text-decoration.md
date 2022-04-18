@@ -39,7 +39,7 @@ Control the text decoration on every HTML element by using the greenCSS classes 
 greenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:no-decoration` to only apply the no-decoration utility class on hover.
 
 ```html
-<div class="underline hover: no-decoration">{children}</div>
+<div class="underline hover:no-decoration">{children}</div>
 ```
 
 ## Responsive Breakpoints

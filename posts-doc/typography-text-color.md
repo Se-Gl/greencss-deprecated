@@ -13,8 +13,8 @@ plainText: ' greencss css class example minimum value maximum value step text-gr
 
 | _greenCSS_    | CSS class example                  | minimum Value | maximum Value | Step |
 | ------------- | ---------------------------------- | ------------- | ------------- | ---- |
-| text-green    | .text-green { color: #80f906; }    | -             | 10            | +/-1 |
-| text-green-10 | .text-green-10 { color: #f9fff3; } | -             | -             | -    |
+| text-green    | .text-green { color: #80f906; }    | default color | 10            | +/-1 |
+| text-green-10 | .text-green-10 { color: #f9fff3; } | default color | 10            | +/-1 |
 
 ## Custom Sizing variables
 
