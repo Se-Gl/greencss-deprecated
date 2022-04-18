@@ -50,7 +50,7 @@ export default function SlugComponent({
         </div>
 
         <div className='m-auto max-w-75rem mb-10rem'>
-          <div className='mb-10rem'>
+          <div className='my-5rem'>
             <p className='text-greencss font-600 text-15px mb-5px'>{category}</p>
             <h1 className='font-900 mb-15px'>{title}</h1>
             <h2 className='text-20px font-normal'>{excerpt}</h2>

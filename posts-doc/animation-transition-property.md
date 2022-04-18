@@ -110,7 +110,7 @@ plainText: ' greenCSS css class example transition-accent-color transition-accen
 | transition-z-index                   | .transition-z-index { transition-property: z-index; }                                     |
 | transition-zoom                      | .transition-zoom { transition-property: zoom; }                                           |
 
-## How to work transition property
+## How to work with transition property
 
 All transition classes start with `transition-{keyword}`. Most often, `transition-all` is used. However, if you want to be more specific about a property, you can also use the respective transition + `{keyword}`.
 

@@ -15,7 +15,7 @@ export default function Results({ results, searchTerm }) {
         )}
         {results.map((result, index) => (
           <div
-            className={`bg-greencss-5 hover:bg-greencss-8 transition-all transition-duration-500ms p-10px rounded-10px flex justify-between items-center mb-10px border-bottom-1px border-black border-solid clip-inset-in-left animate animation-forwards animation-delay-${
+            className={`bg-green-9 hover:bg-greencss-5 transition-all transition-duration-500ms p-10px rounded-10px flex justify-between items-center mb-10px border-bottom-1px border-black border-solid clip-inset-in-left animate animation-forwards animation-delay-${
               (index + 1) * 1
             }00ms`}
             key={index}>
@@ -28,11 +28,13 @@ export default function Results({ results, searchTerm }) {
                 {result.frontmatter.isBlog === false ? <Document className='my-auto' /> : <Blog className='my-auto' />}
                 <div className='ml-15px'>
                   <div className='flex items-center'>
-                    <h3 className='transition-all transition-duration-500ms text-15px font-600 text-greencss hover:text-white bg-white hover:bg-greencss rounded-20px py-5px px-10px mb-0px'>
+                    <h3 className='transition-all transition-duration-500ms text-15px font-600 text-greencss hover:text-greencss-2 bg-green-5 hover:bg-greencss-9 rounded-20px py-5px px-10px mb-0px'>
                       {result.frontmatter.category}
                     </h3>
                   </div>
-                  <p className='text-15px mt-10px mb-0px'>{result.frontmatter.title}</p>
+                  <p className='text-15px font-600 text-greencss mt-10px mb-0px capitalize'>
+                    {result.frontmatter.title}
+                  </p>
                 </div>
                 <ChevronRight className='ml-auto my-auto' />
               </div>
