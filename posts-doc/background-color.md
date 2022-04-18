@@ -42,11 +42,11 @@ The secondary colours contain a high spectrum of diversity. The primary colors a
 
 ## Active, focus, and hover states
 
-| _greenCSS_        | CSS class example                                     |
-| ----------------- | ----------------------------------------------------- |
-| active:bg-{color} | .active\:bg-green:active { background-color: green; } |
-| focus:bg-{color}  | .focus\:bg-green:focus { background-color: green; }   |
-| hover:bg-{color}  | .hover\:bg-green:focus { background-color: green; }   |
+| _greenCSS_                 | CSS class example                                     |
+| -------------------------- | ----------------------------------------------------- |
+| active:bg-{color}{-number} | .active\:bg-green:active { background-color: green; } |
+| focus:bg-{color}{-number}  | .focus\:bg-green:focus { background-color: green; }   |
+| hover:bg-{color}{-number}  | .hover\:bg-green:focus { background-color: green; }   |
 
 greenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:bg-green` to only apply the bg-green utility class on hover.
 

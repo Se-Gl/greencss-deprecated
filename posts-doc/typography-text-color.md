@@ -44,9 +44,9 @@ The secondary colours contain a high spectrum of diversity. The primary colors a
 
 | _greenCSS_                   | CSS class example                            |
 | ---------------------------- | -------------------------------------------- |
-| active:text-{color}-{number} | .active\:text-green:active { color: green; } |
-| focus:text-{color}-{number}  | .focus\:text-green:focus { color: green; }   |
-| hover:text-{color}-{number}  | .hover\:text-green:focus { color: green; }   |
+| active:text-{color}{-number} | .active\:text-green:active { color: green; } |
+| focus:text-{color}{-number}  | .focus\:text-green:focus { color: green; }   |
+| hover:text-{color}{-number}  | .hover\:text-green:focus { color: green; }   |
 
 greenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:text-green` to only apply the text-green utility class on hover.
 
