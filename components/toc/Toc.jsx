@@ -21,7 +21,7 @@ const Toc = ({ markdownText, titleLimit, highestHeadingLevel, lowestHeadingLevel
   return (
     <div role='navigation' aria-label='table of contents' id='toc'>
       <div className='bg-green-10 my-auto p-25px my-50px rounded-10px'>
-        <h4 className='font-800 mb-25px'>Table of Contents</h4>
+        <h3 className='font-800 mb-25px'>Table of Contents</h3>
         {reveal === true && (
           <>
             {headingTags.map((heading, index) => (
