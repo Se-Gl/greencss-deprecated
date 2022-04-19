@@ -27,6 +27,7 @@ Control the border collapse on every HTML element by using the greenCSS classes 
       <th class="border-solid border-green-10 border-1px border-solid">{table-items}</th>
     </tr>
   </thead>
+  ...
 </table>
 ```
 
@@ -47,6 +48,7 @@ greenCSS let you conditionally apply utility classes for different page states. 
       <th class="border-solid border-green-10 border-1px border-solid">{table-items}</th>
     </tr>
   </thead>
+  ...
 </table>
 ```
 
