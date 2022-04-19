@@ -27,7 +27,7 @@ Control the outline width on every HTML element by using the greenCSS classes sh
 
 If you want to adjust your outline you need to add the following three greenCSS classes:
 
-1. The outline width p.e. `outline-10px`
+1. The outline width p.e. `outline-10px` p.e. `outline-1px`
 2. The [outline style](/docs/outline-style) p.e. `outline-solid`
 3. The [outline color](/docs/outline-color) p.e. `outline-green-5`
 4. Optional: the [outline offset](/docs/outline-offset) distance p.e. `outline-offset-5px`
