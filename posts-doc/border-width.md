@@ -30,8 +30,8 @@ Control the border width on every HTML element by using the greenCSS classes sho
 If you want to adjust your border you need to add the following three greenCSS classes:
 
 1. The border width p.e. `border-10px`
-2. The border style p.e. `border-solid`
-3. The border color p.e. `border-green`
+2. The [border style](/docs/border-style) p.e. `border-solid`
+3. The [border color](/docs/border-color) p.e. `border-green`
 
 ```html
 <div class="border-10px border-solid border-green h-50rem w-50rem bg-green-10">{title}</div>
