@@ -2,8 +2,12 @@ import dynamic from 'next/dynamic'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import Loader from '@/components/logo/Loader'
 
-const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), { ssr: false })
+const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), {
+  ssr: false,
+  loading: () => <Loader />
+})
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 const DevelopmentToClipboard = dynamic(() => import('@/utils/DevelopmentToClipboard'))
 

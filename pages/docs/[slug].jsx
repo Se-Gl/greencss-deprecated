@@ -4,8 +4,12 @@ import path from 'path'
 import matter from 'gray-matter'
 import { getPosts } from '@/lib/posts'
 import { sortAlphabetically } from '@/utils/SortBy'
+import Loader from '@/components/logo/Loader'
 
-const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), { ssr: false })
+const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), {
+  ssr: false,
+  loading: () => <Loader />
+})
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 const DevelopmentToClipboard = dynamic(() => import('@/utils/DevelopmentToClipboard'))
 
