@@ -2,6 +2,7 @@ import { useState } from 'react'
 import useInView from '@/hooks/InView/scrollView'
 import { useToast } from '@/components/toast/hooks/useToast'
 import { GreenButton } from '../reusable/Button'
+import Section from '../reusable/Section'
 
 export default function Newsletter() {
   const [mail, setMail] = useState('')
@@ -32,12 +33,7 @@ export default function Newsletter() {
     })
   }
   return (
-    <section
-      ref={ref}
-      className={`py-10rem sm:my-0px md:my-0px sm:m-10px md:m-10px ${
-        isVisible && 'bg-purple-10 transition-all transition-duration-800ms'
-      }`}
-      id='newsletter'>
+    <Section id='newsletter' background='bg-purple-10'>
       <div className='relative flex min-h-75vh w-100per text-white bg-black rounded-20px'>
         <div className='m-auto max-w-50rem'>
           <h2 className='font-bold text-50px pb-50px mb-0px'>
@@ -66,6 +62,6 @@ export default function Newsletter() {
           )}
         </div>
       </div>
-    </section>
+    </Section>
   )
 }

@@ -1,14 +1,10 @@
 import Image from 'next/image'
 import useInView from '@/hooks/InView/scrollView'
+import Section from '../reusable/Section'
 
 export default function Presentation() {
   const [ref, isVisible] = useInView({
     threshold: 0,
-    unobserveOnEnter: true
-  })
-
-  const [refTwo, isVisibleTwo] = useInView({
-    threshold: 0.25,
     unobserveOnEnter: true
   })
 
@@ -34,12 +30,7 @@ export default function Presentation() {
   ]
 
   return (
-    <section
-      className={`py-10rem sm:my-0px md:my-0px sm:m-10px md:m-10px ${
-        isVisibleTwo && 'bg-green-10 transition-all transition-duration-500ms'
-      }`}
-      id='presentation'
-      ref={refTwo}>
+    <Section id='presentation' background='bg-green-10'>
       <div className='max-w-60rem mx-auto'>
         <h1>
           Create and <span className='text-greencss'>Design</span> Milestones, anywhere with everything{' '}
@@ -79,6 +70,6 @@ export default function Presentation() {
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   )
 }

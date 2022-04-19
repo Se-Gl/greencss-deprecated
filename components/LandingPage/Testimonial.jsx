@@ -1,18 +1,9 @@
 import Link from 'next/link'
-import useInView from '@/hooks/InView/scrollView'
+import Section from '../reusable/Section'
 
 export default function Testimonial() {
-  const [ref, isVisible] = useInView({
-    threshold: 0.25,
-    unobserveOnEnter: true
-  })
   return (
-    <section
-      ref={ref}
-      className={`py-10rem sm:my-0px md:my-0px sm:m-10px md:m-10px ${
-        isVisible && 'bg-red-10 transition-all transition-duration-800ms'
-      }`}
-      id='testimonial'>
+    <Section id='testimonial' background='bg-red-10'>
       <div className='relative flex min-h-75vh w-100per text-center text-white bg-black rounded-20px'>
         <div className='m-auto max-w-50rem'>
           <h2 className='font-bold text-50px mb-50px'>
@@ -29,6 +20,6 @@ export default function Testimonial() {
           <p className='text-white mb-0px'>greenCSS</p>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }

@@ -77,7 +77,7 @@ export default function DropDown() {
           getOptionLabel={(option) => option.label}
         />
       </div>
-      <div className='flex justify-content mx-auto'>
+      <div className='flex justify-center'>
         <GreenButton id='animate-button' onClick={triggerFade}>
           Animate
         </GreenButton>

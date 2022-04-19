@@ -1,4 +1,4 @@
-import useInView from '@/hooks/InView/scrollView'
+import Section from '@/components/reusable/Section'
 import FaqIllustration from '../../icon/Faq/Faq'
 import FaqQuestions from './Questions'
 
@@ -36,18 +36,8 @@ const questions = [
 ]
 
 export default function Faq() {
-  const [ref, isVisible] = useInView({
-    threshold: 0.25,
-    unobserveOnEnter: true
-  })
-
   return (
-    <section
-      ref={ref}
-      className={`py-10rem sm:my-0px md:my-0px sm:m-10px md:m-10px ${
-        isVisible && 'bg-blue-10 transition-all transition-duration-500ms'
-      }`}
-      id='faq'>
+    <Section id='faq' background='bg-blue-10'>
       <div
         className='m-auto grid gap-30px sm:gap-0px grid-col-2 sm:grid-col-1 md:grid-col-1 min-h-66vh overflow-hidden'
         style={{ maxWidth: '110rem' }}>
@@ -68,6 +58,6 @@ export default function Faq() {
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
