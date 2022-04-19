@@ -3,7 +3,7 @@ describe('Home Screen Unit test', () => {
     cy.visit('http://localhost:3000')
   })
   it('renders the 3D phone', () => {
-    cy.get('.threed-canvas div canvas').should('exist').should('be.visible')
+    cy.get('.threed-canvas div canvas').should('exist')
   })
   it('renders the header', () => {
     cy.get('main div h1').contains('A classy way to write CSS design', { matchCase: false })
@@ -14,7 +14,7 @@ describe('Home Screen Unit test', () => {
     cy.get('main .container').should('exist')
   })
   it('renders the linkedbutton', () => {
-    cy.get('#linkedbutton').should('be.visible').should('exist')
+    cy.get('#linkedbutton').should('exist')
     cy.get('#linkedbutton').trigger('mouseover', { force: true })
   })
   it('reveals presentation section with animation', () => {
@@ -34,7 +34,7 @@ describe('Home Screen Unit test', () => {
     cy.get('#testimonial').should('exist')
   })
   it('renders newsletter section aand creates a request', () => {
-    cy.get('#newsletter').should('exist').scrollIntoView().should('be.visible')
+    cy.get('#newsletter').should('exist')
     cy.get('#newsletter h2').contains('There’s more than being up-to-date', { matchCase: false })
   })
 })
