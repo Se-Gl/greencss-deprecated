@@ -25,7 +25,7 @@ export function CodeRenderer({ node, inline, className, children, ...props }) {
   const match = /language-(\w+)/.exec(className || '')
   return !inline && match ? (
     <div className='relative'>
-      <div className='absolute right-0per mt-0px cursor-pointer'>
+      <div className='absolute right-0per mt-0px cursor-copy'>
         <CopyIcon
           className='fill-black-10 hover:fill-white transition-all transition-duration-500ms'
           copy={children
