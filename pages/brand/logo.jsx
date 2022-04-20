@@ -110,13 +110,9 @@ export default function logo() {
           <BrandSection isLight={true}>
             <img src='/images/brand/logo/logo-icons_ffzqbh.webp' alt='greenCSS logo icons' id='greenCSS-logo-icons' />
           </BrandSection>
-          <BrandSection title='Logo typeface' description='"Vector Font"'>
-            <img
-              src='/images/brand/logo/quick-fox_rrrwsl.webp'
-              alt='greenCSS vector font'
-              id='greenCSS-logo-typeface'
-            />
-          </BrandSection>
+          <BrandSection
+            title='Do’s and dont’s'
+            description='Design needs consistency. Consistency needs design.'></BrandSection>
           <BrandSection isLight={true}>
             <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
               <BrandBadExample
@@ -159,14 +155,13 @@ export default function logo() {
                     id='logo-bad-4'
                   />
                 }
-                childTwo='Only use the brand&#39;s primary colours in order to provide the highest contrast ratio.'
+                childTwo='Only use the brand&#39;s primary colours (white, black, greencss, green) in order to provide the highest contrast ratio.'
               />
             </div>
           </BrandSection>
           <BrandSection
             title='Legal'
-            description='greenCSS library is licensed under MIT. Nevertheless,
-            Do not use greenCSS as a verb (e.g., “Let’s greenCSS the web site.”). Instead, consider using greenCSS as an adjective and an experience. All brand features featured in the greenCSS Brand Book or this website are copyrighted. If you choose to use logos, designs and/or other brand assets, you acknowledge that you sufficiently attribute the specific content. "Omen Motion" - the font - has a SIL license and can be downloaded for free in the typography section. The Vector font, on the other hand, requires a commercial licence and can not be downloaded on this site.'
+            description='greenCSS library is licensed under MIT. Nevertheless, Do not use greenCSS as a verb (e.g., “Let’s greenCSS the web site.”). Instead, consider using greenCSS as an adjective and an experience. All brand features featured in the greenCSS Brand Book or this website are copyrighted. If you choose to use logos, designs and/or other brand assets, you acknowledge that you sufficiently attribute the specific content. Please contact greenCSS, if you want to use the logo, trademarks or other elements of greenCSS for commercial purposes - e.g. for merchandise. Note: This notice refers to the brand & its brand book and not to the CSS library. No attribution is required if the greenCSS library is used, you can use it for any project. "Omen Motion" - the font - has a SIL license and can be downloaded for free in the typography section.'
           />
           <Summary
             titleOne='01'
