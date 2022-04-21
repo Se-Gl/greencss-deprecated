@@ -16,11 +16,9 @@
     "purgecss": "purgecss --config ./purgecss.config.js echo \n\n\n🏋️  Purge successful. 🏋️",
     "success-message": "echo \n\n\n🚀  Everything is awesome. 🚀\n\n🖥️  Auto checking completed, ready to deploy.🖥️\n\n☁️  Run: git push ☁️",
     "pre-deployment": "npm run cypress:run && npx update-badge && npm run prettier && npm run lint --fix",
-    "pre-commit": "npm run prettier && npm run lint --fix && npm run cache && npm run purgecss && git add -A . && npm run success-message"
+    "pre-commit": "npm run cypress:run && npx update-badge && npm run prettier && npm run lint --fix && npm run cache && npm run purgecss && git add -A . && npm run success-message"
   },
   "dependencies": {
-    "@react-three/drei": "^9.2.0",
-    "@react-three/fiber": "^8.0.10",
     "@sendgrid/mail": "^7.6.2",
     "@uiw/react-md-editor": "^3.11.3",
     "gray-matter": "^4.0.3",
@@ -34,7 +32,6 @@
     "react-syntax-highlighter": "^15.5.0",
     "rehype-sanitize": "^5.0.1",
     "remark-gfm": "^3.0.1",
-    "three": "^0.139.2",
     "tinycolor2": "^1.4.2"
   },
   "devDependencies": {

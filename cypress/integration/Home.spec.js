@@ -2,11 +2,14 @@ describe('Home Screen Unit test', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
   })
-  it('renders the 3D phone', () => {
-    cy.get('.threed-canvas div canvas').should('exist')
+  it('renders the phone image', () => {
+    cy.get('#phone-image').should('exist')
   })
   it('renders the header', () => {
     cy.get('main div h1').contains('A classy way to write CSS design', { matchCase: false })
+  })
+  it('renders the correct time in the phone', () => {
+    cy.get('#phone-current-time').should('exist', 'not.be.empty')
   })
 
   it('includes layout component', () => {

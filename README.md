@@ -2,7 +2,7 @@
 
 [![Prettier and ESLint Code Base](https://github.com/Se-Gl/greenCSS/actions/workflows/lint.yml/badge.svg)](https://github.com/Se-Gl/greenCSS/actions/workflows/lint.yml)
 [![Cypress Base](https://github.com/Se-Gl/greenCSS/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/greenCSS/actions/workflows/cypress.yml)
-![check-code-coverage](https://img.shields.io/badge/code--coverage-83.39%25-green)
+![check-code-coverage](https://img.shields.io/badge/code--coverage-84.75%25-green)
 
 ⚠️ merged repo from [omenCSS](https://github.com/Se-Gl/omenCSS-frontend) - @ commit 435
 
@@ -145,9 +145,6 @@ sass/
 | [gray-matter](https://www.npmjs.com/package/gray-matter)                           | ![GitHub stars](https://img.shields.io/github/stars/jonschlinkert/gray-matter.svg?label=%F0%9F%8C%9F) | [![Bundle size](https://badgen.net/bundlephobia/minzip/gray-matter/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/gray-matter)                           | ➖         | ➖        |
 | [react-markdown](https://www.npmjs.com/package/react-markdown)                     | ![GitHub stars](https://img.shields.io/github/stars/remarkjs/react-markdown.svg?label=%F0%9F%8C%9F)   | [![Bundle size](https://badgen.net/bundlephobia/minzip/react-markdown/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/react-markdown)                     | ✅         | ➖        |
 | [react-syntax-highlighter](https://www.npmjs.com/package/react-syntax-highlighter) | ![GitHub stars](https://img.shields.io/github/stars/remarkjs/react-markdown.svg?label=%F0%9F%8C%9F)   | [![Bundle size](https://badgen.net/bundlephobia/minzip/react-syntax-highlighter/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/react-syntax-highlighter) | ✅         | ➖        |
-| [three](https://www.npmjs.com/package/three)                                       | ![GitHub stars](https://img.shields.io/github/stars/mrdoob/three.js.svg?label=%F0%9F%8C%9F)           | [![Bundle size](https://badgen.net/bundlephobia/minzip/three/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/three)                                       | ✅         | ➖        |
-| [@react-three/drei](https://www.npmjs.com/package/@react-three/drei)               | ![GitHub stars](https://img.shields.io/github/stars/pmndrs/drei.svg?label=%F0%9F%8C%9F)               | [![Bundle size](https://badgen.net/bundlephobia/minzip/@react-three/drei/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/@react-three/drei)               | ✅         | ➖        |
-| [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber)             | ![GitHub stars](https://img.shields.io/github/stars/pmndrs/react-three-fiber.svg?label=%F0%9F%8C%9F)  | [![Bundle size](https://badgen.net/bundlephobia/minzip/@react-three/fiber/?label=%F0%9F%92%BE)](https://bundlephobia.com/package/@react-three/fiber)             | ✅         | ➖        |
 | [purgecss](https://www.npmjs.com/package/purgecss)                                 | ![GitHub stars](https://img.shields.io/github/stars/FullHuman/purgecss.svg?label=%F0%9F%8C%9F)        | [![Bundle size](https://badgen.net/bundlephobia/minzip/purgecss?label=%F0%9F%92%BE)](https://bundlephobia.com/package/purgecss)                                  | ✅         | ✅        |
 | [@sendgrid/mail](https://www.npmjs.com/package/@sendgrid/mail)                     | ![GitHub stars](https://img.shields.io/github/stars/sendgrid/sendgrid-nodejs.svg?label=%F0%9F%8C%9F)  | [![Bundle size](https://badgen.net/bundlephobia/minzip/@sendgrid/mail?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=@sendgrid/mail)                     | ✅         | ✅        |
 | [remark-gfm](https://www.npmjs.com/package/remark-gfm)                             | ![GitHub stars](https://img.shields.io/github/stars/remarkjs/remark-gfm.svg?label=%F0%9F%8C%9F)       | [![Bundle size](https://badgen.net/bundlephobia/minzip/remark-gfm?label=%F0%9F%92%BE)](https://bundlephobia.com/package/remark-gfm)                              | ✅         | ✅        |
@@ -172,14 +169,19 @@ sass/
 
 ### Sources
 
-| 3D Objects |                                                                                                       |
-| ---------- | ----------------------------------------------------------------------------------------------------- |
-| title      | Apple iPhone 13 Pro Max                                                                               |
-| source     | [sketchfab](https://sketchfab.com/3d-models/apple-iphone-13-pro-max-4328dea00e47497dbeac73c556121bc9) |
-| author     | [DatSketch](https://sketchfab.com/DatSketch)                                                          |
-| license    | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                              |
-| changes    | Changes were made to the background image.                                                            |
-| ---------- | ------------------------------------                                                                  |
+| Hero Illustrations |                                                                                         |
+| ------------------ | --------------------------------------------------------------------------------------- |
+| title              | iOS 15 Status Bar                                                                       |
+| source             | [figma](https://www.figma.com/community/file/904065746347450024/iOS-15-Status-Bar)      |
+| author             | [waynedahlberg](https://www.figma.com/@waynedahlberg)                                   |
+| license            | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                |
+| changes            | Changes were made to the background, resized illustration and adjusted colours          |
+| ----------         | ------------------------------------                                                    |
+| title              | ZuPay App Macbook Pro                                                                   |
+| source             | [figma](https://www.figma.com/community/file/1017693590436070997/ZuPay-App-Macbook-Pro) |
+| author             | [Saikrishna](https://www.figma.com/@Saikrishna)                                         |
+| license            | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                |
+| changes            | Changes were made to the background, resized illustration and adjusted colours          |
 
 | Illustrations |                                                                                                                                                        |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -194,7 +196,7 @@ sass/
 | ---------- | ---------------------------------------------------------------------------------- |
 | title      | Leaf Illustration                                                                  |
 | source     | [Figma](https://www.figma.com/community/file/943843409604246251/Leaf-Illustration) |
-| author     | [Streamline](https://www.figma.com/@seda)                                          |
+| author     | [seda](https://www.figma.com/@seda)                                                |
 | license    | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                           |
 | changes    | Changes were made to the fill- colours, line & shadow adjustments.                 |
 | ---------- | ------------------------------------                                               |
