@@ -161,7 +161,7 @@ export default function typography() {
                     <span className='text-yellow'>yellow </span>
                     <span className='text-red ml-10px'>red </span>
                     <span className='text-blue ml-10px'>blue </span>
-                    <span className='text-greencss ml-10px'>purple </span>
+                    <span className='text-purple ml-10px'>purple </span>
                     <span className='text-greencss ml-10px'>green</span>
                   </div>
                 }

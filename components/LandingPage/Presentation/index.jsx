@@ -37,7 +37,7 @@ export default function Presentation() {
     <Section id='presentation' background='bg-green-10'>
       <div className='max-w-60rem mx-auto'>
         <h1>
-          Create and <span className='text-greencss'>Design</span> Milestones, anywhere with everything{' '}
+          Create and Design Milestones, with a <span className='text-greencss'>green</span> touch
         </h1>
       </div>
       <div
