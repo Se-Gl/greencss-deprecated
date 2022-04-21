@@ -190,6 +190,15 @@ sass/
 | changes       | Changes were made to the fill- colours, added blob.                                                                                                    |
 | ----------    | ------------------------------------                                                                                                                   |
 
+| Logo       |                                                                                    |
+| ---------- | ---------------------------------------------------------------------------------- |
+| title      | Leaf Illustration                                                                  |
+| source     | [Figma](https://www.figma.com/community/file/943843409604246251/Leaf-Illustration) |
+| author     | [Streamline](https://www.figma.com/@seda)                                          |
+| license    | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                           |
+| changes    | Changes were made to the fill- colours, line & shadow adjustments.                 |
+| ---------- | ------------------------------------                                               |
+
 ### Ideas & Inspiration
 
 - [Toast](https://www.youtube.com/watch?v=OXP-a9pyNRk)
