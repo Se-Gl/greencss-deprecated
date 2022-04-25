@@ -8,25 +8,33 @@ import { GreenButton } from '@/components/reusable/Button'
 
 const Sponsor = () => {
   const [amount, setAmount] = useState(10)
-
   const toast = useToast()
   const defaultAmounts = [10, 25, 100]
+
   const createCheckOutSession = async () => {
-    const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY)
-    const stripe = await stripePromise
-    const checkoutSession = await axios.post('/api/prepare-stripe-payment', {
-      amount: amount
-    })
+    if (amount <= 1) {
+      toast('error', `⚡ Please provide a valid donation.`)
+    } else {
+      const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY)
+      const stripe = await stripePromise
+      const checkoutSession = await axios.post('/api/prepare-stripe-payment', {
+        amount: amount
+      })
 
-    const result = await stripe?.redirectToCheckout({
-      sessionId: checkoutSession.data.id
-    })
+      const result = await stripe?.redirectToCheckout({
+        sessionId: checkoutSession.data.id
+      })
 
-    if (result?.error) {
-      toast('error', `⚡ ${error.message}`)
+      if (result?.error) {
+        toast('error', `⚡ ${error.message}`)
+      }
+      if (result.status === 500) {
+        toast('error', `⚡ ${error.message}`)
+      }
     }
   }
 
+  console.log(amount)
   return (
     <Section id='donation' background='bg-green-9'>
       <SubSectionHero
@@ -39,9 +47,9 @@ const Sponsor = () => {
                 type='number'
                 id='amount'
                 placeholder='Choose your own donation'
-                value={amount ? amount : 10}
+                value={amount}
                 min='1'
-                max='1000001'
+                max='999999'
                 className='border-none text-15px text-white bg-greencss-3 p-10px w-100per mb-25px accent-green'
                 onChange={(e) => setAmount(parseInt(e.target.value))}></input>
               <p className='mb-0px absolute text-15px text-greencss-10' style={{ right: '30px', top: '10px' }}>
@@ -60,9 +68,17 @@ const Sponsor = () => {
                 ))}
               </div>
               <div className='flex justify-center mt-25px'>
-                <GreenButton onClick={createCheckOutSession} isDefault={false} isReverse={true}>
-                  {amount <= 0 ? 'donate' : `donate ${amount}$`}
-                </GreenButton>
+                {amount >= 1 ? (
+                  <GreenButton onClick={createCheckOutSession} isDefault={false} isReverse={true}>
+                    {amount <= 0 ? 'donate' : `donate ${amount}$`}
+                  </GreenButton>
+                ) : (
+                  <button
+                    disabled={true}
+                    className='cursor-not-allowed flex py-10px px-50px font-bold rounded-20px my-auto text-center justify-center items-center m-auto text-15px text-greencss bg-yellow-3'>
+                    invalid amount
+                  </button>
+                )}
               </div>
             </div>
           </div>
