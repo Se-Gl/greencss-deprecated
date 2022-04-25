@@ -1,4 +1,4 @@
-describe('Category Index Unit test', () => {
+describe('Contact Index Unit test', () => {
   before(() => {
     cy.visit('http://localhost:3000/contact')
   })
@@ -30,7 +30,7 @@ describe('Category Index Unit test', () => {
         matchCase: false
       }
     )
-    for (let n = 0; n < 5; n++) {
+    for (let n = 0; n < 4; n++) {
       cy.get('#close-toast').click({ force: true })
     }
     // cy.get('#toast-information').should('not.exist')

@@ -66,7 +66,7 @@ export function GreenButton({
           <button
             onClick={onClick}
             id={id}
-            className={`cursor-pointer flex py-10px px-50p hover:text-black font-bold hover:bg-greencss-6 active:bg-greencss-9 focus:bg-greencss-8 transition-duration-700ms transition-all rounded-20px border-1px border-solid border-green my-auto text-center justify-center items-center m-auto text-15px ${className} text-greencss`}
+            className={`cursor-pointer flex py-10px px-50px hover:text-black font-bold hover:bg-greencss-6 active:bg-greencss-9 focus:bg-greencss-8 transition-duration-700ms transition-all rounded-20px border-1px border-solid border-green my-auto text-center justify-center items-center m-auto text-15px ${className} text-greencss`}
             type={type}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}>

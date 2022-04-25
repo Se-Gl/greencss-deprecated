@@ -168,7 +168,7 @@ export default function ContactForm() {
 
           {buttonText == 'Send' && (
             <div className='flex flex-row items-center justify-start my-25px'>
-              <GreenButton type='submit' id='submit-button'>
+              <GreenButton type='submit' id='submit-button' className='text-greencss hover:text-greencss'>
                 {buttonText}
               </GreenButton>
             </div>

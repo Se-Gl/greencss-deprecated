@@ -28,7 +28,7 @@ describe('Nav Screen Unit test', () => {
 describe('Mobile Nav Screen Unit test', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000/')
-    cy.get('#close-toast').click({ force: true })
+    cy.get('#close-cookie').click({ force: true })
     cy.viewport(320, 480)
     cy.get('#hamburger-sm').should('be.visible').should('exist').click({ force: true })
   })
