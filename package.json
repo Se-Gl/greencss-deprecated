@@ -20,7 +20,9 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^7.6.2",
+    "@stripe/stripe-js": "^1.29.0",
     "@uiw/react-md-editor": "^3.11.3",
+    "axios": "^0.26.1",
     "gray-matter": "^4.0.3",
     "next": "^12.1.4",
     "next-remove-imports": "^1.0.6",
@@ -32,6 +34,7 @@
     "react-syntax-highlighter": "^15.5.0",
     "rehype-sanitize": "^5.0.1",
     "remark-gfm": "^3.0.1",
+    "stripe": "^8.219.0",
     "tinycolor2": "^1.4.2"
   },
   "devDependencies": {
