@@ -12,7 +12,7 @@ const Sponsor = () => {
   const defaultAmounts = [10, 25, 100]
 
   const createCheckOutSession = async () => {
-    if (amount <= 1) {
+    if (amount <= 1 && amount > 1000000) {
       toast('error', `⚡ Please provide a valid donation.`)
     } else {
       const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY)
@@ -34,7 +34,6 @@ const Sponsor = () => {
     }
   }
 
-  console.log(amount)
   return (
     <Section id='donation' background='bg-green-9'>
       <SubSectionHero
@@ -68,7 +67,7 @@ const Sponsor = () => {
                 ))}
               </div>
               <div className='flex justify-center mt-25px'>
-                {amount >= 1 ? (
+                {amount >= 1 && amount < 1000000 ? (
                   <GreenButton onClick={createCheckOutSession} isDefault={false} isReverse={true}>
                     {amount <= 0 ? 'donate' : `donate ${amount}$`}
                   </GreenButton>

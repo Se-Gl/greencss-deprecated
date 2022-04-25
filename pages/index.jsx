@@ -18,11 +18,11 @@ export default function HomePage({ posts }) {
       <Layout className='container min-h-100vh relative z-2 bg-white'>
         <Hero />
         <Presentation />
+        <Sponsor />
         <News posts={posts} />
         <Testimonial />
         <Newsletter />
         <Faq />
-        <Sponsor />
       </Layout>
     </div>
   )
