@@ -13,6 +13,7 @@ export function GreenButton({
   isDefault = true,
   hasLink = false,
   isDownload = false,
+  isReverse = false,
   children
 }) {
   const [hover, setHover] = useState(false)
@@ -26,46 +27,51 @@ export function GreenButton({
   return (
     <>
       {isDefault && (
-        <div className='cursor-pointer flex py-10px px-50px text-greencss hover:text-black font-bold hover:bg-greencss-6 active:bg-greencss-9 focus:bg-greencss-8 transition-duration-700ms transition-all rounded-20px border-1px border-solid border-green'>
+        <button
+          onClick={onClick}
+          id={id}
+          className={`cursor-pointer flex py-10px px-50px text-greencss hover:text-black font-bold hover:bg-greencss-6 active:bg-greencss-9 focus:bg-greencss-8 transition-duration-700ms transition-all rounded-20px border-1px border-solid border-green my-auto font-bold text-center justify-center items-center m-auto text-15px ${className}`}
+          type={type}
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}>
+          {children}
+        </button>
+      )}
+      {isReverse && (
+        <button
+          onClick={onClick}
+          id={id}
+          className={`cursor-pointer flex py-10px px-50px text-white bg-greencss hover:text-greencss font-bold hover:bg-greencss-6 active:bg-greencss-9 focus:bg-greencss-8 transition-duration-700ms transition-all rounded-20px my-auto font-bold text-center justify-center items-center m-auto text-15px ${className}`}
+          type={type}
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}>
+          {children}
+        </button>
+      )}
+      {hasLink && (
+        <Link href={href} passHref>
           <button
             onClick={onClick}
             id={id}
-            className={`flex my-auto font-bold text-center justify-center items-center m-auto text-15px ${className}`}
+            className={`cursor-pointer flex py-10px px-50px text-greencss hover:text-black font-bold hover:bg-greencss-6 active:bg-greencss-9 focus:bg-greencss-8 transition-duration-700ms transition-all rounded-20px border-1px border-solid border-green my-auto font-bold text-center justify-center items-center m-auto text-15px ${className}`}
             type={type}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}>
             {children}
           </button>
-        </div>
-      )}
-      {hasLink && (
-        <Link href={href} passHref>
-          <div className='cursor-pointer flex py-10px px-50px text-greencss hover:text-black font-bold hover:bg-greencss-6 active:bg-greencss-9 focus:bg-greencss-8 transition-duration-700ms transition-all rounded-20px border-1px border-solid border-green'>
-            <button
-              onClick={onClick}
-              id={id}
-              className={`flex my-auto font-bold text-center justify-center items-center m-auto text-15px ${className}`}
-              type={type}
-              onMouseOver={handleMouseOver}
-              onMouseOut={handleMouseOut}>
-              {children}
-            </button>
-          </div>
         </Link>
       )}
       {isDownload && (
         <a href={href} download className='no-decoration'>
-          <div className='cursor-pointer flex py-10px px-50px text-greencss hover:text-black font-bold hover:bg-greencss-6 active:bg-greencss-9 focus:bg-greencss-8 transition-duration-700ms transition-all rounded-20px border-1px border-solid border-green'>
-            <button
-              onClick={onClick}
-              id={id}
-              className={`flex my-auto font-bold text-center justify-center items-center m-auto text-15px ${className}`}
-              type={type}
-              onMouseOver={handleMouseOver}
-              onMouseOut={handleMouseOut}>
-              {children}
-            </button>
-          </div>
+          <button
+            onClick={onClick}
+            id={id}
+            className={`cursor-pointer flex py-10px px-50px text-greencss hover:text-black font-bold hover:bg-greencss-6 active:bg-greencss-9 focus:bg-greencss-8 transition-duration-700ms transition-all rounded-20px border-1px border-solid border-green my-auto font-bold text-center justify-center items-center m-auto text-15px ${className}`}
+            type={type}
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}>
+            {children}
+          </button>
         </a>
       )}
     </>

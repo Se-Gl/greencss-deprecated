@@ -1,6 +1,6 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
 
-const URL = process.env.BASE_URL
+const URL = process.env.PUBLIC_URL
 
 const handler = async (req, res) => {
   const { amount } = req.body
