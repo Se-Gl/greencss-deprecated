@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import { loadStripe } from '@stripe/stripe-js'
 import axios from 'axios'
+import { useToast } from '@/components/toast/hooks/useToast'
 import SubSectionHero from '../../reusable/SubSectionHero'
 import Section from '@/components/reusable/Section'
 import { GreenButton } from '@/components/reusable/Button'
 
 const Sponsor = () => {
-  const [amount, setAmount] = useState(0 > 5)
+  const [amount, setAmount] = useState(10)
 
+  const toast = useToast()
   const defaultAmounts = [10, 25, 100]
   const createCheckOutSession = async () => {
     const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY)
@@ -21,7 +23,7 @@ const Sponsor = () => {
     })
 
     if (result?.error) {
-      alert(result?.error.message)
+      toast('error', `⚡ ${error.message}`)
     }
   }
 
@@ -37,8 +39,9 @@ const Sponsor = () => {
                 type='number'
                 id='amount'
                 placeholder='Choose your own donation'
-                value={amount ? amount : ''}
+                value={amount ? amount : 10}
                 min='1'
+                max='1000001'
                 className='border-none text-15px text-white bg-greencss-3 p-10px w-100per mb-25px accent-green'
                 onChange={(e) => setAmount(parseInt(e.target.value))}></input>
               <p className='mb-0px absolute text-15px text-greencss-10' style={{ right: '30px', top: '10px' }}>
@@ -48,13 +51,16 @@ const Sponsor = () => {
             <div className='justify-center sm:block'>
               <div className='flex'>
                 {defaultAmounts.map((buttonAmount) => (
-                  <GreenButton onClick={() => setAmount(buttonAmount)} key={buttonAmount} className='w-0px px-0px'>
+                  <GreenButton
+                    onClick={() => setAmount(buttonAmount)}
+                    key={buttonAmount}
+                    className='w-0px px-0px text-greencss'>
                     {buttonAmount}$
                   </GreenButton>
                 ))}
               </div>
               <div className='flex justify-center mt-25px'>
-                <GreenButton onClick={createCheckOutSession} className='' isDefault={false} isReverse={true}>
+                <GreenButton onClick={createCheckOutSession} isDefault={false} isReverse={true}>
                   {amount <= 0 ? 'donate' : `donate ${amount}$`}
                 </GreenButton>
               </div>

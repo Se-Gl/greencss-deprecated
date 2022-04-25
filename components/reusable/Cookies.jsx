@@ -34,7 +34,7 @@ export default function Cookies() {
               improve our UI/UX experience for you.
             </p>
             <div className='justify-center items-center my-auto'>
-              <GreenButton className='text-white' onClick={cookie} id='close-toast'>
+              <GreenButton className='text-black' onClick={cookie} id='close-cookie'>
                 OK
               </GreenButton>
             </div>
