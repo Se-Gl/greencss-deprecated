@@ -41,7 +41,7 @@ export default function Layout({
         <meta name='og:title' content={title} />
         <meta name='og:type' content='site' />
         <meta name='og:url' content={`${NEXT_URL}/${url}`} />
-        <meta name='og:image' content={`${NEXT_URL}/${image}`} />
+        <meta name='og:image' content={`${NEXT_URL}${image}`} />
         <meta name='og:site_name' content={title} />
         <meta name='og:description' content={description} />
 
@@ -86,5 +86,5 @@ Layout.defaultProps = {
     'greenCSS is an intuitive dynamic animated CSS library for HTML5 and frameworks like VueJS, NextJs, React, or Angular. Over 100.000 CSS classes cover all your needs. Yet, completely lightweight, as unused classes are purged before production.',
   author: 'Severin Glaser',
   url: '',
-  image: `${NEXT_URL}/images/greenCSS-default.png`
+  image: '/images/greenCSS-default.png'
 }
