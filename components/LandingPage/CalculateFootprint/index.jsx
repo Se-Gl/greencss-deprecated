@@ -51,7 +51,9 @@ export default function CalculateFootprint() {
                 </sub>{' '}
                 per year.*
               </p>
-              <span className='text-black-10 text-10px'>*Data without guarantee. It is intended as a guide only.</span>
+              <span className='text-black-10 text-10px'>
+                *Data without guarantee. It is intended as a guidance only.
+              </span>
             </div>
           </div>
 

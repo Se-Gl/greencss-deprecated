@@ -1,12 +1,11 @@
 import dynamic from 'next/dynamic'
 import Hero from '@/components/LandingPage/Hero'
-
 import { getPosts } from '@/lib/posts'
 import { sortByDate } from '@/utils/SortBy'
-import CalculateFootprint from '@/components/LandingPage/CalculateFootprint'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 const Presentation = dynamic(() => import('@/components/LandingPage/Presentation'))
+const CalculateFootprint = dynamic(() => import('@/components/LandingPage/CalculateFootprint'))
 const Sponsor = dynamic(() => import('@/components/LandingPage/Sponsor'))
 const News = dynamic(() => import('@/components/LandingPage/News'))
 const Testimonial = dynamic(() => import('@/components/LandingPage/Testimonial'))
