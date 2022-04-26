@@ -1,16 +1,16 @@
 import dynamic from 'next/dynamic'
 import Hero from '@/components/LandingPage/Hero'
-import News from '@/components/LandingPage/News'
-import Presentation from '@/components/LandingPage/Presentation'
 
-import Testimonial from '@/components/LandingPage/Testimonial'
 import { getPosts } from '@/lib/posts'
-import Newsletter from '@/components/LandingPage/Newsletter'
 import { sortByDate } from '@/utils/SortBy'
-import Faq from '@/components/LandingPage/Faq/Faq'
-import Sponsor from '@/components/LandingPage/Sponsor'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
+const Presentation = dynamic(() => import('@/components/LandingPage/Presentation'))
+const Sponsor = dynamic(() => import('@/components/LandingPage/Sponsor'))
+const News = dynamic(() => import('@/components/LandingPage/News'))
+const Testimonial = dynamic(() => import('@/components/LandingPage/Testimonial'))
+const Newsletter = dynamic(() => import('@/components/LandingPage/Newsletter'))
+const Faq = dynamic(() => import('@/components/LandingPage/Faq/Faq'))
 
 export default function HomePage({ posts }) {
   return (
