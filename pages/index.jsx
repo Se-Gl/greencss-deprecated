@@ -3,6 +3,7 @@ import Hero from '@/components/LandingPage/Hero'
 
 import { getPosts } from '@/lib/posts'
 import { sortByDate } from '@/utils/SortBy'
+import CalculateFootprint from '@/components/LandingPage/CalculateFootprint'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 const Presentation = dynamic(() => import('@/components/LandingPage/Presentation'))
@@ -18,6 +19,7 @@ export default function HomePage({ posts }) {
       <Layout className='container min-h-100vh relative z-2 bg-white'>
         <Hero />
         <Presentation />
+        <CalculateFootprint />
         <Sponsor />
         <News posts={posts} />
         <Testimonial />

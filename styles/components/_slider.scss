@@ -1,0 +1,90 @@
+@use '../abstracts/color' as *;
+
+input[type='range'] {
+  height: 32px;
+  -webkit-appearance: none;
+  width: 90%;
+}
+input[type='range']:focus {
+  outline: none;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  width: 90%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px $black;
+  background: $green;
+  border-radius: 1px;
+  border: 0px solid $black;
+}
+input[type='range']::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px $white;
+  border: 1px solid $white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: $greencss;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10.5px;
+}
+input[type='range']:focus::-webkit-slider-runnable-track {
+  background: $green;
+}
+input[type='range']::-moz-range-track {
+  width: 90%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px $black;
+  background: $green;
+  border-radius: 1px;
+  border: 0px solid $black;
+}
+input[type='range']::-moz-range-thumb {
+  box-shadow: 0px 0px 0px $white;
+  border: 1px solid $white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: $greencss;
+  cursor: pointer;
+}
+input[type='range']::-ms-track {
+  width: 90%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type='range']::-ms-fill-lower {
+  background: $green;
+  border: 0px solid $black;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px $black;
+}
+input[type='range']::-ms-fill-upper {
+  background: $green;
+  border: 0px solid $black;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px $black;
+}
+input[type='range']::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px $white;
+  border: 1px solid $white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: $greencss;
+  cursor: pointer;
+}
+input[type='range']:focus::-ms-fill-lower {
+  background: $green;
+}
+input[type='range']:focus::-ms-fill-upper {
+  background: $green;
+}
