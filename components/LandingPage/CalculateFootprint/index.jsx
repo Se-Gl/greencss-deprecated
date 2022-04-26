@@ -45,7 +45,11 @@ export default function CalculateFootprint() {
               <p className='mb-0px text-black-10 text-15px'>How many hours per week do you work?</p>
               <RangeSlider unit='h' max={100} value={valueHour} setValue={setValueHour} />
               <p className='text-black-10 mt-25px mb-0px'>
-                You produce <span className={`${adjustBgColor} text-15px font-900`}>{calculate}kg</span> CO
+                You produce{' '}
+                <span className={`${adjustBgColor} text-15px font-900`} id='calculation-result'>
+                  {calculate}kg
+                </span>{' '}
+                CO
                 <sub className='relative text-15px' style={{ top: '0.5rem' }}>
                   2
                 </sub>{' '}
