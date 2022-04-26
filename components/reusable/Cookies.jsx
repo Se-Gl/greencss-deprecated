@@ -23,7 +23,7 @@ export default function Cookies() {
   return (
     <>
       {cookieBanner && (
-        <div className='fixed bottom-0per left-0per min-h-10vh w-100vw bg-greencss z-99' id='cookie-banner'>
+        <div className='fixed bottom-0per left-0per min-h-10vh w-100vw bg-greencss-2 z-99' id='cookie-banner'>
           <div className='flex sm:block sm:px-15px py-25px max-w-60rem m-auto'>
             <span className='text-30px mr-25px sm:mr-0px cursor-pointer my-auto' onClick={cookie}>
               🍪
@@ -34,7 +34,7 @@ export default function Cookies() {
               improve our UI/UX experience for you.
             </p>
             <div className='justify-center items-center my-auto'>
-              <GreenButton className='text-white' onClick={cookie} id='close-toast'>
+              <GreenButton className='text-black' onClick={cookie} id='close-cookie'>
                 OK
               </GreenButton>
             </div>

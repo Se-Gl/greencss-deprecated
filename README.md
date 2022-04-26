@@ -2,7 +2,7 @@
 
 [![Prettier and ESLint Code Base](https://github.com/Se-Gl/greenCSS/actions/workflows/lint.yml/badge.svg)](https://github.com/Se-Gl/greenCSS/actions/workflows/lint.yml)
 [![Cypress Base](https://github.com/Se-Gl/greenCSS/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/greenCSS/actions/workflows/cypress.yml)
-![check-code-coverage](https://img.shields.io/badge/code--coverage-84.75%25-green)
+![check-code-coverage](https://img.shields.io/badge/code--coverage-82.66%25-green)
 
 ⚠️ merged repo from [omenCSS](https://github.com/Se-Gl/omenCSS-frontend) - @ commit 435
 
@@ -62,9 +62,12 @@ SENDGRID_API_KEY=YOUR-SENDGRID-API-KEY
 SENDGRID_MAILING_ID=YOUR-SENDGRID-CONTACT-LIST-ID
 SENDGRID_EMAIL=YOUR-SENDGRID-EMAIL
 NEXT_PUBLIC_GOOGLE_ANALYTICS=YOUR-GOOGLE-ANALYTICS-KEY
+NEXT_PUBLIC_STRIPE_KEY=YOUR-PUBLIC-STRIPE-KEY
+STRIPE_SECRET_KEY=YOUR-SECRET-STRIPE-KEY
 ```
 
 - [sendgrid](https://signup.sendgrid.com/)
+- [STRIPE](https://dashboard.stripe.com)
 
 ### Github actions
 
@@ -148,6 +151,9 @@ sass/
 | [purgecss](https://www.npmjs.com/package/purgecss)                                 | ![GitHub stars](https://img.shields.io/github/stars/FullHuman/purgecss.svg?label=%F0%9F%8C%9F)        | [![Bundle size](https://badgen.net/bundlephobia/minzip/purgecss?label=%F0%9F%92%BE)](https://bundlephobia.com/package/purgecss)                                  | ✅         | ✅        |
 | [@sendgrid/mail](https://www.npmjs.com/package/@sendgrid/mail)                     | ![GitHub stars](https://img.shields.io/github/stars/sendgrid/sendgrid-nodejs.svg?label=%F0%9F%8C%9F)  | [![Bundle size](https://badgen.net/bundlephobia/minzip/@sendgrid/mail?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=@sendgrid/mail)                     | ✅         | ✅        |
 | [remark-gfm](https://www.npmjs.com/package/remark-gfm)                             | ![GitHub stars](https://img.shields.io/github/stars/remarkjs/remark-gfm.svg?label=%F0%9F%8C%9F)       | [![Bundle size](https://badgen.net/bundlephobia/minzip/remark-gfm?label=%F0%9F%92%BE)](https://bundlephobia.com/package/remark-gfm)                              | ✅         | ✅        |
+| [axios](https://www.npmjs.com/package/axios)                                       | ![GitHub stars](https://img.shields.io/github/stars/axios/axios.svg?label=%F0%9F%8C%9F)               | [![Bundle size](https://badgen.net/bundlephobia/minzip/axios?label=%F0%9F%92%BE)](https://bundlephobia.com/package/axios)                                        | ✅         | ✅        |
+| [@stripe/stripe-js](https://www.npmjs.com/package/@stripe/stripe-js)               | ![GitHub stars](https://img.shields.io/github/stars/@stripe/stripe-js.svg?label=%F0%9F%8C%9F)         | [![Bundle size](https://badgen.net/bundlephobia/minzip/@stripe/stripe-js?label=%F0%9F%92%BE)](https://bundlephobia.com/package/@stripe/stripe-js)                | ✅         | ✅        |
+| [stripe](https://www.npmjs.com/package/stripe)                                     | ![GitHub stars](https://img.shields.io/github/stars/stripe/stripe-node.svg?label=%F0%9F%8C%9F)        | [![Bundle size](https://badgen.net/bundlephobia/minzip/stripe?label=%F0%9F%92%BE)](https://bundlephobia.com/package/stripe)                                      | ✅         | ✅        |
 
 ### Testing Libraries
 
@@ -169,20 +175,6 @@ sass/
 
 ### Sources
 
-| Hero Illustrations |                                                                                         |
-| ------------------ | --------------------------------------------------------------------------------------- |
-| title              | iOS 15 Status Bar                                                                       |
-| source             | [figma](https://www.figma.com/community/file/904065746347450024/iOS-15-Status-Bar)      |
-| author             | [waynedahlberg](https://www.figma.com/@waynedahlberg)                                   |
-| license            | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                |
-| changes            | Changes were made to the background, resized illustration and adjusted colours          |
-| ----------         | ------------------------------------                                                    |
-| title              | ZuPay App Macbook Pro                                                                   |
-| source             | [figma](https://www.figma.com/community/file/1017693590436070997/ZuPay-App-Macbook-Pro) |
-| author             | [Saikrishna](https://www.figma.com/@Saikrishna)                                         |
-| license            | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                |
-| changes            | Changes were made to the background, resized illustration and adjusted colours          |
-
 | Illustrations |                                                                                                                                                        |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | title         | design-thinking 1 / Coding 1 / bring-solutions-to-problems / Searching / Newsletter / protect-privacy / Virtual-reality 1 / office-desk / get-inspired |
@@ -191,15 +183,29 @@ sass/
 | license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                               |
 | changes       | Changes were made to the fill- colours, added blob.                                                                                                    |
 | ----------    | ------------------------------------                                                                                                                   |
-
-| Logo       |                                                                                    |
-| ---------- | ---------------------------------------------------------------------------------- |
-| title      | Leaf Illustration                                                                  |
-| source     | [Figma](https://www.figma.com/community/file/943843409604246251/Leaf-Illustration) |
-| author     | [seda](https://www.figma.com/@seda)                                                |
-| license    | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                           |
-| changes    | Changes were made to the fill- colours, line & shadow adjustments.                 |
-| ---------- | ------------------------------------                                               |
+| title         | Organic Elements Free Set                                                                                                                              |
+| source        | [Figma](https://www.figma.com/community/file/1085558998688071580/Organic-Elements-Free-Set)                                                            |
+| author        | [Streamline](https://www.figma.com/@05466272_9382_4)                                                                                                   |
+| license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                               |
+| changes       | Changes were made to the fill- colours, moved and merged different illustartions.                                                                      |
+| ----------    | ------------------------------------                                                                                                                   |
+| title         | Leaf Illustration                                                                                                                                      |
+| source        | [Figma](https://www.figma.com/community/file/943843409604246251/Leaf-Illustration)                                                                     |
+| author        | [seda](https://www.figma.com/@seda)                                                                                                                    |
+| license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                               |
+| changes       | Changes were made to the fill- colours, line & shadow adjustments.                                                                                     |
+| ----------    | ------------------------------------                                                                                                                   |
+| title         | iOS 15 Status Bar                                                                                                                                      |
+| source        | [Figma](https://www.figma.com/community/file/904065746347450024/iOS-15-Status-Bar)                                                                     |
+| author        | [waynedahlberg](https://www.figma.com/@waynedahlberg)                                                                                                  |
+| license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                               |
+| changes       | Changes were made to the background, resized illustration and adjusted colours                                                                         |
+| ----------    | ------------------------------------                                                                                                                   |
+| title         | ZuPay App Macbook Pro                                                                                                                                  |
+| source        | [Figma](https://www.figma.com/community/file/1017693590436070997/ZuPay-App-Macbook-Pro)                                                                |
+| author        | [Saikrishna](https://www.figma.com/@Saikrishna)                                                                                                        |
+| license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                               |
+| changes       | Changes were made to the background, resized illustration and adjusted colours                                                                         |
 
 ### Ideas & Inspiration
 
@@ -208,3 +214,4 @@ sass/
 - [Newsletter](https://dev.to/michael_webdev/create-a-mailing-list-with-sendgrid-and-next-js-41f7)
 - [Captcha](https://github.com/nabidam/react-captcha)
 - [Google Analytics](https://medium.com/@mikegajdos81/how-to-add-googleanalytics-4-to-nextjs-app-in-4-simple-steps-3c6f9de2f866)
+- [Stripe](https://betterprogramming.pub/create-your-portfolio-using-next-js-tailwind-css-stripe-and-paypal-80c723bb3fef)
