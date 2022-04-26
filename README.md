@@ -2,7 +2,7 @@
 
 [![Prettier and ESLint Code Base](https://github.com/Se-Gl/greenCSS/actions/workflows/lint.yml/badge.svg)](https://github.com/Se-Gl/greenCSS/actions/workflows/lint.yml)
 [![Cypress Base](https://github.com/Se-Gl/greenCSS/actions/workflows/cypress.yml/badge.svg)](https://github.com/Se-Gl/greenCSS/actions/workflows/cypress.yml)
-![check-code-coverage](https://img.shields.io/badge/code--coverage-84.75%25-green)
+![check-code-coverage](https://img.shields.io/badge/code--coverage-82.66%25-green)
 
 ⚠️ merged repo from [omenCSS](https://github.com/Se-Gl/omenCSS-frontend) - @ commit 435
 
@@ -62,9 +62,12 @@ SENDGRID_API_KEY=YOUR-SENDGRID-API-KEY
 SENDGRID_MAILING_ID=YOUR-SENDGRID-CONTACT-LIST-ID
 SENDGRID_EMAIL=YOUR-SENDGRID-EMAIL
 NEXT_PUBLIC_GOOGLE_ANALYTICS=YOUR-GOOGLE-ANALYTICS-KEY
+NEXT_PUBLIC_STRIPE_KEY=YOUR-PUBLIC-STRIPE-KEY
+STRIPE_SECRET_KEY=YOUR-SECRET-STRIPE-KEY
 ```
 
 - [sendgrid](https://signup.sendgrid.com/)
+- [STRIPE](https://dashboard.stripe.com)
 
 ### Github actions
 

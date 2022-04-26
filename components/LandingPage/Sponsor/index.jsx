@@ -44,7 +44,7 @@ const Sponsor = () => {
             <div className='flex relative'>
               <input
                 type='number'
-                id='amount'
+                id='donate-amount'
                 placeholder='Choose your own donation'
                 value={amount}
                 min='1'
@@ -61,19 +61,21 @@ const Sponsor = () => {
                   <GreenButton
                     onClick={() => setAmount(buttonAmount)}
                     key={buttonAmount}
-                    className='w-0px px-0px text-greencss'>
+                    className='w-0px px-0px text-greencss'
+                    id={`donate-button-amount-${buttonAmount}`}>
                     {buttonAmount}$
                   </GreenButton>
                 ))}
               </div>
               <div className='flex justify-center mt-25px'>
                 {amount >= 1 && amount < 1000000 ? (
-                  <GreenButton onClick={createCheckOutSession} isDefault={false} isReverse={true}>
+                  <GreenButton onClick={createCheckOutSession} isDefault={false} isReverse={true} id='donate-button'>
                     {amount <= 0 ? 'donate' : `donate ${amount}$`}
                   </GreenButton>
                 ) : (
                   <button
                     disabled={true}
+                    id='donate-button-disabled'
                     className='cursor-not-allowed flex py-10px px-50px font-bold rounded-20px my-auto text-center justify-center items-center m-auto text-15px text-greencss bg-yellow-3'>
                     invalid amount
                   </button>
