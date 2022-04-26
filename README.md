@@ -175,20 +175,6 @@ sass/
 
 ### Sources
 
-| Hero Illustrations |                                                                                         |
-| ------------------ | --------------------------------------------------------------------------------------- |
-| title              | iOS 15 Status Bar                                                                       |
-| source             | [figma](https://www.figma.com/community/file/904065746347450024/iOS-15-Status-Bar)      |
-| author             | [waynedahlberg](https://www.figma.com/@waynedahlberg)                                   |
-| license            | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                |
-| changes            | Changes were made to the background, resized illustration and adjusted colours          |
-| ----------         | ------------------------------------                                                    |
-| title              | ZuPay App Macbook Pro                                                                   |
-| source             | [figma](https://www.figma.com/community/file/1017693590436070997/ZuPay-App-Macbook-Pro) |
-| author             | [Saikrishna](https://www.figma.com/@Saikrishna)                                         |
-| license            | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                |
-| changes            | Changes were made to the background, resized illustration and adjusted colours          |
-
 | Illustrations |                                                                                                                                                        |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | title         | design-thinking 1 / Coding 1 / bring-solutions-to-problems / Searching / Newsletter / protect-privacy / Virtual-reality 1 / office-desk / get-inspired |
@@ -197,15 +183,29 @@ sass/
 | license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                               |
 | changes       | Changes were made to the fill- colours, added blob.                                                                                                    |
 | ----------    | ------------------------------------                                                                                                                   |
-
-| Logo       |                                                                                    |
-| ---------- | ---------------------------------------------------------------------------------- |
-| title      | Leaf Illustration                                                                  |
-| source     | [Figma](https://www.figma.com/community/file/943843409604246251/Leaf-Illustration) |
-| author     | [seda](https://www.figma.com/@seda)                                                |
-| license    | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                           |
-| changes    | Changes were made to the fill- colours, line & shadow adjustments.                 |
-| ---------- | ------------------------------------                                               |
+| title         | Organic Elements Free Set                                                                                                                              |
+| source        | [Figma](https://www.figma.com/community/file/1085558998688071580/Organic-Elements-Free-Set)                                                            |
+| author        | [Streamline](https://www.figma.com/@05466272_9382_4)                                                                                                   |
+| license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                               |
+| changes       | Changes were made to the fill- colours, moved and merged different illustartions.                                                                      |
+| ----------    | ------------------------------------                                                                                                                   |
+| title         | Leaf Illustration                                                                                                                                      |
+| source        | [Figma](https://www.figma.com/community/file/943843409604246251/Leaf-Illustration)                                                                     |
+| author        | [seda](https://www.figma.com/@seda)                                                                                                                    |
+| license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                               |
+| changes       | Changes were made to the fill- colours, line & shadow adjustments.                                                                                     |
+| ----------    | ------------------------------------                                                                                                                   |
+| title         | iOS 15 Status Bar                                                                                                                                      |
+| source        | [Figma](https://www.figma.com/community/file/904065746347450024/iOS-15-Status-Bar)                                                                     |
+| author        | [waynedahlberg](https://www.figma.com/@waynedahlberg)                                                                                                  |
+| license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                               |
+| changes       | Changes were made to the background, resized illustration and adjusted colours                                                                         |
+| ----------    | ------------------------------------                                                                                                                   |
+| title         | ZuPay App Macbook Pro                                                                                                                                  |
+| source        | [Figma](https://www.figma.com/community/file/1017693590436070997/ZuPay-App-Macbook-Pro)                                                                |
+| author        | [Saikrishna](https://www.figma.com/@Saikrishna)                                                                                                        |
+| license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                               |
+| changes       | Changes were made to the background, resized illustration and adjusted colours                                                                         |
 
 ### Ideas & Inspiration
 
