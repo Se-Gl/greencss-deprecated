@@ -67,7 +67,14 @@ export default function CalculateFootprint() {
               <Link href='#donation'>
                 <a className='text-white'>donation</a>
               </Link>{' '}
-              {calculate <= 1 ? '' : <CalculatePrice data={calculate} />} we can jointly reduce your <CoTwo />
+              {calculate <= 1 ? (
+                ''
+              ) : (
+                <>
+                  of <CalculatePrice data={calculate} />
+                </>
+              )}{' '}
+              we can jointly reduce your <CoTwo />
               emissions to <span className='text-greencss font-bold'>zero</span>.
               <VisualChart data={calculate} />
               <p className='mb-0px mt-50px text-white text-15px'>

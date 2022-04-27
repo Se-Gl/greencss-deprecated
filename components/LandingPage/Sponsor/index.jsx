@@ -7,7 +7,13 @@ import Section from '@/components/reusable/Section'
 import { GreenButton } from '@/components/reusable/Button'
 
 const Sponsor = () => {
-  const [amount, setAmount] = useState(10)
+  const [amount, setAmount] = useState(() => {
+    // getting stored estimatedFootprint value
+    // TODO make it also work without hard refresh
+    const saved = localStorage.getItem('estimatedFootprint')
+    const initialValue = JSON.parse(saved)
+    return initialValue || 10
+  })
   const toast = useToast()
   const defaultAmounts = [10, 25, 100]
 
