@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Section from '@/components/reusable/Section'
 import RangeSlider from './RangeSlider'
@@ -7,8 +7,16 @@ import CoTwo from './CoTwo'
 import CalculatePrice from './CalculatePrice'
 
 export default function CalculateFootprint() {
-  const [valueWatt, setValueWatt] = useState(0)
-  const [valueHour, setValueHour] = useState(0)
+  const [valueWatt, setValueWatt] = useState(() => {
+    const saved = localStorage.getItem('valueWatt')
+    const initialValue = JSON.parse(saved)
+    return initialValue || 0
+  })
+  const [valueHour, setValueHour] = useState(() => {
+    const saved = localStorage.getItem('valueHour')
+    const initialValue = JSON.parse(saved)
+    return initialValue || 0
+  })
 
   let x = valueWatt
   let y = valueHour
@@ -20,6 +28,7 @@ export default function CalculateFootprint() {
     (calculate <= 500 && 'text-red') ||
     (calculate >= 501 && 'text-magenta')
 
+  // map RangeSlider
   const sliders = [
     {
       description: 'How many watts does your computer consume?',
@@ -30,6 +39,14 @@ export default function CalculateFootprint() {
       slider: <RangeSlider unit='h' max={100} value={valueHour} setValue={setValueHour} />
     }
   ]
+
+  // save set values to localstorage
+  useEffect(() => {
+    localStorage.setItem('valueWatt', JSON.stringify(valueWatt))
+  }, [valueWatt])
+  useEffect(() => {
+    localStorage.setItem('valueHour', JSON.stringify(valueHour))
+  }, [valueHour])
 
   return (
     <Section id='calculate-footprint' background='bg-orange-10'>
