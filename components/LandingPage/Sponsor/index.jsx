@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { loadStripe } from '@stripe/stripe-js'
 import axios from 'axios'
 import { useToast } from '@/components/toast/hooks/useToast'
@@ -14,6 +14,13 @@ const Sponsor = () => {
     const initialValue = JSON.parse(saved)
     return initialValue || 10
   })
+  const [prediction, setPrediction] = useState(false)
+
+  useEffect(() => {
+    const getPrediction = localStorage.getItem('hasPrediction')
+    setPrediction(getPrediction)
+  }, [])
+
   const toast = useToast()
   const defaultAmounts = [10, 25, 100]
 
@@ -43,7 +50,11 @@ const Sponsor = () => {
   return (
     <Section id='donation' background='bg-green-9'>
       <SubSectionHero
-        header='Change the world. Even a small donation does a lot.'
+        header={`${
+          prediction
+            ? `Minimize your personal emissions by donating USD ${amount}$.`
+            : 'Change the world. Even a small donation does a lot.'
+        }`}
         subheader='In cooperation with greenCSS partners, global projects are supported in order to minimize the CO2 emissions. Every cent goes directly to a green project. You want to learn more? Subscribe to the newsletter and receive in real time which projects are currently supported.'
         illustration={
           <div className='mx-25px sm:mx-0px md:mx-0px'>

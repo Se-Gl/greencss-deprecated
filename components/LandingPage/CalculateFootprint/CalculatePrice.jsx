@@ -5,6 +5,7 @@ export default function CalculatePrice({ data }) {
 
   useEffect(() => {
     localStorage.setItem('estimatedFootprint', JSON.stringify(Math.ceil(calculateFinalPrice)))
+    localStorage.setItem('hasPrediction', JSON.stringify(true))
   }, [data])
 
   return (
