@@ -4,6 +4,7 @@ import Section from '@/components/reusable/Section'
 import RangeSlider from './RangeSlider'
 import VisualChart from './VisualChart'
 import CoTwo from './CoTwo'
+import CalculatePrice from './CalculatePrice'
 
 export default function CalculateFootprint() {
   const [valueWatt, setValueWatt] = useState(0)
@@ -66,7 +67,7 @@ export default function CalculateFootprint() {
               <Link href='#donation'>
                 <a className='text-white'>donation</a>
               </Link>{' '}
-              {calculate <= 1 ? '' : 'of ---$'} we can jointly reduce your <CoTwo />
+              {calculate <= 1 ? '' : <CalculatePrice data={calculate} />} we can jointly reduce your <CoTwo />
               emissions to <span className='text-greencss font-bold'>zero</span>.
               <VisualChart data={calculate} />
               <p className='mb-0px mt-50px text-white text-15px'>
