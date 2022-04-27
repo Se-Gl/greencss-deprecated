@@ -16,9 +16,20 @@ export default function CalculateFootprint() {
 
   let adjustBgColor =
     (calculate <= 1 && 'text-greencss') ||
-    (calculate <= 50 && 'text-yellow-2') ||
-    (calculate <= 500 && 'text-orange') ||
-    (calculate >= 501 && 'text-red')
+    (calculate <= 50 && 'text-yellow') ||
+    (calculate <= 500 && 'text-red') ||
+    (calculate >= 501 && 'text-magenta')
+
+  const sliders = [
+    {
+      description: 'How many watts does your computer consume?',
+      slider: <RangeSlider unit='W' max={1000} step={50} value={valueWatt} setValue={setValueWatt} />
+    },
+    {
+      description: 'How many hours per week do you work?',
+      slider: <RangeSlider unit='h' max={100} value={valueHour} setValue={setValueHour} />
+    }
+  ]
 
   return (
     <Section id='calculate-footprint' background='bg-orange-10'>
@@ -40,12 +51,12 @@ export default function CalculateFootprint() {
           </div>
           <div className='col-span-1 sm:col-span-2 md:col-span-2 flex'>
             <div className='m-auto sm:m-0px'>
-              <p className='mb-0px text-black-10 text-15px'>How many watts does your computer consume?</p>
-              <RangeSlider unit='W' max={1000} step={50} value={valueWatt} setValue={setValueWatt} />
-              <p className='mb-0px text-black-10 text-15px sm:mt-25px md:mt-25px'>
-                How many hours per week do you work?
-              </p>
-              <RangeSlider unit='h' max={100} value={valueHour} setValue={setValueHour} />
+              {sliders.map((slider, index) => (
+                <div key={index}>
+                  <p className='mb-0px text-black-10 text-15px'>{slider.description}</p>
+                  {slider.slider}
+                </div>
+              ))}
               <p className='text-black-10 mt-25px mb-0px'>
                 You produce{' '}
                 <span className={`${adjustBgColor} text-15px font-900`} id='calculation-result'>
@@ -60,7 +71,7 @@ export default function CalculateFootprint() {
             </div>
           </div>
 
-          <div className='col-span-2 mx-auto mt-50px max-w-70rem bg-black-1 p-20px rounded-10px'>
+          <div className='col-span-2 mx-auto my-50px max-w-70rem bg-black-1 p-20px rounded-10px'>
             <h2 className='text-white'>Did you know?</h2>
             <div className='text-20px text-white'>
               With a{' '}
@@ -81,9 +92,9 @@ export default function CalculateFootprint() {
                 <span className='text-red-4 text-15px font-bold'>NOTE: </span>In this calculation we have only
                 calculated your PC/laptop consumption. We compared the mean energy expenditure of an average person in
                 their free time (monday to friday), as well as the average amount of power used by a developer during
-                working hours (monday to friday). Did you know that the worlds average <CoTwo /> footprint per person
-                per year is <span className='font-900 text-red-6'>6.1 tonnes</span>? It is the total of flights,
-                accommodation, mobility and energy.
+                working hours (monday to friday) with your relative values. Did you know that the worlds average{' '}
+                <CoTwo /> footprint per person per year is <span className='font-900 text-red-6'>6.1 tonnes</span>? It
+                is the total of flights, accommodation, mobility and energy.
               </p>
             </div>
           </div>

@@ -18,12 +18,12 @@ export default function VisualChart({ data }) {
     {
       description: 'PC/laptop footprint of an average person',
       bgColor: 'bg-green',
-      percent: percentb
+      percent: percenta
     },
     {
       description: 'PC/laptop footprint of an average developer',
       bgColor: 'bg-orange',
-      percent: percenta
+      percent: percentb
     }
   ]
 
