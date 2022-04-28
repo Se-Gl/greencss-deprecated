@@ -9,8 +9,6 @@ import DonationContext from '@/utils/DonationContext'
 
 export default function CalculateFootprint() {
   const { calculate, valueHour, valueWatt, setValueWatt, setValueHour } = useContext(DonationContext)
-  // let calculateFinalPrice = Math.ceil(calculate) / 40
-  // console.log(Math.ceil(calculateFinalPrice))
 
   let adjustBgColor =
     (calculate <= 1 && 'text-greencss') ||

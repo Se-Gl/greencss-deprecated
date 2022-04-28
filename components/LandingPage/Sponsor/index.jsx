@@ -8,17 +8,9 @@ import Section from '@/components/reusable/Section'
 import { GreenButton } from '@/components/reusable/Button'
 import DonationContext from '@/utils/DonationContext'
 import CoTwo from '@/components/LandingPage/CalculateFootprint/CoTwo'
+
 const Sponsor = () => {
-  const { calculate, valueHour, valueWatt, setValueWatt, setValueHour, amount, setAmount } = useContext(DonationContext)
-  // check localstorage
-  const [prediction, setPrediction] = useState(false)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const getPrediction = localStorage.getItem('hasPrediction')
-      setPrediction(getPrediction)
-    }, 1000)
-    return () => clearInterval(interval)
-  }, [])
+  const { calculate, amount, setAmount, prediction } = useContext(DonationContext)
 
   let calculateFinalPrice = Math.ceil(calculate) / 40
   let ceiledPrice = Math.ceil(calculateFinalPrice)
