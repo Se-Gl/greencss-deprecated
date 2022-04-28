@@ -1,26 +1,16 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import Link from 'next/link'
 import Section from '@/components/reusable/Section'
 import RangeSlider from './RangeSlider'
 import VisualChart from './VisualChart'
 import CoTwo from './CoTwo'
 import CalculatePrice from './CalculatePrice'
+import DonationContext from '@/utils/DonationContext'
 
 export default function CalculateFootprint() {
-  const [valueWatt, setValueWatt] = useState(() => {
-    const saved = localStorage.getItem('valueWatt')
-    const initialValue = JSON.parse(saved)
-    return initialValue || 0
-  })
-  const [valueHour, setValueHour] = useState(() => {
-    const saved = localStorage.getItem('valueHour')
-    const initialValue = JSON.parse(saved)
-    return initialValue || 0
-  })
-
-  let x = valueWatt
-  let y = valueHour
-  const calculate = (((parseFloat(x) * parseFloat(y) * 4.2) / 1000) * 12 * 0.474).toFixed(1)
+  const { calculate, valueHour, valueWatt, setValueWatt, setValueHour } = useContext(DonationContext)
+  // let calculateFinalPrice = Math.ceil(calculate) / 40
+  // console.log(Math.ceil(calculateFinalPrice))
 
   let adjustBgColor =
     (calculate <= 1 && 'text-greencss') ||

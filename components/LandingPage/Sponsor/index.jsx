@@ -1,29 +1,31 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
+import Link from 'next/link'
 import { loadStripe } from '@stripe/stripe-js'
 import axios from 'axios'
 import { useToast } from '@/components/toast/hooks/useToast'
 import SubSectionHero from '../../reusable/SubSectionHero'
 import Section from '@/components/reusable/Section'
 import { GreenButton } from '@/components/reusable/Button'
-
+import DonationContext from '@/utils/DonationContext'
+import CoTwo from '@/components/LandingPage/CalculateFootprint/CoTwo'
 const Sponsor = () => {
-  const [amount, setAmount] = useState(() => {
-    // getting stored estimatedFootprint value
-    // TODO make it also work without hard refresh
-    const saved = localStorage.getItem('estimatedFootprint')
-    const initialValue = JSON.parse(saved)
-    return initialValue || 10
-  })
+  const { calculate, valueHour, valueWatt, setValueWatt, setValueHour, amount, setAmount } = useContext(DonationContext)
+  // check localstorage
   const [prediction, setPrediction] = useState(false)
-
   useEffect(() => {
-    const getPrediction = localStorage.getItem('hasPrediction')
-    setPrediction(getPrediction)
+    const interval = setInterval(() => {
+      const getPrediction = localStorage.getItem('hasPrediction')
+      setPrediction(getPrediction)
+    }, 1000)
+    return () => clearInterval(interval)
   }, [])
+
+  let calculateFinalPrice = Math.ceil(calculate) / 40
+  let ceiledPrice = Math.ceil(calculateFinalPrice)
 
   const toast = useToast()
   const defaultAmounts = [10, 25, 100]
-
+  // stripe
   const createCheckOutSession = async () => {
     if (amount <= 1 && amount > 1000000) {
       toast('error', `⚡ Please provide a valid donation.`)
@@ -52,7 +54,7 @@ const Sponsor = () => {
       <SubSectionHero
         header={`${
           prediction
-            ? `Minimize your personal emissions by donating USD ${amount}$.`
+            ? `Minimize your personal emissions by donating USD ${prediction ? ceiledPrice : amount}$.`
             : 'Change the world. Even a small donation does a lot.'
         }`}
         subheader='In cooperation with greenCSS partners, global projects are supported in order to minimize the CO2 emissions. Every cent goes directly to a green project. You want to learn more? Subscribe to the newsletter and receive in real time which projects are currently supported.'
@@ -102,6 +104,24 @@ const Sponsor = () => {
           </div>
         }
       />
+      {!prediction && (
+        <div className='max-w-50rem m-auto'>
+          <h2>
+            Have you heard about our <span className='text-greencss'>emission calculator</span>?
+          </h2>
+          <p className='mb-0px'>
+            If you want to make a specific and individually tailored donation for yourself, you are welcome to try the{' '}
+            <Link href='#calculate-footprint'>
+              <a className='font-600'>emissions calculator</a>
+            </Link>
+            . There you can easily calculate your personal{' '}
+            <span>
+              <CoTwo />
+            </span>{' '}
+            emissions for your computer or laptop.
+          </p>
+        </div>
+      )}
     </Section>
   )
 }
