@@ -9,7 +9,6 @@
 
 .greencss-button-reverse {
   &:hover {
-    border: solid 1px $greencss !important;
     transform: translate(-4px, -4px) !important;
     box-shadow: 4px 4px 0px $greencss !important;
   }
