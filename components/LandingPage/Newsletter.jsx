@@ -56,7 +56,9 @@ export default function Newsletter() {
                 placeholder='Your E-Mail'
                 className='border-none text-15px text-white bg-black-3 p-10px w-100per'></input>
               <div className='ml-25px'>
-                <GreenButton onClick={subscribe}>Newsletter</GreenButton>
+                <GreenButton onClick={subscribe} isDefault={false} isReverse={true}>
+                  Newsletter
+                </GreenButton>
               </div>
             </div>
           )}

@@ -72,7 +72,6 @@ const Sponsor = () => {
                   <GreenButton
                     onClick={() => setAmount(buttonAmount)}
                     key={buttonAmount}
-                    className='w-0px px-0px text-greencss'
                     id={`donate-button-amount-${buttonAmount}`}>
                     {buttonAmount}$
                   </GreenButton>

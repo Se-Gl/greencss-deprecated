@@ -75,12 +75,7 @@ export default function Hero() {
           <span
             className='absolute font-regular text-15px text-center sm:display-none md:display-none max-w-31rem'
             style={{ bottom: '150px', left: '120px' }}>
-            <GreenButton
-              hasLink={true}
-              isDefault={false}
-              href='#donation'
-              id='linkedbutton-phone'
-              className='text-greencss hover:text-greencss'>
+            <GreenButton hasLink={true} isDefault={false} href='#donation' id='linkedbutton-phone'>
               contribute
             </GreenButton>
           </span>
