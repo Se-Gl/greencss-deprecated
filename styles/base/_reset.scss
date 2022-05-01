@@ -1,8 +1,8 @@
 @use '../abstracts/color' as c;
 
 html {
-  font-family: 'Omen Motion', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
-    Droid Sans, Helvetica Neue, sans-serif !important;
+  font-family: 'Inter', 'Omen Motion', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
   color: c.$black;
   scroll-behavior: smooth;
 }
