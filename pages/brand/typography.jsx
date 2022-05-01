@@ -21,10 +21,10 @@ export default function typography() {
           <h1 className='text-80px sm:text-50px mb-100px'>greenCSS brand identity: the typography</h1>
           <BrandSection
             title='Typography'
-            description='The typography is as unique, royalty-free, lightweight and easy to use as greenCSS itself. Inspired by the uniqueness, and diversity of Switzerland, it was designed to have maximum impact internationally, as well as virtually. Its name: Omen Motion.'
+            description='The typography is as unique, royalty-free, lightweight and easy to use as greenCSS itself. Inspired by the uniqueness, and diversity of Switzerland, it was designed to have maximum impact internationally, as well as virtually. Its name: Omen Motion. This font is intended to be used for print, flyers, advertising products and similar. However, for web presence "Inter" - a freely available and open-source font - shall be used.'
           />
           <BrandSection isLight={true}>
-            <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
+            <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1 omen'>
               <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
                 <div className='m-auto'>
                   <p className='font-300 py-10px my-0px'>Omen Motion Light</p>
@@ -67,17 +67,17 @@ export default function typography() {
             <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
               <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
                 <div className='m-auto break-words max-w-25rem overflow-hidden py-50px'>
-                  <h3 className='text-black font-700'>Omen Motion Bold</h3>
+                  <h3 className='text-black font-700'>Inter Bold</h3>
                   <p className='font-300 py-10px my-0px'>
-                    Subheaders or texts should use Omen Motion Regular, here the light weight is used.
+                    Subheaders or texts should use Inter Regular, here the light weight is used.
                   </p>
                 </div>
               </div>
               <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem break-words'>
                 <div className='m-auto break-words max-w-25rem overflow-hidden py-50px'>
-                  <h3 className='text-black font-800'>Omen Motion Black</h3>
+                  <h3 className='text-black font-800'>Inter Black</h3>
                   <p className='font-400 py-10px my-0px'>
-                    Subheaders or texts should use Omen Motion Regular, here the regular weight is used.
+                    Subheaders or texts should use Inter Regular, here the regular weight is used.
                   </p>
                 </div>
               </div>
