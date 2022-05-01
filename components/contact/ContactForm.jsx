@@ -100,60 +100,69 @@ export default function ContactForm() {
     }
   }
 
+  const contactItems = [
+    {
+      htmlFor: 'fullname',
+      label: 'Full name',
+      maxLength: 30,
+      type: 'text',
+      value: fullname,
+      onChange: (e) => {
+        setFullname(e.target.value)
+      }
+    },
+    {
+      htmlFor: 'email',
+      label: 'E-mail',
+      maxLength: 30,
+      type: 'email',
+      value: email,
+      onChange: (e) => {
+        setEmail(e.target.value)
+      }
+    },
+    {
+      htmlFor: 'subject',
+      label: 'Subject',
+      maxLength: 30,
+      type: 'text',
+      value: subject,
+      onChange: (e) => {
+        setSubject(e.target.value)
+      }
+    }
+  ]
+
   return (
     <div className='mb-10rem'>
-      <form className='rounded-10px shadow-black-5' onSubmit={handleSubmit} id='contact-form'>
+      <form className='rounded-10px shadow-black-10' onSubmit={handleSubmit} id='contact-form'>
         <div className='px-10px flex flex-col'>
           <h3 className='pt-25px'>Send a message</h3>
-          <label htmlFor='fullname' className='font-600 mt-25px mb-5px text-15px'>
-            Full name<span className='text-red-2'>*</span>
-          </label>
-          <input
-            maxLength='30'
-            type='text'
-            id='fullname'
-            className='border-none text-15px text-black-3 bg-black-10 py-10px'
-            value={fullname}
-            onChange={(e) => {
-              setFullname(e.target.value)
-            }}
-          />
-
-          <label htmlFor='email' className='font-600 mt-25px mb-5px text-15px'>
-            E-mail<span className='text-red-2'>*</span>
-          </label>
-          <input
-            maxLength='30'
-            type='email'
-            id='email'
-            className='border-none text-15px text-black-3 bg-black-10 py-10px'
-            value={email}
-            onChange={(e) => {
-              setEmail(e.target.value)
-            }}
-          />
-
-          <label htmlFor='subject' className='font-600 mt-25px mb-5px text-15px'>
-            Subject<span className='text-red-2'>*</span>
-          </label>
-          <input
-            maxLength='30'
-            type='text'
-            id='subject'
-            className='border-none text-15px text-black-3 bg-black-10 py-10px'
-            value={subject}
-            onChange={(e) => {
-              setSubject(e.target.value)
-            }}
-          />
-
-          <label htmlFor='message' className='font-600 mt-25px mb-5px text-15px'>
+          {contactItems.sort().map((item, index) => {
+            return (
+              <div key={index} className='w-100per mb-25px'>
+                <label htmlFor={item.htmlFor} className='font-600 text-15px'>
+                  {item.label}
+                  <span className='text-red-2'>*</span>
+                </label>
+                <input
+                  maxLength={item.maxLength}
+                  type={item.type}
+                  id={item.htmlFor}
+                  className='border-none text-15px text-black-3 bg-greencss text-white font-600 py-10px w-100per'
+                  value={item.value}
+                  onChange={item.onChange}
+                />
+              </div>
+            )
+          })}
+          <label htmlFor='message' className='font-600 mb-5px text-15px'>
             Message<span className='text-red-2'>*</span>
           </label>
           <textarea
             maxLength='500'
             id='message'
-            className='border-none text-15px text-black-3 bg-black-10 py-10px'
+            className='border-none text-15px text-black-3 bg-greencss text-white font-600 py-10px'
             value={message}
             onChange={(e) => {
               setMessage(e.target.value)

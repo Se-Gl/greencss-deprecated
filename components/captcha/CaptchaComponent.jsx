@@ -13,7 +13,7 @@ export default function CaptchaComponent({ verifyCaptcha, setverifyCaptcha, capt
           maxLength='30'
           type='password'
           id='password'
-          className='border-none text-15px text-black-3 bg-black-10 py-10px'
+          className='border-none text-15px bg-greencss text-white py-10px'
           value={verifyCaptcha}
           onChange={(e) => {
             setverifyCaptcha(e.target.value)
