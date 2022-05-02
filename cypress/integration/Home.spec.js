@@ -6,7 +6,7 @@ describe('Home Screen Unit test', () => {
     cy.get('#phone-image').should('exist')
   })
   it('renders the header', () => {
-    cy.get('main div h1').contains('A classy way to write CSS design', { matchCase: false })
+    cy.get('main div h1').contains('A classy way to write sustainable CSS', { matchCase: false })
   })
   it('renders the correct time in the phone', () => {
     cy.get('#phone-current-time').should('exist', 'not.be.empty')
@@ -22,9 +22,9 @@ describe('Home Screen Unit test', () => {
   })
   it('reveals presentation section with animation', () => {
     cy.get('#presentation').should('exist')
-    cy.get('#competitive').should('exist')
-    cy.get('#animated').should('exist')
-    cy.get('#responsive').should('exist')
+    // cy.get('#competitive').should('exist')
+    // cy.get('#animated').should('exist')
+    // cy.get('#responsive').should('exist')
   })
   it('reveals faq section', () => {
     cy.get('#faq').should('exist').contains('There’s more to know about greenCSS', { matchCase: false })

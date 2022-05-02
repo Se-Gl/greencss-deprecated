@@ -23,7 +23,7 @@ export default function Hero() {
             <div className='m-auto max-w-40rem'>
               <h1 className='font-800 text-white text-46px'>A classy way to write sustainable CSS</h1>
               <p className='text-white'>
-                Styling CSS reimagined - for for everyone. Start to code with zero emission: for your clients, for your
+                Styling CSS reimagined - for everyone. Start to code with zero emission: for your clients, for your
                 creativity and for your planet.
               </p>
               <div className='flex gap-10px'>
@@ -53,39 +53,6 @@ export default function Hero() {
             className='h-50rem absolute bottom-0per md:display-none'
           />
           <HeroPhone loading={loading} />
-          {/* <span
-            className={`absolute font-700 text-40px line-height-105per text-center sm:display-none md:display-none max-w-31rem ${
-              loading === false
-                ? 'clip-inset-in-top animation-duration-800ms animation-delay-100ms animation-forwards opacity-100per'
-                : 'opacity-1per'
-            }`}
-            style={{ bottom: '280px', left: '50px' }}>
-            Develop your carbon free Website
-          </span>
-          <span
-            className={`absolute font-regular text-15px text-center sm:display-none md:display-none max-w-31rem ${
-              loading === false ? 'fade-in animation-duration-800ms animation-forwards opacity-100per' : 'opacity-1per'
-            }`}
-            style={{ bottom: '220px', left: '50px' }}>
-            Do something good while you work - for the environment and for yourself
-          </span>
-          <span
-            className='absolute font-regular text-15px text-center sm:display-none md:display-none max-w-31rem'
-            style={{ bottom: '150px', left: '120px' }}>
-            <GreenButton hasLink={true} isDefault={false} href='#donation' id='linkedbutton-phone'>
-              contribute
-            </GreenButton>
-          </span>
-          <span
-            id='phone-current-time'
-            className='absolute font-bold text-12px sans cursor-default select-none sm:display-none md:display-none'
-            style={{ bottom: '440px', left: '65px' }}>
-            {dateState.toLocaleString('en-US', {
-              hour: 'numeric',
-              minute: 'numeric',
-              hour12: false
-            })}
-          </span> */}
         </div>
       </div>
     </section>

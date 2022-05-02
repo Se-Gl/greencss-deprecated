@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import dynamic from 'next/dynamic'
 import Hero from '@/components/LandingPage/Hero'
 import { getPosts } from '@/lib/posts'
