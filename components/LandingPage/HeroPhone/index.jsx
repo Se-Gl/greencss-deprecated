@@ -1,11 +1,16 @@
 import { useEffect, useState, useContext } from 'react'
-import { GreenButton } from '@/components/reusable/Button'
 import DisplayRangeSlider from './DisplayRangeSlider'
 import DonationContext from '@/utils/DonationContext'
 
 export default function HeroPhone({ loading }) {
-  const { prediction, calculate, finalPrize } = useContext(DonationContext)
+  const { calculate, finalPrize } = useContext(DonationContext)
   let ceiledPrice = Math.ceil(finalPrize)
+
+  let adjustBgColor =
+    (calculate <= 1 && 'text-greencss') ||
+    (calculate <= 50 && 'text-yellow') ||
+    (calculate <= 500 && 'text-red') ||
+    (calculate >= 501 && 'text-magenta')
 
   const [dateState, setDateState] = useState(new Date())
   useEffect(() => {
@@ -25,7 +30,7 @@ export default function HeroPhone({ loading }) {
           style={{ bottom: '210px', left: '80px' }}>
           <h2 className='text-18px lg:text-13px mb-10px text-white font-600'>Calculate your carbon emission</h2>
           <div className='text-greencss font-normal mt-60px'>
-            <span className='text-30px font-bold'>{calculate}</span>
+            <span className={`${adjustBgColor} text-30px font-bold`}>{calculate}</span>
             <span className='text-15px'>kg CO2 per year</span>
           </div>
           <div className='text-greencss font-normal'>
