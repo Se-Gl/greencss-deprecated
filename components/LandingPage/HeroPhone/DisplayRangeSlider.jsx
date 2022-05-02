@@ -3,7 +3,12 @@ import RangeSlider from '../CalculateFootprint/RangeSlider'
 import DonationContext from '@/utils/DonationContext'
 import CoTwo from '../CalculateFootprint/CoTwo'
 
-export default function DisplayRangeSlider({ maxWidth = '' }) {
+export default function DisplayRangeSlider({
+  maxWidth = '',
+  isDefault = true,
+  descriptionClassName = 'mb-0px text-black-10 text-15px',
+  calculateClassName = 'text-black-10 mb-0px'
+}) {
   const { calculate, valueHour, valueWatt, setValueWatt, setValueHour } = useContext(DonationContext)
 
   let adjustBgColor =
@@ -35,19 +40,23 @@ export default function DisplayRangeSlider({ maxWidth = '' }) {
     <div className='m-auto sm:m-0px'>
       {sliders.map((slider, index) => (
         <div key={index} className={maxWidth}>
-          <p className='mb-0px text-black-10 text-15px'>{slider.description}</p>
+          <p className={`${descriptionClassName}`}>{slider.description}</p>
           {slider.slider}
         </div>
       ))}
-      <p className='text-black-10 mb-0px'>
-        You produce{' '}
-        <span className={`${adjustBgColor} text-20px font-600`} id='calculation-result'>
-          {calculate}kg
-        </span>{' '}
-        <CoTwo />
-        per year.*
-      </p>
-      <span className='text-black-10 text-10px'>*Data without guarantee. It is intended as a guidance only.</span>
+      {isDefault && (
+        <>
+          <p className={`${calculateClassName}`}>
+            You produce{' '}
+            <span className={`${adjustBgColor} text-20px font-600`} id='calculation-result'>
+              {calculate}kg
+            </span>{' '}
+            <CoTwo />
+            per year.*
+          </p>
+          <span className='text-black-10 text-10px'>*Data without guarantee. It is intended as a guidance only.</span>
+        </>
+      )}
     </div>
   )
 }

@@ -4,7 +4,7 @@ import DisplayRangeSlider from './DisplayRangeSlider'
 import DonationContext from '@/utils/DonationContext'
 
 export default function HeroPhone({ loading }) {
-  const { prediction, finalPrize } = useContext(DonationContext)
+  const { prediction, calculate, finalPrize } = useContext(DonationContext)
   let ceiledPrice = Math.ceil(finalPrize)
 
   const [dateState, setDateState] = useState(new Date())
@@ -14,35 +14,38 @@ export default function HeroPhone({ loading }) {
     }, 1000)
   }, [])
   return (
-    <div
-      className='absolute w-40rem lg:max-w-31rem sm:display-none md:display-none px-10px'
-      style={{ bottom: '0px', left: '50px' }}>
-      <div className='mx-auto text-center lg:mx-auto'>
+    <div className='w-40rem lg:max-w-31rem sm:display-none md:display-none'>
+      <div className='mx-auto'>
         <div
-          className={`${
+          className={`absolute ${
             loading === false
               ? 'clip-inset-in-top animation-duration-800ms animation-delay-100ms animation-forwards opacity-100per'
               : 'opacity-1per'
-          }`}>
-          <h2 className='text-30px mb-10px'>Calculate your carbon emission</h2>
+          }`}
+          style={{ bottom: '210px', left: '80px' }}>
+          <h2 className='text-18px lg:text-13px mb-10px text-white font-600'>Calculate your carbon emission</h2>
+          <div className='text-greencss font-normal mt-60px'>
+            <span className='text-30px font-bold'>{calculate}</span>
+            <span className='text-15px'>kg CO2 per year</span>
+          </div>
+          <div className='text-greencss font-normal'>
+            <span className='text-30px font-bold'>{ceiledPrice}</span>
+            <span className='text-15px'>USD to compensate</span>
+          </div>
         </div>
-        <DisplayRangeSlider maxWidth='max-w-92per lg:max-w-80per' />
-        {prediction && (
-          <GreenButton
-            hasLink={true}
+        <div className='absolute' style={{ bottom: '0px', left: '80px' }}>
+          <DisplayRangeSlider
             isDefault={false}
-            href='#donation'
-            id='linkedbutton-phone'
-            className='mt-100px lg:mt-5px'>
-            {ceiledPrice > 0 ? `donate USD ${ceiledPrice}$ to zero emission` : 'contribute'}
-          </GreenButton>
-        )}
+            maxWidth='max-w-100per lg:max-w-80per'
+            descriptionClassName='mb-0px text-greencss text-12px font-bold'
+          />
+        </div>
       </div>
 
       <div
         id='phone-current-time'
         className='absolute font-bold text-15px cursor-default select-none sm:display-none md:display-none'
-        style={{ top: '-60px', left: '30px' }}>
+        style={{ bottom: '425px', left: '80px' }}>
         {dateState.toLocaleString('en-US', {
           hour: 'numeric',
           minute: 'numeric',
