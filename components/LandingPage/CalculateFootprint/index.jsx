@@ -1,40 +1,14 @@
-import { useState, useEffect, useContext } from 'react'
+import { useContext } from 'react'
 import Link from 'next/link'
 import Section from '@/components/reusable/Section'
-import RangeSlider from './RangeSlider'
 import VisualChart from './VisualChart'
 import CoTwo from './CoTwo'
 import CalculatePrice from './CalculatePrice'
 import DonationContext from '@/utils/DonationContext'
+import DisplayRangeSlider from '../HeroPhone/DisplayRangeSlider'
 
 export default function CalculateFootprint() {
-  const { calculate, valueHour, valueWatt, setValueWatt, setValueHour } = useContext(DonationContext)
-
-  let adjustBgColor =
-    (calculate <= 1 && 'text-greencss') ||
-    (calculate <= 50 && 'text-yellow') ||
-    (calculate <= 500 && 'text-red') ||
-    (calculate >= 501 && 'text-magenta')
-
-  // map RangeSlider
-  const sliders = [
-    {
-      description: 'How many watts does your computer consume?',
-      slider: <RangeSlider unit='W' max={1000} step={50} value={valueWatt} setValue={setValueWatt} />
-    },
-    {
-      description: 'How many hours per week do you work?',
-      slider: <RangeSlider unit='h' max={100} value={valueHour} setValue={setValueHour} />
-    }
-  ]
-
-  // save set values to localstorage
-  useEffect(() => {
-    localStorage.setItem('valueWatt', JSON.stringify(valueWatt))
-  }, [valueWatt])
-  useEffect(() => {
-    localStorage.setItem('valueHour', JSON.stringify(valueHour))
-  }, [valueHour])
+  const { calculate } = useContext(DonationContext)
 
   return (
     <Section id='calculate-footprint' background='bg-orange-10'>
@@ -55,25 +29,7 @@ export default function CalculateFootprint() {
             </div>
           </div>
           <div className='col-span-1 sm:col-span-2 md:col-span-2 flex'>
-            <div className='m-auto sm:m-0px'>
-              {sliders.map((slider, index) => (
-                <div key={index}>
-                  <p className='mb-0px text-black-10 text-15px'>{slider.description}</p>
-                  {slider.slider}
-                </div>
-              ))}
-              <p className='text-black-10 mt-25px mb-0px'>
-                You produce{' '}
-                <span className={`${adjustBgColor} text-15px font-900`} id='calculation-result'>
-                  {calculate}kg
-                </span>{' '}
-                <CoTwo />
-                per year.*
-              </p>
-              <span className='text-black-10 text-10px'>
-                *Data without guarantee. It is intended as a guidance only.
-              </span>
-            </div>
+            <DisplayRangeSlider />
           </div>
 
           <div className='col-span-2 mx-auto mt-50px max-w-70rem bg-black-1 p-20px rounded-10px'>

@@ -21,6 +21,8 @@ export function DonationProvider({ children }) {
     (((parseFloat(valueWatt) * parseFloat(valueHour) * 4.2) / 1000) * 12 * 0.474).toFixed(1) / 40
   )
 
+  let finalPrize = (Math.ceil(calculate) * 40) / 1000
+
   // check localstorage for prediction
   useEffect(() => {
     const interval = setInterval(() => {
@@ -35,6 +37,7 @@ export function DonationProvider({ children }) {
       value={{
         calculate: calculate,
         finalCalculation: finalCalculation,
+        finalPrize: finalPrize,
         prediction: prediction,
         amount: amount,
         setAmount: setAmount,

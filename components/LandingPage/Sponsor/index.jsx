@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react'
+import { useContext } from 'react'
 import Link from 'next/link'
 import { loadStripe } from '@stripe/stripe-js'
 import axios from 'axios'
@@ -10,10 +10,8 @@ import DonationContext from '@/utils/DonationContext'
 import CoTwo from '@/components/LandingPage/CalculateFootprint/CoTwo'
 
 const Sponsor = () => {
-  const { calculate, amount, setAmount, prediction } = useContext(DonationContext)
-
-  let calculateFinalPrice = Math.ceil(calculate) / 40
-  let ceiledPrice = Math.ceil(calculateFinalPrice)
+  const { amount, setAmount, prediction, finalPrize } = useContext(DonationContext)
+  let ceiledPrice = Math.ceil(finalPrize)
 
   const toast = useToast()
   const defaultAmounts = [10, 25, 100]

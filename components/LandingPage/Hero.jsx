@@ -1,6 +1,7 @@
 import { GreenButton } from '@/components/reusable/Button'
 import { useEffect, useState } from 'react'
 import ReusableModal from '../modal/ReusableModal'
+import HeroPhone from './HeroPhone'
 
 export default function Hero() {
   const [loading, setLoading] = useState(true)
@@ -8,13 +9,6 @@ export default function Hero() {
     if (typeof window !== 'undefined') {
       window.onload = setLoading(false)
     }
-  }, [])
-
-  const [dateState, setDateState] = useState(new Date())
-  useEffect(() => {
-    setInterval(() => {
-      setDateState(new Date())
-    }, 1000)
   }, [])
 
   return (
@@ -56,7 +50,8 @@ export default function Hero() {
             alt='greenCSS Hero Image Iphone'
             className='h-50rem absolute bottom-0per md:display-none'
           />
-          <span
+          <HeroPhone loading={loading} />
+          {/* <span
             className={`absolute font-700 text-40px line-height-105per text-center sm:display-none md:display-none max-w-31rem ${
               loading === false
                 ? 'clip-inset-in-top animation-duration-800ms animation-delay-100ms animation-forwards opacity-100per'
@@ -88,7 +83,7 @@ export default function Hero() {
               minute: 'numeric',
               hour12: false
             })}
-          </span>
+          </span> */}
         </div>
       </div>
     </section>
