@@ -28,7 +28,7 @@ export default function HeroPhone({ loading }) {
               : 'opacity-1per'
           }`}
           style={{ bottom: '210px', left: '80px' }}>
-          <h2 className='text-18px lg:text-13px mb-10px text-white font-600'>Calculate your carbon emission</h2>
+          <h2 className='text-18px lg:text-13px mb-10px text-greencss font-600'>Calculate your carbon emission</h2>
           <div className='text-greencss font-normal mt-60px'>
             <span className={`${adjustBgColor} text-30px font-bold`}>{calculate}</span>
             <span className='text-15px'>kg CO2 per year</span>

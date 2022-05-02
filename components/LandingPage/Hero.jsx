@@ -15,14 +15,16 @@ export default function Hero() {
     <section
       id='hero'
       className={`${loading === false ? 'fade-in animate animation-forwards opacity-100per' : 'opacity-1per'}`}>
-      <div className='m-auto grid gap-30px grid-col-2 sm:grid-col-1 md:grid-col-1 bg-greencss rounded-20px'>
+      <div
+        className='m-auto grid gap-30px grid-col-2 sm:grid-col-1 md:grid-col-1 bg-greencss'
+        style={{ borderBottomLeftRadius: '100px' }}>
         <div className='col-span-1 h-75vh'>
           <div className='flex sm:max-h-75vh md:max-h-75vh h-75vh'>
             <div className='m-auto max-w-40rem'>
-              <h1 className='font-800 text-white text-63px'>A classy way to write CSS design</h1>
+              <h1 className='font-800 text-white text-46px'>A classy way to write sustainable CSS</h1>
               <p className='text-white'>
-                Styling CSS reimagined - for for everyone. Start to code with zero emission: for your creativity and
-                your planet.
+                Styling CSS reimagined - for for everyone. Start to code with zero emission: for your clients, for your
+                creativity and for your planet.
               </p>
               <div className='flex gap-10px'>
                 <ReusableModal isHero={true} />
