@@ -6,6 +6,7 @@ import { DonationProvider } from '@/utils/DonationContext'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 const Presentation = dynamic(() => import('@/components/LandingPage/Presentation'))
+const Service = dynamic(() => import('@/components/LandingPage/Service'))
 const CalculateFootprint = dynamic(() => import('@/components/LandingPage/CalculateFootprint'))
 const Sponsor = dynamic(() => import('@/components/LandingPage/Sponsor'))
 const News = dynamic(() => import('@/components/LandingPage/News'))
@@ -20,6 +21,7 @@ export default function HomePage({ posts }) {
         <DonationProvider>
           <Hero />
           <Presentation />
+          <Service />
           <CalculateFootprint />
           <Sponsor />
           <News posts={posts} />

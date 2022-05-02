@@ -26,6 +26,9 @@ describe('Home Screen Unit test', () => {
     // cy.get('#animated').should('exist')
     // cy.get('#responsive').should('exist')
   })
+  it('reveals service section', () => {
+    cy.get('#service').should('exist')
+  })
   it('reveals faq section', () => {
     cy.get('#faq').should('exist').contains('There’s more to know about greenCSS', { matchCase: false })
   })

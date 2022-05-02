@@ -31,7 +31,7 @@ export default function BlogCard({ post, index }) {
           ) : (
             <div
               className={`min-h-40rem w-100per rounded-10px bg-cover bg-no-repeat bg-center ${
-                isDark && 'border-1px border-solid border-dark'
+                isDark && 'border-1px border-solid border-black'
               }`}
               style={{ backgroundImage: `url(${post.frontmatter.cover_image})`, backgroundColor: `${vibrantColor}` }}
               id='blog-card'>

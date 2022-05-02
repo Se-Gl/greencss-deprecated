@@ -14,7 +14,7 @@ plainText: ' greencss css class example minimum value maximum value step line-he
 | _greenCSS_              | CSS class example                          | minimum Value | maximum Value | Step  |
 | ----------------------- | ------------------------------------------ | ------------- | ------------- | ----- |
 | line-height-{number}per | .line-height-300per { line-height: 300%; } | 0             | 300           | +1per |
-| line-height-{number}    | .line-height-300 { line-height: 50; }      | 0             | 100           | +1    |
+| line-height-{number}    | .line-height-50 { line-height: 50; }       | 0             | 100           | +1    |
 
 ## Custom Sizing variables
 
