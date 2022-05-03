@@ -46,12 +46,12 @@ export default function Layout({
         <meta name='og:description' content={description} />
 
         {/* Apple & Favicon Tags */}
-        <link rel='apple-touch-icon' href='/images/icons/apple-touch-icon.png' />
-        <link rel='apple-touch-icon' sizes='16x16' href='/images/icons/favicon-16x16.png' />
-        <link rel='apple-touch-icon' sizes='32x32' href='/images/icons/favicon-32x32.png' />
-        <link rel='apple-touch-icon' sizes='180x180' href='/images/icons/apple-touch-icon.png' />
-        <link rel='mask-icon' color='#fdfdfd' href='/images/brand/greencss_logo_dark.svg' />
-        <link rel='icon' type='image/svg+xml' href='/images/icons/favicon.svg' />
+        <link rel='apple-touch-icon' href={`${NEXT_URL}/images/greencss_logo_dark.png`} />
+        <link rel='apple-touch-icon' sizes='16x16' href={`${NEXT_URL}/images/icons/favicon-16x16.png`} />
+        <link rel='apple-touch-icon' sizes='32x32' href={`${NEXT_URL}/images/icons/favicon-32x32.png`} />
+        <link rel='apple-touch-icon' sizes='180x180' href={`${NEXT_URL}/images/icons/apple-touch-icon.png`} />
+        <link rel='mask-icon' color='#fdfdfd' href={`${NEXT_URL}/images/brand/greencss_logo_dark.svg`} />
+        <link rel='icon' type='image/svg+xml' href={`${NEXT_URL}/images/icons/favicon.svg`} />
 
         {/* Meta Tags for HTML pages on Mobile */}
         <meta name='viewport' content='width=device-width, minimum-scale=1, initial-scale=1.0' />
@@ -80,11 +80,11 @@ export default function Layout({
 }
 
 Layout.defaultProps = {
-  title: 'The classy way to write design.',
+  title: 'A classy way to write sustainable CSS',
   keywords: 'HTML, CSS, greenCSS, css library, css framework',
   description:
-    'greenCSS is an intuitive dynamic animated CSS library for HTML5 and frameworks like VueJS, NextJs, React, or Angular. Over 100.000 CSS classes cover all your needs. Yet, completely lightweight, as unused classes are purged before production.',
+    'greenCSS is a sustainable cascade style sheet (CSS) library that is intuitive to use and provides zero-emission coding. The vision is to reduce our carbon footprint and simultaneously create beautiful new web applications. For everyone, for every framework!',
   author: 'Severin Glaser',
   url: '',
-  image: '/images/greenCSS-default.png'
+  image: '/images/greencss_logo_dark.png'
 }
