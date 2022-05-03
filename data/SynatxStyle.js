@@ -91,7 +91,7 @@ export const VsStyle = {
     color: '#e98f1f'
   },
   number: {
-    color: '#8006f9'
+    color: '#7bb6f9'
   },
   selector: {
     color: '#a1ff0a'

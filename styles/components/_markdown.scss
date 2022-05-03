@@ -5,7 +5,7 @@ ol {
   li {
     &::before {
       content: '\2022';
-      color: $purple;
+      color: $greencss;
       display: inline-block;
       width: 2rem;
       margin-left: -2rem;
