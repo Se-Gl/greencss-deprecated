@@ -5,6 +5,7 @@ import matter from 'gray-matter'
 import { getPosts } from '@/lib/posts'
 import { sortAlphabetically } from '@/utils/SortBy'
 import Loader from '@/components/logo/Loader'
+import LayoutTitle from '@/components/reusable/LayoutTitle'
 
 const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), {
   ssr: false,
@@ -21,32 +22,33 @@ export default function DocsPostPage({
   categories
 }) {
   return (
-    <Layout
-      title={`How to use ${title} CSS class`}
-      description={excerpt}
-      image={cover_image}
-      url={`docs/${slug}`}
-      keywords={`${category}, ${keywords} greenCSS, css, omen css`}
-      author={author}
-      className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'
-      hasCanonical={true}>
-      <DevelopmentToClipboard content={content} />
-      <SlugComponent
-        title={title}
-        excerpt={excerpt}
-        category={category}
-        keywords={keywords}
-        date={date}
-        cover_image={cover_image}
+    <LayoutTitle title={`How to use ${title} CSS class`}>
+      <Layout
+        description={excerpt}
+        image={cover_image}
+        url={`docs/${slug}`}
+        keywords={`${category}, ${keywords} greenCSS, css, omen css`}
         author={author}
-        content={content}
-        slug={slug}
-        isBlog={isBlog}
-        posts={posts}
-        categories={categories}
-        plainText={plainText}
-      />
-    </Layout>
+        className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'
+        hasCanonical={true}>
+        <DevelopmentToClipboard content={content} />
+        <SlugComponent
+          title={title}
+          excerpt={excerpt}
+          category={category}
+          keywords={keywords}
+          date={date}
+          cover_image={cover_image}
+          author={author}
+          content={content}
+          slug={slug}
+          isBlog={isBlog}
+          posts={posts}
+          categories={categories}
+          plainText={plainText}
+        />
+      </Layout>
+    </LayoutTitle>
   )
 }
 

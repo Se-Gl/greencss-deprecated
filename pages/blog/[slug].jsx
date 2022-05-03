@@ -3,6 +3,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Loader from '@/components/logo/Loader'
+import LayoutTitle from '@/components/reusable/LayoutTitle'
 
 const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), {
   ssr: false,
@@ -17,29 +18,31 @@ export default function BlogPostPage({
   slug
 }) {
   return (
-    <Layout
-      title={title}
-      description={excerpt}
-      image={cover_image}
-      url={`blog/${slug}`}
-      keywords={`${category}, ${keywords} greenCSS, css, omen css`}
-      author={author}
-      className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'
-      hasCanonical={true}>
-      <DevelopmentToClipboard content={content} />
-      <SlugComponent
+    <LayoutTitle title={title}>
+      <Layout
         title={title}
-        excerpt={excerpt}
-        category={category}
-        keywords={keywords}
-        date={date}
-        cover_image={cover_image}
+        description={excerpt}
+        image={cover_image}
+        url={`blog/${slug}`}
+        keywords={`${category}, ${keywords} greenCSS, css, omen css`}
         author={author}
-        content={content}
-        slug={slug}
-        isBlog={isBlog}
-      />
-    </Layout>
+        className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'
+        hasCanonical={true}>
+        <DevelopmentToClipboard content={content} />
+        <SlugComponent
+          title={title}
+          excerpt={excerpt}
+          category={category}
+          keywords={keywords}
+          date={date}
+          cover_image={cover_image}
+          author={author}
+          content={content}
+          slug={slug}
+          isBlog={isBlog}
+        />
+      </Layout>
+    </LayoutTitle>
   )
 }
 

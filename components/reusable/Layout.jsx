@@ -29,7 +29,6 @@ export default function Layout({
         <meta name='publisher' content={author} />
 
         {/* Search Engine Optimization Meta Tags */}
-        <title>{title} | greenCSS</title>
         <meta name='description' content={description} />
         <meta name='keywords' content={keywords} />
         <meta name='robots' content='index,follow' />
