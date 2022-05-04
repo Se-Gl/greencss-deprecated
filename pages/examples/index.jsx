@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic'
 import BrandCard from '@/components/brand/BrandCard'
 import HandCrafted from '@/components/icon/Animation/Handcrafted'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
-import LayoutTitle from '@/components/reusable/LayoutTitle'
+import LayoutTitle from '@/components/reusable/SEO'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
@@ -19,13 +19,12 @@ export default function ExamplesIndexPage() {
   ]
 
   return (
-    <LayoutTitle title='Handmade, crafted examples by greenCSS'>
-      <Layout
-        className='container min-h-100vh relative z-2'
-        description='The collaboration of design and code plays an important role, especially in web development. Check the full selection, explore countless examples such as animations or tutorial examples.'
-        url='examples'
-        keywords='Examples, Animation, handmade css animation, tutorial examples, omen css'
-        id='examples-index'>
+    <LayoutTitle
+      title='Handmade, crafted examples by greenCSS'
+      description='The collaboration of design and code plays an important role, especially in web development. Check the full selection, explore countless examples such as animations or tutorial examples.'
+      url='examples'
+      keywords='Examples, Animation, handmade css animation, tutorial examples, omen css'>
+      <Layout className='container min-h-100vh relative z-2' id='examples-index'>
         <div id='examples-index'>
           <SubSectionHero
             header='Handmade, crafted examples'

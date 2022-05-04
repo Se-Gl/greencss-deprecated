@@ -3,7 +3,7 @@ import Hero from '@/components/LandingPage/Hero'
 import { getPosts } from '@/lib/posts'
 import { sortByDate } from '@/utils/SortBy'
 import { DonationProvider } from '@/utils/DonationContext'
-import LayoutTitle from '@/components/reusable/LayoutTitle'
+import SEO from '@/components/reusable/SEO'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 const Presentation = dynamic(() => import('@/components/LandingPage/Presentation'))
@@ -17,7 +17,7 @@ const Faq = dynamic(() => import('@/components/LandingPage/Faq/Faq'))
 
 export default function HomePage({ posts }) {
   return (
-    <LayoutTitle>
+    <SEO>
       <div className='overflow-x-hidden'>
         <Layout className='container min-h-100vh relative z-2 bg-white'>
           <DonationProvider>
@@ -33,7 +33,7 @@ export default function HomePage({ posts }) {
           </DonationProvider>
         </Layout>
       </div>
-    </LayoutTitle>
+    </SEO>
   )
 }
 

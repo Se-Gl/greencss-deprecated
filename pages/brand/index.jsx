@@ -2,18 +2,18 @@ import dynamic from 'next/dynamic'
 import BrandCard from '@/components/brand/BrandCard'
 import BrandHero from '@/components/icon/Brand/BrandHero'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
-import LayoutTitle from '@/components/reusable/LayoutTitle'
+import SEO from '@/components/reusable/SEO'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function BrandHome() {
   return (
-    <LayoutTitle title='greenCSS Brand Book | Styleguide | Corporate Identity'>
-      <Layout
-        className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
-        description='A Brand Book - the right way to get to know a story by exploring a style guide.'
-        url='brand'
-        keywords='Styleguide, Brand Book, greenCSS, Design, Corporate Identity, omen css'>
+    <SEO
+      title='greenCSS Brand Book | Styleguide | Corporate Identity'
+      description='A Brand Book - the right way to get to know a story by exploring a style guide.'
+      url='brand'
+      keywords='Styleguide, Brand Book, greenCSS, Design, Corporate Identity, omen css'>
+      <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'>
         <div className='min-w-100per relative' id='brand-intro'>
           <SubSectionHero
             header='A Brand Book - the right way to get to know a story'
@@ -39,6 +39,6 @@ export default function BrandHome() {
           </div>
         </div>
       </Layout>
-    </LayoutTitle>
+    </SEO>
   )
 }

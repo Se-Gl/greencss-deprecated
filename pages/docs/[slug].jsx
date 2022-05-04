@@ -5,7 +5,7 @@ import matter from 'gray-matter'
 import { getPosts } from '@/lib/posts'
 import { sortAlphabetically } from '@/utils/SortBy'
 import Loader from '@/components/logo/Loader'
-import LayoutTitle from '@/components/reusable/LayoutTitle'
+import SEO from '@/components/reusable/SEO'
 
 const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), {
   ssr: false,
@@ -22,15 +22,15 @@ export default function DocsPostPage({
   categories
 }) {
   return (
-    <LayoutTitle title={`How to use ${title} CSS class`}>
-      <Layout
-        description={excerpt}
-        image={cover_image}
-        url={`docs/${slug}`}
-        keywords={`${category}, ${keywords} greenCSS, css, omen css`}
-        author={author}
-        className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'
-        hasCanonical={true}>
+    <SEO
+      title={`How to use ${title} CSS class`}
+      hasCanonical={true}
+      description={excerpt}
+      image={cover_image}
+      url={`docs/${slug}`}
+      keywords={`${category}, ${keywords} greenCSS, css, omen css`}
+      author={author}>
+      <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'>
         <DevelopmentToClipboard content={content} />
         <SlugComponent
           title={title}
@@ -48,7 +48,7 @@ export default function DocsPostPage({
           plainText={plainText}
         />
       </Layout>
-    </LayoutTitle>
+    </SEO>
   )
 }
 

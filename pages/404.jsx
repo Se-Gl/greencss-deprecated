@@ -5,7 +5,7 @@ import SubSectionHero from '@/components/reusable/SubSectionHero'
 import { NEXT_URL } from '@/config/index'
 import ReusableModal from '@/components/modal/ReusableModal'
 import { GreenButton } from '@/components/reusable/Button'
-import LayoutTitle from '@/components/reusable/LayoutTitle'
+import SEO from '@/components/reusable/SEO'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
@@ -13,11 +13,12 @@ export default function ForOhFor() {
   const { asPath } = useRouter()
 
   return (
-    <LayoutTitle title='greenCSS 404 - Something has gone terribly wrong'>
-      <Layout
-        description='It seems that this page has been lost somewhere in the WWW. Maybe you should use the search function.'
-        url={NEXT_URL + asPath}
-        keywords='404, not found, error, sorry'>
+    <SEO
+      title='greenCSS 404 - Something has gone terribly wrong'
+      description='It seems that this page has been lost somewhere in the WWW. Maybe you should use the search function.'
+      url={NEXT_URL + asPath}
+      keywords='404, not found, error, sorry'>
+      <Layout>
         <div id='404'>
           <SubSectionHero
             header='Something has gone terribly wrong'
@@ -33,6 +34,6 @@ export default function ForOhFor() {
           </div>
         </div>
       </Layout>
-    </LayoutTitle>
+    </SEO>
   )
 }

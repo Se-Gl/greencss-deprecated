@@ -1,19 +1,19 @@
 import dynamic from 'next/dynamic'
 import HandCrafted from '@/components/icon/Animation/Handcrafted'
 import { GreenButton } from '@/components/reusable/Button'
-import LayoutTitle from '@/components/reusable/LayoutTitle'
+import SEO from '@/components/reusable/SEO'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function AnimationIndexPage() {
   return (
-    <LayoutTitle title='Handmade, crafted animations by greenCSS'>
+    <SEO
+      title='Handmade, crafted animations by greenCSS'
+      description='The collaboration of design and code plays an important role, especially in web development. Check the full selection, including animation examples.'
+      url='docs/animation'
+      keywords='Animation, handmade css animation, reusable animation, omen css'>
       <div className='overflow-x-hidden'>
-        <Layout
-          className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'
-          description='The collaboration of design and code plays an important role, especially in web development. Check the full selection, including animation examples.'
-          url='docs/animation'
-          keywords='Animation, handmade css animation, reusable animation, omen css'>
+        <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'>
           <div className='mt-10rem min-w-100per relative' id='animation-main'>
             <div className='flex'>
               <div className='mr-auto hidden'></div>
@@ -40,6 +40,6 @@ export default function AnimationIndexPage() {
           </div>
         </Layout>
       </div>
-    </LayoutTitle>
+    </SEO>
   )
 }

@@ -4,18 +4,18 @@ import BrandSection from '@/components/brand/BrandSection'
 import Summary from '@/components/brand/Summary'
 import LogoDark from '@/components/icon/Brand/LogoDark'
 import { BackButton, GreenButton } from '@/components/reusable/Button'
-import LayoutTitle from '@/components/reusable/LayoutTitle'
+import SEO from '@/components/reusable/SEO'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function typography() {
   return (
-    <LayoutTitle title='Typography Brand Book | Styleguide | Corporate Identity'>
-      <Layout
-        className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
-        description='The brand system features four core elements - typography'
-        url='brand/typography'
-        keywords='Typography, Styleguide, Brand Book, greenCSS, Design, Corporate Identity, omen css'>
+    <SEO
+      title='Typography Brand Book | Styleguide | Corporate Identity'
+      description='The brand system features four core elements - typography'
+      url='brand/typography'
+      keywords='Typography, Styleguide, Brand Book, greenCSS, Design, Corporate Identity, omen css'>
+      <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'>
         <div className='min-w-100per relative' id='brand-typography-page'>
           <BackButton className='mb-50px'>Back</BackButton>
           <div className='mb-10rem'>
@@ -222,6 +222,6 @@ export default function typography() {
           </div>
         </div>
       </Layout>
-    </LayoutTitle>
+    </SEO>
   )
 }

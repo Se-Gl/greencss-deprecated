@@ -9,18 +9,18 @@ import { getPosts } from '@/lib/posts'
 import BlogHero from '@/components/icon/Blog/BlogHero'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
 import { sortByDate } from '@/utils/SortBy'
-import LayoutTitle from '@/components/reusable/LayoutTitle'
+import SEO from '@/components/reusable/SEO'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function BlogIndex({ posts, numPages, currentPage }) {
   return (
-    <LayoutTitle title='A Blog - the right way to tell a story | greenCSS Blog'>
-      <Layout
-        className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
-        description='Explore the blog posts, to learn more about the latest tips and tricks.'
-        url='blog'
-        keywords='Blog, write, news, updates, css, greenCSS'>
+    <SEO
+      title='A Blog - the right way to tell a story | greenCSS Blog'
+      description='Explore the blog posts, to learn more about the latest tips and tricks.'
+      url='blog'
+      keywords='Blog, write, news, updates, css, greenCSS'>
+      <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'>
         <div className='min-w-100per relative'>
           <SubSectionHero
             header='A Blog - the right way to write a story'
@@ -35,7 +35,7 @@ export default function BlogIndex({ posts, numPages, currentPage }) {
           <Pagination currentPage={currentPage} numPages={numPages} />
         </div>
       </Layout>
-    </LayoutTitle>
+    </SEO>
   )
 }
 

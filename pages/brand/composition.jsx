@@ -3,18 +3,18 @@ import BrandBadExample from '@/components/brand/BrandBadExample'
 import BrandSection from '@/components/brand/BrandSection'
 import Summary from '@/components/brand/Summary'
 import { BackButton } from '@/components/reusable/Button'
-import LayoutTitle from '@/components/reusable/LayoutTitle'
+import SEO from '@/components/reusable/SEO'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function composition() {
   return (
-    <LayoutTitle title='Composition Brand Book | Styleguide'>
-      <Layout
-        className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
-        description='The brand system features four core elements - composition'
-        url='brand/composition'
-        keywords='Composition, brand composition, image composition, Brand Book, greenCSS, Design, Corporate Identity'>
+    <SEO
+      title='Composition Brand Book | Styleguide'
+      description='The brand system features four core elements - composition'
+      url='brand/composition'
+      keywords='Composition, brand composition, image composition, Brand Book, greenCSS, Design, Corporate Identity'>
+      <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'>
         <div className='min-w-100per relative' id='composition-colour-page'>
           <BackButton className='mb-50px'>Back</BackButton>
           <div className='mb-10rem'>
@@ -253,6 +253,6 @@ export default function composition() {
           </div>
         </div>
       </Layout>
-    </LayoutTitle>
+    </SEO>
   )
 }

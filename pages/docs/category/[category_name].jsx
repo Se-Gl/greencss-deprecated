@@ -10,18 +10,18 @@ import SideBar from '@/components/category/SideBar'
 import SubSectionHero from '@/components/reusable/SubSectionHero'
 import SlugDocsHero from '@/components/icon/Docs/SlugDocsHero'
 import { sortAlphabetically } from '@/utils/SortBy'
-import LayoutTitle from '@/components/reusable/LayoutTitle'
+import SEO from '@/components/reusable/SEO'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function DocsCategorySlugPage({ posts, categoryName, categories }) {
   return (
-    <LayoutTitle title={`Documentation - ${categoryName}`}>
-      <Layout
-        className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'
-        description={`greenCSS documentation - get an overview about the category ${categoryName}, its css classes and how to apply them.`}
-        url='docs'
-        keywords='docs, documentation, information, search, css'>
+    <SEO
+      title={`Documentation - ${categoryName}`}
+      description={`greenCSS documentation - get an overview about the category ${categoryName}, its css classes and how to apply them.`}
+      url='docs'
+      keywords='docs, documentation, information, search, css'>
+      <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'>
         <div className='grid grid-col-12 gap-30px'>
           <div
             className='overflow-y-scroll sticky top-20per max-h-75vh col-span-3 sm:display-none md:display-none'
@@ -48,7 +48,7 @@ export default function DocsCategorySlugPage({ posts, categoryName, categories }
           </div>
         </div>
       </Layout>
-    </LayoutTitle>
+    </SEO>
   )
 }
 

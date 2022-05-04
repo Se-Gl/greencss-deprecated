@@ -5,7 +5,7 @@ import matter from 'gray-matter'
 import { getPosts } from '@/lib/posts'
 import SideBar from '@/components/category/SideBar'
 import { sortAlphabetically } from '@/utils/SortBy'
-import LayoutTitle from '@/components/reusable/LayoutTitle'
+import SEO from '@/components/reusable/SEO'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 const SyntaxComponent = dynamic(() => import('@/components/markdown/SyntaxComponent'))
@@ -28,11 +28,12 @@ const syntax = [
 
 export default function DocsCategoryPage({ categories, posts }) {
   return (
-    <LayoutTitle title='greenCSS documentation - an overview'>
-      <Layout
-        description='Docs - the right way to get to know the greenCSS by browsing the documentation. Search by categories. Get to know greenCSS and start writing design.'
-        url='docs'
-        keywords='docs, documentation, information, search, css'>
+    <SEO
+      title='greenCSS documentation - an overview'
+      description='Docs - the right way to get to know the greenCSS by browsing the documentation. Search by categories. Get to know greenCSS and start writing design.'
+      url='docs'
+      keywords='docs, documentation, information, search, css'>
+      <Layout>
         <div className='grid grid-col-12 gap-30px'>
           <div
             className='overflow-y-scroll sticky top-20per max-h-75vh col-span-3 sm:display-none md:display-none'
@@ -66,7 +67,7 @@ export default function DocsCategoryPage({ categories, posts }) {
           </div>
         </div>
       </Layout>
-    </LayoutTitle>
+    </SEO>
   )
 }
 

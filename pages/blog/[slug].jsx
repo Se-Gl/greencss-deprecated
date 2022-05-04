@@ -3,7 +3,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Loader from '@/components/logo/Loader'
-import LayoutTitle from '@/components/reusable/LayoutTitle'
+import SEO from '@/components/reusable/SEO'
 
 const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), {
   ssr: false,
@@ -18,16 +18,15 @@ export default function BlogPostPage({
   slug
 }) {
   return (
-    <LayoutTitle title={title}>
-      <Layout
-        title={title}
-        description={excerpt}
-        image={cover_image}
-        url={`blog/${slug}`}
-        keywords={`${category}, ${keywords} greenCSS, css, omen css`}
-        author={author}
-        className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'
-        hasCanonical={true}>
+    <SEO
+      title={title}
+      hasCanonical={true}
+      description={excerpt}
+      image={cover_image}
+      url={`blog/${slug}`}
+      keywords={`${category}, ${keywords} greenCSS, css, omen css`}
+      author={author}>
+      <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh'>
         <DevelopmentToClipboard content={content} />
         <SlugComponent
           title={title}
@@ -42,7 +41,7 @@ export default function BlogPostPage({
           isBlog={isBlog}
         />
       </Layout>
-    </LayoutTitle>
+    </SEO>
   )
 }
 
