@@ -94,7 +94,7 @@ const Sponsor = () => {
         }
       />
       {!prediction && (
-        <div className='max-w-50rem m-auto'>
+        <div className='max-w-50rem m-auto pt-50px'>
           <h2>
             Have you heard about our <span className='text-greencss'>emission calculator</span>?
           </h2>
