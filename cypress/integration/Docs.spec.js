@@ -27,7 +27,7 @@ describe('Individual Docs Screen Unit test', () => {
     cy.visit('http://localhost:3000/docs/category/activate')
   })
   it('renders the dynamic section', () => {
-    cy.get('#activate-basic-usage').should('be.visible').should('exist')
+    cy.get('#activate-basic-usage').should('exist')
   })
   it('renders the header', () => {
     cy.get('h1').should('be.visible').should('exist').contains('Browse by category: activate', { matchCase: false })

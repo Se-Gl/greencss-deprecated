@@ -17,7 +17,6 @@ export default function ContactPage() {
           <SubSectionHero
             header='Contact - the right way to get to know each other.'
             subheader='Whether it is constructive feedback, negative experiences, gratitude, questions, suggestions, feature requests or simply boredom.'
-            isContact={true}
             illustration={<ContactForm />}
           />
         </div>

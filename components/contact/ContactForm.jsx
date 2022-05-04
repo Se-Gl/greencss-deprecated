@@ -134,8 +134,11 @@ export default function ContactForm() {
   ]
 
   return (
-    <div className='mb-10rem'>
-      <form className='rounded-10px shadow-black-10' onSubmit={handleSubmit} id='contact-form'>
+    <div className='mb-10rem bg-white'>
+      <form
+        className='rounded-10px shadow-small-black-10 sm:shadow-transparent md:shadow-transparent'
+        onSubmit={handleSubmit}
+        id='contact-form'>
         <div className='px-10px flex flex-col'>
           <h3 className='pt-25px'>Send a message</h3>
           {contactItems.sort().map((item, index) => {

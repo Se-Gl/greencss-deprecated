@@ -4,7 +4,7 @@ export default function CaptchaComponent({ verifyCaptcha, setverifyCaptcha, capt
   return (
     <div className='flex mt-25px min-h-50px'>
       <Captcha setWord={setCaptcha} />
-      <div className='display-block w-100px'>
+      <div className='display-block w-100per min-w-50px'>
         <label htmlFor='captcha' className='font-600 mt-25px mb-5px text-15px'>
           Captcha<span className='text-red-2'>*</span>
         </label>
