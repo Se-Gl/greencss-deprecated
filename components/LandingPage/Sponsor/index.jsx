@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useContext } from 'react'
 import Link from 'next/link'
 import { loadStripe } from '@stripe/stripe-js'
@@ -14,7 +15,7 @@ const Sponsor = () => {
   let ceiledPrice = Math.ceil(finalPrize)
 
   const toast = useToast()
-  const defaultAmounts = [10, 25, 100]
+  // const defaultAmounts = [ceiledPrice, 10, 25, 100]
   // stripe
   const createCheckOutSession = async () => {
     if (amount <= 1 && amount > 1000000) {
@@ -39,6 +40,33 @@ const Sponsor = () => {
     }
   }
 
+  const individualtAmounts = [
+    {
+      header: prediction ? 'Individual' : 'Custom',
+      description: 'tailored for you',
+      amount: prediction ? ceiledPrice : null,
+      imageUrl: prediction ? '/images/landingpage/donation/individual.webp' : '/images/landingpage/donation/custom.webp'
+    },
+    {
+      header: 'Tier I',
+      description: 'for the community.',
+      amount: 10,
+      imageUrl: '/images/landingpage/donation/Tier1.webp'
+    },
+    {
+      header: 'Tier II',
+      description: 'for the community And more',
+      amount: 25,
+      imageUrl: '/images/landingpage/donation/Tier2.webp'
+    },
+    {
+      header: 'Tier III',
+      description: 'for the community And beyond',
+      amount: 100,
+      imageUrl: '/images/landingpage/donation/Tier3.webp'
+    }
+  ]
+
   return (
     <Section id='donation' background='bg-green-9'>
       <SubSectionHero
@@ -50,45 +78,87 @@ const Sponsor = () => {
         subheader='In cooperation with greenCSS partners, global projects are supported in order to minimize the CO2 emissions. Every cent goes directly to a green project. You want to learn more? Subscribe to the newsletter and receive in real time which projects are currently supported.'
         illustration={
           <div className='mx-25px sm:mx-0px md:mx-0px'>
-            <div className='flex relative'>
-              <input
-                type='number'
-                id='donate-amount'
-                placeholder='Choose your own donation'
-                value={amount}
-                min='1'
-                max='999999'
-                className='border-none text-15px text-white bg-greencss-3 p-10px w-100per mb-25px accent-green'
-                onChange={(e) => setAmount(parseInt(e.target.value))}></input>
-              <p className='mb-0px absolute text-15px text-greencss-10' style={{ right: '30px', top: '10px' }}>
-                USD
-              </p>
+            <div className='min-h-40px max-w-12rem bg-white rounded-20px'>
+              <div className='flex px-20px py-10px mb-10px'>
+                <div className='bg-greencss h-5px w-5px rounded-10px my-auto mr-10px'></div>
+                <span className='capitalize font-bold text-15px'>support</span>
+              </div>
             </div>
-            <div className='justify-center sm:block'>
-              <div className='flex'>
-                {defaultAmounts.map((buttonAmount) => (
-                  <GreenButton
-                    onClick={() => setAmount(buttonAmount)}
-                    key={buttonAmount}
-                    id={`donate-button-amount-${buttonAmount}`}>
-                    {buttonAmount}$
-                  </GreenButton>
-                ))}
-              </div>
-              <div className='flex justify-center mt-25px'>
-                {amount >= 1 && amount < 1000000 ? (
-                  <GreenButton onClick={createCheckOutSession} isDefault={false} isReverse={true} id='donate-button'>
-                    {amount <= 0 ? 'donate' : `donate ${amount}$`}
-                  </GreenButton>
-                ) : (
+            <p className='mb-0px ml-25px text-15px'>individual</p>
+            <p className='mb-25px ml-25px text-15px'>custom</p>
+
+            <div className='grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
+              {individualtAmounts.map((cart, index) =>
+                cart.amount >= 1 && cart.amount < 1000000 ? (
                   <button
-                    disabled={true}
-                    id='donate-button-disabled'
-                    className='cursor-not-allowed flex py-10px px-50px font-bold rounded-20px my-auto text-center justify-center items-center m-auto text-15px text-greencss bg-yellow-3'>
-                    invalid amount
+                    key={index}
+                    onMouseEnter={() => setAmount(cart.amount)}
+                    onClick={createCheckOutSession}
+                    id={`donate-cart-amount-${cart.amount}`}
+                    className='min-h-24rem min-w-20rem text-black hover:text-white rounded-30px overflow-hidden p-10px transition-all transition-duration-500ms cursor-pointer bg-green-8 hover:bg-greencss'>
+                    <div className='relative h-12rem w-12rem mx-auto py-20px'>
+                      <Image
+                        layout='fill'
+                        objectFit='cover'
+                        src={`${cart.imageUrl}`}
+                        alt='greenCSS donate'
+                        className='rounded-100per'
+                      />
+                    </div>
+                    <div className='text-center py-5px'>
+                      <div className='text-20px font-700 capitalize'>{cart.header}</div>
+                      <div className='text-black-3 text-10px mb-5px font-500 capitalize'>{cart.description}</div>
+                      <span className='text-15px font-700'>${cart.amount} USD</span>
+                    </div>
                   </button>
-                )}
-              </div>
+                ) : (
+                  <div
+                    key={index}
+                    id={`donate-cart-amount-${cart.amount}`}
+                    className='min-h-24rem min-w-20rem text-white hover:text-white rounded-30px overflow-hidden  p-10px transition-all transition-duration-500ms bg-greencss hover:bg-greencss-2'>
+                    <div className='relative h-12rem w-12rem mx-auto py-20px'>
+                      <Image
+                        layout='fill'
+                        objectFit='cover'
+                        src={`${cart.imageUrl}`}
+                        alt='greenCSS donate'
+                        className='rounded-100per'
+                      />
+                    </div>
+                    <div className='text-center py-5px'>
+                      <div className='text-20px font-700'>{cart.header}</div>
+                      <div className=' relative'>
+                        <input
+                          type='number'
+                          id='donate-amount'
+                          placeholder='Your own donation'
+                          value={amount}
+                          min='1'
+                          max='999999'
+                          className='border-none text-10px text-white bg-greencss-1 p-10px w-100per mb-25px accent-green rounded-5px'
+                          onChange={(e) => setAmount(parseInt(e.target.value))}></input>
+
+                        {amount >= 1 && amount < 1000000 ? (
+                          <GreenButton
+                            onClick={createCheckOutSession}
+                            isDefault={false}
+                            isReverse={true}
+                            id='donate-button'>
+                            {amount <= 0 ? 'donate' : `donate ${amount}$`}
+                          </GreenButton>
+                        ) : (
+                          <button
+                            disabled={true}
+                            id='donate-button-disabled'
+                            className='cursor-not-allowed flex py-10px px-50px font-bold rounded-20px my-auto text-center justify-center items-center m-auto text-10px text-greencss bg-yellow-3'>
+                            invalid amount
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                )
+              )}
             </div>
           </div>
         }
