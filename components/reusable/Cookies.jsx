@@ -30,8 +30,8 @@ export default function Cookies() {
             </span>
             <p className='mb-0px text-15px text-white'>
               By clicking the cookie or “OK”, you agree to the storing of cookies and/or data in your local storage. You
-              agree, that we use google analytics to enhance site navigation and analyze site usage. It helps us to
-              improve our UI/UX experience for you.
+              agree, that we use google analytics to enhance site navigation and analyze site usage. It helps to improve
+              the UI/UX experience for you.
             </p>
             <div className='justify-center items-center my-auto'>
               <GreenButton onClick={cookie} id='close-cookie'>

@@ -6,7 +6,7 @@ import ChevronRightHover from '../icon/ChevronRightHover'
 
 export function GreenButton({
   href = '/',
-  className,
+  className = 'text-15px',
   type = 'button',
   onClick,
   id = 'button',
@@ -41,7 +41,7 @@ export function GreenButton({
         <button
           onClick={onClick}
           id={id}
-          className={`greencss-button-reverse cursor-pointer flex py-10px px-50px bg-greencss font-bold hover:bg-black active:bg-black-9 focus:bg-black-8 transition-duration-200ms transition-all rounded-10px border-1px border-solid border-black hover:border-transparent rounded-10px my-auto text-center justify-center items-center m-auto text-15px ${className} text-white`}
+          className={`greencss-button-reverse cursor-pointer flex py-10px px-50px bg-greencss font-bold hover:bg-black active:bg-black-9 focus:bg-black-8 transition-duration-200ms transition-all rounded-10px border-1px border-solid border-black hover:border-transparent rounded-10px my-auto text-center justify-center items-center m-auto ${className} text-white`}
           type={type}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}>

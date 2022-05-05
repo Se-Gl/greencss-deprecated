@@ -2,7 +2,7 @@ export default function ColourExample({ className, colorName, colorHex }) {
   return (
     <div className='sm:m-15px'>
       <div
-        className={`col-span-1 grid-flow-row mb-25px rounded-10px border-1px border-solid border-dark rounded-10px px-10px min-h-11rem max-w-11rem ${className}`}
+        className={`col-span-1 grid-flow-row mb-25px rounded-10px border-1px border-solid border-black rounded-10px px-10px min-h-11rem max-w-11rem ${className}`}
         style={{ backgroundColor: `${colorHex}` }}
       />
       <div className='h-auto sm:m-0px md:m-0px'>

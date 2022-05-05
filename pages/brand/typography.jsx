@@ -26,7 +26,7 @@ export default function typography() {
             />
             <BrandSection isLight={true}>
               <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1 omen'>
-                <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
+                <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-black rounded-10px px-10px flex min-h-30rem'>
                   <div className='m-auto'>
                     <p className='font-300 py-10px my-0px'>Omen Motion Light</p>
                     <p className='font-400 py-10px my-0px'>Omen Motion Regular</p>
@@ -35,7 +35,7 @@ export default function typography() {
                     <p className='font-900 py-10px my-0px'>Omen Motion Black</p>
                   </div>
                 </div>
-                <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem break-words'>
+                <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-black rounded-10px px-10px flex min-h-30rem break-words'>
                   <div className='m-auto break-words max-w-25rem overflow-hidden'>
                     <p className='font-300 py-10px my-0px text-15px'>The quick brown fox jumps over the lazy dog</p>
                     <p className='font-400 py-10px my-0px text-15px'>The quick brown fox jumps over the lazy dog</p>
@@ -66,7 +66,7 @@ export default function typography() {
               description='It is important to maintain consistent type mappings. It provides uniqueness, consistency, and a strong hierarchy. A bold and black typeface should be paired with normal font weight (400). To keep the hierarchy, light or regular may also be used if necessary.'></BrandSection>
             <BrandSection isLight={true}>
               <div className='m-auto grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
-                <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem'>
+                <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-black rounded-10px px-10px flex min-h-30rem'>
                   <div className='m-auto break-words max-w-25rem overflow-hidden py-50px'>
                     <h3 className='text-black font-700'>Inter Bold</h3>
                     <p className='font-300 py-10px my-0px'>
@@ -74,7 +74,7 @@ export default function typography() {
                     </p>
                   </div>
                 </div>
-                <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-dark rounded-10px px-10px flex min-h-30rem break-words'>
+                <div className='col-span-1 grid-flow-row sm:m-10px md:m-10px bg-white rounded-10px border-1px border-solid border-black rounded-10px px-10px flex min-h-30rem break-words'>
                   <div className='m-auto break-words max-w-25rem overflow-hidden py-50px'>
                     <h3 className='text-black font-800'>Inter Black</h3>
                     <p className='font-400 py-10px my-0px'>
@@ -93,7 +93,7 @@ export default function typography() {
                 alt='omen css hierarchy and margins'
                 id='greenCSS-hierarchy'
               />
-              <div className='w-100per my-100px border-1px border-solid border-dark rounded-20px'>
+              <div className='w-100per my-100px border-1px border-solid border-black rounded-20px'>
                 <div className='p-50px'>
                   <h2 className='text-80px font-800 leading-95per'>
                     This is a header, with 80px and a heavy font weight

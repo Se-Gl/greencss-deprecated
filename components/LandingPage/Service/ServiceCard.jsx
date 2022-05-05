@@ -12,7 +12,7 @@ export default function ServiceCard({ data }) {
           key={index}
           ref={ref}
           style={{ opacity: 0 }}
-          className={`col-span-1 sm:mt-25px w-100per rounded-10px border-1px border-solid border-dark min-h-30rem ${
+          className={`col-span-1 sm:mt-25px w-100per rounded-10px border-1px border-solid border-black min-h-30rem ${
             card.bgcolour
           } ${isVisible && `fade-in animate animation-forwards animation-delay-${(index + 1) * 2}00ms`}`}
           id={`${card.title.toLowerCase()}`}>

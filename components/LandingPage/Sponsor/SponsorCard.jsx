@@ -9,7 +9,8 @@ export default function SponsorCard({
   cardHeader,
   cardDescription,
   children,
-  isDefault = true
+  isDefault = true,
+  customColors = 'bg-green-8 hover:bg-greencss text-black hover:text-white'
 }) {
   return isDefault ? (
     <button
@@ -17,7 +18,7 @@ export default function SponsorCard({
       onMouseEnter={onMouseEnter}
       onClick={onClick}
       id={`donate-cart-amount-${cardAmount}`}
-      className='min-h-24rem min-w-20rem text-black hover:text-white rounded-30px overflow-hidden p-10px transition-all transition-duration-500ms cursor-pointer bg-green-8 hover:bg-greencss'>
+      className={`sm:mb-25px min-h-24rem min-w-20rem rounded-30px overflow-hidden p-10px transition-all transition-duration-500ms cursor-pointer border-1px border-solid border-greencss sm:border-green-9 md:border-green-9 ${customColors}`}>
       <div className='relative h-12rem w-12rem mx-auto py-20px'>
         <Image
           layout='fill'
@@ -37,7 +38,7 @@ export default function SponsorCard({
     <div
       key={key}
       id={`donate-cart-amount-${cardAmount}`}
-      className='min-h-24rem min-w-20rem rounded-30px overflow-hidden p-10px transition-all transition-duration-500ms hover:bg-green-8 bg-greencss text-white hover:text-black'>
+      className={`sm:mb-25px min-h-24rem min-w-20rem rounded-30px overflow-hidden p-10px transition-all transition-duration-500ms border-1px border-solid border-greencss sm:border-green-9 md:border-green-9 ${customColors}`}>
       <div className='relative h-12rem w-12rem mx-auto py-20px'>
         <Image
           layout='fill'
