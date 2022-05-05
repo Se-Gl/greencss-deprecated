@@ -35,23 +35,15 @@ export default function BlogCard({ post, index }) {
               }`}
               style={{ backgroundImage: `url(${post.frontmatter.cover_image})`, backgroundColor: `${vibrantColor}` }}
               id='blog-card'>
-              <div className='flex h-40rem min-h-45rem'>
+              <div className='flex min-h-45rem'>
                 <Link href={`${post.frontmatter.isBlog ? `/blog/${post.slug}` : `/docs/${post.slug}`}`} passHref>
                   <div
-                    className={`cursor-pointer relative m-auto max-w-75per w-75per min-h-80per p-20px ${
+                    className={`cursor-pointer relative m-auto max-w-75per w-75per min-h-35rem p-20px ${
                       !isDark && 'bg-white text-black'
                     } ${isDark && 'bg-black text-white'}
               `}>
-                    <h2 className='text-50px font-bold leading-100per'>
-                      {post.frontmatter.title.length >= 20
-                        ? `${post.frontmatter.title.slice(0, 20)} ...`
-                        : post.frontmatter.title}
-                    </h2>
-                    <h3 className='text-25px font-normal mt-25px'>
-                      {post.frontmatter.excerpt.length >= 90
-                        ? `${post.frontmatter.excerpt.slice(0, 90)} ...`
-                        : post.frontmatter.excerpt}
-                    </h3>
+                    <h2 className='text-30px leading-100per'>{post.frontmatter.title}</h2>
+                    <p className='text-15px text-black-8 mb-10px'>{post.frontmatter.excerpt}</p>
                     <LinkButton
                       id={`button-${post.slug}`}
                       className={`absolute bottom-0per my-15px transition-all transition-duration-500ms ${

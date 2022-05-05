@@ -294,6 +294,10 @@ input::-moz-focus-inner,
   color: #4d4d4d;
 }
 
+.text-black-8 {
+  color: #717171;
+}
+
 .text-black-10 {
   color: #898989;
 }
@@ -546,6 +550,10 @@ input::-moz-focus-inner,
   color: #595959;
 }
 
+.text-black-8 {
+  color: #717171;
+}
+
 .text-black-10 {
   color: #898989;
 }
@@ -580,6 +588,10 @@ input::-moz-focus-inner,
 
 .focus\:text-black-6:focus {
   color: #595959;
+}
+
+.text-black-8 {
+  color: #717171;
 }
 
 .text-black-10 {
@@ -3344,6 +3356,10 @@ input::-moz-focus-inner,
   color: #4d4d4d;
 }
 
+.text-black-8 {
+  color: #717171;
+}
+
 .text-black-10 {
   color: #898989;
 }
@@ -3596,6 +3612,10 @@ input::-moz-focus-inner,
   color: #595959;
 }
 
+.text-black-8 {
+  color: #717171;
+}
+
 .text-black-10 {
   color: #898989;
 }
@@ -3630,6 +3650,10 @@ input::-moz-focus-inner,
 
 .focus\:text-black-6:focus {
   color: #595959;
+}
+
+.text-black-8 {
+  color: #717171;
 }
 
 .text-black-10 {
@@ -4164,10 +4188,6 @@ input::-moz-focus-inner,
   height: 25rem;
 }
 
-.h-40rem {
-  height: 40rem;
-}
-
 .h-50rem {
   height: 50rem;
 }
@@ -4222,6 +4242,10 @@ input::-moz-focus-inner,
 
 .min-h-30rem {
   min-height: 30rem;
+}
+
+.min-h-35rem {
+  min-height: 35rem;
 }
 
 .min-h-40rem {
