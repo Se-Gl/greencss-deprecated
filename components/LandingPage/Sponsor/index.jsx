@@ -98,8 +98,6 @@ const Sponsor = () => {
                 <span className='capitalize font-bold text-15px'>support</span>
               </div>
             </div>
-            <p className='mb-0px ml-25px text-15px'>individual</p>
-            <p className='mb-25px ml-25px text-15px'>custom</p>
 
             <div className='grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
               {prediction && (
@@ -133,7 +131,7 @@ const Sponsor = () => {
                     value={amount}
                     min='1'
                     max='999999'
-                    className='border-none text-10px text-white bg-greencss-1 p-10px w-100per mb-25px accent-green rounded-5px'
+                    className='border-none text-10px text-white bg-greencss-1 p-10px w-100per mb-5px accent-green rounded-5px'
                     onChange={(e) => setAmount(parseInt(e.target.value))}></input>
                   {amount >= 1 && amount < 1000000 ? (
                     <GreenButton

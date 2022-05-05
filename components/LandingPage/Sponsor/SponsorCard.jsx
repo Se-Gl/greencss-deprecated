@@ -30,7 +30,7 @@ export default function SponsorCard({
       </div>
       <div className='text-center py-5px'>
         <div className='text-20px font-700 capitalize'>{cardHeader}</div>
-        <div className='text-black-3 text-10px mb-5px font-500 capitalize'>{cardDescription}</div>
+        <div className='text-10px mb-5px font-500 capitalize'>{cardDescription}</div>
         <span className='text-15px font-700'>${cardAmount} USD</span>
       </div>
     </button>
@@ -51,7 +51,7 @@ export default function SponsorCard({
       <div className='text-center py-5px'>
         <div className='text-20px font-700 capitalize'>{cardHeader}</div>
         <div className='text-black-3 text-10px mb-5px font-500 capitalize'>{cardDescription}</div>
-        <span className='text-15px font-700'>${cardAmount} USD</span>
+        <span className='text-15px font-700'>{isNaN ? null : `$${cardAmount} USD`}</span>
       </div>
       {children}
     </div>
