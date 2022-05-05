@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import Link from 'next/link'
 import { loadStripe } from '@stripe/stripe-js'
 import axios from 'axios'
@@ -12,10 +12,12 @@ import SponsorCard from './SponsorCard'
 
 const Sponsor = () => {
   const { amount, setAmount, prediction, finalPrize } = useContext(DonationContext)
+  const [individualAmount, setIndividualAmount] = useState(10)
   let ceiledPrice = Math.ceil(finalPrize)
   const toast = useToast()
 
-  // stripe
+  // TODO refactor both stripe functions into one reusable
+  // stripe default
   const createCheckOutSession = async () => {
     if (amount <= 1 && amount > 1000000) {
       toast('error', `⚡ Please provide a valid donation.`)
@@ -39,13 +41,31 @@ const Sponsor = () => {
     }
   }
 
+  // individual stripe
+  const createIndividualCheckOutSession = async () => {
+    if (individualAmount <= 1 && individualAmount > 1000000) {
+      toast('error', `⚡ Please provide a valid donation.`)
+    } else {
+      const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY)
+      const stripe = await stripePromise
+      const checkoutSession = await axios.post('/api/prepare-stripe-payment', {
+        amount: individualAmount
+      })
+
+      const result = await stripe?.redirectToCheckout({
+        sessionId: checkoutSession.data.id
+      })
+
+      if (result?.error) {
+        toast('error', `⚡ ${error.message}`)
+      }
+      if (result.status === 500) {
+        toast('error', `⚡ ${error.message}`)
+      }
+    }
+  }
+
   const individualtAmounts = [
-    // {
-    //   header: prediction ? 'Individual' : 'Custom',
-    //   description: 'tailored for you',
-    //   amount: prediction ? ceiledPrice : null,
-    //   imageUrl: prediction ? '/images/landingpage/donation/individual.webp' : '/images/landingpage/donation/custom.webp'
-    // },
     {
       header: 'Tier I',
       description: 'for the community.',
@@ -63,21 +83,6 @@ const Sponsor = () => {
       description: 'for the community And beyond',
       amount: 100,
       imageUrl: '/images/landingpage/donation/Tier3.webp'
-    }
-  ]
-
-  const customAmounts = [
-    {
-      header: prediction ? 'Individual' : 'Custom',
-      description: 'tailored for you',
-      amount: prediction ? ceiledPrice : null,
-      imageUrl: prediction ? '/images/landingpage/donation/individual.webp' : '/images/landingpage/donation/custom.webp'
-    },
-    {
-      header: prediction ? 'Custom' : 'Individual',
-      description: 'Select your own amount',
-      amount: prediction ? null : ceiledPrice,
-      imageUrl: prediction ? '/images/landingpage/donation/custom.webp' : '/images/landingpage/donation/individual.webp'
     }
   ]
 
@@ -118,8 +123,7 @@ const Sponsor = () => {
                     ? 'bg-green-8 hover:bg-greencss text-black hover:text-white'
                     : 'hover:bg-green-8 bg-greencss hover:text-black text-white'
                 }`}
-                onClick={createCheckOutSession}
-                cardAmount={amount}
+                cardAmount={individualAmount}
                 cardImageUrl='/images/landingpage/donation/custom.webp'
                 cardHeader='Custom'
                 cardDescription='Select your own amount'>
@@ -128,19 +132,19 @@ const Sponsor = () => {
                     type='number'
                     id='donate-amount'
                     placeholder='Your own donation'
-                    value={amount}
+                    value={individualAmount}
                     min='1'
                     max='999999'
                     className='border-none text-10px text-white bg-greencss-1 p-10px w-100per mb-5px accent-green rounded-5px'
-                    onChange={(e) => setAmount(parseInt(e.target.value))}></input>
-                  {amount >= 1 && amount < 1000000 ? (
+                    onChange={(e) => setIndividualAmount(parseInt(e.target.value))}></input>
+                  {individualAmount >= 1 && individualAmount < 1000000 ? (
                     <GreenButton
-                      onClick={createCheckOutSession}
+                      onClick={createIndividualCheckOutSession}
                       isDefault={false}
                       isReverse={true}
                       id='donate-button'
                       className='text-10px'>
-                      {amount <= 0 ? 'donate' : `donate ${amount}$`}
+                      {individualAmount <= 0 ? 'donate' : `donate ${individualAmount}$`}
                     </GreenButton>
                   ) : (
                     <button
