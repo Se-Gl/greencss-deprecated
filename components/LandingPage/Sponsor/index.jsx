@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { useContext } from 'react'
 import Link from 'next/link'
 import { loadStripe } from '@stripe/stripe-js'
@@ -9,13 +8,13 @@ import Section from '@/components/reusable/Section'
 import { GreenButton } from '@/components/reusable/Button'
 import DonationContext from '@/utils/DonationContext'
 import CoTwo from '@/components/LandingPage/CalculateFootprint/CoTwo'
+import SponsorCard from './SponsorCard'
 
 const Sponsor = () => {
   const { amount, setAmount, prediction, finalPrize } = useContext(DonationContext)
   let ceiledPrice = Math.ceil(finalPrize)
-
   const toast = useToast()
-  // const defaultAmounts = [ceiledPrice, 10, 25, 100]
+
   // stripe
   const createCheckOutSession = async () => {
     if (amount <= 1 && amount > 1000000) {
@@ -90,73 +89,53 @@ const Sponsor = () => {
             <div className='grid grid-col-2 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-1'>
               {individualtAmounts.map((cart, index) =>
                 cart.amount >= 1 && cart.amount < 1000000 ? (
-                  <button
+                  <SponsorCard
                     key={index}
                     onMouseEnter={() => setAmount(cart.amount)}
                     onClick={createCheckOutSession}
-                    id={`donate-cart-amount-${cart.amount}`}
-                    className='min-h-24rem min-w-20rem text-black hover:text-white rounded-30px overflow-hidden p-10px transition-all transition-duration-500ms cursor-pointer bg-green-8 hover:bg-greencss'>
-                    <div className='relative h-12rem w-12rem mx-auto py-20px'>
-                      <Image
-                        layout='fill'
-                        objectFit='cover'
-                        src={`${cart.imageUrl}`}
-                        alt='greenCSS donate'
-                        className='rounded-100per'
-                      />
-                    </div>
-                    <div className='text-center py-5px'>
-                      <div className='text-20px font-700 capitalize'>{cart.header}</div>
-                      <div className='text-black-3 text-10px mb-5px font-500 capitalize'>{cart.description}</div>
-                      <span className='text-15px font-700'>${cart.amount} USD</span>
-                    </div>
-                  </button>
+                    cardAmount={cart.amount}
+                    cardImageUrl={cart.imageUrl}
+                    cardHeader={cart.header}
+                    cardDescription={cart.description}
+                  />
                 ) : (
-                  <div
+                  <SponsorCard
+                    isDefault={false}
                     key={index}
-                    id={`donate-cart-amount-${cart.amount}`}
-                    className='min-h-24rem min-w-20rem text-white hover:text-white rounded-30px overflow-hidden  p-10px transition-all transition-duration-500ms bg-greencss hover:bg-greencss-2'>
-                    <div className='relative h-12rem w-12rem mx-auto py-20px'>
-                      <Image
-                        layout='fill'
-                        objectFit='cover'
-                        src={`${cart.imageUrl}`}
-                        alt='greenCSS donate'
-                        className='rounded-100per'
-                      />
+                    onMouseEnter={() => setAmount(cart.amount)}
+                    onClick={createCheckOutSession}
+                    cardAmount={cart.amount}
+                    cardImageUrl={cart.imageUrl}
+                    cardHeader={cart.header}
+                    cardDescription={cart.description}>
+                    <div className=' relative'>
+                      <input
+                        type='number'
+                        id='donate-amount'
+                        placeholder='Your own donation'
+                        value={amount}
+                        min='1'
+                        max='999999'
+                        className='border-none text-10px text-white bg-greencss-1 p-10px w-100per mb-25px accent-green rounded-5px'
+                        onChange={(e) => setAmount(parseInt(e.target.value))}></input>
+                      {amount >= 1 && amount < 1000000 ? (
+                        <GreenButton
+                          onClick={createCheckOutSession}
+                          isDefault={false}
+                          isReverse={true}
+                          id='donate-button'>
+                          {amount <= 0 ? 'donate' : `donate ${amount}$`}
+                        </GreenButton>
+                      ) : (
+                        <button
+                          disabled={true}
+                          id='donate-button-disabled'
+                          className='cursor-not-allowed flex py-10px px-50px font-bold rounded-20px my-auto text-center justify-center items-center m-auto text-10px text-greencss bg-yellow-3'>
+                          invalid amount
+                        </button>
+                      )}
                     </div>
-                    <div className='text-center py-5px'>
-                      <div className='text-20px font-700'>{cart.header}</div>
-                      <div className=' relative'>
-                        <input
-                          type='number'
-                          id='donate-amount'
-                          placeholder='Your own donation'
-                          value={amount}
-                          min='1'
-                          max='999999'
-                          className='border-none text-10px text-white bg-greencss-1 p-10px w-100per mb-25px accent-green rounded-5px'
-                          onChange={(e) => setAmount(parseInt(e.target.value))}></input>
-
-                        {amount >= 1 && amount < 1000000 ? (
-                          <GreenButton
-                            onClick={createCheckOutSession}
-                            isDefault={false}
-                            isReverse={true}
-                            id='donate-button'>
-                            {amount <= 0 ? 'donate' : `donate ${amount}$`}
-                          </GreenButton>
-                        ) : (
-                          <button
-                            disabled={true}
-                            id='donate-button-disabled'
-                            className='cursor-not-allowed flex py-10px px-50px font-bold rounded-20px my-auto text-center justify-center items-center m-auto text-10px text-greencss bg-yellow-3'>
-                            invalid amount
-                          </button>
-                        )}
-                      </div>
-                    </div>
-                  </div>
+                  </SponsorCard>
                 )
               )}
             </div>

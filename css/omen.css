@@ -338,6 +338,10 @@ input::-moz-focus-inner,
   background-color: #e1fec3;
 }
 
+.hover\:bg-green-8:hover {
+  background-color: #e1fec3;
+}
+
 .bg-green-9 {
   background-color: #edfedb;
 }
@@ -351,10 +355,6 @@ input::-moz-focus-inner,
 }
 
 .bg-greencss-2 {
-  background-color: #56aa03;
-}
-
-.hover\:bg-greencss-2:hover {
   background-color: #56aa03;
 }
 
@@ -3400,6 +3400,10 @@ input::-moz-focus-inner,
   background-color: #e1fec3;
 }
 
+.hover\:bg-green-8:hover {
+  background-color: #e1fec3;
+}
+
 .bg-green-9 {
   background-color: #edfedb;
 }
@@ -3413,10 +3417,6 @@ input::-moz-focus-inner,
 }
 
 .bg-greencss-2 {
-  background-color: #56aa03;
-}
-
-.hover\:bg-greencss-2:hover {
   background-color: #56aa03;
 }
 
