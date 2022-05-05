@@ -154,15 +154,16 @@ const Sponsor = () => {
               </SponsorCard>
 
               {individualtAmounts.map((cart, index) => (
-                <SponsorCard
-                  key={index}
-                  onMouseEnter={() => setAmount(cart.amount)}
-                  onClick={createCheckOutSession}
-                  cardAmount={cart.amount}
-                  cardImageUrl={cart.imageUrl}
-                  cardHeader={cart.header}
-                  cardDescription={cart.description}
-                />
+                <div key={index}>
+                  <SponsorCard
+                    onMouseEnter={() => setAmount(cart.amount)}
+                    onClick={createCheckOutSession}
+                    cardAmount={cart.amount}
+                    cardImageUrl={cart.imageUrl}
+                    cardHeader={cart.header}
+                    cardDescription={cart.description}
+                  />
+                </div>
               ))}
             </div>
           </div>
