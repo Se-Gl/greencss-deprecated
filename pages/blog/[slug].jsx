@@ -7,7 +7,13 @@ import SEO from '@/components/reusable/SEO'
 
 const SlugComponent = dynamic(() => import('@/components/reusable/SlugComponent'), {
   ssr: false,
-  loading: () => <Loader />
+  loading: () => (
+    <div className='flex h-100vh w-100vw overflow-hidden bg-green-10'>
+      <div className='m-auto'>
+        <Loader />
+      </div>
+    </div>
+  )
 })
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 const DevelopmentToClipboard = dynamic(() => import('@/utils/DevelopmentToClipboard'))
