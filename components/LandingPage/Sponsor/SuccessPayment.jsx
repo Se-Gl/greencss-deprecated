@@ -1,6 +1,6 @@
 import SuccessIllustration from '@/components/icon/Payment/Success'
 import { GreenButton } from '@/components/reusable/Button'
-import SubSectionHero from '@/components/reusable/SubSectionHero'
+import SubSectionHero from '@/components/grid/SubSectionHero'
 
 export default function SuccessPayment() {
   return (

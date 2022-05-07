@@ -1,5 +1,5 @@
 import CookieHero from '../icon/Privacy/CookieHero'
-import SubSectionHero from '../reusable/SubSectionHero'
+import SubSectionHero from '../grid/SubSectionHero'
 
 export default function Cookies() {
   return (

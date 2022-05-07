@@ -7,7 +7,7 @@ import { POSTS_PER_PAGE } from '@/config/index'
 import Pagination from '@/components/reusable/Pagination'
 import { getPosts } from '@/lib/posts'
 import BlogHero from '@/components/icon/Blog/BlogHero'
-import SubSectionHero from '@/components/reusable/SubSectionHero'
+import SubSectionHero from '@/components/grid/SubSectionHero'
 import { sortByDate } from '@/utils/SortBy'
 import SEO from '@/components/reusable/SEO'
 

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import SubSectionHero from '../reusable/SubSectionHero'
+import SubSectionHero from '../grid/SubSectionHero'
 import LegalHero from '../icon/Privacy/LegalHero'
 
 export default function Legal() {

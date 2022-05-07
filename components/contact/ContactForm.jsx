@@ -140,7 +140,11 @@ export default function ContactForm() {
         onSubmit={handleSubmit}
         id='contact-form'>
         <div className='px-10px flex flex-col'>
-          <h3 className='pt-25px'>Send a message</h3>
+          <h3 className='pt-25px max-w-50per'>Get in Touch with Us! And send a message</h3>
+          <p className='text-black-10 text-15px  max-w-50per'>
+            Whether it is constructive feedback, negative experiences, gratitude, questions, suggestions, feature
+            requests or simply boredom.
+          </p>
           {contactItems.sort().map((item, index) => {
             return (
               <div key={index} className='w-100per mb-25px'>
@@ -152,7 +156,7 @@ export default function ContactForm() {
                   maxLength={item.maxLength}
                   type={item.type}
                   id={item.htmlFor}
-                  className='border-none text-15px text-black-3 bg-greencss text-white font-600 py-10px w-100per'
+                  className='border-solid border-1px border-greencss rounded-5px text-15px text-black-3 text-black font-600 py-10px w-100per'
                   value={item.value}
                   onChange={item.onChange}
                 />
@@ -165,7 +169,7 @@ export default function ContactForm() {
           <textarea
             maxLength='500'
             id='message'
-            className='border-none text-15px text-black-3 bg-greencss text-white font-600 py-10px'
+            className='border-solid border-1px border-greencss rounded-5px text-15px text-black-3 text-black font-600 py-10px'
             value={message}
             onChange={(e) => {
               setMessage(e.target.value)

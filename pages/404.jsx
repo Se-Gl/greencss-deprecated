@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
 import Icon from '@/components/icon/404/Icon'
-import SubSectionHero from '@/components/reusable/SubSectionHero'
+import SubSectionHero from '@/components/grid/SubSectionHero'
 import { NEXT_URL } from '@/config/index'
 import ReusableModal from '@/components/modal/ReusableModal'
 import { GreenButton } from '@/components/reusable/Button'

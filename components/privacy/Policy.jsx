@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import PolicyHero from '../icon/Privacy/PolicyHero'
-import SubSectionHero from '../reusable/SubSectionHero'
+import SubSectionHero from '../grid/SubSectionHero'
 
 export default function Policy() {
   return (

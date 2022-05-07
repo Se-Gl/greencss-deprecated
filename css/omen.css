@@ -4128,6 +4128,10 @@ input::-moz-focus-inner,
   max-width: 90rem;
 }
 
+.max-w-50per {
+  max-width: 50%;
+}
+
 .max-w-75per {
   max-width: 75%;
 }
@@ -4805,6 +4809,10 @@ input::-moz-focus-inner,
   border-radius: 50px;
 }
 
+.rounded-50per {
+  border-radius: 50%;
+}
+
 .rounded-100per {
   border-radius: 100%;
 }
@@ -4817,6 +4825,11 @@ input::-moz-focus-inner,
 .rounded-right-radius-100px {
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
+}
+
+.rounded-left-radius-100px {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
 }
 
 .border-1px {

@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 import BrandCard from '@/components/brand/BrandCard'
 import BrandHero from '@/components/icon/Brand/BrandHero'
-import SubSectionHero from '@/components/reusable/SubSectionHero'
+import SubSectionHero from '@/components/grid/SubSectionHero'
 import SEO from '@/components/reusable/SEO'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
