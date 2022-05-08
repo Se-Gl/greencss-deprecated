@@ -4,7 +4,6 @@ import { GreenButton } from '../reusable/Button'
 import { useToast } from '@/components/toast/hooks/useToast'
 
 const CaptchaComponent = dynamic(() => import('../captcha/CaptchaComponent'), { ssr: false })
-// import CaptchaComponent from '../captcha/CaptchaComponent'
 
 export default function ContactForm() {
   const [fullname, setFullname] = useState('')
@@ -134,14 +133,16 @@ export default function ContactForm() {
   ]
 
   return (
-    <div className='mb-10rem bg-white'>
+    <div className='mb-50px bg-white'>
       <form
         className='rounded-10px shadow-small-black-10 sm:shadow-transparent md:shadow-transparent'
         onSubmit={handleSubmit}
         id='contact-form'>
         <div className='px-10px flex flex-col'>
-          <h3 className='pt-25px max-w-50per'>Get in Touch with Us! And send a message</h3>
-          <p className='text-black-10 text-15px  max-w-50per'>
+          <h3 className='pt-25px max-w-50per sm:max-w-100per md:max-w-100per'>
+            Get in Touch with Us! And send a message
+          </h3>
+          <p className='text-black-10 text-15px  max-w-50per sm:max-w-100per md:max-w-100per'>
             Whether it is constructive feedback, negative experiences, gratitude, questions, suggestions, feature
             requests or simply boredom.
           </p>

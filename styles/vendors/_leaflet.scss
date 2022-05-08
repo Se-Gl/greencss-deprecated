@@ -1,0 +1,51 @@
+@use '../abstracts/color' as *;
+
+.leaflet-control-attribution > a {
+  font-size: 8px !important;
+  color: $black !important;
+  svg {
+    display: none !important;
+  }
+}
+
+.leaflet-control-zoom-in {
+  margin: 0 !important;
+  margin-bottom: 5px !important;
+}
+.leaflet-control-zoom-out {
+  margin: 0 !important;
+}
+
+.leaflet-popup {
+  left: -45px !important;
+}
+
+.leaflet-popup-close-button {
+  margin: 0 !important;
+}
+
+// marker
+.ring {
+  opacity: 0;
+  stroke: $blue;
+  -webkit-transform-origin: center;
+  -webkit-animation: anim-pulse 2s 1s infinite;
+}
+
+@-webkit-keyframes anim-pulse {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+  }
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: scale(1.25);
+  }
+}

@@ -4076,6 +4076,10 @@ input::-moz-focus-inner,
   width: 50%;
 }
 
+.w-66per {
+  width: 66%;
+}
+
 .w-75per {
   width: 75%;
 }
@@ -4148,6 +4152,10 @@ input::-moz-focus-inner,
   min-width: 50px;
 }
 
+.min-w-64px {
+  min-width: 64px;
+}
+
 .min-w-12rem {
   min-width: 12rem;
 }
@@ -4174,6 +4182,10 @@ input::-moz-focus-inner,
 
 .h-50px {
   height: 50px;
+}
+
+.h-64px {
+  height: 64px;
 }
 
 .h-75px {
@@ -4230,6 +4242,10 @@ input::-moz-focus-inner,
 
 .min-h-54px {
   min-height: 54px;
+}
+
+.min-h-64px {
+  min-height: 64px;
 }
 
 .min-h-11rem {
@@ -4416,6 +4432,10 @@ input::-moz-focus-inner,
   padding-block: 10rem;
 }
 
+.m-0px {
+  margin: 0px;
+}
+
 .m-25px {
   margin: 25px;
 }
@@ -4574,6 +4594,10 @@ input::-moz-focus-inner,
 
 .my-5rem {
   margin-block: 5rem;
+}
+
+.my-10rem {
+  margin-block: 10rem;
 }
 
 .ease {
@@ -4870,12 +4894,20 @@ input::-moz-focus-inner,
   fill: #fdfdfd;
 }
 
+.fill-green-9 {
+  fill: #edfedb;
+}
+
 .fill-black-10 {
   fill: #898989;
 }
 
 .hover\:fill-black-10:hover {
   fill: #898989;
+}
+
+.fill-blue {
+  fill: #066ef9;
 }
 
 @media (max-width: 480px) {
@@ -4942,6 +4974,10 @@ input::-moz-focus-inner,
 
   .sm\:w-100per {
     width: 100%;
+  }
+
+  .sm\:max-w-100per {
+    max-width: 100%;
   }
 
   .sm\:min-w-90px {
@@ -5103,6 +5139,10 @@ input::-moz-focus-inner,
 
   .md\:w-100per {
     width: 100%;
+  }
+
+  .md\:max-w-100per {
+    max-width: 100%;
   }
 
   .md\:min-w-45rem {
