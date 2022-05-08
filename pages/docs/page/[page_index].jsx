@@ -36,8 +36,8 @@ export default function DocsCategoryPage({ categories, posts }) {
       <Layout>
         <div className='grid grid-col-12 gap-30px'>
           <div
-            className='overflow-y-scroll sticky top-20per max-h-75vh col-span-3 sm:display-none md:display-none'
-            style={{ scrollbarWidth: 'thin', scrollbarColor: '#898989 #fdfdfd' }}
+            className='overflow-y-scroll sticky max-h-75vh col-span-3 sm:display-none md:display-none mb-50px'
+            style={{ scrollbarWidth: 'thin', scrollbarColor: '#898989 #fdfdfd', top: '75px' }}
             id='sidebar'>
             <ul>
               <SideBar categories={categories} posts={posts} hasSubcategory={true} />

@@ -19,13 +19,13 @@ export default function DocsCategorySlugPage({ posts, categoryName, categories }
     <SEO
       title={`Documentation - ${categoryName}`}
       description={`greenCSS documentation - get an overview about the category ${categoryName}, its css classes and how to apply them.`}
-      url='docs'
+      url={`docs/category/${categoryName}`}
       keywords='docs, documentation, information, search, css'>
       <Layout className='flex container sm:px-10px md:px-25px lg:px-50px min-h-100vh mb-10rem'>
         <div className='grid grid-col-12 gap-30px'>
           <div
-            className='overflow-y-scroll sticky top-20per max-h-75vh col-span-3 sm:display-none md:display-none'
-            style={{ scrollbarWidth: 'thin', scrollbarColor: '#898989 #fdfdfd' }}
+            className='overflow-y-scroll sticky max-h-75vh col-span-3 sm:display-none md:display-none mb-50px'
+            style={{ scrollbarWidth: 'thin', scrollbarColor: '#898989 #fdfdfd', top: '75px' }}
             id='sidebar'>
             <ul>
               <SideBar categories={categories} posts={posts} hasSubcategory={true} />
