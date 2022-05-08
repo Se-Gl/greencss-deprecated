@@ -154,6 +154,8 @@ sass/
 | [axios](https://www.npmjs.com/package/axios)                                       | ![GitHub stars](https://img.shields.io/github/stars/axios/axios.svg?label=%F0%9F%8C%9F)               | [![Bundle size](https://badgen.net/bundlephobia/minzip/axios?label=%F0%9F%92%BE)](https://bundlephobia.com/package/axios)                                        | ✅         | ✅        |
 | [@stripe/stripe-js](https://www.npmjs.com/package/@stripe/stripe-js)               | ![GitHub stars](https://img.shields.io/github/stars/@stripe/stripe-js.svg?label=%F0%9F%8C%9F)         | [![Bundle size](https://badgen.net/bundlephobia/minzip/@stripe/stripe-js?label=%F0%9F%92%BE)](https://bundlephobia.com/package/@stripe/stripe-js)                | ✅         | ✅        |
 | [stripe](https://www.npmjs.com/package/stripe)                                     | ![GitHub stars](https://img.shields.io/github/stars/stripe/stripe-node.svg?label=%F0%9F%8C%9F)        | [![Bundle size](https://badgen.net/bundlephobia/minzip/stripe?label=%F0%9F%92%BE)](https://bundlephobia.com/package/stripe)                                      | ✅         | ✅        |
+| [leaflet](https://www.npmjs.com/package/leaflet)                                   | ![GitHub stars](https://img.shields.io/github/stars/Leaflet/Leaflet.svg?label=%F0%9F%8C%9F)           | [![Bundle size](https://badgen.net/bundlephobia/minzip/leaflet?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=leaflet)                                   | ✅         | ✅        |
+| [react-leaflet](https://www.npmjs.com/package/react-leaflet)                       | ![GitHub stars](https://img.shields.io/github/stars/PaulLeCam/react-leaflet.svg?label=%F0%9F%8C%9F)   | [![Bundle size](https://badgen.net/bundlephobia/minzip/react-leaflet?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=react-leaflet)                       | ✅         | ✅        |
 
 ### Testing Libraries
 
@@ -215,3 +217,4 @@ sass/
 - [Captcha](https://github.com/nabidam/react-captcha)
 - [Google Analytics](https://medium.com/@mikegajdos81/how-to-add-googleanalytics-4-to-nextjs-app-in-4-simple-steps-3c6f9de2f866)
 - [Stripe](https://betterprogramming.pub/create-your-portfolio-using-next-js-tailwind-css-stripe-and-paypal-80c723bb3fef)
+- [Map Tile](https://wiki.openstreetmap.org/wiki/Tile_servers)
