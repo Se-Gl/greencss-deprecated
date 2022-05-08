@@ -19,13 +19,13 @@ const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: fals
 const DevelopmentToClipboard = dynamic(() => import('@/utils/DevelopmentToClipboard'))
 
 export default function BlogPostPage({
-  frontmatter: { title, excerpt, category, date, cover_image, author, isBlog, keywords },
+  frontmatter: { title, excerpt, category, date, cover_image, author, isBlog, keywords, author_image },
   content,
   slug
 }) {
   return (
     <SEO
-      title={title}
+      title={`${title} - ${author}`}
       hasCanonical={true}
       description={excerpt}
       image={cover_image}
@@ -42,6 +42,7 @@ export default function BlogPostPage({
           date={date}
           cover_image={cover_image}
           author={author}
+          authorImage={author_image}
           content={content}
           slug={slug}
           isBlog={isBlog}

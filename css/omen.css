@@ -4150,6 +4150,10 @@ input::-moz-focus-inner,
   max-width: 50vw;
 }
 
+.min-w-40px {
+  min-width: 40px;
+}
+
 .min-w-50px {
   min-width: 50px;
 }
@@ -4176,6 +4180,10 @@ input::-moz-focus-inner,
 
 .h-10px {
   height: 10px;
+}
+
+.h-40px {
+  height: 40px;
 }
 
 .h-45px {

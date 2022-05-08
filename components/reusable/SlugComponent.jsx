@@ -19,6 +19,7 @@ export default function SlugComponent({
   category,
   cover_image,
   author,
+  authorImage,
   content,
   slug,
   isBlog,
@@ -48,16 +49,38 @@ export default function SlugComponent({
         <div className='flex justify-between sm:mb-50px md:mb-50px'>
           <BackButton>Back</BackButton>
         </div>
-
         <div className='m-auto max-w-75rem mb-10rem'>
           <div className='my-5rem'>
-            <p className='text-greencss font-600 text-15px mb-5px'>{category}</p>
+            <p className='text-greencss font-600 text-15px mb-0px'>{category}</p>
             <h1 className='font-900 mb-15px'>{title}</h1>
+            {isBlog && (
+              <div className='flex h-40px my-25px'>
+                <div className='min-h-40px min-w-40px'>
+                  <Image
+                    src={authorImage ? `${authorImage}` : '/images/greencss_logo_dark.png'}
+                    alt={`A greenCSS Blog by ${author}`}
+                    width={40}
+                    height={!authorImage ? 50 : 40}
+                    className={!authorImage ? '' : 'rounded-50per m-auto'}
+                    placeholder='blur'
+                    blurDataURL={`/_next/image?url=${authorImage}&w=16&q=1`}
+                  />
+                </div>
+                <p className='block ml-10px my-auto font-bold text-15px'>{author}</p>
+              </div>
+            )}
             <h2 className='text-20px font-normal'>{excerpt}</h2>
           </div>
           {isBlog === false ? null : (
             <div className='relative h-50rem rounded-10px overflow-hidden mb-50px'>
-              <Image layout='fill' objectFit='cover' src={cover_image} alt={excerpt} />
+              <Image
+                layout='fill'
+                objectFit='cover'
+                src={cover_image}
+                alt={excerpt}
+                placeholder='blur'
+                blurDataURL={`/_next/image?url=${cover_image}&w=16&q=1`}
+              />
             </div>
           )}
 
