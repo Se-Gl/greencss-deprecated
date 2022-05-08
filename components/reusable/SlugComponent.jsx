@@ -74,6 +74,7 @@ export default function SlugComponent({
           {isBlog === false ? null : (
             <div className='relative h-50rem rounded-10px overflow-hidden mb-50px'>
               <Image
+                quality={100}
                 layout='fill'
                 objectFit='cover'
                 src={cover_image}
