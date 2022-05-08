@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-import LogoLight from '../icon/Brand/LogoLight'
 import LogoDark from '../icon/Brand/LogoDark'
 import ReusableModal from '../modal/ReusableModal'
 
@@ -21,7 +20,7 @@ export default function Header() {
     <div className='container'>
       <nav
         aria-label='header navigation'
-        className={`sm:display-none md:display-none z-100 fixed flex items-center h-75px justify-between w-100per sm:px-10px md:px-25px lg:px-50px text-black bg-white`}
+        className='sm:display-none md:display-none z-100 fixed flex items-center h-75px justify-between w-100per sm:px-10px md:px-25px lg:px-50px text-black bg-white'
         style={{ maxWidth: '110rem' }}>
         <Link href='/'>
           <a className='my-auto'>

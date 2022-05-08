@@ -54,6 +54,7 @@ label,
 table,
 article,
 canvas,
+details,
 footer,
 header,
 menu,
@@ -71,6 +72,7 @@ time {
 
 /* HTML5 display-role reset for older browsers */
 article,
+details,
 footer,
 header,
 menu,

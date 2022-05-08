@@ -1,5 +1,11 @@
 @use '../abstracts/color' as *;
 
+.leaflet-container {
+  font-family: 'Inter', 'Omen Motion', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+  font-size: 7px !important;
+}
+
 .leaflet-control-attribution > a {
   font-size: 8px !important;
   color: $black !important;

@@ -10,6 +10,22 @@ export default function ContactMap() {
     html: ReactDOMServer.renderToString(<ContactMarker width='50' height='50' />)
   })
 
+  const markers = [
+    {
+      location: [52.49388, 13.446724],
+      popup: (
+        <Popup>
+          It started with an idea, <br />
+          which became a vision.
+        </Popup>
+      )
+    },
+    {
+      location: [47.2515, 8.691668],
+      popup: <Popup>The vision became reality</Popup>
+    }
+  ]
+
   return (
     <div className='relative z-0 my-50px'>
       <MapContainer
@@ -18,20 +34,16 @@ export default function ContactMap() {
         scrollWheelZoom={false}
         style={{ height: '50vh', width: '100%' }}>
         <TileLayer
-          attribution='© <a href="https://stadiamaps.com/" rel=”nofollow”>Stadia Maps</a>, © <a href="https://openmaptiles.org/" rel=”nofollow”>OpenMapTiles</a> © <a href="http://openstreetmap.org" rel=”nofollow”>OpenStreetMap</a> contributors'
-          url='https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'
+          attribution='Map tiles by <a href="https://wiki.openstreetmap.org/wiki/Carto_(Company)" rel=”nofollow”>Carto</a>, under CC BY 3.0. © <a href="http://openstreetmap.org" rel=”nofollow”>OpenStreetMap</a> contributors'
+          url='https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'
         />
-
-        <Marker position={[52.49388, 13.446724]} icon={icon}>
-          <Popup>
-            It started with an idea, <br />
-            which became a vision.
-          </Popup>
-        </Marker>
-
-        <Marker position={[47.2515, 8.691668]} icon={icon}>
-          <Popup>The vision became reality</Popup>
-        </Marker>
+        {markers.map((marker, index) => (
+          <div key={index}>
+            <Marker position={marker.location} icon={icon}>
+              {marker.popup}
+            </Marker>
+          </div>
+        ))}
       </MapContainer>
     </div>
   )
