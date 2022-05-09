@@ -60,13 +60,13 @@ export default function Service() {
   return (
     <Section id='service' background='bg-blue-10'>
       <h2 className='max-w-80rem'>
-        Our Mission to <span className='text-greencss'>Save</span> the Programming Planet
+        Our Mission - <span className='text-greencss'>Save</span> the Programming Planet
       </h2>
       <div className='m-auto grid grid-col-3 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-2 lg:grid-col-2 mt-50px'>
         <ServiceCard data={serviceCard} />
       </div>
       <h2 className='my-50px font-800'>
-        In a Nutshell - For our <span className='text-greencss'>Future</span>
+        Beside the <span className='text-greencss'>Code</span>
       </h2>
 
       <div className='m-auto grid grid-col-3 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-2 lg:grid-col-2'>

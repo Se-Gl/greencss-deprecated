@@ -25,7 +25,7 @@ export default function colours() {
             </h1>
             <BrandSection
               title='Colours'
-              description='Colors determine charisma, emotion, feelings, and memories. In total, greenCSS offers a color palette of over 11 colors, whereby these are further broken down into 100 different lighter tones. The primary colours we use - black, white and green - build on our existing intensity and represent the elegance of greenCSS.'
+              description='Colors determine charisma, emotion, feelings, and memories. In total, greenCSS offers a color palette of over 11 colors, whereby these are further broken down into 100 different lighter tones. The primary colours are - black, white and greencss/green - build on our existing intensity and represent the elegance of greenCSS.'
             />
             <BrandSection
               isLight={true}
@@ -186,7 +186,7 @@ export default function colours() {
                     />
                   }
                   classOne='py-10px'
-                  childTwo='Grey text or the primary greencss/green in a header to highlight certain words or subjects.'
+                  childTwo='Grey text (black-10) or the primary greencss/green in a header to highlight certain words or subjects.'
                 />
               </div>
             </BrandSection>
@@ -194,7 +194,7 @@ export default function colours() {
               titleOne='01'
               descriptionOne='Focus on the power of black, white and green'
               titleTwo='02'
-              descriptionTwo='A little green or grey in headers packs a lot of punch'
+              descriptionTwo='Greenish headers or gray paragraphs are a beautiful combination with black.'
               titleThree='03'
               descriptionThree='Use colours in vector files, illustrations or images.'
               titleFour='04'

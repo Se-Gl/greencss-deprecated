@@ -39,8 +39,4 @@ describe('Home Screen Unit test', () => {
   it('render the testimonial section', () => {
     cy.get('#testimonial').should('exist')
   })
-  it('renders newsletter section aand creates a request', () => {
-    cy.get('#newsletter').should('exist')
-    cy.get('#newsletter h2').contains('There’s more than being up-to-date', { matchCase: false })
-  })
 })

@@ -12,7 +12,6 @@ const CalculateFootprint = dynamic(() => import('@/components/LandingPage/Calcul
 const Sponsor = dynamic(() => import('@/components/LandingPage/Sponsor'))
 const News = dynamic(() => import('@/components/LandingPage/News'))
 const Testimonial = dynamic(() => import('@/components/LandingPage/Testimonial'))
-const Newsletter = dynamic(() => import('@/components/LandingPage/Newsletter'))
 const Faq = dynamic(() => import('@/components/LandingPage/Faq/Faq'))
 
 export default function HomePage({ posts }) {
@@ -28,7 +27,6 @@ export default function HomePage({ posts }) {
             <Sponsor />
             <News posts={posts} />
             <Testimonial />
-            <Newsletter />
             <Faq />
           </DonationProvider>
         </Layout>

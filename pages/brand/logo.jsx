@@ -62,7 +62,7 @@ export default function logo() {
             </BrandSection>
             <BrandSection
               title='Whitespace'
-              description='The empty space around the logo is equal  to half the radius of the cap of the O.'
+              description='The empty space around the logo is equal to one fourth on top and one fourth on the sides.'
             />
             <BrandSection isLight={true}>
               <img
@@ -73,7 +73,7 @@ export default function logo() {
             </BrandSection>
             <BrandSection
               title='Colour'
-              description='The logo should be light on darker backgrounds and dark on lighter backgrounds. It may be combined with purple.'
+              description='The logo should be light on darker backgrounds and dark on lighter backgrounds. It may be combined with green - if necessary and visually optimal.'
             />
             <BrandSection isLight={true}>
               <img
