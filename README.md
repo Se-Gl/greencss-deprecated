@@ -64,6 +64,7 @@ SENDGRID_EMAIL=YOUR-SENDGRID-EMAIL
 NEXT_PUBLIC_GOOGLE_ANALYTICS=YOUR-GOOGLE-ANALYTICS-KEY
 NEXT_PUBLIC_STRIPE_KEY=YOUR-PUBLIC-STRIPE-KEY
 STRIPE_SECRET_KEY=YOUR-SECRET-STRIPE-KEY
+NEXT_PUBLIC_MAPBOX_KEY=YOUR-MAPBOX-KEY
 ```
 
 - [sendgrid](https://signup.sendgrid.com/)
@@ -154,8 +155,8 @@ sass/
 | [axios](https://www.npmjs.com/package/axios)                                       | ![GitHub stars](https://img.shields.io/github/stars/axios/axios.svg?label=%F0%9F%8C%9F)               | [![Bundle size](https://badgen.net/bundlephobia/minzip/axios?label=%F0%9F%92%BE)](https://bundlephobia.com/package/axios)                                        | ✅         | ✅        |
 | [@stripe/stripe-js](https://www.npmjs.com/package/@stripe/stripe-js)               | ![GitHub stars](https://img.shields.io/github/stars/@stripe/stripe-js.svg?label=%F0%9F%8C%9F)         | [![Bundle size](https://badgen.net/bundlephobia/minzip/@stripe/stripe-js?label=%F0%9F%92%BE)](https://bundlephobia.com/package/@stripe/stripe-js)                | ✅         | ✅        |
 | [stripe](https://www.npmjs.com/package/stripe)                                     | ![GitHub stars](https://img.shields.io/github/stars/stripe/stripe-node.svg?label=%F0%9F%8C%9F)        | [![Bundle size](https://badgen.net/bundlephobia/minzip/stripe?label=%F0%9F%92%BE)](https://bundlephobia.com/package/stripe)                                      | ✅         | ✅        |
-| [leaflet](https://www.npmjs.com/package/leaflet)                                   | ![GitHub stars](https://img.shields.io/github/stars/Leaflet/Leaflet.svg?label=%F0%9F%8C%9F)           | [![Bundle size](https://badgen.net/bundlephobia/minzip/leaflet?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=leaflet)                                   | ✅         | ✅        |
-| [react-leaflet](https://www.npmjs.com/package/react-leaflet)                       | ![GitHub stars](https://img.shields.io/github/stars/PaulLeCam/react-leaflet.svg?label=%F0%9F%8C%9F)   | [![Bundle size](https://badgen.net/bundlephobia/minzip/react-leaflet?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=react-leaflet)                       | ✅         | ✅        |
+| [mapbox-gl](https://www.npmjs.com/package/mapbox-gl)                               | ![GitHub stars](https://img.shields.io/github/stars/mapbox/mapbox-gl-js.svg?label=%F0%9F%8C%9F)       | [![Bundle size](https://badgen.net/bundlephobia/minzip/mapbox-gl?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=mapbox-gl)                               | ✅         | ✅        |
+| [react-map-gl](https://www.npmjs.com/package/react-map-gl)                         | ![GitHub stars](https://img.shields.io/github/stars/visgl/react-map-gl.svg?label=%F0%9F%8C%9F)        | [![Bundle size](https://badgen.net/bundlephobia/minzip/react-map-gl?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=react-map-gl)                         | ✅         | ✅        |
 
 ### Testing Libraries
 

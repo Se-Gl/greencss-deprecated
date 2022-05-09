@@ -1,39 +1,56 @@
 @use '../abstracts/color' as *;
 
-.leaflet-container {
+// backup leaflet style
+// .leaflet-container {
+//   font-family: 'Inter', 'Omen Motion', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+//     Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+//   font-size: 7px !important;
+// }
+
+// .leaflet-control-attribution > a {
+//   font-size: 8px !important;
+//   color: $black !important;
+//   svg {
+//     display: none !important;
+//   }
+// }
+
+// .leaflet-control-zoom-in {
+//   margin: 0 !important;
+//   margin-bottom: 5px !important;
+// }
+// .leaflet-control-zoom-out {
+//   margin: 0 !important;
+// }
+
+// .leaflet-popup {
+//   left: -47px !important;
+// }
+
+// .leaflet-popup-close-button {
+//   margin: 0 !important;
+// }
+
+.mapboxgl-ctrl-attrib-inner a {
+  font-size: 10px !important;
+}
+
+.mapboxgl-popup-close-button {
+  padding-inline: 5px;
+}
+.mapboxgl-popup-content div {
+  padding: 10px !important;
   font-family: 'Inter', 'Omen Motion', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
-  font-size: 7px !important;
 }
-
-.leaflet-control-attribution > a {
-  font-size: 8px !important;
-  color: $black !important;
-  svg {
-    display: none !important;
-  }
-}
-
-.leaflet-control-zoom-in {
-  margin: 0 !important;
-  margin-bottom: 5px !important;
-}
-.leaflet-control-zoom-out {
-  margin: 0 !important;
-}
-
-.leaflet-popup {
-  left: -47px !important;
-}
-
-.leaflet-popup-close-button {
-  margin: 0 !important;
+.mapbox-improve-map {
+  display: none;
 }
 
 // marker
 .ring {
   opacity: 0;
-  stroke: $blue;
+  stroke: $green;
   -webkit-transform-origin: center;
   -webkit-animation: anim-pulse 2s 1s infinite;
 }

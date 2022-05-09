@@ -4218,6 +4218,10 @@ input::-moz-focus-inner,
   height: 100%;
 }
 
+.h-50vh {
+  height: 50vh;
+}
+
 .h-75vh {
   height: 75vh;
 }
@@ -4912,8 +4916,8 @@ input::-moz-focus-inner,
   fill: #898989;
 }
 
-.fill-blue {
-  fill: #066ef9;
+.fill-green {
+  fill: #80f906;
 }
 
 @media (max-width: 480px) {
