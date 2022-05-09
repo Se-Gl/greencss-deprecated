@@ -276,6 +276,10 @@ input::-moz-focus-inner,
   color: #edfedb;
 }
 
+.hover\:text-green-9:hover {
+  color: #edfedb;
+}
+
 .hover\:text-greencss-2:hover {
   color: #56aa03;
 }
@@ -3315,6 +3319,10 @@ input::-moz-focus-inner,
 }
 
 .text-green-9 {
+  color: #edfedb;
+}
+
+.hover\:text-green-9:hover {
   color: #edfedb;
 }
 

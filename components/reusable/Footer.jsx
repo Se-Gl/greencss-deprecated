@@ -48,7 +48,9 @@ export default function Footer() {
               return (
                 <div onClick={scrollToTop} key={index}>
                   <Link href={item.path} passHref>
-                    <a className='text-black-10 text-15px no-decoration'>{item.title}</a>
+                    <a className='text-black-10 hover:text-green-9 text-15px no-decoration transition-duration-200ms transition-all'>
+                      {item.title}
+                    </a>
                   </Link>
                   <br className='mb-25px' />
                 </div>
@@ -63,7 +65,9 @@ export default function Footer() {
               return (
                 <div onClick={scrollToTop} key={index}>
                   <Link href={item.path} passHref>
-                    <a className='text-black-10 text-15px cursor-pointer no-decoration'>{item.title}</a>
+                    <a className='text-black-10 hover:text-green-9 text-15px cursor-pointer no-decoration transition-duration-200ms transition-all'>
+                      {item.title}
+                    </a>
                   </Link>
                   <br className='mb-25px' />
                 </div>
