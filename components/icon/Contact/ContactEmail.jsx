@@ -1,6 +1,6 @@
-function ContactEmail() {
+function ContactEmail({ className = 'fill-green-9' }) {
   return (
-    <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64' className='fill-green-9'>
+    <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64' className={className}>
       <circle cx='32' cy='32' r='31.5' stroke='none'></circle>
       <path
         fill='#3E7A02'

@@ -296,10 +296,6 @@ input::-moz-focus-inner,
   color: #343434;
 }
 
-.text-black-5 {
-  color: #4d4d4d;
-}
-
 .text-black-8 {
   color: #717171;
 }
@@ -544,10 +540,6 @@ input::-moz-focus-inner,
   color: #343434;
 }
 
-.text-black-5 {
-  color: #4d4d4d;
-}
-
 .active\:text-black-6:active {
   color: #595959;
 }
@@ -582,10 +574,6 @@ input::-moz-focus-inner,
 
 .text-black-3 {
   color: #343434;
-}
-
-.text-black-5 {
-  color: #4d4d4d;
 }
 
 .focus\:text-black-6:focus {
@@ -3130,10 +3118,6 @@ input::-moz-focus-inner,
   font-weight: 900;
 }
 
-.line-height-133per {
-  line-height: 133%;
-}
-
 .display-none {
   display: none;
 }
@@ -3340,10 +3324,6 @@ input::-moz-focus-inner,
 
 .hover\:text-black-3:hover {
   color: #343434;
-}
-
-.text-black-5 {
-  color: #4d4d4d;
 }
 
 .text-black-8 {
@@ -3590,10 +3570,6 @@ input::-moz-focus-inner,
   color: #343434;
 }
 
-.text-black-5 {
-  color: #4d4d4d;
-}
-
 .active\:text-black-6:active {
   color: #595959;
 }
@@ -3628,10 +3604,6 @@ input::-moz-focus-inner,
 
 .text-black-3 {
   color: #343434;
-}
-
-.text-black-5 {
-  color: #4d4d4d;
 }
 
 .focus\:text-black-6:focus {
@@ -4072,6 +4044,10 @@ input::-moz-focus-inner,
 
 .max-w-25rem {
   max-width: 25rem;
+}
+
+.max-w-30rem {
+  max-width: 30rem;
 }
 
 .max-w-40rem {
@@ -4734,6 +4710,13 @@ input::-moz-focus-inner,
   -ms-box-shadow: 10px 10px 20px -2.5px #101010;
 }
 
+.shadow-small-blue-8 {
+  box-shadow: 5px 5px 10px -1px #c3dcfe;
+  -webkit-box-shadow: 5px 5px 10px -1px #c3dcfe;
+  -moz-box-shadow: 5px 5px 10px -1px #c3dcfe;
+  -ms-box-shadow: 5px 5px 10px -1px #c3dcfe;
+}
+
 .shadow-small-black-10 {
   box-shadow: 5px 5px 10px -1px #898989;
   -webkit-box-shadow: 5px 5px 10px -1px #898989;
@@ -4783,16 +4766,16 @@ input::-moz-focus-inner,
   border-color: #3e7a02;
 }
 
-.border-blue-8 {
-  border-color: #c3dcfe;
-}
-
 .border-black {
   border-color: #101010;
 }
 
 .hover\:border-black:hover {
   border-color: #101010;
+}
+
+.border-black-10 {
+  border-color: #898989;
 }
 
 .hover\:border-white:hover {
@@ -4848,10 +4831,6 @@ input::-moz-focus-inner,
 
 .border-1px {
   border-width: 1px;
-}
-
-.border-bottom-width-3px {
-  border-bottom-width: 3px;
 }
 
 .select-none {
