@@ -7,22 +7,28 @@ export default function Newsletter() {
   const [loading, setLoading] = useState(false)
   const toast = useToast()
 
+  const emailRegex = /\S+@\S+\.\S+/
+
   const subscribe = () => {
-    !mail ? null : setLoading(true)
-    fetch('api/newsletter', {
-      method: 'PUT',
-      headers: { 'content-type': 'application/json', authorization: `Bearer ${process.env.SENDGRID_API_KEY}` },
-      body: JSON.stringify({
-        mail: mail
+    if (emailRegex.test(mail)) {
+      setLoading(true)
+      fetch('api/newsletter', {
+        method: 'PUT',
+        headers: { 'content-type': 'application/json', authorization: `Bearer ${process.env.SENDGRID_API_KEY}` },
+        body: JSON.stringify({
+          mail: mail
+        })
+      }).then((result) => {
+        if (result.status === 200) {
+          toast('success', `🙏 Thank you! Your email has been succesfully added to the mailing list.`)
+        } else {
+          toast('error', `⚡ Oops! There was a problem with your subscription, please try again or contact us`)
+          setLoading(false)
+        }
       })
-    }).then((result) => {
-      if (result.status === 200) {
-        toast('success', `🙏 Thank you! Your email has been succesfully added to the mailing list.`)
-      } else {
-        toast('error', `⚡ Oops! There was a problem with your subscription, please try again or contact us`)
-        setLoading(false)
-      }
-    })
+    } else {
+      toast('error', `⚡ Please provide a valid email.`)
+    }
   }
 
   return (
@@ -30,6 +36,7 @@ export default function Newsletter() {
       {!loading ? (
         <>
           <input
+            required
             onChange={(e) => {
               setMail(e.target.value)
             }}
