@@ -38,6 +38,8 @@ export default function Presentation() {
                   objectFit='cover'
                   src={`${presentation.imageUrl}`}
                   alt='greenCSS tv forest, sustainable software'
+                  placeholder='blur'
+                  blurDataURL={`/_next/image?url=${presentation.imageUrl}&w=16&q=1`}
                 />
               </div>
             </div>
