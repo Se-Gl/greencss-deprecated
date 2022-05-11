@@ -74,7 +74,7 @@ const goodexamples = [
   }
 ]
 
-export const brandsections = [
+export const brandColorSections = [
   {
     title: 'Colours',
     description:

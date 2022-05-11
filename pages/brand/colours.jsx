@@ -3,7 +3,7 @@ import BrandSection from '@/components/brand/BrandSection'
 import { BackButton } from '@/components/reusable/Button'
 import Summary from '@/components/brand/Summary'
 import SEO from '@/components/reusable/SEO'
-import { brandsections } from '@/data/colorData'
+import { brandColorSections } from '@/data/brand/colorData'
 
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
@@ -21,7 +21,7 @@ export default function colours() {
             <h1 className='text-80px sm:text-50px mb-100px'>
               <span className='text-greencss'>greenCSS</span> brand identity: the colour
             </h1>
-            {brandsections.sort().map((section, index) => (
+            {brandColorSections.sort().map((section, index) => (
               <BrandSection
                 key={index}
                 title={section.title}
