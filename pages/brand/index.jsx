@@ -7,6 +7,25 @@ import SEO from '@/components/reusable/SEO'
 const Layout = dynamic(() => import('@/components/reusable/Layout'), { ssr: false })
 
 export default function BrandHome() {
+  const brandCards = [
+    {
+      title: 'Logo',
+      link: '/brand/logo'
+    },
+    {
+      title: 'Typography',
+      link: '/brand/typography'
+    },
+    {
+      title: 'Colours',
+      link: '/brand/colours'
+    },
+    {
+      title: 'Composition',
+      link: '/brand/composition'
+    }
+  ]
+
   return (
     <SEO
       title='greenCSS Brand Book | Styleguide | Corporate Identity'
@@ -31,10 +50,9 @@ export default function BrandHome() {
               you acknowledge that you sufficiently attribute the specific content.
             </p>
             <div className='m-auto grid grid-col-2 gap-30px sm:gap-15px sm:grid-col-1 md:grid-col-1'>
-              <BrandCard title='Logo' link='/brand/logo' />
-              <BrandCard title='Typography' link='/brand/typography' />
-              <BrandCard title='Colours' link='/brand/colours' />
-              <BrandCard title='Composition' link='/brand/composition' />
+              {brandCards.sort().map((card, index) => (
+                <BrandCard title={card.title} link={card.link} key={index} />
+              ))}
             </div>
           </div>
         </div>
