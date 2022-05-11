@@ -3170,10 +3170,6 @@ input::-moz-focus-inner,
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.grid-col-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .grid-col-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
@@ -4072,10 +4068,6 @@ input::-moz-focus-inner,
 
 .max-w-80rem {
   max-width: 80rem;
-}
-
-.max-w-90rem {
-  max-width: 90rem;
 }
 
 .max-w-50per {
