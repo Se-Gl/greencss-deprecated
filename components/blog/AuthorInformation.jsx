@@ -29,7 +29,7 @@ export default function AuthorInformation({ authorImage, author, date, content }
           <p className='text-15px text-black-10 mb-0px' id='blog-created'>
             {date}
           </p>
-          <span className='text-15px text-black-10 mx-5px'>•</span>
+          <span className='text-15px text-greencss mx-5px'>•</span>
           <p className='text-15px text-black-10 mb-0px' id='blog-readingtime'>
             {readingTime()} min read
           </p>
