@@ -35,7 +35,7 @@ const badexamples = [
     width: 200,
     height: 251,
     childTwo:
-      'Only use the brand`s primary colours (white, black, greencss, green) in order to provide the highest contrast ratio.'
+      'Only use the brand’s primary colours (white, black, greencss, green) in order to provide the highest contrast ratio.'
   }
 ]
 
