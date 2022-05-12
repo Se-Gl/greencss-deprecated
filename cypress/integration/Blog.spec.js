@@ -17,7 +17,7 @@ describe('Blog Screen Unit test', () => {
   })
 })
 
-describe('Verify ElementRenderer', () => {
+describe('Verify Single Blog Post', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000/blog/greencss-animations')
   })
@@ -37,5 +37,10 @@ describe('Verify ElementRenderer', () => {
   it('checks if code is being rendered', () => {
     cy.get('pre').should('exist')
     cy.get('code').should('exist').should('be.visible').invoke('attr', 'class').should('equal', 'language-js')
+  })
+  it('checks if author information are being rendered', () => {
+    cy.get('#blog-author').should('exist').should('not.be.empty')
+    cy.get('#blog-created').should('exist').should('not.be.empty')
+    cy.get('#blog-readingtime').should('exist').should('not.be.empty').contains('min read', { matchCase: false })
   })
 })

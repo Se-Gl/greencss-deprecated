@@ -5,6 +5,7 @@ import { BackButton } from '@/components/reusable/Button'
 import Loader from '@/components/logo/Loader'
 import { HeadingRenderer, LinkRenderer, CodeRenderer } from '@/utils/ElementRenderer'
 import ReusableModal from '../modal/ReusableModal'
+import AuthorInformation from '../blog/AuthorInformation'
 
 const ReactMarkdown = dynamic(() => import('react-markdown').then((mod) => mod.default), {
   ssr: false,
@@ -16,6 +17,7 @@ const SideBar = dynamic(() => import('../category/SideBar'))
 export default function SlugComponent({
   title,
   excerpt,
+  date,
   category,
   cover_image,
   author,
@@ -53,22 +55,7 @@ export default function SlugComponent({
           <div className='my-5rem'>
             <p className='text-greencss font-600 text-15px mb-0px'>{category}</p>
             <h1 className='font-900 mb-15px'>{title}</h1>
-            {isBlog && (
-              <div className='flex h-40px my-25px'>
-                <div className='min-h-40px min-w-40px'>
-                  <Image
-                    src={authorImage ? `${authorImage}` : '/images/greencss_logo_dark.png'}
-                    alt={`A greenCSS Blog by ${author}`}
-                    width={40}
-                    height={!authorImage ? 50 : 40}
-                    className={!authorImage ? '' : 'rounded-50per m-auto'}
-                    placeholder='blur'
-                    blurDataURL={`/_next/image?url=${authorImage}&w=16&q=1`}
-                  />
-                </div>
-                <p className='block ml-10px my-auto font-bold text-15px'>{author}</p>
-              </div>
-            )}
+            {isBlog && <AuthorInformation authorImage={authorImage} author={author} date={date} content={content} />}
             <h2 className='text-20px font-normal'>{excerpt}</h2>
           </div>
           {isBlog === false ? null : (
