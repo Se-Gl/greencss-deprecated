@@ -1,5 +1,6 @@
-import { GreenButton } from '@/components/reusable/Button'
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import { GreenButton } from '@/components/reusable/Button'
 import ReusableModal from '../modal/ReusableModal'
 import HeroPhone from './HeroPhone'
 
@@ -37,21 +38,33 @@ export default function Hero() {
                   Install
                 </GreenButton>
               </div>
-              <img
-                src='/images/landingpage/Macbook.webp'
-                alt='greenCSS Hero Image MacBook'
-                className='display-none md:block md:mt-50px'
-              />
+
+              <div className='display-none md:block md:mt-50px min-w-55rem' style={{ marginLeft: '-75px' }}>
+                <Image
+                  quality={100}
+                  width={1327}
+                  height={801}
+                  src='/images/landingpage/Macbook.webp'
+                  alt='greenCSS Hero Image MacBook'
+                  placeholder='blur'
+                  blurDataURL='/_next/image?url=/images/landingpage/Macbook.webp&w=16&q=1'
+                />
+              </div>
             </div>
           </div>
         </div>
         <div className='relative col-span-1 overflow-hidden sm:display-none' id='phone-image'>
-          {/* TODO refactor NextJS image */}
-          <img
-            src='/images/landingpage/phone.webp'
-            alt='greenCSS Hero Image Iphone'
-            className='h-50rem absolute bottom-0per md:display-none'
-          />
+          <div className='h-50rem absolute bottom-0per md:display-none' style={{ minWidth: '524px' }}>
+            <Image
+              quality={100}
+              width={524}
+              height={531}
+              src='/images/landingpage/phone.webp'
+              alt='greenCSS Hero Image Iphone'
+              placeholder='blur'
+              blurDataURL='/_next/image?url=/images/landingpage/phone.webp&w=16&q=1'
+            />
+          </div>
           <HeroPhone loading={loading} />
         </div>
       </div>

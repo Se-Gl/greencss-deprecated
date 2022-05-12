@@ -1,4 +1,4 @@
-export default (req, res) => {
+export default function search(req, res) {
   let posts
   posts = require('../../cache/data').posts
 

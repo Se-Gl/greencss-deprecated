@@ -20,6 +20,7 @@ export default function Results({ results, searchTerm }) {
             }00ms`}
             key={index}>
             <Link
+              passHref
               href={{
                 pathname: `/${result.frontmatter.isBlog.toString() === true ? 'blog/[slug]' : 'docs/[slug]'}`,
                 query: { slug: `${result.slug}` }

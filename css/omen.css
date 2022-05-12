@@ -4069,6 +4069,10 @@ input::-moz-focus-inner,
   min-width: 20rem;
 }
 
+.min-w-55rem {
+  min-width: 55rem;
+}
+
 .min-w-100per {
   min-width: 100%;
 }
