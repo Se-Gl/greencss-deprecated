@@ -3,7 +3,7 @@ import Image from 'next/image'
 import remarkGfm from 'remark-gfm'
 import { BackButton } from '@/components/reusable/Button'
 import Loader from '@/components/logo/Loader'
-import { HeadingRenderer, LinkRenderer, CodeRenderer } from '@/utils/ElementRenderer'
+import { HeadingRenderer, LinkRenderer, CodeRenderer, ImageRenderer } from '@/utils/ElementRenderer'
 import ReusableModal from '../modal/ReusableModal'
 import AuthorInformation from '../blog/AuthorInformation'
 
@@ -80,7 +80,8 @@ export default function SlugComponent({
               a: LinkRenderer,
               h2: HeadingRenderer,
               h3: HeadingRenderer,
-              code: CodeRenderer
+              code: CodeRenderer,
+              p: ImageRenderer
             }}
             remarkPlugins={[remarkGfm]}
           />

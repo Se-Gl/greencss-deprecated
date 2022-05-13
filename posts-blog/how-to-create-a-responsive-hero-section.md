@@ -24,7 +24,7 @@ Let us build a smooth transition for the button and a responsive layout for an a
 
 This is what we will code in under 5 minutes:
 
-![reduce file size](/images/blog/blogcontent/hero-section.webp?style=centerme)
+![reduce file size {1440x1114} {caption: The goal, a modern hero section}](/images/blog/blogcontent/hero-section.webp)
 
 ### The NavBar
 

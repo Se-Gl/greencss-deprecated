@@ -16,7 +16,8 @@ This is a tutorial to remove unused greenCSS classes in vanilla HTML 5, it works
 
 ## Lose Weight With Purgecss
 
-![reduce file size](/images/blog/blogcontent/lightweight-file-size.webp?style=centerme)
+![reduce CSS file size {273x70} {caption: Delete unused CSS classes}](/images/blog/blogcontent/lightweight-file-size.webp)
+
 The entire file was reduced by 99.4% (March 2022), in this example. All unused CSS classes are excluded. As a result, SEO scores are improved, user experience is enhanced and your website looks more professional as load times are kept to a minimum.
 
 It is really easy and only takes a few minutes! In this example, a simple \*.html file is resized with purge css.

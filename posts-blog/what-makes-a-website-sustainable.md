@@ -20,7 +20,7 @@ In principle, some obvious and less evident factors need to be considered to det
 
 Theoretically, no website is climate neutral. It starts with the programmer or an agency that creates a homepage. At least one computer must be running at all times for programming, designing and marketing. To prevent a computer or laptop from overheating, it must be cooled constantly. If a computer has a powerful graphics card or other above-average components, the energy required for cooling will increase proportionally.
 
-![sustainable software](/images/blog/blogcontent/sustainable/sustainable-world.webp?style=centerme)
+![sustainable software {800x426} {caption: greenCSS wants a sustainable software world}](/images/blog/blogcontent/sustainable/sustainable-world.webp)
 
 In addition, a web application must be available 24/7. Therefore a reliable web host server is needed, which has a high uptime rate. The server is running all the time and needs to be cooled permanently - which causes an additional emission potential.
 
@@ -34,7 +34,7 @@ According to these results, no website can truly be climate neutral. However, gr
 
 Sustainable web design is an approach of designing web services that prioritizes the health of our planet. In essence, the aim is to reduce CO2 emissions and reduce energy consumption. And this is where greenCSS comes into action. As we learned earlier, it is not possible to create a completely emission-free website. Nevertheless, greenCSS has made it its goal to compensate for CO2 in a climate-neutral way. So far (as of May 2022) the entire project has produced about 100kg of carbon dioxide in Switzerland. It is planned that trees will be planted in the nearby area as compensation.
 
-![sustainable software](/images/blog/blogcontent/sustainable/green-software.webp?style=centerme)
+![sustainable software {446x413} {caption: greenCSS creates green software}](/images/blog/blogcontent/sustainable/green-software.webp)
 
 greenCSS is a climate neutral, freely available, open source CSS library. Thanks to donations, trees can be planted worldwide - in cooperation with partners. For you as a designer or developer, this means that you can offer zero-emission software.
 
@@ -51,7 +51,8 @@ You want to develop a sustainable software - but you do not know how to start? C
 
 Sustainable brands usually aim to ensure that the greatest amount of information is presented in a compact manner. Minimalist web design does not mean that our designs have to be bald. It means that we can justify the existence of every detail.
 
-![white space iphone](/images/blog/blogcontent/sustainable/white-space.webp?style=centerme)
+![white space iphone {640x427} {caption: The courage to make use of the white space}](/images/blog/blogcontent/sustainable/white-space.webp)
+
 However, this does not mean that a website may have no content at all. It means that images, videos and colors should be used carefully. Loading times should be kept as low as possible. This way images, for example, can be compressed and saved in a web friendly format - like \*.webp.
 
 ### What is Good for Your Website
@@ -62,8 +63,7 @@ UX designers have an enormous impact on the environmental footprint of a web pre
 
 Data transfers correlate strongly with energy consumption. The more data the user loads, the more electricity is required and the more CO2 is emitted into the atmosphere. An average web page is 2MB-5MB in size. Every step in a user journey has a significant impact on the environment. Well-structured design helps to reduce it.
 
-![sustainable green library with google](/images/blog/blogcontent/sustainable/computer-plant.webp?style=centerme)
-Google is a prime example of minimalism and extremely fast loading times.
+![sustainable green library with google {800x517} {caption: Google is a prime example of minimalism and extremely fast loading times.}](/images/blog/blogcontent/sustainable/computer-plant.webp)
 
 1. Unnecessary API calls to external servers should be avoided if possible.
 2. Similar content could be merged into one document.

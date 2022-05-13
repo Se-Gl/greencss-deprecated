@@ -18,7 +18,7 @@ In this tutorial we will show you how to use over 100 different animation types 
 
 Ok. Honestly! This hardly works without JavaScript. For this reason, a stagger effect will be demonstrated based on the mobile navigation bar in NextJS.
 
-![Nav Result](/images/blog/blogcontent/mobile-nav_edkd2s.gif?style=centerme)
+![navigation hamburger greenCSS animation {596x1000} {caption: The initial greenCSS navigation hamburger}](/images/blog/blogcontent/mobile-nav_edkd2s.gif)
 
 ```js
 const menu = [
