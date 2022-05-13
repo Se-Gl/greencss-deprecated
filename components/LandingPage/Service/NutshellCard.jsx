@@ -4,7 +4,7 @@ export default function NutshellCard({ data }) {
       {data.sort().map((card, index) => (
         <div
           key={index}
-          className={`transition-all transition-duration-500ms p-20px col-1 rounded-10px col-span-1 p-20px sm:mt-25px w-100per border-black min-h-30rem hover:bg-greencss hover:text-white`}
+          className={`transition-all transition-duration-500ms p-20px col-1 rounded-10px col-span-1 p-20px sm:mt-25px w-100per border-black min-h-30rem hover:bg-greencss hover:text-white greencss-button`}
           id={`${card.title.toLowerCase()}`}>
           {card.icon}
           <div className='mt-25px'>

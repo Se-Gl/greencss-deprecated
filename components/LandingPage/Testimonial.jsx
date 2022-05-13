@@ -4,7 +4,7 @@ import Section from '../reusable/Section'
 
 export default function Testimonial() {
   return (
-    <Section id='testimonial' background='bg-red-10'>
+    <Section id='testimonial' background='bg-orange-5'>
       <div className='relative flex min-h-75vh w-100per text-center text-white bg-black rounded-20px'>
         <div className='m-auto max-w-50rem'>
           <h2 className='font-bold text-50px mb-50px'>
@@ -16,7 +16,7 @@ export default function Testimonial() {
             JavaScript, PHP or Python. This was not enough for me and so the story of greenCSS began.”
           </p>
 
-          <div className='flex m-auto min-h-40px w-21rem p-10px rounded-5px bg-black-1 hover:bg-black-2 ransition-all transition-duration-500ms'>
+          <div className='flex m-auto min-h-40px w-21rem p-10px rounded-5px bg-black-1 hover:bg-orange transition-all transition-duration-500ms greencss-button-reverse'>
             <div className='my-auto'>
               <Image
                 src='/images/blog/users/segl-avatar.webp'

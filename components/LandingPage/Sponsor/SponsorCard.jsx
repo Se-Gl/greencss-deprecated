@@ -16,7 +16,7 @@ export default function SponsorCard({
       onMouseEnter={onMouseEnter}
       onClick={onClick}
       id={`donate-cart-amount-${cardAmount}`}
-      className={`sm:mb-25px min-h-24rem min-w-20rem rounded-30px overflow-hidden p-10px transition-all transition-duration-500ms cursor-pointer border-1px border-solid border-greencss sm:border-green-9 md:border-green-9 ${customColors}`}>
+      className={`sm:mb-25px min-h-24rem min-w-20rem rounded-30px overflow-hidden p-10px transition-all transition-duration-500ms cursor-pointer border-1px border-solid border-greencss sm:border-green-9 md:border-green-9 ${customColors} greencss-button`}>
       <div className='relative h-12rem w-12rem mx-auto py-20px'>
         <Image
           layout='fill'
@@ -35,7 +35,7 @@ export default function SponsorCard({
   ) : (
     <div
       id={`donate-cart-amount-${cardAmount}`}
-      className={`sm:mb-25px min-h-24rem min-w-20rem rounded-30px overflow-hidden p-10px transition-all transition-duration-500ms border-1px border-solid border-greencss sm:border-green-9 md:border-green-9 ${customColors}`}>
+      className={`sm:mb-25px min-h-24rem min-w-20rem rounded-30px overflow-hidden p-10px transition-all transition-duration-500ms border-1px border-solid border-greencss sm:border-green-9 md:border-green-9 ${customColors} greencss-button`}>
       <div className='relative h-12rem w-12rem mx-auto py-20px'>
         <Image
           layout='fill'

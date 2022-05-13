@@ -87,7 +87,7 @@ const Sponsor = () => {
   ]
 
   return (
-    <Section id='donation' background='bg-green-9'>
+    <Section id='donation' background='bg-green-5'>
       <SubSectionHero
         header={`${
           prediction

@@ -30,7 +30,7 @@ export default function BlogCard({ post, index }) {
             <Loader />
           ) : (
             <div
-              className={`min-h-40rem w-100per rounded-10px bg-cover bg-no-repeat bg-center ${
+              className={`min-h-40rem w-100per rounded-10px bg-cover bg-no-repeat bg-center transition-all transition-duration-500ms greencss-button ${
                 isDark && 'border-1px border-solid border-black'
               }`}
               style={{ backgroundImage: `url(${post.frontmatter.cover_image})`, backgroundColor: `${vibrantColor}` }}
