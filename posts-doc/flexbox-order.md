@@ -37,7 +37,7 @@ Use the utility classes above to access your desired class.
 
 Use `order-{order-values}` to render flex and grid elements in a different way in the DOM.
 
-![greenCSS order](/images/docs/flex/order.webp?style=centerme)
+![greenCSS order {800x230} ](/images/docs/flex/order.webp)
 
 ```html
 <div class="flex">

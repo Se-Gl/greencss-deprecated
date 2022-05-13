@@ -28,7 +28,7 @@ Use the `content-{keyword}` utilities to set where rows are positioned.
 
 In the example below, we use `content-start` to position the elements at the beginning of a flex environment.
 
-![greenCSS align-content-start](/images/docs/flex/align-content-start.webp?style=centerme)
+![greenCSS align-content-start {900x400} ](/images/docs/flex/align-content-start.webp)
 
 ```html
 <div class="grid grid-col-2 content-start min-h-50vh gap-20px">
@@ -42,7 +42,7 @@ In the example below, we use `content-start` to position the elements at the beg
 
 In the example below, we use `content-center` to position the elements in the middle of the vertical axis.
 
-![greenCSS content-center](/images/docs/flex/align-content-center.webp?style=centerme)
+![greenCSS content-center {900x400} ](/images/docs/flex/align-content-center.webp)
 
 ```html
 <div class="flex content-center gap-20px">
@@ -56,7 +56,7 @@ In the example below, we use `content-center` to position the elements in the mi
 
 In the example below, we use `content-end` to position the elements at the end of the vertical axis.
 
-![greenCSS content-end](/images/docs/flex/align-content-end.webp?style=centerme)
+![greenCSS content-end {900x400} ](/images/docs/flex/align-content-end.webp)
 
 ```html
 <div class="flex content-end gap-20px">
@@ -70,7 +70,7 @@ In the example below, we use `content-end` to position the elements at the end o
 
 In the example below, we use `content-between` to position the elements along the vertical axis with an even space between each element.
 
-![greenCSS content-between](/images/docs/flex/align-content-between.webp?style=centerme)
+![greenCSS content-between {900x400} ](/images/docs/flex/align-content-between.webp)
 
 ```html
 <div class="flex content-between gap-20px">
@@ -84,7 +84,7 @@ In the example below, we use `content-between` to position the elements along th
 
 In the example below, we use `content-around` to position the elements along the horizontal axis with an even space between each element and side.
 
-![greenCSS content-around](/images/docs/flex/align-content-around.webp?style=centerme)
+![greenCSS content-around {900x400} ](/images/docs/flex/align-content-around.webp)
 
 ```html
 <div class="flex content-around gap-20px">
@@ -98,7 +98,7 @@ In the example below, we use `content-around` to position the elements along the
 
 In the example below, we use `content-evenly` to position the elements along the vertical axis with an equal space between each element and the corners.
 
-![greenCSS content-evenly](/images/docs/flex/align-content-evenly.webp?style=centerme)
+![greenCSS content-evenly {900x400} ](/images/docs/flex/align-content-evenly.webp)
 
 ```html
 <div class="flex content-evenly gap-20px">

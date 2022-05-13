@@ -24,7 +24,7 @@ plainText: ' greenCSS css class example minimum value maximum value step basis s
 1. Use the `basis-{size}per` utilities to set the initial size of flex items.
 2. Use the `basis-{keyword}` utility keywords.
 
-![greenCSS flex-basis](/images/docs/flex/flex-basis.webp?style=centerme)
+![greenCSS basis {800x480} ](/images/docs/flex/flex-basis.webp)
 
 ```html
 <div class="flex flex-row h-50px">
@@ -44,7 +44,7 @@ plainText: ' greenCSS css class example minimum value maximum value step basis s
 
 greenCSS let you conditionally apply utility classes for different page states. Thereby different variant modifiers are being used - for example, use `hover:basis-10per` to only apply the basis-10per utility on hover.
 
-![greenCSS flex-basis hover](/images/docs/flex/flex-basis-hover.webp?style=centerme)
+![greenCSS hover {800x480} ](/images/docs/flex/flex-basis-hover.webp)
 
 ```html
 <div class="flex flex-row h-50px">

@@ -24,7 +24,7 @@ Use the utility classes above to access your desired class.
 
 Use `shrink` to allow a flex item to shrink and fill any available space within the selected div. (The second element in the image below uses the shrink class).
 
-![greenCSS flex shrink](/images/docs/flex/shrink.webp?style=centerme)
+![greenCSS shrink {800x480} ](/images/docs/flex/shrink.webp)
 
 ```html
 <div class="flex">
@@ -37,7 +37,7 @@ Use `shrink` to allow a flex item to shrink and fill any available space within 
 ### No Flex Shrink
 
 Use `shrink-none` to prevent a flex item from shrinking. (The second element in the image below uses the shrink-none class).
-![greenCSS shrink none](/images/docs/flex/shrink-none.webp?style=centerme)
+![greenCSS shrink none {800x480} ](/images/docs/flex/shrink-none.webp)
 
 ```html
 <div class="flex">

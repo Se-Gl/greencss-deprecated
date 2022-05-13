@@ -77,6 +77,7 @@ export function ImageRenderer(paragraph) {
             priority={isPriority}
             placeholder='blur'
             blurDataURL={`/_next/image?url=${image.properties.src}&w=16&q=1`}
+            quality={100}
           />
         </div>
         {hasCaption ? (

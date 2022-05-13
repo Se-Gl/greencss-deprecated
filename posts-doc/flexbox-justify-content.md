@@ -28,7 +28,7 @@ Use the `justify-{keyword}` utilities to set where elements are positioned.
 
 In the example below, we use `justify-start` to position the elements at the beginning of the main horizontal axis.
 
-![greenCSS justify-start](/images/docs/flex/justify-content-start.webp?style=centerme)
+![greenCSS justify-start {800x180} ](/images/docs/flex/justify-content-start.webp)
 
 ```html
 <div class="flex justify-start gap-20px">
@@ -42,7 +42,7 @@ In the example below, we use `justify-start` to position the elements at the beg
 
 In the example below, we use `justify-center` to position the elements in the middle of the horizontal axis.
 
-![greenCSS justify-center](/images/docs/flex/justify-content-center.webp?style=centerme)
+![greenCSS justify-center {800x180} ](/images/docs/flex/justify-content-center.webp)
 
 ```html
 <div class="flex justify-center gap-20px">
@@ -56,7 +56,7 @@ In the example below, we use `justify-center` to position the elements in the mi
 
 In the example below, we use `justify-end` to position the elements at the end of the horizontal axis.
 
-![greenCSS justify-end](/images/docs/flex/justify-content-end.webp?style=centerme)
+![greenCSS justify-end {800x180} ](/images/docs/flex/justify-content-end.webp)
 
 ```html
 <div class="flex justify-end gap-20px">
@@ -70,7 +70,7 @@ In the example below, we use `justify-end` to position the elements at the end o
 
 In the example below, we use `justify-between` to position the elements along the horizontal axis with an even space between each element.
 
-![greenCSS justify-between](/images/docs/flex/justify-between.webp?style=centerme)
+![greenCSS justify-between {800x180} ](/images/docs/flex/justify-between.webp)
 
 ```html
 <div class="flex justify-between gap-20px">
@@ -84,7 +84,7 @@ In the example below, we use `justify-between` to position the elements along th
 
 In the example below, we use `justify-around` to position the elements along the horizontal axis with an even space between each element and side.
 
-![greenCSS justify-around](/images/docs/flex/justify-around.webp?style=centerme)
+![greenCSS justify-around {800x180} ](/images/docs/flex/justify-around.webp)
 
 ```html
 <div class="flex justify-around gap-20px">
@@ -98,7 +98,7 @@ In the example below, we use `justify-around` to position the elements along the
 
 In the example below, we use `justify-evenly` to position the elements along the horizontal axis with an equal space between each element and the corners.
 
-![greenCSS justify-evenly](/images/docs/flex/justify-evenly.webp?style=centerme)
+![greenCSS justify-evenly {800x180} ](/images/docs/flex/justify-evenly.webp)
 
 ```html
 <div class="flex justify-evenly gap-20px">

@@ -27,7 +27,7 @@ Use the `place-self-{keyword}` utilities to set the individual position of an el
 
 In the example below, we use `place-self-auto` to set the width and height automatically according to the parents requirements.
 
-![greenCSS place-self-auto](/images/docs/flex/place-self-auto-stretch.webp?style=centerme)
+![greenCSS place-self-auto {830x260} ](/images/docs/flex/place-self-auto-stretch.webp)
 
 ```html
 <div class="grid grid-col-2 gap-20px">
@@ -41,7 +41,7 @@ In the example below, we use `place-self-auto` to set the width and height autom
 
 In the example below, we use `place-self-start` to position the elements at the beginning of the horizontal and vertical axis.
 
-![greenCSS place-self-start](/images/docs/flex/place-self-start.webp?style=centerme)
+![greenCSS place-self-start {830x260} ](/images/docs/flex/place-self-start.webp)
 
 ```html
 <div class="grid grid-col-2 gap-20px">
@@ -55,7 +55,7 @@ In the example below, we use `place-self-start` to position the elements at the 
 
 In the example below, we use `place-self-center` to position the elements in the middle of the horizontal and vertical axis.
 
-![greenCSS place-self-center](/images/docs/flex/place-self-center.webp?style=centerme)
+![greenCSS place-self-center {830x260} ](/images/docs/flex/place-self-center.webp)
 
 ```html
 <div class="grid grid-col-2 gap-20px">
@@ -69,7 +69,7 @@ In the example below, we use `place-self-center` to position the elements in the
 
 In the example below, we use `place-self-end` to position the elements at the end of the horizontal and vertical axis.
 
-![greenCSS place-self-end](/images/docs/flex/place-self-end.webp?style=centerme)
+![greenCSS place-self-end {830x260} ](/images/docs/flex/place-self-end.webp)
 
 ```html
 <div class="grid grid-col-2 gap-20px">
@@ -83,7 +83,7 @@ In the example below, we use `place-self-end` to position the elements at the en
 
 In the example below, we use `place-self-stretch` to stretch the elements in order to cover the horizontal and vertical axis.
 
-![greenCSS place-self-stretch](/images/docs/flex/place-self-auto-stretch.webp?style=centerme)
+![greenCSS place-self-stretch {830x260} ](/images/docs/flex/place-self-auto-stretch.webp)
 
 ```html
 <div class="grid grid-col-2 gap-20px">

@@ -24,7 +24,7 @@ Use the utility classes above to access your desired class.
 
 Use `grow` to allow a flex item to grow and fill any available space within the selected div. (The second element in the image below uses the grow class).
 
-![greenCSS flex grow](/images/docs/flex/grow.webp?style=centerme)
+![greenCSS grow {800x480} ](/images/docs/flex/grow.webp)
 
 ```html
 <div class="flex">
@@ -37,7 +37,7 @@ Use `grow` to allow a flex item to grow and fill any available space within the 
 ### No Flex Grow
 
 Use `grow-none` to prevent a flex item from growing. (The second element in the image below uses the grow-none class).
-![greenCSS grow none](/images/docs/flex/grow-none.webp?style=centerme)
+![greenCSS none {800x480} ](/images/docs/flex/grow-none.webp)
 
 ```html
 <div class="flex">

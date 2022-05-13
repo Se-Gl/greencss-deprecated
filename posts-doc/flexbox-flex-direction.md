@@ -26,7 +26,7 @@ Use the utility classes above to access your desired class.
 
 Use `flex-row` to position flex elements horizontally.
 
-![greenCSS flex-direction row](/images/docs/flex/flex-direction.webp?style=centerme)
+![greenCSS row {800x200} ](/images/docs/flex/flex-direction.webp)
 
 ```html
 <div class="flex flex-row h-50px">
@@ -40,7 +40,7 @@ Use `flex-row` to position flex elements horizontally.
 
 Use `flex-row-reverse` to position flex elements horizontally in the opposite direction.
 
-![greenCSS flex-direction row](/images/docs/flex/flex-direction-row-reversed.webp?style=centerme)
+![greenCSS row reversed {800x200} ](/images/docs/flex/flex-direction-row-reversed.webp)
 
 ```html
 <div class="flex flex-row-reverse h-50px">
@@ -54,7 +54,7 @@ Use `flex-row-reverse` to position flex elements horizontally in the opposite di
 
 Use `flex-col` to position flex elements vertically.
 
-![greenCSS flex-direction row](/images/docs/flex/flex-direction-col.webp?style=centerme)
+![greenCSS column {800x200} ](/images/docs/flex/flex-direction-col.webp)
 
 ```html
 <div class="flex flex-col h-50px">
@@ -68,7 +68,7 @@ Use `flex-col` to position flex elements vertically.
 
 Use `flex-col-reverse` to position flex elements vertically in the opposite direction.
 
-![greenCSS flex-direction row](/images/docs/flex/flex-direction-col-reversed.webp?style=centerme)
+![greenCSS column reversed {800x200} ](/images/docs/flex/flex-direction-col-reversed.webp)
 
 ```html
 <div class="flex flex-col-reverse h-50px">

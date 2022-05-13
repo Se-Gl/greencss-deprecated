@@ -29,7 +29,7 @@ Use the `place-content-{keyword}` utilities to set where rows are positioned.
 
 In the example below, we use `place-content-start` to position the elements at the beginning of the horizontal axis.
 
-![greenCSS place-content-start](/images/docs/flex/place-content-start.webp?style=centerme)
+![greenCSS place-content-start {830x460} ](/images/docs/flex/place-content-start.webp)
 
 ```html
 <div class="grid grid-col-2 place-content-start min-h-50vh gap-20px">
@@ -43,7 +43,7 @@ In the example below, we use `place-content-start` to position the elements at t
 
 In the example below, we use `place-content-center` to position the elements in the middle of the vertical and horizontal axis.
 
-![greenCSS place-content-center](/images/docs/flex/place-content-center.webp?style=centerme)
+![greenCSS place-content-center {830x460} ](/images/docs/flex/place-content-center.webp)
 
 ```html
 <div class="flex place-content-center gap-20px">
@@ -57,7 +57,7 @@ In the example below, we use `place-content-center` to position the elements in 
 
 In the example below, we use `place-content-end` to position the elements at the end of the horizontal axis.
 
-![greenCSS place-content-end](/images/docs/flex/place-content-end.webp?style=centerme)
+![greenCSS place-content-end {830x460} ](/images/docs/flex/place-content-end.webp)
 
 ```html
 <div class="flex place-content-end gap-20px">
@@ -71,7 +71,7 @@ In the example below, we use `place-content-end` to position the elements at the
 
 In the example below, we use `place-content-between` to position the elements at the corners.
 
-![greenCSS place-content-between](/images/docs/flex/place-content-between.webp?style=centerme)
+![greenCSS place-content-between {830x460} ](/images/docs/flex/place-content-between.webp)
 
 ```html
 <div class="flex place-content-between gap-20px">
@@ -85,7 +85,7 @@ In the example below, we use `place-content-between` to position the elements at
 
 In the example below, we use `place-content-around` to position the elements with the same distance to each other.
 
-![greenCSS place-content-around](/images/docs/flex/place-content-around.webp?style=centerme)
+![greenCSS place-content-around {830x460} ](/images/docs/flex/place-content-around.webp)
 
 ```html
 <div class="flex place-content-around gap-20px">
@@ -99,7 +99,7 @@ In the example below, we use `place-content-around` to position the elements wit
 
 In the example below, we use `place-content-evenly` to position the elements with an even amount of space on the horizontal axis.
 
-![greenCSS place-content-evenly](/images/docs/flex/place-content-evenly.webp?style=centerme)
+![greenCSS place-content-evenly {830x460} ](/images/docs/flex/place-content-evenly.webp)
 
 ```html
 <div class="flex place-content-evenly gap-20px">
@@ -113,7 +113,7 @@ In the example below, we use `place-content-evenly` to position the elements wit
 
 In the example below, we use `place-content-stretch` to stretch the items within their grid system and along the horizontal axis.
 
-![greenCSS place-content-stretch](/images/docs/flex/place-content-stretch.webp?style=centerme)
+![greenCSS place-content-stretch {830x460} ](/images/docs/flex/place-content-stretch.webp)
 
 ```html
 <div class="flex place-content-stretch gap-20px">

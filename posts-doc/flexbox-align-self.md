@@ -28,7 +28,7 @@ Use the `self-{keyword}` utilities to set the individual position of flex and gr
 
 In the example below, we use `self-auto` to position the elements at the beginning of the vertical axis in relation to its parents.
 
-![greenCSS align-self-auto](/images/docs/flex/align-items-stretch.webp?style=centerme)
+![greenCSS align-self-auto {900x400} ](/images/docs/flex/align-items-stretch.webp)
 
 ```html
 <div class="flex items-stretch gap-20px h-50px">
@@ -42,7 +42,7 @@ In the example below, we use `self-auto` to position the elements at the beginni
 
 In the example below, we use `self-start` to position the elements at the beginning of the vertical axis in relation to its parents.
 
-![greenCSS align-self-start](/images/docs/flex/align-self-start.webp?style=centerme)
+![greenCSS align-self-start {900x400} ](/images/docs/flex/align-self-start.webp)
 
 ```html
 <div class="flex items-stretch gap-20px h-50px">
@@ -56,7 +56,7 @@ In the example below, we use `self-start` to position the elements at the beginn
 
 In the example below, we use `self-center` to position the elements along the middle of the vertical axis in relation to its parents.
 
-![greenCSS self-center](/images/docs/flex/align-self-center.webp?style=centerme)
+![greenCSS self-center {900x400} ](/images/docs/flex/align-self-center.webp)
 
 ```html
 <div class="flex items-stretch gap-20px h-50px">
@@ -70,7 +70,7 @@ In the example below, we use `self-center` to position the elements along the mi
 
 In the example below, we use `self-end` to position the elements at the end of the vertical axis in relation to its parents.
 
-![greenCSS align-self-end](/images/docs/flex/align-self-end.webp?style=centerme)
+![greenCSS align-self-end {900x400} ](/images/docs/flex/align-self-end.webp)
 
 ```html
 <div class="flex items-stretch gap-20px h-50px">
@@ -84,7 +84,7 @@ In the example below, we use `self-end` to position the elements at the end of t
 
 In the example below, we use `self-baseline` to position the elements along the baseline of the vertical axis in relation to its parents.
 
-![greenCSS align-self-baseline](/images/docs/flex/align-self-baseline.webp?style=centerme)
+![greenCSS align-self-baseline {900x400} ](/images/docs/flex/align-self-baseline.webp)
 
 ```html
 <div class="flex items-stretch gap-20px h-50px">
@@ -98,7 +98,7 @@ In the example below, we use `self-baseline` to position the elements along the 
 
 In the example below, we use `self-stretch` to stretch the elements in order to cover the vertical axis in relation to its parents.
 
-![greenCSS align-self-stretch](/images/docs/flex/align-items-stretch.webp?style=centerme)
+![greenCSS align-self-stretch {900x400} ](/images/docs/flex/align-items-stretch.webp)
 
 ```html
 <div class="flex items-stretch gap-20px h-50px">

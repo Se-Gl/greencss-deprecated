@@ -25,7 +25,7 @@ Use the utility classes above to access your desired class.
 
 Use `flex-nowrap` to prevent flex items from wrapping. Non-flexible elements will overflow a container, if it falls out of the viewport.
 
-![greenCSS flex-nowrap](/images/docs/flex/flex-nowrap.webp?style=centerme)
+![greenCSS nowrap {800x480} ](/images/docs/flex/flex-nowrap.webp)
 
 ```html
 <div class="flex flex-nowrap">
@@ -45,7 +45,7 @@ Use `flex-nowrap` to prevent flex items from wrapping. Non-flexible elements wil
 
 Use `flex-wrap` to allow flex items to wrap normally.
 
-![greenCSS flex-wrap](/images/docs/flex/flex-wrap-normal.webp?style=centerme)
+![greenCSS wrap {800x480} ](/images/docs/flex/flex-wrap-normal.webp)
 
 ```html
 <div class="flex flex-wrap">
@@ -65,7 +65,7 @@ Use `flex-wrap` to allow flex items to wrap normally.
 
 Use `flex-wrap-reverse` to wrap elements in reverse.
 
-![greenCSS flex-wrap](/images/docs/flex/flex-wrap-reverse.webp?style=centerme)
+![greenCSS wrap reverse {800x480} ](/images/docs/flex/flex-wrap-reverse.webp)
 
 ```html
 <div class="flex flex-wrap-reverse">

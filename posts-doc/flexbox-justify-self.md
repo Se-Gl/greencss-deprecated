@@ -27,7 +27,7 @@ Use the `justify-self-{keyword}` utilities to set where elements are positioned.
 
 In the example below, we use `justify-self-auto` to position the elements based on the parents utility class. In this case `justify-self-stretch` will be applied.
 
-![greenCSS justify-self-auto](/images/docs/flex/justify-items-stretch.webp?style=centerme)
+![greenCSS justify-self-auto {800x180} ](/images/docs/flex/justify-items-stretch.webp)
 
 ```html
 <div class="grid justify-self-stretch gap-20px">
@@ -41,7 +41,7 @@ In the example below, we use `justify-self-auto` to position the elements based 
 
 In the example below, we use `justify-self-start` to position the elements at the beginning of its main horizontal axis.
 
-![greenCSS justify-self-start](/images/docs/flex/justify-self-start.webp?style=centerme)
+![greenCSS justify-self-start {800x180} ](/images/docs/flex/justify-self-start.webp)
 
 ```html
 <div class="grid justify-items-stretch gap-20px">
@@ -55,7 +55,7 @@ In the example below, we use `justify-self-start` to position the elements at th
 
 In the example below, we use `justify-self-center` to position the elements at the center of its main horizontal axis.
 
-![greenCSS justify-self-center](/images/docs/flex/justify-self-center.webp?style=centerme)
+![greenCSS justify-self-center {800x180} ](/images/docs/flex/justify-self-center.webp)
 
 ```html
 <div class="grid justify-items-stretch gap-20px">
@@ -69,7 +69,7 @@ In the example below, we use `justify-self-center` to position the elements at t
 
 In the example below, we use `justify-self-center` to position the elements at the end of its main horizontal axis.
 
-![greenCSS justify-self-end](/images/docs/flex/justify-self-end.webp?style=centerme)
+![greenCSS justify-self-end {800x180} ](/images/docs/flex/justify-self-end.webp)
 
 ```html
 <div class="grid justify-items-stretch gap-20px">
@@ -83,7 +83,7 @@ In the example below, we use `justify-self-center` to position the elements at t
 
 In the example below, we use `justify-self-stretch` to only stretch a single element.
 
-![greenCSS justify-self-stretch](/images/docs/flex/justify-self-stretch.webp?style=centerme)
+![greenCSS justify-self-stretch {800x180} ](/images/docs/flex/justify-self-stretch.webp)
 
 ```html
 <div class="grid justify-items-end gap-20px">

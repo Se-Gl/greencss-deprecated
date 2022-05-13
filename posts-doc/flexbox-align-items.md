@@ -27,7 +27,7 @@ Use the `items-{keyword}` utilities to set the position of flex and grid element
 
 In the example below, we use `items-start` to position the elements at the beginning of the parents vertical axis.
 
-![greenCSS align-items-start](/images/docs/flex/align-items-start.webp?style=centerme)
+![greenCSS align-items-start {900x400} ](/images/docs/flex/align-items-start.webp)
 
 ```html
 <div class="flex items-start gap-20px">
@@ -41,7 +41,7 @@ In the example below, we use `items-start` to position the elements at the begin
 
 In the example below, we use `items-center` to position the elements along the middle of the parents vertical axis.
 
-![greenCSS items-center](/images/docs/flex/align-items-center.webp?style=centerme)
+![greenCSS items-center {900x400} ](/images/docs/flex/align-items-center.webp)
 
 ```html
 <div class="flex items-center gap-20px">
@@ -55,7 +55,7 @@ In the example below, we use `items-center` to position the elements along the m
 
 In the example below, we use `items-end` to position the elements at the end of the parents vertical axis.
 
-![greenCSS align-items-end](/images/docs/flex/align-items-end.webp?style=centerme)
+![greenCSS align-items-end {900x400} ](/images/docs/flex/align-items-end.webp)
 
 ```html
 <div class="flex items-end gap-20px">
@@ -69,7 +69,7 @@ In the example below, we use `items-end` to position the elements at the end of 
 
 In the example below, we use `items-baseline` to position the elements along the baseline of the vertical axis.
 
-![greenCSS align-items-baseline](/images/docs/flex/align-items-baseline.webp?style=centerme)
+![greenCSS align-items-baseline {900x400} ](/images/docs/flex/align-items-baseline.webp)
 
 ```html
 <div class="flex items-baseline gap-20px">
@@ -83,7 +83,7 @@ In the example below, we use `items-baseline` to position the elements along the
 
 In the example below, we use `items-stretch` to stretch the elements in order to cover the vertical axis.
 
-![greenCSS align-items-stretch](/images/docs/flex/align-items-stretch.webp?style=centerme)
+![greenCSS align-items-stretch {900x400} ](/images/docs/flex/align-items-stretch.webp)
 
 ```html
 <div class="flex items-stretch gap-20px">

@@ -26,7 +26,7 @@ Use the `place-items-{keyword}` utilities to set the position of flex and grid e
 
 In the example below, we use `place-items-start` to position the elements at the beginning of the parents horizontal and vertical axis.
 
-![greenCSS place-items-start](/images/docs/flex/place-items-start.webp?style=centerme)
+![greenCSS place-items-start {830x260} ](/images/docs/flex/place-items-start.webp)
 
 ```html
 <div class="grid grid-col-2 gap-20px place-items-start">
@@ -40,7 +40,7 @@ In the example below, we use `place-items-start` to position the elements at the
 
 In the example below, we use `place-items-center` to position the elements in the middle of the parents horizontal and vertical axis.
 
-![greenCSS place-items-center](/images/docs/flex/place-items-center.webp?style=centerme)
+![greenCSS place-items-center {830x260} ](/images/docs/flex/place-items-center.webp)
 
 ```html
 <div class="grid grid-col-2 gap-20px place-items-center">
@@ -54,7 +54,7 @@ In the example below, we use `place-items-center` to position the elements in th
 
 In the example below, we use `place-items-end` to position the elements at the end of the parents horizontal and vertical axis.
 
-![greenCSS place-items-end](/images/docs/flex/place-items-end.webp?style=centerme)
+![greenCSS place-items-end {830x260} ](/images/docs/flex/place-items-end.webp)
 
 ```html
 <div class="grid grid-col-2 gap-20px place-items-end">
@@ -68,7 +68,7 @@ In the example below, we use `place-items-end` to position the elements at the e
 
 In the example below, we use `place-items-stretch` to stretch the elements in order to cover the horizontal and vertical axis.
 
-![greenCSS place-items-stretch](/images/docs/flex/place-items-stretch.webp?style=centerme)
+![greenCSS place-items-stretch {830x260} ](/images/docs/flex/place-items-stretch.webp)
 
 ```html
 <div class="grid grid-col-2 gap-20px place-items-stretch">

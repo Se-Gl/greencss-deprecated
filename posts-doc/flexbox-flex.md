@@ -27,7 +27,7 @@ Use the utility classes above to access your desired class.
 
 Use `flex-none` to prevent flex elements from growing or shrinking. (The first div element has no flex value and only fits its size).
 
-![greenCSS flex-1](/images/docs/flex/flex-1.webp?style=centerme)
+![greenCSS responsive {800x480} ](/images/docs/flex/flex-1.webp)
 
 ```html
 <div class="flex">
@@ -40,7 +40,7 @@ Use `flex-none` to prevent flex elements from growing or shrinking. (The first d
 ### Flex 1
 
 Use `flex-1` to allow a flex item to grow and shrink as needed, this will ignore the initial width. (The second and third div element have a flex-1 value).
-![greenCSS flex-1](/images/docs/flex/flex-1.webp?style=centerme)
+![greenCSS responsive {800x480} ](/images/docs/flex/flex-1.webp)
 
 ```html
 <div class="flex">
@@ -53,7 +53,7 @@ Use `flex-1` to allow a flex item to grow and shrink as needed, this will ignore
 ### Flex 2
 
 Use `flex-1` to allow a flex item to grow and shrink as needed, this will ignore the initial width. (The third div element has a flex-2 value and is twice as wide as the second div).
-![greenCSS flex-1](/images/docs/flex/flex-2.webp?style=centerme)
+![greenCSS responsive {800x480} ](/images/docs/flex/flex-2.webp)
 
 ```html
 <div class="flex">
@@ -66,7 +66,7 @@ Use `flex-1` to allow a flex item to grow and shrink as needed, this will ignore
 ### Flex initial
 
 Use `flex-initial` to allow a flex item to shrink, but do not allow it to grow - in regard to its initial size. (The third div element has a flex-initial class with a width of 250px, the second div has a width of 500px and the first element has no width set at all).
-![greenCSS flex-initial](/images/docs/flex/flex-initial.webp?style=centerme)
+![greenCSS initial {800x480} ](/images/docs/flex/flex-initial.webp)
 
 ```html
 <div class="flex">
@@ -79,7 +79,7 @@ Use `flex-initial` to allow a flex item to shrink, but do not allow it to grow -
 ### Flex auto
 
 Use `flex-auto` to allow a flex item to grow and shrink - in regard to its initial size. (The third div element has a flex-auto class with a width of 250px, the second div has a width of 500px and the first element has no width set at all).
-![greenCSS flex-auto](/images/docs/flex/flex-auto.webp?style=centerme)
+![greenCSS auto responsive {800x480} ](/images/docs/flex/flex-auto.webp)
 
 ```html
 <div class="flex">

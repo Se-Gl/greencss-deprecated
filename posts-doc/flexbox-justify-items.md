@@ -26,7 +26,7 @@ Use the `justify-items-{keyword}` utilities to set where elements are positioned
 
 In the example below, we use `justify-items-center` to position the elements at the beginning of the main horizontal axis and within their parents container.
 
-![greenCSS justify-items-center](/images/docs/flex/justify-items-center.webp?style=centerme)
+![greenCSS justify-items-center {800x180} ](/images/docs/flex/justify-items-center.webp)
 
 ```html
 <div class="grid justify-items-center gap-20px">
@@ -40,7 +40,7 @@ In the example below, we use `justify-items-center` to position the elements at 
 
 In the example below, we use `justify-items-end` to position the elements at the end of the main horizontal axis and within their parents container.
 
-![greenCSS justify-items-end](/images/docs/flex/justify-items-end.webp?style=centerme)
+![greenCSS justify-items-end {800x180} ](/images/docs/flex/justify-items-end.webp)
 
 ```html
 <div class="grid justify-items-end gap-20px">
@@ -54,7 +54,7 @@ In the example below, we use `justify-items-end` to position the elements at the
 
 In the example below, we use `justify-items-center` to position the elements at the center of the main horizontal axis and within their parents container.
 
-![greenCSS justify-items-center](/images/docs/flex/justify-items-center.webp?style=centerme)
+![greenCSS justify-items-center {800x180} ](/images/docs/flex/justify-items-center.webp)
 
 ```html
 <div class="grid justify-items-center gap-20px">
@@ -68,7 +68,7 @@ In the example below, we use `justify-items-center` to position the elements at 
 
 In the example below, we use `justify-items-stretch` to stretch the elements within their parents container.
 
-![greenCSS justify-items-stretch](/images/docs/flex/justify-items-stretch.webp?style=centerme)
+![greenCSS justify-items-stretch {800x180} ](/images/docs/flex/justify-items-stretch.webp)
 
 ```html
 <div class="grid justify-items-stretch gap-20px">
