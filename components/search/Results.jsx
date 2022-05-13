@@ -22,15 +22,12 @@ export default function Results({ results, searchTerm }) {
             <Link
               passHref
               href={{
-                pathname: `/${result.frontmatter.isBlog.toString() === true ? 'blog/[slug]' : 'docs/[slug]'}`,
+                pathname: `/${result.frontmatter.isBlog ? 'blog/[slug]' : 'docs/[slug]'}`,
                 query: { slug: `${result.slug}` }
               }}>
               <div className='flex w-100per cursor-pointer'>
-                {result.frontmatter.isBlog.toString() === false ? (
-                  <Document className='my-auto' />
-                ) : (
-                  <Blog className='my-auto' />
-                )}
+                {result.frontmatter.isBlog && <Blog className='my-auto' />}
+                {!result.frontmatter.isBlog && <Document className='my-auto' />}
                 <div className='ml-15px'>
                   <div className='flex items-center'>
                     <h3 className='transition-all transition-duration-500ms text-15px font-600 text-greencss hover:text-greencss-2 bg-green-5 hover:bg-greencss-9 rounded-20px py-5px px-10px mb-0px'>
