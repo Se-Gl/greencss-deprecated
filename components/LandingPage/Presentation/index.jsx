@@ -21,16 +21,16 @@ export default function Presentation() {
   ]
 
   return (
-    <Section id='presentation' background='from-green-10 to-green-5 gradient-to-bottom'>
+    <Section id='presentation' background='bg-green-10'>
       <>
         {presentations.sort().map((presentation, index) => {
           return (
             <div key={index}>
               <div className={`flex md:block sm:block ${presentation.customClass}`}>
                 <h2 className='max-w-80rem'>{presentation.title}</h2>
-                <span className='text-black-7 text-120px font-600'>{presentation.number}</span>
+                <span className='text-black-10 text-120px font-600'>{presentation.number}</span>
               </div>
-              <p className='text-black-7 max-w-75rem'>{presentation.description}</p>
+              <p className='text-black-10 max-w-75rem'>{presentation.description}</p>
               <div className='relative h-75vh overflow-hidden rounded-20px'>
                 <Image
                   quality={100}

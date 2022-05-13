@@ -87,7 +87,7 @@ const Sponsor = () => {
   ]
 
   return (
-    <Section id='donation' background='bg-green-5'>
+    <Section id='donation' background='bg-green-10'>
       <SubSectionHero
         header={`${
           prediction
@@ -143,7 +143,7 @@ const Sponsor = () => {
                       isDefault={false}
                       isReverse={true}
                       id='donate-button'
-                      className='text-10px'>
+                      className='text-10px border-solid border-white border-1px'>
                       {individualAmount <= 0 ? 'donate' : `donate ${individualAmount}$`}
                     </GreenButton>
                   ) : (

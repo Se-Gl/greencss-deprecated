@@ -38,7 +38,7 @@ const questions = [
 
 export default function Faq() {
   return (
-    <Section id='faq' background='bg-blue-5'>
+    <Section id='faq' background='bg-blue-10'>
       <h1 className='font-800 text-63px max-w-80rem'>
         There’s more to <span className='text-greencss'>know</span> about greenCSS
       </h1>
@@ -53,7 +53,7 @@ export default function Faq() {
           </div>
         </div>
         <div className='col-span-1 max-w-30rem sm:max-w-100per sm:mt-50px md:max-w-100per md:mt-50px m-auto'>
-          <div className='bg-white p-15px border-1px border-solid border-black-10 rounded-5px shadow-small-blue-2'>
+          <div className='bg-white p-15px border-1px border-solid border-black-10 rounded-5px shadow-small-blue-7'>
             <ContactEmail className='fill-green-9 mx-auto mb-15px' />
             <h2 className='text-30px mb-5px'>Do you have more questions?</h2>
             <p className='text-15px text-black-10 mb-25px'>

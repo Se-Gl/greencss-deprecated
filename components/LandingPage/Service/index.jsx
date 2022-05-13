@@ -58,7 +58,7 @@ export default function Service() {
     }
   ]
   return (
-    <Section id='service' background='bg-blue-5'>
+    <Section id='service' background='bg-blue-10'>
       <h2 className='max-w-80rem'>
         Our Mission - <span className='text-greencss'>Save</span> the Programming Planet
       </h2>
