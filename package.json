@@ -36,6 +36,7 @@
     "react-syntax-highlighter": "^15.5.0",
     "rehype-sanitize": "^5.0.1",
     "remark-gfm": "^3.0.1",
+    "sharp": "^0.30.4",
     "stripe": "^8.219.0",
     "tinycolor2": "^1.4.2"
   },
