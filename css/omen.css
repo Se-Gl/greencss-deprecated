@@ -3200,10 +3200,6 @@ input::-moz-focus-inner,
   justify-content: space-between;
 }
 
-.justify-self-center {
-  justify-self: center;
-}
-
 .items-center {
   align-items: center;
 }
