@@ -3,6 +3,8 @@ import { useRouter } from 'next/router'
 import { useState } from 'react'
 import LogoDark from '../icon/Brand/LogoDark'
 import ReusableModal from '../modal/ReusableModal'
+import Navbar from '../nav/NavBar'
+import SubMenu from '../nav/SubMenu'
 
 const menu = [
   { title: 'Blog', path: '/blog' },
@@ -18,7 +20,10 @@ export default function Header() {
 
   return (
     <div className='container'>
-      <nav
+      <Navbar />
+      <SubMenu />
+      <ReusableModal LinkClass={'isHome'} />
+      {/* <nav
         aria-label='header navigation'
         className='sm:display-none md:display-none z-100 fixed flex items-center h-75px justify-between w-100per sm:px-10px md:px-25px lg:px-50px text-black bg-white'
         style={{ maxWidth: '110rem' }}>
@@ -44,7 +49,7 @@ export default function Header() {
           </li>
         </ul>
         <ReusableModal LinkClass={'isHome'} />
-      </nav>
+      </nav> */}
 
       {/* Mobile Menu */}
       <nav className='z-100 pt-100px display-none sm:block md:block'>

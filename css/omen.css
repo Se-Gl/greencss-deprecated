@@ -53,6 +53,7 @@ label,
 table,
 caption,
 article,
+aside,
 canvas,
 details,
 footer,
@@ -72,6 +73,7 @@ time {
 
 /* HTML5 display-role reset for older browsers */
 article,
+aside,
 details,
 footer,
 header,
@@ -294,6 +296,10 @@ input::-moz-focus-inner,
 
 .hover\:text-black-3:hover {
   color: #343434;
+}
+
+.hover\:text-black-5:hover {
+  color: #4d4d4d;
 }
 
 .text-black-8 {
@@ -530,6 +536,10 @@ input::-moz-focus-inner,
 
 .active\:text-black-6:active {
   color: #595959;
+}
+
+.active\:text-black-7:active {
+  color: #656565;
 }
 
 .text-black-8 {
@@ -3190,12 +3200,20 @@ input::-moz-focus-inner,
   justify-content: space-between;
 }
 
+.justify-self-center {
+  justify-self: center;
+}
+
 .items-center {
   align-items: center;
 }
 
 .gap-10px {
   gap: 10px;
+}
+
+.gap-20px {
+  gap: 20px;
 }
 
 .gap-30px {
@@ -3300,6 +3318,10 @@ input::-moz-focus-inner,
 
 .hover\:text-black-3:hover {
   color: #343434;
+}
+
+.hover\:text-black-5:hover {
+  color: #4d4d4d;
 }
 
 .text-black-8 {
@@ -3536,6 +3558,10 @@ input::-moz-focus-inner,
 
 .active\:text-black-6:active {
   color: #595959;
+}
+
+.active\:text-black-7:active {
+  color: #656565;
 }
 
 .text-black-8 {
@@ -4250,6 +4276,10 @@ input::-moz-focus-inner,
   padding: 30px;
 }
 
+.pt-20px {
+  padding-top: 20px;
+}
+
 .pt-25px {
   padding-top: 25px;
 }
@@ -4272,6 +4302,10 @@ input::-moz-focus-inner,
 
 .pb-10px {
   padding-bottom: 10px;
+}
+
+.pb-15px {
+  padding-bottom: 15px;
 }
 
 .pb-100px {
@@ -4450,6 +4484,10 @@ input::-moz-focus-inner,
   margin-left: 15px;
 }
 
+.ml-20px {
+  margin-left: 20px;
+}
+
 .ml-25px {
   margin-left: 25px;
 }
@@ -4472,6 +4510,10 @@ input::-moz-focus-inner,
 
 .mx-30px {
   margin-inline: 30px;
+}
+
+.my-0px {
+  margin-block: 0px;
 }
 
 .my-15px {
@@ -4567,6 +4609,11 @@ input::-moz-focus-inner,
 .animation-duration-300ms {
   animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
+}
+
+.animation-duration-700ms {
+  animation-duration: 700ms;
+  -webkit-animation-duration: 700ms;
 }
 
 .animation-duration-800ms {
@@ -4688,6 +4735,11 @@ input::-moz-focus-inner,
 .rotate-180deg {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
+}
+
+.translate-x-neg-50per {
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
 
 .border-solid {

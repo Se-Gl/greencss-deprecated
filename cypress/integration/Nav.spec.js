@@ -11,17 +11,9 @@ describe('Nav Screen Unit test', () => {
       .click({ force: true })
     cy.url().should('be.equal', 'http://localhost:3000/blog')
   })
-  it('renders and clicks the second nav item, check colours', () => {
-    cy.get('div nav ul li a')
-      .eq(1)
-      .should('be.visible')
-      .should('exist')
-      .contains('Brand', { matchCase: false })
-      .click({ force: true })
-    cy.url().should('be.equal', 'http://localhost:3000/brand')
-    // cy.get('div nav ul li a').eq(0).should('have.class', 'text-black')
-    // cy.get('div nav ul li a').eq(1).should('have.class', 'text-purple')
-    // cy.get('div nav ul li a').eq(2).should('have.class', 'text-black')
+  it('renders the submenu on hover', () => {
+    cy.get('div nav ul li a').eq(0).trigger('mouseover')
+    cy.get('#submenu').should('be.visible').should('exist')
   })
 })
 
@@ -31,9 +23,6 @@ describe('Mobile Nav Screen Unit test', () => {
     cy.get('#close-cookie').click({ force: true })
     cy.viewport(320, 480)
     cy.get('#hamburger-sm').should('be.visible').should('exist').click({ force: true })
-  })
-  it('renders and clicks the hamburger', () => {
-    cy.url().should('be.equal', 'http://localhost:3000/')
   })
   it('renders and clicks the first nav item', () => {
     cy.get('h3')
