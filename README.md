@@ -198,9 +198,15 @@ sass/
 | license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                               |
 | changes       | Changes were made to the fill- colours, line & shadow adjustments.                                                                                     |
 | ----------    | ------------------------------------                                                                                                                   |
+| title         | Ruri – Artwork Generator                                                                                                                               |
+| source        | [Figma](https://www.figma.com/community/plugin/912763956481263896)                                                                                     |
+| author        | [waynedahlberg](https://www.figma.com/@waynedahlberg)                                                                                                  |
+| license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                               |
+| changes       | Colors may change in order to preserve the brand identity                                                                                              |
+| ----------    | ------------------------------------                                                                                                                   |
 | title         | iOS 15 Status Bar                                                                                                                                      |
 | source        | [Figma](https://www.figma.com/community/file/904065746347450024/iOS-15-Status-Bar)                                                                     |
-| author        | [waynedahlberg](https://www.figma.com/@waynedahlberg)                                                                                                  |
+| author        | [KB](https://www.figma.com/@klavs)                                                                                                                     |
 | license       | [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)                                                                                               |
 | changes       | Changes were made to the background, resized illustration and adjusted colours                                                                         |
 | ----------    | ------------------------------------                                                                                                                   |
@@ -220,3 +226,4 @@ sass/
 - [Stripe](https://betterprogramming.pub/create-your-portfolio-using-next-js-tailwind-css-stripe-and-paypal-80c723bb3fef)
 - [Map Tile](https://wiki.openstreetmap.org/wiki/Tile_servers)
 - [ImageRenderer](https://amirardalan.com/blog/use-next-image-with-react-markdown)
+- [Navigation](https://github.com/gurhanalan/React-StripeNavbar-Component)

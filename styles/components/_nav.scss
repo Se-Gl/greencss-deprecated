@@ -44,16 +44,16 @@
       transition-delay: 0.3s;
     }
     .line:nth-child(1) {
-      -webkit-transform: translateY(5.5px);
-      -ms-transform: translateY(5.5px);
-      -o-transform: translateY(5.5px);
-      transform: translateY(5.5px);
+      -webkit-transform: translateY(8px);
+      -ms-transform: translateY(8px);
+      -o-transform: translateY(8px);
+      transform: translateY(8px);
     }
     .line:nth-child(3) {
-      -webkit-transform: translateY(-10px) rotate(90deg);
-      -ms-transform: translateY(-10px) rotate(90deg);
-      -o-transform: translateY(-10px) rotate(90deg);
-      transform: translateY(-10px) rotate(90deg);
+      -webkit-transform: translateY(-8px) rotate(90deg);
+      -ms-transform: translateY(-8px) rotate(90deg);
+      -o-transform: translateY(-8px) rotate(90deg);
+      transform: translateY(-8px) rotate(90deg);
     }
   }
 }
