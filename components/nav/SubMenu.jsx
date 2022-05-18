@@ -44,7 +44,7 @@ const SubMenu = () => {
         <p className='px-20px text-15px text-black-10 cursor-pointer'>{subtext}</p>
 
         {links && (
-          <div className={`p-20px grid bg-green-10 rounded-5px gap-x-5px gap-y-25px ${columns}`}>
+          <div className={`p-20px grid bg-green-10 rounded-5px gap-y-25px gap-x-5px ${columns}`}>
             {links &&
               links.map((link, index) => {
                 const { url, icon, label } = link
@@ -52,7 +52,7 @@ const SubMenu = () => {
                   <Link key={index} href={url}>
                     <a className='capitalize my-0px no-decoration flex text-15px font-700 my-auto items-center'>
                       {icon}
-                      <span className='ml-20px hover:text-black-5 active:text-black-7 transition-all transition-duration-500ms'>
+                      <span className='ml-10px hover:text-black-5 active:text-black-7 transition-all transition-duration-500ms'>
                         {label}
                       </span>
                     </a>

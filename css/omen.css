@@ -4280,6 +4280,10 @@ input::-moz-focus-inner,
   padding: 30px;
 }
 
+.pt-0px {
+  padding-top: 0px;
+}
+
 .pt-20px {
   padding-top: 20px;
 }
@@ -4290,10 +4294,6 @@ input::-moz-focus-inner,
 
 .pt-50px {
   padding-top: 50px;
-}
-
-.pt-75px {
-  padding-top: 75px;
 }
 
 .pt-100px {
@@ -4486,10 +4486,6 @@ input::-moz-focus-inner,
 
 .ml-15px {
   margin-left: 15px;
-}
-
-.ml-20px {
-  margin-left: 20px;
 }
 
 .ml-25px {
