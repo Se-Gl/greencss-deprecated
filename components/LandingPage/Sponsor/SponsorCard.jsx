@@ -24,6 +24,8 @@ export default function SponsorCard({
           src={`${cardImageUrl}`}
           alt='greenCSS donate'
           className='rounded-100per'
+          placeholder='blur'
+          blurDataURL={`/_next/image?url=${cardImageUrl}&w=16&q=1`}
         />
       </div>
       <div className='text-center py-5px'>
@@ -43,6 +45,8 @@ export default function SponsorCard({
           src={`${cardImageUrl}`}
           alt='greenCSS donate'
           className='rounded-100per'
+          placeholder='blur'
+          blurDataURL={`/_next/image?url=${cardImageUrl}&w=16&q=1`}
         />
       </div>
       <div className='text-center py-5px'>

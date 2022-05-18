@@ -42,6 +42,8 @@ export default function HeroComponent() {
                 objectFit='cover'
                 src='/images/blog/blogcontent/Hero-Image.webp'
                 alt='greenCSS Hero Image sample'
+                placeholder='blur'
+                blurDataURL='/_next/image?url=$/images/blog/blogcontent/Hero-Image.webp&w=16&q=1'
               />
             </div>
           </div>
