@@ -1,32 +1,33 @@
-function NavBrandLogo({ width = '200', height = '200' }) {
+function NavBrandLogo() {
   return (
-    <svg xmlns='http://www.w3.org/2000/svg' width={width} height={height} fill='none' viewBox='0 0 200 200'>
-      <g clipPath='url(#clip0_197_5744)'>
-        <path fill='#2B7902' d='M0 0H200V200H0z'></path>
+    <svg xmlns='http://www.w3.org/2000/svg' width='35' height='35' fill='none' viewBox='0 0 50 50'>
+      <g clipPath='url(#clip0_203_15154)'>
+        <path fill='#306001' d='M0 0H50V50H0z'></path>
         <path
-          fill='#3D7902'
+          fill='#FAD30B'
           fillRule='evenodd'
-          d='M68 100h32v32l-32-32zm-32 0l32 32 32 32H68l-32-32v-32z'
-          clipRule='evenodd'
-          style={{ mixBlendMode: 'color-dodge' }}></path>
-        <path fill='#FADA06' d='M36 36h128v128H36V36z' style={{ mixBlendMode: 'color-burn' }}></path>
+          d='M48.6.6V-23h.8V.6H73v.8H49.4V25h-.8V1.4H25V.6h23.6z'
+          clipRule='evenodd'></path>
         <path
-          fill='#357902'
+          fill='#54A603'
           fillRule='evenodd'
-          d='M196-92h96V4l-96-96zm-96 0l96 96 96 96h-96L100 4v-96z'
-          clipRule='evenodd'
-          style={{ mixBlendMode: 'multiply' }}></path>
-        <path fill='#F1FA06' d='M36 36h128v128H36V36z' style={{ mixBlendMode: 'color-burn' }}></path>
+          d='M10.333 25H9v16h1.333V25zM13 25h-1.333v16H13V25zm1.333 0h1.334v16h-1.334V25zm4 0H17v16h1.333V25zm1.334 0H21v16h-1.333V25zm4 0h-1.334v16h1.334V25z'
+          clipRule='evenodd'></path>
+        <path fill='#3F7E02' d='M9 9h32v32H9V9z'></path>
         <path
-          fill='#FAB906'
+          fill='#D7B406'
           fillRule='evenodd'
-          d='M68 100h32v32l-32-32zm-32 0l32 32 32 32H68l-32-32v-32z'
-          clipRule='evenodd'
-          style={{ mixBlendMode: 'color-dodge' }}></path>
+          d='M11.667 9H9v32h2.667V9zM17 9h-2.667v32H17V9zm2.667 0h2.666v32h-2.666V9zm8 0H25v32h2.667V9zm2.666 0H33v32h-2.667V9zm8 0h-2.666v32h2.666V9z'
+          clipRule='evenodd'></path>
+        <path
+          fill='#244701'
+          fillRule='evenodd'
+          d='M11.667 9H9v32h2.667V9zM17 9h-2.667v32H17V9zm2.667 0h2.666v32h-2.666V9zm8 0H25v32h2.667V9zm2.666 0H33v32h-2.667V9zm8 0h-2.666v32h2.666V9z'
+          clipRule='evenodd'></path>
       </g>
       <defs>
-        <clipPath id='clip0_197_5744'>
-          <path fill='#fdfdfd' d='M0 0H200V200H0z'></path>
+        <clipPath id='clip0_203_15154'>
+          <path fill='#fff' d='M0 0H50V50H0z'></path>
         </clipPath>
       </defs>
     </svg>

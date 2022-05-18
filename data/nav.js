@@ -8,6 +8,18 @@ import NavContactNewsletter from '@/components/icon/Nav/Contact/NavContactNewsle
 import NavDocsActivate from '@/components/icon/Nav/Docs/NavDocsActivate'
 import NavDocsAnimation from '@/components/icon/Nav/Docs/NavDocsAnimation'
 import NavDocsBackground from '@/components/icon/Nav/Docs/NavDocsBackground'
+import NavDocsBorder from '@/components/icon/Nav/Docs/NavDocsBorder'
+import NavDocsEffects from '@/components/icon/Nav/Docs/NavDocsEffects'
+import NavDocsFilter from '@/components/icon/Nav/Docs/NavDocsFIlter'
+import NavDocsFlexbox from '@/components/icon/Nav/Docs/NavDocsFlexbox'
+import NavDocsGrid from '@/components/icon/Nav/Docs/NavDocsGrid'
+import NavDocsLayout from '@/components/icon/Nav/Docs/NavDocsLayout'
+import NavDocsSizing from '@/components/icon/Nav/Docs/NavDocsSizing'
+import NavDocsSpacing from '@/components/icon/Nav/Docs/NavDocsSpacing'
+import NavDocsTables from '@/components/icon/Nav/Docs/NavDocsTables'
+import NavDocsTransform from '@/components/icon/Nav/Docs/NavDocsTransform'
+import NavDocsTypography from '@/components/icon/Nav/Docs/NavDocsTypography'
+import NavDocsUnited from '@/components/icon/Nav/Docs/NavDocsUnited'
 
 export const navmenu = [
   { title: 'blog', path: '/blog' },
@@ -17,6 +29,7 @@ export const navmenu = [
 ]
 
 export const navsublinks = [
+  // TODO add dynamic blog posts
   {
     page: 'blog',
     pageLink: '/blog',
@@ -29,22 +42,37 @@ export const navsublinks = [
     subtext:
       'A Brand Book - the right way to get to know a story - Explore the logo, typography, colours and composition',
     links: [
-      { label: 'logo', icon: <NavBrandLogo width='50px' height='50px' />, url: '/brand/logo' },
-      { label: 'typography', icon: <NavBrandTypo width='50px' height='50px' />, url: '/brand/typography' },
-      { label: 'colours', icon: <NavBrandColor width='50px' height='50px' />, url: '/brand/colours' },
-      { label: 'composition', icon: <NavBrandComposition width='50px' height='50px' />, url: '/brand/composition' }
+      { label: 'logo', icon: <NavBrandLogo />, url: '/brand/logo' },
+      { label: 'typography', icon: <NavBrandTypo />, url: '/brand/typography' },
+      { label: 'colours', icon: <NavBrandColor />, url: '/brand/colours' },
+      { label: 'composition', icon: <NavBrandComposition />, url: '/brand/composition' }
     ]
   },
-  // TODO add all doc category pages
   {
     page: 'docs',
     pageLink: '/docs',
     subtext:
       'Docs - the right way to get to know the system - Get to know greenCSS and start writing sustainable webdesign.',
     links: [
-      { label: 'activate', icon: <NavDocsActivate width='50px' height='50px' />, url: '/docs/category/activate' },
-      { label: 'animation', icon: <NavDocsAnimation width='50px' height='50px' />, url: '/docs/category/animation' },
-      { label: 'background', icon: <NavDocsBackground width='50px' height='50px' />, url: '/docs/category/background' }
+      { label: 'activate', icon: <NavDocsActivate />, url: '/docs/category/activate' },
+      { label: 'animation', icon: <NavDocsAnimation />, url: '/docs/category/animation' },
+      {
+        label: 'background',
+        icon: <NavDocsBackground />,
+        url: '/docs/category/background'
+      },
+      { label: 'border', icon: <NavDocsBorder />, url: '/docs/category/border' },
+      { label: 'effects', icon: <NavDocsEffects />, url: '/docs/category/effects' },
+      { label: 'filter', icon: <NavDocsFilter />, url: '/docs/category/filter' },
+      { label: 'flexbox', icon: <NavDocsFlexbox />, url: '/docs/category/flexbox' },
+      { label: 'grid', icon: <NavDocsGrid />, url: '/docs/category/grid' },
+      { label: 'layout', icon: <NavDocsLayout />, url: '/docs/category/layout' },
+      { label: 'sizing', icon: <NavDocsSizing />, url: '/docs/category/sizing' },
+      { label: 'spacing', icon: <NavDocsSpacing />, url: '/docs/category/spacing' },
+      { label: 'tables', icon: <NavDocsTables />, url: '/docs/category/tables' },
+      { label: 'transform', icon: <NavDocsTransform />, url: '/docs/category/transform' },
+      { label: 'typography', icon: <NavDocsTypography />, url: '/docs/category/typography' },
+      { label: 'united', icon: <NavDocsUnited />, url: '/docs/category/united' }
     ]
   },
   {
@@ -52,8 +80,8 @@ export const navsublinks = [
     pageLink: '/contact',
     subtext: 'Contact - the right way to get to know each other.',
     links: [
-      { label: 'about', icon: <NavContactNewsletter width='50px' height='50px' />, url: '/#' },
-      { label: 'newsletter', icon: <NavContactAbout width='50px' height='50px' />, url: '/contact#footer-social' }
+      { label: 'about', icon: <NavContactNewsletter />, url: '/#' },
+      { label: 'newsletter', icon: <NavContactAbout />, url: '/contact#footer-social' }
     ]
   }
 ]

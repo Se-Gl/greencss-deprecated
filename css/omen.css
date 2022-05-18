@@ -3212,12 +3212,16 @@ input::-moz-focus-inner,
   gap: 10px;
 }
 
-.gap-20px {
-  gap: 20px;
-}
-
 .gap-30px {
   gap: 30px;
+}
+
+.gap-x-5px {
+  column-gap: 5px;
+}
+
+.gap-y-25px {
+  row-gap: 25px;
 }
 
 .text-red {

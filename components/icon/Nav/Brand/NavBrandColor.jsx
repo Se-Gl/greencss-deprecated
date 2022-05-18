@@ -1,42 +1,33 @@
-function NavBrandColor({ width = '200', height = '200' }) {
+function NavBrandColor() {
   return (
-    <svg xmlns='http://www.w3.org/2000/svg' width={width} height={height} fill='none' viewBox='0 0 200 200'>
-      <g clipPath='url(#clip0_197_6103)'>
-        <path fill='#457902' d='M0 0H200V200H0z'></path>
+    <svg xmlns='http://www.w3.org/2000/svg' width='35' height='35' fill='none' viewBox='0 0 50 50'>
+      <g clipPath='url(#clip0_203_15015)'>
+        <path fill='#4A9202' d='M0 0H50V50H0z'></path>
         <path
-          fill='#FAC106'
+          fill='#56AB03'
           fillRule='evenodd'
-          d='M196 100c-53.019 0-96-42.98-96-96h3.148c0 51.281 41.571 92.853 92.852 92.853 51.281 0 92.852-41.572 92.852-92.853H292c0 53.02-42.981 96-96 96zm0-31.475c-35.636 0-64.525-28.889-64.525-64.525h3.148c0 33.898 27.479 61.377 61.377 61.377S257.377 37.897 257.377 4h3.148c0 35.636-28.889 64.525-64.525 64.525zm0-31.476c-18.253 0-33.049-14.796-33.049-33.049h3.147c0 16.514 13.388 29.902 29.902 29.902 16.514 0 29.902-13.388 29.902-29.902h3.147c0 18.253-14.796 33.05-33.049 33.05z'
-          clipRule='evenodd'
-          style={{ mixBlendMode: 'hard-light' }}></path>
+          d='M11.667 9H9v32h2.667V9zM17 9h-2.667v32H17V9zm2.667 0h2.666v32h-2.666V9zm8 0H25v32h2.667V9zm2.666 0H33v32h-2.667V9zm8 0h-2.666v32h2.666V9z'
+          clipRule='evenodd'></path>
         <path
-          fill='#FABD06'
+          fill='#FAD829'
           fillRule='evenodd'
-          d='M38 132c0 16.831 13.644 30.475 30.475 30.475 16.832 0 30.476-13.644 30.476-30.475h2c0 17.936-14.54 32.475-32.476 32.475C50.54 164.475 36 149.936 36 132h2z'
-          clipRule='evenodd'
-          style={{ mixBlendMode: 'overlay' }}></path>
+          d='M49-23h24V1L49-23zm-24 0L49 1l24 24H49L25 1v-24z'
+          clipRule='evenodd'></path>
+        <path fill='#51A102' fillRule='evenodd' d='M17 25h8v8l-8-8zm-8 0l8 8 8 8h-8l-8-8v-8z' clipRule='evenodd'></path>
         <path
-          fill='#FA8D06'
+          fill='#CDAC05'
           fillRule='evenodd'
-          d='M100 164c-35.346 0-64-28.654-64-64h2.098c0 34.187 27.715 61.902 61.902 61.902s61.902-27.715 61.902-61.902H164c0 35.346-28.654 64-64 64zm0-20.984c-23.757 0-43.016-19.259-43.016-43.016h2.098c0 22.598 18.32 40.918 40.918 40.918s40.918-18.32 40.918-40.918h2.098c0 23.757-19.259 43.016-43.016 43.016zm0-20.983c-12.168 0-22.033-9.865-22.033-22.033h2.099c0 11.009 8.924 19.934 19.934 19.934 11.009 0 19.934-8.925 19.934-19.934h2.099c0 12.168-9.865 22.033-22.033 22.033z'
-          clipRule='evenodd'
-          style={{ mixBlendMode: 'multiply' }}></path>
+          d='M25 9h16v16L25 9zM9 9l16 16 16 16H25L9 25V9z'
+          clipRule='evenodd'></path>
         <path
-          fill='#437902'
+          fill='#4F9C02'
           fillRule='evenodd'
-          d='M38 100c0 34.215 27.736 61.951 61.95 61.951 34.215 0 61.952-27.736 61.952-61.951h2c0 35.319-28.632 63.951-63.951 63.951C64.63 163.951 36 135.319 36 100h2z'
-          clipRule='evenodd'
-          style={{ mixBlendMode: 'color-burn' }}></path>
-        <path
-          fill='#FAF206'
-          fillRule='evenodd'
-          d='M148 68c8.836 0 16-7.163 16-16s-7.164-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16zm-96 96c8.837 0 16-7.164 16-16 0-8.837-7.163-16-16-16s-16 7.163-16 16c0 8.836 7.163 16 16 16z'
-          clipRule='evenodd'
-          style={{ mixBlendMode: 'overlay' }}></path>
+          d='M10.333 25H9v16h1.333V25zM13 25h-1.333v16H13V25zm1.333 0h1.334v16h-1.334V25zm4 0H17v16h1.333V25zm1.334 0H21v16h-1.333V25zm4 0h-1.334v16h1.334V25z'
+          clipRule='evenodd'></path>
       </g>
       <defs>
-        <clipPath id='clip0_197_6103'>
-          <path fill='#fdfdfd' d='M0 0H200V200H0z'></path>
+        <clipPath id='clip0_203_15015'>
+          <path fill='#fff' d='M0 0H50V50H0z'></path>
         </clipPath>
       </defs>
     </svg>
