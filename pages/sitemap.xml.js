@@ -9,6 +9,7 @@ export const getServerSideProps = ({ res }) => {
   }[NODE_ENV]
 
   const staticSlug = [
+    'about',
     'brand',
     'brand/logo',
     'brand/typography',

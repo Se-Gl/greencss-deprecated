@@ -25,7 +25,7 @@ export const navmenu = [
   { title: 'blog', path: '/blog' },
   { title: 'brand', path: '/brand' },
   { title: 'docs', path: '/docs' },
-  { title: 'contact', path: '/contact' }
+  { title: 'about', path: '/about' }
 ]
 
 export const mobileBrandMenu = [
@@ -58,7 +58,7 @@ export const mobileDocsMenu = [
 ]
 
 export const mobileContactMenu = [
-  { label: 'about', icon: <NavContactNewsletter />, url: '/#' },
+  { label: 'about', icon: <NavContactNewsletter />, url: '/about' },
   { label: 'newsletter', icon: <NavContactAbout />, url: '/contact#footer-social' }
 ]
 
@@ -110,11 +110,11 @@ export const navsublinks = [
     ]
   },
   {
-    page: 'contact',
-    pageLink: '/contact',
-    subtext: 'Contact - the right way to get to know each other.',
+    page: 'about',
+    pageLink: '/about',
+    subtext: 'About greenCSS - the right way to get to know each other.',
     links: [
-      { label: 'about', icon: <NavContactNewsletter />, url: '/#' },
+      { label: 'contact', icon: <NavContactNewsletter />, url: '/contact' },
       { label: 'newsletter', icon: <NavContactAbout />, url: '/contact#footer-social' }
     ]
   }

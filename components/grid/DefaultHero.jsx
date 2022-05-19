@@ -1,5 +1,18 @@
 import Image from 'next/image'
 
+const contactImages = [
+  {
+    imageURL: '/images/contact/img-in-img.webp',
+    imageAlt: 'greenCSS smartphone nature',
+    dimensions: 250
+  },
+  {
+    imageURL: '/images/contact/talk.webp',
+    imageAlt: 'conversation',
+    dimensions: 250
+  }
+]
+
 export default function DefaultHero({
   header,
   subheader,
@@ -7,22 +20,9 @@ export default function DefaultHero({
   paraClass,
   primaryImageURL = '/images/contact/above.webp',
   primaryImageAlt = 'nature and landscape from birdview',
-  primaryDimensions = 350
+  primaryDimensions = 350,
+  mapping = contactImages
 }) {
-  // TODO make reusable
-  const contactImages = [
-    {
-      imageURL: '/images/contact/img-in-img.webp',
-      imageAlt: 'greenCSS smartphone nature',
-      dimensions: 250
-    },
-    {
-      imageURL: '/images/contact/talk.webp',
-      imageAlt: 'conversation',
-      dimensions: 250
-    }
-  ]
-
   return (
     <div
       className='relative m-auto grid gap-30px sm:gap-0px grid-col-2 sm:grid-col-1 md:grid-col-1 min-h-66vh overflow-hidden mb-50px bg-greencss rounded-left-radius-100px p-20px'
@@ -37,6 +37,7 @@ export default function DefaultHero({
       <div className='relative z-1 col-span-1'>
         <div className='flex justify-center'>
           <Image
+            quality={100}
             src={`${primaryImageURL}`}
             alt={`${primaryImageAlt}`}
             width={primaryDimensions}
@@ -47,8 +48,9 @@ export default function DefaultHero({
           />
         </div>
         <div className='flex justify-center gap-10px'>
-          {contactImages.map((item, index) => (
+          {mapping.map((item, index) => (
             <Image
+              quality={100}
               key={index}
               src={`${item.imageURL}`}
               alt={`${item.imageAlt}`}
