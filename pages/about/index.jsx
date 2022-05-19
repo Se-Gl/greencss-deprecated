@@ -29,7 +29,7 @@ export default function AboutPage() {
         <DefaultHero
           id='about-index'
           header='About greenCSS'
-          primaryImageURL='/images/about/tomato-plant.webp'
+          primaryImageURL='/images/about/footprint.webp'
           primaryImageAlt='sustainable tomato plant'
           primaryDimensions={300}
           mapping={aboutImages}
