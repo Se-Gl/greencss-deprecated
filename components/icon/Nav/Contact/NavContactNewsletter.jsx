@@ -1,6 +1,10 @@
 function NavContactNewsletter() {
   return (
-    <svg xmlns='http://www.w3.org/2000/svg' width='35' height='35' fill='none' viewBox='0 0 50 50'>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      className='h-35px w-35px sm:h-25px sm:w-25px'
+      fill='none'
+      viewBox='0 0 50 50'>
       <path fill='#3E7A02' d='M0 0H50V50H0z'></path>
       <path
         fill='#54A603'

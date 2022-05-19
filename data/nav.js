@@ -28,6 +28,40 @@ export const navmenu = [
   { title: 'contact', path: '/contact' }
 ]
 
+export const mobileBrandMenu = [
+  { label: 'logo', icon: <NavBrandLogo />, url: '/brand/logo' },
+  { label: 'typography', icon: <NavBrandTypo />, url: '/brand/typography' },
+  { label: 'colours', icon: <NavBrandColor />, url: '/brand/colours' },
+  { label: 'composition', icon: <NavBrandComposition />, url: '/brand/composition' }
+]
+
+export const mobileDocsMenu = [
+  { label: 'activate', icon: <NavDocsActivate />, url: '/docs/category/activate' },
+  { label: 'animation', icon: <NavDocsAnimation />, url: '/docs/category/animation' },
+  {
+    label: 'background',
+    icon: <NavDocsBackground />,
+    url: '/docs/category/background'
+  },
+  { label: 'border', icon: <NavDocsBorder />, url: '/docs/category/border' },
+  { label: 'effects', icon: <NavDocsEffects />, url: '/docs/category/effects' },
+  { label: 'filter', icon: <NavDocsFilter />, url: '/docs/category/filter' },
+  { label: 'flexbox', icon: <NavDocsFlexbox />, url: '/docs/category/flexbox' },
+  { label: 'grid', icon: <NavDocsGrid />, url: '/docs/category/grid' },
+  { label: 'layout', icon: <NavDocsLayout />, url: '/docs/category/layout' },
+  { label: 'sizing', icon: <NavDocsSizing />, url: '/docs/category/sizing' },
+  { label: 'spacing', icon: <NavDocsSpacing />, url: '/docs/category/spacing' },
+  { label: 'tables', icon: <NavDocsTables />, url: '/docs/category/tables' },
+  { label: 'transform', icon: <NavDocsTransform />, url: '/docs/category/transform' },
+  { label: 'typography', icon: <NavDocsTypography />, url: '/docs/category/typography' },
+  { label: 'united', icon: <NavDocsUnited />, url: '/docs/category/united' }
+]
+
+export const mobileContactMenu = [
+  { label: 'about', icon: <NavContactNewsletter />, url: '/#' },
+  { label: 'newsletter', icon: <NavContactAbout />, url: '/contact#footer-social' }
+]
+
 export const navsublinks = [
   // TODO add dynamic blog posts
   {

@@ -1,6 +1,10 @@
 function NavDocsFilter() {
   return (
-    <svg xmlns='http://www.w3.org/2000/svg' width='35' height='35' fill='none' viewBox='0 0 50 50'>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      className='h-35px w-35px sm:h-25px sm:w-25px'
+      fill='none'
+      viewBox='0 0 50 50'>
       <g clipPath='url(#clip0_201_13981)'>
         <path fill='#4A9202' d='M0 0H50V50H0z'></path>
         <path fill='#FAD415' d='M9 25c0 8.837 7.163 16 16 16V9C16.163 9 9 16.163 9 25z'></path>

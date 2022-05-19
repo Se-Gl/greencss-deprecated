@@ -1,6 +1,10 @@
 function NavDocsUnited() {
   return (
-    <svg xmlns='http://www.w3.org/2000/svg' width='35' height='35' fill='none' viewBox='0 0 50 50'>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      className='h-35px w-35px sm:h-25px sm:w-25px'
+      fill='none'
+      viewBox='0 0 50 50'>
       <g clipPath='url(#clip0_201_14872)'>
         <path fill='#FAD51A' d='M0 0H50V50H0z'></path>
         <path

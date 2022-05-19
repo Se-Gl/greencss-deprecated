@@ -25,6 +25,7 @@ const Navbar = () => {
 
   return (
     <nav
+      aria-label='header navigation'
       className='sm:display-none md:display-none z-99 relative flex items-center h-75px justify-between sm:px-10px md:px-25px lg:px-50px text-black bg-white'
       style={{ maxWidth: '110rem' }}
       onMouseOver={handleSubmenu}>
@@ -37,7 +38,7 @@ const Navbar = () => {
           </Link>
         </div>
         <ul className='grid grid-col-4 text-16px text-center'>
-          {navmenu.sort().map((item, index) => {
+          {navmenu.map((item, index) => {
             return (
               <li key={index} onMouseOver={displaySubmenu} className='h-100per flex h-50'>
                 <Link href={item.path}>
