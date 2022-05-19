@@ -21,7 +21,7 @@ export default function AboutTestimonial() {
           src='/images/about/ivy.webp'
           alt='greenCSS ivy, sustainable software'
           placeholder='blur'
-          blurDataURL='/_next/image?url=$/images/about/ivy.webp&w=16&q=1'
+          blurDataURL='/_next/image?url=/images/about/ivy.webp&w=16&q=1'
         />
       </div>
     </div>
