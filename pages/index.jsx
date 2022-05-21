@@ -18,16 +18,18 @@ export default function HomePage({ posts }) {
   return (
     <SEO>
       <div className='overflow-x-hidden'>
-        <Layout className='container min-h-100vh relative z-2 bg-white'>
+        <Layout className='min-h-100vh relative z-2 bg-white'>
           <DonationProvider>
             <Hero />
-            <Presentation />
-            <Service />
-            <CalculateFootprint />
-            <Sponsor />
-            <News posts={posts} />
-            <Testimonial />
-            <Faq />
+            <div className='container'>
+              <Presentation />
+              <Service />
+              <CalculateFootprint />
+              <Sponsor />
+              <News posts={posts} />
+              <Testimonial />
+              <Faq />
+            </div>
           </DonationProvider>
         </Layout>
       </div>

@@ -1,17 +1,7 @@
-import { useEffect, useState, useContext } from 'react'
+import { useEffect, useState } from 'react'
 import DisplayRangeSlider from './DisplayRangeSlider'
-import DonationContext from '@/utils/DonationContext'
 
 export default function HeroPhone({ loading }) {
-  const { calculate, finalPrize } = useContext(DonationContext)
-  let ceiledPrice = Math.ceil(finalPrize)
-
-  let adjustBgColor =
-    (calculate <= 1 && 'text-greencss') ||
-    (calculate <= 50 && 'text-yellow') ||
-    (calculate <= 500 && 'text-red') ||
-    (calculate >= 501 && 'text-magenta')
-
   const [dateState, setDateState] = useState(new Date())
   useEffect(() => {
     setInterval(() => {
@@ -27,30 +17,34 @@ export default function HeroPhone({ loading }) {
               ? 'clip-inset-in-top animation-duration-800ms animation-delay-100ms animation-forwards opacity-100per'
               : 'opacity-1per'
           }`}
-          style={{ bottom: '210px', left: '80px' }}>
-          <h2 className='text-18px lg:text-13px mb-10px text-greencss font-600'>Calculate your carbon emission</h2>
-          <div className='text-greencss font-normal mt-60px'>
-            <span className={`${adjustBgColor} text-30px font-bold`}>{calculate}</span>
-            <span className='text-15px'>kg CO2 per year</span>
+          style={{ bottom: '10px', left: '115px' }}>
+          <div className='bg-greencss rounded-10px w-27rem h-auto px-20px py-10px'>
+            <h2 className='text-15px lg:text-13px mb-10px text-white font-600'>
+              Calculate your yearly carbon emission
+            </h2>
+            <span className='text-10px text-white'>
+              How much C02 do you produce while you work? Compare your green footprint with other developers
+            </span>
           </div>
-          <div className='text-greencss font-normal'>
-            <span className='text-30px font-bold'>{ceiledPrice}</span>
-            <span className='text-15px'>USD to compensate</span>
+          <div className='text-greencss font-normal w-25rem mt-10px mb-25px'>
+            <span className='text-10px text-black-10'>
+              Do something good while you work - for the environment and for yourself by using a sustainable CSS library
+              like greenCSS.
+            </span>
+            <br />
           </div>
-        </div>
-        <div className='absolute' style={{ bottom: '0px', left: '80px' }}>
           <DisplayRangeSlider
             isDefault={false}
-            maxWidth='max-w-100per lg:max-w-80per'
-            descriptionClassName='mb-0px text-greencss text-12px font-bold'
+            maxWidth='max-w-90per lg:max-w-80per'
+            descriptionClassName='mb-0px text-black-10 text-12px'
           />
         </div>
       </div>
 
       <div
         id='phone-current-time'
-        className='absolute font-bold text-15px cursor-default select-none sm:display-none md:display-none'
-        style={{ bottom: '425px', left: '80px' }}>
+        className='absolute font-bold text-12px cursor-default select-none sm:display-none md:display-none'
+        style={{ bottom: '345px', left: '115px' }}>
         {dateState.toLocaleString('en-US', {
           hour: 'numeric',
           minute: 'numeric',
