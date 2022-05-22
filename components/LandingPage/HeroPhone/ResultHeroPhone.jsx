@@ -16,7 +16,7 @@ export default function ResultHeroPhone({ loading }) {
     (calculate >= 501 && 'text-magenta')
 
   return (
-    <>
+    <div className={loading ? 'opacity-0per' : 'opacity-100per'}>
       {calculate > 1 ? (
         <>
           <div
@@ -48,8 +48,8 @@ export default function ResultHeroPhone({ loading }) {
           </div>
         </>
       ) : (
-        <>
-          {loading === false ? (
+        <div className={loading ? 'opacity-0per' : 'opacity-100per'}>
+          {!loading && (
             <div className='opacity-33per select-none'>
               <div
                 className='absolute z-10 fade-in animation-duration-500ms'
@@ -64,9 +64,9 @@ export default function ResultHeroPhone({ loading }) {
                 <span className='text-black-10 text-center ml-neg-30px'>Waiting for your input</span>
               </div>
             </div>
-          ) : null}
-        </>
+          )}
+        </div>
       )}
-    </>
+    </div>
   )
 }

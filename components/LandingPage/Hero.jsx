@@ -67,9 +67,9 @@ export default function Hero() {
           </div>
           <div
             className={`${
-              loading === false
-                ? 'relative col-span-1 snap-in-bottom animate animation-forwards animation-delay-500ms opacity-100per overflow-hidden'
-                : 'opacity-1per'
+              loading
+                ? 'opacity-0per'
+                : 'relative col-span-1 snap-in-bottom animate animation-forwards animation-delay-500ms opacity-100per overflow-hidden'
             }`}
             id='phone-image'>
             <div
@@ -79,6 +79,7 @@ export default function Hero() {
                 quality={100}
                 width={497}
                 height={758}
+                className={loading ? 'opacity-0per' : 'opacity-100per'}
                 src='/images/landingpage/phone.webp'
                 alt='greenCSS Hero Image Iphone'
                 placeholder='blur'
@@ -94,6 +95,7 @@ export default function Hero() {
                 quality={100}
                 width={907}
                 height={537}
+                className={loading ? 'opacity-0per' : 'opacity-100per'}
                 src='/images/landingpage/desktop.webp'
                 alt='greenCSS Hero Blurred Desktop'
                 placeholder='blur'
