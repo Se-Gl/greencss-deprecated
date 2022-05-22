@@ -1,0 +1,42 @@
+@use '../abstracts/color' as *;
+
+.blob-one {
+  left: -15vw;
+  top: -10vh;
+  animation: transform 30s ease-in-out infinite both alternate, movement 60s ease-in-out infinite both;
+}
+
+@keyframes transform {
+  0%,
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  20% {
+    border-radius: 40% 60% 50% 50% / 40% 65% 35% 65%;
+  }
+  40% {
+    border-radius: 35% 65% 65% 35% / 65% 50% 50% 35%;
+  }
+  60% {
+    border-radius: 40% 60% 50% 50% / 30% 30% 70% 70%;
+  }
+  80% {
+    border-radius: 40% 60% 40% 60% / 40% 50% 50% 60%;
+  }
+}
+
+@keyframes movement {
+  0%,
+  500% {
+    transform: none;
+  }
+  20% {
+    transform: translate(33%, 20%) rotate(0deg) scale(1);
+  }
+  40% {
+    transform: translate(50%, 80%) rotate(-100deg) scale(0.95);
+  }
+  60% {
+    transform: translate(75%, 50%) rotate(-200deg) scale(1.2);
+  }
+}

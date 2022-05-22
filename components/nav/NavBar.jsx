@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav
       aria-label='header navigation'
-      className='sm:display-none md:display-none z-99 relative flex items-center h-75px justify-between sm:px-10px md:px-25px lg:px-50px text-black bg-white'
+      className='sm:display-none md:display-none z-99 relative flex items-center h-75px justify-between sm:px-10px md:px-25px lg:px-50px text-black'
       style={{ maxWidth: '110rem' }}
       onMouseOver={handleSubmenu}>
       <div className='w-100per grid grid-col-3 items-center'>

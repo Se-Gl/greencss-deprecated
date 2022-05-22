@@ -5,6 +5,7 @@ import ReusableModal from '../modal/ReusableModal'
 import HeroPhone from './HeroPhone'
 import ResultHeroPhone from './HeroPhone/ResultHeroPhone'
 import useWindowDimensions from '@/utils/WindowDimensions'
+import Background from './Background'
 
 export default function Hero() {
   const { width } = useWindowDimensions()
@@ -27,11 +28,9 @@ export default function Hero() {
           style={{
             backgroundImage: `url("/images/landingpage/background-shape.svg")`
           }}></div>
-
+        <Background />
         {/* GRID */}
-        <div
-          className='m-auto grid gap-30px grid-col-2 sm:grid-col-1 md:grid-col-1'
-          style={{ borderBottomLeftRadius: '100px' }}>
+        <div className='m-auto grid gap-30px grid-col-2 sm:grid-col-1 md:grid-col-1'>
           <div className='col-span-1 h-100vh'>
             <div className='flex h-90vh'>
               <div className='m-auto max-w-55rem'>
