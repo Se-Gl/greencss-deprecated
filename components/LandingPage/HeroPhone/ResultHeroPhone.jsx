@@ -53,13 +53,13 @@ export default function ResultHeroPhone({ loading }) {
             <div className='opacity-33per select-none'>
               <div
                 className='absolute z-10 fade-in animation-duration-500ms'
-                style={{ bottom: '500px', left: '600px' }}>
+                style={{ bottom: `${width > 1500 ? '500px' : '645px'}`, left: `${width > 1500 ? '600px' : '330px'}` }}>
                 <Loader />
                 <span className='text-black-10 text-center ml-neg-30px'>Waiting for your input</span>
               </div>{' '}
               <div
                 className='absolute z-10 fade-in animation-duration-500ms'
-                style={{ bottom: '290px', left: '600px' }}>
+                style={{ bottom: `${width > 1500 ? '290px' : '430px'}`, left: `${width > 1500 ? '600px' : '330px'}` }}>
                 <Loader />
                 <span className='text-black-10 text-center ml-neg-30px'>Waiting for your input</span>
               </div>
