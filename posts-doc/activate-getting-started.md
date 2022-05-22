@@ -43,7 +43,7 @@ module.exports = {
   defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
   safelist: ['html', 'body'],
   //   output path, where you want to save the purged css file
-  output: './css/omen.css'
+  output: './css/green.css'
 }
 ```
 
@@ -76,7 +76,7 @@ NODE_ENV=development
 ```js
 if (process.env.NODE_ENV == 'production') {
   // path where you save the purged file
-  require('./css/omen.css')
+  require('./css/green.css')
 } else {
   //   path to the node modules greenCSS file
   require('node_modules/greenCSS/dist/greenCSS.css')

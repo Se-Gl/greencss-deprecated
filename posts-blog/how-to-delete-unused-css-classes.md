@@ -30,7 +30,7 @@ It is really easy and only takes a few minutes! In this example, a simple \*.htm
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beautiful purgecss vs. greenCSS file</title>
-    <link rel="stylesheet" href="../css/omen.css" />
+    <link rel="stylesheet" href="../css/greencss.css" />
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
   </head>
   <body>
@@ -62,7 +62,7 @@ module.exports = {
   content: ['src/index.html'],
   css: ['src/greenCSS.css'],
   defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
-  output: 'css/omen.css'
+  output: 'css/green.css'
 }
 ```
 
@@ -73,7 +73,7 @@ module.exports = {
 5. In the \*.html file, make sure, that the correct css stylesheet is selected. The path must be the same as entered in the "output".
 
 ```html
-<link rel="stylesheet" href="../css/omen.css" />
+<link rel="stylesheet" href="../css/greencss.css" />
 ```
 
 Now it is time to reduce the CSS file via the command line. For this you have to create a script in the package.json file.

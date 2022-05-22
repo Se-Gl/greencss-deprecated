@@ -21,7 +21,7 @@ const aboutImages = [
 export default function AboutPage() {
   return (
     <SEO
-      title='greenCSS contact - get in touch'
+      title='greenCSS about - get a glimpse'
       description='greenCSS is a global, environmental, sustainable open source, non-profit organization that works to make the world a better and more environmentally friendly way for nature'
       url='docs'
       keywords='about, sustainable open source, competitive development, sustainable programming'>

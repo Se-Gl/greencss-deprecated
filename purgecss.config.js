@@ -3,5 +3,5 @@ module.exports = {
   css: ['./styles/greenCSS.css'],
   defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
   safelist: ['html', 'body'],
-  output: './css/omen.css'
+  output: './css/green.css'
 }
