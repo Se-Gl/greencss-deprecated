@@ -13,12 +13,15 @@ import SponsorCard from './SponsorCard'
 const Sponsor = () => {
   const { amount, setAmount, prediction, finalPrize } = useContext(DonationContext)
   const [individualAmount, setIndividualAmount] = useState(10)
+  const [loading, setLoading] = useState(false)
+
   let ceiledPrice = Math.ceil(finalPrize)
   const toast = useToast()
 
   // TODO refactor both stripe functions into one reusable
   // stripe default
   const createCheckOutSession = async () => {
+    setLoading(true)
     if (amount <= 1 && amount > 1000000) {
       toast('error', `⚡ Please provide a valid donation.`)
     } else {
@@ -31,7 +34,7 @@ const Sponsor = () => {
       const result = await stripe?.redirectToCheckout({
         sessionId: checkoutSession.data.id
       })
-
+      setLoading(false)
       if (result?.error) {
         toast('error', `⚡ ${error.message}`)
       }
@@ -43,6 +46,7 @@ const Sponsor = () => {
 
   // individual stripe
   const createIndividualCheckOutSession = async () => {
+    setLoading(true)
     if (individualAmount <= 1 && individualAmount > 1000000) {
       toast('error', `⚡ Please provide a valid donation.`)
     } else {
@@ -55,7 +59,7 @@ const Sponsor = () => {
       const result = await stripe?.redirectToCheckout({
         sessionId: checkoutSession.data.id
       })
-
+      setLoading(false)
       if (result?.error) {
         toast('error', `⚡ ${error.message}`)
       }
@@ -64,6 +68,8 @@ const Sponsor = () => {
       }
     }
   }
+
+  loading && toast('warning', '🙏 You will be forwarded shortly.')
 
   const individualtAmounts = [
     {
