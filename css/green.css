@@ -4445,6 +4445,10 @@ input::-moz-focus-inner,
   padding-inline: 40px;
 }
 
+.px-44px {
+  padding-inline: 44px;
+}
+
 .px-50px {
   padding-inline: 50px;
 }

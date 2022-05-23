@@ -31,7 +31,7 @@ const SubMenu = () => {
       id='submenu'
       className={`${
         isSubmenuOpen
-          ? 'submenu block z-99 bg-white absolute left-50per translate-x-neg-50per rounded-10px transition-all transition-duration-300ms shadow-small-black-10 clip-circle-in animation-duration-700ms animation-forwards'
+          ? 'submenu block z-99 bg-white absolute left-50per translate-x-neg-50per rounded-10px transition-all transition-duration-500ms shadow-small-black-10 clip-circle-in animation-duration-700ms animation-forwards'
           : 'display-none'
       }`}
       ref={container}>

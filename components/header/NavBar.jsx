@@ -40,10 +40,10 @@ const Navbar = () => {
         <ul className='grid grid-col-3 text-16px'>
           {navmenu.map((item, index) => {
             return (
-              <li key={index} onMouseOver={displaySubmenu} className='h-100per flex h-50 justify-center'>
+              <li key={index} onMouseOver={displaySubmenu} className='h-100per flex h-50 justify-center items-center'>
                 <Link href={item.path}>
                   <a
-                    className={`map-link text-15px font-800 no-decoration cursor-pointer capitalize my-auto pb-15px mt-15px ${
+                    className={`map-link text-15px font-800 no-decoration cursor-pointer capitalize pb-15px px-44px mt-15px mb-0px justify-center ${
                       router.asPath.includes(item.path) ? 'text-greencss font-800' : 'text-black'
                     }`}>
                     {item.title}
