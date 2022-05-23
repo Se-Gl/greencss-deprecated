@@ -7,7 +7,7 @@ import { navmenu } from '@/data/nav'
 const Navbar = () => {
   const router = useRouter()
 
-  const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext()
+  const { openSubmenu, closeSubmenu } = useGlobalContext()
   const handleSubmenu = (e) => {
     if (!e.target.classList.contains('map-link')) {
       closeSubmenu()
@@ -26,21 +26,21 @@ const Navbar = () => {
   return (
     <nav
       aria-label='header navigation'
-      className='sm:display-none md:display-none z-99 relative flex items-center h-75px justify-between sm:px-10px md:px-25px lg:px-50px text-black'
+      className='sm:display-none md:display-none z-99 relative flex h-75px justify-between sm:px-10px md:px-25px lg:px-50px text-black'
       style={{ maxWidth: '110rem' }}
       onMouseOver={handleSubmenu}>
-      <div className='w-100per grid grid-col-3 items-center'>
-        <div className=''>
+      <div className='w-100per grid grid-col-3'>
+        <div className='my-auto'>
           <Link href='/'>
-            <a className='my-auto'>
+            <a>
               <LogoDark width='50px' height='50px' />
             </a>
           </Link>
         </div>
-        <ul className='grid grid-col-4 text-16px text-center'>
+        <ul className='grid grid-col-3 text-16px'>
           {navmenu.map((item, index) => {
             return (
-              <li key={index} onMouseOver={displaySubmenu} className='h-100per flex h-50'>
+              <li key={index} onMouseOver={displaySubmenu} className='h-100per flex h-50 justify-center'>
                 <Link href={item.path}>
                   <a
                     className={`map-link text-15px font-800 no-decoration cursor-pointer capitalize my-auto pb-15px mt-15px ${

@@ -9,7 +9,7 @@ export default function Layout({ children, className = 'container sm:px-10px md:
     <>
       <Header />
       <main>
-        <div className={`pt-0px sm:pt-0rem md:pt-0rem ${className}`}>{children}</div>
+        <div className={`${className}`}>{children}</div>
       </main>
       <Footer />
       <Cookies />

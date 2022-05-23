@@ -6,7 +6,7 @@ const SubMenu = () => {
   const {
     isSubmenuOpen,
     submenuPosition,
-    submenuItem: { page, pageLink, subtext, links }
+    submenuItem: { page, pageLink, subtext, links, secondpage, secondpageLink, secondlinks, secondsubtext }
   } = useGlobalContext()
   const [columns, setColumns] = useState('grid-col-2')
   const container = useRef(null)
@@ -49,16 +49,46 @@ const SubMenu = () => {
               links.map((link, index) => {
                 const { url, icon, label } = link
                 return (
-                  <Link key={index} href={url}>
-                    <a className='capitalize my-0px no-decoration flex text-15px font-700 my-auto items-center'>
-                      {icon}
-                      <span className='ml-10px hover:text-black-5 active:text-black-7 transition-all transition-duration-500ms'>
-                        {label}
-                      </span>
-                    </a>
-                  </Link>
+                  <div key={`${label}-${index}`}>
+                    <Link href={url}>
+                      <a className='capitalize my-0px no-decoration flex text-15px font-700 my-auto items-center'>
+                        {icon}
+                        <span className='ml-10px hover:text-black-5 active:text-black-7 transition-all transition-duration-500ms'>
+                          {label}
+                        </span>
+                      </a>
+                    </Link>
+                  </div>
                 )
               })}
+
+            {secondlinks && (
+              <>
+                <div className='col-start-1 col-end-3 mt-25px'>
+                  <h4 className='mb-0px'>
+                    <Link href={`${secondpageLink}`}>
+                      <a className='text-15px font-700 capitalize mb-0px no-decoration cursor-pointer'>{secondpage}</a>
+                    </Link>
+                  </h4>
+                  <p className='text-15px text-black-10 cursor-pointer mb-0px'>{secondsubtext}</p>
+                </div>
+                {secondlinks.map((secondlink, index) => {
+                  const { url, icon, label } = secondlink
+                  return (
+                    <div key={`${label}-${index}`}>
+                      <Link href={url}>
+                        <a className='capitalize my-0px no-decoration flex text-15px font-700 my-auto items-center'>
+                          {icon}
+                          <span className='ml-10px hover:text-black-5 active:text-black-7 transition-all transition-duration-500ms'>
+                            {label}
+                          </span>
+                        </a>
+                      </Link>
+                    </div>
+                  )
+                })}
+              </>
+            )}
           </div>
         )}
       </section>

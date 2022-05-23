@@ -3204,6 +3204,14 @@ input::-moz-focus-inner,
   grid-column: span 12;
 }
 
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-end-3 {
+  grid-column-end: 3;
+}
+
 .grid-flow-row {
   grid-auto-flow: row;
 }
@@ -4375,10 +4383,6 @@ input::-moz-focus-inner,
 
 .p-30px {
   padding: 30px;
-}
-
-.pt-0px {
-  padding-top: 0px;
 }
 
 .pt-20px {

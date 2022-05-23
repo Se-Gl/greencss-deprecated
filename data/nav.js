@@ -23,7 +23,7 @@ import NavDocsUnited from '@/components/icon/Nav/Docs/NavDocsUnited'
 
 export const navmenu = [
   { title: 'blog', path: '/blog' },
-  { title: 'brand', path: '/brand' },
+  // { title: 'brand', path: '/brand' },
   { title: 'docs', path: '/docs' },
   { title: 'about', path: '/about' }
 ]
@@ -70,18 +70,18 @@ export const navsublinks = [
     subtext:
       'A Blog - the right way to write a story - Explore the blog posts, to learn more about the latest tips and tricks.'
   },
-  {
-    page: 'brand',
-    pageLink: '/brand',
-    subtext:
-      'A Brand Book - the right way to get to know a story - Explore the logo, typography, colours and composition',
-    links: [
-      { label: 'logo', icon: <NavBrandLogo />, url: '/brand/logo' },
-      { label: 'typography', icon: <NavBrandTypo />, url: '/brand/typography' },
-      { label: 'colours', icon: <NavBrandColor />, url: '/brand/colours' },
-      { label: 'composition', icon: <NavBrandComposition />, url: '/brand/composition' }
-    ]
-  },
+  // {
+  //   page: 'brand',
+  //   pageLink: '/brand',
+  //   subtext:
+  //     'A Brand Book - the right way to get to know a story - Explore the logo, typography, colours and composition',
+  //   links: [
+  //     { label: 'logo', icon: <NavBrandLogo />, url: '/brand/logo' },
+  //     { label: 'typography', icon: <NavBrandTypo />, url: '/brand/typography' },
+  //     { label: 'colours', icon: <NavBrandColor />, url: '/brand/colours' },
+  //     { label: 'composition', icon: <NavBrandComposition />, url: '/brand/composition' }
+  //   ]
+  // },
   {
     page: 'docs',
     pageLink: '/docs',
@@ -116,6 +116,16 @@ export const navsublinks = [
     links: [
       { label: 'contact', icon: <NavContactNewsletter />, url: '/contact' },
       { label: 'newsletter', icon: <NavContactAbout />, url: '/contact#footer-social' }
+    ],
+    secondpage: 'brand',
+    secondpageLink: '/brand',
+    secondsubtext:
+      'A Brand Book - the right way to get to know a story - Explore the logo, typography, colours and composition',
+    secondlinks: [
+      { label: 'logo', icon: <NavBrandLogo />, url: '/brand/logo' },
+      { label: 'typography', icon: <NavBrandTypo />, url: '/brand/typography' },
+      { label: 'colours', icon: <NavBrandColor />, url: '/brand/colours' },
+      { label: 'composition', icon: <NavBrandComposition />, url: '/brand/composition' }
     ]
   }
 ]
