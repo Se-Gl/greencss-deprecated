@@ -1,7 +1,7 @@
 import ReusableModal from '../modal/ReusableModal'
-import MobileNavBar from '../nav/MobileNavBar'
-import Navbar from '../nav/NavBar'
-import SubMenu from '../nav/SubMenu'
+import MobileNavBar from './MobileNavBar'
+import Navbar from './NavBar'
+import SubMenu from './SubMenu'
 
 export default function Header() {
   return (

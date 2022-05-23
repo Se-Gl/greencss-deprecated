@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
 
-const Header = dynamic(() => import('./Header'))
+const Header = dynamic(() => import('../header'))
 const Footer = dynamic(() => import('./Footer'))
 const Cookies = dynamic(() => import('./Cookies'))
 
