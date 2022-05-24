@@ -318,10 +318,6 @@ input::-moz-focus-inner,
   background-color: #fc7c7c;
 }
 
-.bg-orange-10 {
-  background-color: #fffaf3;
-}
-
 .bg-yellow-3 {
   background-color: #fbdd4d;
 }
@@ -332,10 +328,6 @@ input::-moz-focus-inner,
 
 .bg-yellow-9 {
   background-color: #fef8db;
-}
-
-.bg-yellow-10 {
-  background-color: #fffdf3;
 }
 
 .bg-green-5 {
@@ -388,10 +380,6 @@ input::-moz-focus-inner,
 
 .bg-blue-10 {
   background-color: #f3f8ff;
-}
-
-.bg-purple-10 {
-  background-color: #f9f3ff;
 }
 
 .bg-black-1 {
@@ -603,10 +591,6 @@ input::-moz-focus-inner,
   background-color: #fc7c7c;
 }
 
-.bg-orange-10 {
-  background-color: #fffaf3;
-}
-
 .bg-yellow-3 {
   background-color: #fbdd4d;
 }
@@ -617,10 +601,6 @@ input::-moz-focus-inner,
 
 .bg-yellow-9 {
   background-color: #fef8db;
-}
-
-.bg-yellow-10 {
-  background-color: #fffdf3;
 }
 
 .bg-green-5 {
@@ -667,10 +647,6 @@ input::-moz-focus-inner,
   background-color: #f3f8ff;
 }
 
-.bg-purple-10 {
-  background-color: #f9f3ff;
-}
-
 .bg-black-1 {
   background-color: #1c1c1c;
 }
@@ -687,10 +663,6 @@ input::-moz-focus-inner,
   background-color: #fc7c7c;
 }
 
-.bg-orange-10 {
-  background-color: #fffaf3;
-}
-
 .bg-yellow-3 {
   background-color: #fbdd4d;
 }
@@ -701,10 +673,6 @@ input::-moz-focus-inner,
 
 .bg-yellow-9 {
   background-color: #fef8db;
-}
-
-.bg-yellow-10 {
-  background-color: #fffdf3;
 }
 
 .bg-green-5 {
@@ -749,10 +717,6 @@ input::-moz-focus-inner,
 
 .bg-blue-10 {
   background-color: #f3f8ff;
-}
-
-.bg-purple-10 {
-  background-color: #f9f3ff;
 }
 
 .bg-black-1 {
@@ -818,13 +782,6 @@ input::-moz-focus-inner,
   to {
     transform: rotate(360deg);
   }
-}
-
-.pulse {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-  -webkit-transform-origin: center;
-  transform-origin: center;
 }
 
 @keyframes pulse {
@@ -3076,10 +3033,6 @@ input::-moz-focus-inner,
   font-size: 30px;
 }
 
-.text-35px {
-  font-size: 35px;
-}
-
 .text-50px {
   font-size: 50px;
 }
@@ -3196,6 +3149,14 @@ input::-moz-focus-inner,
   grid-column: span 3;
 }
 
+.col-span-4 {
+  grid-column: span 4;
+}
+
+.col-span-8 {
+  grid-column: span 8;
+}
+
 .col-span-9 {
   grid-column: span 9;
 }
@@ -3234,6 +3195,10 @@ input::-moz-focus-inner,
 
 .gap-10px {
   gap: 10px;
+}
+
+.gap-25px {
+  gap: 25px;
 }
 
 .gap-30px {
@@ -3368,10 +3333,6 @@ input::-moz-focus-inner,
   background-color: #fc7c7c;
 }
 
-.bg-orange-10 {
-  background-color: #fffaf3;
-}
-
 .bg-yellow-3 {
   background-color: #fbdd4d;
 }
@@ -3382,10 +3343,6 @@ input::-moz-focus-inner,
 
 .bg-yellow-9 {
   background-color: #fef8db;
-}
-
-.bg-yellow-10 {
-  background-color: #fffdf3;
 }
 
 .bg-green-5 {
@@ -3438,10 +3395,6 @@ input::-moz-focus-inner,
 
 .bg-blue-10 {
   background-color: #f3f8ff;
-}
-
-.bg-purple-10 {
-  background-color: #f9f3ff;
 }
 
 .bg-black-1 {
@@ -3653,10 +3606,6 @@ input::-moz-focus-inner,
   background-color: #fc7c7c;
 }
 
-.bg-orange-10 {
-  background-color: #fffaf3;
-}
-
 .bg-yellow-3 {
   background-color: #fbdd4d;
 }
@@ -3667,10 +3616,6 @@ input::-moz-focus-inner,
 
 .bg-yellow-9 {
   background-color: #fef8db;
-}
-
-.bg-yellow-10 {
-  background-color: #fffdf3;
 }
 
 .bg-green-5 {
@@ -3717,10 +3662,6 @@ input::-moz-focus-inner,
   background-color: #f3f8ff;
 }
 
-.bg-purple-10 {
-  background-color: #f9f3ff;
-}
-
 .bg-black-1 {
   background-color: #1c1c1c;
 }
@@ -3737,10 +3678,6 @@ input::-moz-focus-inner,
   background-color: #fc7c7c;
 }
 
-.bg-orange-10 {
-  background-color: #fffaf3;
-}
-
 .bg-yellow-3 {
   background-color: #fbdd4d;
 }
@@ -3751,10 +3688,6 @@ input::-moz-focus-inner,
 
 .bg-yellow-9 {
   background-color: #fef8db;
-}
-
-.bg-yellow-10 {
-  background-color: #fffdf3;
 }
 
 .bg-green-5 {
@@ -3799,10 +3732,6 @@ input::-moz-focus-inner,
 
 .bg-blue-10 {
   background-color: #f3f8ff;
-}
-
-.bg-purple-10 {
-  background-color: #f9f3ff;
 }
 
 .bg-black-1 {
@@ -4049,6 +3978,10 @@ input::-moz-focus-inner,
   width: 60px;
 }
 
+.w-90px {
+  width: 90px;
+}
+
 .w-100px {
   width: 100px;
 }
@@ -4155,6 +4088,10 @@ input::-moz-focus-inner,
 
 .max-w-90per {
   max-width: 90%;
+}
+
+.max-w-100per {
+  max-width: 100%;
 }
 
 .max-w-50vw {
@@ -4429,6 +4366,10 @@ input::-moz-focus-inner,
   padding-inline: 0px;
 }
 
+.px-5px {
+  padding-inline: 5px;
+}
+
 .px-10px {
   padding-inline: 10px;
 }
@@ -4443,10 +4384,6 @@ input::-moz-focus-inner,
 
 .px-40px {
   padding-inline: 40px;
-}
-
-.px-44px {
-  padding-inline: 44px;
 }
 
 .px-50px {
@@ -4487,10 +4424,6 @@ input::-moz-focus-inner,
 
 .m-0px {
   margin: 0px;
-}
-
-.m-25px {
-  margin: 25px;
 }
 
 .m-30px {
@@ -4587,10 +4520,6 @@ input::-moz-focus-inner,
 
 .ml-15px {
   margin-left: 15px;
-}
-
-.ml-25px {
-  margin-left: 25px;
 }
 
 .ml-50px {
@@ -4695,6 +4624,11 @@ input::-moz-focus-inner,
   -webkit-animation-delay: 200ms;
 }
 
+.animation-delay-300ms {
+  animation-delay: 300ms;
+  -webkit-animation-delay: 300ms;
+}
+
 .animation-delay-400ms {
   animation-delay: 400ms;
   -webkit-animation-delay: 400ms;
@@ -4708,6 +4642,11 @@ input::-moz-focus-inner,
 .animation-delay-600ms {
   animation-delay: 600ms;
   -webkit-animation-delay: 600ms;
+}
+
+.animation-delay-700ms {
+  animation-delay: 700ms;
+  -webkit-animation-delay: 700ms;
 }
 
 .animation-delay-800ms {
@@ -4753,11 +4692,6 @@ input::-moz-focus-inner,
 .animation-duration-5000ms {
   animation-duration: 5000ms;
   -webkit-animation-duration: 5000ms;
-}
-
-.animation-duration-10000ms {
-  animation-duration: 10000ms;
-  -webkit-animation-duration: 10000ms;
 }
 
 .transition-duration-200ms {
@@ -4809,13 +4743,6 @@ input::-moz-focus-inner,
   -webkit-box-shadow: 10px 10px 20px -2.5px #101010;
   -moz-box-shadow: 10px 10px 20px -2.5px #101010;
   -ms-box-shadow: 10px 10px 20px -2.5px #101010;
-}
-
-.shadow-small-blue-7 {
-  box-shadow: 5px 5px 10px -1px #accefd;
-  -webkit-box-shadow: 5px 5px 10px -1px #accefd;
-  -moz-box-shadow: 5px 5px 10px -1px #accefd;
-  -ms-box-shadow: 5px 5px 10px -1px #accefd;
 }
 
 .shadow-small-black-10 {
@@ -4935,11 +4862,6 @@ input::-moz-focus-inner,
 
 .rounded-100per {
   border-radius: 100%;
-}
-
-.rounded-right-radius-9px {
-  border-top-right-radius: 9px;
-  border-bottom-right-radius: 9px;
 }
 
 .rounded-right-radius-100px {
@@ -5227,6 +5149,10 @@ input::-moz-focus-inner,
 
   .md\:row-start-3 {
     grid-row-start: 3;
+  }
+
+  .md\:gap-0px {
+    gap: 0px;
   }
 
   .md\:float-none {

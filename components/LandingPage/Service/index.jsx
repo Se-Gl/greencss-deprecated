@@ -2,7 +2,6 @@ import dynamic from 'next/dynamic'
 import Loader from '../../logo/Loader'
 import Section from '../../reusable/Section'
 
-const ServiceCard = dynamic(() => import('./ServiceCard'), { loading: () => <Loader /> })
 const CompetitiveIcon = dynamic(() => import('@/components/icon/Service/Competitive'))
 const ResponsiveIcon = dynamic(() => import('@/components/icon/Service/Responsive'))
 const AnimatedIcon = dynamic(() => import('@/components/icon/Service/Animated'))
@@ -13,7 +12,7 @@ const ServiceWater = dynamic(() => import('@/components/icon/Service/Water'))
 const ServiceEnergy = dynamic(() => import('@/components/icon/Service/Energy'))
 
 export default function Service() {
-  const serviceCard = [
+  const nutshellCard = [
     {
       title: 'Animated',
       description:
@@ -34,10 +33,7 @@ export default function Service() {
         'Created like bulma with SASS (SCSS). Classic like tailwindcss, but more intuitive. For the environment and for yourself - do something good while you work.',
       bgcolour: 'bg-blue-9',
       icon: <CompetitiveIcon />
-    }
-  ]
-
-  const nutshellCard = [
+    },
     {
       title: 'Plant Trees',
       description:
@@ -58,17 +54,8 @@ export default function Service() {
     }
   ]
   return (
-    <Section id='service' background='bg-blue-10'>
-      <h2 className='max-w-80rem'>
-        Our Mission - <span className='text-greencss'>Save</span> the Programming Planet
-      </h2>
-      <div className='m-auto grid grid-col-3 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-2 lg:grid-col-2 mt-50px'>
-        <ServiceCard data={serviceCard} />
-      </div>
-      <h2 className='my-50px font-800'>
-        Beside the <span className='text-greencss'>Code</span>
-      </h2>
-
+    <Section id='service'>
+      <h2 className='max-w-80rem'>Our Mission - Save the Programming Planet</h2>
       <div className='m-auto grid grid-col-3 gap-30px sm:gap-0px sm:grid-col-1 md:grid-col-2 lg:grid-col-2'>
         <NutshellCard data={nutshellCard} />
       </div>

@@ -11,7 +11,7 @@ export default function CalculateFootprint() {
   const { calculate } = useContext(DonationContext)
 
   return (
-    <Section id='calculate-footprint' background='bg-orange-10'>
+    <Section id='calculate-footprint'>
       <div className='relative flex min-h-100vh w-100per text-white bg-black rounded-20px'>
         <div
           className='m-auto grid gap-30px sm:gap-0px grid-col-2 sm:grid-col-1 md:grid-col-1 min-h-66vh overflow-hidden py-50px'

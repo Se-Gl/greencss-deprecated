@@ -21,7 +21,7 @@ export default function Presentation() {
   ]
 
   return (
-    <Section id='presentation' background='bg-green-10'>
+    <Section id='presentation'>
       <>
         {presentations.sort().map((presentation, index) => {
           return (
@@ -31,7 +31,7 @@ export default function Presentation() {
                 <span className='text-black-10 text-120px font-600'>{presentation.number}</span>
               </div>
               <p className='text-black-10 max-w-75rem'>{presentation.description}</p>
-              <div className='relative h-75vh overflow-hidden rounded-20px'>
+              <div className='relative h-50vh overflow-hidden rounded-20px'>
                 <Image
                   quality={100}
                   layout='fill'

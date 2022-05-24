@@ -43,8 +43,8 @@ const Navbar = () => {
               <li key={index} onMouseOver={displaySubmenu} className='h-100per flex h-50 justify-center items-center'>
                 <Link href={item.path}>
                   <a
-                    className={`map-link text-15px font-800 no-decoration cursor-pointer capitalize pb-15px px-44px mt-15px mb-0px justify-center ${
-                      router.asPath.includes(item.path) ? 'text-greencss font-800' : 'text-black'
+                    className={`map-link text-15px font-400 no-decoration cursor-pointer capitalize pb-15px px-50px mt-15px mb-0px justify-center ${
+                      router.asPath.includes(item.path) ? 'text-greencss font-600' : 'text-black'
                     }`}>
                     {item.title}
                   </a>

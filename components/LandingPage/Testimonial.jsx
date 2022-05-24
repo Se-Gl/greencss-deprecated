@@ -4,12 +4,10 @@ import Section from '../reusable/Section'
 
 export default function Testimonial() {
   return (
-    <Section id='testimonial' background='bg-purple-10'>
+    <Section id='testimonial'>
       <div className='relative flex min-h-75vh w-100per text-center text-white bg-black rounded-20px'>
         <div className='m-auto max-w-50rem'>
-          <h2 className='font-bold text-50px mb-50px'>
-            Hear what the <span className='text-greencss'>creator</span> says
-          </h2>
+          <h2 className='font-bold text-50px mb-50px text-green-9'>Hear what the creator says</h2>
           <p className='text-black-10'>
             “It all started with omenCSS. In fact, this was my capstone project for my bachelor thesis in software
             engineering. I wanted to create a free MIT licensed CSS library for any framework - no matter whether
